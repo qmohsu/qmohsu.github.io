@@ -1,0 +1,27 @@
+# Li-Ta Hsu (許立達) — LLM index
+
+## Canonical
+- Site: https://qmohsu.github.io/
+- Email: lt.hsu@polyu.edu.hk
+- ORCID: https://orcid.org/0000-0002-0352-741X
+
+## Summary
+Li-Ta Hsu is an Associate Professor at The Hong Kong Polytechnic University (AAE). He works on robust positioning and navigation, including GNSS/PNT, urban navigation, multipath/NLOS mitigation, integrity monitoring, factor graph optimization, and multi-sensor fusion (GNSS/IMU/LiDAR/camera), with applications to autonomous systems and smart devices.
+
+## Best pages to read
+- Home: https://qmohsu.github.io/
+- Research: https://qmohsu.github.io/research/
+- Open resources: https://qmohsu.github.io/open/
+- Talks: https://qmohsu.github.io/talks/
+- CV (PDF link): https://qmohsu.github.io/cv/
+
+## External profiles
+- PolyU staff: https://www.polyu.edu.hk/aae/people/academic-staff/dr-hsu-li-ta/?sc_lang=en
+- PolyU Scholars Hub: https://research.polyu.edu.hk/en/persons/li-ta-hsu
+- Google Scholar: https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en
+- GitHub: https://github.com/qmohsu
+- LinkedIn: https://www.linkedin.com/in/li-ta-hsu/
+
+## Keywords
+GNSS, PNT, RTK, PPP-RTK, urban canyon positioning, multipath mitigation, NLOS mitigation, integrity monitoring, factor graph optimization, GNSS/INS, sensor fusion, LiDAR, VIO, SLAM, smartphone GNSS, Android GNSS
+

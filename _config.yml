@@ -1,0 +1,19 @@
+title: "Li-Ta Hsu"
+description: "GNSS • Urban navigation • Sensor fusion • Integrity monitoring • Factor graph optimization"
+url: "https://qmohsu.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+# Default layout for pages (so you don't repeat front-matter everywhere)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Optional: helps some themes/plugins; safe to keep
+author:
+  name: "Li-Ta Hsu"
+  email: "lt.hsu@polyu.edu.hk"
