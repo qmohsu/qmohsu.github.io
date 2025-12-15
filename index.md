@@ -2,7 +2,7 @@
 title: Home
 description: "Li‑Ta Hsu — Associate Professor (PolyU). Building integrity-first navigation systems for embodied AI — robots, vehicles, drones."
 permalink: /
-image: /assets/img/headshot.jpg
+image: /assets/img/li-ta hsu_2022.jpg
 last_updated: 2025-12-15
 jsonld: |
   <script type="application/ld+json">
@@ -44,7 +44,7 @@ jsonld: |
 ---
 
 <div class="hero">
-  <img src="/assets/img/headshot.jpg" alt="Li-Ta Hsu portrait (add your headshot at assets/img/headshot.jpg)">
+  <img src="/assets/img/li-ta hsu_2022.jpg" alt="Li-Ta Hsu portrait">
   <div>
     <h1>Li‑Ta Hsu (許立達)</h1>
     <p class="subtitle">
