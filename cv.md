@@ -2,6 +2,8 @@
 title: CV
 description: "Curriculum Vitae (PDF) and key identifiers (ORCID, Scopus, Scholar)."
 permalink: /cv/
+image: /assets/img/og/cv.jpg
+last_updated: 2025-12-15
 ---
 
 ## CV (PDF)

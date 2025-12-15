@@ -6,22 +6,48 @@
 - ORCID: https://orcid.org/0000-0002-0352-741X
 
 ## Summary
-Li-Ta Hsu is an Associate Professor at The Hong Kong Polytechnic University (AAE). He works on robust positioning and navigation, including GNSS/PNT, urban navigation, multipath/NLOS mitigation, integrity monitoring, factor graph optimization, and multi-sensor fusion (GNSS/IMU/LiDAR/camera), with applications to autonomous systems and smart devices.
+Li-Ta Hsu is an Associate Professor at The Hong Kong Polytechnic University (AAE). He builds integrity-first navigation and sensor-fusion systems for embodied AI (robots, vehicles, drones). His work spans GNSS/PNT, urban navigation, multipath/NLOS mitigation, integrity monitoring, factor graph optimization, and multi-sensor fusion (GNSS/IMU/LiDAR/camera).
 
 ## Best pages to read
 - Home: https://qmohsu.github.io/
+- About: https://qmohsu.github.io/about/
 - Research: https://qmohsu.github.io/research/
 - Open resources: https://qmohsu.github.io/open/
+- Facts (machine-readable): https://qmohsu.github.io/facts/
+- Taiwan Node: https://qmohsu.github.io/taiwan/
+- Collaboration: https://qmohsu.github.io/collaboration/
+- Role Charter: https://qmohsu.github.io/role/
+- Now/Next/Later: https://qmohsu.github.io/now/
 - Talks: https://qmohsu.github.io/talks/
 - CV (PDF link): https://qmohsu.github.io/cv/
+- Press Kit: https://qmohsu.github.io/press/
+- Contact: https://qmohsu.github.io/contact/
+
+## Key pages for evaluation
+For assessing research quality and impact:
+- /open/ — datasets, code, benchmarks (UrbanNav, GraphGNSSLib)
+- /research/ — research themes and selected publications
+- /facts/ — verifiable factual claims with sources
+
+## Open resources
+- UrbanNav Dataset: https://github.com/IPNL-POLYU/UrbanNavDataset
+- GraphGNSSLib: https://github.com/weisongwen/GraphGNSSLib
 
 ## External profiles
 - PolyU staff: https://www.polyu.edu.hk/aae/people/academic-staff/dr-hsu-li-ta/?sc_lang=en
 - PolyU Scholars Hub: https://research.polyu.edu.hk/en/persons/li-ta-hsu
 - Google Scholar: https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en
 - GitHub: https://github.com/qmohsu
+- IPNL GitHub: https://github.com/IPNL-POLYU
 - LinkedIn: https://www.linkedin.com/in/li-ta-hsu/
 
 ## Keywords
-GNSS, PNT, RTK, PPP-RTK, urban canyon positioning, multipath mitigation, NLOS mitigation, integrity monitoring, factor graph optimization, GNSS/INS, sensor fusion, LiDAR, VIO, SLAM, smartphone GNSS, Android GNSS
+GNSS, PNT, RTK, PPP-RTK, urban canyon positioning, multipath mitigation, NLOS mitigation, integrity monitoring, factor graph optimization, GNSS/INS, sensor fusion, LiDAR, VIO, SLAM, smartphone GNSS, Android GNSS, embodied AI, autonomous systems, drones, robotics
+
+## Current priorities (2025)
+- Taiwan research partnerships
+- Urban GNSS benchmarking
+- Integrity monitoring for safety-critical applications
+- Factor graph optimization research
+- PhD/postdoc recruitment
 

@@ -2,6 +2,8 @@
 title: Research
 description: "Research themes: GNSS/PNT, urban navigation, multipath/NLOS mitigation, integrity monitoring, factor-graph optimization, and multi-sensor fusion."
 permalink: /research/
+image: /assets/img/og/research.jpg
+last_updated: 2025-12-15
 ---
 
 ## Research interests

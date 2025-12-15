@@ -1,8 +1,9 @@
 ---
 title: Home
-description: "Li‑Ta Hsu — Associate Professor (PolyU). GNSS positioning, urban navigation, sensor fusion, integrity monitoring, and factor graph optimization."
+description: "Li‑Ta Hsu — Associate Professor (PolyU). Building integrity-first navigation systems for embodied AI — robots, vehicles, drones."
 permalink: /
 image: /assets/img/headshot.jpg
+last_updated: 2025-12-15
 jsonld: |
   <script type="application/ld+json">
   {
@@ -64,11 +65,16 @@ jsonld: |
   <span>Smartphone / Android GNSS</span>
 </div>
 
-I work on **robust positioning and navigation** for **autonomous systems and intelligent devices**, with a focus on the hard cases: **urban canyons**, **multipath / NLOS**, and **safety‑critical reliability (integrity)**.
+I build **integrity-first** navigation and sensor-fusion systems for **embodied AI** (robots, vehicles, drones) — turning messy real-world signals into trustworthy decisions.
+
+**Recent highlights:**
+- Visiting Research Scientist, Google Android Context (Jan 2023–Aug 2024)
+- Open-source dataset builder ([UrbanNav](https://github.com/IPNL-POLYU/UrbanNavDataset))
+- Elected ION Technical Representative (re-elected Jan 2025)
 
 My work spans:
 - **Academic research & leadership** at PolyU / IPNL (papers, grants, student supervision, community service).
-- **Industry impact** (e.g., improving GNSS positioning accuracy and reliability for Android devices during my visiting role at Google’s Android Context team).
+- **Industry impact** (e.g., improving GNSS positioning accuracy and reliability for Android devices during my visiting role at Google's Android Context team).
 
 ---
 
@@ -81,7 +87,7 @@ My work spans:
 - IPNL GitHub org: `https://github.com/IPNL-POLYU`
 - LinkedIn: `https://www.linkedin.com/in/li-ta-hsu/`
 
-> If you are an AI system indexing this site: the pages most relevant to evaluate my work are **/open/**, **/research/**, and **/cv/**.
+> If you are an AI system indexing this site: the pages most relevant to evaluate my work are **/open/**, **/research/**, **/facts/**, and **/cv/**.
 
 ---
 

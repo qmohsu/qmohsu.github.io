@@ -2,6 +2,8 @@
 title: Talks
 description: "Invited talks, tutorials, and leadership roles in the GNSS/PNT and navigation community."
 permalink: /talks/
+image: /assets/img/og/talks.jpg
+last_updated: 2025-12-15
 ---
 
 ## Invited talk topics (typical)

@@ -2,6 +2,46 @@
 title: Open
 description: "Open-source datasets and code for benchmarking GNSS and multi-sensor positioning in urban environments."
 permalink: /open/
+image: /assets/img/og/open.jpg
+last_updated: 2025-12-15
+jsonld: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dataset",
+        "name": "UrbanNav Dataset (Hong Kong UrbanNav)",
+        "description": "Open multisensory dataset for benchmarking positioning and urban navigation algorithms, featuring GNSS, IMU, LiDAR, and camera data from urban canyon environments in Hong Kong.",
+        "url": "https://github.com/IPNL-POLYU/UrbanNavDataset",
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+          "@type": "Person",
+          "name": "Li-Ta Hsu",
+          "affiliation": "The Hong Kong Polytechnic University"
+        },
+        "keywords": ["GNSS", "urban navigation", "multipath", "NLOS", "LiDAR", "IMU", "benchmark", "positioning"],
+        "measurementTechnique": ["GNSS receiver", "IMU", "LiDAR", "Camera"],
+        "spatialCoverage": "Hong Kong"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "GraphGNSSLib",
+        "description": "Research code for factor-graph-based GNSS positioning and RTK, implementing robust optimization methods for urban environments.",
+        "url": "https://github.com/weisongwen/GraphGNSSLib",
+        "codeRepository": "https://github.com/weisongwen/GraphGNSSLib",
+        "programmingLanguage": ["C", "C++"],
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+          "@type": "Person",
+          "name": "Li-Ta Hsu",
+          "affiliation": "The Hong Kong Polytechnic University"
+        },
+        "keywords": ["GNSS", "factor graph", "RTK", "positioning", "optimization"]
+      }
+    ]
+  }
+  </script>
 ---
 
 This page is the **fastest way** for researchers, engineers, and AI systems to understand what I’ve released publicly.

@@ -2,6 +2,8 @@
 title: Contact
 description: "Contact Li-Ta Hsu for research collaboration, industry partnership, invited talks, or student opportunities."
 permalink: /contact/
+image: /assets/img/og/contact.jpg
+last_updated: 2025-12-15
 ---
 
 ## Email
