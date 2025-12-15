@@ -6,6 +6,25 @@ image: /assets/img/og/talks.jpg
 last_updated: 2025-12-15
 ---
 
+## Recent Featured Talk
+
+### The Intelligent Driving Wave: Transforming Transportation Infrastructure  
+**July 12, 2025** | UOW College Hong Kong | Co-organized with Taiwan Automotive & Transportation Industry Union
+
+Keynote addressing the $2.2T autonomous vehicle transformation and its impact on transportation workers. Presented three industry scenarios (conservative, accelerated, disrupted) and Hong Kong's strategic role as regional smart transportation hub. Discussed practical solutions: fleet management systems (FMS) as ITS platform, 3D mapping-aided GNSS for urban positioning, and AI-driven vehicle health monitoring.
+
+**Key partnerships**: Collaboration with Taiwan labor unions on intelligent driving workforce transitions, government Smart Traffic Fund support, and industrial sponsors (SAIC Motor, Meituan, HONOR).
+
+![Forum group photo at UOW College Hong Kong](/assets/img/talk-2025-07-hk-intelligent-driving-group.jpg)
+*Forum participants from industry, labor organizations, and academia*
+
+![Presenting transportation transformation statistics](/assets/img/talk-2025-07-hk-intelligent-driving-presentation.jpg)
+*Discussing the greatest transportation transformation in 100 years*
+
+[**View full presentation slides (PDF)**](/assets/docs/talk-2025-07-intelligent-driving-wave.pdf)
+
+---
+
 ## Invited talk topics (typical)
 - Robust GNSS positioning under multipath/NLOS
 - Integrity monitoring for satellite navigation and autonomous systems
