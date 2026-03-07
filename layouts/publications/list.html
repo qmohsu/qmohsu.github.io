@@ -1,0 +1,25 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{ $pubs := .RegularPages }}
+
+{{/* Collect unique years */}}
+{{ $years := slice }}
+{{ range $pubs }}
+  {{ $y := string .Params.year }}
+  {{ if not (in $years $y) }}
+    {{ $years = $years | append $y }}
+  {{ end }}
+{{ end }}
+{{ $years = sort $years "value" "desc" }}
+
+{{ range $year := $years }}
+<div class="year-group">
+  <h3>{{ $year }} <span style="font-weight:normal;color:#666;">({{ len (where $pubs ".Params.year" (int $year)) }})</span></h3>
+  {{ range where $pubs ".Params.year" (int $year) }}
+    {{ partial "publication-card.html" . }}
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

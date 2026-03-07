@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.keywords }}
+  <div class="kv">
+    {{ range . }}<span>{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ $theme := .File.ContentBaseName }}
+  {{ $pubs := where (where .Site.RegularPages "Section" "publications") ".Params.themes" "intersect" (slice $theme) }}
+  {{ if $pubs }}
+  <div class="section">
+    <h2>Related Publications</h2>
+    {{ range $pubs }}
+      {{ partial "publication-card.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

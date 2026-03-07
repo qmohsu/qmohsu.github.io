@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ if and .Title (ne .Title "Home") }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ if and .Title (ne .Title "Home") }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+<meta name="twitter:card" content="summary">
+
+{{ $css := resources.Get "css/main.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+{{ with .Params.jsonld }}
+{{ . | safeHTML }}
+{{ end }}

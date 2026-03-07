@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article>
+  {{ if .Params.photo }}
+    <img src="{{ .Params.photo }}" alt="{{ .Title }}" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:14px;">
+  {{ end }}
+  <h1>{{ .Title }}</h1>
+  <p><strong>{{ .Params.role }}</strong> {{ with .Params.years }}({{ . }}){{ end }}</p>
+
+  {{ with .Params.status }}
+    <span class="badge badge-{{ . }}">{{ . }}</span>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.thesis }}
+  <div class="section">
+    <h2>Thesis</h2>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+
+  {{ if eq .Params.status "alumni" }}
+    {{ with .Params.current_position }}
+    <p><strong>Current position:</strong> {{ . }}</p>
+    {{ end }}
+  {{ end }}
+
+  {{ if or .Params.linkedin .Params.scholar .Params.website }}
+  <div class="pub-links" style="margin-top:14px;">
+    {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank">LinkedIn</a>{{ end }}
+    {{ with .Params.scholar }}<a href="{{ . }}" target="_blank">Google Scholar</a>{{ end }}
+    {{ with .Params.website }}<a href="{{ . }}" target="_blank">Website</a>{{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

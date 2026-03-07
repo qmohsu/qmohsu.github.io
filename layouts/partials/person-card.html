@@ -1,0 +1,14 @@
+<div class="card person-card">
+  {{ if .Params.photo }}
+    <img class="photo" src="{{ .Params.photo }}" alt="{{ .Title }}">
+  {{ else }}
+    {{ $words := split .Title " " }}
+    <div class="initials">{{ range $i, $w := $words }}{{ if lt $i 2 }}{{ substr $w 0 1 | upper }}{{ end }}{{ end }}</div>
+  {{ end }}
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <p class="role">{{ .Params.role }}</p>
+  {{ with .Params.years }}<p class="role">{{ . }}</p>{{ end }}
+  {{ if eq .Params.status "alumni" }}
+    {{ with .Params.current_position }}<p class="role" style="font-size:0.8rem;margin-top:4px;">Now: {{ . }}</p>{{ end }}
+  {{ end }}
+</div>

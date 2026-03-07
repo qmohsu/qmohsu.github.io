@@ -1,0 +1,45 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{ $people := .Pages }}
+
+{{/* PI */}}
+{{ $pi := where $people ".Params.role" "PI" }}
+{{ if $pi }}
+<div class="section">
+  <h2>Principal Investigator</h2>
+  <div class="cards" style="grid-template-columns: 1fr;">
+    {{ range $pi }}
+      {{ partial "person-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* Current Members */}}
+{{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
+{{ if $current }}
+<div class="section">
+  <h2>Current Members</h2>
+  <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+    {{ range $current.ByParam "sort_order" }}
+      {{ partial "person-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* Alumni */}}
+{{ $alumni := where $people ".Params.status" "alumni" }}
+{{ if $alumni }}
+<div class="section">
+  <h2>Alumni</h2>
+  <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+    {{ range $alumni.ByParam "sort_order" }}
+      {{ partial "person-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+{{ end }}

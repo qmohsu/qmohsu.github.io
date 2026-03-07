@@ -1,0 +1,80 @@
+baseURL = "https://qmohsu.github.io/"
+languageCode = "en"
+title = "IPNL — Intelligent Positioning and Navigation Laboratory"
+
+[params]
+  description = "GNSS, urban navigation, sensor fusion, integrity monitoring — PolyU"
+  author = "Li-Ta Hsu"
+  email = "lt.hsu@polyu.edu.hk"
+  orcid = "0000-0002-0352-741X"
+  scholar = "GxfOCUMAAAAJ"
+  github_org = "IPNL-POLYU"
+  github_personal = "qmohsu"
+  linkedin = "li-ta-hsu"
+  polyu_staff = "https://www.polyu.edu.hk/aae/people/academic-staff/dr-hsu-li-ta/"
+  polyu_scholars = "https://research.polyu.edu.hk/en/persons/li-ta-hsu"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[permalinks]
+  publications = "/publications/:slug/"
+  people = "/people/:slug/"
+  projects = "/projects/:slug/"
+  resources = "/resources/:slug/"
+  news = "/news/:slug/"
+  research = "/research/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 2
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 3
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 4
+
+[[menu.main]]
+  name = "People"
+  url = "/people/"
+  weight = 5
+
+[[menu.main]]
+  name = "Resources"
+  url = "/resources/"
+  weight = 6
+
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 7
+
+[[menu.main]]
+  name = "Join Us"
+  url = "/join/"
+  weight = 8
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 9

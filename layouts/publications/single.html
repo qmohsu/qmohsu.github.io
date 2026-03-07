@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.authors }}
+  <p class="pub-authors" style="font-size:1rem;">
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ if in (lower $a) "hsu" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+  </p>
+  {{ end }}
+
+  <p class="pub-venue" style="font-size:1rem;">
+    {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
+  </p>
+
+  {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+  {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+
+  {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
+  <div class="pub-links" style="margin:14px 0;">
+    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+    {{ with .Params.pdf }}<a href="{{ . }}" target="_blank">PDF</a>{{ end }}
+    {{ with .Params.code }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
+    {{ with .Params.data }}<a href="{{ . }}" target="_blank">Data</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+</article>
+{{ end }}

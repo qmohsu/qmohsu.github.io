@@ -1,0 +1,22 @@
+<div class="pub-entry">
+  {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  <div class="pub-title">
+    {{ with .Permalink }}<a href="{{ . }}">{{ end }}{{ .Title }}{{ with .Permalink }}</a>{{ end }}
+  </div>
+  {{ with .Params.authors }}
+  <div class="pub-authors">
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ if in (lower $a) "hsu" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+  </div>
+  {{ end }}
+  <div class="pub-venue">
+    {{ with .Params.venue }}{{ . }}{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
+  </div>
+  {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
+  <div class="pub-links">
+    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+    {{ with .Params.pdf }}<a href="{{ . }}" target="_blank">PDF</a>{{ end }}
+    {{ with .Params.code }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
+    {{ with .Params.data }}<a href="{{ . }}" target="_blank">Data</a>{{ end }}
+  </div>
+  {{ end }}
+</div>

@@ -1,0 +1,125 @@
+{{ define "main" }}
+
+{{/* ===== 1. HERO ===== */}}
+<section class="hero">
+  <img src="{{ "/images/li-ta-hsu-2022.jpg" | relURL }}" alt="Li-Ta Hsu">
+  <div>
+    <h1>{{ .Site.Title }}</h1>
+    <p class="subtitle">Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University</p>
+    <div class="kv">
+      <span>GNSS</span>
+      <span>Urban Navigation</span>
+      <span>Sensor Fusion</span>
+      <span>Integrity Monitoring</span>
+      <span>Factor Graph Optimization</span>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="{{ "/research/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;background:var(--accent);color:#fff;border-radius:8px;font-size:0.9rem;font-weight:600;">Research</a>
+      <a href="{{ "/publications/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;border:1px solid var(--accent);color:var(--accent);border-radius:8px;font-size:0.9rem;font-weight:600;">Publications</a>
+      <a href="{{ "/join/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;border:1px solid var(--accent);color:var(--accent);border-radius:8px;font-size:0.9rem;font-weight:600;">Join Us</a>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 2. RESEARCH THEMES ===== */}}
+{{ $themes := where .Site.RegularPages "Section" "research" }}
+{{ if $themes }}
+<section class="section">
+  <h2>Research Themes</h2>
+  <div class="cards">
+    {{ range $themes.ByWeight }}
+      {{ partial "research-theme-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ===== 3. FLAGSHIP PROJECTS ===== */}}
+{{ $projects := where (where .Site.RegularPages "Section" "projects") ".Params.flagship" true }}
+{{ if $projects }}
+<section class="section">
+  <h2>Flagship Projects</h2>
+  <div class="cards">
+    {{ range $projects }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+  </div>
+  <p style="margin-top:10px;"><a href="{{ "/projects/" | relURL }}">View all projects &rarr;</a></p>
+</section>
+{{ end }}
+
+{{/* ===== 4. PEOPLE STRIP ===== */}}
+{{ $people := where .Site.RegularPages "Section" "people" }}
+{{ $pi := where $people ".Params.role" "PI" }}
+{{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
+{{ if or $pi $current }}
+<section class="section">
+  <h2>People</h2>
+  <div class="people-strip">
+    {{ range $pi }}
+      <div class="card person-card" style="min-width:140px;">
+        {{ if .Params.photo }}
+          <img class="photo" src="{{ .Params.photo | relURL }}" alt="{{ .Title }}">
+        {{ end }}
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="role">{{ .Params.role }}</p>
+      </div>
+    {{ end }}
+    {{ range first 8 ($current.ByParam "sort_order") }}
+      <div class="card person-card" style="min-width:120px;">
+        {{ $words := split .Title " " }}
+        <div class="initials">{{ range $i, $w := $words }}{{ if lt $i 2 }}{{ substr $w 0 1 | upper }}{{ end }}{{ end }}</div>
+        <h3 style="font-size:0.9rem;"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="role">{{ .Params.role }}</p>
+      </div>
+    {{ end }}
+  </div>
+  <p style="margin-top:10px;text-align:center;"><a href="{{ "/people/" | relURL }}">View all members &rarr;</a></p>
+</section>
+{{ end }}
+
+{{/* ===== 5. LATEST NEWS ===== */}}
+{{ $news := where .Site.RegularPages "Section" "news" }}
+{{ if $news }}
+<section class="section">
+  <h2>Latest News</h2>
+  {{ range first 5 ($news.ByDate.Reverse) }}
+    {{ partial "news-card.html" . }}
+  {{ end }}
+  <p style="margin-top:10px;"><a href="{{ "/news/" | relURL }}">View all news &rarr;</a></p>
+</section>
+{{ end }}
+
+{{/* ===== 6. SELECTED PUBLICATIONS ===== */}}
+{{ $featured := where (where .Site.RegularPages "Section" "publications") ".Params.featured" true }}
+{{ if $featured }}
+<section class="section">
+  <h2>Selected Publications</h2>
+  {{ range $featured }}
+    {{ partial "publication-card.html" . }}
+  {{ end }}
+  <p style="margin-top:10px;"><a href="{{ "/publications/" | relURL }}">View all publications &rarr;</a></p>
+</section>
+{{ end }}
+
+{{/* ===== 7. OPEN RESOURCES ===== */}}
+{{ $resources := where .Site.RegularPages "Section" "resources" }}
+{{ if $resources }}
+<section class="section">
+  <h2>Open Resources</h2>
+  <div class="cards">
+    {{ range $resources }}
+      {{ partial "resource-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ===== 8. JOIN US CTA ===== */}}
+<div class="cta-block">
+  <h2>Join IPNL</h2>
+  <p>We are looking for PhD students, postdocs, and visiting researchers in GNSS, positioning, and navigation.</p>
+  <a href="{{ "/join/" | relURL }}" class="btn">Learn More</a>
+</div>
+
+{{ end }}

@@ -1,0 +1,13 @@
+<div class="card resource-card">
+  {{ with .Params.subtype }}<div class="subtype">{{ . }}</div>{{ end }}
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  <div class="meta">
+    {{ with .Params.license }}License: {{ . }}{{ end }}
+  </div>
+  {{ with .Params.repo }}
+  <div class="pub-links" style="margin-top:6px;">
+    <a href="{{ . }}" target="_blank">Repository</a>
+  </div>
+  {{ end }}
+</div>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.subtype }}<span class="badge badge-current">{{ . }}</span>{{ end }}
+  {{ with .Params.license }}<span class="badge badge-completed">{{ . }}</span>{{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.repo }}
+  <p><strong>Repository:</strong> <a href="{{ . }}" target="_blank">{{ . }}</a></p>
+  {{ end }}
+  {{ with .Params.citation }}
+  <p><strong>Citation:</strong> {{ . }}</p>
+  {{ end }}
+</article>
+{{ end }}

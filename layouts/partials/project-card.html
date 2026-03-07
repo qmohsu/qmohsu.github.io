@@ -1,0 +1,14 @@
+<div class="card">
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  <div class="meta">
+    {{ with .Params.funding }}Funding: {{ . }}{{ end }}
+  </div>
+  {{ if or .Params.repo .Params.doi }}
+  <div class="pub-links" style="margin-top:6px;">
+    {{ with .Params.repo }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
+    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+  </div>
+  {{ end }}
+</div>

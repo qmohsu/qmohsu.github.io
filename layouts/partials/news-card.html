@@ -1,0 +1,6 @@
+<div class="news-item">
+  <span class="news-date">{{ .Date.Format "2 Jan 2006" }}</span>
+  {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+</div>

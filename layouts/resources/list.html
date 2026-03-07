@@ -1,0 +1,36 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{ $resources := .Pages }}
+
+{{ $datasets := where $resources ".Params.subtype" "dataset" }}
+{{ if $datasets }}
+<div class="section">
+  <h2>Datasets</h2>
+  <div class="cards">
+    {{ range $datasets }}{{ partial "resource-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ $software := where $resources ".Params.subtype" "software" }}
+{{ if $software }}
+<div class="section">
+  <h2>Software</h2>
+  <div class="cards">
+    {{ range $software }}{{ partial "resource-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ $benchmarks := where $resources ".Params.subtype" "benchmark" }}
+{{ if $benchmarks }}
+<div class="section">
+  <h2>Benchmarks</h2>
+  <div class="cards">
+    {{ range $benchmarks }}{{ partial "resource-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+{{ end }}

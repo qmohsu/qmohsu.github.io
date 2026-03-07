@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<div class="cards">
+  {{ range .Pages.ByWeight }}
+    {{ partial "research-theme-card.html" . }}
+  {{ end }}
+</div>
+{{ end }}

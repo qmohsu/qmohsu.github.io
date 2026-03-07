@@ -1,0 +1,9 @@
+<div class="card theme-card">
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  {{ with .Params.keywords }}
+  <div class="keywords">
+    {{ range . }}<span>{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+</div>
