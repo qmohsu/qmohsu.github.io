@@ -9,7 +9,7 @@ venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 105
 featured: false
-doi: ""
+doi: "10.1109/tits.2019.2961128"
 pdf: ""
 code: ""
 data: ""

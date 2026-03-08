@@ -11,7 +11,7 @@ venue: ", IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
 cv_number: 66
 featured: false
-doi: ""
+doi: "10.1109/tim.2022.3146927"
 pdf: ""
 code: ""
 data: ""

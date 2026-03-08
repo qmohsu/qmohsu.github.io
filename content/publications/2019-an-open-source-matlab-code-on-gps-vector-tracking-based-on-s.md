@@ -8,7 +8,7 @@ venue: "GPS Solutions"
 type: "journal"
 cv_number: 115
 featured: false
-doi: ""
+doi: "10.1007/s10291-019-0839-x"
 pdf: ""
 code: ""
 data: ""

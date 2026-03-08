@@ -10,7 +10,7 @@ venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 138
 featured: false
-doi: ""
+doi: "10.1109/tits.2015.2432122"
 pdf: ""
 code: ""
 data: ""

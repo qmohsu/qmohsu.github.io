@@ -10,7 +10,7 @@ venue: "Remote Sensing"
 type: "journal"
 cv_number: 77
 featured: false
-doi: ""
+doi: "10.3390/rs13122371"
 pdf: ""
 code: ""
 data: ""

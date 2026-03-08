@@ -9,7 +9,7 @@ venue: "IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Co
 type: "journal"
 cv_number: 122
 featured: false
-doi: ""
+doi: "10.1587/transfun.e101.a.1245"
 pdf: ""
 code: ""
 data: ""

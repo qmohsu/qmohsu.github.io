@@ -12,7 +12,7 @@ venue: "Applied Sciences"
 type: "journal"
 cv_number: 64
 featured: false
-doi: ""
+doi: "10.3390/app12105193"
 pdf: ""
 code: ""
 data: ""

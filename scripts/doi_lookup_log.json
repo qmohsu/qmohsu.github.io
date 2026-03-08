@@ -1,0 +1,285 @@
+{
+  "found_high": [],
+  "found_medium": [],
+  "not_found": [
+    {
+      "file": "2009-development-of-indoor-positioning-and-location-based-informa.md",
+      "title": "Development of Indoor Positioning and Location Based Information Test Bed",
+      "reason": "No good match (best=0.546, title='Development of an Indoor Location Based Service Test Bed and')"
+    },
+    {
+      "file": "2010-assessment-of-composite-prn-code-acquisition-methods-for-gps.md",
+      "title": "Assessment of Composite PRN Code Acquisition Methods for GPS Signal",
+      "reason": "No good match (best=0.371, title='Development of Nondestructive Inspection Methods for Composi')"
+    },
+    {
+      "file": "2010-wide-area-differential-gnss-in-taiwan-development-and-valid.md",
+      "title": "Wide Area Differential GNSS in Taiwan: Development and Validation Testing",
+      "reason": "No good match (best=0.449, title='Development and Validation of the EQ-5D in Taiwan Using Item')"
+    },
+    {
+      "file": "2013-performance-analysis-of-advanced-gps-receiver-technique-in-r.md",
+      "title": "Performance Analysis of Advanced GPS Receiver Technique in Radio Frequency Diffi",
+      "reason": "No good match (best=0.324, title='Hybrid Predetection Technique for Efficient Tag Identificati')"
+    },
+    {
+      "file": "2017-multipath-mitigation-technique-under-strong-multipath-enviro.md",
+      "title": "Multipath Mitigation Technique under Strong Multipath Environment Using Multiple",
+      "reason": "No good match (best=0.435, title='GNSS multipath detection using a machine learning approach')"
+    },
+    {
+      "file": "2019-optimal-takeoff-time-assignment-under-severe-weather.md",
+      "title": "Optimal Takeoff Time Assignment under Severe Weather",
+      "reason": "No good match (best=0.353, title='Bottleneck assignment problems under categorization')"
+    },
+    {
+      "file": "2020-assessment-of-beamforming-for-gnss-multipath-mitigation-with.md",
+      "title": "Assessment of beamforming for GNSS multipath mitigation with a cost-effective st",
+      "reason": "No good match (best=0.532, title='A cost-effective beam forming structure for global navigatio')"
+    },
+    {
+      "file": "2020-integrity-monitoring-of-multi-gnss-spp-and-dgnss-in-urban-en.md",
+      "title": "Integrity Monitoring of multi-GNSS SPP and DGNSS in Urban Environment using ARAI",
+      "reason": "No good match (best=0.156, title='Janus Nanoparticles Loaded 3D Bio Printed Scaffold as a Dual')"
+    },
+    {
+      "file": "2021-localization-uncertainty-constrained-lateral-pid-control-wit.md",
+      "title": "Localization Uncertainty Constrained Lateral PID Control with Aids of Fuzzy Logi",
+      "reason": "No good match (best=0.313, title='A novel PID controller for BLDCM speed control using dual fu')"
+    },
+    {
+      "file": "2023-cn0-assessment-based-on-gps-l5l1ca-signal-acquisition-in.md",
+      "title": "C/N0 Assessment Based on GPS L5/L1C/A Signal Acquisition in Open-Sky/Light-Urban",
+      "reason": "No good match (best=0.395, title='Active Scout: Multi-Target Tracking Using Neural Radiance Fi')"
+    },
+    {
+      "file": "book-2019-hsu-l-t.md",
+      "title": "Hsu L. T.",
+      "reason": "No good match (best=0.373, title='Hsu, Eric')"
+    },
+    {
+      "file": "book-2025-hsu-l-t.md",
+      "title": "Hsu L. T.",
+      "reason": "No good match (best=0.373, title='Hsu, Eric')"
+    },
+    {
+      "file": "magazine-2011-magazine-article.md",
+      "title": "Magazine Article",
+      "reason": "No results from CrossRef"
+    },
+    {
+      "file": "magazine-2011-real-time-indoor-location-based-service-test-bed-ii.md",
+      "title": "Real Time Indoor Location Based Service Test Bed (II)",
+      "reason": "No good match (best=0.535, title='Development of an Indoor Location Based Service Test Bed and')"
+    },
+    {
+      "file": "magazine-2015-street-smart-3-d-city-mapping-and-modeling-for-positioning.md",
+      "title": "Street Smart: 3-D City Mapping and Modeling for Positioning with Multi-GNSS",
+      "reason": "No good match (best=0.346, title='GNSS RUMS: GNSS Realistic Urban Multi-agent Simulator for Co')"
+    },
+    {
+      "file": "magazine-2019-perceived-environment-aided-gnss-single-point-positioning.md",
+      "title": "Perceived Environment Aided GNSS Single Point Positioning: An Example using LiDA",
+      "reason": "No good match (best=0.536, title='Using Sky‐pointing fish‐eye camera and LiDAR to aid GNSS sin')"
+    },
+    {
+      "file": "magazine-2020-what-are-the-roles-of-artificial-intelligence-and-machine-le.md",
+      "title": "What are the roles of artificial intelligence and machine learning in GNSS posit",
+      "reason": "No good match (best=0.507, title='A Review of Machine Learning in Snow Water Equivalent Monito')"
+    },
+    {
+      "file": "patent-2018-positioning-method-and-electronic-equipment-cn111198389b.md",
+      "title": "Positioning method and electronic equipment ([CN111198389B](https://patentimages",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2019-it-is-a-kind-of-based-on-the-co-located-method-and-system-of.md",
+      "title": "It is a kind of based on the co-located method and system of three-dimensional m",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2021-multi-feature-visual-positioning-method-cn115527044ahttp.md",
+      "title": "Multi-feature visual positioning method ([CN115527044A](https://patentimages",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2022-3d-lidar-aided-global-navigation-satellite-system-and-the-me.md",
+      "title": "3d lidar aided global navigation satellite system and the method for non-line-of",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2023-3d-vision-aided-gnss-real-time-kinematic-positioning-for-aut.md",
+      "title": "3d vision aided gnss real-time kinematic positioning for autonomous systems in u",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2024-cn111679298ahttpspatentimagesstoragegoogleapiscom.md",
+      "title": "([CN111679298A](https://patentimages.storage.googleapis.com/",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2024-indoor-fire-monitoring-based-on-look-up-from-floor-sensing-o.md",
+      "title": "Indoor Fire Monitoring Based on Look-Up-From-Floor Sensing of Ceiling ([US202300",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2024-us-patent-no-12123961.md",
+      "title": "U.S. Patent No. 12,123,961",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2025-multi-feature-visual-positioning-method.md",
+      "title": "Multi-feature visual positioning method",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2025-us-patent-no-12292340.md",
+      "title": "U.S. Patent No. 12,292,340",
+      "reason": "Skipped (patent — not in CrossRef)"
+    },
+    {
+      "file": "patent-2025-us-patent-no-63840727.md",
+      "title": "U.S. Patent No. 63/840,727",
+      "reason": "Skipped (patent — not in CrossRef)"
+    }
+  ],
+  "errors": [],
+  "skipped": [
+    "2010-development-of-an-indoor-location-based-service-test-bed-and.md",
+    "2014-multipath-mitigation-and-nlos-detection-using-vector-trackin.md",
+    "2015-evaluation-of-multi-gnsss-and-gps-with-3d-map-methods-for-pe.md",
+    "2015-gps-error-correction-with-pseudorange-evaluation-using-3-dim.md",
+    "2015-nlos-correctionexclusion-for-gnss-measurement-using-raim-an.md",
+    "2015-passive-sensor-integration-for-vehicle-self-localization-in.md",
+    "2016-3d-building-model-pedestrian-positioning-method-using-gpsgl.md",
+    "2016-a-probabilistic-model-of-pedestrian-crossing-behavior-at-sig.md",
+    "2016-accurate-estimation-of-pedestrian-orientation-from-on-board.md",
+    "2016-database-calibration-for-outdoor-wi-fi-positioning-system.md",
+    "2016-gnsson-board-inertial-sensor-integration-with-the-aid-of-3d.md",
+    "2016-human-like-motion-planning-model-for-driving-in-signalized-i.md",
+    "2016-integrating-global-navigation-satellite-system-and-road-mark.md",
+    "2016-optimization-of-3d-building-models-by-gps-measurements.md",
+    "2016-urban-pedestrian-navigation-using-smartphone-based-dead-reck.md",
+    "2017-intelligent-viaduct-recognition-and-driving-altitude-determi.md",
+    "2017-multiple-faulty-gnss-measurement-exclusion-based-on-consiste.md",
+    "2018-a-new-path-planning-algorithm-using-gnss-localization-error.md",
+    "2018-analysis-and-modelling-gps-nlos-effect-in-highly-urbanized-a.md",
+    "2018-gnss-correction-using-altitude-map-and-its-integration-with.md",
+    "2018-intelligent-gnssins-integrated-navigation-system-for-a-comm.md",
+    "2018-performance-analysis-of-ndt-based-graph-slam-for-autonomous.md",
+    "2018-towards-lane-level-traffic-monitoring-in-urban-environment-u.md",
+    "2019-a-gps-spoofing-generator-using-an-open-sourced-vector-tracki.md",
+    "2019-a-gradient-boosting-decision-tree-based-gps-signal-reception.md",
+    "2019-an-open-source-matlab-code-on-gps-vector-tracking-based-on-s.md",
+    "2019-correcting-nlos-by-3d-lidar-and-building-height-to-improve-g.md",
+    "2019-gnss-nlos-exclusion-based-on-dynamic-object-detection-using.md",
+    "2019-gps-signal-reception-classification-using-adaptive-neuro-fuz.md",
+    "2019-intelligent-gps-l1-losmultipathnlos-classifiers-based-on-c.md",
+    "2019-rectification-of-gnss-based-collaborative-positioning-using.md",
+    "2019-research-on-time-correlated-errors-using-allan-variance-in-a.md",
+    "2019-tightly-coupled-gnssins-integration-via-factor-graph-and-ai.md",
+    "2019-uncertainty-estimation-of-lidar-matching-aided-by-dynamic-ve.md",
+    "2019-vector-tracking-loop-based-gnss-nlos-detection-and-correctio.md",
+    "2020-3d-mapping-database-aided-gnss-based-collaborative-positioni.md",
+    "2020-a-computation-effective-range-based-3d-mapping-aided-gnss-wi.md",
+    "2020-extending-shadow-matching-to-tightly-coupled-gnssins-integr.md",
+    "2020-improved-weighting-scheme-using-consumer-level-gnss-l5e5ab.md",
+    "2020-improving-gps-code-phase-positioning-accuracy-in-urban-envir.md",
+    "2020-integrity-for-autonomous-vehicles-and-towards-a-novel-alert.md",
+    "2020-integrity-monitoring-for-all-source-navigation-enhanced-by-k.md",
+    "2020-machine-learning-based-losnlos-classifier-and-robust-estima.md",
+    "2020-multi-agent-collaborative-gnsscamerains-integration-aided.md",
+    "2020-multi-objective-flight-altitude-decision-considering-contrai.md",
+    "2020-object-detection-aided-gnss-and-its-integration-with-lidar-i.md",
+    "2020-robust-visual-inertial-integrated-navigation-system-aided-by.md",
+    "2020-sky-visibility-estimation-based-on-gnss-satellite-visibility.md",
+    "2020-skymask-matching-aided-positioning-using-sky-pointing-fishey.md",
+    "2020-the-design-a-tdcp-smoothed-gnssodometer-integration-scheme.md",
+    "2020-using-dual-polarization-gps-antenna-with-optimized-adaptive.md",
+    "2020-using-sky-pointing-fish-eye-camera-and-lidar-to-aid-gnss-sin.md",
+    "2021-3d-mapping-database-aided-gnss-rtk-and-its-assessments-in-ur.md",
+    "2021-3d-point-clouds-data-super-resolution-aided-lidar-odometry-f.md",
+    "2021-a-probabilistic-approach-to-detect-and-mitigate-gnss-nlos-us.md",
+    "2021-coarse-to-fine-loosely-coupled-lidar-inertial-odometry-for-u.md",
+    "2021-cooperative-surveillance-systems-and-digital-technology-enab.md",
+    "2021-degeneration-aware-outlier-mitigation-for-visual-inertial-in.md",
+    "2021-factor-graph-optimization-for-gnssins-integration-a-compar.md",
+    "2021-gnss-rums-gnss-realistic-urban-multi-agent-simulator-for-co.md",
+    "2021-integration-of-gnss-and-ble-technology-with-inertial-sensors.md",
+    "2021-performance-assessment-of-the-gnss-diffraction-models-in-urb.md",
+    "2021-performance-evaluation-on-map-based-ndt-scan-matching-locali.md",
+    "2021-prediction-on-the-urban-gnss-measurement-uncertainty-based-o.md",
+    "2021-robust-gnss-shadow-matching-for-smartphones-in-urban-canyons.md",
+    "2021-semantic-based-vps-for-smartphone-localization-in-challengin.md",
+    "2021-tightly-coupled-integrated-navigation-system-via-factor-grap.md",
+    "2021-urban-positioning-3d-mapping-aided-gnss-using-dual-frequenc.md",
+    "2022-3d-lidar-aided-gnss-nlos-mitigation-in-urban-canyons.md",
+    "2022-a-novel-insusbl-integrated-navigation-scheme-via-factor-gra.md",
+    "2022-agpc-slam-absolute-ground-plane-constrained-3d-lidar-slam.md",
+    "2022-an-instrumental-measure-of-hand-and-facial-movement-abnormal.md",
+    "2022-carrier-aided-dual-frequency-vectorized-tracking-architectur.md",
+    "2022-data-denoising-based-on-hadamard-matrix-transformation-and-r.md",
+    "2022-gnss-outlier-mitigation-via-graduated-non-convexity-factor-g.md",
+    "2022-gnss-rtk-adaptively-integrated-with-lidarimu-odometry-for-c.md",
+    "2022-resilient-interactive-sensor-independent-update-fusion-navig.md",
+    "2022-scalar-and-vector-tracking-loop-simulation-based-on-a-unifor.md",
+    "2022-time-correlated-window-carrier-phase-aided-gnss-positioning.md",
+    "2023-3d-vision-aided-gnss-real-time-kinematic-positioning-for-aut.md",
+    "2023-a-baseband-mle-for-snapshot-gnss-receiver-using-super-long-c.md",
+    "2023-a-post-correlation-graphical-way-for-continuous-gnss-spoofin.md",
+    "2023-an-anti-spoofing-model-based-on-mvm-and-mccm-for-a-loosely-c.md",
+    "2023-an-improved-inertial-preintegration-model-in-factor-graph-op.md",
+    "2023-an-unassisted-super-resolution-satellite-navigation-receiver.md",
+    "2023-cyclist-orientation-estimation-using-lidar-data.md",
+    "2023-dynamic-object-aware-lidar-odometry-aided-by-joint-weighting.md",
+    "2023-ecmd-an-event-centric-multisensory-driving-dataset-for-slam.md",
+    "2023-glio-tightly-coupled-gnsslidarimu-integration-for-continu.md",
+    "2023-high-accuracy-absolute-position-aided-code-phase-tracking-ba.md",
+    "2023-hong-kong-urbannav-an-open-source-multisensory-dataset-for.md",
+    "2023-integration-of-vehicle-dynamic-model-and-system-identificati.md",
+    "2023-intelligent-environment-adaptive-gnssins-integrated-positio.md",
+    "2023-lidar-based-ndt-matching-performance-evaluation-for-position.md",
+    "2023-lowcost-solidstate-lidarinertialbased-localization-with.md",
+    "2023-multi-epoch-kriging-based-3d-mapping-aided-gnss-and-doppler.md",
+    "2023-performance-evaluation-of-vectorized-navic-receiver-using-im.md",
+    "2023-positionnet-cnn-based-gnss-positioning-in-urban-areas-with.md",
+    "2023-resilient-gnss-real-time-kinematic-precise-positioning-with.md",
+    "2023-selection-of-areas-for-effective-gnss-spoofing-attacks-to-a.md",
+    "2023-wind-dynamic-and-energy-efficiency-path-planning-for-unmanne.md",
+    "2024-a-framework-for-graphical-gnss-multipath-and-nlos-mitigation.md",
+    "2024-a-survey-on-cooperative-positioning-using-gnss-measurements.md",
+    "2024-building-model-rectification-using-gnss-reflectometry.md",
+    "2024-characterization-and-validation-of-gnss-multipath-induced-do.md",
+    "2024-enhancing-gnss-positioning-accuracy-for-road-monitoring-syst.md",
+    "2024-enhancing-positioning-in-gnss-denied-environments-based-on-a.md",
+    "2024-enhancing-smartphone-based-pedestrian-positioning-using-fac.md",
+    "2024-factor-graph-optimization-based-gnss-ppp-rtk-an-alternative.md",
+    "2024-factor-graph-optimization-based-smartphone-imu-only-indoor-s.md",
+    "2024-gnss-based-environment-retrieval-a-deep-learning-approach-f.md",
+    "2024-gnss-direct-position-estimation-inspired-positioning-with-ps.md",
+    "2024-gnss-doppler-velocity-estimation-aided-by-3d-mapping-databas.md",
+    "2024-gnssvisualimumap-integration-via-sliding-window-factor-gr.md",
+    "2024-integrity-constrained-factor-graph-optimization-for-gnss-pos.md",
+    "2024-machine-learning-in-gnss-multipathnlos-mitigation-review-a.md",
+    "2024-principal-gaussian-overbound-for-heavy-tailed-error-bounding.md",
+    "2024-random-forest-based-multipath-parameter-estimation.md",
+    "2024-ray-tracing-correction-for-gnss-velocity-estimation-using-do.md",
+    "2024-safety-quantifiable-planar-feature-based-lidar-localization.md",
+    "2024-subspace-based-adaptive-gmm-error-modeling-for-fault-aware-p.md",
+    "2024-tightly-coupled-visualinertialmap-integration-with-observa.md",
+    "2024-towards-highdefinition-vector-map-construction-based-on-mul.md",
+    "2024-towards-persistent-spatial-awareness-a-review-of-pedestrian.md",
+    "2024-trajectory-smoothing-using-gnsspdr-integration-via-factor-g.md",
+    "2024-urban-building-updates-monitoring-based-on-sky-visibility-es.md",
+    "2025-3d-lidar-aided-gnss-nlos-correction-by-direction-of-arrival.md",
+    "2025-automated-camera-positioning-for-digital-twinning-incorpora.md",
+    "2025-fault-detection-algorithm-for-gaussian-mixture-noises-an-ap.md",
+    "2025-framework-for-low-cost-indoor-smartphone-camera-based-locali.md",
+    "2025-graph-based-indoor-3d-pedestrian-location-tracking-with-iner.md",
+    "2025-grid-based-3dma-gnss-with-clustering-and-doppler-velocity-us.md",
+    "2025-multiple-faults-isolation-for-multi-constellation-gnss-posit.md",
+    "2025-safety-quantifiable-line-feature-based-monocular-visual-loca.md",
+    "2025-tightly-joined-positioning-and-control-model-for-unmanned-ae.md",
+    "magazine-2015-autonomous-vehicle-technologies-localization-and-mapping.md"
+  ]
+}

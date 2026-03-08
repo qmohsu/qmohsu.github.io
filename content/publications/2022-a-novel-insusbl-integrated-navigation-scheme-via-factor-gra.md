@@ -8,7 +8,7 @@ venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
 cv_number: 62
 featured: false
-doi: ""
+doi: "10.1109/tvt.2022.3177739"
 pdf: ""
 code: ""
 data: ""

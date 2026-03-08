@@ -8,7 +8,7 @@ venue: "Navigation, Journal of Institute of Navigation"
 type: "journal"
 cv_number: 60
 featured: false
-doi: ""
+doi: "10.33012/navi.527"
 pdf: ""
 code: ""
 data: ""

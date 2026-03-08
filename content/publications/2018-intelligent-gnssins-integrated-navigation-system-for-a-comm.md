@@ -8,7 +8,7 @@ venue: "Aerospace Science and Technology"
 type: "journal"
 cv_number: 119
 featured: false
-doi: ""
+doi: "10.1016/j.ast.2018.07.026"
 pdf: ""
 code: ""
 data: ""

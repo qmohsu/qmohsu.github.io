@@ -12,7 +12,7 @@ venue: "IEEE Sensors Journal"
 type: "journal"
 cv_number: 45
 featured: false
-doi: ""
+doi: "10.1109/jsen.2023.3312911"
 pdf: ""
 code: ""
 data: ""

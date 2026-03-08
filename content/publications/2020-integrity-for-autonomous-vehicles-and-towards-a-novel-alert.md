@@ -8,7 +8,7 @@ venue: "Proc. IMechE, Part D: Journal of Automobile Engineering"
 type: "journal"
 cv_number: 102
 featured: false
-doi: ""
+doi: "10.1177/0954407020965760"
 pdf: ""
 code: ""
 data: ""

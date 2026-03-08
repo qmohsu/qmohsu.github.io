@@ -13,7 +13,7 @@ venue: "IEEE Access"
 type: "journal"
 cv_number: 74
 featured: false
-doi: ""
+doi: "10.1109/access.2021.3052733"
 pdf: ""
 code: ""
 data: ""

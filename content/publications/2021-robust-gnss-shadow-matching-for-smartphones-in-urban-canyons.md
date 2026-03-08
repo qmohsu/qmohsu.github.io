@@ -9,7 +9,7 @@ venue: "IEEE Sensors Journal"
 type: "journal"
 cv_number: 79
 featured: true
-doi: ""
+doi: "10.1109/jsen.2021.3083801"
 pdf: ""
 code: ""
 data: ""

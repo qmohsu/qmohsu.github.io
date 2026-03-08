@@ -9,7 +9,7 @@ venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 88
 featured: false
-doi: ""
+doi: "10.1109/tits.2020.2988531"
 pdf: ""
 code: ""
 data: ""

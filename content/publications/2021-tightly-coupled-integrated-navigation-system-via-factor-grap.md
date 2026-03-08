@@ -8,7 +8,7 @@ venue: "Aerospace Science and Technology"
 type: "journal"
 cv_number: 75
 featured: false
-doi: ""
+doi: "10.1016/j.ast.2020.106370"
 pdf: ""
 code: ""
 data: ""

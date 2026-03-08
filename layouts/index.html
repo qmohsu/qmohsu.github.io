@@ -67,8 +67,12 @@
     {{ end }}
     {{ range first 8 ($current.ByParam "sort_order") }}
       <div class="card person-card" style="min-width:120px;">
-        {{ $words := split .Title " " }}
-        <div class="initials">{{ range $i, $w := $words }}{{ if lt $i 2 }}{{ substr $w 0 1 | upper }}{{ end }}{{ end }}</div>
+        {{ if .Params.photo }}
+          <img class="photo" src="{{ .Params.photo | relURL }}" alt="{{ .Title }}">
+        {{ else }}
+          {{ $words := split .Title " " }}
+          <div class="initials">{{ range $i, $w := $words }}{{ if lt $i 2 }}{{ substr $w 0 1 | upper }}{{ end }}{{ end }}</div>
+        {{ end }}
         <h3 style="font-size:0.9rem;"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p class="role">{{ .Params.role }}</p>
       </div>

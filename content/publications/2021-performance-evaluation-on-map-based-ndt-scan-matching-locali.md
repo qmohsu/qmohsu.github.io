@@ -9,7 +9,7 @@ venue: "IEEE Sensors Letter"
 type: "journal"
 cv_number: 84
 featured: false
-doi: ""
+doi: "10.1109/lsens.2021.3060097"
 pdf: ""
 code: ""
 data: ""

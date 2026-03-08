@@ -8,7 +8,7 @@ venue: "IEEE Sensors Journals"
 type: "journal"
 cv_number: 95
 featured: false
-doi: ""
+doi: "10.1109/jsen.2020.3026081"
 pdf: ""
 code: ""
 data: ""

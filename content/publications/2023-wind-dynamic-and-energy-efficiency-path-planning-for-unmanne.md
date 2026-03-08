@@ -16,7 +16,7 @@ venue: "Sustainable Energy Technologies and Assessments"
 type: "journal"
 cv_number: 51
 featured: false
-doi: ""
+doi: "10.1016/j.seta.2023.103202"
 pdf: ""
 code: ""
 data: ""

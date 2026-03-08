@@ -9,7 +9,7 @@ venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"
 cv_number: 23
 featured: false
-doi: ""
+doi: "10.1109/tiv.2024.3412208"
 pdf: ""
 code: ""
 data: ""

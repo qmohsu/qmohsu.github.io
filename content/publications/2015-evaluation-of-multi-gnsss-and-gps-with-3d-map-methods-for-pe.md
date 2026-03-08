@@ -9,7 +9,7 @@ venue: "IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Co
 type: "journal"
 cv_number: 139
 featured: false
-doi: ""
+doi: "10.1587/transfun.e98.a.284"
 pdf: ""
 code: ""
 data: ""

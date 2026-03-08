@@ -9,7 +9,7 @@ venue: "IET Intelligent Transport Systems"
 type: "journal"
 cv_number: 101
 featured: false
-doi: ""
+doi: "10.1049/iet-its.2019.0587"
 pdf: ""
 code: ""
 data: ""

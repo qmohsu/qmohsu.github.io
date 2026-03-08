@@ -10,7 +10,7 @@ venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
 cv_number: 44
 featured: false
-doi: ""
+doi: "10.33012/navi.588"
 pdf: ""
 code: ""
 data: ""

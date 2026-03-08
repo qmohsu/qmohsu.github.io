@@ -11,7 +11,7 @@ venue: "GPS Solutions"
 type: "journal"
 cv_number: 28
 featured: false
-doi: ""
+doi: "10.1007/s10291-024-01627-5"
 pdf: ""
 code: ""
 data: ""

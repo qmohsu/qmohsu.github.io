@@ -11,7 +11,7 @@ venue: "Measurement"
 type: "journal"
 cv_number: 48
 featured: false
-doi: ""
+doi: "10.1016/j.measurement.2023.112974"
 pdf: ""
 code: ""
 data: ""

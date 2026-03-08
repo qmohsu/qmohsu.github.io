@@ -10,7 +10,7 @@ venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
 cv_number: 73
 featured: false
-doi: ""
+doi: "10.1109/tvt.2021.3069212"
 pdf: ""
 code: ""
 data: ""

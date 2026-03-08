@@ -7,7 +7,7 @@ venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 61
 featured: false
-doi: ""
+doi: "10.1109/tits.2022.3150273"
 pdf: ""
 code: ""
 data: ""

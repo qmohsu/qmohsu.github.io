@@ -11,7 +11,7 @@ venue: "IET Electronics Letters"
 type: "journal"
 cv_number: 116
 featured: false
-doi: ""
+doi: "10.1049/el.2018.8075"
 pdf: ""
 code: ""
 data: ""

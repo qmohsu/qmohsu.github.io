@@ -11,7 +11,7 @@ venue: "Journal of Navigation"
 type: "journal"
 cv_number: 110
 featured: false
-doi: ""
+doi: "10.1017/s0373463318000899"
 pdf: ""
 code: ""
 data: ""

@@ -12,7 +12,7 @@ venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
 cv_number: 4
 featured: false
-doi: ""
+doi: "10.1109/tim.2025.3584142"
 pdf: ""
 code: ""
 data: ""

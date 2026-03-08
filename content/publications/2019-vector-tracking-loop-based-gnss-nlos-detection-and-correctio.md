@@ -8,7 +8,7 @@ venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
 cv_number: 108
 featured: false
-doi: ""
+doi: "10.1109/tim.2019.2950578"
 pdf: ""
 code: ""
 data: ""

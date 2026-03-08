@@ -10,7 +10,7 @@ venue: "Transportation Research Record Journal"
 type: "journal"
 cv_number: 135
 featured: false
-doi: ""
+doi: "10.3141/2595-07"
 pdf: ""
 code: ""
 data: ""

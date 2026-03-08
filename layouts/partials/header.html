@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="brand">
-      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+      <a href="{{ "/" | relURL }}" class="brand-link"><img src="{{ "/images/logos/ipnl-logo.png" | relURL }}" alt="IPNL" class="brand-logo">{{ .Site.Title }}</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="main-nav">

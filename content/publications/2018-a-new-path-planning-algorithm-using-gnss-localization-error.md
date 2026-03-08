@@ -8,7 +8,7 @@ venue: "Journal of Intelligent & Robotic Systems"
 type: "journal"
 cv_number: 120
 featured: false
-doi: ""
+doi: "10.1007/s10846-018-0894-5"
 pdf: ""
 code: ""
 data: ""

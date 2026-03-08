@@ -10,7 +10,7 @@ venue: "IEEE Sensors Journal"
 type: "journal"
 cv_number: 130
 featured: false
-doi: ""
+doi: "10.1109/jsen.2015.2496621"
 pdf: ""
 code: ""
 data: ""

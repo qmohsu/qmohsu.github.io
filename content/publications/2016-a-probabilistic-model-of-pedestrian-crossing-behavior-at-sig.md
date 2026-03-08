@@ -11,7 +11,7 @@ venue: "Transportation Research Part C-Emerging Technologies"
 type: "journal"
 cv_number: 127
 featured: false
-doi: ""
+doi: "10.1016/j.trc.2016.07.011"
 pdf: ""
 code: ""
 data: ""

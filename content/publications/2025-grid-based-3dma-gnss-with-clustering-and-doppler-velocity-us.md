@@ -12,7 +12,7 @@ venue: "The Journal of Navigation"
 type: "journal"
 cv_number: 6
 featured: false
-doi: ""
+doi: "10.1017/s0373463325000220"
 pdf: ""
 code: ""
 data: ""

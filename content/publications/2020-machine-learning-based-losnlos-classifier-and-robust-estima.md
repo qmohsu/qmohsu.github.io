@@ -10,7 +10,7 @@ venue: "Satellite Navigation"
 type: "journal"
 cv_number: 104
 featured: false
-doi: ""
+doi: "10.1186/s43020-020-00016-w"
 pdf: ""
 code: ""
 data: ""

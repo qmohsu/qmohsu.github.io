@@ -10,7 +10,7 @@ venue: "Advances in Space Research"
 type: "journal"
 cv_number: 91
 featured: false
-doi: ""
+doi: "10.1016/j.asr.2020.06.002"
 pdf: ""
 code: ""
 data: ""

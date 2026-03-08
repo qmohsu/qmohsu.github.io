@@ -11,7 +11,7 @@ venue: "IEEE Sensors Journals"
 type: "journal"
 cv_number: 124
 featured: false
-doi: ""
+doi: "10.1109/jsen.2017.2654359"
 pdf: ""
 code: ""
 data: ""

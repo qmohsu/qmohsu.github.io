@@ -3,6 +3,6 @@ title: "Haosheng Xu"
 role: "PhD Student"
 status: "current"
 years: "2020-present"
-photo: ""
+photo: "/images/people/haosheng-xu.png"
 sort_order: 10
 ---

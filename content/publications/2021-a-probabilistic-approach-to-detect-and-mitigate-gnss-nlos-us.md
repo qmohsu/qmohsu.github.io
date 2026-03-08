@@ -9,7 +9,7 @@ venue: "GPS Solutions"
 type: "journal"
 cv_number: 83
 featured: false
-doi: ""
+doi: "10.1007/s10291-021-01101-6"
 pdf: ""
 code: ""
 data: ""

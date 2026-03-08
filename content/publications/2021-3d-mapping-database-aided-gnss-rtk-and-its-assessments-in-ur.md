@@ -8,7 +8,7 @@ venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"
 cv_number: 72
 featured: true
-doi: ""
+doi: "10.1109/taes.2021.3069271"
 pdf: ""
 code: ""
 data: ""

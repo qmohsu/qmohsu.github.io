@@ -9,7 +9,7 @@ venue: "Sensors"
 type: "journal"
 cv_number: 70
 featured: false
-doi: ""
+doi: "10.3390/s21186137"
 pdf: ""
 code: ""
 data: ""

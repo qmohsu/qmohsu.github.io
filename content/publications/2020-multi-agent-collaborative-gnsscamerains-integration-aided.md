@@ -12,7 +12,7 @@ venue: "IEEE Access"
 type: "journal"
 cv_number: 92
 featured: false
-doi: ""
+doi: "10.1109/access.2020.3006210"
 pdf: ""
 code: ""
 data: ""

@@ -9,7 +9,7 @@ venue: "Sustainability"
 type: "journal"
 cv_number: 99
 featured: false
-doi: ""
+doi: "10.3390/su12156253"
 pdf: ""
 code: ""
 data: ""

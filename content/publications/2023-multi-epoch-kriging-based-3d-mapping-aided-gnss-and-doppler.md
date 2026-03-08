@@ -11,7 +11,7 @@ venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
 cv_number: 36
 featured: false
-doi: ""
+doi: "10.33012/navi.617"
 pdf: ""
 code: ""
 data: ""

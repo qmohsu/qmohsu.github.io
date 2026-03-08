@@ -10,7 +10,7 @@ venue: "IEEE Internet of Things Journal"
 type: "journal"
 cv_number: 25
 featured: false
-doi: ""
+doi: "10.1109/jiot.2024.3396360"
 pdf: ""
 code: ""
 data: ""

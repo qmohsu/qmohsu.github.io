@@ -5,6 +5,6 @@ status: "alumni"
 years: "2022-2024"
 thesis: "Learning-Based Approaches for Global Navigation Satellite System Positioning in Urban Area"
 current_position: "Postdoc in AAE, PolyU"
-photo: ""
+photo: "/images/people/penghui-xu.png"
 sort_order: 106
 ---

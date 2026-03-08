@@ -9,7 +9,7 @@ venue: "Remote Sensing"
 type: "journal"
 cv_number: 97
 featured: false
-doi: ""
+doi: "10.20944/preprints202003.0018.v1"
 pdf: ""
 code: ""
 data: ""

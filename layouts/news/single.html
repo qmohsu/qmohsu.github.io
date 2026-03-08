@@ -3,6 +3,9 @@
   <p class="news-date">{{ .Date.Format "2 January 2006" }}</p>
   {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
   <h1>{{ .Title }}</h1>
+  {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="" style="max-width:100%;border-radius:var(--radius);margin:14px 0;">
+  {{ end }}
   {{ .Content }}
 </article>
 {{ end }}

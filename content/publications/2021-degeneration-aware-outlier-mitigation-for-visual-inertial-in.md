@@ -9,7 +9,7 @@ venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
 cv_number: 69
 featured: false
-doi: ""
+doi: "10.1109/tim.2021.3126010"
 pdf: ""
 code: ""
 data: ""

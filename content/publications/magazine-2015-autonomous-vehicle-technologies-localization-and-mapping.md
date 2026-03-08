@@ -9,7 +9,7 @@ venue: "IEICE Fundamentals Review"
 type: "magazine"
 cv_number: 3
 featured: false
-doi: ""
+doi: "10.1587/essfr.9.2_131"
 pdf: ""
 code: ""
 data: ""
