@@ -1,7 +1,7 @@
 <div class="pub-entry">
   {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
   <div class="pub-title">
-    {{ with .Permalink }}<a href="{{ . }}">{{ end }}{{ .Title }}{{ with .Permalink }}</a>{{ end }}
+    {{ .Title }}
   </div>
   {{ with .Params.authors }}
   <div class="pub-authors">
