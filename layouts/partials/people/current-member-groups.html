@@ -1,0 +1,12 @@
+{{ $people := . }}
+{{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
+
+{{ $groups := slice
+  (dict "title" "Postdoctoral Fellows" "items" (sort (where $current ".Params.role" "eq" "Postdoctoral Fellow") "Title"))
+  (dict "title" "PhD Students" "items" (sort (where $current ".Params.role" "eq" "PhD Student") "Title"))
+  (dict "title" "MSc Students" "items" (sort (where $current ".Params.role" "eq" "MSc Student") "Title"))
+  (dict "title" "Administrative Staff" "items" (sort (where $current ".Params.role" "eq" "Administrative Staff") "Title"))
+  (dict "title" "Research Assistants" "items" (sort (where $current ".Params.role" "eq" "Research Assistant") "Title"))
+}}
+
+{{ return $groups }}
