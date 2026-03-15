@@ -109,6 +109,20 @@ h1, h2, h3 { line-height: 1.2; }
   margin: 0 0 14px;
   font-size: 1.35rem;
 }
+.member-groups {
+  display: grid;
+  gap: 24px;
+}
+.member-group h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+.group-empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
 
 /* ---- Cards grid ---- */
 .cards {

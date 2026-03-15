@@ -19,12 +19,26 @@
 
 {{/* Current Members */}}
 {{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
+{{ $groups := partial "people/current-member-groups.html" $people }}
 {{ if $current }}
 <div class="section">
   <h2>Current Members</h2>
-  <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-    {{ range $current.ByParam "sort_order" }}
-      {{ partial "person-card.html" . }}
+  <div class="member-groups">
+    {{ range $groups }}
+      {{ $title := index . "title" }}
+      {{ $items := index . "items" }}
+      <div class="member-group">
+        <h3>{{ $title }}</h3>
+        {{ if gt (len $items) 0 }}
+        <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+          {{ range $items }}
+            {{ partial "person-card.html" . }}
+          {{ end }}
+        </div>
+        {{ else }}
+        <p class="group-empty">Currently no members listed in this category.</p>
+        {{ end }}
+      </div>
     {{ end }}
   </div>
 </div>

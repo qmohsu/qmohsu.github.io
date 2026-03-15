@@ -52,30 +52,35 @@
 {{ $people := where .Site.RegularPages "Section" "people" }}
 {{ $pi := where $people ".Params.role" "PI" }}
 {{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
+{{ $groups := partial "people/current-member-groups.html" $people }}
 {{ if or $pi $current }}
 <section class="section">
   <h2>People</h2>
-  <div class="people-strip">
-    {{ range $pi }}
-      <div class="card person-card" style="min-width:140px;">
-        {{ if .Params.photo }}
-          <img class="photo" src="{{ .Params.photo | relURL }}" alt="{{ .Title }}">
-        {{ end }}
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <p class="role">{{ .Params.role }}</p>
+  {{ if $pi }}
+  <div class="member-group">
+    <h3>Principal Investigator</h3>
+    <div class="cards" style="grid-template-columns: 1fr;">
+      {{ range $pi }}
+        {{ partial "person-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <div class="member-groups member-groups-home">
+    {{ range $groups }}
+      {{ $title := index . "title" }}
+      {{ $items := index . "items" }}
+      {{ if gt (len $items) 0 }}
+      <div class="member-group">
+        <h3>{{ $title }}</h3>
+        <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+          {{ range $items }}
+            {{ partial "person-card.html" . }}
+          {{ end }}
+        </div>
       </div>
-    {{ end }}
-    {{ range first 8 ($current.ByParam "sort_order") }}
-      <div class="card person-card" style="min-width:120px;">
-        {{ if .Params.photo }}
-          <img class="photo" src="{{ .Params.photo | relURL }}" alt="{{ .Title }}">
-        {{ else }}
-          {{ $words := split .Title " " }}
-          <div class="initials">{{ range $i, $w := $words }}{{ if lt $i 2 }}{{ substr $w 0 1 | upper }}{{ end }}{{ end }}</div>
-        {{ end }}
-        <h3 style="font-size:0.9rem;"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <p class="role">{{ .Params.role }}</p>
-      </div>
+      {{ end }}
     {{ end }}
   </div>
   <p style="margin-top:10px;text-align:center;"><a href="{{ "/people/" | relURL }}">View all members &rarr;</a></p>
