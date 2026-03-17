@@ -1,11 +1,10 @@
 ---
 title: "GNSS-based Environment Retrieval: A Deep Learning Approach for Fine-grained Environment Perception"
 authors:
-  - "Zhang"
-  - "Xu"
-  - "Zhang"
-  - "Hsu"
-  - "L. T"
+  - "Zhang Z"
+  - "Xu P"
+  - "Zhang G"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"

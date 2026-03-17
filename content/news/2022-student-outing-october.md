@@ -4,6 +4,8 @@ date: 2022-10-06
 category: "student"
 summary: "IPNL students gathered for an autumn outing to build team spirit and enjoy Hong Kong's pleasant fall weather."
 image: "/images/news/std-20221006a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL students took a break from their research in early October 2022 to enjoy an autumn outing together. With Hong Kong's cooler weather providing a welcome reprieve from the summer heat, the event offered a chance for the lab community to recharge and strengthen friendships that form the backbone of collaborative research.

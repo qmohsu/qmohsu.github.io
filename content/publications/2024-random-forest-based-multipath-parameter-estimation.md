@@ -1,11 +1,10 @@
 ---
 title: "Random forest-based multipath parameter estimation"
 authors:
-  - "Qi"
-  - "Xu"
-  - "Wang"
-  - "Hsu"
-  - "L. T"
+  - "Qi X"
+  - "Xu B"
+  - "Wang Z"
+  - "Hsu L. T"
 year: 2024
 venue: "GPS Solutions"
 type: "journal"

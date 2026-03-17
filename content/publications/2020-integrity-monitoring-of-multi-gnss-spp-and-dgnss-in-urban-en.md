@@ -3,7 +3,7 @@ title: "Integrity Monitoring of multi-GNSS SPP and DGNSS in Urban Environment us
 authors:
   - "El-Mowafy A"
   - "Xu B"
-  - "and Hsu L. T"
+  - "Hsu L. T"
 year: 2020
 venue: "Journal of Spatial Science"
 type: "journal"

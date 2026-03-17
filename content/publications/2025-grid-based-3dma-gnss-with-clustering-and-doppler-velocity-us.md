@@ -1,12 +1,10 @@
 ---
 title: "Grid-based 3DMA GNSS with clustering and Doppler velocity using factor graph optimisation"
 authors:
-  - "Ng"
-  - "H. F"
-  - "Zhong"
-  - "Groves"
-  - "Hsu"
-  - "L. T"
+  - "Ng H. F"
+  - "Zhong Q"
+  - "Groves P"
+  - "Hsu L. T"
 year: 2025
 venue: "The Journal of Navigation"
 type: "journal"

@@ -1,12 +1,11 @@
 ---
 title: "LiDAR-based NDT Matching Performance Evaluation for Positioning in Adverse Weather Conditions"
 authors:
-  - "Chang"
-  - "Hu"
-  - "Huang"
-  - "Xu"
-  - "Hsu"
-  - "L. T"
+  - "Chang J"
+  - "Hu R"
+  - "Huang F"
+  - "Xu D"
+  - "Hsu L. T"
 year: 2023
 venue: "IEEE Sensors Journal"
 type: "journal"

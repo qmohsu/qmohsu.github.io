@@ -4,6 +4,8 @@ date: 2019-07-10
 category: "event"
 summary: "Dr. Taro Suzuki from Chiba Institute of Technology visited IPNL."
 image: "/images/news/20190710a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL welcomed Dr. Taro Suzuki from the [Chiba Institute of Technology](https://www.it-chiba.ac.jp/english/) in Japan for a research exchange focused on GNSS vector tracking and software-defined receivers (SDRs). Dr. Suzuki is an expert in GNSS signal processing with a particular focus on software-defined receiver architectures and vector tracking loop technologies. His research has contributed to advancing open-source GNSS SDR platforms and exploring how vector tracking techniques can improve receiver performance in challenging signal environments.

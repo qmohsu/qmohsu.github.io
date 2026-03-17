@@ -4,6 +4,8 @@ date: 2022-11-04
 category: "event"
 summary: "IPNL hosted a meeting with SAIC for collaborative research discussions."
 image: "/images/news/20221104a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL hosted a meeting with [SAIC Motor Corporation](https://www.saicmotor.com/english/) (formerly Shanghai Automotive Industry Corporation), one of China's largest state-owned automotive manufacturers, to discuss collaborative research opportunities in intelligent vehicle positioning. Headquartered in Shanghai, SAIC Motor is a major player in the global automotive industry and has been actively investing in autonomous driving technology, intelligent connected vehicles, and new energy vehicles as part of its strategic transformation.

@@ -4,6 +4,8 @@ date: 2022-10-26
 category: "event"
 summary: "IPNL team visited ASTRI (Applied Science and Technology Research Institute)."
 image: "/images/news/20221026a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 The IPNL team visited the [Applied Science and Technology Research Institute](https://www.astri.org) (ASTRI) in Hong Kong for a technology exchange and collaboration discussion. ASTRI is Hong Kong's flagship applied research and development center, established by the Hong Kong SAR Government's Innovation and Technology Commission. It conducts research across a range of technology domains including communications, artificial intelligence, IoT, and smart city infrastructure, with a mission to bridge the gap between academic research and industry application.

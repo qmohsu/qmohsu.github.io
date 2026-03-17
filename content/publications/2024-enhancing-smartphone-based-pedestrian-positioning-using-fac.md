@@ -1,14 +1,11 @@
 ---
 title: "Enhancing Smartphone-based Pedestrian Positioning: Using Factor Graph Optimization with Indoor/Outdoor Detection for 3DMA GNSS/Visual-Inertial State Estimation"
 authors:
-  - "Ho"
-  - "H. Y"
-  - "Ng"
-  - "H. F"
-  - "Wen"
-  - "Gu"
-  - "Hsu"
-  - "L. T"
+  - "Ho H. Y"
+  - "Ng H. F"
+  - "Wen W"
+  - "Gu Y"
+  - "Hsu L. T"
 year: 2024
 venue: "Journal of Data Science and Intelligent Systems"
 type: "journal"

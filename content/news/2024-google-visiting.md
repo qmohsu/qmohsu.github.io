@@ -3,6 +3,8 @@ title: "Dr. Hsu completes visiting researcher position at Google"
 date: 2024-08-31
 category: "milestone"
 summary: "Dr. Hsu completed a 20-month visiting researcher position with the Google Android Context team, working on smartphone GNSS positioning."
+source_type: "original_local"
+source_site: "original"
 ---
 
 Dr. Li-Ta Hsu completed his 20-month visiting researcher position at [Google](https://about.google/) from January 2023 to August 2024, working with the Android Context team on smartphone positioning and GNSS improvements. The Android Context team is responsible for the location and context-sensing capabilities that underpin location services across the Android ecosystem, serving billions of devices worldwide. This extended collaboration provided a rare opportunity for direct academic-industry engagement on one of the most impactful applied problems in navigation: delivering accurate, reliable positioning on mass-market consumer smartphones.

@@ -1,10 +1,9 @@
 ---
 title: "Tightly-coupled visual/inertial/map integration with observability analysis for reliable localization of intelligent vehicles"
 authors:
-  - "Zheng"
-  - "Wen"
-  - "Hsu"
-  - "L. T"
+  - "Zheng X"
+  - "Wen W"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"

@@ -1,10 +1,9 @@
 ---
 title: "Factor Graph Optimization-based GNSS PPP-RTK: An Alternative Platform to Study Urban GNSS Precise Positioning"
 authors:
-  - "Xin"
-  - "Geng"
-  - "Hsu"
-  - "L. T"
+  - "Xin S"
+  - "Geng J"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"

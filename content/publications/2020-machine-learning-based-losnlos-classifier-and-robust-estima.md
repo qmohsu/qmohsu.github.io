@@ -4,7 +4,7 @@ authors:
   - "Xu H"
   - "Angrisano A"
   - "Gaglione S"
-  - "and Hsu L. T"
+  - "Hsu L. T"
 year: 2020
 venue: "Satellite Navigation"
 type: "journal"

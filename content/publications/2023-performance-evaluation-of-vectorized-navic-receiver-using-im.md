@@ -1,12 +1,11 @@
 ---
 title: "Performance Evaluation of Vectorized NavIC Receiver Using Improved Dual-Frequency NavIC Measurements"
 authors:
-  - "Dey"
-  - "Iyer"
-  - "Xu"
-  - "Sharma"
-  - "Hsu"
-  - "L. T"
+  - "Dey A"
+  - "Iyer K"
+  - "Xu B"
+  - "Sharma N"
+  - "Hsu L. T"
 year: 2023
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"

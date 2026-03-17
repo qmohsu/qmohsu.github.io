@@ -1,10 +1,9 @@
 ---
 title: "3D Vision Aided GNSS Real-Time Kinematic Positioning for Autonomous Systems in Urban Canyons"
 authors:
-  - "Wen"
-  - "Bai"
-  - "Hsu"
-  - "L. T"
+  - "Wen W"
+  - "Bai X"
+  - "Hsu L. T"
 year: 2023
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"

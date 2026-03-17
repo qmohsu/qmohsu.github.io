@@ -1,12 +1,11 @@
 ---
 title: "Towards Persistent Spatial Awareness: A Review of Pedestrian Dead Reckoning-Centric Indoor Positioning with Smartphones"
 authors:
-  - "Bai"
-  - "Wen"
-  - "Li"
-  - "Shi"
-  - "Hsu"
-  - "L. T"
+  - "Bai S"
+  - "Wen W"
+  - "Li Y"
+  - "Shi C"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"

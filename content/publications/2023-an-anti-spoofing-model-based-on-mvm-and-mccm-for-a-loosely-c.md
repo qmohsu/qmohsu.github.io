@@ -1,13 +1,12 @@
 ---
 title: "An Anti-spoofing Model based on MVM and MCCM for a Loosely-coupled GNSS/INS/LiDAR Kalman Filter"
 authors:
-  - "Chang"
-  - "Zhang"
-  - "Fan"
-  - "Huang"
-  - "Xu"
-  - "Hsu"
-  - "L. T"
+  - "Chang J"
+  - "Zhang Y"
+  - "Fan S"
+  - "Huang F"
+  - "Xu D"
+  - "Hsu L. T"
 year: 2023
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"

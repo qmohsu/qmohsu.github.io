@@ -3,6 +3,10 @@ title: "IPNL receives Google Unrestricted Research Grant"
 date: 2024-03-15
 category: "grant"
 summary: "IPNL received a Google Unrestricted Research Grant for research on smartphone GNSS positioning."
+source_type: "polyu_adaptation"
+source_site: "polyu-rio"
+source_url: "https://www.polyu.edu.hk/rio/news/2024/20241126---polyu-aviation-researcher-supported-by-google/"
+date_note: "Event date; official PolyU pages published 2024-11-26/28"
 ---
 
 The Intelligent Positioning and Navigation Laboratory received a [Google](https://research.google/) Unrestricted Research Grant to support ongoing research on improving GNSS positioning accuracy on Android smartphones. Google's research grant programs provide funding to academic researchers working on problems aligned with Google's technical interests, and the unrestricted format gives recipients the flexibility to direct funds toward the most promising avenues of investigation without constraints on specific deliverables or intellectual property obligations.

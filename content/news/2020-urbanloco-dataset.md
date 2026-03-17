@@ -4,6 +4,8 @@ date: 2020-03-30
 category: "event"
 summary: "IPNL released the UrbanLoco dataset for urban mapping and localization research."
 image: "/images/news/20200330a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL, in collaboration with the Mechanical Systems Control Lab at the University of California, Berkeley, released the UrbanLoco dataset — a full sensor-suite benchmark designed for mapping and localization research in highly urbanized environments. The dataset includes 13 trajectories collected in San Francisco and Hong Kong, covering over 40 kilometers of diverse urban terrain including urban canyons, bridges, tunnels, and sharp turns.

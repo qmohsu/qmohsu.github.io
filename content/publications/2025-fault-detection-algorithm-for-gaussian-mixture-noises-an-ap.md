@@ -1,12 +1,11 @@
 ---
 title: "Fault Detection Algorithm for Gaussian Mixture Noises: An Application in Lidar/IMU Integrated Localization Systems"
 authors:
-  - "Yan"
-  - "Li"
-  - "Huang"
-  - "Wen"
-  - "Hsu"
-  - "L. T"
+  - "Yan P"
+  - "Li Z"
+  - "Huang F"
+  - "Wen W"
+  - "Hsu L. T"
 year: 2025
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"

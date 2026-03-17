@@ -4,6 +4,8 @@ date: 2023-09-30
 category: "event"
 summary: "IPNL organized a workshop on intelligent vehicle urban positioning at IEEE ITSC 2023."
 image: "/images/news/20230930a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL organized the "Workshop on Intelligent Vehicle Urban Positioning" at the [IEEE Intelligent Transportation Systems Conference (ITSC) 2023](https://2023.ieee-itsc.org/), held from September 24 to 28, 2023, in Bilbao, Spain. IEEE ITSC is one of the flagship annual conferences of the IEEE Intelligent Transportation Systems Society, bringing together researchers, engineers, and practitioners from around the world to present advances in intelligent transportation. The 2023 edition marked the 26th iteration of the conference, hosted in the Basque Country's largest city.

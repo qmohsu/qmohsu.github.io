@@ -3,6 +3,10 @@ title: "UrbanNav paper receives ION Most Cited Paper Award"
 date: 2024-09-18
 category: "award"
 summary: "The Hong Kong UrbanNav dataset paper received the Most Cited Paper Award from the journal NAVIGATION."
+source_type: "aae_news_adaptation"
+source_site: "aae"
+source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20251002_gnss-most-cited/"
+date_note: "Event date; official AAE page published 2025-10-02"
 ---
 
 The paper "Hong Kong UrbanNav: An open-source multisensory dataset for benchmarking urban navigation algorithms" received the Most Cited Paper Award from [NAVIGATION: Journal of the Institute of Navigation](https://www.ion.org/navi/). NAVIGATION is the flagship journal of the [Institute of Navigation (ION)](https://www.ion.org/), the premier professional organization dedicated to advancing the art and science of positioning, navigation, and timing. The Most Cited Paper Award recognizes the article that has achieved the highest citation count, reflecting its widespread adoption and influence within the research community.

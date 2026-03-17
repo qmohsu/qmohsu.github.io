@@ -3,6 +3,9 @@ title: "Dr. Li-Ta Hsu receives ION Per Enge Early Achievement Award"
 date: 2023-09-20
 category: "award"
 summary: "Dr. Hsu received the Per Enge Early Achievement Award from the Institute of Navigation, recognizing his contributions to GNSS positioning research."
+source_type: "aae_news_adaptation"
+source_site: "aae"
+source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2023/dr-hsu---2022-per-enge-early-achievement-award/"
 ---
 
 Dr. Li-Ta Hsu received the [Per Enge Early Achievement Award](https://www.ion.org/awards/per-enge-early-achievement.cfm) at [ION GNSS+ 2023](https://www.ion.org/gnss/) in Denver, Colorado. The award is named in honor of the late Professor Per Enge of Stanford University, a pioneering figure in GPS and satellite navigation who made transformative contributions to the Wide Area Augmentation System (WAAS) and the development of aviation navigation integrity. Professor Enge served as director of the Stanford GPS Research Laboratory and was widely regarded as one of the most influential leaders in the positioning, navigation, and timing community.

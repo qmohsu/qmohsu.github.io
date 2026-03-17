@@ -1,9 +1,8 @@
 ---
-title: "3d vision aided gnss real-time kinematic positioning for autonomous systems in urban canyons ([WO2023198090A1](https://patentimages"
+title: "3d vision aided gnss real-time kinematic positioning for autonomous systems in urban canyons"
 authors:
-  - "Hsu"
-  - "L. T"
-  - "Wen"
+  - "Hsu L. T"
+  - "Wen W"
 year: 2023
 venue: "Patent"
 type: "patent"

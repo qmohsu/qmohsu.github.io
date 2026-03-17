@@ -161,6 +161,12 @@ h1, h2, h3 { line-height: 1.2; }
 .badge-current { background: #d4e6f1; color: #1a5276; }
 .badge-alumni { background: #fdebd0; color: #935116; }
 .badge-featured { background: #fef9e7; color: #7d6608; }
+.badge-journal { background: #d4e6f1; color: #1a5276; }
+.badge-conference { background: #d5f5e3; color: #1e8449; }
+.badge-patent { background: #e8daef; color: #6c3483; }
+.badge-magazine { background: #fadbd8; color: #922b21; }
+.badge-book { background: #fdebd0; color: #935116; }
+.pub-badges { margin-bottom: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
 
 /* ---- Person card ---- */
 .person-card {
@@ -200,6 +206,13 @@ h1, h2, h3 { line-height: 1.2; }
 .pub-entry .pub-title {
   font-weight: 600;
   color: var(--text);
+}
+.pub-entry .pub-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.pub-entry .pub-title a:hover {
+  color: var(--accent);
 }
 .pub-entry .pub-authors {
   font-size: 0.9rem;
@@ -263,6 +276,14 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .news-item h3 { margin: 4px 0; font-size: 1rem; }
 .news-item p { margin: 4px 0 0; color: var(--text-secondary); font-size: 0.95rem; }
+.news-source {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+.news-source a { color: var(--accent); }
 
 /* ---- Research theme tile ---- */
 .theme-card {

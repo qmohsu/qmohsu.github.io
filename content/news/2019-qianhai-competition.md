@@ -4,6 +4,8 @@ date: 2019-12-06
 category: "award"
 summary: "IPNL team received recognition at the Qianhai innovation competition."
 image: "/images/news/20191206a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 A team from the Intelligent Positioning and Navigation Laboratory (IPNL) at The Hong Kong Polytechnic University received recognition at the Qianhai innovation and entrepreneurship competition held in Shenzhen, China. The [Qianhai Shenzhen-Hong Kong Modern Service Industry Cooperation Zone](http://www.szqh.gov.cn/) is a major special economic zone established by the Chinese central government in the western part of Shenzhen, designed to deepen cooperation between Shenzhen and Hong Kong and to serve as a hub for innovation, financial services, and technology development.

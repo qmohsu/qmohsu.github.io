@@ -3,9 +3,8 @@ title: "Multipath Mitigation Technique under Strong Multipath Environment Using 
 authors:
   - "Kubo N"
   - "Kobayashi. K"
-  - "Hsu"
-  - "L.T"
-  - "Amai"
+  - "Hsu L.T"
+  - "Amai O"
 year: 2017
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"

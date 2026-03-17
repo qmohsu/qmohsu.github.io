@@ -4,6 +4,8 @@ date: 2019-07-21
 category: "event"
 summary: "IPNL team enjoyed the annual retreat for team building."
 image: "/images/news/20190721a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 In July 2019, the IPNL team gathered for its annual retreat, a tradition that combines research planning with team-building activities in a setting away from the everyday lab environment. The retreat offered an opportunity for all members -- from principal investigators to incoming research students -- to step back from their individual projects and engage with the broader vision and direction of the group. Presentations and discussions covered ongoing work and future research priorities, fostering the kind of cross-project dialogue that can spark new ideas and collaborations.

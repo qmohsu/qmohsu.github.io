@@ -1,11 +1,10 @@
 ---
 title: "Machine Learning in GNSS Multipath/NLOS Mitigation: Review and Benchmark"
 authors:
-  - "Xu"
-  - "Zhang"
-  - "Yang"
-  - "Hsu"
-  - "L. T"
+  - "Xu P"
+  - "Zhang G"
+  - "Yang B"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Aerospace and Electronic Systems Magazine"
 type: "journal"

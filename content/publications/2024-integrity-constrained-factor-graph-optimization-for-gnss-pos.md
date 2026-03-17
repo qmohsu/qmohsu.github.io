@@ -1,10 +1,9 @@
 ---
 title: "Integrity-Constrained Factor Graph Optimization for GNSS Positioning in Urban Canyons"
 authors:
-  - "Xia"
-  - "Wen"
-  - "Hsu"
-  - "L. T"
+  - "Xia X"
+  - "Wen W"
+  - "Hsu L. T"
 year: 2024
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
