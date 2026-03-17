@@ -4,6 +4,8 @@ date: 2019-09-16
 category: "event"
 summary: "IPNL presented research at ION GNSS+ 2019 conference."
 image: "/images/news/20190916a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL presented research at the [ION GNSS+ 2019](https://www.ion.org/gnss/index.cfm) conference, held from September 16 to 20, 2019, in Miami, Florida. ION GNSS+ is the world's largest technical meeting and showcase of GNSS technology, systems, and applications, organized annually by the Institute of Navigation. The conference draws satellite navigation researchers and industry professionals from across the globe and serves as a premier venue for disseminating advances in positioning, navigation, and timing.

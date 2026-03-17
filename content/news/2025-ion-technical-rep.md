@@ -3,6 +3,8 @@ title: "Dr. Hsu re-elected as ION Technical Representative"
 date: 2025-01-10
 category: "leadership"
 summary: "Dr. Hsu was re-elected as Technical Representative to the ION Council, continuing his leadership role in the navigation community."
+source_type: "original_local"
+source_site: "original"
 ---
 
 Dr. Li-Ta Hsu was re-elected as Technical Representative to the [Institute of Navigation (ION)](https://www.ion.org/) Council, continuing his service representing the technical community in the organization's governance. The ION is the premier professional society dedicated to the advancement of positioning, navigation, and timing (PNT) technologies. Founded in 1945, the organization brings together researchers, engineers, and practitioners from academia, government, and industry who work on satellite navigation, inertial systems, and emerging PNT solutions.

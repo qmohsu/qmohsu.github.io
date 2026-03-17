@@ -5,7 +5,7 @@ authors:
   - "Tsai W. M"
   - "Jan S. S"
 year: 2011
-venue: ", Tsai W. M., Jan S. S., “Real Time Indoor Location Based Service Test Bed (II),”"
+venue: "Coordinates Magazine"
 type: "magazine"
 cv_number: 5
 featured: false

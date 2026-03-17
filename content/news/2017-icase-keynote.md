@@ -4,6 +4,8 @@ date: 2017-11-13
 category: "event"
 summary: "Dr. Hsu delivered a keynote speech at the ICASE conference."
 image: "/images/news/20171113a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 Dr. Li-Ta Hsu delivered a keynote speech at the International Conference on Aeronautical Science and Engineering (ICASE) 2017, held in November 2017. ICASE is a conference that brings together researchers and professionals from the fields of aeronautical engineering, aviation technology, and related disciplines, providing a forum for exchanging advances in aerospace science and its applications to modern transportation systems.

@@ -3,6 +3,9 @@ title: "Dr. Hsu serves as General Chair for IPIN 2024"
 date: 2024-10-22
 category: "leadership"
 summary: "Dr. Hsu served as General Chair for the International Conference on Indoor Positioning and Indoor Navigation (IPIN) 2024 at PolyU."
+source_type: "polyu_event_adaptation"
+source_site: "polyu-events"
+source_url: "https://www.polyu.edu.hk/aae/News-and-Events/Event/2024/10/14---IPIN2024"
 ---
 
 Dr. Li-Ta Hsu served as General Chair for the 14th International Conference on Indoor Positioning and Indoor Navigation ([IPIN 2024](https://www.ipin-conference.org/2024/)), hosted at The Hong Kong Polytechnic University. IPIN is the leading annual conference dedicated to research and applications in indoor positioning and navigation, bringing together researchers, industry professionals, and practitioners from around the world. Since its inception, the conference has served as a key forum for presenting advances in technologies such as Wi-Fi fingerprinting, ultra-wideband (UWB) ranging, inertial navigation, Bluetooth Low Energy (BLE), visual positioning, and sensor fusion for indoor environments.

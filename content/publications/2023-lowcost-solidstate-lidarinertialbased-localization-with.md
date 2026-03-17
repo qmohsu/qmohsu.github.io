@@ -1,12 +1,11 @@
 ---
 title: "Low‐cost solid‐state LiDAR/inertial‐based localization with prior map for autonomous systems in urban scenarios"
 authors:
-  - "Zhong"
-  - "Huang"
-  - "Zhang"
-  - "Wen"
-  - "Hsu"
-  - "L. T"
+  - "Zhong Y"
+  - "Huang F"
+  - "Zhang J"
+  - "Wen W"
+  - "Hsu L. T"
 year: 2023
 venue: "IET Intelligent Transport Systems"
 type: "journal"

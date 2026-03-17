@@ -7,7 +7,7 @@ authors:
   - "Sharma N"
   - "Hsu L. T"
 year: 2022
-venue: ", IEEE Transactions on Instrumentation and Measurement"
+venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
 cv_number: 66
 featured: false

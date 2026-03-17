@@ -4,6 +4,8 @@ date: 2018-07-30
 category: "event"
 summary: "IPNL organized a GNSS summer school program."
 image: "/images/news/20180730a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 In July 2018, IPNL hosted the second edition of its GNSS Summer School, building on the success of the inaugural programme held the previous year. The summer school brought together students and early-career researchers for an intensive training programme covering the theory and practice of Global Navigation Satellite Systems. Participants were introduced to a range of topics spanning GNSS signal structures, observation models, error sources, and positioning techniques, progressing from foundational concepts to more advanced material over the course of the programme.

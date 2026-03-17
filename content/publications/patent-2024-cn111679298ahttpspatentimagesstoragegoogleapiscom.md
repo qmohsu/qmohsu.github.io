@@ -1,7 +1,9 @@
 ---
-title: "([CN111679298A](https://patentimages.storage.googleapis.com/"
+title: "A method and system for GNSS positioning assisted by three-dimensional map"
 authors:
-  - "([CN111679298A](https://patentimages"
+  - "Wen W"
+  - "Zhang G"
+  - "Hsu L. T"
 year: 2024
 venue: "Patent"
 type: "patent"

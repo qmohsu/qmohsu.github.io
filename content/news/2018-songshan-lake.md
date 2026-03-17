@@ -4,6 +4,8 @@ date: 2018-01-12
 category: "award"
 summary: "IPNL participated in the Songshan Lake innovation competition."
 image: "/images/news/20180112a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL participated in an innovation and entrepreneurship competition held at Songshan Lake in Dongguan, one of the premier high-tech development zones in the Guangdong-Hong Kong-Macao Greater Bay Area. The Songshan Lake High-tech Industrial Development Zone has grown into a major hub for advanced technology companies, research laboratories, and innovation-driven enterprises, making it a fitting venue for showcasing cutting-edge positioning and navigation technologies.

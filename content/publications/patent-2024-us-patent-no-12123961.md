@@ -1,9 +1,8 @@
 ---
 title: "U.S. Patent No. 12,123,961"
 authors:
-  - "Hsu"
-  - "L. T"
-  - "Wen"
+  - "Hsu L. T"
+  - "Wen W"
 year: 2024
 venue: "Patent"
 type: "patent"

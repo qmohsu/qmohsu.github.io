@@ -3,7 +3,7 @@ title: "Intelligent Viaduct Recognition and Driving Altitude Determination using
 authors:
   - "Hsu L.T"
   - "Gu Y"
-  - "and Kamijo S"
+  - "Kamijo S"
 year: 2017
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"

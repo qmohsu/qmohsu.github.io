@@ -4,6 +4,8 @@ date: 2022-09-01
 category: "award"
 summary: "IPNL students received certificate awards recognizing their research achievements."
 image: "/images/news/20220901a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 The Intelligent Positioning and Navigation Laboratory (IPNL) held its annual certificate awards ceremony to recognize outstanding research achievements by its students. The awards celebrate the hard work and technical contributions made by graduate researchers across the lab's core focus areas, including urban GNSS positioning, 3D mapping-aided navigation, multi-sensor fusion, factor graph optimization, and indoor positioning.

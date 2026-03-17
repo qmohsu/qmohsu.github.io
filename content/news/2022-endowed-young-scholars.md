@@ -4,6 +4,9 @@ date: 2022-08-31
 category: "award"
 summary: "Dr. Li-Ta Hsu received the Endowed Young Scholars award at PolyU."
 image: "/images/news/20220831a.jpg"
+source_type: "polyu_adaptation"
+source_site: "aae"
+source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2021/dr-lt-hsu---limin-endowed-young-scholar/"
 ---
 
 Dr. Li-Ta Hsu was recognized with the Endowed Young Scholars award at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/). The PolyU Endowed Young Scholars scheme is a university-wide program designed to support outstanding early-career faculty members who have demonstrated exceptional research potential and scholarly achievement. Recipients of the award receive dedicated funding to advance their research programs, reflecting the university's commitment to nurturing the next generation of academic leaders across its faculties.

@@ -3,7 +3,7 @@ title: "Localization Uncertainty Constrained Lateral PID Control with Aids of Fu
 authors:
   - "Hu S"
   - "Kan Y.C"
-  - "and Hsu L.T"
+  - "Hsu L.T"
 year: 2021
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"

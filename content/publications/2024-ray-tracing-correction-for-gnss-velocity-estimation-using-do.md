@@ -1,12 +1,10 @@
 ---
 title: "Ray-Tracing Correction for GNSS Velocity Estimation Using Doppler Frequency: A Feasibility Analysis"
 authors:
-  - "Zhang"
-  - "Ng"
-  - "H. F"
-  - "Zhang"
-  - "Hsu"
-  - "L. T"
+  - "Zhang L"
+  - "Ng H. F"
+  - "Zhang G"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"

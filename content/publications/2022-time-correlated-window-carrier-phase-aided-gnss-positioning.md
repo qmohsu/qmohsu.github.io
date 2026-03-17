@@ -5,7 +5,7 @@ authors:
   - "Wen W"
   - "Hsu L. T"
 year: 2022
-venue: ", IEEE Transactions on Aerospace and Electronic Systems"
+venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"
 cv_number: 65
 featured: false

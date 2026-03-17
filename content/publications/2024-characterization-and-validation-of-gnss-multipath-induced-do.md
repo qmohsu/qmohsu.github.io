@@ -1,12 +1,11 @@
 ---
 title: "Characterization and Validation of GNSS Multipath-Induced Doppler Measurement Error"
 authors:
-  - "Fang"
-  - "Zhang"
-  - "Zhang"
-  - "Xu"
-  - "Hsu"
-  - "L. T"
+  - "Fang J"
+  - "Zhang L"
+  - "Zhang G"
+  - "Xu B"
+  - "Hsu L. T"
 year: 2024
 venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"

@@ -3,6 +3,46 @@ import re
 import os
 import unicodedata
 
+
+def _looks_like_initials(s):
+    """Check if a string looks like author initials (e.g., 'L. T.', 'R.', 'M. J. L.')."""
+    s = s.strip().replace('*', '').replace('\\', '').strip()
+    if not s:
+        return False
+    cleaned = s.replace('.', '').replace(' ', '')
+    return len(cleaned) <= 4 and cleaned.isupper() and len(cleaned) > 0
+
+
+def merge_author_fragments(authors):
+    """Merge fragmented author entries like ['Hsu', 'L. T'] into ['Hsu L. T'].
+
+    The CV format 'LastName, F. I.' splits into two entries on comma.
+    This function merges consecutive 'LastName' + 'Initials' pairs.
+    """
+    merged = []
+    i = 0
+    while i < len(authors):
+        a = authors[i].strip()
+        if not a:
+            i += 1
+            continue
+        # Remove leading "and"
+        a = re.sub(r'^and\s+', '', a).strip()
+        if not a:
+            i += 1
+            continue
+        # Check if next entry looks like initials
+        if i + 1 < len(authors):
+            next_a = authors[i + 1].strip().replace('*', '').replace('\\', '').strip()
+            next_a = re.sub(r'^and\s+', '', next_a).strip()
+            if _looks_like_initials(next_a):
+                merged.append(f"{a} {next_a.rstrip('.')}")
+                i += 2
+                continue
+        merged.append(a)
+        i += 1
+    return [a for a in merged if a and len(a) > 1]
+
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "content", "publications")
 
 # Featured papers from research.md
@@ -97,14 +137,12 @@ def parse_journal_line(line, current_year):
         authors_str = ""
         after_year = rest
 
-    # Parse authors - split by comma but be careful of "& "
+    # Parse authors - split by comma, then merge "LastName" + "Initials" pairs
     authors_str = authors_str.replace(" & ", ", ").replace("&", ",")
-    authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip()]
-    # Merge multi-part names (e.g., "Hsu" "L. T." -> "Hsu, L. T.")
-    # Authors are already in "Last, F." format mostly
-
-    # Clean up authors list - remove empty entries
-    authors = [a for a in authors if a and len(a) > 1]
+    # Remove "et al."
+    authors_str = re.sub(r',?\s*et al\.?', '', authors_str)
+    raw_authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip()]
+    authors = merge_author_fragments(raw_authors)
 
     # Extract title and venue from after_year
     # Title usually ends before *VenueName* (italic)
@@ -169,19 +207,31 @@ def parse_patent_line(line):
         authors_str = rest.split(".")[0]
 
     authors_str = authors_str.replace(" & ", ", ").replace("&", ",")
-    authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip() and len(a.strip()) > 1]
+    authors_str = re.sub(r',?\s*et al\.?', '', authors_str)
+    raw_authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip()]
+    authors = merge_author_fragments(raw_authors)
 
     # Title is in *italic*
     title_match = re.search(r'\*([^*]+)\*', rest)
     if title_match:
         title = title_match.group(1).strip().rstrip(".")
     else:
-        # Fallback: text after year
+        # Fallback: text after year, before any markdown link
         if year_match:
-            title = rest[year_match.end():].strip().lstrip(". ")
-            title = title.split(".")[0].strip()
+            after = rest[year_match.end():].strip().lstrip(". ")
+            # Stop before markdown link fragments
+            link_pos = re.search(r'\s*\(\[', after)
+            if link_pos:
+                title = after[:link_pos.start()].strip().rstrip(".")
+            else:
+                title = after.split(".")[0].strip()
         else:
             title = rest[:60]
+
+    # Remove any broken markdown link fragments from title
+    title = re.sub(r'\s*\(\[[^\]]*\]\(https?://[^)]*$', '', title)
+    title = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', title)
+    title = title.strip().rstrip(".")
 
     return {
         "cv_number": cv_number,
@@ -218,7 +268,8 @@ def parse_magazine_line(line):
     else:
         authors_str = ""
     authors_str = authors_str.replace(" & ", ", ").replace("&", ",")
-    authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip() and len(a.strip()) > 1]
+    raw_authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip()]
+    authors = merge_author_fragments(raw_authors)
 
     return {
         "cv_number": cv_number,
@@ -261,9 +312,14 @@ def parse_book_line(line):
     venue_match = re.search(r'\*([^*]+Publishers[^*]*)\*', rest)
     venue = venue_match.group(1).strip() if venue_match else "Book"
 
-    # Authors
-    authors_str = rest.split(",")[0:3]
-    authors = [a.strip().rstrip(",").strip().replace("*", "") for a in authors_str if a.strip()]
+    # Authors: extract text before the title quote/bracket
+    if title_match:
+        auth_text = rest[:title_match.start()].rstrip(', "').rstrip()
+    else:
+        auth_text = rest.split(",")[0]
+    auth_text = auth_text.replace(" & ", ", ").replace("&", ",").replace("*", "")
+    raw_authors = [a.strip().rstrip(",").strip() for a in auth_text.split(",") if a.strip()]
+    authors = merge_author_fragments(raw_authors)
 
     return {
         "cv_number": cv_number,
@@ -284,7 +340,8 @@ def write_publication_file(pub, type_prefix=""):
 
     # Clean and escape for YAML
     safe_title = clean_text(pub["title"]).replace('"', '\\"').rstrip(",").strip()
-    clean_authors = [clean_text(a).rstrip(",").rstrip(".").strip() for a in pub["authors"]]
+    # Clean authors but preserve trailing dots in initials (e.g., "Hsu L. T.")
+    clean_authors = [clean_text(a).rstrip(",").strip() for a in pub["authors"]]
     clean_authors = [a for a in clean_authors if a and len(a) > 1]
     clean_venue = clean_text(pub.get("venue", "")).replace('"', '\\"')
 

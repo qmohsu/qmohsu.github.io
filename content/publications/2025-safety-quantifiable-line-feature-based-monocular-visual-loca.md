@@ -1,10 +1,9 @@
 ---
 title: "Safety-quantifiable line feature-based monocular visual localization with 3d prior map"
 authors:
-  - "Zheng"
-  - "Wen"
-  - "Hsu"
-  - "L. T"
+  - "Zheng X"
+  - "Wen W"
+  - "Hsu L. T"
 year: 2025
 venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"

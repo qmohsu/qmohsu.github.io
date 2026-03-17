@@ -4,6 +4,8 @@ date: 2023-03-20
 category: "event"
 summary: "IPNL hosted a GNSS research seminar at The Hong Kong Polytechnic University."
 image: "/images/news/20230320a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL hosted a GNSS research seminar at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) (PolyU), bringing together researchers, students, and industry professionals to discuss the latest advances in satellite-based positioning and navigation. The event featured presentations on topics including multi-constellation GNSS processing, urban positioning challenges, integrity monitoring, and emerging applications in autonomous systems and smart cities.

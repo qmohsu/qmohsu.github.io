@@ -4,6 +4,8 @@ date: 2022-03-22
 category: "event"
 summary: "IPNL team enjoyed a gathering trip to Cheung Chau island."
 image: "/images/news/20220322a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 In March 2022, the IPNL team set out for a day trip to Cheung Chau, one of Hong Kong's beloved outlying islands. The group gathered at the Central ferry pier for the scenic voyage across Victoria Harbour, with the city skyline gradually giving way to open water and the green hills of the surrounding islands. The roughly 35-minute ferry ride itself provided a welcome change of pace from the usual lab environment, offering the team an opportunity to chat and unwind before arriving at the island's crescent-shaped harbour.

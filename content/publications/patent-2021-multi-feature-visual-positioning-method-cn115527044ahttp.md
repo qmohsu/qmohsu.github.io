@@ -1,9 +1,8 @@
 ---
-title: "Multi-feature visual positioning method ([CN115527044A](https://patentimages"
+title: "Multi-feature visual positioning method"
 authors:
-  - "Lee"
-  - "Hsu"
-  - "L. T"
+  - "Lee J"
+  - "Hsu L. T"
 year: 2021
 venue: "Patent"
 type: "patent"

@@ -4,7 +4,7 @@
 
   {{ with .Params.authors }}
   <p class="pub-authors" style="font-size:1rem;">
-    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ if in (lower $a) "hsu" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $la := lower $a }}{{ if or (hasPrefix $la "hsu ") (hasPrefix $la "hsu,") (eq $la "hsu") }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
   </p>
   {{ end }}
 
@@ -12,8 +12,10 @@
     {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
   </p>
 
-  {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
-  {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  <div class="pub-badges">
+    {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+    {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  </div>
 
   {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
   <div class="pub-links" style="margin:14px 0;">

@@ -1,15 +1,18 @@
 <div class="pub-entry">
-  {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  <div class="pub-badges">
+    {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+    {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  </div>
   <div class="pub-title">
-    {{ .Title }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </div>
   {{ with .Params.authors }}
   <div class="pub-authors">
-    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ if in (lower $a) "hsu" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $la := lower $a }}{{ if or (hasPrefix $la "hsu ") (hasPrefix $la "hsu,") (eq $la "hsu") }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
   </div>
   {{ end }}
   <div class="pub-venue">
-    {{ with .Params.venue }}{{ . }}{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
+    {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
   </div>
   {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
   <div class="pub-links">

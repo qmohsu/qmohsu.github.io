@@ -1,10 +1,9 @@
 ---
 title: "A Baseband MLE for Snapshot GNSS Receiver Using Super-Long-Coherent Correlation in a Fractional Fourier Domain"
 authors:
-  - "Luo"
-  - "Hsu"
-  - "L. T"
-  - "El-Sheimy"
+  - "Luo Y"
+  - "Hsu L. T"
+  - "El-Sheimy N"
 year: 2023
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"

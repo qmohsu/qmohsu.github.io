@@ -1,13 +1,12 @@
 ---
 title: "Enhancing GNSS Positioning Accuracy for Road Monitoring Systems: A Factor Graph Optimization Approach Aided by Geospatial Information"
 authors:
-  - "Zhong"
-  - "Hu"
-  - "Bai"
-  - "Li"
-  - "Hsu"
-  - "L. T"
-  - "Wen"
+  - "Zhong Y"
+  - "Hu R"
+  - "Bai X"
+  - "Li X"
+  - "Hsu L. T"
+  - "Wen W"
 year: 2024
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"

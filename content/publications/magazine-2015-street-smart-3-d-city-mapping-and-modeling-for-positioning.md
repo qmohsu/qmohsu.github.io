@@ -5,7 +5,7 @@ authors:
   - "Miura S"
   - "Kamijo S"
 year: 2015
-venue: ", Miura S., Kamijo S., “Street Smart: 3-D City Mapping and Modeling for Positioning with Multi-GNSS,”"
+venue: "GPS World"
 type: "magazine"
 cv_number: 4
 featured: false

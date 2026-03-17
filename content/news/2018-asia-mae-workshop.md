@@ -4,6 +4,8 @@ date: 2018-12-02
 category: "event"
 summary: "IPNL participated in the 8th Asia Workshop on MAE."
 image: "/images/news/20181202a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL participated in the 8th Asia Workshop on Marine and Aviation Engineering (MAE), a regional forum that brings together researchers and engineers working on challenges in marine systems, aviation technologies, and related fields. The workshop provides a platform for exchanging ideas across disciplines that share common technical foundations in navigation, positioning, and autonomous systems.

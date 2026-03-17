@@ -1,9 +1,9 @@
 ---
 title: "Scalar and vector tracking loop simulation based on a uniform semi-analytic model and robustness analysis in multipath/NLOS situations. GPS Solutions 26(97)"
 authors:
-  - "Jia"
-  - "Hsu"
-  - "L. T. and Wu"
+  - "Jia Q"
+  - "Hsu L. T"
+  - "Wu R"
 year: 2022
 venue: ""
 type: "journal"

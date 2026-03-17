@@ -4,6 +4,8 @@ date: 2023-06-21
 category: "event"
 summary: "Dr. Guoquan Huang visited IPNL for research collaboration discussion."
 image: "/images/news/20230621a.jpg"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 IPNL was pleased to host [Dr. Guoquan Huang](https://udel.edu/~ghuang/), Associate Professor in the Department of Mechanical Engineering at the [University of Delaware](https://www.udel.edu/), for a research visit and collaboration discussion. Dr. Huang leads the Robot Perception and Navigation Group ([RPNG](https://sites.udel.edu/rpng/)), which focuses on visual-inertial navigation systems, simultaneous localization and mapping (SLAM), and state estimation for mobile robots. His group has made notable contributions to efficient and consistent filtering-based approaches for visual-inertial odometry, as well as open-source tools that have been widely adopted in the robotics community.

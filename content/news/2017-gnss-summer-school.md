@@ -4,6 +4,8 @@ date: 2017-07-30
 category: "event"
 summary: "IPNL organized the first GNSS summer school program."
 image: "/images/news/20170730a.png"
+source_type: "legacy_ipnl_migration"
+source_site: "legacy-ipnl"
 ---
 
 In July 2017, IPNL launched its inaugural GNSS Summer School, establishing what would become an annual educational programme for students and researchers interested in satellite-based positioning and navigation. Held on the Hong Kong Polytechnic University campus, the summer school was designed to provide a comprehensive introduction to Global Navigation Satellite Systems, covering core topics such as satellite orbits, signal propagation, receiver architectures, and positioning algorithms. The programme aimed to bridge the gap between textbook knowledge and practical research skills, welcoming participants with diverse academic backgrounds.
