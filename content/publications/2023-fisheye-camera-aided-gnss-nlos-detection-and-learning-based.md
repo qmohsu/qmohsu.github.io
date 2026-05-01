@@ -1,0 +1,20 @@
+---
+title: "Fisheye Camera Aided GNSS NLOS Detection and Learning-Based Pseudorange Bias Correction for Intelligent Vehicles in Urban Canyons"
+authors:
+  - "Runzhi Hu"
+  - "Weisong Wen"
+  - "Li-Ta Hsu"
+year: 2023
+venue: "2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)"
+type: "conference"
+cv_number: 178
+featured: false
+doi: "10.1109/itsc57777.2023.10422540"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "urban-gnss"
+  - "machine-learning"
+tags: []
+---
