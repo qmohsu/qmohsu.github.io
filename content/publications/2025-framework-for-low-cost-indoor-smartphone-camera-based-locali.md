@@ -10,6 +10,7 @@ venue: "IEEE Sensors Journal"
 type: "journal"
 cv_number: 1
 featured: false
+quartile: "Q1"
 doi: "10.1109/jsen.2025.3613996"
 pdf: ""
 code: ""

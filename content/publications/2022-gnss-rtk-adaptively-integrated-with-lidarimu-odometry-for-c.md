@@ -6,12 +6,13 @@ authors:
   - "Huang F"
   - "Wang Y"
   - "Chen X"
-  - "Hsu L. T"
+  - "Hsu L. T."
 year: 2022
 venue: "Applied Sciences"
 type: "journal"
 cv_number: 64
 featured: false
+quartile: "Q2"
 doi: "10.3390/app12105193"
 pdf: ""
 code: ""

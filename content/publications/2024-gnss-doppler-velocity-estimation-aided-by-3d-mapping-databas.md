@@ -11,6 +11,7 @@ venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 10
 featured: false
+quartile: "Q1"
 doi: "10.1109/tits.2024.3486448"
 pdf: ""
 code: ""

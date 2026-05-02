@@ -10,6 +10,7 @@ venue: "IEEE Transactions on Mobile Computing"
 type: "journal"
 cv_number: 8
 featured: false
+quartile: "Q1"
 doi: "10.1109/tmc.2025.3526196"
 pdf: ""
 code: ""

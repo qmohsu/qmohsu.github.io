@@ -1,14 +1,15 @@
 ---
 title: "Semantic-Based VPS for Smartphone Localization in Challenging Urban Environments"
 authors:
-  - "Lee J.L. M"
-  - "Hsu L. T"
-  - "Ng H.-F"
+  - "Lee J.L. M."
+  - "Hsu L. T."
+  - "Ng H.-F."
 year: 2021
 venue: "Sensors"
 type: "journal"
 cv_number: 70
 featured: false
+quartile: "Q2"
 doi: "10.3390/s21186137"
 pdf: ""
 code: ""

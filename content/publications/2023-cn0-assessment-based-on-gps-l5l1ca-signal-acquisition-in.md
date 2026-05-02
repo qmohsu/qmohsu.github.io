@@ -10,6 +10,7 @@ venue: "Journal of Aeronautics, Astronautics and Aviation"
 type: "journal"
 cv_number: 52
 featured: false
+quartile: "unranked"
 doi: ""
 pdf: ""
 code: ""

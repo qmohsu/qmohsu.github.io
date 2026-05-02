@@ -4,12 +4,13 @@ authors:
   - "Zhang Z"
   - "Li Y"
   - "He X"
-  - "Hsu L. T"
+  - "Hsu L"
 year: 2023
 venue: "GPS Solutions"
 type: "journal"
 cv_number: 49
 featured: false
+quartile: "Q1"
 doi: "10.1007/s10291-023-01454-0"
 pdf: ""
 code: ""

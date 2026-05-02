@@ -1,14 +1,15 @@
 ---
 title: "Evaluation of Multi-GNSSs and GPS with 3D Map Methods for Pedestrian Positioning in an Urban Canyon Environment"
 authors:
-  - "Hsu L. T"
-  - "Chen F"
-  - "Kamijo S"
+  - "Hsu L. T."
+  - "Chen F."
+  - "Kamijo S."
 year: 2015
-venue: "IEICE TRANSACTIONS on Fundamentals of Electronics, Communications and Computer Sciences"
+venue: "IEICE Transactions"
 type: "journal"
 cv_number: 139
 featured: false
+quartile: "Q4"
 doi: "10.1587/transfun.e98.a.284"
 pdf: ""
 code: ""

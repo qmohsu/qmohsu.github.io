@@ -1,14 +1,15 @@
 ---
 title: "GNSS NLOS Exclusion Based on Dynamic Object Detection Using LiDAR Point Cloud"
 authors:
-  - "Wen W"
-  - "Zhang G"
-  - "Hsu L. T"
+  - "Wen W."
+  - "Zhang G."
+  - "Hsu L. T."
 year: 2019
 venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
 cv_number: 105
 featured: false
+quartile: "Q1"
 doi: "10.1109/tits.2019.2961128"
 pdf: ""
 code: ""

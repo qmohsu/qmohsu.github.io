@@ -1,14 +1,15 @@
 ---
 title: "NLOS Correction/Exclusion for GNSS Measurement using RAIM and City Building Models"
 authors:
-  - "Hsu L. T"
-  - "Gu Y"
-  - "Kamijo S"
+  - "Hsu L. T."
+  - "Gu Y."
+  - "Kamijo S."
 year: 2015
 venue: "Sensors"
 type: "journal"
 cv_number: 136
 featured: false
+quartile: "Q2"
 doi: "10.3390/s150717329"
 pdf: ""
 code: ""

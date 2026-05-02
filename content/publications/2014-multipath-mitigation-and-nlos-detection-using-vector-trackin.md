@@ -1,15 +1,16 @@
 ---
-title: "Multipath mitigation and NLOS detection using vector tracking in urban”"
+title: "Multipath mitigation and NLOS detection using vector tracking in urban"
 authors:
-  - "Hsu L. T"
+  - "Hsu L. T."
   - "Jan S. S"
   - "Groves P. D"
-  - "Kubo N"
+  - "Kubo N."
 year: 2014
 venue: "GPS Solutions"
 type: "journal"
 cv_number: 140
 featured: false
+quartile: "Q1"
 doi: "10.1007/s10291-014-0384-6"
 pdf: ""
 code: ""

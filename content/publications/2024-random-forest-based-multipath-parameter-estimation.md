@@ -10,6 +10,7 @@ venue: "GPS Solutions"
 type: "journal"
 cv_number: 22
 featured: false
+quartile: "Q1"
 doi: "10.1007/s10291-024-01667-x"
 pdf: ""
 code: ""

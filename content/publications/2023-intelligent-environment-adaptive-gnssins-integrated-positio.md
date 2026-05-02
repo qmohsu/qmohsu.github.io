@@ -11,6 +11,7 @@ venue: "Remote Sensing"
 type: "journal"
 cv_number: 35
 featured: false
+quartile: "Q1"
 doi: "10.3390/rs16010181"
 pdf: ""
 code: ""

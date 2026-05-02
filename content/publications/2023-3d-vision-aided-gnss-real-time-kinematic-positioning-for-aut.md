@@ -9,6 +9,7 @@ venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
 cv_number: 43
 featured: false
+quartile: "Q1"
 doi: "10.33012/navi.590"
 pdf: ""
 code: ""

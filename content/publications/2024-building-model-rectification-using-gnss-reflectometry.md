@@ -9,6 +9,7 @@ venue: "IEEE Geoscience and Remote Sensing Letters"
 type: "journal"
 cv_number: 30
 featured: false
+quartile: "Q1"
 doi: "10.1109/lgrs.2024.3373639"
 pdf: ""
 code: ""

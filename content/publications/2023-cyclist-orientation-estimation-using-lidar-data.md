@@ -11,6 +11,7 @@ venue: "Sensors"
 type: "journal"
 cv_number: 55
 featured: false
+quartile: "Q2"
 doi: "10.3390/s23063096"
 pdf: ""
 code: ""

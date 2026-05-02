@@ -9,6 +9,7 @@ venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"
 cv_number: 17
 featured: false
+quartile: "Q1"
 doi: "10.1109/taes.2024.3448405"
 pdf: ""
 code: ""

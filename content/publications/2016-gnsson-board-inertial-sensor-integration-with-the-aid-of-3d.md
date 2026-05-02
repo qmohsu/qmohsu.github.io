@@ -1,14 +1,15 @@
 ---
 title: "GNSS/On-Board Inertial Sensor Integration with the Aid of 3D Building Map for Lane-Level Vehicle Self-Localization in Urban Canyon"
 authors:
-  - "Gu Y"
-  - "Hsu L. T"
-  - "Kamijo S"
+  - "Gu Y."
+  - "Hsu L. T."
+  - "Kamijo S."
 year: 2016
 venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
 cv_number: 128
 featured: false
+quartile: "Q1"
 doi: "10.1109/tvt.2015.2497001"
 pdf: ""
 code: ""

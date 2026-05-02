@@ -11,6 +11,7 @@ venue: "Advanced Engineering Informatics"
 type: "journal"
 cv_number: 71
 featured: false
+quartile: "Q1"
 doi: "10.1016/j.aei.2021.101402"
 pdf: ""
 code: ""

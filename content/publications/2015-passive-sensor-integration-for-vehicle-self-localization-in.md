@@ -1,14 +1,15 @@
 ---
 title: "Passive Sensor Integration for Vehicle Self-Localization in Urban Traffic Environment"
 authors:
-  - "Gu Y"
+  - "Gu Y."
   - "Hsu L. T"
-  - "Kamijo S"
+  - "Kamijo S."
 year: 2015
 venue: "Sensors"
 type: "journal"
 cv_number: 137
 featured: false
+quartile: "Q2"
 doi: "10.3390/s151229795"
 pdf: ""
 code: ""

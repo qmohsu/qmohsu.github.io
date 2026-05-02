@@ -1,15 +1,16 @@
 ---
 title: "Multipath Mitigation Technique under Strong Multipath Environment Using Multiple Antennas"
 authors:
-  - "Kubo N"
-  - "Kobayashi. K"
+  - "Kubo N."
+  - "Kobayashi K."
   - "Hsu L.T"
-  - "Amai O"
+  - "Amai O."
 year: 2017
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
 cv_number: 126
 featured: false
+quartile: "unranked"
 doi: ""
 pdf: ""
 code: ""

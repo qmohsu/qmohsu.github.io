@@ -11,6 +11,7 @@ venue: "Journal of Data Science and Intelligent Systems"
 type: "journal"
 cv_number: 11
 featured: false
+quartile: "Q?"
 doi: "10.47852/bonviewjdsis42022961"
 pdf: ""
 code: ""

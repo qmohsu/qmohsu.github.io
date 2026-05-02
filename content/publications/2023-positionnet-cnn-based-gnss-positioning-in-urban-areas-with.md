@@ -10,6 +10,7 @@ venue: "Applied Soft Computing"
 type: "journal"
 cv_number: 41
 featured: true
+quartile: "Q1"
 doi: "10.2139/ssrn.4194604"
 pdf: ""
 code: ""

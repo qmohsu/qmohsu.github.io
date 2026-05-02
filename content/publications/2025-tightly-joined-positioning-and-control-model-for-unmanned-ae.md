@@ -10,6 +10,7 @@ venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
 cv_number: 3
 featured: false
+quartile: "Q1"
 doi: "10.1109/tvt.2025.3589556"
 pdf: ""
 code: ""
