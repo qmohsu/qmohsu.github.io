@@ -2,3 +2,6 @@ public/
 public/
 start-localhost.cmd
 网站更新规则.md
+
+# Rolling log from scripts/orcid_diff.py — appended on every run
+scripts/orcid_diff_log.txt
