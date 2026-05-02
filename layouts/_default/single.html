@@ -1,6 +1,43 @@
 {{ define "main" }}
+{{ if eq .Section "publications" }}
+{{/* Publications fallback render — Hugo's lookup skips publications/single.html
+     when frontmatter has type: "journal" (etc.) because explicit type takes
+     precedence over section in single-page lookup. So render the publication
+     template here instead. Keep in sync with layouts/publications/single.html. */}}
+<article>
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.authors }}
+  <p class="pub-authors" style="font-size:1rem;">
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $la := lower $a }}{{ if or (hasPrefix $la "hsu ") (hasPrefix $la "hsu,") (eq $la "hsu") }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+  </p>
+  {{ end }}
+
+  <p class="pub-venue" style="font-size:1rem;">
+    {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
+  </p>
+
+  <div class="pub-badges">
+    {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+    {{ with .Params.quartile }}{{ if and (ne . "") (ne . "magazine") (ne . "book") (ne . "oss") }}<span class="badge badge-{{ lower . | replaceRE "[^a-z0-9]" "-" }}" title="Journal quartile (SJR/common-knowledge, current)">{{ . }}</span>{{ end }}{{ end }}
+    {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+  </div>
+
+  {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
+  <div class="pub-links" style="margin:14px 0;">
+    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+    {{ with .Params.pdf }}<a href="{{ . }}" target="_blank">PDF</a>{{ end }}
+    {{ with .Params.code }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
+    {{ with .Params.data }}<a href="{{ . }}" target="_blank">Data</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+</article>
+{{ else }}
 <article>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 </article>
+{{ end }}
 {{ end }}

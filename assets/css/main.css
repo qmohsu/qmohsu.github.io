@@ -166,6 +166,13 @@ h1, h2, h3 { line-height: 1.2; }
 .badge-patent { background: #e8daef; color: #6c3483; }
 .badge-magazine { background: #fadbd8; color: #922b21; }
 .badge-book { background: #fdebd0; color: #935116; }
+/* Journal quartile (SJR / common-knowledge, current) */
+.badge-q1 { background: #15803d; color: #ffffff; font-weight: 700; }
+.badge-q2 { background: #1d4ed8; color: #ffffff; }
+.badge-q3 { background: #b45309; color: #ffffff; }
+.badge-q4 { background: #b91c1c; color: #ffffff; }
+.badge-unranked { background: #e5e7eb; color: #4b5563; }
+.badge-q- { background: #f3f4f6; color: #6b7280; font-style: italic; }
 .pub-badges { margin-bottom: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
 
 /* ---- Person card ---- */
