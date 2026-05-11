@@ -15,6 +15,3 @@ The robot uses a patented handrail-affixed locomotion system to navigate diverse
 
 ![Stairio team at the Geneva 2026 booth](/images/news/2026-stairio-geneva-gold-02.jpg)
 ![Close-up of Stairio's patented handrail-affixed sensor and locomotion module](/images/news/2026-stairio-geneva-gold-03.jpg)
-![IPNL team member presenting Stairio at the booth](/images/news/2026-stairio-geneva-gold-04.jpg)
-![IPNL team explaining Stairio to a Geneva attendee](/images/news/2026-stairio-geneva-gold-05.jpg)
-![IPNL team engaging with attendees beside the Stairio device](/images/news/2026-stairio-geneva-gold-06.jpg)
