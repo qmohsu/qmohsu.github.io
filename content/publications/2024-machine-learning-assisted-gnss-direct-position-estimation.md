@@ -15,7 +15,9 @@ pdf: ""
 code: ""
 data: ""
 themes:
+  - "receiver-sdr"
   - "urban-gnss-reliability"
-  - "machine-learning"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
 tags: []
 ---

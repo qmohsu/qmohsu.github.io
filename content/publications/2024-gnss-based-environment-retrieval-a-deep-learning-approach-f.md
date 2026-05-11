@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS-based Environment Retrieval: A Deep Learning Approach for Fine-grained Environment Perception"
 authors:
   - "Zhang, Z."
@@ -15,6 +15,8 @@ doi: "10.1109/tiv.2024.3440645"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---
