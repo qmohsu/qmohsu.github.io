@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Design a TDCP-Smoothed GNSS/Odometer Integration Scheme with Vehicular-Motion Constraint and Robust Regression"
 authors:
   - "Chiang K. W."
@@ -15,6 +15,9 @@ doi: "10.3390/rs12162550"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

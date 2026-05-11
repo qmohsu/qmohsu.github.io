@@ -1,4 +1,4 @@
----
+﻿---
 title: "Sky Visibility Estimation based on GNSS Satellite Visibility: An Approach of GNSS based Context-Awareness"
 authors:
   - "Xu H."
@@ -15,6 +15,8 @@ doi: "10.1007/s10291-020-0973-5"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

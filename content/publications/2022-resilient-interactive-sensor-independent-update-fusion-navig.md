@@ -1,4 +1,4 @@
----
+﻿---
 title: "Resilient Interactive Sensor-Independent-Update Fusion Navigation Method"
 authors:
   - "Meng Q. and Hsu L. T."
@@ -12,6 +12,9 @@ doi: "10.1109/tits.2022.3150273"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "integrity-localization"
 tags: []
 ---

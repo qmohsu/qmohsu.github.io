@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Baseband MLE for Snapshot GNSS Receiver Using Super-Long-Coherent Correlation in a Fractional Fourier Domain"
 authors:
   - "Luo, Y."
@@ -14,6 +14,8 @@ doi: "10.33012/navi.588"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Carrier-Aided Dual Frequency Vectorized Tracking Architecture for NavIC Signals"
 authors:
   - "Dey A."
@@ -16,6 +16,8 @@ doi: "10.1109/tim.2022.3146927"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---
