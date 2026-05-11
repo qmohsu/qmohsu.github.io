@@ -5,3 +5,6 @@ start-localhost.cmd
 
 # Rolling log from scripts/orcid_diff.py — appended on every run
 scripts/orcid_diff_log.txt
+
+# Audit log from scripts/dedupe_publications.py — appended on every run
+scripts/dedupe_log.json

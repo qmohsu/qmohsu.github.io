@@ -470,7 +470,6 @@ Institute of Electrical and Electronics Engineers (IEEE), USA
 ### ***2.3.2 Patents*** {#2.3.2-patents}
 
 1. Lee, J., & **Hsu, L. T.**, et al. (2025). *U.S. Patent No. 63/840,727.* Automated staircase safety monitoring and predictive maintenance robot. Washington, DC: U.S. Patent and Trademark Office.  
-2. Lee, J., & **Hsu, L. T.** (2025). *Multi-feature visual positioning method*. ([CN115527044A](https://pss-system.cponline.cnipa.gov.cn/documents/detail?prevPageTit=changgui)).  
 3. Wang, Q., Huang, X., Shaheer, M., Mohammad, T., Zhang, X., Luo, M., **Hsu, L.T.** & Usmani, A. (2025). *U.S. Patent No. 12,292,340*. Washington, DC: U.S. Patent and Trademark Office ([US12292340B2](https://patents.google.com/patent/US12292340B2/en)).  
 4. **Hsu, L. T.,** & Wen, W. (2024). *U.S. Patent No. 12,123,961*. Washington, DC: U.S. Patent and Trademark Office. ([US12123961B2](https://patents.google.com/patent/US12123961B2/en)).  
 5. **Hsu, L. T.,** Wen, W. (2023). 3d vision aided gnss real-time kinematic positioning for autonomous systems in urban canyons  ([WO2023198090A1](https://patentimages.storage.googleapis.com/20/e8/8e/af28d8e9a8648c/WO2023198090A1.pdf)).   

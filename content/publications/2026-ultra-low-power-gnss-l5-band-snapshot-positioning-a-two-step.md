@@ -11,6 +11,7 @@ venue: "IEEE Internet of Things Journal"
 type: "journal"
 cv_number: 165
 featured: false
+quartile: "Q1"
 doi: "10.1109/jiot.2026.3680038"
 pdf: ""
 code: ""
