@@ -8,6 +8,6 @@ source_type: "lab_announcement"
 source_site: "ipnl"
 ---
 
-Prof. Li-Ta Hsu delivered a 30-minute invited research seminar at the [Technical University of Munich (TUM)](https://www.tum.de/en/) on 6 May 2025. The talk — *Enabling Robotics Applications with Satellite Navigation: Bridging the Gap with Mathematical Optimization Frameworks* — was hosted as part of the TUM public research seminar series, continuing the lab's collaboration with Prof. Johannes Betz's group at TUM (a co-organizer of the upcoming ICRA 2026 *Robot Meets GNSS and Ranging* workshop).
+Prof. Li-Ta Hsu delivered a 30-minute invited research seminar at the [Technical University of Munich (TUM)](https://www.tum.de/en/) on 6 May 2025. The talk — *Enabling Robotics Applications with Satellite Navigation: Bridging the Gap with Mathematical Optimization Frameworks* — was delivered as part of the TUM public research seminar series.
 
-The visit followed Prof. Hsu's earlier March 2025 European tour (Munich Satellite Navigation Summit Panel Chair + i.c.sens Hannover invited talk) — a return engagement at TUM less than two months later.
+The talk came two months after Prof. Hsu's earlier March 2025 European tour ([Munich Satellite Navigation Summit Session 4 Chair + i.c.sens Hannover invited talk](/news/2025-european-tour-march/)) — a return to Munich for a different research audience.

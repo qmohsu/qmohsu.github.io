@@ -9,6 +9,6 @@ source_type: "lab_announcement"
 source_site: "ipnl"
 ---
 
-Prof. Li-Ta Hsu was invited to deliver a workshop talk at [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) on 28 June 2025. The talk — *3DMA Development and Future* — surveyed the past, present, and trajectory of 3D-Map-Aided (3DMA) GNSS positioning, one of the lab's core research directions since 2018.
+Prof. Li-Ta Hsu was invited to deliver a workshop talk at [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) on 28 June 2025. The talk — *三維城市模型輔助衛星都市導航：過去、現在、未來* (*3D City Model Aided Satellite Urban Navigation: Past, Present, and Future*) — surveyed the past, present, and trajectory of 3D-Map-Aided (3DMA) GNSS positioning, one of the lab's core research directions since 2018.
 
 SJTU is one of China's top-tier research universities, and the workshop continued the lab's long-running engagement with the Shanghai navigation research community (earlier SJTU collaborations include the Huawei LBS Workshop Shanghai talks in 2018, 2019 and the Shanghai Key Lab Nav&LBS invitation in November 2019).
