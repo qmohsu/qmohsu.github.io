@@ -292,6 +292,17 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .news-source a { color: var(--accent); }
 
+/* ---- News post images: uniform width, natural aspect ratio ---- */
+.news-article img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 18px auto;
+  border-radius: var(--radius);
+  border: 1px solid #eee;
+}
+
 /* ---- Research theme tile ---- */
 .theme-card {
   padding: 18px 16px;
