@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D LiDAR Aided GNSS NLOS Mitigation in Urban Canyons"
 authors:
   - "Wen W. and Hsu L.-T."
@@ -13,7 +13,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

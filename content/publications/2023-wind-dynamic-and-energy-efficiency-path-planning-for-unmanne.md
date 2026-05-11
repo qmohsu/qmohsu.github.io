@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wind dynamic and energy-efficiency path planning for unmanned aerial vehicles in the lower-level airspace and urban air mobility context"
 authors:
   - "Chan, Y. Y."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

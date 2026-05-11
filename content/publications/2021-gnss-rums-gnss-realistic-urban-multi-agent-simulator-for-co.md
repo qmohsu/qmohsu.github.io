@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS RUMS: GNSS Realistic Urban Multi-agent Simulator for Collaborative Positioning Research"
 authors:
   - "Zhang G."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

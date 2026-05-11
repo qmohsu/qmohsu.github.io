@@ -1,4 +1,4 @@
----
+﻿---
 title: "Three-Dimensional Mapping-Aided Global Navigation Satellite System in Global Navigation Satellite System-Accessible Indoor Areas"
 authors:
   - "Hoi-Wah Ng"
@@ -15,8 +15,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "indoor-positioning"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
+  - "environment-aware-pnt"
 tags: []
 ---

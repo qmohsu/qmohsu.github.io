@@ -1,4 +1,4 @@
----
+﻿---
 title: "Perceived Environment Aided GNSS Single Point Positioning: An Example using LiDAR Scanner"
 authors:
   - "Wen W"
@@ -13,6 +13,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

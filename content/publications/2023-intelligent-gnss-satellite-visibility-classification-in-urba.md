@@ -1,4 +1,4 @@
----
+﻿---
 title: "Intelligent GNSS Satellite Visibility Classification in Urban Areas: A Deep Learning Approach with Interpretation"
 authors:
   - "Zekun Zhang"
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
   - "machine-learning"
 tags: []
 ---

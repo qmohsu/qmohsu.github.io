@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Fault Detection Algorithm for LiDAR/IMU Integrated Localization Systems with Non-Gaussian Noises"
 authors:
   - "Penggao Yan"
@@ -16,7 +16,7 @@ code: ""
 data: ""
 themes:
   - "lidar"
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
   - "integrity"
 tags: []
 ---

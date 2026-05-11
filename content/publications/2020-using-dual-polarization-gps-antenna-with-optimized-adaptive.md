@@ -1,4 +1,4 @@
----
+﻿---
 title: "Using Dual-Polarization GPS Antenna with Optimized Adaptive Neuro-Fuzzy Inference System to Improve Single Point Positioning Accuracy in Urban Canyons"
 authors:
   - "Sun R."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

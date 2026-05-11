@@ -1,4 +1,4 @@
----
+﻿---
 title: "Degeneration-aware Outlier Mitigation for Visual Inertial Integrated Navigation System in Urban Canyons"
 authors:
   - "Bai X."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

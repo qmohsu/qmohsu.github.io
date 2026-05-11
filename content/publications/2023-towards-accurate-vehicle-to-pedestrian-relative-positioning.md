@@ -1,4 +1,4 @@
----
+﻿---
 title: "Towards Accurate Vehicle-to-Pedestrian Relative Positioning Aided by Inter-Frame and Inter-Agent GNSS Measurement Collaboration Using Factor Graph Optimization for Smart Summon"
 authors:
   - "Yihan Zhong"
@@ -14,7 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "urban-gnss"
+  - "optimization-estimation"
+  - "urban-gnss-reliability"
 tags: []
 ---

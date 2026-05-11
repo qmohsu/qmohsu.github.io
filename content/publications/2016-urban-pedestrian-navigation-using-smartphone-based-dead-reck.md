@@ -1,4 +1,4 @@
----
+﻿---
 title: "Urban Pedestrian Navigation using Smartphone-based Dead Reckoning and 3D Maps Aided GNSS"
 authors:
   - "Hsu L. T."
@@ -16,8 +16,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
-  - "smartphone-positioning"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

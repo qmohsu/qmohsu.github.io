@@ -1,4 +1,4 @@
----
+﻿---
 title: "Low‐cost solid‐state LiDAR/inertial‐based localization with prior map for autonomous systems in urban scenarios"
 authors:
   - "Zhong, Y."
@@ -17,7 +17,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

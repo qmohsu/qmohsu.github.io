@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D Mapping Database Aided GNSS RTK and Its Assessments in Urban Canyons"
 authors:
   - "Ng H.F."
@@ -14,7 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

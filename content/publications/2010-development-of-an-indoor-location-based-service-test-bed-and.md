@@ -1,4 +1,4 @@
----
+﻿---
 title: "Development of an Indoor Location Based Service Test Bed and Geographic Information System with a WSN"
 authors:
   - "Jan S. S."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D LiDAR Aided GNSS NLOS Correction by Direction-of-Arrival Estimation Using Doppler Measurements in Urban Canyons"
 authors:
   - "Liu, X."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Optimization of 3D Building Models by GPS Measurements"
 authors:
   - "Wada Y."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "3d-mapping-aided"
+  - "environment-aware-pnt"
 tags: []
 ---

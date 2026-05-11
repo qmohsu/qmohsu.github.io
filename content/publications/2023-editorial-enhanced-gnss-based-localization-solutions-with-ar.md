@@ -1,4 +1,4 @@
----
+﻿---
 title: "Editorial: Enhanced GNSS-based localization solutions with artificial intelligence"
 authors:
   - "Juliette Marais"
@@ -14,7 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
   - "machine-learning"
 tags: []
 ---

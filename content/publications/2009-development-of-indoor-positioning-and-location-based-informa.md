@@ -1,4 +1,4 @@
----
+﻿---
 title: "Development of Indoor Positioning and Location Based Information Test Bed"
 authors:
   - "Hsu L. T."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

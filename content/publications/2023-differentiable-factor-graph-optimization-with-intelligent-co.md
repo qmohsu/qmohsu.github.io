@@ -1,4 +1,4 @@
----
+﻿---
 title: "Differentiable Factor Graph Optimization with Intelligent Covariance Adaptation for Accurate Smartphone Positioning"
 authors:
   - "Penghui Xu"
@@ -18,7 +18,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "smartphone-positioning"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Factor Graph Optimization-Based Smartphone IMU-Only Indoor SLAM With Multi-Hypothesis Turning Behavior Loop Closures"
 authors:
   - "Bai, S."
@@ -16,9 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "multi-sensor-fusion"
-  - "smartphone-positioning"
-  - "indoor-positioning"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

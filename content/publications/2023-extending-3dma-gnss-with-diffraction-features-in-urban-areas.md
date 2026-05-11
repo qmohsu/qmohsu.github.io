@@ -1,4 +1,4 @@
----
+﻿---
 title: "Extending 3DMA GNSS with Diffraction Features in Urban Areas: Feasibility Analysis and Preliminary Results"
 authors:
   - "Guohao Zhang"
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "3d-mapping-aided"
-  - "urban-gnss"
+  - "environment-aware-pnt"
+  - "urban-gnss-reliability"
 tags: []
 ---

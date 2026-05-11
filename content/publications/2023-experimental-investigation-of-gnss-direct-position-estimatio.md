@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experimental Investigation of GNSS Direct Position Estimation in Densely Urban Area"
 authors:
   - "Sergio Vicenzo"
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

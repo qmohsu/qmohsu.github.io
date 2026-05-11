@@ -1,4 +1,4 @@
----
+﻿---
 title: "Factor Graph Optimization-based GNSS PPP-RTK: An Alternative Platform to Study Urban GNSS Precise Positioning"
 authors:
   - "Xin, S."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "factor-graph-optimization"
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Roadside Infrastructure assisted LiDAR/Inertial-based Mapping for Intelligent Vehicles in Urban Areas"
 authors:
   - "Feng Huang"
@@ -18,6 +18,6 @@ code: ""
 data: ""
 themes:
   - "lidar"
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

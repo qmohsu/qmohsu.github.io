@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vector Tracking Loop-based GNSS NLOS Detection and Correction: Algorithm Design and Performance Analysis"
 authors:
   - "Xu B."
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

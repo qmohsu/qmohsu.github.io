@@ -1,4 +1,4 @@
----
+﻿---
 title: "Principles of Indoor Positioning and Indoor Navigation"
 authors:
   - "Hsu L. T."
@@ -14,6 +14,6 @@ pdf: ""
 code: "https://github.com/IPNL-POLYU/IPIN-Examples"
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

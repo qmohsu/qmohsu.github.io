@@ -1,4 +1,4 @@
----
+﻿---
 title: "Urban Positioning: 3D Mapping Aided GNSS using Dual-Frequency Pseudorange Measurements from Smartphones"
 authors:
   - "Ng H.F."
@@ -15,8 +15,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
-  - "smartphone-positioning"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

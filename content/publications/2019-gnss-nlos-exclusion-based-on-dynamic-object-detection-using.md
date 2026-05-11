@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS NLOS Exclusion Based on Dynamic Object Detection Using LiDAR Point Cloud"
 authors:
   - "Wen W."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

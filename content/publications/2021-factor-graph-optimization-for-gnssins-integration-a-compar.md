@@ -1,4 +1,4 @@
----
+﻿---
 title: "Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter"
 authors:
   - "Wen W."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
+  - "optimization-estimation"
 tags: []
 ---

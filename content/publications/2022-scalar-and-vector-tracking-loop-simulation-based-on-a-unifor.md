@@ -1,4 +1,4 @@
----
+﻿---
 title: "Scalar and vector tracking loop simulation based on a uniform semi-analytic model and robustness analysis in multipath/NLOS situations"
 authors:
   - "Jia, Q."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

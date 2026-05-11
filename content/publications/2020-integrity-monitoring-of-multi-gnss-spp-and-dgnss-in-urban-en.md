@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integrity Monitoring of multi-GNSS SPP and DGNSS in Urban Environment using ARAIM and 3D City Models"
 authors:
   - "El-Mowafy A."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

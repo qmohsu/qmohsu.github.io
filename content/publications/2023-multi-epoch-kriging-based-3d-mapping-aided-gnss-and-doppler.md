@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multi-Epoch Kriging-Based 3D Mapping-Aided GNSS and Doppler Measurement Fusion using Factor Graph Optimization"
 authors:
   - "Ng, H. F."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "3d-mapping-aided"
+  - "optimization-estimation"
+  - "environment-aware-pnt"
 tags: []
 ---

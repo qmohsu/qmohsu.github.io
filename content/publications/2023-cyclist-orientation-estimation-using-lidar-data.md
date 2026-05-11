@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cyclist Orientation Estimation Using LiDAR Data"
 authors:
   - "Chang, H."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

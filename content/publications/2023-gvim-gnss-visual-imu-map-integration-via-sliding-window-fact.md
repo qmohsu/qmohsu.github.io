@@ -1,4 +1,4 @@
----
+﻿---
 title: "GVIM: GNSS/Visual/IMU/Map Integration Via Sliding Window Factor Graph Optimization in Urban Canyons"
 authors:
   - "Xiwei Bai"
@@ -13,8 +13,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
-  - "factor-graph-optimization"
-  - "urban-gnss"
+  - "seamless-pnt-embodied"
+  - "optimization-estimation"
+  - "urban-gnss-reliability"
 tags: []
 ---

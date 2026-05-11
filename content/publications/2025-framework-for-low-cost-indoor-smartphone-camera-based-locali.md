@@ -1,4 +1,4 @@
----
+﻿---
 title: "Framework for Low-Cost Indoor Smartphone Camera-based Localization Using Spherical Panorama and BIM"
 authors:
   - "Lee, M. J. L."
@@ -16,8 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
-  - "smartphone-positioning"
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

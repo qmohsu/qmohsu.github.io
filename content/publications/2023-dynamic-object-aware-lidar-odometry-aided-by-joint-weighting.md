@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dynamic Object-aware LiDAR Odometry Aided by Joint Weightings Estimation in Urban Areas"
 authors:
   - "Huang, F."
@@ -17,7 +17,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

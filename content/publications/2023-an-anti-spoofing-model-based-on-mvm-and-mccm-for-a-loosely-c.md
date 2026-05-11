@@ -1,4 +1,4 @@
----
+﻿---
 title: "An Anti-spoofing Model based on MVM and MCCM for a Loosely-coupled GNSS/INS/LiDAR Kalman Filter"
 authors:
   - "Chang, J."
@@ -18,6 +18,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

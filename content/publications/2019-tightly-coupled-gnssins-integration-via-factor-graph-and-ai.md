@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tightly Coupled GNSS/INS Integration Via Factor Graph and Aided by Fish-eye Camera"
 authors:
   - "Wen W."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "multi-sensor-fusion"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

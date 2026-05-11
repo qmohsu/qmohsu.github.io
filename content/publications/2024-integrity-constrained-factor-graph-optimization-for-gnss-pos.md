@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integrity-Constrained Factor Graph Optimization for GNSS Positioning in Urban Canyons"
 authors:
   - "Xia, X."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "factor-graph-optimization"
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
 tags: []
 ---

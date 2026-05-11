@@ -1,4 +1,4 @@
----
+﻿---
 title: "Automated Camera Positioning for Digital Twinning: Incorporating 360-Degree Imaging, Differential Rendering, and 3D Spatial Data"
 authors:
   - "Lee, M. J. L."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

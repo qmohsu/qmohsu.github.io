@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multipath Mitigation Technique under Strong Multipath Environment Using Multiple Antennas"
 authors:
   - "Kubo N."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

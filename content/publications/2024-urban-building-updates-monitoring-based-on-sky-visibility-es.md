@@ -1,4 +1,4 @@
----
+﻿---
 title: "Urban Building Updates Monitoring Based on Sky Visibility Estimation From Satellite Signals"
 authors:
   - "Xu, H."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

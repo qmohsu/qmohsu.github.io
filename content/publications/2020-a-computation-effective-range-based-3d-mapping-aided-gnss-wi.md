@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Computation Effective Range-Based 3D Mapping Aided GNSS with NLOS Correction Method"
 authors:
   - "Ng H. F."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

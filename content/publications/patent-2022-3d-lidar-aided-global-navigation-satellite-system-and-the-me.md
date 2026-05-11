@@ -1,4 +1,4 @@
----
+﻿---
 title: "3d lidar aided global navigation satellite system and the method for non-line-of-sight detection and correction"
 authors:
   - "Hsu L. T"
@@ -13,6 +13,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

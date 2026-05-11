@@ -1,4 +1,4 @@
----
+﻿---
 title: "Rectification of GNSS based Collaborative Positioning using 3D Building Models in Urban Areas"
 authors:
   - "Zhang G."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

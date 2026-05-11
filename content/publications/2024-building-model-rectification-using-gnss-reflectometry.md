@@ -1,4 +1,4 @@
----
+﻿---
 title: "Building Model Rectification Using GNSS Reflectometry"
 authors:
   - "Ye, M."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "3d-mapping-aided"
+  - "environment-aware-pnt"
 tags: []
 ---

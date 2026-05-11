@@ -1,4 +1,4 @@
----
+﻿---
 title: "Factor Graph Optimization-based Indoor Pedestrian SLAM with Probabilistic Exact Activity Loop Closures using Smartphone"
 authors:
   - "Shiyu Bai"
@@ -15,8 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
-  - "factor-graph-optimization"
-  - "smartphone-positioning"
+  - "seamless-pnt-embodied"
+  - "optimization-estimation"
 tags: []
 ---

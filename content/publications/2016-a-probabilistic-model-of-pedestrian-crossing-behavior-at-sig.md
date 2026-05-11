@@ -1,4 +1,4 @@
----
+﻿---
 title: "A probabilistic model of pedestrian crossing behavior at signalized intersections for connected vehicles"
 authors:
   - "Hashimoto Y."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "smartphone-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

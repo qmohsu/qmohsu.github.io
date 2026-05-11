@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hong Kong UrbanNav: An open-source multisensory dataset for benchmarking urban navigation algorithms"
 authors:
   - "Hsu, L. T."
@@ -19,6 +19,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

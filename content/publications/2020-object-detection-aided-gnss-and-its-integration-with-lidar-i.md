@@ -1,4 +1,4 @@
----
+﻿---
 title: "Object Detection Aided GNSS and Its Integration with LiDAR in Highly Urbanized Areas"
 authors:
   - "Wen W."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

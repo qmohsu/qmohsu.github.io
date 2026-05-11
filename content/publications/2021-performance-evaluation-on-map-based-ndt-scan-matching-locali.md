@@ -1,4 +1,4 @@
----
+﻿---
 title: "Performance Evaluation on Map-based NDT Scan Matching Localization using Simulated Occlusion Datasets"
 authors:
   - "Kan Y.C."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

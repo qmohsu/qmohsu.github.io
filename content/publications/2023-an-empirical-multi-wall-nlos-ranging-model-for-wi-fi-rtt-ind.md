@@ -1,4 +1,4 @@
----
+﻿---
 title: "An empirical multi-wall NLOS ranging model for Wi-Fi RTT indoor positioning"
 authors:
   - "Qing Liang"
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

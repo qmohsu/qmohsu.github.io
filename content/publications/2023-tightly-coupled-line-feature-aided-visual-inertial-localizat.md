@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tightly-coupled Line Feature-aided Visual Inertial Localization within Lightweight 3D Prior Map for Intelligent Vehicles"
 authors:
   - "Xi Zheng"
@@ -14,7 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
-  - "3d-mapping-aided"
+  - "seamless-pnt-embodied"
+  - "environment-aware-pnt"
 tags: []
 ---

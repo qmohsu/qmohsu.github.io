@@ -1,4 +1,4 @@
----
+﻿---
 title: "A New GNSS Ambiguity Resolution Method Through Mixed Integer Programming"
 authors:
   - "Hongmin Zhang"
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

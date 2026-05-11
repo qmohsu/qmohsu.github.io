@@ -1,4 +1,4 @@
----
+﻿---
 title: "AutoW: Self-Supervision Learning for Weighting Estimation in GNSS Positioning"
 authors:
   - "Penghui Xu"
@@ -13,6 +13,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---
