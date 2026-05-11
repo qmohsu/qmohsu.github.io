@@ -1,0 +1,15 @@
+---
+title: "Keynote at IEEE IPIN 2022 Beijing: Navigation using Graph Optimization (September 2022)"
+date: 2022-09-05
+date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
+category: "talk"
+summary: "Prof. Li-Ta Hsu delivered the keynote at IEEE IPIN 2022 (Beijing, virtual) on Navigation using Graph Optimization: A Case Study of a Smartphone User from Urban Canyon to Indoor."
+source_type: "lab_announcement"
+source_site: "ipnl"
+---
+
+Prof. Li-Ta Hsu delivered the **60-minute keynote** at the [12th International Conference on Indoor Positioning and Indoor Navigation (IEEE IPIN 2022)](https://www.ipin-conference.org/) in Beijing on 5 September 2022 (virtual). The keynote — *Navigation using Graph Optimization: A Case Study of a Smartphone User from Urban Canyon to Indoor* — covered the lab's factor-graph-optimization research applied to seamless GNSS-to-indoor positioning, an area central to IPIN's annual focus.
+
+IPIN is the world's leading conference dedicated to indoor positioning and indoor navigation research. The 2022 edition continued the post-COVID hybrid format with strong participation from the global indoor-positioning research community.
+
+The lab's continuing IPIN engagement led to Prof. Hsu serving as **General Chair of IEEE IPIN 2024 in Hong Kong** two years later — a 300+-delegate event that brought the conference back to in-person delivery in Asia.
