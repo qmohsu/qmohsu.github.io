@@ -12,7 +12,7 @@ type: "journal"
 cv_number: 146
 featured: false
 quartile: "Q1"
-doi: ""
+doi: "10.1109/jiot.2026.3680038"
 pdf: ""
 code: ""
 data: ""
