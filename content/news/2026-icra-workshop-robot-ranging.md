@@ -1,6 +1,7 @@
 ---
 title: "IPNL co-organizing 1st ICRA 2026 Workshop on Robot Meets GNSS and Ranging"
-date: 2026-06-05
+date: 2026-05-11
+date_note: "Announcement date; workshop itself runs 5 June 2026"
 category: "recognition"
 summary: "Prof. Li-Ta Hsu is co-organizing the 1st Workshop on Robot Meets GNSS and Ranging for Seamless Autonomy at IEEE ICRA 2026 in Vienna on 5 June 2026, exploring synergies and challenges of radio-based ranging technologies in robotics."
 source_type: "workshop_announcement"
