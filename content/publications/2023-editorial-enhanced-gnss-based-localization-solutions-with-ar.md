@@ -15,6 +15,5 @@ code: ""
 data: ""
 themes:
   - "urban-gnss-reliability"
-  - "machine-learning"
 tags: []
 ---

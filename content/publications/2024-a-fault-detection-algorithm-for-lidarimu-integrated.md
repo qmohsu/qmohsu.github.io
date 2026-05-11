@@ -15,8 +15,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "lidar"
+  - "optimization-estimation"
+  - "integrity-localization"
   - "seamless-pnt-embodied"
-  - "integrity"
 tags: []
 ---

@@ -17,7 +17,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "lidar"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
   - "seamless-pnt-embodied"
 tags: []
 ---

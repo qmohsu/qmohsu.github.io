@@ -14,7 +14,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "lidar"
   - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
 tags: []
 ---

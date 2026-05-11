@@ -13,8 +13,9 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "seamless-pnt-embodied"
-  - "optimization-estimation"
   - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---
