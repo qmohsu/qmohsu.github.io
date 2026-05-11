@@ -1,4 +1,4 @@
----
+﻿---
 title: "ECMD: An Event-Centric Multisensory Driving Dataset for SLAM"
 authors:
   - "Chen, P."
@@ -18,6 +18,8 @@ doi: "10.1109/tiv.2023.3339144"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

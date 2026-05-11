@@ -1,4 +1,4 @@
----
+﻿---
 title: "Selection of Areas for Effective GNSS Spoofing Attacks to a Vehicle-mounted MSF System based on Scenario Classification Models"
 authors:
   - "Chang, J."
@@ -16,6 +16,9 @@ doi: "10.1109/tvt.2023.3279831"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
 tags: []
 ---

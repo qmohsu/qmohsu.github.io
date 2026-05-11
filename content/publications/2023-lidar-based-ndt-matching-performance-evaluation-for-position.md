@@ -17,6 +17,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
+  - "environment-aware-pnt"
+  - "optimization-estimation"
   - "seamless-pnt-embodied"
 tags: []
 ---

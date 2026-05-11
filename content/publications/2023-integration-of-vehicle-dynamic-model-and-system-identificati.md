@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integration of Vehicle Dynamic Model and System Identification Model for Extending the Navigation Service Under Sensor Failures"
 authors:
   - "Yan, P."
@@ -14,6 +14,9 @@ doi: "10.1109/tiv.2023.3273185"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

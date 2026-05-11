@@ -1,4 +1,4 @@
----
+﻿---
 title: "Performance Evaluation of Vectorized NavIC Receiver Using Improved Dual-Frequency NavIC Measurements"
 authors:
   - "Dey, A."
@@ -16,6 +16,8 @@ doi: "10.1109/tim.2023.3295020"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "A post-correlation graphical way for continuous GNSS spoofing detection"
 authors:
   - "Fang, J."
@@ -15,6 +15,9 @@ doi: "10.1016/j.measurement.2023.112974"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
+  - "integrity-localization"
 tags: []
 ---
