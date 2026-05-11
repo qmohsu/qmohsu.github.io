@@ -5,7 +5,7 @@ subtype: "software"
 license: "Public"
 maintainers: ["Li-Ta Hsu"]
 repo: "https://www.ngs.noaa.gov/gps-toolbox/GPS_VT_SDR.htm"
-weight: 3
+weight: 4
 ---
 
 GPS_VT_SDR is a GPS vector tracking software-defined receiver developed during Dr. Hsu's PhD research. It is hosted on the NOAA National Geodetic Survey GPS Toolbox.
