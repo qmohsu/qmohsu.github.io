@@ -11,7 +11,7 @@ source_site: "ipnl"
 
 Prof. Li-Ta Hsu had a multi-role contribution at the [Institute of Navigation](https://www.ion.org/)'s flagship [ION GNSS+ 2024](https://www.ion.org/gnss/) technical meeting in Baltimore, Maryland in September 2024:
 
-**Tutorial Lecturer — Indoor Navigation and Positioning (1.5 hours).** Prof. Hsu continued his long-running role as a Pre-Conference Tutorial Lecturer at ION GNSS+, delivering a 1.5-hour session on indoor navigation. This was the fourth year in the recurring tutorial role at ION GNSS+ (3.5-hour editions in 2020 and 2021; 3-hour edition at Denver 2023; 1.5-hour Baltimore 2024).
+**Tutorial Lecturer — Indoor Navigation and Positioning (1.5 hours).** Prof. Hsu continued his long-running role as a Pre-Conference Tutorial Lecturer at ION GNSS+, delivering a 1.5-hour session on indoor navigation. This was the third year in the recurring tutorial role at ION GNSS+ (3.5-hour editions in 2020 and 2021, both delivered virtually during the pandemic; 1.5-hour in-person edition at Baltimore 2024).
 
 **2023 Most Cited Manuscript Award (NAVIGATION).** The paper *"Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter"* (Wen, Pfeifer, Bai, Hsu — published in *[NAVIGATION: Journal of the Institute of Navigation](https://www.ion.org/navi/)* Vol. 68, No. 2) received the 2023 Most Cited Manuscript Award. The paper provides a foundational comparison of factor-graph optimization against the classical EKF for tightly-coupled GNSS/INS integration in challenging urban environments, and has become a widely-referenced primer in the GNSS-FGO research community.
 

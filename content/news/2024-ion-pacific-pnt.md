@@ -10,4 +10,4 @@ source_site: "ipnl"
 
 Prof. Li-Ta Hsu and PolyU IPNL attended the **2024 [Institute of Navigation Pacific PNT Conference](https://www.ion.org/pnt/)** in Honolulu, Hawaii in April 2024. ION Pacific PNT is the biennial Pacific-region edition of the [Institute of Navigation](https://www.ion.org/)'s flagship technical conference series, complementing the annual ION ITM (San Diego) and ION GNSS+ (Salt Lake City / Denver / Baltimore) conferences.
 
-This was a continuation of the lab's ION engagement — Prof. Hsu has been a Session Chair at multiple prior ION Pacific PNT editions (Honolulu 2019 — *Modernized Satellite Navigation* keynote, Challenging Navigation Problems 2 session) and is currently an ION Council Member + Technical Representative.
+This was a continuation of the lab's ION engagement — Prof. Hsu has been a [recurring contributor at prior ION Pacific PNT editions](/news/2019-ion-pacific-pnt-honolulu-keynote/) (Honolulu 2019 — *Modernized Satellite Navigation* invited talk in the Challenging Navigation Problems 2 session, the lab's first major US/Pacific invited engagement) and is currently an ION Council Member + Technical Representative.
