@@ -14,6 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss-reliability"
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Intelligent Viaduct Recognition and Driving Altitude Determination using GPS Data"
 authors:
   - "Hsu L.T."
@@ -14,6 +14,9 @@ doi: "10.1109/tiv.2017.2737325"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

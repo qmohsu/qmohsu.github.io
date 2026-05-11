@@ -1,4 +1,4 @@
----
+﻿---
 title: "An Open Source Matlab Code on GPS Vector Tracking based on Software-Defined Receiver"
 authors:
   - "Xu B."
@@ -13,6 +13,8 @@ doi: "10.1007/s10291-019-0839-x"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---

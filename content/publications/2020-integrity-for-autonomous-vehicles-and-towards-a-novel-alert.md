@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integrity for Autonomous Vehicles and Towards a Novel Alert Limit Determination Method"
 authors:
   - "Meng Q."
@@ -13,6 +13,9 @@ doi: "10.1177/0954407020965760"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
 tags: []
 ---

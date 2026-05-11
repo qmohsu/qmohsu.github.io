@@ -1,4 +1,4 @@
----
+﻿---
 title: "GPS Signal Reception Classification Using Adaptive Neuro-Fuzzy Inference System"
 authors:
   - "Sun R."
@@ -16,6 +16,8 @@ doi: "10.1017/s0373463318000899"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

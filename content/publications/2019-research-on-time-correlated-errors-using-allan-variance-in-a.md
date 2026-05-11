@@ -1,4 +1,4 @@
----
+﻿---
 title: "Research on Time-Correlated Errors Using Allan Variance in a Kalman Filter Applicable to Vector-Tracking-Based GNSS Software-Defined Receiver for Autonomous Ground Vehicle Navigation"
 authors:
   - "Luo Y."
@@ -18,6 +18,8 @@ doi: "10.3390/rs11091026"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---

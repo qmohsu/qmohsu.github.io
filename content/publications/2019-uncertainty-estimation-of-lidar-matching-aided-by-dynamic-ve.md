@@ -17,6 +17,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
+  - "environment-aware-pnt"
+  - "integrity-localization"
   - "seamless-pnt-embodied"
 tags: []
 ---

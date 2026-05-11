@@ -14,6 +14,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
+  - "receiver-sdr"
   - "urban-gnss-reliability"
+  - "optimization-estimation"
 tags: []
 ---

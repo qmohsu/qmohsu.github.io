@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multi-Objective Flight Altitude Decision Considering Contrails, Fuel Consumption and Flight Time"
 authors:
   - "Xue D."
@@ -14,6 +14,7 @@ doi: "10.3390/su12156253"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "seamless-pnt-embodied"
 tags: []
 ---
