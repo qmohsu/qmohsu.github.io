@@ -14,10 +14,12 @@ def _looks_like_initials(s):
 
 
 def merge_author_fragments(authors):
-    """Merge fragmented author entries like ['Hsu', 'L. T'] into ['Hsu L. T'].
+    """Merge fragmented author entries like ['Hsu', 'L. T.'] into ['Hsu, L. T.'].
 
-    The CV format 'LastName, F. I.' splits into two entries on comma.
-    This function merges consecutive 'LastName' + 'Initials' pairs.
+    The CV format 'LastName, F. I.' splits into two entries on comma. This
+    function merges consecutive 'LastName' + 'Initials' pairs back together
+    in the canonical academic-citation form `LastName, F. I.` (comma and
+    trailing period preserved).
     """
     merged = []
     i = 0
@@ -36,7 +38,7 @@ def merge_author_fragments(authors):
             next_a = authors[i + 1].strip().replace('*', '').replace('\\', '').strip()
             next_a = re.sub(r'^and\s+', '', next_a).strip()
             if _looks_like_initials(next_a):
-                merged.append(f"{a} {next_a.rstrip('.')}")
+                merged.append(f"{a}, {next_a}")
                 i += 2
                 continue
         merged.append(a)
@@ -327,47 +329,124 @@ def parse_book_line(line):
         "type": "book",
     }
 
+def _read_preserved_fields(path):
+    """Return frontmatter fields that should survive a regeneration.
+
+    Manually-curated fields (DOIs from lookup_dois.py, quartile badges,
+    curated themes/tags, PDF/code/data URLs) live in the .md files. The
+    CV doesn't carry that information, so re-parsing must not wipe it.
+    """
+    if not os.path.exists(path):
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+    fm = re.match(r"^---\r?\n(.*?)\r?\n---", content, re.DOTALL)
+    if not fm:
+        return {}
+    fm_text = fm.group(1)
+
+    def _strip_q(s):
+        s = s.strip()
+        if len(s) >= 2 and s[0] == '"' and s[-1] == '"':
+            s = s[1:-1]
+        return s.replace('\\"', '"')
+
+    def scalar(key):
+        m = re.search(rf"^{re.escape(key)}:\s*(.*)$", fm_text, re.MULTILINE)
+        if not m:
+            return None
+        raw = m.group(1).strip()
+        if raw.startswith("[") or raw == "":
+            return ""
+        return _strip_q(raw)
+
+    def yaml_list(key):
+        if re.search(rf"^{re.escape(key)}:\s*\[\s*\]\s*$", fm_text, re.MULTILINE):
+            return []
+        block = re.search(
+            rf"^{re.escape(key)}:\s*\n((?:[ \t]+-[ \t]+.*\n?)+)", fm_text, re.MULTILINE
+        )
+        if not block:
+            return None  # Key absent entirely.
+        return [_strip_q(x.strip()) for x in re.findall(r"-[ \t]+(.*)", block.group(1)) if x.strip()]
+
+    preserved = {}
+    for key in ("doi", "pdf", "code", "data", "quartile"):
+        v = scalar(key)
+        if v is not None:
+            preserved[key] = v
+    # Lists are preserved if the key is present at all (including explicit []).
+    for key in ("themes", "tags"):
+        v = yaml_list(key)
+        if v is not None:
+            preserved[key] = v
+    return preserved
+
+
 def write_publication_file(pub, type_prefix=""):
-    """Write a single publication markdown file."""
+    """Write a publication markdown file, preserving manual frontmatter.
+
+    Fields sourced from the CV (title, authors, year, venue, type, cv_number,
+    featured) are always rewritten from the parsed entry. Fields manually
+    curated in the file (doi, pdf, code, data, quartile, themes, tags) are
+    preserved when the destination file already exists; for new files,
+    defaults are used and themes are auto-guessed.
+    """
     slug = slugify(f"{pub['year']}-{pub['title'][:60]}")
     if type_prefix:
         slug = f"{type_prefix}-{slug}"
 
     filename = os.path.join(OUTPUT_DIR, f"{slug}.md")
+    preserved = _read_preserved_fields(filename)
 
-    # Clean and escape for YAML
     safe_title = clean_text(pub["title"]).replace('"', '\\"').rstrip(",").strip()
-    # Clean authors but preserve trailing dots in initials (e.g., "Hsu L. T.")
     clean_authors = [clean_text(a).rstrip(",").strip() for a in pub["authors"]]
     clean_authors = [a for a in clean_authors if a and len(a) > 1]
     clean_venue = clean_text(pub.get("venue", "")).replace('"', '\\"')
 
     featured = is_featured(safe_title)
-    themes = guess_themes(safe_title, clean_venue)
+    # Preserve curated themes when the key already exists in the file; only
+    # auto-guess for brand-new entries.
+    themes = preserved["themes"] if "themes" in preserved else guess_themes(safe_title, clean_venue)
+    tags = preserved.get("tags", [])
+    doi = preserved.get("doi", "")
+    pdf = preserved.get("pdf", "")
+    code = preserved.get("code", "")
+    data = preserved.get("data", "")
+    quartile = preserved.get("quartile", "")
 
     authors_yaml = "\n".join(f'  - "{a}"' for a in clean_authors)
     themes_yaml = "\n".join(f'  - "{t}"' for t in themes) if themes else ""
+    tags_yaml = "\n".join(f'  - "{t}"' for t in tags) if tags else ""
 
-    content = f'''---
-title: "{safe_title}"
-authors:
-{authors_yaml}
-year: {pub["year"]}
-venue: "{clean_venue}"
-type: "{pub["type"]}"
-cv_number: {pub["cv_number"]}
-featured: {str(featured).lower()}
-doi: ""
-pdf: ""
-code: ""
-data: ""
-{f"themes:{chr(10)}{themes_yaml}" if themes_yaml else "themes: []"}
-tags: []
----
-'''
+    lines = [
+        "---",
+        f'title: "{safe_title}"',
+        "authors:",
+        authors_yaml,
+        f'year: {pub["year"]}',
+        f'venue: "{clean_venue}"',
+        f'type: "{pub["type"]}"',
+        f'cv_number: {pub["cv_number"]}',
+        f"featured: {str(featured).lower()}",
+    ]
+    if quartile:
+        lines.append(f'quartile: "{quartile}"')
+    lines.extend(
+        [
+            f'doi: "{doi}"',
+            f'pdf: "{pdf}"',
+            f'code: "{code}"',
+            f'data: "{data}"',
+            f"themes:\n{themes_yaml}" if themes_yaml else "themes: []",
+            f"tags:\n{tags_yaml}" if tags_yaml else "tags: []",
+            "---",
+            "",
+        ]
+    )
 
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write("\n".join(lines))
 
     return filename
 
