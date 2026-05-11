@@ -8,6 +8,6 @@ source_type: "lab_announcement"
 source_site: "ipnl"
 ---
 
-Prof. Li-Ta Hsu delivered a **60-minute [ION Webinar](https://www.ion.org/webinar.cfm)** on 28 June 2021 to the global [Institute of Navigation](https://www.ion.org/) community. The topic — *EKF vs FGO: Comparison for GNSS/INS Integration* — compared the classical Extended Kalman Filter approach to tightly-coupled GNSS / INS integration against the emerging Factor Graph Optimization framework, particularly under challenging urban-canyon conditions.
+Prof. Li-Ta Hsu delivered a **60-minute [ION Webinar](https://www.ion.org/publications/webinar-hsu.cfm)** on 28 June 2021 to the global [Institute of Navigation](https://www.ion.org/) community. The topic — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* — compared the classical Extended Kalman Filter approach to tightly-coupled GNSS / INS integration against the emerging Factor Graph Optimization framework, particularly under challenging urban-canyon conditions. The recording — currently the most-viewed video on the **[ION YouTube channel](https://www.youtube.com/watch?v=f5bIh96SRsk)** — is freely available.
 
 The webinar topic became the foundation of the lab's signature FGO-vs-EKF paper (*Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter*, Wen-Pfeifer-Bai-Hsu, NAVIGATION Vol 68 No 2), which later [received the 2023 Most Cited Manuscript Award](/news/2024-ion-gnss-baltimore/) at ION GNSS+ 2024 Baltimore.
