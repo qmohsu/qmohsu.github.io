@@ -1,10 +1,10 @@
 ---
 title: "GNSS direct position estimation-inspired positioning with pseudorange correlogram for urban navigation"
 authors:
-  - "Vicenzo S"
-  - "Xu B"
-  - "Xu H"
-  - "Hsu L. T"
+  - "Vicenzo, S."
+  - "Xu, B."
+  - "Xu, H."
+  - "Hsu, L. T."
 year: 2024
 venue: "GPS Solutions"
 type: "journal"

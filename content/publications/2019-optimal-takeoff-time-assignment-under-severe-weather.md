@@ -3,7 +3,7 @@ title: "Optimal Takeoff Time Assignment under Severe Weather"
 authors:
   - "Xue D."
   - "Sun R."
-  - "Hsu L. T"
+  - "Hsu, L. T."
 year: 2019
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"

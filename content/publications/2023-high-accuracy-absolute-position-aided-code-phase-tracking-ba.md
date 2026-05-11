@@ -1,13 +1,13 @@
 ---
 title: "High-Accuracy Absolute-Position-Aided Code Phase Tracking Based on RTK/INS Deep Integration in Challenging Static Scenarios"
 authors:
-  - "Luo Y"
-  - "Hsu L. T"
-  - "Jiang Y"
-  - "Liu B"
-  - "Zhang Z"
-  - "Xiang Y"
-  - "El-Sheimy N"
+  - "Luo, Y."
+  - "Hsu, L. T."
+  - "Jiang, Y."
+  - "Liu, B."
+  - "Zhang, Z."
+  - "Xiang, Y."
+  - "El-Sheimy, N."
 year: 2023
 venue: "Remote Sensing"
 type: "journal"

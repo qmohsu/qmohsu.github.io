@@ -1,11 +1,11 @@
 ---
 title: "Cyclist Orientation Estimation Using LiDAR Data"
 authors:
-  - "Chang H"
-  - "Gu Y"
-  - "Goncharenko I"
-  - "Hsu L. T"
-  - "Premachandra C"
+  - "Chang, H."
+  - "Gu, Y."
+  - "Goncharenko, I."
+  - "Hsu, L. T."
+  - "Premachandra, C."
 year: 2023
 venue: "Sensors"
 type: "journal"

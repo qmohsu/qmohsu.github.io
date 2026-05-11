@@ -1,10 +1,10 @@
 ---
 title: "PositionNet: CNN-based GNSS positioning in urban areas with residual maps"
 authors:
-  - "Xu P"
-  - "Zhang G"
-  - "Yang B"
-  - "Hsu L. T"
+  - "Xu, P."
+  - "Zhang, G."
+  - "Yang, B."
+  - "Hsu, L. T."
 year: 2023
 venue: "Applied Soft Computing"
 type: "journal"

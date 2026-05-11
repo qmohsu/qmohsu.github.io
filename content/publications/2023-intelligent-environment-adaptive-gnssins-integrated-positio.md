@@ -1,11 +1,11 @@
 ---
 title: "Intelligent Environment-Adaptive GNSS/INS Integrated Positioning with Factor Graph Optimization"
 authors:
-  - "Li Z"
-  - "Lee P. H"
-  - "Hung T. H. M"
-  - "Zhang G"
-  - "Hsu L. T"
+  - "Li, Z."
+  - "Lee, P. H."
+  - "Hung, T. H. M."
+  - "Zhang, G."
+  - "Hsu, L. T."
 year: 2023
 venue: "Remote Sensing"
 type: "journal"

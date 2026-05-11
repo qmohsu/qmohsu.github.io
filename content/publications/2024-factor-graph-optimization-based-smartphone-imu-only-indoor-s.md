@@ -1,10 +1,10 @@
 ---
 title: "Factor Graph Optimization-Based Smartphone IMU-Only Indoor SLAM With Multi-Hypothesis Turning Behavior Loop Closures"
 authors:
-  - "Bai S"
-  - "Wen W"
-  - "Hsu L. T"
-  - "Yang P"
+  - "Bai, S."
+  - "Wen, W."
+  - "Hsu, L. T."
+  - "Yang, P."
 year: 2024
 venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"

@@ -1,9 +1,9 @@
 ---
 title: "Principal Gaussian Overbound for Heavy-tailed Error Bounding"
 authors:
-  - "Yan P"
-  - "Zhong Y"
-  - "Hsu L. T"
+  - "Yan, P."
+  - "Zhong, Y."
+  - "Hsu, L. T."
 year: 2024
 venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"

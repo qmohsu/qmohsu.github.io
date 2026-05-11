@@ -1,10 +1,10 @@
 ---
 title: "A Survey on Cooperative Positioning Using GNSS Measurements"
 authors:
-  - "Jin R"
-  - "Zhang G"
-  - "Hsu L. T"
-  - "Hu Y"
+  - "Jin, R."
+  - "Zhang, G."
+  - "Hsu, L. T."
+  - "Hu, Y."
 year: 2024
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"

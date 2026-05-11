@@ -1,10 +1,10 @@
 ---
 title: "Resilient GNSS real-time kinematic precise positioning with inequality and equality constraints"
 authors:
-  - "Zhang Z"
-  - "Li Y"
-  - "He X"
-  - "Hsu L"
+  - "Zhang, Z."
+  - "Li, Y."
+  - "He, X."
+  - "Hsu, L."
 year: 2023
 venue: "GPS Solutions"
 type: "journal"
