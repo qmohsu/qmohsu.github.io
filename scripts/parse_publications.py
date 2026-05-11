@@ -281,45 +281,42 @@ def parse_magazine_line(line):
     }
 
 def parse_book_line(line):
-    """Parse a book/chapter line."""
+    """Parse a book / book-chapter line.
+
+    Handles two CV shapes:
+      N. Author1, Author2 and Author3, "Title" *Publisher* ... (year)
+      N. Author1, Author2 and Author3, "Chapter Title" of the book "Book Title," *Publisher*, year
+    Quotes may be straight ("...") or curly (U+201C / U+201D).
+    """
     m = re.match(r"(\d+)\.\s+", line)
     if not m:
         return None
     cv_number = int(m.group(1))
-    rest = line[m.end():].replace("**", "")
+    rest = line[m.end():]
+    rest = rest.replace("**", "").replace("\\*", "").replace("\\-", "-").replace("\\_", "_").replace("\\", "")
 
-    # Title in quotes or first significant text
-    title_match = re.search(r'"([^"]+)"', rest)
-    if title_match:
-        title = title_match.group(1).strip()
-    else:
-        # Get text before publisher italic
-        italic_match = re.search(r'\*([^*]+)\*', rest)
-        if italic_match:
-            title = rest[:italic_match.start()].strip()
-            # Remove author prefix
-            comma_parts = title.split(",")
-            if len(comma_parts) > 2:
-                title = ",".join(comma_parts[2:]).strip().lstrip('"').rstrip('"')
-        else:
-            title = rest[:80]
+    # Title: first quoted text — accept straight or curly quotes
+    title_match = re.search(r'["“]([^"”]+)["”]', rest)
+    if not title_match:
+        return None
+    title = title_match.group(1).strip().rstrip(",.;:")
+    # Strip any markdown link wrapper inside the title
+    title = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', title).strip().rstrip(",.;:")
 
-    # Year
-    year_match = re.search(r'(\d{4})', rest)
-    year = int(year_match.group(1)) if year_match else 2025
-
-    # Venue/Publisher
-    venue_match = re.search(r'\*([^*]+Publishers[^*]*)\*', rest)
-    venue = venue_match.group(1).strip() if venue_match else "Book"
-
-    # Authors: extract text before the title quote/bracket
-    if title_match:
-        auth_text = rest[:title_match.start()].rstrip(', "').rstrip()
-    else:
-        auth_text = rest.split(",")[0]
-    auth_text = auth_text.replace(" & ", ", ").replace("&", ",").replace("*", "")
-    raw_authors = [a.strip().rstrip(",").strip() for a in auth_text.split(",") if a.strip()]
+    # Authors: text before the first quote
+    authors_str = rest[:title_match.start()].rstrip(", ").strip()
+    authors_str = re.sub(r'\s+and\s+', ', ', authors_str)
+    authors_str = authors_str.replace(' & ', ', ').replace('&', ',')
+    raw_authors = [a.strip().rstrip(",").strip() for a in authors_str.split(",") if a.strip()]
     authors = merge_author_fragments(raw_authors)
+
+    # Year: first 4-digit year in 1900-2099 range
+    year_match = re.search(r'\b(?:19|20)\d{2}\b', rest)
+    year = int(year_match.group(0)) if year_match else 2025
+
+    # Venue: first italic *...* (skip the surrounding punctuation)
+    venue_match = re.search(r'\*([^*]+)\*', rest)
+    venue = venue_match.group(1).strip().rstrip(",.;: ") if venue_match else "Book"
 
     return {
         "cv_number": cv_number,

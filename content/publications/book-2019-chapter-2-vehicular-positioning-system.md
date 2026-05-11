@@ -1,9 +1,9 @@
 ---
-title: "Hsu L. T."
+title: "Chapter 2 - Vehicular Positioning System"
 authors:
-  - "Hsu L. T"
-  - "Wen W. and Zhang G"
-  - "“Chapter 2 - Vehicular Positioning System” of the book “[Vehicular Networks: Applications"
+  - "Hsu L. T."
+  - "Wen W."
+  - "Zhang G"
 year: 2019
 venue: "Nova Science Publishers Inc"
 type: "book"
