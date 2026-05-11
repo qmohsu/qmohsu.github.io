@@ -1,4 +1,4 @@
----
+﻿---
 title: "Safety-quantifiable line feature-based monocular visual localization with 3d prior map"
 authors:
   - "Zheng, X."
@@ -14,6 +14,10 @@ doi: "10.1109/tits.2025.3572620"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "environment-aware-pnt"
+  - "optimization-estimation"
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Towards high‐definition vector map construction based on multi‐sensor integration for intelligent vehicles: Systems and error quantification"
 authors:
   - "Hu, R."
@@ -16,6 +16,8 @@ doi: "10.1049/itr2.12524"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

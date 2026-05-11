@@ -1,4 +1,4 @@
----
+﻿---
 title: "Principal Gaussian Overbound for Heavy-tailed Error Bounding"
 authors:
   - "Yan, P."
@@ -14,6 +14,8 @@ doi: "10.1109/taes.2024.3448405"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "integrity-localization"
 tags: []
 ---

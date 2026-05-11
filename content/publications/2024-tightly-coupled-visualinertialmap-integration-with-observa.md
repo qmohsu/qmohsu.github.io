@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tightly-coupled visual/inertial/map integration with observability analysis for reliable localization of intelligent vehicles"
 authors:
   - "Zheng, X."
@@ -14,6 +14,10 @@ doi: "10.1109/tiv.2024.3419101"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---
