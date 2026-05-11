@@ -12,3 +12,9 @@ source_url: "https://www.polyu.edu.hk/kteo/knowledge-transfer/innovations-and-te
 Stairio — *Automated Staircase Safety Monitoring and Predictive Maintenance Robot with Handrail-affixed Locomotion System* — received the **Gold Medal with Congratulations of the Jury** at the 51st International Exhibition of Inventions Geneva in April 2026. "Congratulations of the Jury" is a juried higher tier awarded above the standard Gold Medal for inventions the jury judges exceptional.
 
 The robot uses a patented handrail-affixed locomotion system to navigate diverse staircase designs without obstructing users. Onboard AI vision and sensors let it autonomously detect obstructions, lighting failures, cleanliness issues, and signage gaps, producing real-time compliance reports for facility managers. Project leader: Prof. Li-Ta Hsu, Intelligent Positioning and Navigation Laboratory (IPNL), Department of Aeronautical and Aviation Engineering. Underlying funding from the PolyU Hotel ICON Research Scheme (HK$500,000, 2024-25).
+
+![Stairio team at the Geneva 2026 booth](/images/news/2026-stairio-geneva-gold-02.jpg)
+![Close-up of Stairio's patented handrail-affixed sensor and locomotion module](/images/news/2026-stairio-geneva-gold-03.jpg)
+![IPNL team member presenting Stairio at the booth](/images/news/2026-stairio-geneva-gold-04.jpg)
+![IPNL team explaining Stairio to a Geneva attendee](/images/news/2026-stairio-geneva-gold-05.jpg)
+![IPNL team engaging with attendees beside the Stairio device](/images/news/2026-stairio-geneva-gold-06.jpg)
