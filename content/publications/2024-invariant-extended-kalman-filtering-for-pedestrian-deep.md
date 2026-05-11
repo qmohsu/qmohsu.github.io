@@ -1,4 +1,4 @@
----
+﻿---
 title: "Invariant Extended Kalman Filtering for Pedestrian Deep-Inertial Odometry"
 authors:
   - "Shiyu Bai"
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

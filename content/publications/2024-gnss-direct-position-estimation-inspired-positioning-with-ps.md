@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS direct position estimation-inspired positioning with pseudorange correlogram for urban navigation"
 authors:
   - "Vicenzo, S."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

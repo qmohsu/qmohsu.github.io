@@ -1,4 +1,4 @@
----
+﻿---
 title: "LiDAR-based NDT Matching Performance Evaluation for Positioning in Adverse Weather Conditions"
 authors:
   - "Chang, J."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

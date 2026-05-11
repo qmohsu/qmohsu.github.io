@@ -1,4 +1,4 @@
----
+﻿---
 title: "Database Calibration for Outdoor Wi-Fi Positioning System"
 authors:
   - "Huang Y."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

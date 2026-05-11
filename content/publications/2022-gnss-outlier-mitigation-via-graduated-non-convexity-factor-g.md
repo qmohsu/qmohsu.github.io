@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS Outlier Mitigation via Graduated Non-Convexity Factor Graph Optimization"
 authors:
   - "Wen W."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
+  - "optimization-estimation"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Skymask Matching Aided Positioning Using Sky-Pointing Fisheye Camera and 3D City Models in Urban Canyons"
 authors:
   - "Lee M.J.L."
@@ -16,8 +16,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

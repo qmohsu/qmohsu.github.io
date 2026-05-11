@@ -1,4 +1,4 @@
----
+﻿---
 title: "Adaptive Multi-Sensor Integrated Navigation System Aided by Continuous Error Map from RSU for Autonomous Vehicles in Urban Areas"
 authors:
   - "Feng Huang"
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Characterization and Validation of GNSS Multipath-Induced Doppler Measurement Error"
 authors:
   - "Fang, J."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

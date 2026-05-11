@@ -1,4 +1,4 @@
----
+﻿---
 title: "A New Path Planning Algorithm Using GNSS Localization Error Map for UAV in Urban Area"
 authors:
   - "Zhang G."
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Performance Assessment of the GNSS Diffraction Models in Urban Areas"
 authors:
   - "Zhang G."
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

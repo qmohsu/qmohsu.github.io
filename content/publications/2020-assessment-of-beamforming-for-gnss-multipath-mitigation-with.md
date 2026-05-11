@@ -1,4 +1,4 @@
----
+﻿---
 title: "Assessment of beamforming for GNSS multipath mitigation with a cost-effective structure"
 authors:
   - "Jia Q."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enhancing Smartphone-based Pedestrian Positioning: Using Factor Graph Optimization with Indoor/Outdoor Detection for 3DMA GNSS/Visual-Inertial State Estimation"
 authors:
   - "Ho, H. Y."
@@ -17,10 +17,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "3d-mapping-aided"
-  - "multi-sensor-fusion"
-  - "smartphone-positioning"
-  - "indoor-positioning"
+  - "optimization-estimation"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

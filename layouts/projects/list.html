@@ -2,9 +2,45 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 
-<div class="cards">
-  {{ range .Pages }}
-    {{ partial "project-card.html" . }}
-  {{ end }}
+{{ $projects := .Pages }}
+
+{{ $open := where $projects ".Params.category" "open-platform" }}
+{{ if $open }}
+<div class="section">
+  <h2>A. Open Platforms and Benchmarks</h2>
+  <div class="cards">
+    {{ range $open.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
 </div>
+{{ end }}
+
+{{ $programs := where $projects ".Params.category" "research-program" }}
+{{ if $programs }}
+<div class="section">
+  <h2>B. Core Research Programs</h2>
+  <div class="cards">
+    {{ range $programs.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ $translational := where $projects ".Params.category" "translational-system" }}
+{{ if $translational }}
+<div class="section">
+  <h2>C. Embodied and Translational Systems</h2>
+  <div class="cards">
+    {{ range $translational.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ $uncategorized := where $projects ".Params.category" "" }}
+{{ if $uncategorized }}
+<div class="section">
+  <h2>Other Projects</h2>
+  <div class="cards">
+    {{ range $uncategorized.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
 {{ end }}

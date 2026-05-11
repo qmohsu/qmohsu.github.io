@@ -1,4 +1,4 @@
----
+﻿---
 title: "Real Time Indoor Location Based Service Test Bed (II)"
 authors:
   - "Hsu L. T"
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

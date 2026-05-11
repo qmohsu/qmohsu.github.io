@@ -1,4 +1,4 @@
----
+﻿---
 title: "C/N0 Assessment Based on GPS L5/L1C/A Signal Acquisition in Open-Sky/Light-Urban/Dense-Urban/Indoor Environments with Extended Coherent Integration Time"
 authors:
   - "Tsang, C. L."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "indoor-positioning"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

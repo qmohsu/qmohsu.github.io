@@ -1,4 +1,4 @@
----
+﻿---
 title: "Indoor Fire Monitoring Based on Look-Up-From-Floor Sensing of Ceiling"
 authors:
   - "Wang Q"
@@ -21,6 +21,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

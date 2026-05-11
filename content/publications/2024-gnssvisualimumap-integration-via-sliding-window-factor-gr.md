@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS/Visual/IMU/Map Integration Via Sliding Window Factor Graph Optimization for Vehicular Positioning in Urban Areas"
 authors:
   - "Bai, X."
@@ -14,8 +14,8 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "factor-graph-optimization"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

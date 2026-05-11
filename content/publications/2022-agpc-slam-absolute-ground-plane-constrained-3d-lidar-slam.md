@@ -1,4 +1,4 @@
----
+﻿---
 title: "AGPC-SLAM: Absolute Ground Plane Constrained 3D LiDAR SLAM"
 authors:
   - "Wen W."
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

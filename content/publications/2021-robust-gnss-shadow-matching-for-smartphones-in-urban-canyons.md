@@ -1,4 +1,4 @@
----
+﻿---
 title: "Robust GNSS Shadow Matching for Smartphones in Urban Canyons"
 authors:
   - "Ng H.F."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "smartphone-positioning"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

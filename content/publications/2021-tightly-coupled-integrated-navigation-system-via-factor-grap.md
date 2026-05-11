@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tightly Coupled Integrated Navigation System Via Factor Graph for UAV Indoor Localization"
 authors:
   - "Yang S."
@@ -14,8 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "multi-sensor-fusion"
-  - "indoor-positioning"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

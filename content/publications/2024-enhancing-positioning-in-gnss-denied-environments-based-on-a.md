@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enhancing positioning in GNSS denied environments based on an extended Kalman filter using past GNSS measurements and IMU"
 authors:
   - "Iyer, K."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

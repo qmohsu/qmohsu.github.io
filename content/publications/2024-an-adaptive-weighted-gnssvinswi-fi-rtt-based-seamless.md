@@ -1,4 +1,4 @@
----
+﻿---
 title: "An Adaptive Weighted GNSS/VINS/Wi-Fi RTT-based Seamless Positioning System for Smartphone"
 authors:
   - "Meiling Su"
@@ -17,7 +17,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "smartphone-positioning"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

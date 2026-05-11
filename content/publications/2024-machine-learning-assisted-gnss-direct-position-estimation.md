@@ -1,4 +1,4 @@
----
+﻿---
 title: "Machine Learning Assisted GNSS Direct Position Estimation for Urban Environments Applications"
 authors:
   - "Sergio Vicenzo"
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
   - "machine-learning"
 tags: []
 ---

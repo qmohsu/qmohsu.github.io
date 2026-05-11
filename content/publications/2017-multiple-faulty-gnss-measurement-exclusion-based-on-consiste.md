@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multiple Faulty GNSS Measurement Exclusion based on Consistency Check in Urban Canyons"
 authors:
   - "Hsu L. T."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

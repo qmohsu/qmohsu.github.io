@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grid-based 3DMA GNSS with clustering and Doppler velocity using factor graph optimisation"
 authors:
   - "Ng, H. F."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
-  - "3d-mapping-aided"
+  - "optimization-estimation"
+  - "environment-aware-pnt"
 tags: []
 ---

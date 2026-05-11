@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D Mapping Aided GNSS Positioning Using Doppler Frequency for Urban Areas"
 authors:
   - "Liyuan Zhang"
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "3d-mapping-aided"
-  - "urban-gnss"
+  - "environment-aware-pnt"
+  - "urban-gnss-reliability"
 tags: []
 ---

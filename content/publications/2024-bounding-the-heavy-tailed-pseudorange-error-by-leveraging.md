@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bounding the Heavy-Tailed Pseudorange Error by Leveraging Membership Weights Analysis of Gaussian Mixture Model"
 authors:
   - "Penggao Yan"
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

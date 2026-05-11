@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Novel INS/USBL Integrated Navigation Scheme Via Factor Graph Optimization"
 authors:
   - "Zhang L."
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
+  - "optimization-estimation"
 tags: []
 ---

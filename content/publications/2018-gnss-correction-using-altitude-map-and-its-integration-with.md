@@ -1,4 +1,4 @@
----
+﻿---
 title: "GNSS Correction using Altitude Map and Its Integration with Pedestrian Dead Reckoning"
 authors:
   - "Huang Y."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "smartphone-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

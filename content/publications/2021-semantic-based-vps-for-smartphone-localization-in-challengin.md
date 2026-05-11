@@ -1,4 +1,4 @@
----
+﻿---
 title: "Semantic-Based VPS for Smartphone Localization in Challenging Urban Environments"
 authors:
   - "Lee J.L. M."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "smartphone-positioning"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

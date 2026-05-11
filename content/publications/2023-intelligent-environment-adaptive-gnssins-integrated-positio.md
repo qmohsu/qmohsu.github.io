@@ -1,4 +1,4 @@
----
+﻿---
 title: "Intelligent Environment-Adaptive GNSS/INS Integrated Positioning with Factor Graph Optimization"
 authors:
   - "Li, Z."
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "factor-graph-optimization"
+  - "optimization-estimation"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "PositionNet: CNN-based GNSS positioning in urban areas with residual maps"
 authors:
   - "Xu, P."
@@ -16,6 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

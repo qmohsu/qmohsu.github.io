@@ -1,4 +1,4 @@
----
+﻿---
 title: "Accurate Estimation of Pedestrian Orientation from On-board Camera and Inertial Sensors"
 authors:
   - "Gu Y."
@@ -15,7 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
-  - "smartphone-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

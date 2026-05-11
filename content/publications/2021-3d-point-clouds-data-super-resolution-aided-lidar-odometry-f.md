@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D Point Clouds Data Super Resolution Aided LiDAR Odometry for Vehicular Positioning in Urban Canyons"
 authors:
   - "Yue J."
@@ -16,7 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

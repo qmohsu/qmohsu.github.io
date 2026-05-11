@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enhancing GNSS Positioning Accuracy for Road Monitoring Systems: A Factor Graph Optimization Approach Aided by Geospatial Information"
 authors:
   - "Zhong, Y."
@@ -18,7 +18,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "factor-graph-optimization"
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
 tags: []
 ---

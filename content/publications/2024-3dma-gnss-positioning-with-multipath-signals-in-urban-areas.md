@@ -1,4 +1,4 @@
----
+﻿---
 title: "3DMA GNSS Positioning with Multipath Signals in Urban Areas: Methodology and Preliminary Results"
 authors:
   - "Mingda Ye"
@@ -14,7 +14,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "3d-mapping-aided"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

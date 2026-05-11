@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multi-Agent Collaborative GNSS/Camera/INS Integration Aided by Inter-ranging for Vehicular Navigation in Urban Areas"
 authors:
   - "Wen W."
@@ -18,7 +18,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
-  - "multi-sensor-fusion"
+  - "urban-gnss-reliability"
+  - "seamless-pnt-embodied"
 tags: []
 ---

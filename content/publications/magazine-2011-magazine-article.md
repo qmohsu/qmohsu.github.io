@@ -1,4 +1,4 @@
----
+﻿---
 title: "Magazine Article"
 authors:
 
@@ -12,6 +12,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

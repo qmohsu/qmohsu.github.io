@@ -1,4 +1,4 @@
----
+﻿---
 title: "Localization Uncertainty Constrained Lateral PID Control with Aids of Fuzzy Logic Considering LiDAR NDT Matching Error"
 authors:
   - "Hu S."
@@ -15,6 +15,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "multi-sensor-fusion"
+  - "seamless-pnt-embodied"
 tags: []
 ---

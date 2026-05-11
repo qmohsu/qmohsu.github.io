@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integration of GNSS and BLE Technology With Inertial Sensors for Real-Time Positioning in Urban Environments"
 authors:
   - "Luo H."
@@ -19,6 +19,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ultra-low power GNSS L5 band snapshot positioning: A two step approach"
 authors:
   - "Chi-Lok Tsang"
@@ -17,6 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "smartphone-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

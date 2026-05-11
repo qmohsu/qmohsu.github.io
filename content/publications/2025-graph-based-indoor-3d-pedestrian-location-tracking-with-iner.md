@@ -1,4 +1,4 @@
----
+﻿---
 title: "Graph-Based Indoor 3D Pedestrian Location Tracking With Inertial-Only Perception"
 authors:
   - "Bai, S."
@@ -16,7 +16,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "smartphone-positioning"
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "3D Building Model Pedestrian Positioning Method using GPS/GLONASS/QZSS and Its Reliability Calculation"
 authors:
   - "Hsu L. T."
@@ -15,7 +15,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "3d-mapping-aided"
-  - "smartphone-positioning"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

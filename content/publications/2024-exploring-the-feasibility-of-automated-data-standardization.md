@@ -1,4 +1,4 @@
----
+﻿---
 title: "Exploring the Feasibility of Automated Data Standardization using Large Language Models for Seamless Positioning"
 authors:
   - "Max J. L. Lee"
@@ -14,6 +14,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "urban-gnss"
+  - "urban-gnss-reliability"
 tags: []
 ---

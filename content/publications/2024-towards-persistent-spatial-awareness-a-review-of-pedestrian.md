@@ -1,4 +1,4 @@
----
+﻿---
 title: "Towards Persistent Spatial Awareness: A Review of Pedestrian Dead Reckoning-Centric Indoor Positioning with Smartphones"
 authors:
   - "Bai, S."
@@ -17,7 +17,6 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "smartphone-positioning"
-  - "indoor-positioning"
+  - "seamless-pnt-embodied"
 tags: []
 ---
