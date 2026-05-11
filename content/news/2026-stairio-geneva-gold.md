@@ -13,5 +13,7 @@ Stairio — *Automated Staircase Safety Monitoring and Predictive Maintenance Ro
 
 The robot uses a patented handrail-affixed locomotion system to navigate diverse staircase designs without obstructing users. Onboard AI vision and sensors let it autonomously detect obstructions, lighting failures, cleanliness issues, and signage gaps, producing real-time compliance reports for facility managers. Project leader: Prof. Li-Ta Hsu, Intelligent Positioning and Navigation Laboratory (IPNL), Department of Aeronautical and Aviation Engineering. Underlying funding from the PolyU Hotel ICON Research Scheme (HK$500,000, 2024-25).
 
+Project website: [stairio.io](https://www.stairio.io/).
+
 ![Stairio team at the Geneva 2026 booth](/images/news/2026-stairio-geneva-gold-02.jpg)
 ![Close-up of Stairio's patented handrail-affixed sensor and locomotion module](/images/news/2026-stairio-geneva-gold-03.jpg)
