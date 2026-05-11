@@ -1,4 +1,4 @@
----
+﻿---
 title: "GPS Error Correction with Pseudorange Evaluation Using 3-dimensional Maps"
 authors:
   - "Miura S."
@@ -15,6 +15,8 @@ doi: "10.1109/tits.2015.2432122"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

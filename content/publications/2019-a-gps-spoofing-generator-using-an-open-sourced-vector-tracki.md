@@ -1,4 +1,4 @@
----
+﻿---
 title: "A GPS Spoofing Generator using an Open Sourced Vector Tracking-Based Receiver"
 authors:
   - "Meng Q."
@@ -16,6 +16,8 @@ doi: "10.3390/s19183993"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "integrity-localization"
 tags: []
 ---

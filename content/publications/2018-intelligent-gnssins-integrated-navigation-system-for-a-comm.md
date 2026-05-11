@@ -1,4 +1,4 @@
----
+﻿---
 title: "Intelligent GNSS/INS Integrated Navigation System for a Commercial UAV Flight Control System"
 authors:
   - "Zhang G."
@@ -13,6 +13,9 @@ doi: "10.1016/j.ast.2018.07.026"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

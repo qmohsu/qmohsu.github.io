@@ -16,6 +16,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
+  - "environment-aware-pnt"
   - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "A Gradient Boosting Decision Tree Based GPS Signal Reception Classification Algorithm"
 authors:
   - "Sun R."
@@ -15,6 +15,8 @@ doi: "10.1016/j.asoc.2019.105942"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

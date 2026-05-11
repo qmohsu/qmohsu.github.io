@@ -17,6 +17,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "seamless-pnt-embodied"
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---
