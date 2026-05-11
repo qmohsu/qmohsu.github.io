@@ -1,23 +1,19 @@
 ---
 title: "UrbanNav"
-description: "Open multisensory dataset for benchmarking urban navigation algorithms in Hong Kong"
-status: "ongoing"
+description: "Open multisensory benchmark for urban navigation algorithms in Hong Kong's dense urban canyons."
+category: "open-platform"
+status: "active"
 flagship: true
 start_date: 2019
 funding: "Google, RGC, and other sources"
 repo: "https://github.com/IPNL-POLYU/UrbanNavDataset"
-themes: ["urban-gnss", "multi-sensor-fusion"]
-tags: ["dataset", "benchmark", "GNSS", "LiDAR", "IMU"]
+themes: ["urban-gnss-reliability", "environment-aware-pnt", "seamless-pnt-embodied", "integrity-localization"]
+tags: ["dataset", "benchmark", "GNSS", "LiDAR", "IMU", "open-source"]
 weight: 1
 ---
 
-UrbanNav is an open-source multisensory dataset collected in dense urban environments in Hong Kong. It includes GNSS raw measurements, IMU data, LiDAR point clouds, and camera images from multiple challenging urban scenarios.
+UrbanNav is an open multisensory benchmark for testing navigation algorithms in dense urban environments. It provides raw GNSS, IMU, LiDAR, camera, and ground-truth data from challenging Asian urban canyon scenarios — supporting research in GNSS positioning, sensor fusion, SLAM, and integrity monitoring.
 
-The dataset enables benchmarking of urban navigation algorithms and has become a widely cited resource in the positioning and navigation community.
+**Why it matters.** Real urban navigation fails because GNSS, perception, and low-cost sensors fail *together*. UrbanNav gives the community a shared benchmark for those joint failures, and has been adopted as a reference dataset across the positioning and navigation community.
 
-**Key features:**
-- Multiple data collection campaigns in Hong Kong urban canyons
-- GNSS raw measurements from multiple receivers
-- Integrated IMU, LiDAR, and camera data
-- Ground truth trajectories
-- Open access under MIT license
+**Outputs:** open dataset, [GitHub repository](https://github.com/IPNL-POLYU/UrbanNavDataset), benchmark publications (NAVIGATION 2023; ION GNSS+ 2021), tutorials, and integration with the [GraphGNSSLib](/projects/graphgnsslib/) factor-graph platform.
