@@ -16,6 +16,7 @@ code: ""
 data: ""
 themes:
   - "urban-gnss-reliability"
-  - "seamless-pnt-embodied"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
 tags: []
 ---

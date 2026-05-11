@@ -18,6 +18,5 @@ data: ""
 themes:
   - "urban-gnss-reliability"
   - "environment-aware-pnt"
-  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Human-like motion planning model for driving in signalized intersections"
 authors:
   - "Gu Y."
@@ -16,6 +16,7 @@ doi: "10.1016/j.iatssr.2016.11.002"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "seamless-pnt-embodied"
 tags: []
 ---
