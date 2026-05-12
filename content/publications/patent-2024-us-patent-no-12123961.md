@@ -1,4 +1,4 @@
----
+﻿---
 title: "U.S. Patent No. 12,123,961"
 authors:
   - "Hsu L. T"
@@ -12,6 +12,9 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
 tags: []
 ---

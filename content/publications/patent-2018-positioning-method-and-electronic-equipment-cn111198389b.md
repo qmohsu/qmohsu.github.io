@@ -1,4 +1,4 @@
----
+﻿---
 title: "Positioning method and electronic equipment"
 authors:
   - "Wang Y"
@@ -12,6 +12,10 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
 tags: []
 ---

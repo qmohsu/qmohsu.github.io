@@ -14,6 +14,8 @@ pdf: ""
 code: "https://github.com/IPNL-POLYU/IPIN-Examples"
 data: ""
 themes:
+  - "environment-aware-pnt"
+  - "optimization-estimation"
   - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "U.S. Patent No. 12,292,340"
 authors:
   - "Wang Q"
@@ -18,6 +18,8 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
 tags: []
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "U.S. Patent No. 63/840,727"
 authors:
   - "Lee J"
@@ -12,6 +12,8 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

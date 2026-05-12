@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multi-feature visual positioning method"
 authors:
   - "Lee J"
@@ -12,6 +12,8 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

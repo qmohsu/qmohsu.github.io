@@ -13,6 +13,7 @@ pdf: ""
 code: ""
 data: ""
 themes:
-  - "seamless-pnt-embodied"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
 tags: []
 ---

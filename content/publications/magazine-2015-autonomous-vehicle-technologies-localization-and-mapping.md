@@ -1,4 +1,4 @@
----
+﻿---
 title: "Autonomous Vehicle Technologies: Localization and Mapping"
 authors:
   - "Kamijo S"
@@ -13,6 +13,9 @@ doi: "10.1587/essfr.9.2_131"
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
 tags: []
 ---

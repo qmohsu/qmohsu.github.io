@@ -1,4 +1,4 @@
----
+﻿---
 title: "Assessment of Composite PRN Code Acquisition Methods for GPS Signal"
 authors:
   - "Jan S. S."
@@ -13,6 +13,8 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
 tags: []
 ---

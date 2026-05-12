@@ -1,4 +1,4 @@
----
+﻿---
 title: "A method and system for GNSS positioning assisted by three-dimensional map"
 authors:
   - "Wen W"
@@ -13,6 +13,9 @@ doi: ""
 pdf: ""
 code: ""
 data: ""
-themes: []
+themes:
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "optimization-estimation"
 tags: []
 ---
