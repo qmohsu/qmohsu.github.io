@@ -5,6 +5,6 @@ status: "alumni"
 years: "2020-2021"
 current_position: "Postdoc Researcher, University of Calgary"
 linkedin: "https://www.linkedin.com/in/yiran-luo-phd-67523a134/"
-photo: ""
+photo: "/images/people/yiran-luo.jpg"
 sort_order: 210
 ---
