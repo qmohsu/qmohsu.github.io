@@ -1,0 +1,10 @@
+---
+title: "Yiran Luo"
+role: "Postdoctoral Fellow"
+status: "alumni"
+years: "2020-2021"
+current_position: "Postdoc Researcher, University of Calgary"
+linkedin: "https://www.linkedin.com/in/yiran-luo-phd-67523a134/"
+photo: ""
+sort_order: 210
+---
