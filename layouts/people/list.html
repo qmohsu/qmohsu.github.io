@@ -50,7 +50,7 @@
 <div class="section">
   <h2>Alumni</h2>
   <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-    {{ range sort $alumni ".Params.sort_order" "desc" }}
+    {{ range sort $alumni ".Params.years" }}
       {{ partial "person-card.html" . }}
     {{ end }}
   </div>
