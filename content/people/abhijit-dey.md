@@ -5,7 +5,7 @@ status: "alumni"
 years: "2021"
 current_position: "Senior System Engineer, Accord System & Systems"
 linkedin: "https://www.linkedin.com/in/abhijit-dey-ph-d-18621122/"
-photo: ""
+photo: "/images/people/abhijit-dey.jpg"
 sort_order: 254
 ---
 
