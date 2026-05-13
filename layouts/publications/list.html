@@ -17,7 +17,7 @@
 {{ range $year := $years }}
 <div class="year-group">
   <h3>{{ $year }} <span style="font-weight:normal;color:#666;">({{ len (where $pubs ".Params.year" (int $year)) }})</span></h3>
-  {{ range where $pubs ".Params.year" (int $year) }}
+  {{ range sort (where $pubs ".Params.year" (int $year)) ".Params.cv_number" "desc" }}
     {{ partial "publication-card.html" . }}
   {{ end }}
 </div>

@@ -14,7 +14,7 @@
   {{ if $pubs }}
   <div class="section">
     <h2>Related Publications</h2>
-    {{ range sort $pubs ".Params.year" "desc" }}
+    {{ range sort (sort $pubs ".Params.cv_number" "desc") ".Params.year" "desc" }}
       {{ partial "publication-card.html" . }}
     {{ end }}
   </div>
