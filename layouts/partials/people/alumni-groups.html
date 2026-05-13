@@ -1,0 +1,12 @@
+{{ $people := . }}
+{{ $alumni := where $people ".Params.status" "alumni" }}
+
+{{ $groups := slice
+  (dict "title" "PhD / MPhil" "items" (sort (where $alumni ".Params.role" "in" (slice "PhD Student" "PhD Student (HK PhD Fellowship)" "MPhil Student")) ".Params.years"))
+  (dict "title" "Postdoctoral Fellows" "items" (sort (where $alumni ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
+  (dict "title" "MSc Students" "items" (sort (where $alumni ".Params.role" "eq" "MSc Student") ".Params.years"))
+  (dict "title" "Research Assistants" "items" (sort (where $alumni ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" "Visiting Students" "items" (sort (where $alumni ".Params.role" "eq" "Visiting PhD Student") ".Params.years"))
+}}
+
+{{ return $groups }}
