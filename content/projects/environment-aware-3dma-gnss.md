@@ -5,7 +5,7 @@ category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
-funding: "Huawei 3-year collaborative agreement (HK$10M framework, 2020–2023, renewed) and Google Research Award (US$40k, 2024)"
+funding: "Long-running Huawei collaborative research partnership (since 2018) and Google Research Award (US$40k, 2024)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["3DMA GNSS", "LiDAR", "ray tracing", "digital twin", "Huawei", "Google"]
 weight: 4
@@ -16,7 +16,7 @@ This program uses 3D city models, LiDAR maps, sky visibility, ray tracing, digit
 **Why it matters.** Smartphone- and vehicle-grade GNSS receivers operating in urban canyons see severe NLOS and multipath errors. Using a known 3D model of the surrounding buildings turns the environment from noise source into measurement aid — and is the foundation of the lab's longest-running industry partnership.
 
 **Funding & industry partners.**
-- **Huawei** — 3-year HK$10M collaborative agreement signed July 2020, with 9+ contracts under the framework on 3DMA GNSS, deep integration, 5G indoor positioning, collaborative GNSS, and multi-sensor fusion (since 2018)
+- **Huawei** — long-running collaborative research partnership on 3DMA GNSS, deep integration, indoor positioning, collaborative GNSS, and multi-sensor fusion (since 2018)
 - **Google Research Award** — US$40k, 2024, *3DMA GNSS Precise Positioning for Vehicular Applications* (PI)
 - **Google Android Location** — Visiting Research Scientist at Mountain View (20 months, 2022–2023); Pixel team talk Aug 2024
 
