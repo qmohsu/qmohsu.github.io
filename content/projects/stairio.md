@@ -1,4 +1,4 @@
----
+﻿---
 title: "Stairio: Autonomous Staircase Safety Monitoring Robot"
 description: "Handrail-affixed locomotion system with onboard AI vision for autonomous staircase inspection and predictive maintenance."
 category: "translational-system"
@@ -7,7 +7,7 @@ flagship: false
 start_date: 2024
 funding: "Hotel ICON Research Scheme (HK$500k, PI)"
 partners: ["Hotel ICON (PolyU)"]
-themes: ["seamless-pnt-embodied", "environment-aware-pnt"]
+themes: ["environment-aware-pnt", "seamless-pnt-embodied"]
 tags: ["robotics", "embodied autonomy", "predictive maintenance", "translational"]
 weight: 1
 ---

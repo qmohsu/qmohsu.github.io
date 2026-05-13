@@ -1,4 +1,4 @@
----
+﻿---
 title: "Smart Mobility and Multi-Sensor Fusion"
 description: "Translating GNSS and multi-sensor positioning research into autonomous vehicles, smartphones, drones, and urban service robotics."
 category: "research-program"
@@ -6,9 +6,9 @@ status: "active"
 flagship: true
 start_date: 2017
 funding: "RGC CRF Co-PI (HK$7M total, HK$0.6M share, AV safety); ITF-ITSP HK$801k (PI, smartphone urban positioning); Google Research Award US$40k (PI); RC-Metaverse HK$300k (PI)"
-themes: ["seamless-pnt-embodied", "optimization-estimation", "environment-aware-pnt", "integrity-localization"]
+themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["autonomous vehicles", "smartphones", "UAVs", "robotics", "smart cities"]
-weight: 4
+weight: 6
 ---
 
 This program turns positioning algorithms into deployable systems across the mobility stack — autonomous vehicles, smartphones, drones, urban service robotics, and smart-city infrastructure. Where *Integrity-First Navigation* asks "is this position correct?" and *AI for Positioning* asks "how do we compute it?", **Smart Mobility asks "how do we use it?"**

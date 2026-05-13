@@ -1,4 +1,4 @@
----
+﻿---
 title: "Environment-Aware and 3D Map-Aided GNSS"
 description: "Using 3D city models, LiDAR maps, ray tracing, and digital twins to improve GNSS positioning and reliability assessment in dense cities."
 category: "research-program"
@@ -6,9 +6,9 @@ status: "active"
 flagship: true
 start_date: 2017
 funding: "Huawei 3-year collaborative agreement (HK$10M framework, 2020–2023, renewed) and Google Research Award (US$40k, 2024)"
-themes: ["environment-aware-pnt", "urban-gnss-reliability", "integrity-localization"]
+themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["3DMA GNSS", "LiDAR", "ray tracing", "digital twin", "Huawei", "Google"]
-weight: 2
+weight: 4
 ---
 
 This program uses 3D city models, LiDAR maps, sky visibility, ray tracing, digital twins, and urban geometry to improve GNSS positioning and reliability assessment in dense cities. The urban environment is not only an obstacle — it can become *prior information* for signal prediction, NLOS detection, multipath modeling, and integrity-aware positioning.

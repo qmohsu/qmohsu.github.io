@@ -1,11 +1,11 @@
----
+﻿---
 title: "Robot Meets GNSS and Ranging"
 description: "Community initiative connecting GNSS, UWB, 5G NR, and radio-based ranging with robotics perception, planning, and control for seamless autonomy."
 category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2025
-themes: ["seamless-pnt-embodied", "receiver-sdr", "optimization-estimation", "integrity-localization"]
+themes: ["receiver-sdr", "urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["robotics", "GNSS", "UWB", "5G NR", "ranging", "community"]
 weight: 3
 ---

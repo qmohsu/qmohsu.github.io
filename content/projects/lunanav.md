@@ -1,4 +1,4 @@
----
+﻿---
 title: "LunaNav: Lunar Robotic Exploration"
 description: "Extending the lab's multi-sensor positioning expertise from Earth's urban canyons into lunar surface navigation."
 category: "translational-system"
@@ -6,7 +6,7 @@ status: "active"
 flagship: false
 start_date: 2024
 funding: "PolyU Research Centre for Unmanned Autonomous Systems (RCUAS), HK$500k (PI)"
-themes: ["seamless-pnt-embodied", "environment-aware-pnt", "optimization-estimation"]
+themes: ["environment-aware-pnt", "optimization-estimation", "seamless-pnt-embodied"]
 tags: ["planetary robotics", "Moon", "GNSS-denied", "new domain"]
 weight: 2
 ---

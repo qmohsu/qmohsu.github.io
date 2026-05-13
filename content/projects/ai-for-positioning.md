@@ -1,13 +1,13 @@
----
+﻿---
 title: "AI for Positioning"
 description: "Machine learning, deep learning, factor graphs, and LLMs applied to GNSS and multi-sensor positioning — from supervised NLOS classifiers to self-supervised weighting and LLM-based data standardization."
 category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
-themes: ["optimization-estimation", "urban-gnss-reliability", "receiver-sdr", "integrity-localization"]
+themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["machine learning", "deep learning", "factor graph", "LLM", "AI for GNSS"]
-weight: 3
+weight: 5
 ---
 
 This program applies machine learning, deep learning, and probabilistic graphical models to GNSS and multi-sensor positioning. The arc began with supervised classifiers for GNSS multipath/NLOS detection (2017 ITSC; 2018 ANFIS in *Journal of Navigation*; 2020 Gradient Boosting Decision Tree in *Applied Soft Computing*) and evolved into deep-learning approaches (LSTM-based GNSS uncertainty prediction; CNN-based environment retrieval in IEEE TIV) and **probabilistic graphical models** — Factor Graph Optimization — which has become a foundational framework for the field. Most recently the thread reaches into **LLM-based data standardization** for positioning workflows (Lee, Lin, Hsu, IPIN 2024).

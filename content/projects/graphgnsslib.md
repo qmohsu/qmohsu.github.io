@@ -1,4 +1,4 @@
----
+﻿---
 title: "GraphGNSSLib"
 description: "Open-source factor-graph platform for GNSS positioning, RTK, and GNSS/INS research."
 category: "open-platform"
@@ -6,7 +6,7 @@ status: "active"
 flagship: true
 start_date: 2020
 repo: "https://github.com/weisongwen/GraphGNSSLib"
-themes: ["optimization-estimation", "urban-gnss-reliability", "integrity-localization", "seamless-pnt-embodied"]
+themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["factor graph", "GNSS", "optimization", "C++", "ROS", "open-source"]
 weight: 3
 ---
