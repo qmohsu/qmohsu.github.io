@@ -1,8 +1,10 @@
 ---
 title: "Hongmin Zhang"
 role: "PhD Student"
-status: "current"
-years: "2022-present"
+status: "alumni"
+years: "2022-2026"
+thesis: ""
+current_position: ""
 photo: "/images/people/hongmin-zhang.jpg"
-sort_order: 11
+sort_order: 110
 ---
