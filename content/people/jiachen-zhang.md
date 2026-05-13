@@ -1,10 +1,10 @@
 ---
 title: "Jiachen Zhang"
-role: "Visiting PhD Student"
+role: "Postdoctoral Fellow"
 status: "alumni"
-years: "2022"
+years: "2022-2024"
 photo: ""
-sort_order: 253
+sort_order: 212
 ---
 
-Visiting from Tianjin University.
+Joined as a visiting PhD student from Tianjin University in 2022; transitioned to Postdoctoral Fellow in 2023.
