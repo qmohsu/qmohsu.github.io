@@ -1,0 +1,84 @@
+# Funded-programs ledger — smaller PI/PC grants not surfaced as dedicated
+# project cards in Sections A-C. Compact public record beyond the flagship
+# projects. Source: CV (Full) of Li-Ta Hsu §2.4.1, §2.4.2.
+#
+# Deliberate omissions:
+# - Huawei Collaborative Research contracts (commercially sensitive per
+#   CLAUDE.md privacy guideline; not surfaced publicly).
+# - Items under HK$100K that are bridging / postdoc / teaching microfunds.
+
+external_completed:
+  - year: 2021
+    funder: "Amazon Research Award"
+    title: "Robot Meets Urban — UWB-augmented urban robotics"
+    amount: "(awarded)"
+    period: "2021–2022"
+  - year: 2021
+    funder: "NYU Langone Medical Center · Consultancy"
+    title: "3DMA GNSS for Vision-Impaired Pedestrians (real-time)"
+    amount: "US$10,000"
+    period: "2021–"
+  - year: 2020
+    funder: "DAAD / RGC Germany–HK Joint Research Scheme"
+    title: "Collaborative Navigation for Smart Cities"
+    amount: "HK$57,200"
+    period: "2021–2022"
+  - year: 2019
+    funder: "NSFC · 優秀青年科學基金 (港澳)"
+    title: "GNSS multipath signal generation using 3D city models and vector tracking"
+    amount: "RMB 1,300,000"
+    period: "2019–"
+  - year: 2019
+    funder: "NSFC · Young Researcher Fund (青年)"
+    title: "Young Researcher Fund"
+    amount: "RMB 285,000"
+    period: "2019–2020"
+  - year: 2019
+    funder: "SAIC Motor Corporation · Consultancy"
+    title: "Integrity for Autonomous Driving"
+    amount: "(industry consultancy)"
+    period: "2019–"
+  - year: 2018
+    funder: "Shenzhen 市基金 (JCYJ20170818103653507)"
+    title: "Low-cost GNSS module for UAV urban positioning strategy"
+    amount: "RMB 300,000"
+    period: "2018–2020"
+
+internal_active:
+  - year: 2025
+    funder: "PolyU · Financial Support for Book Writing Scheme (97HR)"
+    title: "Principles of Indoor Positioning and Indoor Navigation"
+    amount: "HK$1,200,000"
+    period: "2025–2028"
+
+internal_completed:
+  - year: 2022
+    funder: "PolyU · FENG Intra-Faculty Interdisciplinary Project"
+    title: "Perception-based GNSS PPP-RTK / LVINS for UAS in Urban Canyons"
+    amount: "HK$400,000"
+    period: "2022–2024"
+  - year: 2020
+    funder: "PolyU · RISUD EFA (Project Coordinator)"
+    title: "Resilient Urban PNT for UAV Remote Sensing in Urban Regions"
+    amount: "HK$1,000,000"
+    period: "2020–2023"
+  - year: 2019
+    funder: "PolyU · FENG Intra-Faculty Interdisciplinary Project"
+    title: "Security Enhancement of Positioning Sensors on Connected AVs"
+    amount: "HK$400,000"
+    period: "2019–2020"
+  - year: 2017
+    funder: "PolyU · Startup Fund (AAE)"
+    title: "Positioning and Navigation for AV by Sensor Integration"
+    amount: "HK$550,000"
+    period: "2017–2020"
+  - year: 2017
+    funder: "PolyU · Internal Grant for GRF/ECS-rated-3.5 (CRG)"
+    title: "GPS Error Modelling using 3D Point Cloud"
+    amount: "HK$105,000"
+    period: "2017–2019"
+  - year: 2016
+    funder: "PolyU · Large Equipment Fund (Teaching)"
+    title: "Equipment for Teaching Flight Mechanics, GNC"
+    amount: "HK$1,132,815"
+    period: "2016–2017"
