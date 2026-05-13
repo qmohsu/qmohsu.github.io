@@ -1,6 +1,6 @@
 ---
 title: "Kennaissa Kebeto Nabi"
-role: "Visiting PhD Student"
+role: "Intern"
 status: "alumni"
 years: "2025"
 current_position: "LEDA Career Fellow"
@@ -9,4 +9,4 @@ photo: ""
 sort_order: 256
 ---
 
-Visiting from Stanford University.
+Summer intern from Stanford University.

@@ -6,7 +6,7 @@
   (dict "title" "Postdoctoral Fellows" "items" (sort (where $alumni ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
   (dict "title" "MSc Students" "items" (sort (where $alumni ".Params.role" "eq" "MSc Student") ".Params.years"))
   (dict "title" "Research Assistants" "items" (sort (where $alumni ".Params.role" "eq" "Research Assistant") ".Params.years"))
-  (dict "title" "Visiting Students" "items" (sort (where $alumni ".Params.role" "eq" "Visiting PhD Student") ".Params.years"))
+  (dict "title" "Visiting Students & Interns" "items" (sort (where $alumni ".Params.role" "in" (slice "Visiting PhD Student" "Intern")) ".Params.years"))
 }}
 
 {{ return $groups }}
