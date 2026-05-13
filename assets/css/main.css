@@ -96,6 +96,8 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .kv span {
   border: 1px solid var(--border);
+  background: #f3f6f9;
+  color: var(--text);
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 0.95rem;
@@ -111,13 +113,14 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .member-groups {
   display: grid;
-  gap: 24px;
+  gap: 32px;
 }
 .member-group h3 {
-  margin: 0 0 10px;
+  margin: 28px 0 14px;
   font-size: 1.05rem;
   color: var(--accent);
 }
+.member-group:first-child h3 { margin-top: 0; }
 .group-empty {
   margin: 0;
   color: var(--text-secondary);
@@ -158,8 +161,8 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .badge-ongoing { background: #d5f5e3; color: #1e8449; }
 .badge-completed { background: #e8e8e8; color: #555; }
-.badge-current { background: #d4e6f1; color: #1a5276; }
-.badge-alumni { background: #fdebd0; color: #935116; }
+.badge-current { background: #a3c7e3; color: #0d3a5c; }
+.badge-alumni { background: #f5c98a; color: #6b3a0f; }
 .badge-featured { background: #fef9e7; color: #7d6608; }
 .badge-journal { background: #d4e6f1; color: #1a5276; }
 .badge-conference { background: #d5f5e3; color: #1e8449; }
