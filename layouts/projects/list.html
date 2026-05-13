@@ -34,6 +34,53 @@
 </div>
 {{ end }}
 
+{{ with .Site.Data.co_i_engagements }}
+<div class="section">
+  <h2>D. Co-Investigator Engagements</h2>
+  <p>Funded projects where Li-Ta serves as Co-Investigator under another PI's lead — including substantial collaboration with three former PhD students who now lead their own research programs at PolyU AAE (Guohao Zhang, Weisong Wen, Bing Xu).</p>
+
+  {{ with .ongoing }}
+  <h3>Ongoing</h3>
+  <table class="co-i-table">
+    <thead>
+      <tr><th>Project</th><th>Funder</th><th>Amount</th><th>Period</th><th>Principal Investigator</th></tr>
+    </thead>
+    <tbody>
+    {{ range . }}
+      <tr>
+        <td>{{ .title }}</td>
+        <td>{{ .funder }}</td>
+        <td>{{ .amount }}</td>
+        <td>{{ .period }}</td>
+        <td>{{ .pi }}</td>
+      </tr>
+    {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+
+  {{ with .completed }}
+  <h3>Completed</h3>
+  <table class="co-i-table">
+    <thead>
+      <tr><th>Project</th><th>Funder</th><th>Amount</th><th>Period</th><th>Principal Investigator</th></tr>
+    </thead>
+    <tbody>
+    {{ range . }}
+      <tr>
+        <td>{{ .title }}</td>
+        <td>{{ .funder }}</td>
+        <td>{{ .amount }}</td>
+        <td>{{ .period }}</td>
+        <td>{{ .pi }}</td>
+      </tr>
+    {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+</div>
+{{ end }}
+
 {{ $uncategorized := where $projects ".Params.category" "" }}
 {{ if $uncategorized }}
 <div class="section">

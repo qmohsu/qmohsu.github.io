@@ -303,6 +303,27 @@ h1, h2, h3 { line-height: 1.2; }
   border: 1px solid #eee;
 }
 
+/* ---- Co-Investigator engagements table ---- */
+.co-i-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px;
+  font-size: 0.9rem;
+}
+.co-i-table th, .co-i-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+.co-i-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+.co-i-table tr:hover { background: #fafbfc; }
+
 /* ---- Research theme tile ---- */
 .theme-card {
   padding: 18px 16px;
