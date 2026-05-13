@@ -6,6 +6,7 @@ status: "active"
 flagship: true
 start_date: 2017
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
+people: ["penghui-xu", "penggao-yan", "max-lee", "hongmin-zhang", "yihan-zhong", "zhengdao-li", "meiling-su"]
 tags: ["machine learning", "deep learning", "factor graph", "LLM", "AI for GNSS"]
 weight: 5
 ---

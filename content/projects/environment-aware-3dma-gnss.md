@@ -7,6 +7,7 @@ flagship: true
 start_date: 2017
 funding: "Long-running Huawei collaborative research partnership (since 2018) and Google Research Award (US$40k, 2024)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
+people: ["hoi-fung-ng", "guohao-zhang", "liang-zhang", "penghui-xu", "haosheng-xu", "shiyu-bai", "yuan-li", "hongmin-zhang"]
 tags: ["3DMA GNSS", "LiDAR", "ray tracing", "digital twin", "Huawei", "Google"]
 weight: 4
 ---

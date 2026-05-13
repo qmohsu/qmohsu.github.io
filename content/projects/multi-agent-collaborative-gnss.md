@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multi-Agent Collaborative GNSS for Intelligent Transportation Systems"
 description: "Vehicles share GNSS measurements through inter-vehicle ranging to improve urban positioning accuracy and integrity for ITS — the anchor RGC RIF program of the lab."
 category: "research-program"
@@ -8,6 +8,7 @@ start_date: 2022
 end_date: 2025
 funding: "RGC Research Impact Fund R5009-21 (HK$4.43M, Project Coordinator, 2022–2025)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
+people: ["weisong-wen", "guohao-zhang", "hoi-fung-ng", "penggao-yan", "xiao-xia", "penghui-xu", "yihan-zhong", "qian-meng"]
 tags: ["RIF", "RGC", "multi-agent", "collaborative positioning", "ITS", "integrity", "factor graph"]
 weight: 1
 aliases:

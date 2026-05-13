@@ -25,6 +25,19 @@
     {{ end }}
   {{ end }}
 
+  {{ $personSlug := .File.ContentBaseName }}
+  {{ $projects := where (where .Site.RegularPages "Section" "projects") ".Params.people" "intersect" (slice $personSlug) }}
+  {{ with $projects }}
+  <div class="section">
+    <h2>Projects</h2>
+    <ul class="person-projects">
+    {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.status }} <span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}</li>
+    {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
   {{ if or .Params.linkedin .Params.scholar .Params.website }}
   <div class="pub-links" style="margin-top:14px;">
     {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank">LinkedIn</a>{{ end }}

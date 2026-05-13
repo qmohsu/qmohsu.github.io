@@ -7,6 +7,7 @@ flagship: true
 start_date: 2017
 funding: "RGC CRF Co-PI (HK$7M total, HK$0.6M share, AV safety); ITF-ITSP HK$801k (PI, smartphone urban positioning); Google Research Award US$40k (PI); RC-Metaverse HK$300k (PI)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
+people: ["xiwei-bai", "max-lee", "weisong-wen", "meiling-su", "feng-huang", "hoi-fung-ng"]
 tags: ["autonomous vehicles", "smartphones", "UAVs", "robotics", "smart cities"]
 weight: 6
 ---

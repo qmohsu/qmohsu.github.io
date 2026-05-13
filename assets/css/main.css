@@ -324,6 +324,43 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .co-i-table tr:hover { background: #fafbfc; }
 
+/* ---- People-on-project pills + person-projects list ---- */
+.people-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+.person-link {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+  color: var(--text);
+  text-decoration: none;
+}
+.person-link:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+  text-decoration: none;
+}
+.person-link-missing {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+.person-projects {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.person-projects li { margin-bottom: 6px; }
+.person-projects .badge {
+  font-size: 0.7rem;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
 /* ---- Research theme tile ---- */
 .theme-card {
   padding: 18px 16px;

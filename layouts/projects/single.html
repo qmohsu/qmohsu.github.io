@@ -13,6 +13,22 @@
     {{ end }}
   </div>
 
+  {{ with .Params.people }}
+  <div class="section">
+    <h2>Lab members involved</h2>
+    <div class="people-pills">
+    {{ range . }}
+      {{ $person := $.Site.GetPage (printf "/people/%s" .) }}
+      {{ if $person }}
+        <a href="{{ $person.RelPermalink }}" class="person-link">{{ $person.Title }}</a>
+      {{ else }}
+        <span class="person-link person-link-missing">{{ . }}</span>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   {{ if or .Params.repo .Params.doi }}
   <div class="pub-links">
     {{ with .Params.repo }}<a href="{{ . }}" target="_blank">Code Repository</a>{{ end }}
