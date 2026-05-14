@@ -1,19 +1,25 @@
-﻿---
-title: "AI for Positioning"
-description: "Machine learning, deep learning, factor graphs, and LLMs applied to GNSS and multi-sensor positioning — from supervised NLOS classifiers to self-supervised weighting and LLM-based data standardization."
+---
+title: "Optimization and AI for Positioning"
+description: "Factor graph optimization, machine learning, deep learning, and LLMs applied to GNSS and multi-sensor positioning — from supervised NLOS classifiers to self-supervised weighting and LLM-based data standardization."
 category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["penghui-xu", "penggao-yan", "max-lee", "hongmin-zhang", "yihan-zhong", "zhengdao-li", "meiling-su"]
-tags: ["machine learning", "deep learning", "factor graph", "LLM", "AI for GNSS"]
+tags: ["factor graph optimization", "machine learning", "deep learning", "LLM", "AI for GNSS", "Android Location"]
 weight: 5
+aliases:
+  - /projects/ai-for-positioning/
 ---
 
-This program applies machine learning, deep learning, and probabilistic graphical models to GNSS and multi-sensor positioning. The arc began with supervised classifiers for GNSS multipath/NLOS detection (2017 ITSC; 2018 ANFIS in *Journal of Navigation*; 2020 Gradient Boosting Decision Tree in *Applied Soft Computing*) and evolved into deep-learning approaches (LSTM-based GNSS uncertainty prediction; CNN-based environment retrieval in IEEE TIV) and **probabilistic graphical models** — Factor Graph Optimization — which has become a foundational framework for the field. Most recently the thread reaches into **LLM-based data standardization** for positioning workflows (Lee, Lin, Hsu, IPIN 2024).
+This program applies probabilistic graphical models, machine learning, and deep learning to GNSS and multi-sensor positioning. **Factor Graph Optimization (FGO)** is the mathematical backbone — a unifying framework for fusing heterogeneous measurements with rigorous uncertainty modelling — and the arc extends into ML methods that complement (rather than bypass) the optimization layer.
 
-**Why it matters.** GNSS positioning is a noisy, partially observable, context-dependent inference problem — exactly the kind of problem where modern ML methods extract leverage that hand-crafted models miss. But ML in safety-critical positioning must work *with* the integrity layer, not bypass it. This is the thread that cross-cuts every other pillar.
+The thread began with supervised classifiers for GNSS multipath/NLOS detection (2017 ITSC; 2018 ANFIS in *Journal of Navigation*; 2020 Gradient Boosting Decision Tree in *Applied Soft Computing*) and evolved into deep-learning approaches (LSTM-based GNSS uncertainty prediction; CNN-based environment retrieval in IEEE TIV) and **probabilistic graphical models** — Factor Graph Optimization — which has become a foundational framework for the field. Most recently the thread reaches into **LLM-based data standardization** for positioning workflows (Lee, Lin, Hsu, IPIN 2024).
+
+**Why it matters.** GNSS positioning is a noisy, partially observable, context-dependent inference problem — exactly the kind of problem where optimization-based estimators and modern ML methods extract leverage that hand-crafted models miss. But ML in safety-critical positioning must work *with* the integrity layer, not bypass it. This is the thread that cross-cuts every other pillar.
+
+**Industry engagement — Google Android Location.** The program's optimization/ML methods sit close to industry-grade smartphone positioning. Prof. Hsu served as **Visiting Research Scientist at Google (Mountain View, USA)**, on the Android Location team for 20 months (2022–2023), working on FGO-based smartphone positioning. The collaboration continued with a **Pixel team talk in August 2024** and ongoing exchange between IPNL research and the Android Location group on factor-graph approaches to smartphone GNSS.
 
 **Recognition.**
 - **2024 Most-Cited Paper in NAVIGATION: Journal of the Institute of Navigation** — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu)

@@ -19,7 +19,6 @@ This program uses 3D city models, LiDAR maps, sky visibility, ray tracing, digit
 **Funding & industry partners.**
 - **Huawei** — long-running collaborative research partnership on 3DMA GNSS, deep integration, indoor positioning, collaborative GNSS, and multi-sensor fusion (since 2018)
 - **Google Research Award** — US$40k, 2024, *3DMA GNSS Precise Positioning for Vehicular Applications* (PI)
-- **Google Android Location** — Visiting Research Scientist at Mountain View (20 months, 2022–2023); Pixel team talk Aug 2024
 
 **Recognition.** TechConnect 2021 Innovation Award for *3D LiDAR Aided GNSS for L4 AV*; **US12123961B2** patent on *3D LiDAR Aided GNSS NLOS Detection and Correction* (Hsu, Wen, granted 2024).
 
