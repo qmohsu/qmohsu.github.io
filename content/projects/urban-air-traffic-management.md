@@ -21,5 +21,5 @@ This program develops **robust GNSS navigation with multi-sensor fusion for low-
 - First RGC/NSFC JRS held as PI; bridges HK academic research with Mainland aviation-industry partners
 
 **Cross-references.**
-- Methodology builds on [Multi-Agent Collaborative GNSS](/projects/multi-agent-collaborative-gnss/) (the RGC RIF research line) and [Environment-Aware 3D Map-Aided GNSS](/projects/environment-aware-3dma-gnss/)
+- Methodology builds on [Multi-Agent Collaborative GNSS](/projects/multi-agent-collaborative-gnss/) (the RGC RIF research line) and [Environment-Aware GNSS for UAS and Autonomous Driving](/projects/environment-aware-gnss/)
 - Related publication: *Tightly Joined Positioning and Control Model for UAV based on FGO* (Yang, Wen, Bai, Hsu, IEEE TVT 2025)
