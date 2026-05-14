@@ -7,6 +7,13 @@
   </div>
   {{ end }}
 
+  {{ with .Params.lead }}
+    {{ $leadPage := $.Site.GetPage (printf "/people/%s" .) }}
+    {{ if $leadPage }}
+    <p class="pillar-lead"><strong>Pillar lead:</strong> <a href="{{ $leadPage.RelPermalink }}">{{ $leadPage.Title }}</a></p>
+    {{ end }}
+  {{ end }}
+
   {{ .Content }}
 
   {{ $theme := .File.ContentBaseName }}

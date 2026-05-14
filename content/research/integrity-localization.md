@@ -11,6 +11,7 @@ keywords:
   - "safety-critical localization"
   - "spoofing detection"
 weight: 5
+lead: "penggao-yan"
 ---
 
 Accuracy is not enough for safety-critical navigation. A navigation system that gives a confident-looking answer in the wrong place can be more dangerous than one that says "I don't know." Safety-critical autonomy needs navigation systems that can say not only *"Where am I?"* but also *"Is this answer safe to use?"*
