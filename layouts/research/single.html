@@ -25,11 +25,15 @@
     {{ end }}
     {{ $years = sort $years "value" "desc" }}
 
+    {{ $typeOrder := slice "book" "patent" "journal" "magazine" "conference" }}
     {{ range $year := $years }}
+    {{ $yearPubs := where $pubs ".Params.year" (int $year) }}
     <div class="year-group">
-      <h3>{{ $year }} <span style="font-weight:normal;color:#666;">({{ len (where $pubs ".Params.year" (int $year)) }})</span></h3>
-      {{ range sort (where $pubs ".Params.year" (int $year)) ".Params.cv_number" "desc" }}
-        {{ partial "publication-card.html" . }}
+      <h3>{{ $year }} <span style="font-weight:normal;color:#666;">({{ len $yearPubs }})</span></h3>
+      {{ range $type := $typeOrder }}
+        {{ range sort (where $yearPubs ".Params.type" "eq" $type) ".Params.cv_number" "desc" }}
+          {{ partial "publication-card.html" . }}
+        {{ end }}
       {{ end }}
     </div>
     {{ end }}
