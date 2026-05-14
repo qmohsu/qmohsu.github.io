@@ -21,3 +21,5 @@ This program applies machine learning, deep learning, and probabilistic graphica
 - *Inside GNSS* feature article *What are the roles of artificial intelligence and machine learning in GNSS positioning?* (Hsu, 2020)
 
 **Representative publications.** *AutoW: Self-Supervision Learning for Weighting Estimation in GNSS Positioning* (Xu, Hsu, ION GNSS+ 2024); *Principal Gaussian Overbound for Heavy-tailed Error Bounding* (Yan, Zhong, Hsu, IEEE TAES 2024); *ML-based LOS/NLOS Classifier for GNSS Shadow Matching* (Xu et al., *Satellite Navigation* 1(1), 2020).
+
+**Open artifacts.** The FGO foundation for many of these ML methods is implemented in the open-source [GraphGNSSLib](/resources/) library, with companion code released alongside several of the cited papers — see the [Resources page](/resources/) for details.
