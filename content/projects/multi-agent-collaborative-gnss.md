@@ -8,7 +8,7 @@ start_date: 2022
 end_date: 2025
 funding: "RGC Research Impact Fund R5009-21 (HK$4.43M, Project Coordinator, 2022–2025)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
-people: ["weisong-wen", "guohao-zhang", "hoi-fung-ng", "penggao-yan", "xiao-xia", "penghui-xu", "yihan-zhong", "qian-meng"]
+people: ["weisong-wen", "guohao-zhang", "hoi-fung-ng", "penggao-yan", "xiao-xia", "penghui-xu", "yihan-zhong", "qian-meng", "zhengdao-li"]
 tags: ["RIF", "RGC", "multi-agent", "collaborative positioning", "ITS", "integrity", "factor graph"]
 weight: 1
 aliases:
@@ -25,6 +25,7 @@ This program develops **reliable multi-agent collaborative GNSS positioning** fo
 - **RGC Research Impact Fund R5009-21** — HK$4.43M, Project Coordinator (the only RIF held as PC in Li-Ta's career to date), 2022–2025
 - **2023 ION Per Enge Early Achievement Award** — second-ever Asian-university recipient, citing the foundational urban-GNSS-reliability + integrity work
 - **2024 Most-Cited Paper in NAVIGATION** — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu) — the FGO foundation that the multi-agent collaboration builds on
+- **PolyU Presidential Award in Knowledge Transfer 2022–24** — recognizing the broader KT impact of the multi-agent collaborative GNSS research line and its industry translations
 - **US12123961B2** patent (granted 2024) — *3D LiDAR Aided GNSS NLOS Detection and Correction*
 
 **Outputs (representative).**

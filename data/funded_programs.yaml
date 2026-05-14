@@ -35,6 +35,11 @@ internal_active:
     title: "Principles of Indoor Positioning and Indoor Navigation"
     amount: "HK$1,200,000"
     period: "2025–2028"
+  - year: 2024
+    funder: "PolyU · Research Centre for Metaverse"
+    title: "Robotics, AI, navigation, metaverse interaction"
+    amount: "HK$300,000"
+    period: "2024–"
 
 internal_completed:
   - year: 2022
