@@ -7,7 +7,7 @@ flagship: true
 start_date: 2017
 funding: "Long-running Huawei collaborative research partnership on 3DMA GNSS and related smartphone-grade positioning topics (since 2018; 9+ contracts under the framework)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
-people: ["hoi-fung-ng", "guohao-zhang", "penghui-xu", "haosheng-xu", "hongmin-zhang"]
+people: ["hoi-fung-ng", "guohao-zhang", "penghui-xu", "haosheng-xu", "hongmin-zhang", "chin-lok-tsang", "shiyu-bai"]
 tags: ["3DMA GNSS", "smartphone", "IoT", "consumer devices", "Huawei", "skymask matching", "ray tracing"]
 weight: 4
 aliases:
