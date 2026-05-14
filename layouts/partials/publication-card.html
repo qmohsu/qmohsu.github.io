@@ -1,23 +1,34 @@
+{{/*
+  publication-card.html — pseudo-APA inline citation.
+  Format:  Authors (Year). Title. *Venue*. https://doi.org/...
+  Hsu is bolded in any author-name form. Venue is italicized.
+  Volume/issue/pages omitted (not stored in frontmatter).
+*/}}
 <div class="pub-entry">
   <div class="pub-badges">
     {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
     {{ with .Params.quartile }}{{ if and (ne . "") (ne . "magazine") (ne . "book") (ne . "oss") }}<span class="badge badge-{{ lower . | replaceRE "[^a-z0-9]" "-" }}" title="Journal quartile (SJR/common-knowledge, current)">{{ . }}</span>{{ end }}{{ end }}
     {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
   </div>
-  <div class="pub-title">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+  <div class="pub-citation">
+    {{- with .Params.authors -}}
+      {{- $n := len . -}}
+      {{- range $i, $a := . -}}
+        {{- $norm := partial "normalize-author.html" $a -}}
+        {{- $isHsu := in (lower $norm) "hsu" -}}
+        {{- if eq $i 0 -}}{{- else if and (gt $n 2) (eq $i (sub $n 1)) -}}, &amp; {{ else if eq $i (sub $n 1) -}} &amp; {{ else -}}, {{ end -}}
+        {{- if $isHsu -}}<strong>{{ $norm }}</strong>{{- else -}}{{ $norm }}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- with .Params.year }} ({{ . }}).{{ end }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+    {{- with .Params.venue }} <em>{{ . }}</em>.{{ end }}
+    {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" target="_blank">https://doi.org/{{ . }}</a>{{ end }}
   </div>
-  {{ with .Params.authors }}
-  <div class="pub-authors">
-    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $la := lower $a }}{{ if or (hasPrefix $la "hsu ") (hasPrefix $la "hsu,") (eq $la "hsu") }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
-  </div>
-  {{ end }}
-  <div class="pub-venue">
-    {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
-  </div>
-  {{ if or .Params.doi .Params.pdf .Params.code .Params.data }}
+
+  {{ if or .Params.pdf .Params.code .Params.data }}
   <div class="pub-links">
-    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
     {{ with .Params.pdf }}<a href="{{ . }}" target="_blank">PDF</a>{{ end }}
     {{ with .Params.code }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
     {{ with .Params.data }}<a href="{{ . }}" target="_blank">Data</a>{{ end }}

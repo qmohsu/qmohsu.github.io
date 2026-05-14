@@ -1,0 +1,42 @@
+{{/*
+  normalize-author.html
+  Takes an author string in any of the common forms:
+    "Hsu, L. T."     -> "Hsu, L. T."     (kept; already comma-form)
+    "Hsu L. T."      -> "Hsu, L. T."     (add comma)
+    "Li-Ta Hsu"      -> "Hsu, L.-T."     (full -> APA initials)
+    "Shiyu Bai"      -> "Bai, S."        (full -> APA initials)
+    "L. T. Hsu"      -> "Hsu, L. T."     (initials-first -> Last, F. M.)
+  Returns APA-style "Last, F. M.".
+*/}}
+{{ $a := trim . " " }}
+{{ $result := $a }}
+{{ if not (strings.Contains $a ",") }}
+  {{ $tokens := split $a " " }}
+  {{ if gt (len $tokens) 1 }}
+    {{ $lastIdx := sub (len $tokens) 1 }}
+    {{ $lastTok := index $tokens $lastIdx }}
+    {{ $firstTok := index $tokens 0 }}
+    {{ $lastHasDot := strings.Contains $lastTok "." }}
+    {{ $firstHasDot := strings.Contains $firstTok "." }}
+    {{ if $lastHasDot }}
+      {{ $initials := delimit (after 1 $tokens) " " }}
+      {{ $result = printf "%s, %s" $firstTok $initials }}
+    {{ else if $firstHasDot }}
+      {{ $initials := delimit (first $lastIdx $tokens) " " }}
+      {{ $result = printf "%s, %s" $lastTok $initials }}
+    {{ else }}
+      {{ $given := first $lastIdx $tokens }}
+      {{ $initialsList := slice }}
+      {{ range $given }}
+        {{ $parts := split . "-" }}
+        {{ $partInits := slice }}
+        {{ range $parts }}
+          {{ $partInits = $partInits | append (printf "%s." (substr . 0 1)) }}
+        {{ end }}
+        {{ $initialsList = $initialsList | append (delimit $partInits "-") }}
+      {{ end }}
+      {{ $result = printf "%s, %s" $lastTok (delimit $initialsList " ") }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $result }}
