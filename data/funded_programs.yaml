@@ -9,11 +9,6 @@
 
 external_completed:
   - year: 2021
-    funder: "Amazon Research Award"
-    title: "Robot Meets Urban — UWB-augmented urban robotics"
-    amount: "(awarded)"
-    period: "2021–2022"
-  - year: 2021
     funder: "NYU Langone Medical Center · Consultancy"
     title: "3DMA GNSS for Vision-Impaired Pedestrians (real-time)"
     amount: "US$10,000"
@@ -23,16 +18,6 @@ external_completed:
     title: "Collaborative Navigation for Smart Cities"
     amount: "HK$57,200"
     period: "2021–2022"
-  - year: 2019
-    funder: "NSFC · 優秀青年科學基金 (港澳)"
-    title: "GNSS multipath signal generation using 3D city models and vector tracking"
-    amount: "RMB 1,300,000"
-    period: "2019–"
-  - year: 2019
-    funder: "NSFC · Young Researcher Fund (青年)"
-    title: "Young Researcher Fund"
-    amount: "RMB 285,000"
-    period: "2019–2020"
   - year: 2019
     funder: "SAIC Motor Corporation · Consultancy"
     title: "Integrity for Autonomous Driving"
