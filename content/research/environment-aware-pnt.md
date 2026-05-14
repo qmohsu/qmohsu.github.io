@@ -12,6 +12,7 @@ keywords:
   - "skymask matching"
   - "environment-aware positioning"
 weight: 3
+lead: "guohao-zhang"
 aliases:
   - /research/3d-mapping-aided/
 ---

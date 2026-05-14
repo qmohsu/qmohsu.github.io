@@ -12,6 +12,7 @@ keywords:
   - "robust estimation"
   - "sensor fusion"
 weight: 4
+lead: "weisong-wen"
 aliases:
   - /research/factor-graph-optimization/
 ---

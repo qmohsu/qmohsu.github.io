@@ -11,6 +11,7 @@ keywords:
   - "correlator features"
   - "receiver-aware uncertainty"
 weight: 1
+lead: "bing-xu"
 aliases:
   - /research/gnss-sdr/
 ---
