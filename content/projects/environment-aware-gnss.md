@@ -20,6 +20,10 @@ This program develops **environment-aware GNSS positioning for autonomous platfo
 - **RGC CRF Co-PI** — *Enhancing the Safety of AVs via Cross-Layer Security Hardening*, HK$7M total (HK$0.6M share)
 - **Google Research Award** — US$40k, 2024, *3DMA GNSS Precise Positioning for Vehicular Applications* (PI)
 
+**Recognition.**
+- **TechConnect 2021 Innovation Award** — *3D LiDAR Aided GNSS for L4 AV*
+- **US12123961B2** patent — *3D LiDAR Aided GNSS NLOS Detection and Correction* (Hsu, Wen, granted 2024)
+
 **Representative publications.** *3D Vision Aided GNSS RTK for Autonomous Systems in Urban Canyons* (Wen, Bai, Hsu, NAVIGATION 2023); *Safety-Quantifiable Planar-Feature LiDAR Localization for Intelligent Vehicles* (Zhang et al., IEEE TIV 2024); *Outlier-aware GNSS/INS/Visual Integrated Navigation in Urban Canyons* (Bai et al., related publications).
 
 **Related projects.** Smartphone-grade companion: [3D Map-Aided GNSS (3DMA) for Smartphone and IoT](/projects/3dma-gnss/) — same intellectual foundation, different platform constraints.

@@ -23,8 +23,6 @@ The thread began with supervised classifiers for GNSS multipath/NLOS detection (
 
 **Recognition.**
 - **2024 Most-Cited Paper in NAVIGATION: Journal of the Institute of Navigation** — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu)
-- **TechConnect 2021 Innovation Award** — *3D LiDAR Aided GNSS for L4 AV*
-- **US12123961B2** patent — *3D LiDAR Aided GNSS NLOS Detection and Correction* (Hsu, Wen, granted 2024)
 - **IEEE Aerospace and Electronic Systems Magazine** review article *AI for GNSS* (Xu, Hsu et al., 2024)
 - *Inside GNSS* feature article *What are the roles of artificial intelligence and machine learning in GNSS positioning?* (Hsu, 2020)
 
