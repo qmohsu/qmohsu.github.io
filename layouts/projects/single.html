@@ -29,6 +29,22 @@
   </div>
   {{ end }}
 
+  {{ with .Params.themes }}
+  <div class="section">
+    <h2>Research Pillars</h2>
+    <div class="people-pills">
+    {{ range . }}
+      {{ $pillarPage := $.Site.GetPage (printf "/research/%s" .) }}
+      {{ if $pillarPage }}
+        <a href="{{ $pillarPage.RelPermalink }}" class="person-link">{{ $pillarPage.Title }}</a>
+      {{ else }}
+        <span class="person-link person-link-missing">{{ . }}</span>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   {{ if or .Params.repo .Params.doi }}
   <div class="pub-links">
     {{ with .Params.repo }}<a href="{{ . }}" target="_blank">Code Repository</a>{{ end }}
