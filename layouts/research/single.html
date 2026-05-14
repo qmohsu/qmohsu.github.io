@@ -17,6 +17,31 @@
   {{ .Content }}
 
   {{ $theme := .File.ContentBaseName }}
+
+  {{/* Lab contributors to this pillar, from data/people_pillars.yaml */}}
+  {{ $contributors := slice }}
+  {{ range $slug, $data := .Site.Data.people_pillars }}
+    {{ range $data.pillars }}
+      {{ if eq .slug $theme }}
+        {{ $contributors = $contributors | append (dict "slug" $slug "count" .count) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $contributors = sort $contributors "count" "desc" }}
+  {{ if $contributors }}
+  <div class="section">
+    <h2>Lab Contributors</h2>
+    <div class="people-pills">
+    {{ range $contributors }}
+      {{ $person := $.Site.GetPage (printf "/people/%s" .slug) }}
+      {{ if $person }}
+        <a href="{{ $person.RelPermalink }}" class="person-link">{{ $person.Title }} <span style="opacity:0.6;font-size:0.85em;">({{ .count }})</span></a>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   {{ $pubs := where (where .Site.RegularPages "Section" "publications") ".Params.themes" "intersect" (slice $theme) }}
   {{ if $pubs }}
   <div class="section">
