@@ -20,8 +20,6 @@ This program uses 3D city models, LiDAR maps, sky visibility, ray tracing, digit
 - **Huawei** — long-running collaborative research partnership on 3DMA GNSS, deep integration, indoor positioning, collaborative GNSS, and multi-sensor fusion (since 2018)
 - **Google Research Award** — US$40k, 2024, *3DMA GNSS Precise Positioning for Vehicular Applications* (PI)
 
-**Recognition.** TechConnect 2021 Innovation Award for *3D LiDAR Aided GNSS for L4 AV*; **US12123961B2** patent on *3D LiDAR Aided GNSS NLOS Detection and Correction* (Hsu, Wen, granted 2024).
-
 **Representative publications.** *3D-mapping-aided PPP-RTK aiming at deep urban canyons* (Xin et al., Journal of Geodesy 2022); *3D Vision Aided GNSS RTK for Autonomous Systems in Urban Canyons* (Wen, Bai, Hsu, NAVIGATION 2023); *3D Mapping Database Aided GNSS RTK* (Ng, Hsu, IEEE TAES 2021).
 
 **Open artifacts.** Many of the algorithms in this program have been benchmarked on the [UrbanLoco](/resources/) urban-driving dataset and the [UrbanNav](/resources/) multisensory benchmark — both released openly on the [Resources page](/resources/).
