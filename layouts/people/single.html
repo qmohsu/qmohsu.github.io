@@ -44,7 +44,7 @@
     <div class="section">
       <h2>Research Pillars</h2>
       <div class="people-pills">
-      {{ range . }}
+      {{ range first 2 . }}
         {{ $pillarPage := $.Site.GetPage (printf "/research/%s" .slug) }}
         {{ if $pillarPage }}
           <a href="{{ $pillarPage.RelPermalink }}" class="person-link">{{ $pillarPage.Title }} <span style="opacity:0.6;font-size:0.85em;">({{ .count }})</span></a>
