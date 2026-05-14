@@ -13,6 +13,7 @@ keywords:
   - "robots / vehicles / drones"
   - "indoor/outdoor seamless positioning"
 weight: 6
+lead: "li-ta-hsu"
 aliases:
   - /research/multi-sensor-fusion/
   - /research/smartphone-positioning/
