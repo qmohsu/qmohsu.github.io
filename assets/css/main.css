@@ -462,6 +462,9 @@ h1, h2, h3 { line-height: 1.2; }
 }
 
 /* ---- Responsive YouTube embed (16:9) ---- */
+.video-stack { margin: 18px 0; }
+.video-stack h2 { margin-bottom: 8px; }
+.video-stack .video-embed:not(:last-child) { margin-bottom: 14px; }
 .video-embed {
   position: relative;
   width: 100%;
