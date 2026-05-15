@@ -6,6 +6,7 @@ category: "talk"
 summary: "Prof. Li-Ta Hsu delivered a public lecture in the PolyU Aerospace Series titled BeiDou Satellite Navigation System and Our Daily Lives — bringing GNSS research to a general public audience."
 source_type: "lab_announcement"
 source_site: "ipnl"
+video: "https://www.youtube.com/watch?v=qdcZVq8sYOM"
 ---
 
 Prof. Li-Ta Hsu delivered a public lecture in the **PolyU Public Aerospace Series** on 2 November 2021. The talk — *BeiDou Satellite Navigation System and Our Daily Lives* — was a 1-hour invited lecture aimed at a general public audience, explaining how the Chinese BeiDou satellite navigation system (and other GNSS constellations) underpin everyday positioning services on smartphones and consumer devices. The full recording is available on **[YouTube](https://www.youtube.com/watch?v=qdcZVq8sYOM)**.

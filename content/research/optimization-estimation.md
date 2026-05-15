@@ -13,6 +13,7 @@ keywords:
   - "sensor fusion"
 weight: 4
 lead: "weisong-wen"
+video: "https://www.youtube.com/watch?v=f5bIh96SRsk"
 aliases:
   - /research/factor-graph-optimization/
 ---
