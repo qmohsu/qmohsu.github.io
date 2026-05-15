@@ -6,6 +6,7 @@ category: "talk"
 summary: "Prof. Li-Ta Hsu presented a paper at the International Conference on Learning and Teaching (ICLT) 2025 in Hong Kong — GitHub as a Supplementary Educational Tool — building on the lab's multi-year GitHub-pedagogy line of teaching innovation research."
 source_type: "lab_announcement"
 source_site: "ipnl"
+video: "https://www.youtube.com/watch?v=juEEJkgq6fI"
 ---
 
 Prof. Li-Ta Hsu presented at the **International Conference on Learning and Teaching (ICLT) 2025** in Hong Kong on 23 May 2025. The paper — *GitHub as a Supplementary Educational Tool* — continues the lab's multi-year line of teaching-innovation research using GitHub workflows for student project management, code review, and version control in engineering education.
