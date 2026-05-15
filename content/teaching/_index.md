@@ -54,25 +54,12 @@ The lab's signature teaching-innovation research thread. Began in 2020 with the 
 
 The student-facing tutorials we produced. Used in the AAE2004 course, AAE engineering pedagogy outreach, and the lab's GitHub-pedagogy showcase:
 
-**Setup**
+**Setup and daily Git workflow** — short student-facing tutorials:
 
-{{< yt "https://www.youtube.com/watch?v=wJEZO8M2j4Q" >}}
-
-*Installing Python and VS Code (Windows).*
-
-{{< yt "https://www.youtube.com/watch?v=p-joFbfB57c" >}}
-
-*Installing VS Code, Git, and Python (macOS).*
-
-**Daily Git workflow**
-
-{{< yt "https://www.youtube.com/watch?v=juEEJkgq6fI" >}}
-
-*VS Code + Git: basic operations.*
-
-{{< yt "https://www.youtube.com/watch?v=4JrCfXhmavg" >}}
-
-*VS Code + Git: resolving merge conflicts.*
+- [Installing Python and VS Code (Windows)](https://www.youtube.com/watch?v=wJEZO8M2j4Q)
+- [Installing VS Code, Git, and Python (macOS)](https://www.youtube.com/watch?v=p-joFbfB57c)
+- [VS Code + Git: basic operations](https://www.youtube.com/watch?v=juEEJkgq6fI)
+- [VS Code + Git: resolving merge conflicts](https://www.youtube.com/watch?v=4JrCfXhmavg)
 
 **Project example — A\* algorithm**
 
