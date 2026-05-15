@@ -14,6 +14,7 @@ venue: "Patent"
 type: "patent"
 patent_number: "US 12,292,340 B2"
 patent_office: "U.S. Patent and Trademark Office"
+patent_url: "https://patents.google.com/patent/US12292340B2"
 cv_number: 3
 featured: false
 doi: ""
