@@ -1,11 +1,13 @@
 ﻿---
-title: "U.S. Patent No. 63/840,727"
+title: "Visual Positioning System (provisional)"
 authors:
   - "Lee J"
   - "Hsu L. T"
 year: 2025
 venue: "Patent"
 type: "patent"
+patent_number: "US 63/840,727 (provisional)"
+patent_office: "U.S. Patent and Trademark Office"
 cv_number: 1
 featured: false
 doi: ""

@@ -6,6 +6,8 @@ authors:
 year: 2022
 venue: "Patent"
 type: "patent"
+patent_number: ""
+patent_office: ""
 cv_number: 6
 featured: false
 doi: ""

@@ -6,6 +6,8 @@ authors:
 year: 2018
 venue: "Patent"
 type: "patent"
+patent_number: "CN 111198389B"
+patent_office: "China National Intellectual Property Administration"
 cv_number: 11
 featured: false
 doi: ""

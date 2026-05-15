@@ -14,6 +14,8 @@ authors:
 year: 2024
 venue: "Patent"
 type: "patent"
+patent_number: ""
+patent_office: ""
 cv_number: 7
 featured: false
 doi: ""

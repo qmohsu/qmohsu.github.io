@@ -6,6 +6,8 @@ authors:
 year: 2019
 venue: "Patent"
 type: "patent"
+patent_number: ""
+patent_office: "China National Intellectual Property Administration"
 cv_number: 10
 featured: false
 doi: ""

@@ -1,5 +1,5 @@
 ﻿---
-title: "U.S. Patent No. 12,292,340"
+title: "Indoor Fire Monitoring Based on Look-Up-From-Floor Sensing of Ceiling (granted)"
 authors:
   - "Wang Q"
   - "Huang X"
@@ -12,6 +12,8 @@ authors:
 year: 2025
 venue: "Patent"
 type: "patent"
+patent_number: "US 12,292,340 B2"
+patent_office: "U.S. Patent and Trademark Office"
 cv_number: 3
 featured: false
 doi: ""

@@ -6,6 +6,8 @@ authors:
 year: 2021
 venue: "Patent"
 type: "patent"
+patent_number: "CN 115527044A"
+patent_office: "China National Intellectual Property Administration"
 cv_number: 8
 featured: false
 doi: ""

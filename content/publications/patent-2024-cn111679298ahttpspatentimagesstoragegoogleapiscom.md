@@ -7,6 +7,8 @@ authors:
 year: 2024
 venue: "Patent"
 type: "patent"
+patent_number: "CN 111679298A"
+patent_office: "China National Intellectual Property Administration"
 cv_number: 9
 featured: false
 doi: ""
