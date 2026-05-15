@@ -22,9 +22,15 @@
       {{- end -}}
     {{- end -}}
     {{- with .Params.year }} ({{ . }}).{{ end }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
-    {{- with .Params.venue }} <em>{{ . }}</em>.{{ end }}
-    {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" target="_blank">https://doi.org/{{ . }}</a>{{ end }}
+    {{- if eq .Params.type "patent" -}}
+      <em><a href="{{ .RelPermalink }}">{{ .Title }}</a></em>{{ with .Params.patent_number }} ({{ . }}){{ end }}.
+      {{- with .Params.patent_office }} {{ . }}.{{ end }}
+      {{- with .Params.patent_url }} <a href="{{ . }}" target="_blank">{{ . }}</a>{{ end }}
+    {{- else -}}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+      {{- with .Params.venue }} <em>{{ . }}</em>.{{ end }}
+      {{- with .Params.doi }} <a href="https://doi.org/{{ . }}" target="_blank">https://doi.org/{{ . }}</a>{{ end }}
+    {{- end -}}
   </div>
 
   {{ if or .Params.pdf .Params.code .Params.data }}
