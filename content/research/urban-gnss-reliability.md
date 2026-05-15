@@ -12,6 +12,7 @@ keywords:
   - "uncertainty modeling"
 weight: 2
 lead: "li-ta-hsu"
+video: "https://www.youtube.com/watch?v=Ys4xCbN9h1s"
 aliases:
   - /research/urban-gnss/
 ---
