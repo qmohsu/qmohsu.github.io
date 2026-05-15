@@ -6,7 +6,9 @@ category: "talk"
 summary: "Prof. Li-Ta Hsu gave an invited seminar at Nanyang Technological University Singapore on 29 July 2025 — Super-Resolution GPS Receivers: A New Potential for GNSS-Based Earth Observation."
 source_type: "lab_announcement"
 source_site: "ipnl"
-image: "/images/news/2025-ntu-singapore-seminar.jpg"
+images:
+  - "/images/news/2025-ntu-singapore-seminar.jpg"
+  - "/images/news/2025-ntu-singapore-seminar-2.jpg"
 ---
 
 Prof. Li-Ta Hsu delivered an invited seminar at [Nanyang Technological University (NTU) Singapore](https://www.ntu.edu.sg/) on 29 July 2025. The talk — *Super-Resolution GPS Receivers: A New Potential for GNSS-Based Earth Observation* — drew on the lab's ongoing research line on long-coherent GNSS receiver design, building on the Yuan Luo-led 2023 PLANS Best Track Paper Award on super-resolution GPS receiver acceleration computation.
