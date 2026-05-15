@@ -6,7 +6,13 @@
   {{ with .Params.image }}
     <img src="{{ . | relURL }}" alt="">
   {{ end }}
-  {{ with .Params.video }}{{ partial "youtube-embed.html" . }}{{ end }}
+  {{ if or .Params.video .Params.videos }}
+  {{ $vids := .Params.videos | default (slice .Params.video) }}
+  <div class="video-stack">
+    {{ if gt (len $vids) 1 }}<h2>Videos</h2>{{ end }}
+    {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
+  </div>
+  {{ end }}
   {{ .Content }}
   {{ with .Params.source_url }}
   <p class="news-source">Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ with $.Params.source_site }}{{ . }}{{ else }}External{{ end }}</a></p>

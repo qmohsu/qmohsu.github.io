@@ -7,7 +7,10 @@ flagship: true
 start_date: 2019
 funding: "Google, RGC, and other sources"
 repo: "https://github.com/IPNL-POLYU/UrbanNavDataset"
-video: "https://www.youtube.com/watch?v=V94PAkkpwWs"
+videos:
+  - "https://www.youtube.com/watch?v=V94PAkkpwWs"
+  - "https://www.youtube.com/watch?v=b1-lKmUttzc"
+  - "https://www.youtube.com/watch?v=hQu8npoGad8"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "seamless-pnt-embodied"]
 people: ["weisong-wen", "guohao-zhang", "hoi-fung-ng"]
 tags: ["dataset", "benchmark", "GNSS", "LiDAR", "IMU", "open-source"]

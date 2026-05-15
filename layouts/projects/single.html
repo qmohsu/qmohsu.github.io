@@ -3,7 +3,13 @@
   <h1>{{ .Title }}</h1>
   {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
 
-  {{ with .Params.video }}{{ partial "youtube-embed.html" . }}{{ end }}
+  {{ if or .Params.video .Params.videos }}
+  {{ $vids := .Params.videos | default (slice .Params.video) }}
+  <div class="video-stack">
+    {{ if gt (len $vids) 1 }}<h2>Videos</h2>{{ end }}
+    {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
+  </div>
+  {{ end }}
 
   {{ .Content }}
 
