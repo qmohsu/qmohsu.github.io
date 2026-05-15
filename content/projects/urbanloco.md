@@ -6,6 +6,7 @@ status: "maintained"
 flagship: false
 start_date: 2020
 repo: "https://github.com/weisongwen/UrbanLoco"
+video: "https://www.youtube.com/watch?v=3axr7ICggRw"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "seamless-pnt-embodied"]
 people: ["weisong-wen", "guohao-zhang", "xiwei-bai"]
 tags: ["dataset", "benchmark", "LiDAR", "camera", "autonomous-vehicles"]

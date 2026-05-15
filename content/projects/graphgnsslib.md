@@ -6,6 +6,7 @@ status: "active"
 flagship: true
 start_date: 2020
 repo: "https://github.com/weisongwen/GraphGNSSLib"
+video: "https://www.youtube.com/playlist?list=PLw8Oypadak9PjlbVn8tpnlP2Xs-cNHLYj"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["weisong-wen"]
 tags: ["factor graph", "GNSS", "optimization", "C++", "ROS", "open-source"]

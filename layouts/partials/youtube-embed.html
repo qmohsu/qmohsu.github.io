@@ -1,22 +1,32 @@
 {{/*
   youtube-embed.html — responsive 16:9 YouTube iframe.
-  Accepts a YouTube URL or a raw video ID.
+  Accepts a YouTube URL (video or playlist) or a raw video ID.
   Supported input forms:
-    https://www.youtube.com/watch?v=VIDEO_ID
-    https://www.youtube.com/watch?v=VIDEO_ID&t=42s
-    https://youtu.be/VIDEO_ID
-    https://www.youtube.com/embed/VIDEO_ID
-    VIDEO_ID (raw)
+    Single video:
+      https://www.youtube.com/watch?v=VIDEO_ID
+      https://www.youtube.com/watch?v=VIDEO_ID&t=42s
+      https://youtu.be/VIDEO_ID
+      https://www.youtube.com/embed/VIDEO_ID
+      VIDEO_ID (raw)
+    Playlist:
+      https://www.youtube.com/playlist?list=PLAYLIST_ID
 */}}
 {{ $url := . }}
-{{ $id := $url }}
-{{ if hasPrefix $url "https://www.youtube.com/watch?v=" }}
-  {{ $id = replaceRE `^https://www\.youtube\.com/watch\?v=([^&]+).*$` "$1" $url }}
+{{ $embed := "" }}
+{{ if hasPrefix $url "https://www.youtube.com/playlist?list=" }}
+  {{ $listId := replaceRE `^https://www\.youtube\.com/playlist\?list=([^&]+).*$` "$1" $url }}
+  {{ $embed = printf "https://www.youtube.com/embed/videoseries?list=%s" $listId }}
+{{ else if hasPrefix $url "https://www.youtube.com/watch?v=" }}
+  {{ $id := replaceRE `^https://www\.youtube\.com/watch\?v=([^&]+).*$` "$1" $url }}
+  {{ $embed = printf "https://www.youtube.com/embed/%s" $id }}
 {{ else if hasPrefix $url "https://youtu.be/" }}
-  {{ $id = replaceRE `^https://youtu\.be/([^?]+).*$` "$1" $url }}
+  {{ $id := replaceRE `^https://youtu\.be/([^?]+).*$` "$1" $url }}
+  {{ $embed = printf "https://www.youtube.com/embed/%s" $id }}
 {{ else if hasPrefix $url "https://www.youtube.com/embed/" }}
-  {{ $id = replaceRE `^https://www\.youtube\.com/embed/([^?]+).*$` "$1" $url }}
+  {{ $embed = $url }}
+{{ else }}
+  {{ $embed = printf "https://www.youtube.com/embed/%s" $url }}
 {{ end }}
 <div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/{{ $id }}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+  <iframe src="{{ $embed }}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 </div>
