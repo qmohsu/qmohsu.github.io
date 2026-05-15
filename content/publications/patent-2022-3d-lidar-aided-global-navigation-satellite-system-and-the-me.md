@@ -8,6 +8,7 @@ venue: "Patent"
 type: "patent"
 patent_number: "US 2023/0033404 A1"
 patent_office: "U.S. Patent and Trademark Office"
+patent_url: "https://patents.google.com/patent/US20230033404A1"
 cv_number: 6
 featured: false
 doi: ""

@@ -8,6 +8,7 @@ venue: "Patent"
 type: "patent"
 patent_number: "CN 115527044A"
 patent_office: "China National Intellectual Property Administration"
+patent_url: "https://patents.google.com/patent/CN115527044A"
 cv_number: 8
 featured: false
 doi: ""

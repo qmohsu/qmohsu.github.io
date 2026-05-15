@@ -16,6 +16,7 @@ venue: "Patent"
 type: "patent"
 patent_number: "US 2023/0062745 A1"
 patent_office: "U.S. Patent and Trademark Office"
+patent_url: "https://patents.google.com/patent/US20230062745A1"
 cv_number: 7
 featured: false
 doi: ""
