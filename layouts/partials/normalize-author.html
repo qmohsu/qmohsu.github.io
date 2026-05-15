@@ -1,30 +1,36 @@
 {{/*
   normalize-author.html
-  Takes an author string in any of the common forms:
+  Returns APA-style "Last, F. M." form from various input formats:
     "Hsu, L. T."     -> "Hsu, L. T."     (kept; already comma-form)
     "Hsu L. T."      -> "Hsu, L. T."     (add comma)
+    "Hsu L. T"       -> "Hsu, L. T"      (patent style; no trailing dot)
+    "Wen W"          -> "Wen, W"         (patent style single initial)
     "Li-Ta Hsu"      -> "Hsu, L.-T."     (full -> APA initials)
     "Shiyu Bai"      -> "Bai, S."        (full -> APA initials)
     "L. T. Hsu"      -> "Hsu, L. T."     (initials-first -> Last, F. M.)
-  Returns APA-style "Last, F. M.".
+  Detection: a token is an "initial" if length<=2 or contains a dot.
 */}}
 {{ $a := trim . " " }}
 {{ $result := $a }}
 {{ if not (strings.Contains $a ",") }}
   {{ $tokens := split $a " " }}
-  {{ if gt (len $tokens) 1 }}
-    {{ $lastIdx := sub (len $tokens) 1 }}
+  {{ $n := len $tokens }}
+  {{ if gt $n 1 }}
+    {{ $lastIdx := sub $n 1 }}
     {{ $lastTok := index $tokens $lastIdx }}
     {{ $firstTok := index $tokens 0 }}
-    {{ $lastHasDot := strings.Contains $lastTok "." }}
-    {{ $firstHasDot := strings.Contains $firstTok "." }}
-    {{ if $lastHasDot }}
+    {{ $lastIsInitial := or (le (len $lastTok) 2) (in $lastTok ".") }}
+    {{ $firstIsInitial := or (le (len $firstTok) 2) (in $firstTok ".") }}
+    {{ if and $lastIsInitial (not $firstIsInitial) }}
+      {{/* "Hsu L. T" or "Wen W" — last name first, rest are initials */}}
       {{ $initials := delimit (after 1 $tokens) " " }}
       {{ $result = printf "%s, %s" $firstTok $initials }}
-    {{ else if $firstHasDot }}
+    {{ else if and $firstIsInitial (not $lastIsInitial) }}
+      {{/* "L. T. Hsu" — initials first, last token is last name */}}
       {{ $initials := delimit (first $lastIdx $tokens) " " }}
       {{ $result = printf "%s, %s" $lastTok $initials }}
     {{ else }}
+      {{/* "Li-Ta Hsu" or "Shiyu Bai" — all full given names + last name */}}
       {{ $given := first $lastIdx $tokens }}
       {{ $initialsList := slice }}
       {{ range $given }}
