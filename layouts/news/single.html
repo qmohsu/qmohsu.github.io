@@ -6,6 +6,7 @@
   {{ with .Params.image }}
     <img src="{{ . | relURL }}" alt="">
   {{ end }}
+  {{ with .Params.video }}{{ partial "youtube-embed.html" . }}{{ end }}
   {{ .Content }}
   {{ with .Params.source_url }}
   <p class="news-source">Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ with $.Params.source_site }}{{ . }}{{ else }}External{{ end }}</a></p>

@@ -3,6 +3,8 @@
   <h1>{{ .Title }}</h1>
   {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
 
+  {{ with .Params.video }}{{ partial "youtube-embed.html" . }}{{ end }}
+
   {{ .Content }}
 
   <div class="section">

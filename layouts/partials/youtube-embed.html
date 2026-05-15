@@ -1,0 +1,22 @@
+{{/*
+  youtube-embed.html — responsive 16:9 YouTube iframe.
+  Accepts a YouTube URL or a raw video ID.
+  Supported input forms:
+    https://www.youtube.com/watch?v=VIDEO_ID
+    https://www.youtube.com/watch?v=VIDEO_ID&t=42s
+    https://youtu.be/VIDEO_ID
+    https://www.youtube.com/embed/VIDEO_ID
+    VIDEO_ID (raw)
+*/}}
+{{ $url := . }}
+{{ $id := $url }}
+{{ if hasPrefix $url "https://www.youtube.com/watch?v=" }}
+  {{ $id = replaceRE `^https://www\.youtube\.com/watch\?v=([^&]+).*$` "$1" $url }}
+{{ else if hasPrefix $url "https://youtu.be/" }}
+  {{ $id = replaceRE `^https://youtu\.be/([^?]+).*$` "$1" $url }}
+{{ else if hasPrefix $url "https://www.youtube.com/embed/" }}
+  {{ $id = replaceRE `^https://www\.youtube\.com/embed/([^?]+).*$` "$1" $url }}
+{{ end }}
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/{{ $id }}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+</div>
