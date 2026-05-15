@@ -6,6 +6,7 @@ category: "talk"
 summary: "Prof. Li-Ta Hsu attended ION GNSS+ 2025 in Salt Lake City, contributed to a Satellite Navigation for Robotics panel discussion, then continued to California for a follow-up Google Research project meeting and a Physical AI / Robotics meetup."
 source_type: "lab_announcement"
 source_site: "ipnl"
+image: "/images/news/2025-ion-gnss-plus-september.jpg"
 ---
 
 In September 2025, Prof. Li-Ta Hsu attended the [ION GNSS+ 2025](https://www.ion.org/gnss/) technical meeting in Salt Lake City — the [Institute of Navigation](https://www.ion.org/)'s flagship annual navigation conference. PolyU's IPNL had multiple contributions at the event, including a panel-discussion slot on *Satellite Navigation for Robotics* and a technical presentation by PhD student Penghui Xu.

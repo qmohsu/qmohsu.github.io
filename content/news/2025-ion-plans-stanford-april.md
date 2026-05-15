@@ -6,6 +6,7 @@ category: "talk"
 summary: "PolyU IPNL presented three conference papers at the 2025 IEEE/ION Position, Location and Navigation Symposium (PLANS) in Salt Lake City, with a Stanford visit en route."
 source_type: "lab_announcement"
 source_site: "ipnl"
+image: "/images/news/2025-ion-plans-stanford-april.jpg"
 ---
 
 In April 2025, PolyU's [Intelligent Positioning and Navigation Laboratory (IPNL)](https://www.polyu-ipn-lab.com/) had a strong presence at the [2025 IEEE/ION Position, Location, and Navigation Symposium (PLANS)](https://www.ion.org/plans/) in Salt Lake City, Utah (28 April – 1 May 2025), with three lab papers in the technical program. The trip included a Stanford University visit on the way to Utah.
