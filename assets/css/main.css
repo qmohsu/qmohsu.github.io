@@ -461,6 +461,12 @@ h1, h2, h3 { line-height: 1.2; }
   line-height: 1.3;
 }
 
+/* ---- Image stack (multi-photo news posts) ---- */
+.image-stack { margin: 18px 0; }
+.image-stack h2 { margin-bottom: 8px; }
+.image-stack img { display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto 14px; border-radius: var(--radius); border: 1px solid #eee; }
+.image-stack img:last-child { margin-bottom: 0; }
+
 /* ---- Responsive YouTube embed (16:9) ---- */
 .video-stack { margin: 18px 0; }
 .video-stack h2 { margin-bottom: 8px; }

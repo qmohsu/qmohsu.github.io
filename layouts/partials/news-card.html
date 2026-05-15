@@ -1,5 +1,7 @@
+{{ $thumb := .Params.image }}
+{{ if not $thumb }}{{ with .Params.images }}{{ $thumb = index . 0 }}{{ end }}{{ end }}
 <div class="news-item">
-  {{ with .Params.image }}
+  {{ with $thumb }}
   <a class="news-thumb-link" href="{{ $.Permalink }}">
     <img class="news-thumb" src="{{ . }}" alt="" loading="lazy">
   </a>

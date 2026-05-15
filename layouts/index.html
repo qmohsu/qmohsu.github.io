@@ -22,17 +22,27 @@
 </section>
 
 {{/* ===== 1b. EVENT HIGHLIGHTS PHOTO GRID ===== */}}
-{{ $newsWithImages := where (where .Site.RegularPages "Section" "news") ".Params.image" "ne" "" }}
+{{ $allNews := where .Site.RegularPages "Section" "news" }}
+{{ $newsWithImages := slice }}
+{{ range $allNews }}
+  {{ $thumb := .Params.image }}
+  {{ if not $thumb }}{{ with .Params.images }}{{ $thumb = index . 0 }}{{ end }}{{ end }}
+  {{ if $thumb }}
+    {{ $newsWithImages = $newsWithImages | append (dict "page" . "thumb" $thumb) }}
+  {{ end }}
+{{ end }}
 {{ if gt (len $newsWithImages) 0 }}
+{{ $sorted := sort $newsWithImages "page.Date" "desc" }}
 <section class="section">
   <h2>Event Highlights</h2>
   <div class="highlights-grid">
-    {{ range first 9 ($newsWithImages.ByDate.Reverse) }}
-      <a href="{{ .Permalink }}" class="highlight-card">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+    {{ range first 9 $sorted }}
+      {{ $p := .page }}
+      <a href="{{ $p.Permalink }}" class="highlight-card">
+        <img src="{{ .thumb }}" alt="{{ $p.Title }}" loading="lazy">
         <div class="highlight-overlay">
-          <span class="highlight-date">{{ .Date.Format "Jan 2006" }}</span>
-          <h4>{{ .Title }}</h4>
+          <span class="highlight-date">{{ $p.Date.Format "Jan 2006" }}</span>
+          <h4>{{ $p.Title }}</h4>
         </div>
       </a>
     {{ end }}

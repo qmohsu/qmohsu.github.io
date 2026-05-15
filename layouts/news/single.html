@@ -3,8 +3,12 @@
   <p class="news-date">{{ .Date.Format "2 January 2006" }}</p>
   {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
   <h1>{{ .Title }}</h1>
-  {{ with .Params.image }}
-    <img src="{{ . | relURL }}" alt="">
+  {{ if or .Params.image .Params.images }}
+  {{ $imgs := .Params.images | default (slice .Params.image) }}
+  <div class="image-stack">
+    {{ if gt (len $imgs) 1 }}<h2>Photos</h2>{{ end }}
+    {{ range $imgs }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
+  </div>
   {{ end }}
   {{ if or .Params.video .Params.videos }}
   {{ $vids := .Params.videos | default (slice .Params.video) }}
