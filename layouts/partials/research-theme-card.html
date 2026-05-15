@@ -1,4 +1,4 @@
-<div class="card theme-card">
+<div class="card theme-card accent-{{ default 0 .Weight }}">
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ with .Description }}<p>{{ . }}</p>{{ end }}
   {{ with .Params.keywords }}
