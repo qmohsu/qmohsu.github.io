@@ -36,67 +36,11 @@ Teaching at IPNL spans undergraduate aviation engineering, GNSS-focused subjects
 
 ---
 
-## Subjects Taught
-
-Recurring subjects, with consistent eSFQ ratings in the **top 10–25 percentile** university-wide. Subjects marked **(designed by Hsu)** were newly created or substantially revised:
-
-| Code | Subject | Programme | Status |
-|---|---|---|---|
-| AAE4301 / EIE4112 | Avionics Systems | UG AE | Recurring; Grand Mean 4.4–4.6 / 5 every semester since 2017-18 |
-| AAE4304 | Advanced Positioning and Navigation Systems | UG AE | Recurring |
-| AAE4902 | Pilot Ground Theory | UG AE | Revised by Hsu |
-| AAE4904 | Meteorology in Aviation | UG AE | **Designed by Hsu** |
-| AAE4903 | Human Factors in Aviation | UG AE | **Designed by Hsu** |
-| AAE4004 | Airworthiness and Regulations | UG AE | Lead, post HKIE Airworthiness Course completion |
-| AAE2004 | Introduction to Aviation System and Air Transport Regulation | UG AE | 5-week project-based learning module on path planning |
-| AAE2103 | (Aviation engineering subject) | UG AE | Periodic |
-| AAE6202 | Modernized Satellite Communication and Navigation | RPg | **Designed by Hsu** (research postgraduate) |
-| AAE6102 | Satellite Communication and Navigation | RPg | Recurring |
-| ME583 | Advanced Avionics Systems | UG ME | Cross-teaching; eSFQ 4.8–4.9 / 5 |
-| ME31002 | Linear System and Control | UG ME | Cross-teaching |
-| ME31003 | System Dynamics | UG ME | Cross-teaching |
-| ME41001 | Automatic Control Systems | UG ME | Cross-teaching |
-| ENG3004 | Society and Engineer | UG | Recurring |
-| ENG1003 | Freshman Seminar for Engineering | UG | **Designed Hovercraft project + Path Planning project** |
-
-Also proposed: **Minor in Pilot Ground Theory (副修航空機師理論)**.
-
----
-
 ## Funded Teaching Programs (as PI)
 
 - **PolyU Online Teaching Development Grant** — *Quality Incentive Scheme on Online Teaching*, **HK$960,000** (PI), 2021–2023. Project focus: systematic development of online group collaborations for a 4-year undergraduate programme through a global online software collaboration platform (GitHub).
 - **PolyU Large Equipment Fund for Teaching** — **HK$1,107,012** (PI as team leader), 2016–2018. Procured Aircraft Satellite Navigation System (NovAtel SPAN-CPT, HK$237k), 3D LiDAR (Velodyne, HK$304k), and Vision-based Motion Capture System (VICON, HK$591k) for student learning of flight mechanics, navigation, and control.
 - **URIS Undergraduate Research Internship Scheme** — 4 funded UG projects (~HK$300k aggregate), 2021–2023.
-
----
-
-## Curriculum & Pedagogy Development
-
-### Hovercraft Design and Manufacture project — ENG1003 Freshman Seminar
-
-Designed and introduced from scratch. First-year students design and build hovercrafts (chosen because their dynamics mirror aircraft aerodynamics), then compete in an annual hovercraft contest. Student feedback ranks this among the most popular freshman projects.
-
-**External adoption:** the hovercraft project has been adopted by several Hong Kong secondary schools as a STEM teaching activity.
-
-### Path Planning Algorithm project — ENG1003 (COVID virtual classroom redesign)
-
-Redesigned during COVID-19 for fully online delivery. Students implement A\* path planning for Airbus aircraft (A320, A330, etc.) targeting shortest-route and minimum-cost objectives, working collaboratively via GitHub on Python codebases — explicitly teaching learning-to-learn, online collaboration, and problem-solving skills.
-
-### Avionics laboratory activities — AAE4301
-
-As Subject Leader, developed two hands-on lab activities:
-
-- **Flight Simulator** (Cessna 172 Skyhawk) — students practice IFR flight with air-data computer, inertial sensors, VOR, DME, and GPS instruments. Students plan navigation routes (e.g., Hong Kong → Taiwan) and execute the flight via the simulator.
-- **Avionics Maintenance** — real-aircraft avionics equipment wired with actual aircraft wiring (power relays, circuit breakers), simulating the testing environment for avionic maintenance training.
-
-### Subject-based Rubrics for AE Programme
-
-Developed (with Dr. Frank Zou and Dr. Kam Ng) a 5-level rubric framework (Excellent / Good / Satisfactory / Marginal / Unsatisfactory) tied to Subject Intended Learning Outcomes (SLOs) and mapped to Programme Learning Outcomes (PLOs). Adopted across AAE core subjects. Used for the 2020 HKIE full-accreditation review.
-
-### Pilot Stream Design for AE/ATE programmes (2016-17 → 2017-18)
-
-Designed the **Pilot Stream** for the BEng Aviation Engineering / Air Transport Engineering programmes — 3 new subjects (Radar Navigation, Meteorology, Human Factors) + 2 revised subjects (Pilot Ground Theory, Airworthiness). Continues to serve PolyU's pilot-track aviation students.
 
 ---
 
