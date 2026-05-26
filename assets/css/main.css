@@ -687,3 +687,23 @@ h1, h2, h3 { line-height: 1.2; }
 }
 .pager-status { color: var(--text-secondary); }
 .pager-disabled { color: #bbb; }
+
+/* ---- Lab Life gallery ---- */
+.lab-life-grid { margin-top: 4px; }
+.lab-life-card {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #222;
+}
+.lab-life-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lab-life-cap {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 10px 12px 8px;
+  font-size: 0.82rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}

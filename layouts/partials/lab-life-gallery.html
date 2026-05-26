@@ -1,0 +1,15 @@
+{{/* Lab Life gallery — renders from data/lab_life.yaml. Used on the People page
+     and the homepage. Non-interactive image grid with caption overlays. */}}
+{{ with site.Data.lab_life }}{{ with .photos }}
+<section class="section">
+  <h2>Lab Life</h2>
+  <div class="highlights-grid lab-life-grid">
+    {{ range . }}
+    <figure class="lab-life-card">
+      <img src="{{ .image | relURL }}" alt="{{ .caption | default "Lab life" }}" loading="lazy">
+      {{ with .caption }}<figcaption class="lab-life-cap">{{ . }}</figcaption>{{ end }}
+    </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}{{ end }}

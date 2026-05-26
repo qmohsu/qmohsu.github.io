@@ -117,6 +117,9 @@
 </section>
 {{ end }}
 
+{{/* ===== 4b. LAB LIFE ===== */}}
+{{ partial "lab-life-gallery.html" . }}
+
 {{/* ===== 5. LATEST NEWS ===== */}}
 {{ $news := where .Site.RegularPages "Section" "news" }}
 {{ if $news }}
