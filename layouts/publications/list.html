@@ -3,22 +3,71 @@
 {{ .Content }}
 
 {{ $pubs := .RegularPages }}
+{{ $total := len $pubs }}
 
-{{/* Collect unique years */}}
+{{/* Topic chips from research pillars (short labels), ordered by pillar weight.
+     The publication `themes` slugs match the research page filenames 1:1. */}}
+{{ $shortLabels := dict
+  "receiver-sdr" "Receiver / SDR"
+  "urban-gnss-reliability" "Urban GNSS"
+  "environment-aware-pnt" "3D-Map-Aided PNT"
+  "optimization-estimation" "Estimation / FGO"
+  "integrity-localization" "Integrity & Safety"
+  "seamless-pnt-embodied" "Multi-Sensor / Embodied" }}
+{{ $themes := slice }}
+{{ range (sort (where site.RegularPages "Section" "research") "Weight") }}
+  {{ $slug := .File.ContentBaseName }}
+  {{ $themes = $themes | append (dict "slug" $slug "label" (index $shortLabels $slug | default .Title)) }}
+{{ end }}
+
+{{/* Publication types actually present, in canonical display order */}}
+{{ $typeOrder := slice "book" "patent" "journal" "magazine" "conference" }}
+{{ $presentTypes := slice }}
+{{ range $t := $typeOrder }}
+  {{ if gt (len (where $pubs ".Params.type" "eq" $t)) 0 }}{{ $presentTypes = $presentTypes | append $t }}{{ end }}
+{{ end }}
+
+<div class="pub-filter" id="pub-filter" data-total="{{ $total }}">
+  <div class="pub-filter-row">
+    <span class="pub-filter-label">Topic</span>
+    <div class="chips" data-filter="topic">
+      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">All</button>
+      {{ range $i, $t := $themes }}
+      <button type="button" class="chip chip-accent-{{ add $i 1 }}" data-value="{{ $t.slug }}" aria-pressed="false">{{ $t.label }}</button>
+      {{ end }}
+    </div>
+  </div>
+  <div class="pub-filter-row">
+    <span class="pub-filter-label">Type</span>
+    <div class="chips" data-filter="type">
+      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">All</button>
+      {{ range $t := $presentTypes }}
+      <button type="button" class="chip" data-value="{{ $t }}" aria-pressed="false">{{ humanize $t }}</button>
+      {{ end }}
+    </div>
+  </div>
+  <div class="pub-filter-row">
+    <span class="pub-filter-label">Search</span>
+    <input type="search" id="pub-search" class="pub-search" placeholder="Title, author, or venue…" autocomplete="off" aria-label="Search publications">
+    <span class="pub-count" id="pub-count" aria-live="polite"></span>
+    <button type="button" class="pub-clear" id="pub-clear">Clear</button>
+  </div>
+</div>
+<p class="pub-noresults" id="pub-noresults" hidden>No publications match these filters. <button type="button" class="link-btn" id="pub-noresults-clear">Clear filters</button></p>
+
+{{/* Unique years, newest first */}}
 {{ $years := slice }}
 {{ range $pubs }}
   {{ $y := string .Params.year }}
-  {{ if not (in $years $y) }}
-    {{ $years = $years | append $y }}
-  {{ end }}
+  {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
 {{ end }}
 {{ $years = sort $years "value" "desc" }}
 
-{{ $typeOrder := slice "book" "patent" "journal" "magazine" "conference" }}
+<div id="pub-list">
 {{ range $year := $years }}
 {{ $yearPubs := where $pubs ".Params.year" (int $year) }}
-<div class="year-group">
-  <h3>{{ $year }} <span style="font-weight:normal;color:#666;">({{ len $yearPubs }})</span></h3>
+<div class="year-group" data-year="{{ $year }}">
+  <h3>{{ $year }} <span class="year-count" style="font-weight:normal;color:#666;">({{ len $yearPubs }})</span></h3>
   {{ range $type := $typeOrder }}
     {{ range sort (where $yearPubs ".Params.type" "eq" $type) ".Params.cv_number" "desc" }}
       {{ partial "publication-card.html" . }}
@@ -26,4 +75,86 @@
   {{ end }}
 </div>
 {{ end }}
+</div>
+
+<script>
+/* Publications filter — progressive enhancement (no-JS shows the full list).
+   Active filters are reflected in the URL (?topic=&type=&q=) so a view can be shared/deep-linked. */
+(function () {
+  var root = document.getElementById('pub-filter');
+  if (!root) return;
+  var total = parseInt(root.getAttribute('data-total'), 10) || 0;
+  var state = { topic: 'all', type: 'all', q: '' };
+  var entries = [].slice.call(document.querySelectorAll('#pub-list .pub-entry'));
+  var groups = [].slice.call(document.querySelectorAll('#pub-list .year-group'));
+  var countEl = document.getElementById('pub-count');
+  var noResults = document.getElementById('pub-noresults');
+  var search = document.getElementById('pub-search');
+  var chipGroups = [].slice.call(document.querySelectorAll('.chips[data-filter]'));
+
+  function matches(e) {
+    if (state.type !== 'all' && e.getAttribute('data-type') !== state.type) return false;
+    if (state.topic !== 'all' && (e.getAttribute('data-themes') || '').split(/\s+/).indexOf(state.topic) === -1) return false;
+    if (state.q && (e.getAttribute('data-search') || '').indexOf(state.q) === -1) return false;
+    return true;
+  }
+  function setActive(group, value) {
+    group.querySelectorAll('.chip').forEach(function (c) {
+      var on = c.getAttribute('data-value') === value;
+      c.classList.toggle('is-active', on);
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  function updateURL() {
+    var p = new URLSearchParams();
+    if (state.topic !== 'all') p.set('topic', state.topic);
+    if (state.type !== 'all') p.set('type', state.type);
+    if (state.q) p.set('q', state.q);
+    var qs = p.toString();
+    history.replaceState(null, '', qs ? ('?' + qs) : location.pathname);
+  }
+  function apply() {
+    var visible = 0;
+    entries.forEach(function (e) { var ok = matches(e); e.hidden = !ok; if (ok) visible++; });
+    groups.forEach(function (g) {
+      var vis = g.querySelectorAll('.pub-entry:not([hidden])').length;
+      g.hidden = vis === 0;
+      var yc = g.querySelector('.year-count');
+      if (yc) yc.textContent = '(' + vis + ')';
+    });
+    var filtered = state.topic !== 'all' || state.type !== 'all' || !!state.q;
+    if (countEl) countEl.textContent = filtered ? ('Showing ' + visible + ' of ' + total) : (total + ' publications');
+    if (noResults) noResults.hidden = visible !== 0;
+  }
+  chipGroups.forEach(function (group) {
+    var dim = group.getAttribute('data-filter');
+    group.addEventListener('click', function (ev) {
+      var btn = ev.target.closest('.chip');
+      if (!btn) return;
+      state[dim] = btn.getAttribute('data-value');
+      setActive(group, state[dim]);
+      updateURL(); apply();
+    });
+  });
+  if (search) search.addEventListener('input', function () { state.q = this.value.trim().toLowerCase(); updateURL(); apply(); });
+  function clearAll() {
+    state = { topic: 'all', type: 'all', q: '' };
+    if (search) search.value = '';
+    chipGroups.forEach(function (g) { setActive(g, 'all'); });
+    updateURL(); apply();
+  }
+  var clearBtn = document.getElementById('pub-clear');
+  if (clearBtn) clearBtn.addEventListener('click', clearAll);
+  var nrClear = document.getElementById('pub-noresults-clear');
+  if (nrClear) nrClear.addEventListener('click', clearAll);
+
+  /* initialise from URL query (shareable filters) */
+  var params = new URLSearchParams(location.search);
+  if (params.get('topic')) state.topic = params.get('topic');
+  if (params.get('type')) state.type = params.get('type');
+  if (params.get('q')) { state.q = params.get('q').toLowerCase(); if (search) search.value = params.get('q'); }
+  chipGroups.forEach(function (g) { setActive(g, state[g.getAttribute('data-filter')]); });
+  apply();
+})();
+</script>
 {{ end }}

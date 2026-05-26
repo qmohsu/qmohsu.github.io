@@ -4,7 +4,7 @@
   Hsu is bolded in any author-name form. Venue is italicized.
   Volume/issue/pages omitted (not stored in frontmatter).
 */}}
-<div class="pub-entry">
+<div class="pub-entry" data-type="{{ .Params.type }}" data-themes="{{ delimit .Params.themes " " }}" data-search="{{ lower (printf "%s %s %s" .Title (delimit .Params.authors " ") (.Params.venue | default "")) }}">
   <div class="pub-badges">
     {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
     {{ with .Params.quartile }}{{ if and (ne . "") (ne . "magazine") (ne . "book") (ne . "oss") }}<span class="badge badge-{{ lower . | replaceRE "[^a-z0-9]" "-" }}" title="Journal quartile (SJR/common-knowledge, current)">{{ . }}</span>{{ end }}{{ end }}

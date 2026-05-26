@@ -576,3 +576,87 @@ h1, h2, h3 { line-height: 1.2; }
 
 .brand-link{display:flex;align-items:center;gap:8px;}
 .brand-logo{height:36px;}
+
+/* ---- Publications filter ---- */
+.pub-filter {
+  margin: 18px 0 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fafbfc;
+}
+.pub-filter-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.pub-filter-row:last-child { margin-bottom: 0; }
+.pub-filter-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+  width: 54px;
+  flex-shrink: 0;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.chip:hover { border-color: var(--accent-light); background: var(--accent-light); }
+.chip.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+/* Topic chips adopt their research-pillar accent when active */
+.chip.chip-accent-1.is-active { background: #1a5276; border-color: #1a5276; }
+.chip.chip-accent-2.is-active { background: #5e35b1; border-color: #5e35b1; }
+.chip.chip-accent-3.is-active { background: #2e7d32; border-color: #2e7d32; }
+.chip.chip-accent-4.is-active { background: #e65100; border-color: #e65100; }
+.chip.chip-accent-5.is-active { background: #c62828; border-color: #c62828; }
+.chip.chip-accent-6.is-active { background: #00838f; border-color: #00838f; }
+.pub-search {
+  flex: 1;
+  min-width: 180px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+.pub-search:focus { outline: none; border-color: var(--accent); }
+.pub-count { font-size: 0.85rem; color: var(--text-secondary); white-space: nowrap; }
+.pub-clear {
+  border: none;
+  background: none;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.pub-clear:hover { text-decoration: underline; }
+.pub-noresults { color: var(--text-secondary); margin: 20px 0; }
+.link-btn {
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+.pub-entry[hidden], .year-group[hidden] { display: none; }
+@media (max-width: 560px) {
+  .pub-filter-label { width: 100%; }
+  .pub-search { min-width: 0; }
+}
