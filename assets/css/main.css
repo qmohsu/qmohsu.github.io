@@ -191,18 +191,21 @@ h1, h2, h3 { line-height: 1.2; }
   margin-bottom: 8px;
   border: 2px solid var(--border);
 }
-.person-card .initials {
+.person-card .photo-placeholder {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: var(--accent-light);
-  color: var(--accent);
+  background: #eef1f4;
+  border: 2px solid var(--border);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  font-weight: 700;
   margin-bottom: 8px;
+}
+.person-card .photo-placeholder svg {
+  width: 46px;
+  height: 46px;
+  fill: #b8c2cc;
 }
 .person-card h3 { font-size: 1rem; margin: 0 0 4px; }
 .person-card .role { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
