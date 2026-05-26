@@ -1,18 +1,8 @@
-# Lab Life gallery — candid lab-culture photos shown on the People page and a
-# homepage strip via layouts/partials/lab-life-gallery.html.
-# Captions are intentionally generic (these are mood/culture shots, not a dated record).
-photos:
-  - image: /images/lab-life/01-lab-group.jpg
-    caption: "Lab group photo"
-  - image: /images/lab-life/02-graduation.jpg
-    caption: "Graduation"
-  - image: /images/lab-life/03-retreat-outdoor.jpg
-    caption: "Lab retreat"
-  - image: /images/lab-life/04-retreat-talk.jpg
-    caption: "Research sharing"
-  - image: /images/lab-life/05-retreat-group.jpg
-    caption: "Team retreat"
-  - image: /images/lab-life/06-congregation.jpg
-    caption: "Graduation celebration"
-  - image: /images/lab-life/07-retreat-dinner.jpg
-    caption: "Lab gathering"
+# Lab Life gallery — rendered by layouts/partials/lab-life-gallery.html on the
+# People page and homepage. With photos empty, the gallery section does not render.
+#
+# 2026-05-26: removed the initial set — those were AAE *department* retreat and
+# congregation photos, not IPNL lab events. Add genuine IPNL lab-life photos here
+# (place the image under static/images/lab-life/ and give it a caption) when ready,
+# and the section reappears automatically.
+photos: []
