@@ -8,7 +8,7 @@ start_date: 2024
 funding: "Hotel ICON Research Scheme (HK$500k, PI)"
 partners: ["Hotel ICON (PolyU)"]
 themes: ["environment-aware-pnt", "seamless-pnt-embodied"]
-people: ["max-lee"]
+people: ["max-lee", "luling-yuan"]
 tags: ["robotics", "embodied autonomy", "predictive maintenance", "translational"]
 weight: 1
 ---

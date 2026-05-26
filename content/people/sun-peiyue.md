@@ -1,10 +1,10 @@
 ---
 title: "SUN Peiyue"
 role: "Research Assistant"
-status: "current"
-years: "2026-present"
+status: "alumni"
+years: "2026"
 photo: "/images/people/sun-peiyue.jpg"
-sort_order: 316
+sort_order: 260
 ---
 
 Preferred name: Peiyue.
