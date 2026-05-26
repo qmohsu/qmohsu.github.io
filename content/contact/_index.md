@@ -22,8 +22,8 @@ When reaching out, please include:
 
 ## Office
 
-Department of Aeronautical and Aviation Engineering
-The Hong Kong Polytechnic University
+Department of Aeronautical and Aviation Engineering<br>
+The Hong Kong Polytechnic University<br>
 Hung Hom, Kowloon, Hong Kong
 
 ---

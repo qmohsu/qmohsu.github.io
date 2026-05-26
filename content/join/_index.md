@@ -14,7 +14,7 @@ IPNL is always looking for motivated researchers at all levels:
 
 ---
 
-## Current interests (2025)
+## Current interests (2026)
 
 We are particularly interested in candidates who can contribute to:
 
