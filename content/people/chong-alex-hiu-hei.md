@@ -1,7 +1,7 @@
 ---
 title: "Chong Alex Hiu Hei"
 role: "Research Assistant"
-status: "current"
-years: "2025-present"
-sort_order: 313
+status: "alumni"
+years: "2025-2026"
+sort_order: 261
 ---
