@@ -46,26 +46,10 @@
 
 {{/* Alumni */}}
 {{ $alumni := where $people ".Params.status" "alumni" }}
-{{ $alumniGroups := partial "people/alumni-groups.html" $people }}
 {{ if $alumni }}
 <div class="section">
   <h2>Alumni</h2>
-  <div class="member-groups">
-    {{ range $alumniGroups }}
-      {{ $title := index . "title" }}
-      {{ $items := index . "items" }}
-      {{ if gt (len $items) 0 }}
-      <div class="member-group">
-        <h3>{{ $title }}</h3>
-        <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-          {{ range $items }}
-            {{ partial "person-card.html" . }}
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-    {{ end }}
-  </div>
+  <p>Former PhD/MPhil students, postdoctoral fellows, MSc students, research assistants, and visiting researchers — now across academia and industry. <a href="{{ "/people/alumni/" | relURL }}">See all {{ len $alumni }} alumni &rarr;</a></p>
 </div>
 {{ end }}
 

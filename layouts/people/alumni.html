@@ -1,0 +1,29 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p><a href="{{ "/people/" | relURL }}">&larr; Back to current members</a></p>
+{{ .Content }}
+
+{{ $people := where site.RegularPages "Section" "people" }}
+{{ $alumni := where $people ".Params.status" "alumni" }}
+{{ $alumniGroups := partial "people/alumni-groups.html" $people }}
+{{ if $alumni }}
+<div class="section">
+  <div class="member-groups">
+    {{ range $alumniGroups }}
+      {{ $title := index . "title" }}
+      {{ $items := index . "items" }}
+      {{ if gt (len $items) 0 }}
+      <div class="member-group">
+        <h3>{{ $title }}</h3>
+        <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+          {{ range $items }}
+            {{ partial "person-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+{{ end }}
