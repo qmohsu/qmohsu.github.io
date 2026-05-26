@@ -28,7 +28,9 @@
 {{ with .Site.Data.funded_programs }}
 <div class="section">
   <h2>C. Funded Programs Ledger</h2>
-  <p>Smaller PI/PC funded programs that don't have dedicated project cards above — a compact record for completeness. Flagship programs are surfaced in Sections A–C; this ledger captures the long-tail of NSFC, Mainland-China provincial schemes, international consultancies, and PolyU internal competitive grants.</p>
+  <details class="ledger">
+    <summary>Smaller PI/PC funded programs — expand for the full record</summary>
+    <p class="ledger-intro">A compact record for completeness: the long-tail of NSFC and Mainland-China provincial schemes, international consultancies, and PolyU internal competitive grants that don't have dedicated project cards above. Flagship programs are in Sections A–B.</p>
 
   {{ with .external_completed }}
   <h3>External · Completed</h3>
@@ -89,6 +91,7 @@
     </tbody>
   </table>
   {{ end }}
+  </details>
 </div>
 {{ end }}
 

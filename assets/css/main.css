@@ -660,3 +660,15 @@ h1, h2, h3 { line-height: 1.2; }
   .pub-filter-label { width: 100%; }
   .pub-search { min-width: 0; }
 }
+
+/* ---- Funded-programs ledger (collapsible) ---- */
+.ledger { margin-top: 4px; }
+.ledger > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 6px 0;
+}
+.ledger > summary:hover { text-decoration: underline; }
+.ledger[open] > summary { margin-bottom: 6px; }
+.ledger-intro { color: var(--text-secondary); font-size: 0.95rem; margin: 4px 0 14px; }
