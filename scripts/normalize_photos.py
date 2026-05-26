@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize people photos so headshots display upright in every browser.
+"""Normalize site photos so they display upright in every browser.
 
 Phone cameras store the image sideways plus an EXIF "Orientation" tag telling
 viewers how to rotate it. When that tag is later stripped (by an editor, a
@@ -8,34 +8,37 @@ to correct it. This bakes the EXIF rotation into the pixels and drops the tag,
 so the result is upright regardless of how a viewer handles EXIF.
 
 Usage:
-  python scripts/normalize_people_photos.py static/images/people/<slug>.jpg [more...]
-  python scripts/normalize_people_photos.py --all          # scan static/images/people
-  python scripts/normalize_people_photos.py --all --check  # audit only, no writes
+  python scripts/normalize_photos.py static/images/news/<file>.jpg [more...]
+  python scripts/normalize_photos.py --all          # scan people + news image folders
+  python scripts/normalize_photos.py --all --check  # audit only, no writes
 
-Only images whose EXIF orientation is non-normal are re-saved (so already-correct
-photos are never recompressed). NOTE: a photo that is *physically* sideways with
-NO orientation tag cannot be detected here — always eyeball the result. The
-companion /update-person workflow includes that visual check.
+Only images whose EXIF orientation is non-normal are re-saved (already-correct
+photos are never recompressed). NOTE: a photo that is *physically* rotated with
+NO orientation tag (e.g. the EXIF was stripped upstream) cannot be detected here
+— always eyeball the result. The /update-person, /add-award and /add-grant
+workflows include that visual check when importing images.
 """
 import os
 import sys
 from PIL import Image, ImageOps
 
 ORIENTATION_TAG = 274  # EXIF Orientation
-PEOPLE_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "static", "images", "people",
-)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+IMG_DIRS = [
+    os.path.join(ROOT, "static", "images", "people"),
+    os.path.join(ROOT, "static", "images", "news"),
+]
 EXTS = ("jpg", "jpeg", "png", "webp")
 
 
 def collect(args):
     if "--all" in args:
-        return [
-            os.path.join(PEOPLE_DIR, f)
-            for f in sorted(os.listdir(PEOPLE_DIR))
-            if f.lower().rsplit(".", 1)[-1] in EXTS
-        ]
+        out = []
+        for d in IMG_DIRS:
+            if os.path.isdir(d):
+                out += [os.path.join(d, f) for f in sorted(os.listdir(d))
+                        if f.lower().rsplit(".", 1)[-1] in EXTS]
+        return out
     return [a for a in args if not a.startswith("--")]
 
 
@@ -54,13 +57,11 @@ def main():
             orientation = im.getexif().get(ORIENTATION_TAG)
             if orientation and orientation != 1:
                 print(f"[{'WOULD-FIX' if check_only else 'FIXED'}] "
-                      f"{os.path.basename(path)} (orientation={orientation})")
+                      f"{os.path.relpath(path, ROOT)} (orientation={orientation})")
                 if not check_only:
                     fixed = ImageOps.exif_transpose(im)  # bakes rotation, drops the tag
-                    save_kw = {}
-                    if im.format == "JPEG":
-                        save_kw = dict(quality=92, subsampling="keep")
-                    fixed.save(path, format=im.format, **save_kw)
+                    kw = dict(quality=92) if im.format == "JPEG" else {}
+                    fixed.save(path, format=im.format, **kw)
                 changed += 1
             else:
                 upright += 1
@@ -68,8 +69,7 @@ def main():
             print(f"[ERROR] {path}: {exc}")
 
     verb = "flagged" if check_only else "normalized"
-    print(f"\nDone: {changed} {verb}, {upright} already upright "
-          f"(of {len(paths)} scanned).")
+    print(f"\nDone: {changed} {verb}, {upright} already upright (of {len(paths)} scanned).")
     return 0
 
 
