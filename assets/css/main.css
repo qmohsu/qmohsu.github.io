@@ -672,3 +672,15 @@ h1, h2, h3 { line-height: 1.2; }
 .ledger > summary:hover { text-decoration: underline; }
 .ledger[open] > summary { margin-bottom: 6px; }
 .ledger-intro { color: var(--text-secondary); font-size: 0.95rem; margin: 4px 0 14px; }
+
+/* ---- Pager (news) ---- */
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0 8px;
+  font-size: 0.9rem;
+}
+.pager-status { color: var(--text-secondary); }
+.pager-disabled { color: #bbb; }

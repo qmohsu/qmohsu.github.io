@@ -3,7 +3,16 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 
-{{ range .Pages.ByDate.Reverse }}
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) 15 }}
+{{ range $paginator.Pages }}
   {{ partial "news-card.html" . }}
+{{ end }}
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pager" aria-label="News pages">
+  {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">&larr; Newer</a>{{ else }}<span class="pager-disabled">&larr; Newer</span>{{ end }}
+  <span class="pager-status">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Older &rarr;</a>{{ else }}<span class="pager-disabled">Older &rarr;</span>{{ end }}
+</nav>
 {{ end }}
 {{ end }}
