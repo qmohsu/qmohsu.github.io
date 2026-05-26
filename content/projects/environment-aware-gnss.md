@@ -7,6 +7,9 @@ flagship: true
 start_date: 2019
 funding: "RGC CRF Co-PI HK$7M (HK$0.6M share, AV safety); Google Research Award US$40k (PI, 2024, 3DMA GNSS for Vehicular Applications)"
 video: "https://www.youtube.com/watch?v=Q0nq1vHeinM"
+images:
+  - "/images/projects/autonomous-driving-01.jpg"
+  - "/images/projects/autonomous-driving-02.jpg"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["weisong-wen", "xiwei-bai", "yihan-zhong", "feng-huang"]
 tags: ["autonomous driving", "UAS", "UAV", "LiDAR", "vision-aided GNSS", "AV safety", "Google", "RGC CRF", "SAIC"]

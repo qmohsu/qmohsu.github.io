@@ -13,6 +13,13 @@
 
   {{ .Content }}
 
+  {{ if .Params.images }}
+  <div class="image-stack">
+    {{ if gt (len .Params.images) 1 }}<h2>Photos</h2>{{ end }}
+    {{ range .Params.images }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
+  </div>
+  {{ end }}
+
   <div class="section">
     {{ with .Params.funding }}<p><strong>Funding:</strong> {{ . }}</p>{{ end }}
     {{ with .Params.start_date }}<p><strong>Started:</strong> {{ . }}{{ end }}{{ with $.Params.end_date }} — {{ . }}{{ end }}</p>
