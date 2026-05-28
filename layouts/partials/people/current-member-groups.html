@@ -9,6 +9,7 @@
   (dict "title" "MSc Students" "items" (sort (where $current ".Params.role" "eq" "MSc Student") ".Params.years"))
   (dict "title" "Administrative Staff" "items" (sort (where $current ".Params.role" "eq" "Administrative Staff") ".Params.years"))
   (dict "title" "Research Assistants" "items" (sort (where $current ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" "Interns" "items" (sort (where $current ".Params.role" "eq" "Intern") ".Params.years"))
 }}
 
 {{ return $groups }}
