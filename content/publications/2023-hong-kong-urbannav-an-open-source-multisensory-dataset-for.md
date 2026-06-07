@@ -24,3 +24,7 @@ themes:
   - "seamless-pnt-embodied"
 tags: []
 ---
+
+**Key idea.** A high-quality **open-source multi-sensor dataset** (GNSS, LiDAR, camera, IMU) captured in Hong Kong's deep urban canyons, with accurate ground truth — purpose-built for benchmarking urban navigation algorithms.
+
+**Impact.** UrbanNav has become a widely used community benchmark for urban GNSS and sensor-fusion research, lowering the barrier for groups worldwide to test in genuinely challenging conditions. Community-facing infrastructure, not just a paper.

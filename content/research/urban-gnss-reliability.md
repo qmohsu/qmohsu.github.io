@@ -17,6 +17,8 @@ aliases:
   - /research/urban-gnss/
 ---
 
-Dense cities are not an exception case for GNSS; they are the stress test. We study how GNSS measurements fail through NLOS reception, multipath, diffraction, Doppler distortion, heavy-tailed errors, and measurement inconsistency — and how to detect and quantify these failures at the measurement layer before they corrupt downstream estimation.
+Dense cities are not an exception case for GNSS; they are the stress test. We study how GNSS measurements fail — NLOS reception, multipath, diffraction, Doppler distortion, heavy-tailed errors — and detect and quantify these failures at the measurement layer before they corrupt downstream estimation.
 
-The goal is not only to correct bad measurements, but to model their reliability so the rest of the navigation stack — estimator, fusion, integrity monitor — knows when to trust them. This pillar provides the measurement-layer foundation that the [Environment-Aware](/research/environment-aware-pnt/), [Optimization-Based Estimation](/research/optimization-estimation/), and [Integrity](/research/integrity-localization/) pillars build on.
+<img src="/images/research/blueprint-urban-gnss-reliability.svg" alt="Blueprint: satellite signals pass through urban hazards (NLOS, multipath, diffraction, Doppler distortion, heavy-tailed errors), producing measurements that each carry a reliability tag." style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
+
+The goal is not only to correct bad measurements but to **model their reliability**, so the rest of the navigation stack knows when to trust them. This pillar is the measurement-layer foundation for the [Environment-Aware](/research/environment-aware-pnt/), [Optimization-Based Estimation](/research/optimization-estimation/), and [Integrity](/research/integrity-localization/) pillars.

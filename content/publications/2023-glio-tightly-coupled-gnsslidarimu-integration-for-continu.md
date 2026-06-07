@@ -20,3 +20,7 @@ themes:
   - "seamless-pnt-embodied"
 tags: []
 ---
+
+**Key idea.** **GLIO** tightly couples GNSS, LiDAR, and IMU in a single factor graph, so absolute GNSS positioning and drift-free LiDAR-inertial odometry constrain each other — global accuracy without the long-run drift of LiDAR-only systems.
+
+**Impact.** Delivers continuous, drift-free state estimation for intelligent vehicles across urban areas, and is a flagship example of the lab's multi-sensor fusion stack for real platforms.

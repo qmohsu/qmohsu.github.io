@@ -20,3 +20,7 @@ themes:
   - "seamless-pnt-embodied"
 tags: []
 ---
+
+**Key idea.** Shadow matching positions a receiver by comparing *which satellites are visible* against a 3D building model — strong exactly where ranging is weak (cross-street). This paper makes the method **robust enough for smartphone-grade** signals and noisy visibility decisions.
+
+**Impact.** A step toward consumer-device urban positioning, feeding directly into the lab's smartphone-positioning programme and the long-running Huawei collaboration.

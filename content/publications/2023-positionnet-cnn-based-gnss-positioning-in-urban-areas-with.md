@@ -21,3 +21,7 @@ themes:
   - "optimization-estimation"
 tags: []
 ---
+
+**Key idea.** **PositionNet** learns to correct urban GNSS errors with a CNN that reads **residual maps** — turning the spatial pattern of pseudorange residuals into a learned position correction.
+
+**Impact.** Shows that data-driven methods can complement model-based 3D-mapping-aided GNSS, an early thread in the lab's AI-for-positioning direction.

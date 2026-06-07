@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-label="Seamless multi-sensor PNT: GNSS, INS, LiDAR, camera, UWB and Wi-Fi are tightly fused for continuous positioning across open-sky, urban canyon, indoor and GNSS-denied environments on real platforms." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>Seamless multi-sensor fusion for real platforms across all environments</title>
+  <style>
+    .box rect{fill:#f4f9fd;stroke:#1a5276;stroke-width:1.5}
+    .hl rect{fill:#1a5276;stroke:#1a5276}
+    .haz rect{fill:#fdeef0;stroke:#a93226;stroke-width:1.5}
+    .t{fill:#1a5276;font-size:14px;font-weight:700}
+    .s{fill:#333;font-size:11.5px}
+    .w{fill:#fff;font-size:14px;font-weight:700}
+    .ws{fill:#eaf3fa;font-size:11.5px}
+    .ht{fill:#a93226;font-size:13px;font-weight:700}
+    .hs{fill:#7b241c;font-size:11px}
+    .ar{stroke:#1a5276;stroke-width:2;fill:none;marker-end:url(#a)}
+    .lbl{fill:#1a5276;font-size:11px;font-style:italic}
+  </style>
+  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/></marker>
+  <g class="box"><rect x="20" y="22" width="155" height="38" rx="8"/><text class="t" x="34" y="46">GNSS &#183; INS</text></g>
+  <g class="box"><rect x="20" y="76" width="155" height="38" rx="8"/><text class="t" x="34" y="100">LiDAR &#183; camera</text></g>
+  <g class="box"><rect x="20" y="130" width="155" height="38" rx="8"/><text class="t" x="34" y="154">UWB &#183; Wi-Fi RTT</text></g>
+  <g class="hl"><rect x="255" y="58" width="170" height="92" rx="10"/><text class="w" x="269" y="92">Tightly-coupled</text><text class="w" x="269" y="112">fusion</text><text class="ws" x="269" y="134">FGO &#183; low-cost robust</text></g>
+  <g class="box"><rect x="505" y="20" width="160" height="38" rx="8"/><text class="s" x="519" y="44">open sky</text></g>
+  <g class="box"><rect x="505" y="68" width="160" height="38" rx="8"/><text class="s" x="519" y="92">urban canyon</text></g>
+  <g class="box"><rect x="505" y="116" width="160" height="38" rx="8"/><text class="s" x="519" y="140">indoor</text></g>
+  <g class="box"><rect x="505" y="164" width="160" height="38" rx="8"/><text class="s" x="519" y="188">GNSS-denied</text></g>
+  <path class="ar" d="M175,41 C208,55 218,95 253,100"/>
+  <path class="ar" d="M175,95 C208,100 218,103 253,106"/>
+  <path class="ar" d="M175,149 C208,140 218,118 253,113"/>
+  <path class="ar" d="M425,95 C455,60 465,42 503,39"/>
+  <path class="ar" d="M425,103 C455,90 467,87 503,87"/>
+  <path class="ar" d="M425,110 C455,128 467,132 503,135"/>
+  <path class="ar" d="M425,118 C455,165 467,180 503,183"/>
+  <g class="box"><rect x="255" y="245" width="410" height="56" rx="10"/><text class="t" x="275" y="270">Platforms</text><text class="s" x="275" y="290">vehicles &#183; robots &#183; drones &#183; smartphones &#183; wearables</text></g>
+  <text class="lbl" x="35" y="290">seamless,</text><text class="lbl" x="35" y="305">continuous PNT</text>
+</svg>

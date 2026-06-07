@@ -14,8 +14,10 @@ weight: 5
 lead: "penggao-yan"
 ---
 
-Accuracy is not enough for safety-critical navigation. A navigation system that gives a confident-looking answer in the wrong place can be more dangerous than one that says "I don't know." Safety-critical autonomy needs navigation systems that can say not only *"Where am I?"* but also *"Is this answer safe to use?"*
+Accuracy is not enough for safety-critical navigation: a confident answer in the wrong place is more dangerous than an honest *"I don't know."* This pillar builds systems that estimate not only **where** they are, but **whether that answer can be trusted** — outputting a state estimate and a quantified protection level together.
 
-We develop fault detection, non-Gaussian error bounding, protection-level computation, and integrity-constrained optimization methods so navigation systems can quantify when their outputs are safe to use. Representative threads include the *Principal Gaussian Overbound for Heavy-tailed Error Bounding* (Yan, Zhong, Hsu, IEEE TAES 2024), *Integrity-Constrained Factor Graph Optimization* (Xia, Wen, Hsu, NAVIGATION 2024), and *Fault Detection for Gaussian Mixture Noises in Lidar/IMU Integrated Localization* (Yan et al., NAVIGATION 2025).
+<img src="/images/research/blueprint-integrity-localization.svg" alt="Blueprint: measurements and error models feed an integrity-aware estimator that jointly outputs a state estimate and a protection level, gated by a safety decision." style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
+
+We develop fault detection, non-Gaussian error bounding, protection-level computation, and integrity-constrained optimization. Representative threads: *Principal Gaussian Overbound for Heavy-tailed Error Bounding* (Yan, Zhong, Hsu, IEEE TAES 2024), *Integrity-Constrained Factor Graph Optimization* (Xia, Wen, Hsu, NAVIGATION 2024), and *Fault Detection for Gaussian Mixture Noises in Lidar/IMU Integrated Localization* (Yan et al., NAVIGATION 2025).
 
 This pillar is the technical core of the **2023 ION Per Enge Early Achievement Award** and the **RGC Research Impact Fund R5009-21** (HK$4.5M, PI, 2021–2026).

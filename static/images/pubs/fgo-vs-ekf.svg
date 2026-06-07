@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-label="Contribution figure: the Extended Kalman Filter uses only the current epoch (Markov, one state), whereas factor graph optimization re-linearizes and jointly optimizes a window of past states, giving more accurate and robust GNSS/INS integration." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>FGO vs EKF for GNSS/INS integration</title>
+<style>
+  .t{fill:#1a5276;font-size:13px;font-weight:700}
+  .s{fill:#333;font-size:11px}
+  .node{fill:#f4f9fd;stroke:#1a5276;stroke-width:1.5}
+  .hl{fill:#1a5276}
+  .ws{fill:#eaf3fa;font-size:11px}
+  .w{fill:#fff;font-size:13px;font-weight:700}
+  .ln{stroke:#1a5276;stroke-width:1.5}
+  .dim{fill:#bcd4e6;stroke:#7fa8c9;stroke-width:1.3}
+  .lbl{fill:#666;font-size:10.5px;font-style:italic}
+</style>
+<!-- EKF row -->
+<text class="t" x="20" y="40">EKF</text>
+<text class="lbl" x="20" y="56">current epoch only</text>
+<circle class="dim" cx="120" cy="95" r="16"/>
+<circle class="dim" cx="220" cy="95" r="16"/>
+<circle class="node" cx="320" cy="95" r="18"/><text class="s" x="312" y="99">xk</text>
+<line class="ln" x1="136" y1="95" x2="204" y2="95" stroke="#7fa8c9"/>
+<line class="ln" x1="236" y1="95" x2="302" y2="95" stroke="#7fa8c9"/>
+<text class="lbl" x="350" y="99">past states discarded</text>
+
+<!-- divider -->
+<line x1="20" y1="140" x2="620" y2="140" stroke="#e8e8e8" stroke-width="1"/>
+
+<!-- FGO row -->
+<text class="t" x="20" y="180">FGO</text>
+<text class="lbl" x="20" y="196">joint window over time</text>
+<circle class="node" cx="120" cy="235" r="18"/><text class="s" x="112" y="239">x1</text>
+<circle class="node" cx="220" cy="235" r="18"/><text class="s" x="212" y="239">x2</text>
+<circle class="node" cx="320" cy="235" r="18"/><text class="s" x="312" y="239">x3</text>
+<line class="ln" x1="138" y1="235" x2="202" y2="235"/>
+<line class="ln" x1="238" y1="235" x2="302" y2="235"/>
+<rect class="hl" x="163" y="228" width="14" height="14"/>
+<rect class="hl" x="263" y="228" width="14" height="14"/>
+<rect class="hl" x="113" y="190" width="13" height="13"/><line class="ln" x1="119" y1="203" x2="119" y2="217"/>
+<rect class="hl" x="313" y="190" width="13" height="13"/><line class="ln" x1="319" y1="203" x2="319" y2="217"/>
+<!-- outcome -->
+<g><rect class="hl" x="400" y="200" width="220" height="64" rx="10"/>
+<text class="w" x="416" y="228">More accurate &amp; robust</text>
+<text class="ws" x="416" y="248">better outlier handling, smoothing</text></g>
+<path d="M340,235 C365,235 372,232 398,232" stroke="#1a5276" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/></marker>
+</svg>

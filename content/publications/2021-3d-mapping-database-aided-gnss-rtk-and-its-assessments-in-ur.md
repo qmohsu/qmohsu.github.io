@@ -19,3 +19,7 @@ themes:
   - "optimization-estimation"
 tags: []
 ---
+
+**Key idea.** Carrier-phase RTK collapses in urban canyons because reflected (NLOS) signals corrupt ambiguity resolution. This work brings a **3D building model** into the RTK engine to predict and exclude NLOS satellites before they poison the solution.
+
+**Impact.** It demonstrated that map-aware RTK can hold centimetre-class fixes in environments where conventional RTK fails — a building block of the lab's 3D-mapping-aided GNSS line and its smartphone/automotive applications.

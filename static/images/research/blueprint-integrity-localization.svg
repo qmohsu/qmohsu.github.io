@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Integrity blueprint: measurements and error models feed an estimator that outputs both a state estimate and a quantified trust level, gated by a safety decision." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Safety-quantifiable localization — estimate the state and its trust</title>
+  <style>
+    .box rect { fill:#f4f9fd; stroke:#1a5276; stroke-width:1.5; }
+    .hl rect  { fill:#1a5276; stroke:#1a5276; }
+    .t  { fill:#1a5276; font-size:14px; font-weight:700; }
+    .s  { fill:#333; font-size:11.5px; }
+    .w  { fill:#ffffff; font-size:14px; font-weight:700; }
+    .ws { fill:#eaf3fa; font-size:11.5px; }
+    .ar { stroke:#1a5276; stroke-width:2; fill:none; marker-end:url(#a2); }
+    .lbl{ fill:#1a5276; font-size:11px; font-style:italic; }
+  </style>
+  <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/>
+  </marker>
+
+  <!-- inputs (left, stacked) -->
+  <g class="box">
+    <rect x="20" y="40" width="170" height="60" rx="10"/>
+    <text class="t" x="34" y="66">Measurements</text>
+    <text class="s" x="34" y="86">GNSS · LiDAR · IMU</text>
+  </g>
+  <g class="box">
+    <rect x="20" y="200" width="170" height="76" rx="10"/>
+    <text class="t" x="34" y="226">Error models</text>
+    <text class="s" x="34" y="246">non-Gaussian / heavy-tailed</text>
+    <text class="s" x="34" y="263">overbounds · fault modes</text>
+  </g>
+
+  <!-- estimator (center) -->
+  <g class="box">
+    <rect x="250" y="120" width="180" height="90" rx="10"/>
+    <text class="t" x="266" y="150">Integrity-aware</text>
+    <text class="t" x="266" y="170">estimator</text>
+    <text class="s" x="266" y="192">FGO · fault detection</text>
+  </g>
+
+  <!-- two outputs (right) -->
+  <g class="box">
+    <rect x="490" y="40" width="170" height="68" rx="10"/>
+    <text class="t" x="504" y="66">State estimate</text>
+    <text class="s" x="504" y="88">“Where am I?”</text>
+  </g>
+  <g class="box">
+    <rect x="490" y="150" width="170" height="68" rx="10"/>
+    <text class="t" x="504" y="176">Protection level</text>
+    <text class="s" x="504" y="198">quantified trust</text>
+  </g>
+
+  <!-- safety gate (bottom right) -->
+  <g class="hl">
+    <rect x="490" y="262" width="170" height="74" rx="10"/>
+    <text class="w" x="504" y="290">Safety decision</text>
+    <text class="ws" x="504" y="310">“Is this answer</text>
+    <text class="ws" x="504" y="326">safe to use?”</text>
+  </g>
+
+  <!-- arrows -->
+  <path class="ar" d="M190,70 C220,80 224,140 248,150"/>
+  <path class="ar" d="M190,235 C220,225 224,185 248,180"/>
+  <path class="ar" d="M430,150 C455,120 460,95 488,82"/>
+  <path class="ar" d="M430,180 C455,184 462,184 488,184"/>
+  <path class="ar" d="M575,218 L575,260"/>
+  <text class="lbl" x="250" y="250">state + trust, jointly</text>
+</svg>

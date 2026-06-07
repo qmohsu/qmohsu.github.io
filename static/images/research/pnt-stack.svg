@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-label="The IPNL PNT stack: a six-layer flow from Signal to Application" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>The IPNL PNT stack — Signal to Application</title>
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f4f9fd"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .layer rect { fill: url(#band); stroke: #1a5276; stroke-width: 1.5; }
+    .lname { fill: #1a5276; font-size: 19px; font-weight: 700; letter-spacing: .3px; }
+    .ldesc { fill: #333; font-size: 13px; }
+    .arrow { stroke: #1a5276; stroke-width: 2; marker-end: url(#ah); }
+    .tag { fill: #d4e6f1; }
+  </style>
+  <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/>
+  </marker>
+
+  <!-- 6 layers -->
+  <!-- y positions: 10,130,250,370,490,610 ; box h=104 ; arrows in 12px gaps -->
+  <g class="layer">
+    <rect x="40" y="10" width="560" height="104" rx="12"/>
+    <text class="lname" x="64" y="44">SIGNAL</text>
+    <text class="ldesc" x="64" y="70">SDR · acquisition · tracking · vector tracking</text>
+    <text class="ldesc" x="64" y="90">L1/L5 · direct position estimation · correlator features</text>
+  </g>
+  <line class="arrow" x1="320" y1="116" x2="320" y2="126"/>
+
+  <g class="layer">
+    <rect x="40" y="130" width="560" height="104" rx="12"/>
+    <text class="lname" x="64" y="164">MEASUREMENT</text>
+    <text class="ldesc" x="64" y="190">pseudorange · carrier phase · Doppler · C/N0</text>
+    <text class="ldesc" x="64" y="210">uncertainty modeling · quality indicators</text>
+  </g>
+  <line class="arrow" x1="320" y1="236" x2="320" y2="246"/>
+
+  <g class="layer">
+    <rect x="40" y="250" width="560" height="104" rx="12"/>
+    <text class="lname" x="64" y="284">ENVIRONMENT</text>
+    <text class="ldesc" x="64" y="310">3D city models · LiDAR maps · sky visibility · ray tracing</text>
+    <text class="ldesc" x="64" y="330">digital twins · NLOS / multipath models</text>
+  </g>
+  <line class="arrow" x1="320" y1="356" x2="320" y2="366"/>
+
+  <g class="layer">
+    <rect x="40" y="370" width="560" height="104" rx="12"/>
+    <text class="lname" x="64" y="404">ESTIMATION</text>
+    <text class="ldesc" x="64" y="430">factor graph optimization · GNSS/INS · RTK · PPP-RTK</text>
+    <text class="ldesc" x="64" y="450">multi-sensor fusion · smoothing</text>
+  </g>
+  <line class="arrow" x1="320" y1="476" x2="320" y2="486"/>
+
+  <g class="layer">
+    <rect x="40" y="490" width="560" height="104" rx="12"/>
+    <text class="lname" x="64" y="524">INTEGRITY</text>
+    <text class="ldesc" x="64" y="550">fault detection · overbounding · protection levels</text>
+    <text class="ldesc" x="64" y="570">safety-quantifiable localization</text>
+  </g>
+  <line class="arrow" x1="320" y1="596" x2="320" y2="606"/>
+
+  <g class="layer">
+    <rect x="40" y="610" width="560" height="104" rx="12" style="fill:#1a5276;stroke:#1a5276"/>
+    <text class="lname" x="64" y="644" style="fill:#ffffff">APPLICATION</text>
+    <text class="ldesc" x="64" y="670" style="fill:#eaf3fa">robots · vehicles · drones · smartphones · wearables</text>
+    <text class="ldesc" x="64" y="690" style="fill:#eaf3fa">aviation · indoor / outdoor systems</text>
+  </g>
+</svg>
