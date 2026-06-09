@@ -1,25 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Urban GNSS reliability: clean satellite signals pass through urban hazards (NLOS, multipath, diffraction) producing degraded measurements that are tagged with reliability before downstream use." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title>Modeling how GNSS fails in cities and tagging measurement reliability</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img" aria-label="Conventional GNSS trusts every measurement equally so urban NLOS, multipath and diffraction corrupt the fix; IPNL models reliability at the signal layer so each measurement carries a trust tag the rest of the stack can use." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Urban GNSS reliability - from blind trust to modeled reliability</title>
   <style>
-    .box rect{fill:#f4f9fd;stroke:#1a5276;stroke-width:1.5}
-    .hl rect{fill:#1a5276;stroke:#1a5276}
-    .haz rect{fill:#fdeef0;stroke:#a93226;stroke-width:1.5}
-    .t{fill:#1a5276;font-size:14px;font-weight:700}
-    .s{fill:#333;font-size:11.5px}
-    .w{fill:#fff;font-size:14px;font-weight:700}
-    .ws{fill:#eaf3fa;font-size:11.5px}
-    .ht{fill:#a93226;font-size:13px;font-weight:700}
-    .hs{fill:#7b241c;font-size:11px}
-    .ar{stroke:#1a5276;stroke-width:2;fill:none;marker-end:url(#a)}
-    .lbl{fill:#1a5276;font-size:11px;font-style:italic}
+    .prob rect{fill:#fdecea;stroke:#c0392b;stroke-width:1.5;}
+    .meth rect{fill:#eaf2f9;stroke:#1a5276;stroke-width:1.5;}
+    .out rect{fill:#eafaf1;stroke:#1e8449;stroke-width:1.5;}
+    .hp{fill:#c0392b;} .hm{fill:#1a5276;} .ho{fill:#1e8449;}
+    .hd{font-size:11px;font-weight:700;letter-spacing:.6px;}
+    .pt{fill:#922b21;font-size:13px;font-weight:700;}
+    .ps{fill:#7b241c;font-size:11px;}
+    .mt{fill:#1a5276;font-size:13px;font-weight:700;}
+    .ms{fill:#21618c;font-size:11px;}
+    .ot{fill:#145a32;font-size:13px;font-weight:700;}
+    .os{fill:#196f3d;font-size:11px;}
+    .ar{stroke:#566573;stroke-width:2.5;fill:none;marker-end:url(#ar);}
+    .key{fill:#566573;font-size:11px;font-style:italic;}
   </style>
-  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/></marker>
-  <g class="box"><rect x="20" y="110" width="150" height="70" rx="10"/><text class="t" x="34" y="140">Satellite</text><text class="t" x="34" y="158">signals</text></g>
-  <g class="haz"><rect x="250" y="55" width="180" height="180" rx="10"/><text class="ht" x="266" y="84">Urban hazards</text><text class="hs" x="266" y="110">NLOS reception</text><text class="hs" x="266" y="131">multipath</text><text class="hs" x="266" y="152">diffraction</text><text class="hs" x="266" y="173">Doppler distortion</text><text class="hs" x="266" y="194">heavy-tailed errors</text></g>
-  <g class="box"><rect x="510" y="60" width="150" height="80" rx="10"/><text class="t" x="524" y="88">Measurements</text><text class="s" x="524" y="110">pseudorange,</text><text class="s" x="524" y="127">Doppler, C/N0</text></g>
-  <g class="hl"><rect x="510" y="160" width="150" height="80" rx="10"/><text class="w" x="524" y="190">Reliability tag</text><text class="ws" x="524" y="214">trust / weight</text></g>
-  <path class="ar" d="M170,145 L248,145"/>
-  <path class="ar" d="M430,110 C460,105 470,100 508,100"/>
-  <path class="ar" d="M430,180 C460,190 470,195 508,195"/>
-  <text class="lbl" x="250" y="258">detect + quantify failures at the measurement layer</text>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#566573"/></marker>
+  <text class="hd hp" x="115" y="24" text-anchor="middle">CONVENTIONAL</text>
+  <text class="hd hm" x="340" y="24" text-anchor="middle">IPNL APPROACH</text>
+  <text class="hd ho" x="565" y="24" text-anchor="middle">RESULT</text>
+  <g class="prob"><rect x="16" y="36" width="198" height="204" rx="11"/></g>
+  <g class="meth"><rect x="241" y="36" width="198" height="204" rx="11"/></g>
+  <g class="out"><rect x="466" y="36" width="198" height="204" rx="11"/></g>
+  <path class="ar" d="M214,138 L241,138"/>
+  <path class="ar" d="M439,138 L466,138"/>
+  <text class="pt" x="32" y="62">Trust every signal</text>
+  <text class="ps" x="32" y="79">Gaussian model, fixed</text>
+  <text class="ps" x="32" y="96">weights for all sats</text>
+  <text class="ps" x="32" y="130">✗ NLOS · multipath ·</text>
+  <text class="ps" x="32" y="147">   diffraction unflagged</text>
+  <text class="ps" x="32" y="164">✗ a few bad signals</text>
+  <text class="ps" x="32" y="181">   corrupt the fix</text>
+  <text class="mt" x="257" y="62">Model reliability</text>
+  <text class="mt" x="257" y="79">at the signal layer</text>
+  <text class="ms" x="257" y="113">detect NLOS, multipath,</text>
+  <text class="ms" x="257" y="130">diffraction</text>
+  <text class="ms" x="257" y="147">Doppler consistency</text>
+  <text class="ms" x="257" y="164">heavy-tailed error</text>
+  <text class="ms" x="257" y="181">models per measurement</text>
+  <text class="ot" x="482" y="62">Reliability tag on</text>
+  <text class="ot" x="482" y="79">each measurement</text>
+  <text class="os" x="482" y="113">✓ stack knows when</text>
+  <text class="os" x="482" y="130">   to trust each signal</text>
+  <text class="os" x="482" y="147">feeds Estimation,</text>
+  <text class="os" x="482" y="164">Integrity &amp; Environment</text>
+  <text class="key" x="340" y="270" text-anchor="middle">Don't just correct bad measurements - model how much to trust each one.</text>
 </svg>

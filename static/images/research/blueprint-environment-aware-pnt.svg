@@ -1,25 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Environment-aware PNT: a 3D city model plus GNSS signals drive ray tracing and sky-visibility prediction to detect and correct NLOS, turning the environment into prior information." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title>3D map-aided PNT, the city as prior information</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img" aria-label="Conventional GNSS treats the city as obstruction and is blind to which satellites are NLOS, counting reflections as honest range; IPNL uses 3D city models and LiDAR maps with ray tracing to predict NLOS and multipath and correct the position." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Environment-aware PNT - the city as prior information</title>
   <style>
-    .box rect{fill:#f4f9fd;stroke:#1a5276;stroke-width:1.5}
-    .hl rect{fill:#1a5276;stroke:#1a5276}
-    .haz rect{fill:#fdeef0;stroke:#a93226;stroke-width:1.5}
-    .t{fill:#1a5276;font-size:14px;font-weight:700}
-    .s{fill:#333;font-size:11.5px}
-    .w{fill:#fff;font-size:14px;font-weight:700}
-    .ws{fill:#eaf3fa;font-size:11.5px}
-    .ht{fill:#a93226;font-size:13px;font-weight:700}
-    .hs{fill:#7b241c;font-size:11px}
-    .ar{stroke:#1a5276;stroke-width:2;fill:none;marker-end:url(#a)}
-    .lbl{fill:#1a5276;font-size:11px;font-style:italic}
+    .prob rect{fill:#fdecea;stroke:#c0392b;stroke-width:1.5;}
+    .meth rect{fill:#eaf2f9;stroke:#1a5276;stroke-width:1.5;}
+    .out rect{fill:#eafaf1;stroke:#1e8449;stroke-width:1.5;}
+    .hp{fill:#c0392b;} .hm{fill:#1a5276;} .ho{fill:#1e8449;}
+    .hd{font-size:11px;font-weight:700;letter-spacing:.6px;}
+    .pt{fill:#922b21;font-size:13px;font-weight:700;}
+    .ps{fill:#7b241c;font-size:11px;}
+    .mt{fill:#1a5276;font-size:13px;font-weight:700;}
+    .ms{fill:#21618c;font-size:11px;}
+    .ot{fill:#145a32;font-size:13px;font-weight:700;}
+    .os{fill:#196f3d;font-size:11px;}
+    .ar{stroke:#566573;stroke-width:2.5;fill:none;marker-end:url(#ar);}
+    .key{fill:#566573;font-size:11px;font-style:italic;}
   </style>
-  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/></marker>
-  <g class="box"><rect x="20" y="40" width="180" height="70" rx="10"/><text class="t" x="34" y="68">3D city model</text><text class="s" x="34" y="90">LiDAR maps &#183; geometry</text></g>
-  <g class="box"><rect x="20" y="180" width="180" height="70" rx="10"/><text class="t" x="34" y="208">GNSS signals</text><text class="s" x="34" y="230">raw pseudorange</text></g>
-  <g class="box"><rect x="265" y="108" width="185" height="84" rx="10"/><text class="t" x="279" y="136">Ray tracing &amp;</text><text class="t" x="279" y="156">sky visibility</text><text class="s" x="279" y="178">predict NLOS / multipath</text></g>
-  <g class="hl"><rect x="515" y="110" width="150" height="80" rx="10"/><text class="w" x="529" y="142">Corrected,</text><text class="w" x="529" y="162">reliable</text><text class="w" x="529" y="182">position</text></g>
-  <path class="ar" d="M200,75 C235,80 240,120 263,128"/>
-  <path class="ar" d="M200,215 C235,210 240,172 263,162"/>
-  <path class="ar" d="M450,150 L513,150"/>
-  <text class="lbl" x="230" y="280">environment as prior: predict where signals fail, then fix</text>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#566573"/></marker>
+  <text class="hd hp" x="115" y="24" text-anchor="middle">CONVENTIONAL</text>
+  <text class="hd hm" x="340" y="24" text-anchor="middle">IPNL APPROACH</text>
+  <text class="hd ho" x="565" y="24" text-anchor="middle">RESULT</text>
+  <g class="prob"><rect x="16" y="36" width="198" height="204" rx="11"/></g>
+  <g class="meth"><rect x="241" y="36" width="198" height="204" rx="11"/></g>
+  <g class="out"><rect x="466" y="36" width="198" height="204" rx="11"/></g>
+  <path class="ar" d="M214,138 L241,138"/>
+  <path class="ar" d="M439,138 L466,138"/>
+  <text class="pt" x="32" y="62">City = obstruction</text>
+  <text class="ps" x="32" y="79">buildings block and</text>
+  <text class="ps" x="32" y="96">reflect the signals</text>
+  <text class="ps" x="32" y="130">✗ blind to which sats</text>
+  <text class="ps" x="32" y="147">   are NLOS</text>
+  <text class="ps" x="32" y="164">✗ reflections counted</text>
+  <text class="ps" x="32" y="181">   as honest range</text>
+  <text class="mt" x="257" y="62">3D city model /</text>
+  <text class="mt" x="257" y="79">LiDAR map as prior</text>
+  <text class="ms" x="257" y="113">ray tracing predicts</text>
+  <text class="ms" x="257" y="130">NLOS &amp; multipath</text>
+  <text class="ms" x="257" y="147">sky-visibility / skymask</text>
+  <text class="ms" x="257" y="164">matching</text>
+  <text class="ot" x="482" y="62">Environment as</text>
+  <text class="ot" x="482" y="79">prior information</text>
+  <text class="os" x="482" y="113">✓ corrected, reliable</text>
+  <text class="os" x="482" y="130">   position</text>
+  <text class="os" x="482" y="147">US12123961B2 patent;</text>
+  <text class="os" x="482" y="164">Huawei 3DMA work</text>
+  <text class="key" x="340" y="270" text-anchor="middle">Turn the city from an obstacle into prior information.</text>
 </svg>

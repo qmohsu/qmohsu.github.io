@@ -1,65 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Integrity blueprint: measurements and error models feed an estimator that outputs both a state estimate and a quantified trust level, gated by a safety decision." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-  <title>Safety-quantifiable localization — estimate the state and its trust</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img" aria-label="Conventional estimators output only a position with no measure of trust, which is dangerous for safety-critical autonomy; IPNL estimates state and trust together (fault detection, overbounding, protection levels) and outputs a safety decision." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Integrity - estimate the state and whether to trust it</title>
   <style>
-    .box rect { fill:#f4f9fd; stroke:#1a5276; stroke-width:1.5; }
-    .hl rect  { fill:#1a5276; stroke:#1a5276; }
-    .t  { fill:#1a5276; font-size:14px; font-weight:700; }
-    .s  { fill:#333; font-size:11.5px; }
-    .w  { fill:#ffffff; font-size:14px; font-weight:700; }
-    .ws { fill:#eaf3fa; font-size:11.5px; }
-    .ar { stroke:#1a5276; stroke-width:2; fill:none; marker-end:url(#a2); }
-    .lbl{ fill:#1a5276; font-size:11px; font-style:italic; }
+    .prob rect{fill:#fdecea;stroke:#c0392b;stroke-width:1.5;}
+    .meth rect{fill:#eaf2f9;stroke:#1a5276;stroke-width:1.5;}
+    .out rect{fill:#eafaf1;stroke:#1e8449;stroke-width:1.5;}
+    .hp{fill:#c0392b;} .hm{fill:#1a5276;} .ho{fill:#1e8449;}
+    .hd{font-size:11px;font-weight:700;letter-spacing:.6px;}
+    .pt{fill:#922b21;font-size:13px;font-weight:700;}
+    .ps{fill:#7b241c;font-size:11px;}
+    .mt{fill:#1a5276;font-size:13px;font-weight:700;}
+    .ms{fill:#21618c;font-size:11px;}
+    .ot{fill:#145a32;font-size:13px;font-weight:700;}
+    .os{fill:#196f3d;font-size:11px;}
+    .ar{stroke:#566573;stroke-width:2.5;fill:none;marker-end:url(#ar);}
+    .key{fill:#566573;font-size:11px;font-style:italic;}
   </style>
-  <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/>
-  </marker>
-
-  <!-- inputs (left, stacked) -->
-  <g class="box">
-    <rect x="20" y="40" width="170" height="60" rx="10"/>
-    <text class="t" x="34" y="66">Measurements</text>
-    <text class="s" x="34" y="86">GNSS · LiDAR · IMU</text>
-  </g>
-  <g class="box">
-    <rect x="20" y="200" width="170" height="76" rx="10"/>
-    <text class="t" x="34" y="226">Error models</text>
-    <text class="s" x="34" y="246">non-Gaussian / heavy-tailed</text>
-    <text class="s" x="34" y="263">overbounds · fault modes</text>
-  </g>
-
-  <!-- estimator (center) -->
-  <g class="box">
-    <rect x="250" y="120" width="180" height="90" rx="10"/>
-    <text class="t" x="266" y="150">Integrity-aware</text>
-    <text class="t" x="266" y="170">estimator</text>
-    <text class="s" x="266" y="192">FGO · fault detection</text>
-  </g>
-
-  <!-- two outputs (right) -->
-  <g class="box">
-    <rect x="490" y="40" width="170" height="68" rx="10"/>
-    <text class="t" x="504" y="66">State estimate</text>
-    <text class="s" x="504" y="88">“Where am I?”</text>
-  </g>
-  <g class="box">
-    <rect x="490" y="150" width="170" height="68" rx="10"/>
-    <text class="t" x="504" y="176">Protection level</text>
-    <text class="s" x="504" y="198">quantified trust</text>
-  </g>
-
-  <!-- safety gate (bottom right) -->
-  <g class="hl">
-    <rect x="490" y="262" width="170" height="74" rx="10"/>
-    <text class="w" x="504" y="290">Safety decision</text>
-    <text class="ws" x="504" y="310">“Is this answer</text>
-    <text class="ws" x="504" y="326">safe to use?”</text>
-  </g>
-
-  <!-- arrows -->
-  <path class="ar" d="M190,70 C220,80 224,140 248,150"/>
-  <path class="ar" d="M190,235 C220,225 224,185 248,180"/>
-  <path class="ar" d="M430,150 C455,120 460,95 488,82"/>
-  <path class="ar" d="M430,180 C455,184 462,184 488,184"/>
-  <path class="ar" d="M575,218 L575,260"/>
-  <text class="lbl" x="250" y="250">state + trust, jointly</text>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#566573"/></marker>
+  <text class="hd hp" x="115" y="24" text-anchor="middle">CONVENTIONAL</text>
+  <text class="hd hm" x="340" y="24" text-anchor="middle">IPNL APPROACH</text>
+  <text class="hd ho" x="565" y="24" text-anchor="middle">RESULT</text>
+  <g class="prob"><rect x="16" y="36" width="198" height="204" rx="11"/></g>
+  <g class="meth"><rect x="241" y="36" width="198" height="204" rx="11"/></g>
+  <g class="out"><rect x="466" y="36" width="198" height="204" rx="11"/></g>
+  <path class="ar" d="M214,138 L241,138"/>
+  <path class="ar" d="M439,138 L466,138"/>
+  <text class="pt" x="32" y="62">Position only</text>
+  <text class="ps" x="32" y="79">estimator answers</text>
+  <text class="ps" x="32" y="96">“where am I?”</text>
+  <text class="ps" x="32" y="130">✗ no measure of trust</text>
+  <text class="ps" x="32" y="147">✗ confident-but-wrong</text>
+  <text class="ps" x="32" y="164">   is dangerous for</text>
+  <text class="ps" x="32" y="181">   safety-critical autonomy</text>
+  <text class="mt" x="257" y="62">Estimate state AND</text>
+  <text class="mt" x="257" y="79">trust together</text>
+  <text class="ms" x="257" y="113">fault detection</text>
+  <text class="ms" x="257" y="130">non-Gaussian overbounding</text>
+  <text class="ms" x="257" y="147">protection-level computation</text>
+  <text class="ms" x="257" y="164">integrity-constrained FGO</text>
+  <text class="ot" x="482" y="62">State + protection</text>
+  <text class="ot" x="482" y="79">level, jointly</text>
+  <text class="os" x="482" y="113">✓ safety decision:</text>
+  <text class="os" x="482" y="130">   “safe to use?”</text>
+  <text class="os" x="482" y="147">core of Per Enge Award</text>
+  <text class="os" x="482" y="164">&amp; RGC RIF R5009-21</text>
+  <text class="key" x="340" y="270" text-anchor="middle">A confident answer in the wrong place is worse than an honest 'I don't know.'</text>
 </svg>

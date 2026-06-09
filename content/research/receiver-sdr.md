@@ -18,7 +18,7 @@ aliases:
 
 Reliable navigation starts before position estimation. Many urban GNSS failures begin at the receiver level — weak signals, distorted correlation peaks, multipath, NLOS reception, Doppler inconsistency, poor tracking — none of which a downstream estimator can fully recover.
 
-<img src="/images/research/blueprint-receiver-sdr.svg" alt="Blueprint: RF/IF samples from a software-defined receiver flow through acquisition and tracking (vector tracking) and correlator-feature analysis to yield measurements with explicit uncertainty." style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
+<img src="/images/research/blueprint-receiver-sdr.svg" alt="Conventional scalar-tracking receivers output black-box measurements and lose lock on weak or distorted signals the estimator cannot recover; IPNL uses software-defined receivers and vector tracking to output measurements with explicit uncertainty." style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
 
 We study receiver-level algorithms that turn weak, distorted signals into usable measurements, likelihoods, and uncertainty models — software-defined receivers, vector tracking, acquisition/tracking, GPS L1/L5 processing, direct position estimation, correlator-level features, and C/N0 assessment in urban, vegetated, and high-dynamic environments.
 

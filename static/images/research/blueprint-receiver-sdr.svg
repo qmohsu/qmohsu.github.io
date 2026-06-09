@@ -1,25 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 220" role="img" aria-label="Software-defined receiver: RF/IF samples flow through acquisition, tracking and vector tracking, and correlator-feature analysis to yield measurements with explicit uncertainty." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title>Receiver-level signal processing to measurements with uncertainty</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img" aria-label="Conventional scalar-tracking receivers output black-box measurements and lose lock on weak or distorted signals that the estimator cannot recover; IPNL uses software-defined receivers and vector tracking to output measurements with explicit uncertainty." font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Receiver-level SDR - fix failures before the estimator</title>
   <style>
-    .box rect{fill:#f4f9fd;stroke:#1a5276;stroke-width:1.5}
-    .hl rect{fill:#1a5276;stroke:#1a5276}
-    .haz rect{fill:#fdeef0;stroke:#a93226;stroke-width:1.5}
-    .t{fill:#1a5276;font-size:14px;font-weight:700}
-    .s{fill:#333;font-size:11.5px}
-    .w{fill:#fff;font-size:14px;font-weight:700}
-    .ws{fill:#eaf3fa;font-size:11.5px}
-    .ht{fill:#a93226;font-size:13px;font-weight:700}
-    .hs{fill:#7b241c;font-size:11px}
-    .ar{stroke:#1a5276;stroke-width:2;fill:none;marker-end:url(#a)}
-    .lbl{fill:#1a5276;font-size:11px;font-style:italic}
+    .prob rect{fill:#fdecea;stroke:#c0392b;stroke-width:1.5;}
+    .meth rect{fill:#eaf2f9;stroke:#1a5276;stroke-width:1.5;}
+    .out rect{fill:#eafaf1;stroke:#1e8449;stroke-width:1.5;}
+    .hp{fill:#c0392b;} .hm{fill:#1a5276;} .ho{fill:#1e8449;}
+    .hd{font-size:11px;font-weight:700;letter-spacing:.6px;}
+    .pt{fill:#922b21;font-size:13px;font-weight:700;}
+    .ps{fill:#7b241c;font-size:11px;}
+    .mt{fill:#1a5276;font-size:13px;font-weight:700;}
+    .ms{fill:#21618c;font-size:11px;}
+    .ot{fill:#145a32;font-size:13px;font-weight:700;}
+    .os{fill:#196f3d;font-size:11px;}
+    .ar{stroke:#566573;stroke-width:2.5;fill:none;marker-end:url(#ar);}
+    .key{fill:#566573;font-size:11px;font-style:italic;}
   </style>
-  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a5276"/></marker>
-  <g class="box"><rect x="15" y="75" width="125" height="70" rx="10"/><text class="t" x="29" y="103">RF / IF</text><text class="s" x="29" y="125">samples (SDR)</text></g>
-  <g class="box"><rect x="180" y="75" width="145" height="70" rx="10"/><text class="t" x="194" y="99">Acquire &amp; track</text><text class="s" x="194" y="121">vector tracking</text></g>
-  <g class="box"><rect x="365" y="75" width="145" height="70" rx="10"/><text class="t" x="379" y="99">Correlator</text><text class="t" x="379" y="118">features</text><text class="s" x="379" y="137">C/N0 &#183; peak shape</text></g>
-  <g class="hl"><rect x="548" y="75" width="120" height="70" rx="10"/><text class="w" x="562" y="103">Measure-</text><text class="w" x="562" y="121">ments</text><text class="ws" x="562" y="139">+ uncertainty</text></g>
-  <path class="ar" d="M140,110 L178,110"/>
-  <path class="ar" d="M325,110 L363,110"/>
-  <path class="ar" d="M510,110 L546,110"/>
-  <text class="lbl" x="180" y="180">weak / distorted signals to usable measurements &amp; likelihoods</text>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#566573"/></marker>
+  <text class="hd hp" x="115" y="24" text-anchor="middle">CONVENTIONAL</text>
+  <text class="hd hm" x="340" y="24" text-anchor="middle">IPNL APPROACH</text>
+  <text class="hd ho" x="565" y="24" text-anchor="middle">RESULT</text>
+  <g class="prob"><rect x="16" y="36" width="198" height="204" rx="11"/></g>
+  <g class="meth"><rect x="241" y="36" width="198" height="204" rx="11"/></g>
+  <g class="out"><rect x="466" y="36" width="198" height="204" rx="11"/></g>
+  <path class="ar" d="M214,138 L241,138"/>
+  <path class="ar" d="M439,138 L466,138"/>
+  <text class="pt" x="32" y="62">Scalar tracking,</text>
+  <text class="pt" x="32" y="79">black-box output</text>
+  <text class="ps" x="32" y="96">channels track alone;</text>
+  <text class="ps" x="32" y="113">only a position comes out</text>
+  <text class="ps" x="32" y="147">✗ weak/distorted signals</text>
+  <text class="ps" x="32" y="164">   lose lock</text>
+  <text class="ps" x="32" y="181">✗ estimator can't recover</text>
+  <text class="ps" x="32" y="198">   what's already lost</text>
+  <text class="mt" x="257" y="62">Software-defined</text>
+  <text class="mt" x="257" y="79">receiver + vector</text>
+  <text class="mt" x="257" y="96">tracking</text>
+  <text class="ms" x="257" y="130">channels share state</text>
+  <text class="ms" x="257" y="147">correlator-feature analysis</text>
+  <text class="ms" x="257" y="164">C/N0 &amp; signal quality</text>
+  <text class="ot" x="482" y="62">Measurements with</text>
+  <text class="ot" x="482" y="79">explicit uncertainty</text>
+  <text class="os" x="482" y="113">✓ problems caught</text>
+  <text class="os" x="482" y="130">   at the source</text>
+  <text class="os" x="482" y="147">anchors GPS_VT_SDR</text>
+  <text class="os" x="482" y="164">(NOAA GPS Toolbox)</text>
+  <text class="key" x="340" y="270" text-anchor="middle">Fix what fails at the receiver before it ever reaches the estimator.</text>
 </svg>
