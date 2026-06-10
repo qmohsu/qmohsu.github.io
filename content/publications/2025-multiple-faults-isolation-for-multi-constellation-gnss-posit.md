@@ -26,4 +26,4 @@ tags: []
 
 **Key idea.** Multi-constellation GNSS supplies many redundant measurements, but also a higher chance of *several* simultaneous faults (multipath / NLOS). Instead of searching every measurement subset, the method first constructs a small **minimum basic set** assumed fault-free — selected via **ordered studentized residuals** — then **incrementally expands** it, admitting only measurements that pass a **no-fault hypothesis test**. Measurements that never fit are isolated as faults.
 
-**Why it matters.** This turns multiple-fault isolation from a combinatorial search into a tractable, incremental test, improving the reliability of multi-constellation positioning in challenging urban environments. *(IEEE Sensors Journal, 2025, Q1.)*
+**Why it matters.** The conventional deletion-based greedy search method results in aggressive exclusion, which degrades satellite geometry and accuracy. The proposed method turns multiple-fault isolation from a combinatorial search into a tractable, incremental test, improving the reliability of multi-constellation positioning in challenging urban environments. *(IEEE Sensors Journal, 2025, Q1.)*
