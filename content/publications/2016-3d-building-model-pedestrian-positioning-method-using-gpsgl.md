@@ -19,3 +19,9 @@ themes:
   - "environment-aware-pnt"
 tags: []
 ---
+
+<img src="/images/pubs/building-model-los-multipath-nlos.png" alt="Three urban scenes showing LOS, multipath, and NLOS signal paths between satellites and a ground user among high-rise buildings." style="max-width:560px;width:100%;height:auto;display:block;margin:1.25rem auto;" />
+
+**Key idea.** Using a 3D city model, each received satellite signal is classified as **LOS, multipath, or NLOS** (figure), and a pedestrian position is computed from GPS/GLONASS/QZSS accordingly — together with a **reliability measure** for the resulting fix.
+
+**Why it matters.** Instead of treating every satellite equally, the receiver understands its 3D surroundings — the core idea behind 3D-mapping-aided GNSS in dense cities. *(GPS Solutions, 2016, Q1.)*

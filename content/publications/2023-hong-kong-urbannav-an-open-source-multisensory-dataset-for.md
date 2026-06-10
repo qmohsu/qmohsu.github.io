@@ -25,6 +25,8 @@ themes:
 tags: []
 ---
 
+<img src="/images/pubs/hk-urbannav-montage.png" alt="Montage of UrbanNav data: deep urban canyon scenes, onboard camera views, LiDAR point clouds, GNSS skyplots, and stereo imagery from Hong Kong routes." style="max-width:560px;width:100%;height:auto;display:block;margin:1.25rem auto;" />
+
 **Key idea.** A high-quality **open-source multi-sensor dataset** (GNSS, LiDAR, camera, IMU) captured in Hong Kong's deep urban canyons, with accurate ground truth — purpose-built for benchmarking urban navigation algorithms.
 
 **Impact.** UrbanNav has become a widely used community benchmark for urban GNSS and sensor-fusion research, lowering the barrier for groups worldwide to test in genuinely challenging conditions. Community-facing infrastructure, not just a paper.

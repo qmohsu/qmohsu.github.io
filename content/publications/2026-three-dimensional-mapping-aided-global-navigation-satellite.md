@@ -19,3 +19,9 @@ themes:
   - "environment-aware-pnt"
 tags: []
 ---
+
+<img src="/images/pubs/3dma-indoor-gnss-concept.png" alt="A satellite signal reaching an indoor user: the direct signal arrives through a window while the structurally blocked path is rejected." style="max-width:560px;width:100%;height:auto;display:block;margin:1.25rem auto;" />
+
+**Key idea.** Many "indoor" places — atriums, corridors, rooms with windows — still receive usable GNSS signals. Aided by a 3D building model, the method distinguishes **direct** signals arriving through windows and openings from **blocked** ones, so satellite positioning keeps working in GNSS-accessible indoor areas.
+
+**Why it matters.** It extends 3D-mapping-aided GNSS beyond street canyons into the indoor fringe — with no extra infrastructure, just smarter use of the signals already there. *(Sensors, 2026.)*
