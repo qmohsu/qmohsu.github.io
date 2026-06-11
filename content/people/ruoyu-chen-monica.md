@@ -1,11 +1,11 @@
 ---
 title: "Ruoyu Chen (Monica)"
 role: "Administrative Staff"
-status: "current"
-years: "2025-present"
+status: "alumni"
+years: "2025-2026"
 linkedin: "https://www.linkedin.com/in/monica-chen-444680336"
 photo: "/images/people/ruoyu-chen-monica.jpg"
-sort_order: 302
+sort_order: 262
 ---
 
-Monica is the project manager of IPNL. With a computer vision master's from Zhejiang University and AI projects management experience at BYD, now she supports end-to-end delivery of AI/robot projects, driving commercialization, industry partnerships, and real-world deployment.
+Monica was the project manager of IPNL (2025–2026). With a computer vision master's from Zhejiang University and AI projects management experience at BYD, she supported end-to-end delivery of AI/robot projects, driving commercialization, industry partnerships, and real-world deployment.
