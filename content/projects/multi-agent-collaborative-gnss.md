@@ -6,7 +6,7 @@ status: "completed"
 flagship: true
 start_date: 2022
 end_date: 2025
-funding: "RGC Research Impact Fund R5009-21 (HK$4.43M, Project Coordinator, 2022–2025)"
+funding: "RGC Research Impact Fund R5009-21 (HK$4.43M total project cost incl. matching, Project Coordinator, 2022–2025)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["weisong-wen", "guohao-zhang", "hoi-fung-ng", "penggao-yan", "xiao-xia", "penghui-xu", "yihan-zhong", "qian-meng", "zhengdao-li"]
 tags: ["RIF", "RGC", "multi-agent", "collaborative positioning", "ITS", "integrity", "factor graph"]
@@ -22,7 +22,7 @@ This program develops **reliable multi-agent collaborative GNSS positioning** fo
 **Why it matters.** Single-vehicle GNSS in dense cities is unreliable. Multi-agent collaboration is a route to both accuracy and integrity at once — if peer vehicles can detect each other's faults, the swarm becomes more trustworthy than any single sensor.
 
 **Funding & recognition.**
-- **RGC Research Impact Fund R5009-21** — HK$4.43M, Project Coordinator (the only RIF held as PC in Li-Ta's career to date), 2022–2025
+- **RGC Research Impact Fund R5009-21** — HK$4.43M total project cost (RGC contribution HK$3.1M + 30% institutional matching), Project Coordinator (the only RIF held as PC in Li-Ta's career to date), 2022–2025
 - **2023 ION Per Enge Early Achievement Award** — second-ever Asian-university recipient, citing the foundational urban-GNSS-reliability + integrity work
 - **2024 Most-Cited Paper in NAVIGATION** — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu) — the FGO foundation that the multi-agent collaboration builds on
 - **PolyU Presidential Award in Knowledge Transfer 2022–24** — recognizing the broader KT impact of the multi-agent collaborative GNSS research line and its industry translations
