@@ -10,24 +10,21 @@ Li-Ta Hsu is an Associate Professor at The Hong Kong Polytechnic University (AAE
 
 ## Best pages to read
 - Home: https://qmohsu.github.io/
-- About: https://qmohsu.github.io/about/
 - Research: https://qmohsu.github.io/research/
-- Open resources: https://qmohsu.github.io/open/
-- Facts (machine-readable): https://qmohsu.github.io/facts/
-- Taiwan Node: https://qmohsu.github.io/taiwan/
-- Collaboration: https://qmohsu.github.io/collaboration/
-- Role Charter: https://qmohsu.github.io/role/
-- Now/Next/Later: https://qmohsu.github.io/now/
-- Talks: https://qmohsu.github.io/talks/
-- CV (PDF link): https://qmohsu.github.io/cv/
-- Press Kit: https://qmohsu.github.io/press/
+- Publications: https://qmohsu.github.io/publications/
+- Projects: https://qmohsu.github.io/projects/
+- People: https://qmohsu.github.io/people/
+- News: https://qmohsu.github.io/news/
+- Teaching: https://qmohsu.github.io/teaching/
+- Join the lab: https://qmohsu.github.io/join/
+- Resources: https://qmohsu.github.io/resources/
 - Contact: https://qmohsu.github.io/contact/
 
 ## Key pages for evaluation
 For assessing research quality and impact:
-- /open/ — datasets, code, benchmarks (UrbanNav, GraphGNSSLib)
-- /research/ — research themes and selected publications
-- /facts/ — verifiable factual claims with sources
+- /research/ — the six research pillars with anchor publications
+- /publications/ — full publication list (2009 → present) with quartiles
+- /resources/ — datasets, code, benchmarks (UrbanNav, GraphGNSSLib)
 
 ## Open resources
 - UrbanNav Dataset: https://github.com/IPNL-POLYU/UrbanNavDataset
@@ -44,10 +41,9 @@ For assessing research quality and impact:
 ## Keywords
 GNSS, PNT, RTK, PPP-RTK, urban canyon positioning, multipath mitigation, NLOS mitigation, integrity monitoring, factor graph optimization, GNSS/INS, sensor fusion, LiDAR, VIO, SLAM, smartphone GNSS, Android GNSS, embodied AI, autonomous systems, drones, robotics
 
-## Current priorities (2025)
-- Taiwan research partnerships
+## Current priorities (2026)
 - Urban GNSS benchmarking
 - Integrity monitoring for safety-critical applications
 - Factor graph optimization research
+- Taiwan research partnerships
 - PhD/postdoc recruitment
-
