@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Roadside Infrastructure assisted LiDAR/Inertial-based Mapping for Intelligent Vehicles in Urban Areas"
+slug: "2023-roadside-infrastructure-assisted-lidar-inertial-based-mappin"
 authors:
   - "Feng Huang"
   - "Hang Chen"

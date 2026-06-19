@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Optimal Takeoff Time Assignment under Severe Weather"
+slug: "2019-optimal-takeoff-time-assignment-under-severe-weather"
 authors:
   - "Xue D."
   - "Sun R."

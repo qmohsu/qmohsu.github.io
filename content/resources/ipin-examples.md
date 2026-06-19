@@ -1,5 +1,6 @@
 ---
 title: "IPIN-Examples"
+slug: "ipin-examples"
 description: "Companion code (Python + Jupyter) for the 2025 Artech House book Principles of Indoor Positioning and Indoor Navigation"
 subtype: "software"
 license: "PolyForm Noncommercial 1.0.0 (code) / CC BY-NC 4.0 (datasets)"

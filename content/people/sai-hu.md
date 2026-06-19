@@ -1,5 +1,6 @@
 ---
 title: "Sai Hu"
+slug: "sai-hu"
 role: "MSc Student"
 status: "alumni"
 years: "2017-2019"

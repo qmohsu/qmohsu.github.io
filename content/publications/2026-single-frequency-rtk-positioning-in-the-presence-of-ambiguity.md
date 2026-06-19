@@ -1,5 +1,6 @@
 ---
 title: "Single-frequency RTK positioning in the presence of ambiguity-like code biases"
+slug: "2026-single-frequency-rtk-positioning-in-the-presence-of-ambiguity"
 authors:
   - "Delu Che"
   - "Liangchun Hua"

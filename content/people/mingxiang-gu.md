@@ -1,5 +1,6 @@
 ---
 title: "Mingxiang Gu"
+slug: "mingxiang-gu"
 role: "Research Assistant"
 status: "current"
 years: "2026-present"

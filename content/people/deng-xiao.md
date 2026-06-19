@@ -1,5 +1,6 @@
 ---
 title: "Deng Xiao"
+slug: "deng-xiao"
 role: "Research Assistant"
 status: "current"
 years: "2026-present"

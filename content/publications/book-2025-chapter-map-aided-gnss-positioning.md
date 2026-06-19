@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Chapter: Map-Aided GNSS Positioning"
+slug: "book-2025-chapter-map-aided-gnss-positioning"
 authors:
   - "Hsu L. T."
   - "Zhang G."

@@ -1,5 +1,6 @@
 ---
 title: "Invited talk in Suzhou: Humanoid Robots for Rehabilitation (December 2024)"
+slug: "2024-suzhou-humanoid-talk"
 date: 2024-12-14
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

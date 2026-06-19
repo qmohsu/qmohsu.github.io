@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Invariant Extended Kalman Filtering for Pedestrian Deep-Inertial Odometry"
+slug: "2024-invariant-extended-kalman-filtering-for-pedestrian-deep"
 authors:
   - "Shiyu Bai"
   - "Weisong Wen"

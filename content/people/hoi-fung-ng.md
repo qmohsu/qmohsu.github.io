@@ -1,5 +1,6 @@
 ---
 title: "Hoi-Fung Ng"
+slug: "hoi-fung-ng"
 role: "PhD Student (HK PhD Fellowship)"
 status: "alumni"
 years: "2021-2024"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Towards high‐definition vector map construction based on multi‐sensor integration for intelligent vehicles: Systems and error quantification"
+slug: "2024-towards-highdefinition-vector-map-construction-based-on-mul"
 authors:
   - "Hu, R."
   - "Bai, S."

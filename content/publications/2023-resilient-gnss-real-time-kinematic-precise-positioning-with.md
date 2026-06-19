@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Resilient GNSS real-time kinematic precise positioning with inequality and equality constraints"
+slug: "2023-resilient-gnss-real-time-kinematic-precise-positioning-with"
 authors:
   - "Zhang, Z."
   - "Li, Y."

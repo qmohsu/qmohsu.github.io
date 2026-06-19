@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3d lidar aided global navigation satellite system and the method for non-line-of-sight detection and correction"
+slug: "patent-2022-3d-lidar-aided-global-navigation-satellite-system-and-the-me"
 authors:
   - "Hsu L. T"
   - "Wen W"

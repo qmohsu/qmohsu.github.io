@@ -1,5 +1,6 @@
 ---
 title: "Miao Wu"
+slug: "miao-wu"
 role: "MSc Student"
 status: "alumni"
 years: "2021-2023"

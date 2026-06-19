@@ -1,5 +1,6 @@
 ---
 title: "He Hanming"
+slug: "he-hanming"
 role: "MSc Student"
 status: "current"
 years: "2026-present"

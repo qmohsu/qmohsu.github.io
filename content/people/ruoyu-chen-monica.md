@@ -1,5 +1,6 @@
 ---
 title: "Ruoyu Chen (Monica)"
+slug: "ruoyu-chen-monica"
 role: "Administrative Staff"
 status: "alumni"
 years: "2025-2026"

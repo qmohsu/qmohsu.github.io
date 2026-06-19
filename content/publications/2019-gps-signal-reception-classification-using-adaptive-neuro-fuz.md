@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GPS Signal Reception Classification Using Adaptive Neuro-Fuzzy Inference System"
+slug: "2019-gps-signal-reception-classification-using-adaptive-neuro-fuz"
 authors:
   - "Sun R."
   - "Hsu L. T."

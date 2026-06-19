@@ -1,5 +1,6 @@
-﻿---
+---
 title: "LunaNav: Lunar Robotic Exploration"
+slug: "lunanav"
 description: "Extending the lab's multi-sensor positioning expertise from Earth's urban canyons into lunar surface navigation."
 category: "translational-system"
 status: "active"

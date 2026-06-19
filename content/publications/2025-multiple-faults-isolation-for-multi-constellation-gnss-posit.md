@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multiple Faults Isolation For Multi-Constellation GNSS Positioning through Incremental Expansion of Consistent Measurements"
+slug: "2025-multiple-faults-isolation-for-multi-constellation-gnss-posit"
 authors:
   - "Yan, P."
   - "Hu, Y."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multi-feature visual positioning method"
+slug: "patent-2021-multi-feature-visual-positioning-method-cn115527044ahttp"
 authors:
   - "Lee J"
   - "Hsu L. T"

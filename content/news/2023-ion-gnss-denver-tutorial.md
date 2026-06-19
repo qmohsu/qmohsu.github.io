@@ -1,5 +1,6 @@
 ---
 title: "ION GNSS+ 2023 Denver: Session Chair + Track Chair (September 2023)"
+slug: "2023-ion-gnss-denver-tutorial"
 date: 2023-09-19
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"

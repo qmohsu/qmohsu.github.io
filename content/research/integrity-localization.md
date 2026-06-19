@@ -1,5 +1,6 @@
 ---
 title: "Integrity, Fault Detection, and Safety-Quantifiable Localization"
+slug: "integrity-localization"
 description: "Navigation systems that estimate both state and trust — fault detection, non-Gaussian overbounding, protection-level computation, and integrity-constrained optimization for safety-critical autonomy."
 keywords:
   - "navigation integrity"

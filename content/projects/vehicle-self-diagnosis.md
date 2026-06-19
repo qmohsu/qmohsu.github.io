@@ -1,5 +1,6 @@
 ---
 title: "Universal Vehicle Self-Diagnosis: Predictive Component Monitoring"
+slug: "vehicle-self-diagnosis"
 description: "Data-driven, real-time predictive vehicle self-diagnosis using automotive-component data streams — extending the integrity arc from positioning into vehicle health monitoring."
 category: "research-program"
 status: "active"

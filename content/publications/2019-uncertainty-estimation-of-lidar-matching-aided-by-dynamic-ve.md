@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Uncertainty Estimation of LiDAR Matching Aided by Dynamic Vehicle Detection and High Definition Map"
+slug: "2019-uncertainty-estimation-of-lidar-matching-aided-by-dynamic-ve"
 authors:
   - "Wen W."
   - "Bai X."

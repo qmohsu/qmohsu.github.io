@@ -1,5 +1,6 @@
 ---
 title: "UrbanLoco Dataset"
+slug: "urbanloco-dataset"
 description: "Full sensor-suite benchmark dataset for mapping and localization in highly urbanized scenes (San Francisco + Hong Kong)"
 subtype: "dataset"
 license: "CC BY-NC-SA 4.0"

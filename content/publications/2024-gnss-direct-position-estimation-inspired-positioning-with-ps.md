@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS direct position estimation-inspired positioning with pseudorange correlogram for urban navigation"
+slug: "2024-gnss-direct-position-estimation-inspired-positioning-with-ps"
 authors:
   - "Vicenzo, S."
   - "Xu, B."

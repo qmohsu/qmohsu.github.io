@@ -1,5 +1,6 @@
 ---
 title: "Receiver-Level GNSS Signal Processing and SDR"
+slug: "receiver-sdr"
 description: "Software-defined receivers, vector tracking, and signal-quality analysis that turn distorted satellite signals into usable measurements with explicit uncertainty."
 keywords:
   - "GNSS SDR"

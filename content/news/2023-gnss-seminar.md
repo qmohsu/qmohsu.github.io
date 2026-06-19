@@ -1,5 +1,6 @@
 ---
 title: "GNSS Seminar at PolyU"
+slug: "2023-gnss-seminar"
 date: 2023-03-20
 category: "event"
 summary: "IPNL hosted a GNSS research seminar at The Hong Kong Polytechnic University."

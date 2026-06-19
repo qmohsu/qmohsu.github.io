@@ -1,5 +1,6 @@
 ---
 title: "Environment-Aware GNSS for UAS and Autonomous Driving"
+slug: "environment-aware-gnss"
 description: "Using LiDAR, multi-camera perception, fish-eye sky imaging, and other rich onboard sensors to inform GNSS reliability and positioning on autonomous vehicles, UAVs, and robotic platforms — where the sensor budget and integrity bar are both higher than smartphone-grade positioning."
 category: "research-program"
 status: "active"

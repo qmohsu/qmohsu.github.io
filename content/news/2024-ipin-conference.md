@@ -1,5 +1,6 @@
 ---
 title: "Dr. Hsu serves as General Chair for IPIN 2024"
+slug: "2024-ipin-conference"
 date: 2024-10-22
 category: "leadership"
 summary: "Dr. Hsu served as General Chair for the International Conference on Indoor Positioning and Indoor Navigation (IPIN) 2024 at PolyU."

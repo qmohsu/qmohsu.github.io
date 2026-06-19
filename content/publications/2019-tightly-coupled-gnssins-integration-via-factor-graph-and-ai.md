@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Tightly Coupled GNSS/INS Integration Via Factor Graph and Aided by Fish-eye Camera"
+slug: "2019-tightly-coupled-gnssins-integration-via-factor-graph-and-ai"
 authors:
   - "Wen W."
   - "Bai X."

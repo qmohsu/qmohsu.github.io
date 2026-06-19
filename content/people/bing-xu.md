@@ -1,5 +1,6 @@
 ---
 title: "Bing Xu"
+slug: "bing-xu"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2018-2021"

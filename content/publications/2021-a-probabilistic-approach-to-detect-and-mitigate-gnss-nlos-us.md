@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Probabilistic Approach to Detect and Mitigate GNSS NLOS Using State Augmented Kalman Filter"
+slug: "2021-a-probabilistic-approach-to-detect-and-mitigate-gnss-nlos-us"
 authors:
   - "Jiang C."
   - "Xu B."

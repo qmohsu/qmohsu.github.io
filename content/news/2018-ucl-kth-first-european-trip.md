@@ -1,5 +1,6 @@
 ---
 title: "First European invited-talks trip: UCL + KTH Royal Institute of Technology (August 2018)"
+slug: "2018-ucl-kth-first-european-trip"
 date: 2018-08-01
 date_note: "Trip period (UCL talk 31 Jul; KTH talk 6 Aug); news post backfilled 2026-05-11"
 category: "talk"

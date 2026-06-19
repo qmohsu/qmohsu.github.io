@@ -1,5 +1,6 @@
 ---
 title: "ION Webinar: Urban positioning — 3DMA GNSS using dual-frequency pseudorange (March 2022)"
+slug: "2022-ion-webinar-3dma"
 date: 2022-03-30
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"

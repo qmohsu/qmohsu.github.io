@@ -1,5 +1,6 @@
-﻿---
+---
 title: "The Design a TDCP-Smoothed GNSS/Odometer Integration Scheme with Vehicular-Motion Constraint and Robust Regression"
+slug: "2020-the-design-a-tdcp-smoothed-gnssodometer-integration-scheme"
 authors:
   - "Chiang K. W."
   - "Li Y. H."

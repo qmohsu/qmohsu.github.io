@@ -1,5 +1,6 @@
 ---
 title: "Penggao Yan"
+slug: "penggao-yan"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2024-present"

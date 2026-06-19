@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Machine Learning Assisted GNSS Direct Position Estimation for Urban Environments Applications"
+slug: "2024-machine-learning-assisted-gnss-direct-position-estimation"
 authors:
   - "Sergio Vicenzo"
   - "Xin Qi"

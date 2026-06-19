@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Safety-Quantifiable Planar-Feature-based LiDAR Localization with a Prior Map for Intelligent Vehicles in Urban Scenarios"
+slug: "2024-safety-quantifiable-planar-feature-based-lidar-localization"
 authors:
   - "Zhang, J."
   - "Liu, X."

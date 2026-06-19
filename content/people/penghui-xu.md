@@ -1,5 +1,6 @@
 ---
 title: "Penghui Xu"
+slug: "penghui-xu"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2024-present"

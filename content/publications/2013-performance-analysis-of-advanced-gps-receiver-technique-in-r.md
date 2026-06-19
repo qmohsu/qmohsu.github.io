@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance Analysis of Advanced GPS Receiver Technique in Radio Frequency Difficult Environment"
+slug: "2013-performance-analysis-of-advanced-gps-receiver-technique-in-r"
 authors:
   - "Hsu L. T."
   - "Jan, S. S."

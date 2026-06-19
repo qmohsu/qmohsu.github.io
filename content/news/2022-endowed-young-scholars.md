@@ -1,5 +1,6 @@
 ---
 title: "Endowed Young Scholars Award"
+slug: "2022-endowed-young-scholars"
 date: 2022-08-31
 category: "award"
 summary: "Dr. Li-Ta Hsu received the Endowed Young Scholars award at PolyU."

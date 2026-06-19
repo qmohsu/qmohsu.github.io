@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integrating Global Navigation Satellite System and Road-Marking Detection for Vehicle Localization in Urban Traffic"
+slug: "2016-integrating-global-navigation-satellite-system-and-road-mark"
 authors:
   - "Gu Y."
   - "Hsu L. T."

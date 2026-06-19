@@ -1,5 +1,6 @@
-﻿---
+---
 title: "UrbanNav"
+slug: "urbannav"
 description: "Open multisensory benchmark for urban navigation algorithms in Hong Kong's dense urban canyons."
 category: "open-platform"
 status: "active"

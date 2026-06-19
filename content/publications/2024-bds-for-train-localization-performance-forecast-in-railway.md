@@ -1,5 +1,6 @@
-﻿---
+---
 title: "BDS for Train Localization Performance Forecast in Railway Environments Using Machine Learning"
+slug: "2024-bds-for-train-localization-performance-forecast-in-railway"
 authors:
   - "Debiao Lu"
   - "Haoyu Wang"

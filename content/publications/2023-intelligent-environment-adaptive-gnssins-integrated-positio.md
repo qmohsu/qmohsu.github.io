@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Intelligent Environment-Adaptive GNSS/INS Integrated Positioning with Factor Graph Optimization"
+slug: "2023-intelligent-environment-adaptive-gnssins-integrated-positio"
 authors:
   - "Li, Z."
   - "Lee, P. H."

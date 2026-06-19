@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A New GNSS Ambiguity Resolution Method Through Mixed Integer Programming"
+slug: "2023-a-new-gnss-ambiguity-resolution-method-through-mixed-integer"
 authors:
   - "Hongmin Zhang"
   - "Weisong Wen"

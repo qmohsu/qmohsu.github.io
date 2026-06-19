@@ -1,5 +1,6 @@
 ---
 title: "Honor–PolyU joint workshop (September 2025)"
+slug: "2025-honor-polyu-workshop"
 date: 2025-09-29
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

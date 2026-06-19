@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Machine Learning in GNSS Multipath/NLOS Mitigation: Review and Benchmark"
+slug: "2024-machine-learning-in-gnss-multipathnlos-mitigation-review-a"
 authors:
   - "Xu, P."
   - "Zhang, G."

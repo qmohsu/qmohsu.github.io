@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Stairio: Autonomous Staircase Safety Monitoring Robot"
+slug: "stairio"
 description: "Handrail-affixed locomotion system with onboard AI vision for autonomous staircase inspection and predictive maintenance."
 category: "translational-system"
 status: "active"

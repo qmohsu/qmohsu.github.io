@@ -1,5 +1,6 @@
 ---
 title: "UrbanNav paper receives ION Most Cited Paper Award"
+slug: "2024-ion-most-cited"
 date: 2024-09-18
 category: "award"
 summary: "The Hong Kong UrbanNav dataset paper received the Most Cited Paper Award from the journal NAVIGATION."

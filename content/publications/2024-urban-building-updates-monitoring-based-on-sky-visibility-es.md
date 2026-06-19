@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Urban Building Updates Monitoring Based on Sky Visibility Estimation From Satellite Signals"
+slug: "2024-urban-building-updates-monitoring-based-on-sky-visibility-es"
 authors:
   - "Xu, H."
   - "Zhang, G."

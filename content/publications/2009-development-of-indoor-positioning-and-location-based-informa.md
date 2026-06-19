@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Development of Indoor Positioning and Location Based Information Test Bed"
+slug: "2009-development-of-indoor-positioning-and-location-based-informa"
 authors:
   - "Hsu L. T."
   - "Tsai W. M."

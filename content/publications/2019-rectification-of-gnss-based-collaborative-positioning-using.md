@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Rectification of GNSS based Collaborative Positioning using 3D Building Models in Urban Areas"
+slug: "2019-rectification-of-gnss-based-collaborative-positioning-using"
 authors:
   - "Zhang G."
   - "Wen W."

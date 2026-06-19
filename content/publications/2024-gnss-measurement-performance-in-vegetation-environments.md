@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS Measurement Performance in Vegetation Environments: Assessment and Analysis in Signal Processing Level"
+slug: "2024-gnss-measurement-performance-in-vegetation-environments"
 authors:
   - "Di Hai"
   - "Chin Lok Tsang"

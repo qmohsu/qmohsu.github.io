@@ -1,5 +1,6 @@
 ---
 title: "Stanford PNT Symposium 2023: Dinner talk on Vision-Sensor-Aided GNSS RTK (November 2023)"
+slug: "2023-stanford-symposium-november"
 date: 2023-11-01
 date_note: "Symposium Day 1 (banquet held Wednesday evening at the Stanford Faculty Club); news post backfilled 2026-05-11"
 category: "talk"

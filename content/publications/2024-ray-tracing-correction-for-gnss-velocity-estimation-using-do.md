@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Ray-Tracing Correction for GNSS Velocity Estimation Using Doppler Frequency: A Feasibility Analysis"
+slug: "2024-ray-tracing-correction-for-gnss-velocity-estimation-using-do"
 authors:
   - "Zhang, L."
   - "Ng, H. F."

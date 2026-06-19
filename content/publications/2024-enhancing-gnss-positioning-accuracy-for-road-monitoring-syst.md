@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Enhancing GNSS Positioning Accuracy for Road Monitoring Systems: A Factor Graph Optimization Approach Aided by Geospatial Information"
+slug: "2024-enhancing-gnss-positioning-accuracy-for-road-monitoring-syst"
 authors:
   - "Zhong, Y."
   - "Hu, R."

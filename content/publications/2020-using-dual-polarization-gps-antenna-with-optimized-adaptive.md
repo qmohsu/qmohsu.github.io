@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Using Dual-Polarization GPS Antenna with Optimized Adaptive Neuro-Fuzzy Inference System to Improve Single Point Positioning Accuracy in Urban Canyons"
+slug: "2020-using-dual-polarization-gps-antenna-with-optimized-adaptive"
 authors:
   - "Sun R."
   - "Fu L."

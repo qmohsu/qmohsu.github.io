@@ -1,5 +1,6 @@
 ---
 title: "ION Webinar: EKF vs FGO — Comparison for GNSS/INS Integration (June 2021)"
+slug: "2021-ion-webinar-ekf-vs-fgo"
 date: 2021-06-28
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"

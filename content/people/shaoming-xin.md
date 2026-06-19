@@ -1,5 +1,6 @@
 ---
 title: "Shaoming Xin"
+slug: "shaoming-xin"
 role: "Visiting PhD Student"
 status: "alumni"
 years: "2021"

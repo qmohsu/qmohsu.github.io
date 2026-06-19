@@ -1,0 +1,26 @@
+---
+title: "Characterization and Validation of GNSS Multipath-Induced Doppler Measurement Error"
+slug: "2024-characterization-and-validation-of-gnss-multipath-induced-do"
+authors:
+  - "Fang, J."
+  - "Zhang, L."
+  - "Zhang, G."
+  - "Xu, B."
+  - "Hsu, L. T."
+year: 2024
+venue: "IEEE Transactions on Aerospace and Electronic Systems"
+type: "journal"
+cv_number: 12
+featured: false
+quartile: "Q1"
+doi: "10.1109/taes.2024.3487132"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
+tags: []
+---
+
+<aside class="translation-stub">本論文以英文發表。完整書目詳情、DOI / PDF 連結請見 <a href="/en/publications/2024-characterization-and-validation-of-gnss-multipath-induced-do/">英文頁面</a>。</aside>

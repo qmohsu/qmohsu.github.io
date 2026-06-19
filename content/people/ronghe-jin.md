@@ -1,5 +1,6 @@
 ---
 title: "Ronghe Jin"
+slug: "ronghe-jin"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2022-2024"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Tightly joined positioning and control model for unmanned aerial vehicles based on factor graph optimization"
+slug: "2025-tightly-joined-positioning-and-control-model-for-unmanned-ae"
 authors:
   - "Yang, P."
   - "Wen, W."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Vision Aided GNSS Real-Time Kinematic Positioning for Autonomous Systems in Urban Canyons"
+slug: "2023-3d-vision-aided-gnss-real-time-kinematic-positioning-for-aut"
 authors:
   - "Wen, W."
   - "Bai, X."

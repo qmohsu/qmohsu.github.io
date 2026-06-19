@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Autonomous Vehicle Technologies: Localization and Mapping"
+slug: "magazine-2015-autonomous-vehicle-technologies-localization-and-mapping"
 authors:
   - "Kamijo S"
   - "Gu Y"

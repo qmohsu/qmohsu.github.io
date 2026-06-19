@@ -1,5 +1,6 @@
 ---
 title: "3D Map-Aided GNSS (3DMA) for Smartphone and IoT"
+slug: "3dma-gnss"
 description: "Using 3D city models, skymask matching, and lightweight ray tracing to improve GNSS positioning on smartphones, wearables, and low-cost IoT receivers — the lab's signature long-running research thread, anchored by the multi-year Huawei collaborative partnership."
 category: "research-program"
 status: "active"

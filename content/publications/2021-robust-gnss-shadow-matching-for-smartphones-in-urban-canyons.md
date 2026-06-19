@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Robust GNSS Shadow Matching for Smartphones in Urban Canyons"
+slug: "2021-robust-gnss-shadow-matching-for-smartphones-in-urban-canyons"
 authors:
   - "Ng H.F."
   - "Zhang G."

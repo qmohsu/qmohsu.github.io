@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Evaluation of Multi-GNSSs and GPS with 3D Map Methods for Pedestrian Positioning in an Urban Canyon Environment"
+slug: "2015-evaluation-of-multi-gnsss-and-gps-with-3d-map-methods-for-pe"
 authors:
   - "Hsu L. T."
   - "Chen F."

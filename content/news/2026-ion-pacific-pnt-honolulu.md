@@ -1,5 +1,6 @@
 ---
 title: "IPNL at ION Pacific PNT 2026 (Honolulu, April 2026)"
+slug: "2026-ion-pacific-pnt-honolulu"
 date: 2026-04-16
 date_note: "Conference week (April 2026); news post published 2026-06-02"
 category: "talk"

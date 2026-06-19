@@ -1,5 +1,6 @@
 ---
 title: "PolyU at ION/IEEE PLANS 2023 Long Beach: Best Track Paper + NAVIGATION Editorial Board Meeting (April 2023)"
+slug: "2023-ion-plans-long-beach"
 date: 2023-04-23
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Machine Learning based LOS/NLOS Classifier and Robust Estimator for GNSS Shadow Matching"
+slug: "2020-machine-learning-based-losnlos-classifier-and-robust-estima"
 authors:
   - "Xu H."
   - "Angrisano A."

@@ -1,5 +1,6 @@
 ---
 title: "PolyU at ION GNSS+ 2024 Baltimore: Tutorial Lecturer + 2023 Most Cited Manuscript Award (FGO vs EKF)"
+slug: "2024-ion-gnss-baltimore"
 date: 2024-09-16
 date_note: "ION GNSS+ 2024 conference week; certificate awarded mid-week; news post backfilled 2026-05-11"
 category: "talk"

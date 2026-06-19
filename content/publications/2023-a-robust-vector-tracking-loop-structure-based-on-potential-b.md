@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A robust vector tracking loop structure based on potential bias analysis"
+slug: "2023-a-robust-vector-tracking-loop-structure-based-on-potential-b"
 authors:
   - "Qiongqiong Jia"
   - "Yiran Luo"

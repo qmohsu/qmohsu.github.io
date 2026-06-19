@@ -1,5 +1,6 @@
 ---
 title: "Yue Jiang"
+slug: "yue-jiang"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2019-2020"

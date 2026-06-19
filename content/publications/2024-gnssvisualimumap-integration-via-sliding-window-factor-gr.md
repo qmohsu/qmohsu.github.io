@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS/Visual/IMU/Map Integration Via Sliding Window Factor Graph Optimization for Vehicular Positioning in Urban Areas"
+slug: "2024-gnssvisualimumap-integration-via-sliding-window-factor-gr"
 authors:
   - "Bai, X."
   - "Hsu, L. T."

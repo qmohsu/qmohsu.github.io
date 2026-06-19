@@ -1,5 +1,6 @@
 ---
 title: "IPNL receives Google Unrestricted Research Grant"
+slug: "2024-google-grant"
 date: 2024-03-15
 category: "grant"
 summary: "IPNL received a Google Unrestricted Research Grant for research on smartphone GNSS positioning."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Time-correlated Window Carrier-phase Aided GNSS Positioning Using Factor Graph Optimization for Urban Positioning"
+slug: "2022-time-correlated-window-carrier-phase-aided-gnss-positioning"
 authors:
   - "Bai X."
   - "Wen W."

@@ -1,5 +1,6 @@
 ---
 title: "ION GNSS+ 2025 Salt Lake City + California (Google visit, Robotics Panel) — September 2025"
+slug: "2025-ion-gnss-plus-september"
 date: 2025-09-09
 date_note: "ION GNSS+ technical sessions early week; California leg follows; news post backfilled 2026-05-11"
 category: "talk"

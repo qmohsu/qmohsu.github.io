@@ -1,5 +1,6 @@
 ---
 title: "Yuan Li"
+slug: "yuan-li"
 role: "PhD Student"
 status: "current"
 years: "2023-present"

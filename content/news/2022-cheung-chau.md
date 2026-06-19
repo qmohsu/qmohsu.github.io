@@ -1,5 +1,6 @@
 ---
 title: "IPNL Team Gathering at Cheung Chau"
+slug: "2022-cheung-chau"
 date: 2022-03-22
 category: "event"
 summary: "IPNL team enjoyed a gathering trip to Cheung Chau island."

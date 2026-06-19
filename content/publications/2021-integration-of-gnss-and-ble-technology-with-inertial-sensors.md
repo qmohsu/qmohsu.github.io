@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integration of GNSS and BLE Technology With Inertial Sensors for Real-Time Positioning in Urban Environments"
+slug: "2021-integration-of-gnss-and-ble-technology-with-inertial-sensors"
 authors:
   - "Luo H."
   - "Li Y."

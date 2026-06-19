@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Tightly-coupled Line Feature-aided Visual Inertial Localization within Lightweight 3D Prior Map for Intelligent Vehicles"
+slug: "2023-tightly-coupled-line-feature-aided-visual-inertial-localizat"
 authors:
   - "Xi Zheng"
   - "Weisong Wen"

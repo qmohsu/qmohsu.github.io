@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance Evaluation of Vectorized NavIC Receiver Using Improved Dual-Frequency NavIC Measurements"
+slug: "2023-performance-evaluation-of-vectorized-navic-receiver-using-im"
 authors:
   - "Dey, A."
   - "Iyer, K."

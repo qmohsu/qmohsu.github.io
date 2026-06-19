@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An Anti-spoofing Model based on MVM and MCCM for a Loosely-coupled GNSS/INS/LiDAR Kalman Filter"
+slug: "2023-an-anti-spoofing-model-based-on-mvm-and-mccm-for-a-loosely-c"
 authors:
   - "Chang, J."
   - "Zhang, Y."

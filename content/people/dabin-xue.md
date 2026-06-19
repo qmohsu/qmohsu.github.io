@@ -1,5 +1,6 @@
 ---
 title: "Dabin Xue"
+slug: "dabin-xue"
 role: "Research Assistant"
 status: "alumni"
 years: "2018-2019"

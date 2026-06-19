@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multi-Agent Collaborative GNSS for Intelligent Transportation Systems"
+slug: "multi-agent-collaborative-gnss"
 description: "Vehicles share GNSS measurements through inter-vehicle ranging to improve urban positioning accuracy and integrity for ITS — the anchor RGC RIF program of the lab."
 category: "research-program"
 status: "completed"

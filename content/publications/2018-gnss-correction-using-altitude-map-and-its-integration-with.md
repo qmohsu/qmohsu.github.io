@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS Correction using Altitude Map and Its Integration with Pedestrian Dead Reckoning"
+slug: "2018-gnss-correction-using-altitude-map-and-its-integration-with"
 authors:
   - "Huang Y."
   - "Gu Y."

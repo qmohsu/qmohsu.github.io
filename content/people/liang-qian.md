@@ -1,5 +1,6 @@
 ---
 title: "Liang Qian"
+slug: "liang-qian"
 role: "PhD Student"
 status: "current"
 years: "2025-present"

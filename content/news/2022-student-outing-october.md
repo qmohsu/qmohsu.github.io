@@ -1,5 +1,6 @@
 ---
 title: "IPNL Autumn Student Outing"
+slug: "2022-student-outing-october"
 date: 2022-10-06
 category: "student"
 summary: "IPNL students gathered for an autumn outing to build team spirit and enjoy Hong Kong's pleasant fall weather."

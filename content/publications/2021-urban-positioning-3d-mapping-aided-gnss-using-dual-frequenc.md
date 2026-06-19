@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Urban Positioning: 3D Mapping Aided GNSS using Dual-Frequency Pseudorange Measurements from Smartphones"
+slug: "2021-urban-positioning-3d-mapping-aided-gnss-using-dual-frequenc"
 authors:
   - "Ng H.F."
   - "Zhang G."

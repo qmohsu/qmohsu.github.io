@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Extending 3DMA GNSS with Diffraction Features in Urban Areas: Feasibility Analysis and Preliminary Results"
+slug: "2023-extending-3dma-gnss-with-diffraction-features-in-urban-areas"
 authors:
   - "Guohao Zhang"
   - "Di Hai"

@@ -1,5 +1,6 @@
 ---
 title: "Qianhai Competition Award"
+slug: "2019-qianhai-competition"
 date: 2019-12-06
 category: "award"
 summary: "IPNL team received recognition at the Qianhai innovation competition."

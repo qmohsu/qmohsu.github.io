@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integrity-Constrained Factor Graph Optimization for GNSS Positioning in Urban Canyons"
+slug: "2024-integrity-constrained-factor-graph-optimization-for-gnss-pos"
 authors:
   - "Xia, X."
   - "Wen, W."

@@ -1,5 +1,6 @@
 ---
 title: "Chin-Lok Tsang"
+slug: "chin-lok-tsang"
 role: "PhD Student"
 status: "current"
 years: "2022-present"

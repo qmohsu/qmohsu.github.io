@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Tightly Coupled Integrated Navigation System Via Factor Graph for UAV Indoor Localization"
+slug: "2021-tightly-coupled-integrated-navigation-system-via-factor-grap"
 authors:
   - "Yang S."
   - "Hsu L.T."

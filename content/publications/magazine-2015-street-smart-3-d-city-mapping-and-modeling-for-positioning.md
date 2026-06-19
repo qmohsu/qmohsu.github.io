@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Street Smart: 3-D City Mapping and Modeling for Positioning with Multi-GNSS"
+slug: "magazine-2015-street-smart-3-d-city-mapping-and-modeling-for-positioning"
 authors:
   - "Hsu L. T"
   - "Miura S"

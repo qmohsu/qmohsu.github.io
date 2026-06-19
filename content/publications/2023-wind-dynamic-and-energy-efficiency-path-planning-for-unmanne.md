@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Wind dynamic and energy-efficiency path planning for unmanned aerial vehicles in the lower-level airspace and urban air mobility context"
+slug: "2023-wind-dynamic-and-energy-efficiency-path-planning-for-unmanne"
 authors:
   - "Chan, Y. Y."
   - "Ng, K. K."

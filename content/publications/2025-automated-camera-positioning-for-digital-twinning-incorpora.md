@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Automated Camera Positioning for Digital Twinning: Incorporating 360-Degree Imaging, Differential Rendering, and 3D Spatial Data"
+slug: "2025-automated-camera-positioning-for-digital-twinning-incorpora"
 authors:
   - "Lee, M. J. L."
   - "Ng, H. F."

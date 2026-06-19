@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Coarse-to-Fine Loosely-Coupled LiDAR-Inertial Odometry for Urban Positioning and Mapping"
+slug: "2021-coarse-to-fine-loosely-coupled-lidar-inertial-odometry-for-u"
 authors:
   - "Zhang J."
   - "Wen W."

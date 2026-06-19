@@ -1,5 +1,6 @@
 ---
 title: "Li-Ta Hsu"
+slug: "li-ta-hsu"
 role: "PI"
 status: "current"
 years: "2017-present"

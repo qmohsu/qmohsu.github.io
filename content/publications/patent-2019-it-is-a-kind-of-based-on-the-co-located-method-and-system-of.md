@@ -1,5 +1,6 @@
-﻿---
+---
 title: "It is a kind of based on the co-located method and system of three-dimensional map assisted GNSS, positioning device, storage medium"
+slug: "patent-2019-it-is-a-kind-of-based-on-the-co-located-method-and-system-of"
 authors:
   - "Zhang G"
   - "Hsu L. T"

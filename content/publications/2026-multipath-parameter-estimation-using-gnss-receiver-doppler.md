@@ -1,5 +1,6 @@
 ---
 title: "Multipath Parameter Estimation Using GNSS Receiver Doppler Measurements"
+slug: "2026-multipath-parameter-estimation-using-gnss-receiver-doppler"
 authors:
   - "Jingxiaotao Fang"
   - "Bing Xu"

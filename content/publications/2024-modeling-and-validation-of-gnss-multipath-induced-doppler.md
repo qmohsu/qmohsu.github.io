@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Modeling and Validation of GNSS Multipath-Induced Doppler Tracking Error"
+slug: "2024-modeling-and-validation-of-gnss-multipath-induced-doppler"
 authors:
   - "Jingxiaotao Fang"
   - "Liyuan Zhang"

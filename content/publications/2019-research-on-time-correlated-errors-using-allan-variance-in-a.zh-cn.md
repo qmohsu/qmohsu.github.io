@@ -1,0 +1,28 @@
+---
+title: "Research on Time-Correlated Errors Using Allan Variance in a Kalman Filter Applicable to Vector-Tracking-Based GNSS Software-Defined Receiver for Autonomous Ground Vehicle Navigation"
+slug: "2019-research-on-time-correlated-errors-using-allan-variance-in-a"
+authors:
+  - "Luo Y."
+  - "Li J."
+  - "Yu C."
+  - "Xu B."
+  - "Li Y."
+  - "Hsu L. T."
+  - "El-Sheimy N."
+year: 2019
+venue: "Remote Sensing"
+type: "journal"
+cv_number: 114
+featured: false
+quartile: "Q1"
+doi: "10.3390/rs11091026"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
+tags: []
+---
+
+<aside class="translation-stub">本论文以英文发表。完整书目详情、DOI / PDF 链接请见 <a href="/en/publications/2019-research-on-time-correlated-errors-using-allan-variance-in-a/">英文页面</a>。</aside>

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Factor Graph Optimization-based Indoor Pedestrian SLAM with Probabilistic Exact Activity Loop Closures using Smartphone"
+slug: "2023-factor-graph-optimization-based-indoor-pedestrian-slam-with"
 authors:
   - "Shiyu Bai"
   - "Weisong Wen"

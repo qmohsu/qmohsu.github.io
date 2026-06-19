@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An Adaptive Weighted GNSS/VINS/Wi-Fi RTT-based Seamless Positioning System for Smartphone"
+slug: "2024-an-adaptive-weighted-gnssvinswi-fi-rtt-based-seamless"
 authors:
   - "Meiling Su"
   - "Bing Wang"

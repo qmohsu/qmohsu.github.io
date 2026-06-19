@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integrity for Autonomous Vehicles and Towards a Novel Alert Limit Determination Method"
+slug: "2020-integrity-for-autonomous-vehicles-and-towards-a-novel-alert"
 authors:
   - "Meng Q."
   - "Hsu L. T."

@@ -1,5 +1,6 @@
 ---
 title: "Keynote at IEEE IPIN 2022 Beijing: Navigation using Graph Optimization (September 2022)"
+slug: "2022-ipin-beijing-keynote"
 date: 2022-09-05
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"

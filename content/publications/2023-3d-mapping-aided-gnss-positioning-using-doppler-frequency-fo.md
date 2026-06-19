@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Mapping Aided GNSS Positioning Using Doppler Frequency for Urban Areas"
+slug: "2023-3d-mapping-aided-gnss-positioning-using-doppler-frequency-fo"
 authors:
   - "Liyuan Zhang"
   - "Hoi-Fung Ng"

@@ -1,5 +1,6 @@
 ---
 title: "Royal Institute of Navigation (UK) Associate Fellow admission (August 2018)"
+slug: "2018-rin-associate-fellow"
 date: 2018-08-10
 date_note: "AFRIN admission date per the membership paperwork; news post backfilled 2026-05-11"
 category: "recognition"

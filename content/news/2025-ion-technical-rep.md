@@ -1,5 +1,6 @@
 ---
 title: "Dr. Hsu re-elected as ION Technical Representative"
+slug: "2025-ion-technical-rep"
 date: 2025-01-10
 category: "leadership"
 summary: "Dr. Hsu was re-elected as Technical Representative to the ION Council, continuing his leadership role in the navigation community."

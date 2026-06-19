@@ -1,5 +1,6 @@
 ---
 title: "Delu Che"
+slug: "delu-che"
 role: "Visiting PhD Student"
 status: "alumni"
 years: "2024"

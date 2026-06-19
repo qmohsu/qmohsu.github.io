@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Cyclist Orientation Estimation Using LiDAR Data"
+slug: "2023-cyclist-orientation-estimation-using-lidar-data"
 authors:
   - "Chang, H."
   - "Gu, Y."

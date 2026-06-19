@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Chapter 2 - Vehicular Positioning System"
+slug: "book-2019-chapter-2-vehicular-positioning-system"
 authors:
   - "Hsu L. T."
   - "Wen W."

@@ -1,5 +1,6 @@
 ---
 title: "Credible Uncertainty Quantification Under Noise and System Model Mismatch in Localization Systems"
+slug: "2026-credible-uncertainty-quantification-under-noise-and-system"
 authors:
   - "Penggao Yan"
   - "Xingqun Zhan"

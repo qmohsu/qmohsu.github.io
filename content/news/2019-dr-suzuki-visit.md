@@ -1,5 +1,6 @@
 ---
 title: "Dr. Taro Suzuki Visits IPNL"
+slug: "2019-dr-suzuki-visit"
 date: 2019-07-10
 category: "event"
 summary: "Dr. Taro Suzuki from Chiba Institute of Technology visited IPNL."

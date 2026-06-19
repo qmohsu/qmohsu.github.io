@@ -1,5 +1,6 @@
 ---
 title: "Zhi Zhan"
+slug: "zhi-zhan"
 role: "PhD Student"
 status: "current"
 years: "2025-present"

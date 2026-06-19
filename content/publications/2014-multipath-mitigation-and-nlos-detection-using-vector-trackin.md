@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multipath mitigation and NLOS detection using vector tracking in urban"
+slug: "2014-multipath-mitigation-and-nlos-detection-using-vector-trackin"
 authors:
   - "Hsu L. T."
   - "Jan, S. S."

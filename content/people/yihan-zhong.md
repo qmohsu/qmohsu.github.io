@@ -1,5 +1,6 @@
 ---
 title: "Yihan Zhong"
+slug: "yihan-zhong"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2026-present"

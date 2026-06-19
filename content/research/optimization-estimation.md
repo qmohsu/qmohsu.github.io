@@ -1,5 +1,6 @@
 ---
 title: "Optimization-Based Estimation and Factor Graphs"
+slug: "optimization-estimation"
 description: "Factor graph optimization as a unifying framework for GNSS, INS, carrier phase, Doppler, maps, perception, and integrity — reasoning over time across heterogeneous measurements."
 keywords:
   - "factor graph optimization"

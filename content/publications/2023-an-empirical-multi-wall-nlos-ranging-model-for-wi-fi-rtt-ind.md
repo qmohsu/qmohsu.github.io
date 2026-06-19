@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An empirical multi-wall NLOS ranging model for Wi-Fi RTT indoor positioning"
+slug: "2023-an-empirical-multi-wall-nlos-ranging-model-for-wi-fi-rtt-ind"
 authors:
   - "Qing Liang"
   - "Guohao Zhang"

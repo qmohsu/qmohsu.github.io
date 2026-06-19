@@ -1,5 +1,6 @@
 ---
 title: "ICLT 2025 paper presented: GitHub as a Supplementary Educational Tool (May 2025)"
+slug: "2025-iclt-github-pedagogy"
 date: 2025-05-23
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

@@ -1,5 +1,6 @@
 ---
 title: "IPNL at ION GNSS+ 2019"
+slug: "2019-ion-gnss"
 date: 2019-09-16
 category: "event"
 summary: "IPNL presented research at ION GNSS+ 2019 conference."

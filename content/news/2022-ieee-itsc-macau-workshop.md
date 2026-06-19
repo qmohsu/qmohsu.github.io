@@ -1,5 +1,6 @@
 ---
 title: "IEEE ITSC 2022 Macau Workshop: Urban GNSS RTK — Challenges and Opportunities (October 2022)"
+slug: "2022-ieee-itsc-macau-workshop"
 date: 2022-10-08
 date_note: "Workshop date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"

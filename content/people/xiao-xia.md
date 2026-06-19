@@ -1,5 +1,6 @@
 ---
 title: "Xiao Xia"
+slug: "xiao-xia"
 role: "PhD Student"
 status: "current"
 years: "2022-present"

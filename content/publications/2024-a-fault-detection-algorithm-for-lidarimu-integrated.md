@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Fault Detection Algorithm for LiDAR/IMU Integrated Localization Systems with Non-Gaussian Noises"
+slug: "2024-a-fault-detection-algorithm-for-lidarimu-integrated"
 authors:
   - "Penggao Yan"
   - "Weisong Wen"

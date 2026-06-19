@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multi-Agent Collaborative GNSS/Camera/INS Integration Aided by Inter-ranging for Vehicular Navigation in Urban Areas"
+slug: "2020-multi-agent-collaborative-gnsscamerains-integration-aided"
 authors:
   - "Wen W."
   - "Bai X."

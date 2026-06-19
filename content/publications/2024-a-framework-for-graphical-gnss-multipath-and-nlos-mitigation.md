@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Framework for Graphical GNSS Multipath and NLOS Mitigation"
+slug: "2024-a-framework-for-graphical-gnss-multipath-and-nlos-mitigation"
 authors:
   - "Xu, P."
   - "Zhang, G."

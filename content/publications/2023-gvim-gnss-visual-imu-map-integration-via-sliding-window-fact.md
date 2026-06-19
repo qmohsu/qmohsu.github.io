@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GVIM: GNSS/Visual/IMU/Map Integration Via Sliding Window Factor Graph Optimization in Urban Canyons"
+slug: "2023-gvim-gnss-visual-imu-map-integration-via-sliding-window-fact"
 authors:
   - "Xiwei Bai"
   - "Li-Ta Hsu"

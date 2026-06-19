@@ -1,5 +1,6 @@
 ---
 title: "Jiachen Zhang"
+slug: "jiachen-zhang"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2022-2024"

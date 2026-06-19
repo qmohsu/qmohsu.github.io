@@ -1,5 +1,6 @@
 ---
 title: "Runzhi Hu"
+slug: "runzhi-hu"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2026-present"

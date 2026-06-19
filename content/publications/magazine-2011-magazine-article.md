@@ -1,5 +1,6 @@
 ---
 title: "Real-Time Indoor Location Based Service Test Bed I"
+slug: "magazine-2011-magazine-article"
 authors:
   - "Hsu L. T."
   - "Tsai W. M."

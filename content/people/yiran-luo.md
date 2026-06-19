@@ -1,5 +1,6 @@
 ---
 title: "Yiran Luo"
+slug: "yiran-luo"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2020-2021"

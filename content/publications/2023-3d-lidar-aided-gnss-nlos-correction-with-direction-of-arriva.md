@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D LiDAR Aided GNSS NLOS Correction with Direction of Arrival Estimation Using Doppler Measurements"
+slug: "2023-3d-lidar-aided-gnss-nlos-correction-with-direction-of-arriva"
 authors:
   - "Xikun Liu"
   - "Weisong Wen"

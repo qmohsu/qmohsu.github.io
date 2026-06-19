@@ -1,5 +1,6 @@
 ---
 title: "European tour March 2025: Munich Satellite Navigation Summit Session 4 Chair, Hannover invited talk, London visit"
+slug: "2025-european-tour-march"
 date: 2025-03-27
 date_note: "Munich Summit Session 4 chair day; Hannover talk 25 March; news post backfilled 2026-05-11"
 category: "talk"

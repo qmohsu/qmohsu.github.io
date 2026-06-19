@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Survey on Cooperative Positioning Using GNSS Measurements"
+slug: "2024-a-survey-on-cooperative-positioning-using-gnss-measurements"
 authors:
   - "Jin, R."
   - "Zhang, G."

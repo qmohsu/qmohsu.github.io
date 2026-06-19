@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Accurate Estimation of Pedestrian Orientation from On-board Camera and Inertial Sensors"
+slug: "2016-accurate-estimation-of-pedestrian-orientation-from-on-board"
 authors:
   - "Gu Y."
   - "Hsu L. T."

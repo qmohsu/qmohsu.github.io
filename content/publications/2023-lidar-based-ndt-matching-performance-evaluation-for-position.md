@@ -1,5 +1,6 @@
-﻿---
+---
 title: "LiDAR-based NDT Matching Performance Evaluation for Positioning in Adverse Weather Conditions"
+slug: "2023-lidar-based-ndt-matching-performance-evaluation-for-position"
 authors:
   - "Chang, J."
   - "Hu, R."

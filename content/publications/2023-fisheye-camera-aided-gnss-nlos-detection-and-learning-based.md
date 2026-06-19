@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Fisheye Camera Aided GNSS NLOS Detection and Learning-Based Pseudorange Bias Correction for Intelligent Vehicles in Urban Canyons"
+slug: "2023-fisheye-camera-aided-gnss-nlos-detection-and-learning-based"
 authors:
   - "Runzhi Hu"
   - "Weisong Wen"

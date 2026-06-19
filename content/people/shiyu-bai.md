@@ -1,5 +1,6 @@
 ---
 title: "Shiyu Bai"
+slug: "shiyu-bai"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2023-2025"

@@ -1,5 +1,6 @@
 ---
 title: "Keynote at ICASE 2017"
+slug: "2017-icase-keynote"
 date: 2017-11-13
 category: "event"
 summary: "Dr. Hsu delivered a keynote speech at the ICASE conference."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Enhancing positioning in GNSS denied environments based on an extended Kalman filter using past GNSS measurements and IMU"
+slug: "2024-enhancing-positioning-in-gnss-denied-environments-based-on-a"
 authors:
   - "Iyer, K."
   - "Dey, A."

@@ -1,5 +1,6 @@
 ---
 title: "Abhijit Dey"
+slug: "abhijit-dey"
 role: "Visiting PhD Student"
 status: "alumni"
 years: "2021"

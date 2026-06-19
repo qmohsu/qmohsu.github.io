@@ -1,5 +1,6 @@
 ---
 title: "UrbanNav Dataset"
+slug: "urbannav-dataset"
 description: "Open multisensory dataset for benchmarking positioning and urban navigation algorithms"
 subtype: "dataset"
 license: "MIT"

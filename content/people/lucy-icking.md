@@ -1,5 +1,6 @@
 ---
 title: "Lucy Icking"
+slug: "lucy-icking"
 role: "Visiting PhD Student"
 status: "alumni"
 years: "2022"

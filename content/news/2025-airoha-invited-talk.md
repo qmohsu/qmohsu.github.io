@@ -1,5 +1,6 @@
 ---
 title: "Invited industry talk at Airoha Technology Taiwan: Indoor Positioning and Long-Coherent GNSS (July 2025)"
+slug: "2025-airoha-invited-talk"
 date: 2025-07-15
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

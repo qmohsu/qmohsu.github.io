@@ -1,5 +1,6 @@
 ---
 title: "Zhengdao Li"
+slug: "zhengdao-li"
 role: "PhD Student"
 status: "current"
 years: "2024-present"

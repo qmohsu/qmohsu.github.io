@@ -1,5 +1,6 @@
 ---
 title: "IEEE ITSC 2023 Workshop on GNSS Urban Positioning"
+slug: "2023-itsc-workshop"
 date: 2023-09-30
 category: "event"
 summary: "IPNL organized a workshop on intelligent vehicle urban positioning at IEEE ITSC 2023."

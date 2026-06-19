@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Towards Accurate Vehicle-to-Pedestrian Relative Positioning Aided by Inter-Frame and Inter-Agent GNSS Measurement Collaboration Using Factor Graph Optimization for Smart Summon"
+slug: "2023-towards-accurate-vehicle-to-pedestrian-relative-positioning"
 authors:
   - "Yihan Zhong"
   - "Weisong Wen"

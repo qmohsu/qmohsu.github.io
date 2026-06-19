@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Characterization and Validation of GNSS Multipath-Induced Doppler Measurement Error"
+slug: "2024-characterization-and-validation-of-gnss-multipath-induced-do"
 authors:
   - "Fang, J."
   - "Zhang, L."

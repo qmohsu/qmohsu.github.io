@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GPS Error Correction with Pseudorange Evaluation Using 3-dimensional Maps"
+slug: "2015-gps-error-correction-with-pseudorange-evaluation-using-3-dim"
 authors:
   - "Miura S."
   - "Hsu L. T."

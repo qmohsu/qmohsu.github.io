@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integrity Monitoring for All-Source Navigation Enhanced by Kalman Filter-Based Solution Separation"
+slug: "2020-integrity-monitoring-for-all-source-navigation-enhanced-by-k"
 authors:
   - "Meng Q."
   - "Hsu L. T."

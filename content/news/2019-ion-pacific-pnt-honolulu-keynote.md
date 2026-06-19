@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at ION Pacific PNT 2019 Honolulu — first US/Pacific invited engagement (April 2019)"
+slug: "2019-ion-pacific-pnt-honolulu-keynote"
 date: 2019-04-08
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"

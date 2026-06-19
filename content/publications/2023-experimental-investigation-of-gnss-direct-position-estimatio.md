@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Experimental Investigation of GNSS Direct Position Estimation in Densely Urban Area"
+slug: "2023-experimental-investigation-of-gnss-direct-position-estimatio"
 authors:
   - "Sergio Vicenzo"
   - "Bing Xu"

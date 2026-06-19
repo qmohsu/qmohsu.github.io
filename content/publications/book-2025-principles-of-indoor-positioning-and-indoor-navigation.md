@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Principles of Indoor Positioning and Indoor Navigation"
+slug: "book-2025-principles-of-indoor-positioning-and-indoor-navigation"
 authors:
   - "Hsu L. T."
   - "Zhang G."

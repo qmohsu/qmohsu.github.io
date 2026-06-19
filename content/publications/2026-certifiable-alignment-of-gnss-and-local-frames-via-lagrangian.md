@@ -1,5 +1,6 @@
 ---
 title: "Certifiable Alignment of GNSS and Local Frames via Lagrangian Duality"
+slug: "2026-certifiable-alignment-of-gnss-and-local-frames-via-lagrangian"
 authors:
   - "Baoshan Song"
   - "Matthew Giamou"

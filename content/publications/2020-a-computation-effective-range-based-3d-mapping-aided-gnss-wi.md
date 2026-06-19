@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Computation Effective Range-Based 3D Mapping Aided GNSS with NLOS Correction Method"
+slug: "2020-a-computation-effective-range-based-3d-mapping-aided-gnss-wi"
 authors:
   - "Ng H. F."
   - "Zhang G."

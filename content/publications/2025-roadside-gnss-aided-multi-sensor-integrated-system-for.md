@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Roadside GNSS Aided Multi-Sensor Integrated System for Vehicle Positioning in Urban Areas"
+slug: "2025-roadside-gnss-aided-multi-sensor-integrated-system-for"
 authors:
   - "Feng Huang"
   - "Yihan Zhong"

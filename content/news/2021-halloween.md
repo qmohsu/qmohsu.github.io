@@ -1,5 +1,6 @@
 ---
 title: "IPNL Halloween Party"
+slug: "2021-halloween"
 date: 2021-11-30
 category: "event"
 summary: "IPNL celebrated with a fun Halloween party."

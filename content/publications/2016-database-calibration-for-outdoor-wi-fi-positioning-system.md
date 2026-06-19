@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Database Calibration for Outdoor Wi-Fi Positioning System"
+slug: "2016-database-calibration-for-outdoor-wi-fi-positioning-system"
 authors:
   - "Huang Y."
   - "Hsu L.T."

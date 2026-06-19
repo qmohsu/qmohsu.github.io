@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance Assessment of the GNSS Diffraction Models in Urban Areas"
+slug: "2021-performance-assessment-of-the-gnss-diffraction-models-in-urb"
 authors:
   - "Zhang G."
   - "Hsu L. T."

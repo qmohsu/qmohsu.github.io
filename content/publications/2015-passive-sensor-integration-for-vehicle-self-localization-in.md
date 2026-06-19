@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Passive Sensor Integration for Vehicle Self-Localization in Urban Traffic Environment"
+slug: "2015-passive-sensor-integration-for-vehicle-self-localization-in"
 authors:
   - "Gu Y."
   - "Hsu L. T"

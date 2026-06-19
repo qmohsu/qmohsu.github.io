@@ -1,5 +1,6 @@
 ---
 title: "Xiwei Bai"
+slug: "xiwei-bai"
 role: "PhD Student"
 status: "alumni"
 years: "2019-2022"

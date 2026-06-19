@@ -1,5 +1,6 @@
 ---
 title: "Seamless Multi-Sensor PNT for Embodied Systems"
+slug: "seamless-pnt-embodied"
 description: "Tightly coupled GNSS/INS/LiDAR/camera/UWB/Wi-Fi fusion for vehicles, robots, drones, smartphones, and wearables operating across open-sky, urban canyon, indoor, and GNSS-denied conditions."
 keywords:
   - "multi-sensor fusion"

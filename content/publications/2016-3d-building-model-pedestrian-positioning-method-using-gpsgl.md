@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Building Model Pedestrian Positioning Method using GPS/GLONASS/QZSS and Its Reliability Calculation"
+slug: "2016-3d-building-model-pedestrian-positioning-method-using-gpsgl"
 authors:
   - "Hsu L. T."
   - "Gu Y."

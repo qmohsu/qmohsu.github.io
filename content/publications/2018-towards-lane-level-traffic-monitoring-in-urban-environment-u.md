@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Towards lane-level traffic monitoring in urban environment using precise probe vehicle data derived from three-dimensional map aided differential GNSS"
+slug: "2018-towards-lane-level-traffic-monitoring-in-urban-environment-u"
 authors:
   - "Gu Y."
   - "Hsu L.T."

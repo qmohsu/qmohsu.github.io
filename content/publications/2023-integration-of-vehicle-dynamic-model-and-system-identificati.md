@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integration of Vehicle Dynamic Model and System Identification Model for Extending the Navigation Service Under Sensor Failures"
+slug: "2023-integration-of-vehicle-dynamic-model-and-system-identificati"
 authors:
   - "Yan, P."
   - "Wen, W."

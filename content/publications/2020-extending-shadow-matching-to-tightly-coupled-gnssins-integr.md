@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Extending Shadow Matching to Tightly-Coupled GNSS/INS Integration System"
+slug: "2020-extending-shadow-matching-to-tightly-coupled-gnssins-integr"
 authors:
   - "Zhang G."
   - "Wen W. Xu B."

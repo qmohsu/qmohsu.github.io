@@ -1,5 +1,6 @@
 ---
 title: "Max Jwo-Lem Lee"
+slug: "max-lee"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2025-present"

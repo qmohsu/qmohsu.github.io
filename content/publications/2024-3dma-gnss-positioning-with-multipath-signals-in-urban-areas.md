@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3DMA GNSS Positioning with Multipath Signals in Urban Areas: Methodology and Preliminary Results"
+slug: "2024-3dma-gnss-positioning-with-multipath-signals-in-urban-areas"
 authors:
   - "Mingda Ye"
   - "Guohao Zhang"

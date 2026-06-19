@@ -1,5 +1,6 @@
 ---
 title: "Feng Huang"
+slug: "feng-huang"
 role: "PhD Student"
 status: "alumni"
 years: "2020-2024"

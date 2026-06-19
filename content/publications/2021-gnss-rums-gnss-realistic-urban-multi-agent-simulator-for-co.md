@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS RUMS: GNSS Realistic Urban Multi-agent Simulator for Collaborative Positioning Research"
+slug: "2021-gnss-rums-gnss-realistic-urban-multi-agent-simulator-for-co"
 authors:
   - "Zhang G."
   - "Xu B."

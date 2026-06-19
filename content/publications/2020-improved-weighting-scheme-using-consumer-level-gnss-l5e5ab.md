@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Improved Weighting Scheme using Consumer-level GNSS L5/E5a/B2a Pseudorange Measurements in the Urban Area"
+slug: "2020-improved-weighting-scheme-using-consumer-level-gnss-l5e5ab"
 authors:
   - "Ng H.F."
   - "Zhang G."

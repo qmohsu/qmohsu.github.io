@@ -1,5 +1,6 @@
 ---
 title: "Invited Lecturer at GNSS Summer School 2017 (Tokyo)"
+slug: "2017-gnss-summer-school"
 date: 2017-07-31
 category: "talk"
 summary: "Prof. Li-Ta Hsu was an invited lecturer at the GNSS Summer School 2017 hosted by the Institute of PNT, Japan in Tokyo, delivering a session on Fundamentals of GNSS."

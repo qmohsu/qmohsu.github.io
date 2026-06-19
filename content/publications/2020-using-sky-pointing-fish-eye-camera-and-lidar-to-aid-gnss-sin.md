@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Using Sky-Pointing Fish-eye Camera and LiDAR to Aid GNSS Single Point Positioning in Urban Canyons"
+slug: "2020-using-sky-pointing-fish-eye-camera-and-lidar-to-aid-gnss-sin"
 authors:
   - "Bai X."
   - "Wen W."

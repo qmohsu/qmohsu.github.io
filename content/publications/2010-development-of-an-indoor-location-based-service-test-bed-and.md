@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Development of an Indoor Location Based Service Test Bed and Geographic Information System with a WSN"
+slug: "2010-development-of-an-indoor-location-based-service-test-bed-and"
 authors:
   - "Jan S. S."
   - "Hsu L. T."

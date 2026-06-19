@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Robust Visual-Inertial Integrated Navigation System Aided by Online Sensor Model Adaption for Autonomous Ground Vehicles in Urban Areas"
+slug: "2020-robust-visual-inertial-integrated-navigation-system-aided-by"
 authors:
   - "Bai X."
   - "Wen W."

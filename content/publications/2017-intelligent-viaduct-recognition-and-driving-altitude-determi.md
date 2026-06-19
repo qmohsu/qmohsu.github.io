@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Intelligent Viaduct Recognition and Driving Altitude Determination using GPS Data"
+slug: "2017-intelligent-viaduct-recognition-and-driving-altitude-determi"
 authors:
   - "Hsu L.T."
   - "Gu Y."

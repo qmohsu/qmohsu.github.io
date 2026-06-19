@@ -1,5 +1,6 @@
 ---
 title: "Meiling Su"
+slug: "meiling-su"
 role: "PhD Student"
 status: "current"
 years: "2023-present"

@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at University of Calgary: Integrity-constrained Graph Optimization (October 2024)"
+slug: "2024-ucalgary-talk-october"
 date: 2024-10-01
 date_note: "Talk date; news post backfilled 2026-05-11"
 category: "talk"

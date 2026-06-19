@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Resilient Interactive Sensor-Independent-Update Fusion Navigation Method"
+slug: "2022-resilient-interactive-sensor-independent-update-fusion-navig"
 authors:
   - "Meng Q. and Hsu L. T."
 year: 2022

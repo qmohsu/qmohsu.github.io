@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Prediction on the Urban GNSS Measurement Uncertainty based on Deep Learning Networks with Long Short-Term Memory"
+slug: "2021-prediction-on-the-urban-gnss-measurement-uncertainty-based-o"
 authors:
   - "Zhang G."
   - "Xu P."

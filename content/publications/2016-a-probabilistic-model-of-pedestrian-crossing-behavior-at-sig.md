@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A probabilistic model of pedestrian crossing behavior at signalized intersections for connected vehicles"
+slug: "2016-a-probabilistic-model-of-pedestrian-crossing-behavior-at-sig"
 authors:
   - "Hashimoto Y."
   - "Gu Y."

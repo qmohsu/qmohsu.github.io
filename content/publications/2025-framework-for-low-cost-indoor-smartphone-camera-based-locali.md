@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Framework for Low-Cost Indoor Smartphone Camera-based Localization Using Spherical Panorama and BIM"
+slug: "2025-framework-for-low-cost-indoor-smartphone-camera-based-locali"
 authors:
   - "Lee, M. J. L."
   - "Lin, J."

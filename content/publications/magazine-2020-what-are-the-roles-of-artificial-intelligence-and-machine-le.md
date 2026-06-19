@@ -1,5 +1,6 @@
-﻿---
+---
 title: "What are the roles of artificial intelligence and machine learning in GNSS positioning"
+slug: "magazine-2020-what-are-the-roles-of-artificial-intelligence-and-machine-le"
 authors:
   - "Hsu L. T"
 year: 2020

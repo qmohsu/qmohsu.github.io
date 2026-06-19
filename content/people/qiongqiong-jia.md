@@ -1,5 +1,6 @@
 ---
 title: "Qiongqiong Jia"
+slug: "qiongqiong-jia"
 role: "Research Assistant"
 status: "alumni"
 years: "2018-2019"

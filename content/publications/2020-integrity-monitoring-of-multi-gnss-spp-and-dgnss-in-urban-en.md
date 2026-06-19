@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Integrity Monitoring of multi-GNSS SPP and DGNSS in Urban Environment using ARAIM and 3D City Models"
+slug: "2020-integrity-monitoring-of-multi-gnss-spp-and-dgnss-in-urban-en"
 authors:
   - "El-Mowafy A."
   - "Xu B."

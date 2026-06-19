@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Subspace-based Adaptive GMM Error Modeling for Fault-Aware Pseudorange-based Positioning in Urban Canyons"
+slug: "2024-subspace-based-adaptive-gmm-error-modeling-for-fault-aware-p"
 authors:
   - "Yan, P."
   - "Xia, X."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Low‐cost solid‐state LiDAR/inertial‐based localization with prior map for autonomous systems in urban scenarios"
+slug: "2023-lowcost-solidstate-lidarinertialbased-localization-with"
 authors:
   - "Zhong, Y."
   - "Huang, F."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Indoor Fire Monitoring Based on Look-Up-From-Floor Sensing of Ceiling (granted)"
+slug: "patent-2025-us-patent-no-12292340"
 authors:
   - "Wang Q"
   - "Huang X"

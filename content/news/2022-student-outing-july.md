@@ -1,5 +1,6 @@
 ---
 title: "IPNL Summer Student Gathering"
+slug: "2022-student-outing-july"
 date: 2022-07-30
 category: "student"
 summary: "IPNL students enjoyed a summer gathering to strengthen bonds and celebrate the semester's achievements."

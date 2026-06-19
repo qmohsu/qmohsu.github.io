@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Safety-quantifiable line feature-based monocular visual localization with 3d prior map"
+slug: "2025-safety-quantifiable-line-feature-based-monocular-visual-loca"
 authors:
   - "Zheng, X."
   - "Wen, W."

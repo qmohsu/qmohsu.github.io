@@ -1,5 +1,6 @@
 ---
 title: "Stairio receives Gold Medal with Congratulations of the Jury at 51st Geneva Inventions Exhibition"
+slug: "2026-stairio-geneva-gold"
 date: 2026-03-15
 category: "award"
 summary: "Stairio — an autonomous staircase safety monitoring robot led by Prof. Li-Ta Hsu — received the Gold Medal with Congratulations of the Jury at the 51st International Exhibition of Inventions Geneva."

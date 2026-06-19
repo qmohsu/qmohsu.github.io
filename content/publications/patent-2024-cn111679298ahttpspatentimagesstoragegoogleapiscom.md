@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A method and system for GNSS positioning assisted by three-dimensional map"
+slug: "patent-2024-cn111679298ahttpspatentimagesstoragegoogleapiscom"
 authors:
   - "Wen W"
   - "Zhang G"

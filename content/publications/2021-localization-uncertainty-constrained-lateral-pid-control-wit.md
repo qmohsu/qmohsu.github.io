@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Localization Uncertainty Constrained Lateral PID Control with Aids of Fuzzy Logic Considering LiDAR NDT Matching Error"
+slug: "2021-localization-uncertainty-constrained-lateral-pid-control-wit"
 authors:
   - "Hu S."
   - "Kan Y.C."
