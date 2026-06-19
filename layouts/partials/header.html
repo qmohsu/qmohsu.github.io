@@ -1,13 +1,33 @@
 <header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <a href="{{ "/" | relURL }}" class="brand-link"><img src="{{ "/images/logos/ipnl-logo.png" | relURL }}" alt="IPNL" class="brand-logo">{{ .Site.Title }}</a>
-    </div>
+  <div class="site-header-inner">
+    <a href="{{ "/" | relLangURL }}" class="brand-link">
+      <img src="{{ "/images/logos/ipnl-logo.png" | relURL }}" alt="IPNL" class="brand-logo brand-logo-ipnl">
+      <span class="brand-wordmark">
+        <span class="brand-wordmark-name">IPNL</span>
+        <span class="brand-wordmark-tag">{{ if eq .Lang "zh-cn" }}智能定位与导航实验室{{ else if eq .Lang "zh-tw" }}智能定位與導航實驗室{{ else }}Intelligent Positioning &amp; Navigation Lab{{ end }}</span>
+      </span>
+      <img src="{{ "/images/logos/polyu-logo.png" | relURL }}" alt="PolyU" class="brand-logo brand-logo-polyu" onerror="this.style.display='none'">
+    </a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="main-nav">
+      {{ $cur := .Section }}
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+        {{ $active := false }}
+        {{ if eq .URL "/" }}
+          {{ if $.IsHome }}{{ $active = true }}{{ end }}
+        {{ else }}
+          {{ $menuSeg := index (split (trim .URL "/") "/") 0 }}
+          {{ if $.IsMenuCurrent "main" . }}{{ $active = true }}{{ end }}
+          {{ if $.HasMenuCurrent "main" . }}{{ $active = true }}{{ end }}
+          {{ if and $cur (eq $cur $menuSeg) }}{{ $active = true }}{{ end }}
+        {{ end }}
+        <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
+    <span class="lang-switch" aria-label="Language">
+      <a href="/en/" class="lang-link{{ if eq .Lang "en" }} is-active{{ end }}">EN</a>
+      <a href="/zh-cn/" class="lang-link{{ if eq .Lang "zh-cn" }} is-active{{ end }}" lang="zh-CN">简</a>
+      <a href="/zh-tw/" class="lang-link{{ if eq .Lang "zh-tw" }} is-active{{ end }}" lang="zh-TW">繁</a>
+    </span>
   </div>
 </header>

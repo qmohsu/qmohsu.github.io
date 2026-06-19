@@ -1,0 +1,35 @@
+{{/* Universal dark section / page banner.
+     Customize via frontmatter:
+       hero_eyebrow   — small uppercase label above title (defaults to section name)
+       hero_title     — override the H1 (defaults to .Title)
+       hero_sub       — subtitle line (defaults to .Description)
+       hero_bg        — background image path (defaults to /images/banners/home-banner-1.png)
+       hero_size      — "small" | "medium" (default) */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $sectionI18n := dict
+  "projects"      (cond $cn "研发项目" (cond $tw "研發項目" "PROJECTS"))
+  "research"      (cond $cn "研究方向" (cond $tw "研究方向" "RESEARCH"))
+  "publications"  (cond $cn "论文" (cond $tw "論文" "PUBLICATIONS"))
+  "people"        (cond $cn "团队" (cond $tw "團隊" "TEAM"))
+  "news"          (cond $cn "新闻" (cond $tw "新聞" "NEWS"))
+  "resources"     (cond $cn "开放资源" (cond $tw "開放資源" "RESOURCES"))
+  "engage"        (cond $cn "联系合作" (cond $tw "聯絡合作" "ENGAGE"))
+  "partnerships"  (cond $cn "产业合作" (cond $tw "產業合作" "PARTNERSHIPS"))
+}}
+{{ $eyebrowDefault := "" }}
+{{ if and .Section (not .IsHome) }}{{ $eyebrowDefault = (index $sectionI18n .Section | default (upper .Section)) }}{{ end }}
+{{ $eyebrow := .Params.hero_eyebrow | default $eyebrowDefault }}
+{{ $title := .Params.hero_title | default .Title }}
+{{ $sub := .Params.hero_sub | default .Description }}
+{{ $bg := .Params.hero_bg | default "/images/banners/home-banner-1.png" }}
+{{ $size := .Params.hero_size | default "medium" }}
+<section class="page-hero page-hero-{{ $size }}">
+  <div class="page-hero-bg" style="background-image:url('{{ $bg | relURL }}');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-inner">
+    {{ with $eyebrow }}<div class="page-hero-eyebrow">{{ . | safeHTML }}</div>{{ end }}
+    <h1 class="page-hero-title">{{ $title | safeHTML }}</h1>
+    {{ with $sub }}<p class="page-hero-sub">{{ . | safeHTML }}</p>{{ end }}
+  </div>
+</section>

@@ -1,9 +1,11 @@
 {{ define "main" }}
-<article>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="prose person-prose">
   {{ if .Params.photo }}
-    <img src="{{ .Params.photo }}" alt="{{ .Title }}" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:14px;">
+    <img src="{{ .Params.photo }}" alt="{{ .Title }}" class="person-photo-detail">
   {{ end }}
-  <h1>{{ .Title }}</h1>
   <p><strong>{{ .Params.role }}</strong> {{ with .Params.years }}({{ . }}){{ end }}</p>
 
   {{ with .Params.status }}
@@ -56,11 +58,13 @@
   {{ end }}
 
   {{ if or .Params.linkedin .Params.scholar .Params.website }}
-  <div class="pub-links" style="margin-top:14px;">
-    {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank">LinkedIn</a>{{ end }}
-    {{ with .Params.scholar }}<a href="{{ . }}" target="_blank">Google Scholar</a>{{ end }}
-    {{ with .Params.website }}<a href="{{ . }}" target="_blank">Website</a>{{ end }}
+  <div class="profile-links">
+    {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-linkedin"><span class="profile-link-icon">in</span><span class="profile-link-label">LinkedIn</span></a>{{ end }}
+    {{ with .Params.scholar }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-scholar"><span class="profile-link-icon">GS</span><span class="profile-link-label">Google Scholar</span></a>{{ end }}
+    {{ with .Params.website }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-website"><span class="profile-link-icon">↗</span><span class="profile-link-label">Website</span></a>{{ end }}
   </div>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

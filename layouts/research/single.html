@@ -1,6 +1,8 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="prose">
   {{ with .Params.keywords }}
   <div class="kv">
     {{ range . }}<span>{{ . }}</span>{{ end }}
@@ -92,4 +94,6 @@
   </div>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

@@ -1,24 +1,61 @@
 {{ define "main" }}
-<img class="page-banner" src="{{ "/images/banners/page-banner-projects.png" | relURL }}" alt="" loading="lazy">
-<h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
 {{ .Content }}
 
 {{ $projects := .Pages }}
+{{ $cn := eq .Lang "zh-cn" }}
+{{ $tw := eq .Lang "zh-tw" }}
+
+{{/* Section heading labels — per language */}}
+{{ $hA := cond $cn "A. 核心研究项目" (cond $tw "A. 核心研究項目" "A. Core Research Programs") }}
+{{ $hB := cond $cn "B. 具身与产业转化系统" (cond $tw "B. 具身與產業轉化系統" "B. Embodied and Translational Systems") }}
+{{ $hC := cond $cn "C. 资助项目台账" (cond $tw "C. 資助項目台帳" "C. Funded Programs Ledger") }}
+{{ $hOther := cond $cn "其他项目" (cond $tw "其他項目" "Other Projects") }}
+
+{{/* Part 3 & Part 4 macro-section banners */}}
+{{ $p3num := cond $cn "第三部分 · 研发项目" (cond $tw "第三部分 · 研發項目" "Part 3 &middot; R&amp;D programs") }}
+{{ $p3title := cond $cn "核心研究方向 + 具身产业转化系统" (cond $tw "核心研究方向 + 具身產業轉化系統" "Core research agendas and embodied translational systems") }}
+{{ $p3sub := cond $cn "长期资助的研究议程 (A) 与应用机器人 / 转化系统 (B)。每张卡片可点开看具体项目页面。" (cond $tw "長期資助的研究議程 (A) 與應用機器人 / 轉化系統 (B)。每張卡片可點開看具體項目頁面。" "Long-running funded research agendas (A) plus applied robotics and translational systems (B). Click any card for the project page.") }}
+{{ $p4num := cond $cn "第四部分 · 资助项目台账" (cond $tw "第四部分 · 資助項目台帳" "Part 4 &middot; Funded programs ledger") }}
+{{ $p4title := cond $cn "完整 PI / PC 经费记录" (cond $tw "完整 PI / PC 經費記錄" "The complete PI / PC funding record") }}
+{{ $p4sub := cond $cn "为完整性记录的紧凑台账: 国自然及内地省级项目、国际咨询、未在上方拥有独立卡片的理大内部竞争性经费。" (cond $tw "為完整性記錄的緊湊台帳: 國自然及內地省級項目、國際諮詢、未在上方擁有獨立卡片的理大內部競爭性經費。" "A compact record for completeness: the long-tail of NSFC and Mainland-China provincial schemes, international consultancies, and PolyU internal competitive grants not above.") }}
+
+{{ $ledgerSummary := cond $cn "规模较小的 PI/PC 资助项目 —— 展开查看完整记录" (cond $tw "規模較小的 PI/PC 資助項目 —— 展開查看完整記錄" "Smaller PI/PC funded programs — expand for the full record") }}
+{{ $ledgerIntro := cond $cn "为完整性记录的紧凑台账: 国自然及内地省级项目、国际咨询、未在上方拥有独立卡片的理大内部竞争性经费。旗舰项目见 A、B 两节。" (cond $tw "為完整性記錄的緊湊台帳: 國自然及內地省級項目、國際諮詢、未在上方擁有獨立卡片的理大內部競爭性經費。旗艦項目見 A、B 兩節。" "A compact record for completeness: the long-tail of NSFC and Mainland-China provincial schemes, international consultancies, and PolyU internal competitive grants that don't have dedicated project cards above. Flagship programs are in Sections A–B.") }}
+{{ $thYear := cond $cn "年份" (cond $tw "年份" "Year") }}
+{{ $thFunder := cond $cn "资助方" (cond $tw "資助方" "Funder") }}
+{{ $thTitle := cond $cn "项目" (cond $tw "項目" "Project") }}
+{{ $thAmount := cond $cn "金额" (cond $tw "金額" "Amount") }}
+{{ $thPeriod := cond $cn "周期" (cond $tw "週期" "Period") }}
+{{ $hExtCompleted := cond $cn "外部 · 已完成" (cond $tw "外部 · 已完成" "External · Completed") }}
+{{ $hIntActive := cond $cn "内部(理大) · 进行中" (cond $tw "內部(理大) · 進行中" "Internal (PolyU) · Active") }}
+{{ $hIntCompleted := cond $cn "内部(理大) · 已完成" (cond $tw "內部(理大) · 已完成" "Internal (PolyU) · Completed") }}
 
 {{ $programs := where $projects ".Params.category" "research-program" }}
+{{ $translational := where $projects ".Params.category" "translational-system" }}
+
+{{ if or $programs $translational }}
+<div class="page-part">
+  <span class="page-part-num">{{ $p3num | safeHTML }}</span>
+  <h2 class="page-part-title">{{ $p3title | safeHTML }}</h2>
+  <p class="page-part-sub">{{ $p3sub | safeHTML }}</p>
+</div>
+{{ end }}
+
 {{ if $programs }}
 <div class="section">
-  <h2>A. Core Research Programs</h2>
+  <h2>{{ $hA }}</h2>
   <div class="cards">
     {{ range $programs.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
   </div>
 </div>
 {{ end }}
 
-{{ $translational := where $projects ".Params.category" "translational-system" }}
 {{ if $translational }}
 <div class="section">
-  <h2>B. Embodied and Translational Systems</h2>
+  <h2>{{ $hB }}</h2>
   <div class="cards">
     {{ range $translational.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
   </div>
@@ -26,17 +63,21 @@
 {{ end }}
 
 {{ with .Site.Data.funded_programs }}
+<div class="page-part">
+  <span class="page-part-num">{{ $p4num | safeHTML }}</span>
+  <h2 class="page-part-title">{{ $p4title | safeHTML }}</h2>
+  <p class="page-part-sub">{{ $p4sub | safeHTML }}</p>
+</div>
 <div class="section">
-  <h2>C. Funded Programs Ledger</h2>
   <details class="ledger">
-    <summary>Smaller PI/PC funded programs — expand for the full record</summary>
-    <p class="ledger-intro">A compact record for completeness: the long-tail of NSFC and Mainland-China provincial schemes, international consultancies, and PolyU internal competitive grants that don't have dedicated project cards above. Flagship programs are in Sections A–B.</p>
+    <summary>{{ $ledgerSummary }}</summary>
+    <p class="ledger-intro">{{ $ledgerIntro }}</p>
 
   {{ with .external_completed }}
-  <h3>External · Completed</h3>
+  <h3>{{ $hExtCompleted }}</h3>
   <table class="co-i-table">
     <thead>
-      <tr><th>Year</th><th>Funder</th><th>Project</th><th>Amount</th><th>Period</th></tr>
+      <tr><th>{{ $thYear }}</th><th>{{ $thFunder }}</th><th>{{ $thTitle }}</th><th>{{ $thAmount }}</th><th>{{ $thPeriod }}</th></tr>
     </thead>
     <tbody>
     {{ range . }}
@@ -53,10 +94,10 @@
   {{ end }}
 
   {{ with .internal_active }}
-  <h3>Internal (PolyU) · Active</h3>
+  <h3>{{ $hIntActive }}</h3>
   <table class="co-i-table">
     <thead>
-      <tr><th>Year</th><th>Funder</th><th>Project</th><th>Amount</th><th>Period</th></tr>
+      <tr><th>{{ $thYear }}</th><th>{{ $thFunder }}</th><th>{{ $thTitle }}</th><th>{{ $thAmount }}</th><th>{{ $thPeriod }}</th></tr>
     </thead>
     <tbody>
     {{ range . }}
@@ -73,10 +114,10 @@
   {{ end }}
 
   {{ with .internal_completed }}
-  <h3>Internal (PolyU) · Completed</h3>
+  <h3>{{ $hIntCompleted }}</h3>
   <table class="co-i-table">
     <thead>
-      <tr><th>Year</th><th>Funder</th><th>Project</th><th>Amount</th><th>Period</th></tr>
+      <tr><th>{{ $thYear }}</th><th>{{ $thFunder }}</th><th>{{ $thTitle }}</th><th>{{ $thAmount }}</th><th>{{ $thPeriod }}</th></tr>
     </thead>
     <tbody>
     {{ range . }}
@@ -98,10 +139,12 @@
 {{ $uncategorized := where $projects ".Params.category" "" }}
 {{ if $uncategorized }}
 <div class="section">
-  <h2>Other Projects</h2>
+  <h2>{{ $hOther }}</h2>
   <div class="cards">
     {{ range $uncategorized.ByWeight }}{{ partial "project-card.html" . }}{{ end }}
   </div>
 </div>
 {{ end }}
+</div>
+</div>
 {{ end }}

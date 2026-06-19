@@ -1,167 +1,568 @@
 {{ define "main" }}
 
-{{/* ===== 1. HERO ===== */}}
-<section class="hero">
-  <img src="{{ "/images/li-ta-hsu-2022.jpg" | relURL }}" alt="Li-Ta Hsu">
-  <div>
-    <h1>{{ .Site.Title }}</h1>
-    <p class="subtitle">Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University</p>
-    <div class="kv">
-      <span>GNSS</span>
-      <span>Urban Navigation</span>
-      <span>Sensor Fusion</span>
-      <span>Integrity Monitoring</span>
-      <span>Factor Graph Optimization</span>
+{{/* ===== HERO (full-bleed, dark, Shenzhen smart-city background) ===== */}}
+<section class="home-hero" id="top">
+  <div class="home-hero-bg" style="background-image:url('{{ "/images/banners/shenzhen-smart-city.png" | relURL }}');"></div>
+  <div class="home-hero-overlay"></div>
+  <div class="home-hero-grid"></div>
+  {{/* SVG constellation — satellite-style dot network with pulsing connections */}}
+  <svg class="hero-constellation" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="net-lines" stroke="#2dd4f0" stroke-width="0.5" fill="none">
+      <line x1="120" y1="140" x2="380" y2="200"/>
+      <line x1="380" y1="200" x2="660" y2="120"/>
+      <line x1="660" y1="120" x2="940" y2="180"/>
+      <line x1="940" y1="180" x2="1240" y2="100"/>
+      <line x1="1240" y1="100" x2="1480" y2="220"/>
+      <line x1="120" y1="140" x2="220" y2="380"/>
+      <line x1="380" y1="200" x2="460" y2="420"/>
+      <line x1="660" y1="120" x2="780" y2="400"/>
+      <line x1="940" y1="180" x2="1080" y2="380"/>
+      <line x1="1240" y1="100" x2="1340" y2="350"/>
+      <line x1="220" y1="380" x2="460" y2="420"/>
+      <line x1="460" y1="420" x2="780" y2="400"/>
+      <line x1="780" y1="400" x2="1080" y2="380"/>
+      <line x1="1080" y1="380" x2="1340" y2="350"/>
+      <line x1="220" y1="380" x2="160" y2="600"/>
+      <line x1="460" y1="420" x2="540" y2="640"/>
+      <line x1="780" y1="400" x2="860" y2="620"/>
+      <line x1="1080" y1="380" x2="1180" y2="640"/>
+      <line x1="1340" y1="350" x2="1420" y2="600"/>
+      <line x1="160" y1="600" x2="540" y2="640"/>
+      <line x1="540" y1="640" x2="860" y2="620"/>
+      <line x1="860" y1="620" x2="1180" y2="640"/>
+      <line x1="1180" y1="640" x2="1420" y2="600"/>
+    </g>
+    <g class="net-dots" fill="#2dd4f0">
+      <circle cx="120" cy="140" r="2.5"/>
+      <circle cx="380" cy="200" r="2.5"/>
+      <circle cx="660" cy="120" r="2.5"/>
+      <circle cx="940" cy="180" r="2.5"/>
+      <circle cx="1240" cy="100" r="2.5"/>
+      <circle cx="1480" cy="220" r="2.5"/>
+      <circle cx="220" cy="380" r="2.5"/>
+      <circle cx="460" cy="420" r="2.5"/>
+      <circle cx="780" cy="400" r="2.5"/>
+      <circle cx="1080" cy="380" r="2.5"/>
+      <circle cx="1340" cy="350" r="2.5"/>
+      <circle cx="160" cy="600" r="2.5"/>
+      <circle cx="540" cy="640" r="2.5"/>
+      <circle cx="860" cy="620" r="2.5"/>
+      <circle cx="1180" cy="640" r="2.5"/>
+      <circle cx="1420" cy="600" r="2.5"/>
+    </g>
+    {{/* Active satellite — bright pulse */}}
+    <g class="net-active">
+      <circle cx="780" cy="400" r="6" fill="#ff8c00"/>
+      <circle cx="780" cy="400" r="14" fill="none" stroke="#ff8c00" stroke-width="1.5"/>
+    </g>
+  </svg>
+  <div class="home-hero-inner">
+    {{ if eq .Lang "zh-cn" }}
+      <div class="home-hero-eyebrow">香港理工大学 · 航空及民航工程学系</div>
+      <h1 class="home-hero-title">深耕 <span class="hi-cyan">GNSS</span> <span class="hi-orange">失效</span>场景定位。</h1>
+      <p class="home-hero-sub"><strong>城市峡谷</strong> · <strong>室内</strong> · <strong>隧道</strong> · <strong>抗干扰环境</strong> —— 面向具身自主系统的多源融合定位。</p>
+    {{ else if eq .Lang "zh-tw" }}
+      <div class="home-hero-eyebrow">香港理工大學 · 航空及民航工程學系</div>
+      <h1 class="home-hero-title">深耕 <span class="hi-cyan">GNSS</span> <span class="hi-orange">失效</span>場景定位。</h1>
+      <p class="home-hero-sub"><strong>城市峽谷</strong> · <strong>室內</strong> · <strong>隧道</strong> · <strong>抗干擾環境</strong> —— 面向具身自主系統的多源融合定位。</p>
+    {{ else }}
+      <div class="home-hero-eyebrow">The Hong Kong Polytechnic University &middot; AAE</div>
+      <h1 class="home-hero-title">
+        Positioning that works <span class="hi-line">where <span class="hi-cyan">GNSS</span> <span class="hi-orange">doesn&rsquo;t</span>.</span>
+      </h1>
+      <p class="home-hero-sub">
+        <strong>Urban canyon</strong> &middot; <strong>Indoor</strong> &middot; <strong>Tunnel</strong> &middot; <strong>Jammed environments</strong>
+        &mdash; multi-source fusion for embodied autonomous systems.
+      </p>
+    {{ end }}
+    <div class="home-hero-chips">
+      <span>3DMA-GNSS</span>
+      <span>FGO</span>
+      <span>Integrity</span>
+      <span>VIO / SLAM</span>
+      <span>NLOS Mitigation</span>
     </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <a href="{{ "/research/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;background:var(--accent);color:#fff;border-radius:8px;font-size:0.9rem;font-weight:600;">Research</a>
-      <a href="{{ "/publications/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;border:1px solid var(--accent);color:var(--accent);border-radius:8px;font-size:0.9rem;font-weight:600;">Publications</a>
-      <a href="{{ "/join/" | relURL }}" class="btn" style="display:inline-block;padding:8px 18px;border:1px solid var(--accent);color:var(--accent);border-radius:8px;font-size:0.9rem;font-weight:600;">Join Us</a>
+  </div>
+  {{/* Live status ticker — gives the hero a "live lab data" feel */}}
+  <div class="hero-ticker" data-hero-ticker>
+    <div class="hero-ticker-item">
+      <span class="hero-ticker-dot"></span>
+      <span class="hero-ticker-label">{{ if eq .Lang "zh-cn" }}实验室状态{{ else if eq .Lang "zh-tw" }}實驗室狀態{{ else }}LAB STATUS{{ end }}</span>
+      <span class="hero-ticker-val">{{ if eq .Lang "zh-cn" }}运行中{{ else if eq .Lang "zh-tw" }}運作中{{ else }}OPERATIONAL{{ end }}</span>
+    </div>
+    <div class="hero-ticker-item">
+      <span class="hero-ticker-label">22.3019° N</span>
+      <span class="hero-ticker-val">114.1812° E</span>
+    </div>
+    <div class="hero-ticker-item">
+      <span class="hero-ticker-label">{{ if eq .Lang "zh-cn" }}可见卫星{{ else if eq .Lang "zh-tw" }}可見衛星{{ else }}SAT IN VIEW{{ end }}</span>
+      <span class="hero-ticker-val" data-sat-count>14 / 24</span>
+    </div>
+    <div class="hero-ticker-item">
+      <span class="hero-ticker-label">HDOP</span>
+      <span class="hero-ticker-val" data-hdop>0.8</span>
     </div>
   </div>
 </section>
 
-{{/* ===== 1b. EVENT HIGHLIGHTS PHOTO GRID ===== */}}
-{{ $allNews := where .Site.RegularPages "Section" "news" }}
-{{ $newsWithImages := slice }}
-{{ range $allNews }}
-  {{ $thumb := .Params.image }}
-  {{ if not $thumb }}{{ with .Params.images }}{{ $thumb = index . 0 }}{{ end }}{{ end }}
-  {{ if $thumb }}
-    {{ $newsWithImages = $newsWithImages | append (dict "page" . "thumb" $thumb) }}
-  {{ end }}
-{{ end }}
-{{ if gt (len $newsWithImages) 0 }}
-{{ $sorted := sort $newsWithImages "page.Date" "desc" }}
-<section class="section">
-  <h2>Event Highlights</h2>
-  <div class="highlights-grid">
-    {{ range first 9 $sorted }}
-      {{ $p := .page }}
-      <a href="{{ $p.Permalink }}" class="highlight-card">
-        <img src="{{ .thumb }}" alt="{{ $p.Title }}" loading="lazy">
-        <div class="highlight-overlay">
-          <span class="highlight-date">{{ $p.Date.Format "Jan 2006" }}</span>
-          <h4>{{ $p.Title }}</h4>
+
+{{/* ===== STATS STRIP (PPT slide 10 — partners + key metric) ===== */}}
+<section class="home-stats" id="partners">
+  <div class="home-stats-inner">
+    {{ if eq .Lang "zh-cn" }}
+      <div class="section-eyebrow">算法部署在哪里</div>
+      <h2 class="section-h2">已部署到亿级 <span class="hi-cyan-text">消费级</span> 与 <span class="hi-orange-text">工业级</span> 终端。</h2>
+    {{ else if eq .Lang "zh-tw" }}
+      <div class="section-eyebrow">演算法部署在哪裡</div>
+      <h2 class="section-h2">已部署到億級 <span class="hi-cyan-text">消費級</span> 與 <span class="hi-orange-text">工業級</span> 終端。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Where the work runs</div>
+      <h2 class="section-h2">Algorithms deployed across <span class="hi-cyan-text">consumer-grade</span> and <span class="hi-orange-text">industrial</span> platforms.</h2>
+    {{ end }}
+    <div class="stat-grid">
+      {{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/oppo.png" | relURL }}" alt="OPPO" onerror="this.style.display='none'">
+          <span class="stat-partner-text">OPPO</span>
+        </div>
+        <div class="stat-num">400M+</div>
+        <div class="stat-label">{{ if $cn }}台智能手机{{ else if $tw }}台智慧型手機{{ else }}smartphones{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}联合 GNSS 算法研发;多城市验证{{ else if $tw }}聯合 GNSS 演算法研發;多城市驗證{{ else }}Joint GNSS algorithm development; multi-city verification{{ end }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/honor.png" | relURL }}" alt="HONOR" onerror="this.style.display='none'">
+          <span class="stat-partner-text">HONOR</span>
+        </div>
+        <div class="stat-num">300M+</div>
+        <div class="stat-label">{{ if $cn }}用户{{ else if $tw }}使用者{{ else }}users{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}轻量化室内定位{{ else if $tw }}輕量化室內定位{{ else }}Lightweight indoor positioning{{ end }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/huawei.png" | relURL }}" alt="HUAWEI" onerror="this.style.display='none'">
+          <span class="stat-partner-text">HUAWEI</span>
+        </div>
+        <div class="stat-num">1.3M+</div>
+        <div class="stat-label">{{ if $cn }}辆智能驾驶车{{ else if $tw }}輛智能駕駛車{{ else }}smart vehicles{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}建图与城市定位算法{{ else if $tw }}建圖與城市定位演算法{{ else }}Mapping &amp; urban positioning{{ end }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/meituan.png" | relURL }}" alt="Meituan" onerror="this.style.display='none'">
+          <span class="stat-partner-text">Meituan</span>
+        </div>
+        <div class="stat-num">65</div>
+        <div class="stat-label">{{ if $cn }}条城市无人机航线{{ else if $tw }}條城市無人機航線{{ else }}urban drone routes{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}视觉辅助 RTK · 60 万+ 订单{{ else if $tw }}視覺輔助 RTK · 60 萬+ 訂單{{ else }}Visual-aided RTK &middot; 600k+ orders{{ end }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/tencent.jpg" | relURL }}" alt="Tencent" onerror="this.style.display='none'">
+          <span class="stat-partner-text">Tencent</span>
+        </div>
+        <div class="stat-num">360+</div>
+        <div class="stat-label">{{ if $cn }}城市覆盖{{ else if $tw }}城市覆蓋{{ else }}city deployment{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}地图定位合作{{ else if $tw }}地圖定位合作{{ else }}Map-positioning collaboration{{ end }}</div>
+      </div>
+    </div>
+    <div class="home-stats-foot">
+      {{ if $cn }}
+        持续合作还包括 <strong>谷歌</strong>(20 个月驻地 · 2024 研究奖)、<strong>上汽集团</strong>、<strong>AIROHA</strong>、<strong>联发科</strong>、<strong>NYU Langone</strong>、<strong>香港体院</strong>、<strong>唯港荟</strong>。
+        <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
+      {{ else if $tw }}
+        持續合作還包括 <strong>谷歌</strong>(20 個月駐地 · 2024 研究獎)、<strong>上汽集團</strong>、<strong>AIROHA</strong>、<strong>聯發科</strong>、<strong>NYU Langone</strong>、<strong>香港體院</strong>、<strong>唯港薈</strong>。
+        <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
+      {{ else }}
+        Plus sustained engagements with <strong>Google</strong> (20-month residency &middot; 2024 Research Award),
+        <strong>SAIC Motor</strong>, <strong>AIROHA</strong>, <strong>MediaTek</strong>,
+        <strong>NYU Langone</strong>, <strong>HKSI</strong>, and <strong>Hotel ICON</strong>.
+        <a href="{{ "/projects/#partners" | relLangURL }}">All partnerships &rarr;</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ===== LEADERSHIP (Academic + Engineering Co-Leads, PPT slide 23) ===== */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<section class="home-block" id="leadership">
+  <div class="home-block-inner">
+    {{ if $cn }}
+      <div class="section-eyebrow">实验室核心</div>
+      <h2 class="section-h2"><span class="hi-cyan-text">学术主负责人 · 创办人</span> 与 <span class="hi-orange-text">高级研究员</span>。</h2>
+    {{ else if $tw }}
+      <div class="section-eyebrow">實驗室核心</div>
+      <h2 class="section-h2"><span class="hi-cyan-text">學術主負責人 · 創辦人</span> 與 <span class="hi-orange-text">高級研究員</span>。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Lab leadership</div>
+      <h2 class="section-h2"><span class="hi-cyan-text">Founder &amp; PI</span> and <span class="hi-orange-text">Senior Research Fellow</span>.</h2>
+    {{ end }}
+    <div class="leadership-grid reveal">
+      <a class="leader-card leader-card-cyan" href="{{ "/people/li-ta-hsu/" | relLangURL }}">
+        <img src="{{ "/images/li-ta-hsu-2022.jpg" | relURL }}" alt="Li-Ta Hsu" class="leader-photo" onerror="this.style.opacity=0">
+        <div class="leader-body">
+          <div class="leader-tag">{{ if $cn }}学术主负责人 · 创办人 / 主任{{ else if $tw }}學術主負責人 · 創辦人 / 主任{{ else }}Academic Lead &middot; Founder &amp; Director{{ end }}</div>
+          <div class="leader-name">{{ if $cn }}许立达 博士{{ else if $tw }}許立達 博士{{ else }}Li-Ta Hsu, PhD{{ end }}</div>
+          <div class="leader-role">{{ if $cn }}香港理工大学 航空及民航工程学系 副教授{{ else if $tw }}香港理工大學 航空及民航工程學系 副教授{{ else }}Associate Professor, AAE, PolyU{{ end }}</div>
+          <ul class="leader-credits">
+            {{ if $cn }}
+              <li><strong>2023</strong> ION Per Enge 早期成就奖</li>
+              <li><strong>20 月</strong> 谷歌山景城访问学者</li>
+              <li><strong>HK$32M+</strong> 累计科研经费 (PI / PC)</li>
+              <li><strong>主席</strong> ION/IAG 亚洲城市峡谷工作组</li>
+            {{ else if $tw }}
+              <li><strong>2023</strong> ION Per Enge 早期成就獎</li>
+              <li><strong>20 月</strong> 谷歌山景城訪問學者</li>
+              <li><strong>HK$32M+</strong> 累計科研經費 (PI / PC)</li>
+              <li><strong>主席</strong> ION/IAG 亞洲城市峽谷工作組</li>
+            {{ else }}
+              <li><strong>2023</strong> ION Per Enge Early Achievement Award</li>
+              <li><strong>20 mo</strong> Google Mountain View Visiting Researcher</li>
+              <li><strong>HK$32M+</strong> cumulative funding as PI / PC</li>
+              <li><strong>Chair</strong> ION/IAG WG on Asian Urban Canyons</li>
+            {{ end }}
+          </ul>
+          <span class="leader-more">{{ if $cn }}查看简介 &rarr;{{ else if $tw }}查看簡介 &rarr;{{ else }}View profile &rarr;{{ end }}</span>
         </div>
       </a>
-    {{ end }}
-  </div>
-  <p style="margin-top:10px;text-align:center;"><a href="{{ "/news/" | relURL }}">View all news &rarr;</a></p>
-</section>
-{{ end }}
-
-{{/* ===== 2. RESEARCH THEMES ===== */}}
-{{ $themes := where .Site.RegularPages "Section" "research" }}
-{{ if $themes }}
-<section class="section">
-  <h2>Research Themes</h2>
-  <div class="cards">
-    {{ range $themes.ByWeight }}
-      {{ partial "research-theme-card.html" . }}
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
-{{/* ===== 3. FLAGSHIP PROJECTS ===== */}}
-{{ $projects := where (where .Site.RegularPages "Section" "projects") ".Params.flagship" true }}
-{{ if $projects }}
-<section class="section">
-  <h2>Flagship Projects</h2>
-  <div class="cards">
-    {{ range $projects }}
-      {{ partial "project-card.html" . }}
-    {{ end }}
-  </div>
-  <p style="margin-top:10px;"><a href="{{ "/projects/" | relURL }}">View all projects &rarr;</a></p>
-</section>
-{{ end }}
-
-{{/* ===== 4. PEOPLE STRIP ===== */}}
-{{ $people := where .Site.RegularPages "Section" "people" }}
-{{ $pi := where $people ".Params.role" "PI" }}
-{{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
-{{ $groups := partial "people/current-member-groups.html" $people }}
-{{ if or $pi $current }}
-<section class="section">
-  <h2>People</h2>
-  {{ if $pi }}
-  <div class="member-group">
-    <h3>Principal Investigator</h3>
-    <div class="cards" style="grid-template-columns: 1fr;">
-      {{ range $pi }}
-        {{ partial "person-card.html" . }}
-      {{ end }}
+      <a class="leader-card leader-card-orange" href="{{ "/people/michael-fu/" | relLangURL }}">
+        <img src="{{ "/images/people/michael-fu.jpg" | relURL }}" alt="Michael Fu" class="leader-photo" onerror="this.style.opacity=0">
+        <div class="leader-body">
+          <div class="leader-tag">{{ if $cn }}高级研究员{{ else if $tw }}高級研究員{{ else }}Senior Research Fellow{{ end }}</div>
+          <div class="leader-name">{{ if $cn }}付国峪 博士{{ else if $tw }}付國峪 博士{{ else }}Michael Fu, PhD{{ end }}</div>
+          <div class="leader-role">{{ if $cn }}IPNL 高级研究员{{ else if $tw }}IPNL 高級研究員{{ else }}Senior Research Fellow, IPNL{{ end }}</div>
+          <ul class="leader-credits">
+            {{ if $cn }}
+              <li><strong>7 年</strong> 谷歌 Spatial AI 技术负责人</li>
+              <li><strong>R&amp;D</strong> 谷歌地图 · Android · Waymo · Wing</li>
+              <li><strong>联合创办</strong> 谷歌智能手机分米定位竞赛</li>
+              <li><strong>计算机博士</strong> 德州农工大学</li>
+            {{ else if $tw }}
+              <li><strong>7 年</strong> 谷歌 Spatial AI 技術負責人</li>
+              <li><strong>R&amp;D</strong> 谷歌地圖 · Android · Waymo · Wing</li>
+              <li><strong>聯合創辦</strong> 谷歌智慧型手機分米定位競賽</li>
+              <li><strong>計算機博士</strong> 德州農工大學</li>
+            {{ else }}
+              <li><strong>7 yr</strong> Google Spatial AI Tech Lead</li>
+              <li><strong>R&amp;D</strong> Google Maps · Android · Waymo · Wing</li>
+              <li><strong>Co-founder</strong> Google Smartphone Decimeter Challenge</li>
+              <li><strong>PhD in Computer Science</strong> Texas A&amp;M University</li>
+            {{ end }}
+          </ul>
+        </div>
+      </a>
     </div>
   </div>
-  {{ end }}
+</section>
 
-  <div class="member-groups member-groups-home">
-    {{ range $groups }}
-      {{ $title := index . "title" }}
-      {{ $items := index . "items" }}
-      {{ if gt (len $items) 0 }}
-      <div class="member-group">
-        <h3>{{ $title }}</h3>
-        <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-          {{ range $items }}
-            {{ partial "person-card.html" . }}
-          {{ end }}
-        </div>
+{{/* ===== CASE STUDIES (tabbed, now with REAL PHOTOS from PPT) ===== */}}
+<section class="home-block home-block-soft" id="cases">
+  <div class="home-block-inner">
+    {{ if eq .Lang "zh-cn" }}
+      <div class="section-eyebrow">重点案例</div>
+      <h2 class="section-h2">技术如何在 <span class="hi-cyan-text">真实场景</span> 中落地。</h2>
+    {{ else if eq .Lang "zh-tw" }}
+      <div class="section-eyebrow">重點案例</div>
+      <h2 class="section-h2">技術如何在 <span class="hi-cyan-text">真實場景</span> 中落地。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Case studies</div>
+      <h2 class="section-h2">How the work runs in <span class="hi-cyan-text">real deployments</span>.</h2>
+    {{ end }}
+    <div class="tabs" data-tabs>
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn is-active" type="button" data-tab="huawei" role="tab" aria-selected="true">Huawei</button>
+        <button class="tab-btn" type="button" data-tab="meituan" role="tab">Meituan</button>
+        <button class="tab-btn" type="button" data-tab="oppo" role="tab">OPPO</button>
+        <button class="tab-btn" type="button" data-tab="stairio" role="tab">Stairio</button>
+        <button class="tab-btn" type="button" data-tab="hksi" role="tab">HKSI</button>
       </div>
+      <div class="tab-panels">
+
+        <div class="tab-panel is-active" data-panel="huawei" role="tabpanel">
+          <div class="tab-grid">
+            <div class="tab-media">
+              <img src="{{ "/images/cases/huawei-overpass.png" | relURL }}" alt="Multi-layer overpass" loading="lazy">
+              <div class="tab-media-cap">{{ if $cn }}<span class="hi-cyan-text">多层高架</span> · GNSS 可靠性问题的一帧缩影{{ else if $tw }}<span class="hi-cyan-text">多層高架</span> · GNSS 可靠性問題的一幀縮影{{ else }}<span class="hi-cyan-text">Multi-layer overpass</span> &middot; the GNSS reliability problem in one frame{{ end }}</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-tag">{{ if $cn }}华为 · 智能驾驶{{ else if $tw }}華為 · 智能駕駛{{ else }}HUAWEI &middot; smart driving{{ end }}</div>
+              <h3>{{ if $cn }}在 <span class="hi-cyan-text">复杂城市道路</span> 上持续可信定位。{{ else if $tw }}在 <span class="hi-cyan-text">複雜城市道路</span> 上持續可信定位。{{ else }}Continuous reliable positioning across <span class="hi-cyan-text">complex urban roads</span>.{{ end }}</h3>
+              <p>{{ if $cn }}当 GNSS 不可信 —— 多层高架、隧道、城市峡谷 —— IPNL 通过完好性判断与多源融合,让轨迹保持 <strong>连续、可部署</strong>。{{ else if $tw }}當 GNSS 不可信 —— 多層高架、隧道、城市峽谷 —— IPNL 通過完整性判斷與多源融合,讓軌跡保持 <strong>連續、可部署</strong>。{{ else }}Where GNSS becomes untrustworthy &mdash; multi-layer overpasses, tunnels, urban canyons &mdash; IPNL provides integrity judgement and multi-source fusion so the trajectory stays <strong>continuous and deployable</strong>.{{ end }}</p>
+              <div class="tab-mini-stats">
+                <div><span class="tab-mini-num">2018</span><span>{{ if $cn }}起合作{{ else if $tw }}起合作{{ else }}since{{ end }}</span></div>
+                <div><span class="tab-mini-num">9+</span><span>{{ if $cn }}子合同{{ else if $tw }}子合同{{ else }}contracts{{ end }}</span></div>
+                <div><span class="tab-mini-num">1.3M+</span><span>{{ if $cn }}智能驾驶车{{ else if $tw }}智能駕駛車{{ else }}smart vehicles{{ end }}</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}手机 + 车 BU{{ else if $tw }}手機 + 車 BU{{ else }}Mobile + Car BU{{ end }}</span><span>{{ if $cn }}两条产品线{{ else if $tw }}兩條產品線{{ else }}both lines{{ end }}</span></div>
+              </div>
+              <a href="{{ "/projects/3dma-gnss/" | relLangURL }}" class="tab-more">{{ if $cn }}3DMA-GNSS 项目 &rarr;{{ else if $tw }}3DMA-GNSS 項目 &rarr;{{ else }}3DMA-GNSS project &rarr;{{ end }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="meituan" role="tabpanel">
+          <div class="tab-grid">
+            <div class="tab-media">
+              <img src="{{ "/images/cases/meituan-drone-delivery.png" | relURL }}" alt="Urban drone delivery" loading="lazy">
+              <div class="tab-media-cap">{{ if $cn }}<span class="hi-orange-text">视觉辅助 RTK</span> · 支撑城市低空航线{{ else if $tw }}<span class="hi-orange-text">視覺輔助 RTK</span> · 支撐城市低空航線{{ else }}<span class="hi-orange-text">Visual-aided RTK</span> &middot; supports a city low-altitude route{{ end }}</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-tag">{{ if $cn }}美团 · 低空经济{{ else if $tw }}美團 · 低空經濟{{ else }}MEITUAN &middot; low-altitude economy{{ end }}</div>
+              <h3>{{ if $cn }}视觉辅助 RTK,提升城市无人机航线的 <span class="hi-orange-text">定位可用率</span>。{{ else if $tw }}視覺輔助 RTK,提升城市無人機航線的 <span class="hi-orange-text">定位可用率</span>。{{ else }}Visual-aided RTK lifting <span class="hi-orange-text">positioning availability</span> on urban drone routes.{{ end }}</h3>
+              <p>{{ if $cn }}在楼宇遮挡的低空走廊里,视觉辅助 GNSS RTK 配合 <strong>NLOS 检测</strong>,提升定位可用率,让新航线既可 <strong>规划</strong> 又可 <strong>监管</strong>。{{ else if $tw }}在樓宇遮擋的低空走廊裡,視覺輔助 GNSS RTK 配合 <strong>NLOS 檢測</strong>,提升定位可用率,讓新航線既可 <strong>規劃</strong> 又可 <strong>監管</strong>。{{ else }}In building-occluded low-altitude corridors, visual-aided GNSS RTK with <strong>NLOS detection</strong> lifts positioning availability so that new urban drone routes can be both <strong>planned and supervised</strong>.{{ end }}</p>
+              <div class="tab-mini-stats">
+                <div><span class="tab-mini-num">65</span><span>{{ if $cn }}条城市航线{{ else if $tw }}條城市航線{{ else }}drone routes{{ end }}</span></div>
+                <div><span class="tab-mini-num">600k+</span><span>{{ if $cn }}订单{{ else if $tw }}訂單{{ else }}orders{{ end }}</span></div>
+                <div><span class="tab-mini-num">6+</span><span>{{ if $cn }}城市{{ else if $tw }}城市{{ else }}cities{{ end }}</span></div>
+                <div><span class="tab-mini-num">28.4% &middot; 99.5%+</span><span>{{ if $cn }}误差降低 · NLOS 召回{{ else if $tw }}誤差降低 · NLOS 召回{{ else }}error drop &middot; NLOS recall{{ end }}</span></div>
+              </div>
+              <a href="{{ "/projects/urban-air-traffic-management/" | relLangURL }}" class="tab-more">{{ if $cn }}城市低空交通管理 &rarr;{{ else if $tw }}城市低空交通管理 &rarr;{{ else }}Urban Air Traffic Management &rarr;{{ end }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="oppo" role="tabpanel">
+          <div class="tab-grid">
+            <div class="tab-media">
+              <img src="{{ "/images/cases/oppo-hk-street.png" | relURL }}" alt="Hong Kong urban canyon" loading="lazy">
+              <div class="tab-media-cap">{{ if $cn }}<span class="hi-cyan-text">城市峡谷</span> · 智能手机 GNSS 的真实测试场景{{ else if $tw }}<span class="hi-cyan-text">城市峽谷</span> · 智慧型手機 GNSS 的真實測試場景{{ else }}<span class="hi-cyan-text">Urban canyon</span> &middot; the test environment for smartphone GNSS{{ end }}</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-tag">{{ if $cn }}OPPO · 智能手机 GNSS{{ else if $tw }}OPPO · 智慧型手機 GNSS{{ else }}OPPO &middot; smartphone GNSS{{ end }}</div>
+              <h3>{{ if $cn }}城市环境下,基于 CNN 的智能手机 <span class="hi-cyan-text">直接定位</span>。{{ else if $tw }}城市環境下,基於 CNN 的智慧型手機 <span class="hi-cyan-text">直接定位</span>。{{ else }}CNN-based <span class="hi-cyan-text">direct positioning</span> on smartphones in urban environments.{{ end }}</h3>
+              <p>{{ if $cn }}从传统间接定位转向端侧深度特征学习 —— 改善城市峡谷里 GNSS 解的稳定性。在北京、上海、深圳、香港的核心商圈完成验证。{{ else if $tw }}從傳統間接定位轉向端側深度特徵學習 —— 改善城市峽谷裡 GNSS 解的穩定性。在北京、上海、深圳、香港的核心商圈完成驗證。{{ else }}Moving from traditional indirect positioning to end-side deep feature learning &mdash; improving GNSS solution stability in urban canyons. Verified across Beijing, Shanghai, Shenzhen, and Hong Kong commercial districts.{{ end }}</p>
+              <div class="tab-mini-stats">
+                <div><span class="tab-mini-num">400M+</span><span>{{ if $cn }}台智能手机{{ else if $tw }}台智慧型手機{{ else }}smartphones{{ end }}</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}4 城市{{ else if $tw }}4 城市{{ else }}4 cities{{ end }}</span><span>{{ if $cn }}商圈联合验证{{ else if $tw }}商圈聯合驗證{{ else }}commercial-district verification{{ end }}</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}端侧{{ else if $tw }}端側{{ else }}End-side{{ end }}</span><span>{{ if $cn }}可部署{{ else if $tw }}可部署{{ else }}deployable{{ end }}</span></div>
+                <div><span class="tab-mini-num">CNN</span><span>{{ if $cn }}直接定位{{ else if $tw }}直接定位{{ else }}direct positioning{{ end }}</span></div>
+              </div>
+              <a href="{{ "/projects/3dma-gnss/" | relLangURL }}" class="tab-more">{{ if $cn }}3DMA-GNSS 项目 &rarr;{{ else if $tw }}3DMA-GNSS 項目 &rarr;{{ else }}3DMA-GNSS project &rarr;{{ end }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="stairio" role="tabpanel">
+          <div class="tab-grid">
+            <div class="tab-media tab-media-portrait">
+              <img src="{{ "/images/cases/stairio-robot.jpg" | relURL }}" alt="Stairio autonomous staircase robot" loading="lazy">
+              <div class="tab-media-cap">{{ if $cn }}<span class="hi-orange-text">Stairio</span> · GNSS 拒止环境室内巡检闭环{{ else if $tw }}<span class="hi-orange-text">Stairio</span> · GNSS 拒止環境室內巡檢閉環{{ else }}<span class="hi-orange-text">Stairio</span> &middot; GNSS-denied indoor inspection loop{{ end }}</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-tag">{{ if $cn }}STAIRIO · 室内巡检{{ else if $tw }}STAIRIO · 室內巡檢{{ else }}STAIRIO &middot; indoor inspection{{ end }}</div>
+              <h3>{{ if $cn }}在 <span class="hi-orange-text">GNSS 拒止</span> 楼梯间里持续定位 + 巡检。{{ else if $tw }}在 <span class="hi-orange-text">GNSS 拒止</span> 樓梯間裡持續定位 + 巡檢。{{ else }}Continuous positioning + inspection in <span class="hi-orange-text">GNSS-denied</span> stairwells.{{ end }}</h3>
+              <p>{{ if $cn }}香港有 9,000+ 栋高层建筑,楼梯间需要高频巡检。Stairio 是一台扶手吸附的运动平台,搭载车载 AI 视觉 —— 形成定位、巡检、记录、告警的闭环。{{ else if $tw }}香港有 9,000+ 棟高層建築,樓梯間需要高頻巡檢。Stairio 是一台扶手吸附的運動平台,搭載車載 AI 視覺 —— 形成定位、巡檢、記錄、告警的閉環。{{ else }}Hong Kong has 9,000+ high-rise buildings whose staircases need high-frequency inspection. Stairio is a handrail-affixed locomotion platform with onboard AI vision &mdash; closed loop of localization, inspection, recording, alerting.{{ end }}</p>
+              <div class="tab-mini-stats">
+                <div><span class="tab-mini-num">12&times;</span><span>{{ if $cn }}更高巡检频率{{ else if $tw }}更高巡檢頻率{{ else }}higher frequency{{ end }}</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}2026 日内瓦{{ else if $tw }}2026 日內瓦{{ else }}Geneva 2026{{ end }}</span><span>{{ if $cn }}金奖{{ else if $tw }}金獎{{ else }}Gold Medal{{ end }}</span></div>
+                <div><span class="tab-mini-num">HK$240k &rarr; 24k</span><span>{{ if $cn }}每栋楼每年成本{{ else if $tw }}每棟樓每年成本{{ else }}cost / building / yr{{ end }}</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}唯港荟{{ else if $tw }}唯港薈{{ else }}Hotel ICON{{ end }}</span><span>{{ if $cn }}首个试点{{ else if $tw }}首個試點{{ else }}pilot site{{ end }}</span></div>
+              </div>
+              <a href="{{ "/projects/stairio/" | relLangURL }}" class="tab-more">{{ if $cn }}Stairio 项目 &rarr;{{ else if $tw }}Stairio 項目 &rarr;{{ else }}Stairio project &rarr;{{ end }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="hksi" role="tabpanel">
+          <div class="tab-grid">
+            <div class="tab-media">
+              <img src="{{ "/images/cases/hksi-windsurf.png" | relURL }}" alt="Hong Kong windsurf training" loading="lazy">
+              <div class="tab-media-cap">{{ if $cn }}<span class="hi-cyan-text">奥运级</span> 风帆训练 · 香港体院{{ else if $tw }}<span class="hi-cyan-text">奧運級</span> 風帆訓練 · 香港體院{{ else }}<span class="hi-cyan-text">Olympic-class</span> windsurf training &middot; HKSI{{ end }}</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-tag">{{ if $cn }}HKSI · 体育科技{{ else if $tw }}HKSI · 體育科技{{ else }}HKSI &middot; sports-tech{{ end }}</div>
+              <h3>{{ if $cn }}面向 <span class="hi-cyan-text">奥运运动员</span> 的高频运动监测。{{ else if $tw }}面向 <span class="hi-cyan-text">奧運運動員</span> 的高頻運動監測。{{ else }}High-frequency motion monitoring for <span class="hi-cyan-text">Olympic athletes</span>.{{ end }}</h3>
+              <p>{{ if $cn }}海上浮标式 UWB-GNSS 传感器。实验室把实时位置、速度、关键事件指标转化为 <strong>可即时反馈给教练的训练数据</strong> —— 把赛后复盘升级为训练过程中的可信数据。{{ else if $tw }}海上浮標式 UWB-GNSS 感測器。實驗室把即時位置、速度、關鍵事件指標轉化為 <strong>可即時反饋給教練的訓練數據</strong> —— 把賽後復盤升級為訓練過程中的可信數據。{{ else }}Marine buoy-deployed UWB-GNSS sensors. The lab converts real-time position, speed, and event indicators into <strong>actionable training feedback</strong> &mdash; turning post-race review into in-session reliable data.{{ end }}</p>
+              <div class="tab-mini-stats">
+                <div><span class="tab-mini-num">HKSI</span><span>{{ if $cn }}香港体育学院{{ else if $tw }}香港體育學院{{ else }}HK Sports Institute{{ end }}</span></div>
+                <div><span class="tab-mini-num">SRFS</span><span>{{ if $cn }}体育科研基金{{ else if $tw }}體育科研基金{{ else }}Sports Sci. R&amp;D fund{{ end }}</span></div>
+                <div><span class="tab-mini-num">2026&ndash;</span><span>PI</span></div>
+                <div><span class="tab-mini-num">{{ if $cn }}分米级{{ else if $tw }}分米級{{ else }}Decimeter{{ end }}</span><span>{{ if $cn }}起跑线定时{{ else if $tw }}起跑線定時{{ else }}start-gate timing{{ end }}</span></div>
+              </div>
+              <a href="{{ "/projects/uwb-gnss-windsurf/" | relLangURL }}" class="tab-more">{{ if $cn }}UWB-GNSS 风帆 &rarr;{{ else if $tw }}UWB-GNSS 風帆 &rarr;{{ else }}UWB-GNSS Windsurf &rarr;{{ end }}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== CAPABILITIES (4 numbered cards — PPT slide 6) ===== */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<section class="home-block" id="capabilities">
+  <div class="home-block-inner">
+    {{ if $cn }}
+      <div class="section-eyebrow">技术能力</div>
+      <h2 class="section-h2">四条研究方向,每条都有 <span class="hi-cyan-text">清晰的产业出口</span>。</h2>
+    {{ else if $tw }}
+      <div class="section-eyebrow">技術能力</div>
+      <h2 class="section-h2">四條研究方向,每條都有 <span class="hi-cyan-text">清晰的產業出口</span>。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Capabilities</div>
+      <h2 class="section-h2">Four engineering directions, each with a <span class="hi-cyan-text">clear industry exit</span>.</h2>
+    {{ end }}
+    <div class="cap-grid">
+      <a class="cap-card cap-card-cyan" href="{{ "/projects/3dma-gnss/" | relLangURL }}">
+        <svg class="cap-icon cap-icon-orbit" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="3" fill="currentColor"/>
+          <ellipse cx="24" cy="24" rx="18" ry="9" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <circle class="orbit-dot" cx="42" cy="24" r="2.5" fill="currentColor"/>
+        </svg>
+        <div class="cap-num">01</div>
+        <h3>{{ if $cn }}城市 GNSS{{ else if $tw }}城市 GNSS{{ else }}Urban GNSS{{ end }}</h3>
+        <p>{{ if $cn }}3D 地图辅助定位、NLOS 检测、多传感器紧耦合,服务于密集城市街区。{{ else if $tw }}3D 地圖輔助定位、NLOS 檢測、多感測器緊耦合,服務於密集城市街區。{{ else }}3D map-aided positioning, NLOS detection, and multi-sensor coupling for dense city blocks.{{ end }}</p>
+        <span class="cap-link">{{ if $cn }}智能驾驶 · 网约车 · 城市配送{{ else if $tw }}智能駕駛 · 網約車 · 城市配送{{ else }}Smart driving &middot; ride-hailing &middot; urban delivery{{ end }}</span>
+      </a>
+      <a class="cap-card cap-card-orange" href="{{ "/research/seamless-pnt-embodied/" | relLangURL }}">
+        <svg class="cap-icon cap-icon-ring" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="3" fill="currentColor"/>
+          <circle class="ring r1" cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle class="ring r2" cx="24" cy="24" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle class="ring r3" cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <div class="cap-num">02</div>
+        <h3>{{ if $cn }}轻量化室内定位{{ else if $tw }}輕量化室內定位{{ else }}Lightweight indoor PNT{{ end }}</h3>
+        <p>{{ if $cn }}终端算力 / 功耗约束下的室内定位 —— 智能手机、可穿戴、AR 眼镜。{{ else if $tw }}終端算力 / 功耗約束下的室內定位 —— 智慧型手機、穿戴裝置、AR 眼鏡。{{ else }}Indoor positioning under terminal compute and power constraints &mdash; smartphones, wearables, AR.{{ end }}</p>
+        <span class="cap-link">{{ if $cn }}智能手机 · 可穿戴 · AR 眼镜{{ else if $tw }}智慧型手機 · 穿戴裝置 · AR 眼鏡{{ else }}Smartphone &middot; wearable &middot; AR glasses{{ end }}</span>
+      </a>
+      <a class="cap-card cap-card-cyan" href="{{ "/projects/multi-agent-collaborative-gnss/" | relLangURL }}">
+        <svg class="cap-icon cap-icon-bars" viewBox="0 0 48 48" aria-hidden="true">
+          <rect class="bar b1" x="6"  y="20" width="4" height="20" fill="currentColor"/>
+          <rect class="bar b2" x="15" y="14" width="4" height="26" fill="currentColor"/>
+          <rect class="bar b3" x="24" y="22" width="4" height="18" fill="currentColor"/>
+          <rect class="bar b4" x="33" y="10" width="4" height="30" fill="currentColor"/>
+          <rect class="bar b5" x="42" y="18" width="4" height="22" fill="currentColor"/>
+        </svg>
+        <div class="cap-num">03</div>
+        <h3>{{ if $cn }}信号拒止环境导航{{ else if $tw }}信號拒止環境導航{{ else }}Signal-denied navigation{{ end }}</h3>
+        <p>{{ if $cn }}隧道、地下管廊、矿山等场景下的持续定位。{{ else if $tw }}隧道、地下管廊、礦山等場景下的持續定位。{{ else }}Continuous positioning in tunnels, underground utility corridors, and mining sites.{{ end }}</p>
+        <span class="cap-link">{{ if $cn }}矿山 · 地下管廊 · 巡检{{ else if $tw }}礦山 · 地下管廊 · 巡檢{{ else }}Mining &middot; utility corridor &middot; inspection{{ end }}</span>
+      </a>
+      <a class="cap-card cap-card-orange" href="{{ "/projects/environment-aware-gnss/" | relLangURL }}">
+        <svg class="cap-icon cap-icon-shield" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 6 L40 12 L40 26 Q40 38 24 44 Q8 38 8 26 L8 12 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path class="shield-arc" d="M24 14 L34 18 L34 26 Q34 32 24 36 Q14 32 14 26 L14 18 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <circle cx="24" cy="25" r="3" fill="currentColor"/>
+        </svg>
+        <div class="cap-num">04</div>
+        <h3>{{ if $cn }}抗干扰 PNT{{ else if $tw }}抗干擾 PNT{{ else }}Anti-jamming PNT{{ end }}</h3>
+        <p>{{ if $cn }}信号被干扰、欺骗、拒止条件下的鲁棒定位。{{ else if $tw }}信號被干擾、欺騙、拒止條件下的穩健定位。{{ else }}Robust positioning under interference, spoofing, and signal denial.{{ end }}</p>
+        <span class="cap-link">{{ if $cn }}国防 · 民航 · 关键基础设施{{ else if $tw }}國防 · 民航 · 關鍵基礎設施{{ else }}Defense &middot; aviation &middot; critical infrastructure{{ end }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* ===== CURRENT WORK (4 cards with images) ===== */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<section class="home-block home-block-soft" id="work">
+  <div class="home-block-inner">
+    {{ if $cn }}
+      <div class="section-eyebrow">在研项目</div>
+      <h2 class="section-h2">2026 <span class="hi-orange-text">在执行</span> 的工程项目。</h2>
+    {{ else if $tw }}
+      <div class="section-eyebrow">在研項目</div>
+      <h2 class="section-h2">2026 <span class="hi-orange-text">在執行</span> 的工程項目。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Current work</div>
+      <h2 class="section-h2">Live engineering projects, <span class="hi-orange-text">2026 cohort</span>.</h2>
+    {{ end }}
+    <div class="work-grid">
+      <a class="work-card" href="{{ "/projects/vehicle-self-diagnosis/" | relLangURL }}">
+        <div class="work-img" style="background-image:url('{{ "/images/cases/huawei-overpass.png" | relURL }}');"></div>
+        <div class="work-body">
+          <div class="work-meta">{{ if $cn }}智慧交通基金 · HK$6.19M · 2026–2028{{ else if $tw }}智慧交通基金 · HK$6.19M · 2026–2028{{ else }}HK Smart Traffic Fund &middot; HK$6.19M &middot; 2026&ndash;2028{{ end }}</div>
+          <h3>{{ if $cn }}车辆自诊断{{ else if $tw }}車輛自我診斷{{ else }}Vehicle self-diagnosis{{ end }}</h3>
+          <p>{{ if $cn }}面向自动/辅助驾驶的车载实时完好性监测。{{ else if $tw }}面向自動/輔助駕駛的車載即時完整性監測。{{ else }}Onboard runtime integrity monitoring for autonomous and assisted driving.{{ end }}</p>
+        </div>
+      </a>
+      <a class="work-card" href="{{ "/projects/urban-air-traffic-management/" | relLangURL }}">
+        <div class="work-img" style="background-image:url('{{ "/images/cases/atm-drone-shield.png" | relURL }}');"></div>
+        <div class="work-body">
+          <div class="work-meta">{{ if $cn }}国自然/RGC JRS · HK$1.17M · PI · 2026–2029{{ else if $tw }}國自然/RGC JRS · HK$1.17M · PI · 2026–2029{{ else }}RGC/NSFC JRS &middot; HK$1.17M &middot; PI &middot; 2026&ndash;2029{{ end }}</div>
+          <h3>{{ if $cn }}城市低空交通管理{{ else if $tw }}城市低空交通管理{{ else }}Urban Air Traffic Management{{ end }}</h3>
+          <p>{{ if $cn }}面向港陆低空空域无人机的鲁棒 GNSS。{{ else if $tw }}面向港陸低空空域無人機的穩健 GNSS。{{ else }}Robust GNSS for low-altitude drones in HK/Mainland airspace.{{ end }}</p>
+        </div>
+      </a>
+      <a class="work-card" href="{{ "/projects/multi-agent-collaborative-gnss/" | relLangURL }}">
+        <div class="work-img" style="background-image:url('{{ "/images/banners/shenzhen-trajectory.png" | relURL }}');"></div>
+        <div class="work-body">
+          <div class="work-meta">{{ if $cn }}RGC RIF · HK$4.43M · 项目协调人 · 2022–2025{{ else if $tw }}RGC RIF · HK$4.43M · 項目協調人 · 2022–2025{{ else }}RGC RIF &middot; HK$4.43M &middot; Project Coordinator &middot; 2022&ndash;2025{{ end }}</div>
+          <h3>{{ if $cn }}多智能体协同 GNSS{{ else if $tw }}多智能體協同 GNSS{{ else }}Multi-Agent Collaborative GNSS{{ end }}</h3>
+          <p>{{ if $cn }}车队之间共享测距与信号观测的协同定位。{{ else if $tw }}車隊之間共享測距與信號觀測的協同定位。{{ else }}Cooperative positioning across vehicle fleets sharing range and signal observations.{{ end }}</p>
+        </div>
+      </a>
+      <a class="work-card" href="{{ "/projects/stairio/" | relLangURL }}">
+        <div class="work-img work-img-contain" style="background-image:url('{{ "/images/cases/stairio-robot.jpg" | relURL }}');"></div>
+        <div class="work-body">
+          <div class="work-meta">{{ if $cn }}唯港荟研究计划 · HK$500k · PI · 进行中{{ else if $tw }}唯港薈研究計劃 · HK$500k · PI · 進行中{{ else }}Hotel ICON Research Scheme &middot; HK$500k &middot; PI &middot; ongoing{{ end }}</div>
+          <h3>{{ if $cn }}Stairio —— 自主楼梯巡检{{ else if $tw }}Stairio —— 自主樓梯巡檢{{ else }}Stairio &mdash; autonomous staircase inspection{{ end }}</h3>
+          <p>{{ if $cn }}无 GNSS 环境室内移动。2026 日内瓦发明展金奖。唯港荟酒店首个部署点。{{ else if $tw }}無 GNSS 環境室內移動。2026 日內瓦發明展金獎。唯港薈酒店首個部署點。{{ else }}GNSS-denied indoor mobility. Geneva 2026 Gold Medal. Hotel ICON pilot site.{{ end }}</p>
+        </div>
+      </a>
+    </div>
+    <p class="home-block-more"><a href="{{ "/projects/" | relLangURL }}">{{ if $cn }}全部项目 &rarr;{{ else if $tw }}全部項目 &rarr;{{ else }}All projects &rarr;{{ end }}</a></p>
+  </div>
+</section>
+
+{{/* ===== RECENT RECORD ===== */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<section class="home-block" id="record">
+  <div class="home-block-inner">
+    {{ if $cn }}
+      <div class="section-eyebrow">近期成果</div>
+      <h2 class="section-h2">奖项、访问、专利。</h2>
+    {{ else if $tw }}
+      <div class="section-eyebrow">近期成果</div>
+      <h2 class="section-h2">獎項、訪問、專利。</h2>
+    {{ else }}
+      <div class="section-eyebrow">Recent record</div>
+      <h2 class="section-h2">Awards, residencies, patents.</h2>
+    {{ end }}
+    <ul class="record-grid">
+      {{ if $cn }}
+        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日内瓦发明展金奖</strong> —— Stairio。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究经费</strong> · 完成 20 个月谷歌 Android 定位组驻地。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 专利</strong> —— 3D LiDAR 辅助 GNSS NLOS 检测与修正。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text">理工大校长知识转移奖。</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong> —— 当年全球唯一获奖人。</span></li>
+      {{ else if $tw }}
+        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日內瓦發明展金獎</strong> —— Stairio。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究經費</strong> · 完成 20 個月谷歌 Android 定位組駐地。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 專利</strong> —— 3D LiDAR 輔助 GNSS NLOS 檢測與修正。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text">理工大校長知識轉移獎。</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong> —— 當年全球唯一獲獎人。</span></li>
+      {{ else }}
+        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">Geneva Inventions Gold Medal</strong> &mdash; Stairio.</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">Google Unrestricted Research Grant</strong> &middot; completion of 20-month residency at Google Android Context.</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US Patent 12 123 961 B2</strong> &mdash; 3D LiDAR-Aided GNSS NLOS Detection and Correction.</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text">PolyU Presidential Award in Knowledge Transfer.</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong> &mdash; sole international recipient for the year.</span></li>
       {{ end }}
-    {{ end }}
+    </ul>
+    <p class="home-block-more"><a href="{{ "/news/" | relLangURL }}">{{ if $cn }}近期新闻 &rarr;{{ else if $tw }}近期新聞 &rarr;{{ else }}Recent news &rarr;{{ end }}</a> &middot; <a href="{{ "/publications/" | relLangURL }}">{{ if $cn }}论文 &rarr;{{ else if $tw }}論文 &rarr;{{ else }}Publications &rarr;{{ end }}</a></p>
   </div>
-  <p style="margin-top:10px;text-align:center;"><a href="{{ "/people/" | relURL }}">View all members &rarr;</a></p>
 </section>
-{{ end }}
 
-{{/* ===== 4b. LAB LIFE ===== */}}
-{{ partial "lab-life-gallery.html" . }}
-
-{{/* ===== 5. LATEST NEWS ===== */}}
-{{ $news := where .Site.RegularPages "Section" "news" }}
-{{ if $news }}
-<section class="section">
-  <h2>Latest News</h2>
-  {{ range first 5 ($news.ByDate.Reverse) }}
-    {{ partial "news-card.html" . }}
-  {{ end }}
-  <p style="margin-top:10px;"><a href="{{ "/news/" | relURL }}">View all news &rarr;</a></p>
-</section>
-{{ end }}
-
-{{/* ===== 6. SELECTED PUBLICATIONS ===== */}}
-{{ $featured := where (where .Site.RegularPages "Section" "publications") ".Params.featured" true }}
-{{ if $featured }}
-<section class="section">
-  <h2>Selected Publications</h2>
-  {{ range $featured }}
-    {{ partial "publication-card.html" . }}
-  {{ end }}
-  <p style="margin-top:10px;"><a href="{{ "/publications/" | relURL }}">View all publications &rarr;</a></p>
-</section>
-{{ end }}
-
-{{/* ===== 7. OPEN RESOURCES ===== */}}
-{{ $resources := where .Site.RegularPages "Section" "resources" }}
-{{ if $resources }}
-<section class="section">
-  <h2>Open Resources</h2>
-  <div class="cards">
-    {{ range $resources }}
-      {{ partial "resource-card.html" . }}
+{{/* ===== CONTACT BAR (full-bleed dark) ===== */}}
+<section class="home-contact-bar" id="contact">
+  <div class="home-contact-bar-inner">
+    {{ if $cn }}
+      <div class="section-eyebrow section-eyebrow-light">欢迎产业研究合作</div>
+      <p><a href="{{ "/engage/#contact" | relLangURL }}" class="contact-email">发送一条消息 &rarr;</a></p>
+      <p class="contact-sub"><a href="{{ "/engage/" | relLangURL }}">查看合作方式 &rarr;</a></p>
+    {{ else if $tw }}
+      <div class="section-eyebrow section-eyebrow-light">歡迎產業研究合作</div>
+      <p><a href="{{ "/engage/#contact" | relLangURL }}" class="contact-email">發送一條訊息 &rarr;</a></p>
+      <p class="contact-sub"><a href="{{ "/engage/" | relLangURL }}">查看合作方式 &rarr;</a></p>
+    {{ else }}
+      <div class="section-eyebrow section-eyebrow-light">Open for industry research collaborations</div>
+      <p><a href="{{ "/engage/#contact" | relLangURL }}" class="contact-email">Send a message &rarr;</a></p>
+      <p class="contact-sub"><a href="{{ "/engage/" | relLangURL }}">See engagement structures &rarr;</a></p>
     {{ end }}
   </div>
 </section>
-{{ end }}
-
-{{/* ===== 8. JOIN US CTA ===== */}}
-<div class="cta-block">
-  <h2>Join IPNL</h2>
-  <p>We are looking for PhD students, postdocs, and visiting researchers in GNSS, positioning, and navigation.</p>
-  <a href="{{ "/join/" | relURL }}" class="btn">Learn More</a>
-</div>
 
 {{ end }}

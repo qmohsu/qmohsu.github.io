@@ -1,15 +1,17 @@
-{{ $people := . }}
+{{ $people := .people }}
+{{ $lang := .lang }}
+{{ $cn := eq $lang "zh-cn" }}{{ $tw := eq $lang "zh-tw" }}
 {{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
 
 {{ $groups := slice
-  (dict "title" "Senior Research Fellows" "items" (sort (where $current ".Params.role" "eq" "Senior Research Fellow") ".Params.years"))
-  (dict "title" "Postdoctoral Fellows" "items" (sort (where $current ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
-  (dict "title" "Research Fellows" "items" (sort (where $current ".Params.role" "eq" "Research Fellow") ".Params.years"))
-  (dict "title" "PhD Students" "items" (sort (where $current ".Params.role" "eq" "PhD Student") ".Params.years"))
-  (dict "title" "MSc Students" "items" (sort (where $current ".Params.role" "eq" "MSc Student") ".Params.years"))
-  (dict "title" "Administrative Staff" "items" (sort (where $current ".Params.role" "eq" "Administrative Staff") ".Params.years"))
-  (dict "title" "Research Assistants" "items" (sort (where $current ".Params.role" "eq" "Research Assistant") ".Params.years"))
-  (dict "title" "Interns" "items" (sort (where $current ".Params.role" "eq" "Intern") ".Params.years"))
+  (dict "title" (cond $cn "高级研究员" (cond $tw "高級研究員" "Senior Research Fellows")) "items" (sort (where $current ".Params.role" "in" (slice "Senior Research Fellow" "高级研究员" "高級研究員")) ".Params.years"))
+  (dict "title" (cond $cn "博士后" (cond $tw "博士後" "Postdoctoral Fellows")) "items" (sort (where $current ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
+  (dict "title" (cond $cn "研究员" (cond $tw "研究員" "Research Fellows")) "items" (sort (where $current ".Params.role" "eq" "Research Fellow") ".Params.years"))
+  (dict "title" (cond $cn "博士生" (cond $tw "博士生" "PhD Students")) "items" (sort (where $current ".Params.role" "eq" "PhD Student") ".Params.years"))
+  (dict "title" (cond $cn "硕士生" (cond $tw "碩士生" "MSc Students")) "items" (sort (where $current ".Params.role" "eq" "MSc Student") ".Params.years"))
+  (dict "title" (cond $cn "行政人员" (cond $tw "行政人員" "Administrative Staff")) "items" (sort (where $current ".Params.role" "eq" "Administrative Staff") ".Params.years"))
+  (dict "title" (cond $cn "研究助理" (cond $tw "研究助理" "Research Assistants")) "items" (sort (where $current ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" (cond $cn "实习生" (cond $tw "實習生" "Interns")) "items" (sort (where $current ".Params.role" "eq" "Intern") ".Params.years"))
 }}
 
 {{ return $groups }}

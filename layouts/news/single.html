@@ -1,8 +1,10 @@
 {{ define "main" }}
-<article class="news-article">
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="news-article prose">
   <p class="news-date">{{ .Date.Format "2 January 2006" }}</p>
   {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
-  <h1>{{ .Title }}</h1>
   {{ if or .Params.image .Params.images }}
   {{ $imgs := .Params.images | default (slice .Params.image) }}
   <div class="image-stack">
@@ -22,4 +24,6 @@
   <p class="news-source">Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ with $.Params.source_site }}{{ . }}{{ else }}External{{ end }}</a></p>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

@@ -1,15 +1,17 @@
 {{ $thumb := .Params.image }}
 {{ if not $thumb }}{{ with .Params.images }}{{ $thumb = index . 0 }}{{ end }}{{ end }}
-<div class="news-item">
-  {{ with $thumb }}
-  <a class="news-thumb-link" href="{{ $.Permalink }}">
-    <img class="news-thumb" src="{{ . }}" alt="" loading="lazy">
+<article class="news-card{{ if $thumb }} news-card-imaged{{ else }} news-card-textonly{{ end }}">
+  <a class="news-card-link" href="{{ .Permalink }}">
+    {{ with $thumb }}
+    <div class="news-card-img" style="background-image:url('{{ . }}');"></div>
+    {{ end }}
+    <div class="news-card-body">
+      <div class="news-card-meta">
+        <span class="news-card-date">{{ .Date.Format "2 Jan 2006" }}</span>
+        {{ with .Params.category }}<span class="news-card-cat">{{ . }}</span>{{ end }}
+      </div>
+      <h3 class="news-card-title">{{ .Title }}</h3>
+      {{ with .Params.summary }}<p class="news-card-summary">{{ . }}</p>{{ end }}
+    </div>
   </a>
-  {{ end }}
-  <div class="news-body">
-    <span class="news-date">{{ .Date.Format "2 Jan 2006" }}</span>
-    {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
-    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-    {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-  </div>
-</div>
+</article>

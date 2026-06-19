@@ -1,9 +1,110 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
 {{ .Content }}
 
 {{ $pubs := .RegularPages }}
 {{ $total := len $pubs }}
+
+{{/* ============ Pub charts data (Hugo aggregation → JSON for Chart.js) ============ */}}
+{{ $byYear := dict }}
+{{ $byType := dict }}
+{{ range $pubs }}
+  {{ $y := string .Params.year }}
+  {{ if $y }}
+    {{ $cur := index $byYear $y | default 0 }}
+    {{ $byYear = merge $byYear (dict $y (add $cur 1)) }}
+  {{ end }}
+  {{ $t := .Params.type }}
+  {{ if $t }}
+    {{ $cur := index $byType $t | default 0 }}
+    {{ $byType = merge $byType (dict $t (add $cur 1)) }}
+  {{ end }}
+{{ end }}
+{{ $yearKeys := slice }}
+{{ range $k, $_ := $byYear }}{{ $yearKeys = $yearKeys | append $k }}{{ end }}
+{{ $yearKeys = sort $yearKeys "value" "asc" }}
+{{ $yearLabels := slice }}
+{{ $yearValues := slice }}
+{{ range $y := $yearKeys }}
+  {{ $yearLabels = $yearLabels | append $y }}
+  {{ $yearValues = $yearValues | append (index $byYear $y) }}
+{{ end }}
+{{ $typeOrderForChart := slice "journal" "conference" "patent" "magazine" "book" }}
+{{ $cnTL := eq .Lang "zh-cn" }}{{ $twTL := eq .Lang "zh-tw" }}
+{{ $typeI18n := dict
+  "journal"    (cond $cnTL "期刊" (cond $twTL "期刊" "Journal"))
+  "conference" (cond $cnTL "会议" (cond $twTL "會議" "Conference"))
+  "patent"     (cond $cnTL "专利" (cond $twTL "專利" "Patent"))
+  "magazine"   (cond $cnTL "杂志" (cond $twTL "雜誌" "Magazine"))
+  "book"       (cond $cnTL "著作" (cond $twTL "著作" "Book"))
+}}
+{{ $typeLabels := slice }}
+{{ $typeValues := slice }}
+{{ range $t := $typeOrderForChart }}
+  {{ $n := index $byType $t | default 0 }}
+  {{ if gt $n 0 }}
+    {{ $typeLabels = $typeLabels | append (index $typeI18n $t) }}
+    {{ $typeValues = $typeValues | append $n }}
+  {{ end }}
+{{ end }}
+
+{{/* Recent 5-year cumulative line — for the second chart */}}
+{{ $cumLabels := slice }}
+{{ $cumValues := slice }}
+{{ $running := 0 }}
+{{ range $y := $yearKeys }}
+  {{ $running = add $running (index $byYear $y) }}
+  {{ $cumLabels = $cumLabels | append $y }}
+  {{ $cumValues = $cumValues | append $running }}
+{{ end }}
+
+{{/* Citation trajectory — sourced from Google Scholar profile
+     https://scholar.google.com/citations?user=GxfOCUMAAAAJ
+     Per-year Scholar counts (read 2026-06-17):
+       2015:66  2016:88  2017:152  2018:219  2019:324  2020:626
+       2021:737 2022:981 2023:1417 2024:1621 2025:2124 2026:877(partial)
+     Cumulative below; refresh quarterly. */}}
+{{ $citeLabels := slice "2016" "2018" "2020" "2022" "2024" "2026" }}
+{{ $citeValues := slice 154 525 1475 3193 6231 9290 }}
+{{ $citeTotal := 9290 }}
+{{ $hIndex := 49 }}
+
+<div class="pub-charts pub-charts-3" id="pub-charts"
+  data-year-labels='{{ jsonify $yearLabels }}'
+  data-year-values='{{ jsonify $yearValues }}'
+  data-type-labels='{{ jsonify $typeLabels }}'
+  data-type-values='{{ jsonify $typeValues }}'
+  data-cum-labels='{{ jsonify $cumLabels }}'
+  data-cum-values='{{ jsonify $cumValues }}'
+  data-cite-labels='{{ jsonify $citeLabels }}'
+  data-cite-values='{{ jsonify $citeValues }}'
+  data-cite-total='{{ $citeTotal }}'
+  data-cite-hindex='{{ $hIndex }}'
+  data-total='{{ $total }}'>
+  {{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+  <div class="pub-chart-card">
+    <div class="pub-chart-title">{{ if $cn }}按年份{{ else if $tw }}按年份{{ else }}Publications by year{{ end }}</div>
+    <div class="pub-chart-headline">{{ if $cn }}{{ $total }} 篇 · 跨 {{ len $yearKeys }} 年{{ else if $tw }}{{ $total }} 篇 · 跨 {{ len $yearKeys }} 年{{ else }}{{ $total }} papers across {{ len $yearKeys }} years{{ end }}</div>
+    <div class="pub-chart-canvas-wrap"><canvas id="pub-chart-year"></canvas></div>
+    <div class="pub-chart-footnote">{{ if $cn }}柱状: 每年 · 折线: 累计{{ else if $tw }}柱狀: 每年 · 折線: 累計{{ else }}Bars: per year · Line: cumulative{{ end }}</div>
+  </div>
+  <div class="pub-chart-card">
+    <div class="pub-chart-title">{{ if $cn }}引用 (PI){{ else if $tw }}引用 (PI){{ else }}Citations (PI){{ end }}</div>
+    <div class="pub-chart-headline">{{ if $cn }}{{ $citeTotal }}+ · h-index {{ $hIndex }} · 全球前 2%{{ else if $tw }}{{ $citeTotal }}+ · h-index {{ $hIndex }} · 全球前 2%{{ else }}{{ $citeTotal }}+ &middot; h-index {{ $hIndex }} &middot; Top 2%{{ end }}</div>
+    <div class="pub-chart-canvas-wrap"><canvas id="pub-chart-cites"></canvas></div>
+    <div class="pub-chart-footnote">
+      <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+    </div>
+  </div>
+  <div class="pub-chart-card">
+    <div class="pub-chart-title">{{ if $cn }}按类型{{ else if $tw }}按類型{{ else }}By type{{ end }}</div>
+    <div class="pub-chart-headline">{{ if $cn }}成果构成{{ else if $tw }}成果構成{{ else }}Output composition{{ end }}</div>
+    <div class="pub-chart-canvas-wrap"><canvas id="pub-chart-type"></canvas></div>
+    <div class="pub-chart-footnote">{{ if $cn }}悬停查看数量{{ else if $tw }}懸停查看數量{{ else }}Hover for counts{{ end }}</div>
+  </div>
+</div>
 
 {{/* Topic chips from research pillars (short labels), ordered by pillar weight.
      The publication `themes` slugs match the research page filenames 1:1. */}}
@@ -27,33 +128,46 @@
   {{ if gt (len (where $pubs ".Params.type" "eq" $t)) 0 }}{{ $presentTypes = $presentTypes | append $t }}{{ end }}
 {{ end }}
 
-<div class="pub-filter" id="pub-filter" data-total="{{ $total }}">
+{{ $cnF := eq .Lang "zh-cn" }}{{ $twF := eq .Lang "zh-tw" }}
+{{ $lblTopic := cond $cnF "主题" (cond $twF "主題" "Topic") }}
+{{ $lblType := cond $cnF "类型" (cond $twF "類型" "Type") }}
+{{ $lblSearch := cond $cnF "搜索" (cond $twF "搜尋" "Search") }}
+{{ $lblAll := cond $cnF "全部" (cond $twF "全部" "All") }}
+{{ $lblClear := cond $cnF "清空" (cond $twF "清空" "Clear") }}
+{{ $lblPlaceholder := cond $cnF "标题、作者或期刊…" (cond $twF "標題、作者或期刊…" "Title, author, or venue…") }}
+{{ $lblNoResults := cond $cnF "没有符合筛选条件的论文。" (cond $twF "沒有符合篩選條件的論文。" "No publications match these filters.") }}
+{{ $lblClearFilters := cond $cnF "清空筛选" (cond $twF "清空篩選" "Clear filters") }}
+{{ $lblPublications := cond $cnF "篇论文" (cond $twF "篇論文" "publications") }}
+<div class="pub-filter" id="pub-filter" data-total="{{ $total }}"
+     data-label-publications="{{ $lblPublications }}"
+     data-label-showing="{{ cond $cnF "显示" (cond $twF "顯示" "Showing") }}"
+     data-label-of="{{ cond $cnF "共" (cond $twF "共" "of") }}">
   <div class="pub-filter-row">
-    <span class="pub-filter-label">Topic</span>
+    <span class="pub-filter-label">{{ $lblTopic }}</span>
     <div class="chips" data-filter="topic">
-      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">All</button>
+      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">{{ $lblAll }}</button>
       {{ range $i, $t := $themes }}
       <button type="button" class="chip chip-accent-{{ add $i 1 }}" data-value="{{ $t.slug }}" aria-pressed="false">{{ $t.label }}</button>
       {{ end }}
     </div>
   </div>
   <div class="pub-filter-row">
-    <span class="pub-filter-label">Type</span>
+    <span class="pub-filter-label">{{ $lblType }}</span>
     <div class="chips" data-filter="type">
-      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">All</button>
+      <button type="button" class="chip is-active" data-value="all" aria-pressed="true">{{ $lblAll }}</button>
       {{ range $t := $presentTypes }}
-      <button type="button" class="chip" data-value="{{ $t }}" aria-pressed="false">{{ humanize $t }}</button>
+      <button type="button" class="chip" data-value="{{ $t }}" aria-pressed="false">{{ index $typeI18n $t | default (humanize $t) }}</button>
       {{ end }}
     </div>
   </div>
   <div class="pub-filter-row">
-    <span class="pub-filter-label">Search</span>
-    <input type="search" id="pub-search" class="pub-search" placeholder="Title, author, or venue…" autocomplete="off" aria-label="Search publications">
+    <span class="pub-filter-label">{{ $lblSearch }}</span>
+    <input type="search" id="pub-search" class="pub-search" placeholder="{{ $lblPlaceholder }}" autocomplete="off" aria-label="{{ $lblSearch }}">
     <span class="pub-count" id="pub-count" aria-live="polite"></span>
-    <button type="button" class="pub-clear" id="pub-clear">Clear</button>
+    <button type="button" class="pub-clear" id="pub-clear">{{ $lblClear }}</button>
   </div>
 </div>
-<p class="pub-noresults" id="pub-noresults" hidden>No publications match these filters. <button type="button" class="link-btn" id="pub-noresults-clear">Clear filters</button></p>
+<p class="pub-noresults" id="pub-noresults" hidden>{{ $lblNoResults }} <button type="button" class="link-btn" id="pub-noresults-clear">{{ $lblClearFilters }}</button></p>
 
 {{/* Unique years, newest first */}}
 {{ $years := slice }}
@@ -123,7 +237,10 @@
       if (yc) yc.textContent = '(' + vis + ')';
     });
     var filtered = state.topic !== 'all' || state.type !== 'all' || !!state.q;
-    if (countEl) countEl.textContent = filtered ? ('Showing ' + visible + ' of ' + total) : (total + ' publications');
+    var lblShowing = root.getAttribute('data-label-showing') || 'Showing';
+    var lblOf = root.getAttribute('data-label-of') || 'of';
+    var lblPubs = root.getAttribute('data-label-publications') || 'publications';
+    if (countEl) countEl.textContent = filtered ? (lblShowing + ' ' + visible + ' ' + lblOf + ' ' + total) : (total + ' ' + lblPubs);
     if (noResults) noResults.hidden = visible !== 0;
   }
   chipGroups.forEach(function (group) {
@@ -157,4 +274,6 @@
   apply();
 })();
 </script>
+</div>
+</div>
 {{ end }}
