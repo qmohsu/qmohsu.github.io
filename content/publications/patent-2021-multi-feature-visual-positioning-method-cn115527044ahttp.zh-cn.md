@@ -9,7 +9,7 @@ venue: "Patent"
 type: "patent"
 patent_number: "ZL 202110638139.9"
 patent_office: "China National Intellectual Property Administration"
-patent_url: "https://patents.google.com/patent/CN115527044A"
+patent_url: "https://patents.google.com/patent/CN115527044B"
 cv_number: 8
 featured: false
 doi: ""

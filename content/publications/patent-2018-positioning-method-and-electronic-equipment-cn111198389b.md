@@ -1,16 +1,16 @@
 ---
-title: "3D map-aided GNSS cooperative positioning method and system"
-slug: "patent-2019-it-is-a-kind-of-based-on-the-co-located-method-and-system-of"
+title: "Positioning method and electronic equipment"
+slug: "patent-2018-positioning-method-and-electronic-equipment-cn111198389b"
 authors:
-  - "Zhang G"
+  - "Wang Y"
   - "Hsu L. T"
-year: 2021
+year: 2018
 venue: "Patent"
 type: "patent"
-patent_number: "ZL 201910866398.X"
+patent_number: "CN 111198389B"
 patent_office: "China National Intellectual Property Administration"
-patent_url: "https://patents.google.com/patent/CN110426717B"
-cv_number: 10
+patent_url: "https://patents.google.com/patent/CN111198389B"
+cv_number: 11
 featured: false
 doi: ""
 pdf: ""
