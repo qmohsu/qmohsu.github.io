@@ -12,7 +12,7 @@ Teaching at IPNL spans undergraduate aviation engineering, GNSS-focused subjects
 
 ## Major Recognition
 
-- **2024 — PolyU President's Award for Outstanding Achievement (Individual, Teaching)** — the university's top individual teaching honor. [PolyU news release](https://www.polyu.edu.hk/aae/news-and-events/news/2024/outstanding-teaching-award---dr-lt-hsu/).
+- **2024 — PolyU Presidential Award for Outstanding Teaching** — the university's top individual teaching honor. [PolyU news release](https://www.polyu.edu.hk/aae/news-and-events/news/2024/outstanding-teaching-award---dr-lt-hsu/).
 - **2024 — UGC Teaching Award nominee** (General Faculty Category) — *PolyU sole nominee.* The University Grants Committee award is Hong Kong's most prestigious teaching recognition.
 - **2024 — URIS Outstanding Supervision Award** — recognizing the mentorship pipeline that carries forward (Louise Zhou, supervised through the URIS programme — the chain extends to Max Lee, then to a new generation).
 - **2023 — Outstanding Award in Teaching, Faculty of Engineering, PolyU**
@@ -80,7 +80,7 @@ Students nourished through the lab's project-based teaching and the URIS undergr
 
 The arc — freshman GitHub project → URIS research → Forbes-recognised, deployed start-up that helps save lives — is the pedagogy's thesis made concrete: *engage students with real problems, and they don't just learn, they build.*
 
-> **Note:** LifeSparrow is distinct from Prof. Hsu's current 2026 start-up activity (Locavate / Stairio). Keep the two separate in any external materials.
+> **Note:** LifeSparrow is distinct from Prof. Hsu's other current start-up activity. Keep the two separate in any external materials.
 
 ---
 
@@ -107,7 +107,7 @@ At **university level**, Prof. Hsu has also served on the Advisory Committee on 
 ## Funded Teaching Programs (as PI)
 
 - **PolyU Online Teaching Development Grant** — *Quality Incentive Scheme on Online Teaching*, **HK$960,000** (PI), 2021–2023. Project focus: systematic development of online group collaborations for a 4-year undergraduate programme through a global online software collaboration platform (GitHub).
-- **PolyU Large Equipment Fund for Teaching** — **HK$1,107,012** (PI as team leader), 2016–2018. Procured Aircraft Satellite Navigation System (NovAtel SPAN-CPT, HK$237k), 3D LiDAR (Velodyne, HK$304k), and Vision-based Motion Capture System (VICON, HK$591k) for student learning of flight mechanics, navigation, and control.
+- **PolyU Large Equipment Fund for Teaching** — **HK$1,132,815** (PI as team leader), 2016–2018. Procured Aircraft Satellite Navigation System (NovAtel SPAN-CPT, HK$237k), 3D LiDAR (Velodyne, HK$304k), and Vision-based Motion Capture System (VICON, HK$591k) for student learning of flight mechanics, navigation, and control.
 - **URIS Undergraduate Research Internship Scheme** — 4 funded UG projects (~HK$300k aggregate), 2021–2023.
 
 ---
