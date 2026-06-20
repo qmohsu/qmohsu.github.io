@@ -1,5 +1,5 @@
 ---
-title: "3D LiDAR Aided GNSS NLOS Detection and Correction"
+title: "3D LiDAR Aided GNSS and the Method for NLOS Detection and Correction"
 slug: "patent-2024-us-patent-no-12123961"
 authors:
   - "Hsu L. T"

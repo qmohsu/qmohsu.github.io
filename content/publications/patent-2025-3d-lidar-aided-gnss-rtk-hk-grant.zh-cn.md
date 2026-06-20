@@ -1,5 +1,5 @@
 ---
-title: "3D LiDAR Aided GNSS Real-time Kinematic Positioning (HK grant)"
+title: "3D LiDAR Aided GNSS and the Method for NLOS Detection and Correction"
 slug: "patent-2025-3d-lidar-aided-gnss-rtk-hk-grant"
 authors:
   - "Hsu L. T"
