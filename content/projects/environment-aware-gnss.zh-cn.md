@@ -6,14 +6,14 @@ category: "research-program"
 status: "active"
 flagship: true
 start_date: 2019
-funding: "RGC CRF Co-PI HK$7M(分担 HK$0.6M, 自动驾驶安全);谷歌研究奖 US$40k(PI, 2024, 车载 3DMA GNSS)"
+funding: "谷歌研究奖 US$40k(PI, 2024, 车载 3DMA GNSS)"
 video: "https://www.youtube.com/watch?v=Q0nq1vHeinM"
 images:
   - "/images/projects/autonomous-driving-01.jpg"
   - "/images/projects/autonomous-driving-02.jpg"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["weisong-wen", "xiwei-bai", "yihan-zhong", "feng-huang"]
-tags: ["autonomous driving", "UAS", "UAV", "LiDAR", "vision-aided GNSS", "AV safety", "Google", "RGC CRF", "SAIC"]
+tags: ["autonomous driving", "UAS", "UAV", "LiDAR", "vision-aided GNSS", "AV safety", "Google", "SAIC"]
 weight: 4
 ---
 
@@ -22,7 +22,6 @@ weight: 4
 <strong>为什么重要。</strong> [手机级 3DMA GNSS](/zh-cn/projects/3dma-gnss/) 必须在严苛的算力与功耗预算内工作,而 AV 与无人机平台可以装载丰富传感器、提供更硬的完好性保障。<strong>AV 安全需要的是可信定位,不仅是精准定位</strong> —— 而丰富的环境感知正是给完好性层"足够信息以建立自信"的杠杆。
 
 <strong>经费来源。</strong>
-- <strong>RGC CRF Co-PI</strong> —— *Enhancing the Safety of AVs via Cross-Layer Security Hardening*,项目总额 HK$7M(本组分担 HK$0.6M)
 - <strong>谷歌研究奖</strong> —— US$40k, 2024, *3DMA GNSS Precise Positioning for Vehicular Applications*(PI)
 
 <strong>产业合作伙伴。</strong> 上汽集团(自动驾驶完好性咨询)。

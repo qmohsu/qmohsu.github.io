@@ -25,4 +25,4 @@ aliases:
 
 <img src="/images/research/blueprint-seamless-pnt-embodied.svg" alt="单一传感器无法到处工作 —— GNSS 在室内和峡谷失效、INS 会漂移;IPNL 用因子图把 GNSS / INS / LiDAR / 相机 / UWB / Wi-Fi 紧耦合,实现无缝定位。" style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
 
-这条研究方向覆盖:**智能手机级城市定位**(L5/E5a/B2a 手机接收机的 3DMA GNSS;ITF-ITSP HK$801k *面向香港智慧城市的 AI 辅助智能手机城市定位*)、**自动驾驶感知集成**(LiDAR + 相机 + GNSS + INS)、**无人机导航**(励铭航空导航青年学者)、**网联自动驾驶安全**(RGC CRF Co-PI HK$7M *跨层安全加固提升自动驾驶车辆安全性*)、**室内定位**(以 2025 Artech House 著作 *[室内定位与室内导航原理](/zh-cn/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/)*(Hsu, Zhang, Wen)与 IPIN 2024 大会主席工作为锚)。
+这条研究方向覆盖:**智能手机级城市定位**(L5/E5a/B2a 手机接收机的 3DMA GNSS;ITF-ITSP HK$801k *面向香港智慧城市的 AI 辅助智能手机城市定位*)、**自动驾驶感知集成**(LiDAR + 相机 + GNSS + INS)、**无人机导航**(励铭航空导航青年学者)、**室内定位**(以 2025 Artech House 著作 *[室内定位与室内导航原理](/zh-cn/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/)*(Hsu, Zhang, Wen)与 IPIN 2024 大会主席工作为锚)。
