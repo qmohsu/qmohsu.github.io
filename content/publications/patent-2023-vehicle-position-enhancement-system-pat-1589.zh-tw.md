@@ -11,8 +11,9 @@ authors:
 year: 2023
 venue: "Patent"
 type: "patent"
-patent_number: "CN 2023102894154"
+patent_number: "CN 202310289415.4"
 patent_office: "China National Intellectual Property Administration (CNIPA)"
+patent_url: "https://patents.google.com/patent/CN116660938A"
 cv_number: 0
 featured: false
 doi: ""
