@@ -1,7 +1,7 @@
 ---
 title: "Lucy Icking"
 slug: "lucy-icking"
-role: "访问博士生"
+role: "Visiting PhD Student"
 status: "alumni"
 years: "2022"
 current_position: "onocoy 联合创始人"

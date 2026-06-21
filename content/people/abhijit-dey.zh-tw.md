@@ -1,7 +1,7 @@
 ---
 title: "Abhijit Dey"
 slug: "abhijit-dey"
-role: "訪問博士生"
+role: "Visiting PhD Student"
 status: "alumni"
 years: "2021"
 current_position: "資深系統工程師，Accord System & Systems"

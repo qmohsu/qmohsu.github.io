@@ -1,7 +1,7 @@
 ---
 title: "Sai Hu"
 slug: "sai-hu"
-role: "理學碩士生"
+role: "MSc Student"
 status: "alumni"
 years: "2017-2019"
 thesis: "以全端方法實現低速配送應用的自動駕駛技術"

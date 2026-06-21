@@ -1,7 +1,7 @@
 ---
 title: "Zhi Zhan"
 slug: "zhi-zhan"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2025-present"
 photo: "/images/people/zhi-zhan.jpg"

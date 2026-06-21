@@ -1,7 +1,7 @@
 ---
 title: "Feng Huang"
 slug: "feng-huang"
-role: "博士生"
+role: "PhD Student"
 status: "alumni"
 years: "2020-2024"
 thesis: "都市區域動態物件感知LiDAR里程計：從單一到協同導航"

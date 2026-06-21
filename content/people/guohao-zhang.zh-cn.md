@@ -1,7 +1,7 @@
 ---
 title: "Guohao Zhang"
 slug: "guohao-zhang"
-role: "博士生"
+role: "PhD Student"
 status: "alumni"
 years: "2018-2021"
 thesis: "城市环境中基于智能三维地图辅助 GNSS 的协同定位"

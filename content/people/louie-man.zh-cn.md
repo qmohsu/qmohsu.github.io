@@ -1,7 +1,7 @@
 ---
 title: "Louie Man"
 slug: "louie-man"
-role: "硕士生"
+role: "MSc Student"
 status: "current"
 years: "2026-present"
 linkedin: "https://www.linkedin.com/in/louie-man"

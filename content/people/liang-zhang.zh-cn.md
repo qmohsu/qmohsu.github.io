@@ -1,7 +1,7 @@
 ---
 title: "Liang Zhang"
 slug: "liang-zhang"
-role: "博士后研究员"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2022-2024"
 current_position: "讲师，东南大学"

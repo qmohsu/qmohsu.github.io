@@ -1,7 +1,7 @@
 ---
 title: "Cunyi Yin"
 slug: "cunyi-yin"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "current"
 years: "2025-present"
 photo: "/images/people/cunyi-yin.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Ruoyu Chen (Monica)"
 slug: "ruoyu-chen-monica"
-role: "行政人員"
+role: "Administrative Staff"
 status: "alumni"
 years: "2025-2026"
 linkedin: "https://www.linkedin.com/in/monica-chen-444680336"

@@ -1,7 +1,7 @@
 ---
 title: "Queenie Hiu-Yi Ho"
 slug: "queenie-ho"
-role: "硕士研究生"
+role: "MPhil Student"
 status: "alumni"
 years: "2021-2024"
 thesis: "面向智慧城市应用、基于智能手机级 GNSS、相机与 INS 的泛在定位"

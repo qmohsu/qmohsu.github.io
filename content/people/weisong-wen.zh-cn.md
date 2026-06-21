@@ -1,7 +1,7 @@
 ---
 title: "Weisong Wen"
 slug: "weisong-wen"
-role: "博士生"
+role: "PhD Student"
 status: "alumni"
 years: "2017-2020"
 thesis: "三维激光雷达辅助的 GNSS 定位及其在城市峡谷中自动驾驶车辆传感器融合中的应用"

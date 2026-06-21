@@ -1,7 +1,7 @@
 ---
 title: "Delu Che"
 slug: "delu-che"
-role: "訪問博士生"
+role: "Visiting PhD Student"
 status: "alumni"
 years: "2024"
 photo: ""

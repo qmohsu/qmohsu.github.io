@@ -1,7 +1,7 @@
 ---
 title: "Jiachen Zhang"
 slug: "jiachen-zhang"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2022-2024"
 photo: ""

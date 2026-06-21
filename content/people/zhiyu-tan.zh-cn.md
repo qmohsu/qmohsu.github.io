@@ -1,7 +1,7 @@
 ---
 title: "Zhiyu Tan"
 slug: "zhiyu-tan"
-role: "研究助理"
+role: "Research Assistant"
 status: "current"
 years: "2026-present"
 photo: "/images/people/zhiyu-tan.jpg"

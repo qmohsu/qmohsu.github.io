@@ -1,7 +1,7 @@
 ---
 title: "Yuzhu Hu"
 slug: "yuzhu-hu"
-role: "行政人员"
+role: "Administrative Staff"
 status: "current"
 years: "2025-present"
 photo: "/images/people/yuzhu-hu.jpg"

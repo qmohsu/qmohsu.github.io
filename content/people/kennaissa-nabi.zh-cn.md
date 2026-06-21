@@ -1,7 +1,7 @@
 ---
 title: "Kennaissa Kebeto Nabi"
 slug: "kennaissa-nabi"
-role: "实习生"
+role: "Intern"
 status: "alumni"
 years: "2025"
 current_position: "LEDA Career Fellow"

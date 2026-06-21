@@ -1,7 +1,7 @@
 ---
 title: "Max Jwo-Lem Lee"
 slug: "max-lee"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "current"
 years: "2025-present"
 thesis: "整合以相機為基礎的定位框架與建築資訊建模（BIM）以提升室內外定位精度"

@@ -1,7 +1,7 @@
 ---
 title: "SUN Peiyue"
 slug: "sun-peiyue"
-role: "研究助理"
+role: "Research Assistant"
 status: "alumni"
 years: "2026"
 photo: "/images/people/sun-peiyue.jpg"

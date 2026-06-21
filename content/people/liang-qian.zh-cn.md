@@ -1,7 +1,7 @@
 ---
 title: "Liang Qian"
 slug: "liang-qian"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2025-present"
 photo: "/images/people/liang-qian.jpg"

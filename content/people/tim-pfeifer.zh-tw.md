@@ -1,7 +1,7 @@
 ---
 title: "Tim Pfeifer"
 slug: "tim-pfeifer"
-role: "訪問博士生"
+role: "Visiting PhD Student"
 status: "alumni"
 years: "2020"
 current_position: "軟體工程師，西門子"
