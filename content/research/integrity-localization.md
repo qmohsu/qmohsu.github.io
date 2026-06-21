@@ -21,4 +21,4 @@ Accuracy is not enough for safety-critical navigation: a confident answer in the
 
 We develop fault detection, non-Gaussian error bounding, protection-level computation, and integrity-constrained optimization. Representative threads: *Principal Gaussian Overbound for Heavy-tailed Error Bounding* (Yan, Zhong, Hsu, IEEE TAES 2024), *Integrity-Constrained Factor Graph Optimization* (Xia, Wen, Hsu, NAVIGATION 2024), and *Fault Detection for Gaussian Mixture Noises in Lidar/IMU Integrated Localization* (Yan et al., NAVIGATION 2025).
 
-This pillar is the technical core of the **2023 ION Per Enge Early Achievement Award** and the **RGC Research Impact Fund R5009-21** (HK$4.5M, PI, 2021–2026).
+This pillar is the technical core of the **2023 ION Per Enge Early Achievement Award** and the **RGC Research Impact Fund R5009-21** (HK$4.43M total (HK$3.1M RGC), Project Coordinator, 2021–2026).

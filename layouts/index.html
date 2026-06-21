@@ -309,7 +309,7 @@
               <h3>{{ if $cn }}城市环境下,基于 CNN 的智能手机 <span class="hi-cyan-text">直接定位</span>。{{ else if $tw }}城市環境下,基於 CNN 的智慧型手機 <span class="hi-cyan-text">直接定位</span>。{{ else }}CNN-based <span class="hi-cyan-text">direct positioning</span> on smartphones in urban environments.{{ end }}</h3>
               <p>{{ if $cn }}从传统间接定位转向端侧深度特征学习 —— 改善城市峡谷里 GNSS 解的稳定性。在北京、上海、深圳、香港的核心商圈完成验证。{{ else if $tw }}從傳統間接定位轉向端側深度特徵學習 —— 改善城市峽谷裡 GNSS 解的穩定性。在北京、上海、深圳、香港的核心商圈完成驗證。{{ else }}Moving from traditional indirect positioning to end-side deep feature learning &mdash; improving GNSS solution stability in urban canyons. Verified across Beijing, Shanghai, Shenzhen, and Hong Kong commercial districts.{{ end }}</p>
               <div class="tab-mini-stats">
-                <div><span class="tab-mini-num">400M+</span><span>{{ if $cn }}台智能手机{{ else if $tw }}台智慧型手機{{ else }}smartphones{{ end }}</span></div>
+                <div><span class="tab-mini-num">400M+</span><span>{{ if $cn }}台 OPPO 在用设备{{ else if $tw }}台 OPPO 在用裝置{{ else }}active devices{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}4 城市{{ else if $tw }}4 城市{{ else }}4 cities{{ end }}</span><span>{{ if $cn }}商圈联合验证{{ else if $tw }}商圈聯合驗證{{ else }}commercial-district verification{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}端侧{{ else if $tw }}端側{{ else }}End-side{{ end }}</span><span>{{ if $cn }}可部署{{ else if $tw }}可部署{{ else }}deployable{{ end }}</span></div>
                 <div><span class="tab-mini-num">CNN</span><span>{{ if $cn }}直接定位{{ else if $tw }}直接定位{{ else }}direct positioning{{ end }}</span></div>
@@ -328,11 +328,9 @@
             <div class="tab-body">
               <div class="tab-tag">{{ if $cn }}STAIRIO · 室内巡检{{ else if $tw }}STAIRIO · 室內巡檢{{ else }}STAIRIO &middot; indoor inspection{{ end }}</div>
               <h3>{{ if $cn }}在 <span class="hi-orange-text">GNSS 拒止</span> 楼梯间里持续定位 + 巡检。{{ else if $tw }}在 <span class="hi-orange-text">GNSS 拒止</span> 樓梯間裡持續定位 + 巡檢。{{ else }}Continuous positioning + inspection in <span class="hi-orange-text">GNSS-denied</span> stairwells.{{ end }}</h3>
-              <p>{{ if $cn }}香港有 9,000+ 栋高层建筑,楼梯间需要高频巡检。Stairio 是一台扶手吸附的运动平台,搭载车载 AI 视觉 —— 形成定位、巡检、记录、告警的闭环。{{ else if $tw }}香港有 9,000+ 棟高層建築,樓梯間需要高頻巡檢。Stairio 是一台扶手吸附的運動平台,搭載車載 AI 視覺 —— 形成定位、巡檢、記錄、告警的閉環。{{ else }}Hong Kong has 9,000+ high-rise buildings whose staircases need high-frequency inspection. Stairio is a handrail-affixed locomotion platform with onboard AI vision &mdash; closed loop of localization, inspection, recording, alerting.{{ end }}</p>
+              <p>{{ if $cn }}香港的高层楼梯间需要高频巡检。Stairio 是一台扶手吸附的运动平台,搭载车载 AI 视觉 —— 形成定位、巡检、记录、告警的闭环。{{ else if $tw }}香港的高層樓梯間需要高頻巡檢。Stairio 是一台扶手吸附的運動平台,搭載車載 AI 視覺 —— 形成定位、巡檢、記錄、告警的閉環。{{ else }}Hong Kong's high-rise stairwells need high-frequency inspection. Stairio is a handrail-affixed locomotion platform with onboard AI vision &mdash; closed loop of localization, inspection, recording, alerting.{{ end }}</p>
               <div class="tab-mini-stats">
-                <div><span class="tab-mini-num">12&times;</span><span>{{ if $cn }}更高巡检频率{{ else if $tw }}更高巡檢頻率{{ else }}higher frequency{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}2026 日内瓦{{ else if $tw }}2026 日內瓦{{ else }}Geneva 2026{{ end }}</span><span>{{ if $cn }}金奖{{ else if $tw }}金獎{{ else }}Gold Medal{{ end }}</span></div>
-                <div><span class="tab-mini-num">HK$240k &rarr; 24k</span><span>{{ if $cn }}每栋楼每年成本{{ else if $tw }}每棟樓每年成本{{ else }}cost / building / yr{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}唯港荟{{ else if $tw }}唯港薈{{ else }}Hotel ICON{{ end }}</span><span>{{ if $cn }}首个试点{{ else if $tw }}首個試點{{ else }}pilot site{{ end }}</span></div>
               </div>
               <a href="{{ "/projects/stairio/" | relLangURL }}" class="tab-more">{{ if $cn }}Stairio 项目 &rarr;{{ else if $tw }}Stairio 項目 &rarr;{{ else }}Stairio project &rarr;{{ end }}</a>
@@ -503,19 +501,19 @@
         <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日内瓦发明展金奖</strong> —— Stairio。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究经费</strong> · 完成 20 个月谷歌 Android 定位组驻地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 专利</strong> —— 3D LiDAR 辅助 GNSS NLOS 检测与修正。</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text">理工大校长知识转移奖。</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text">理工大校长知识转移奖。</span></li>
         <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong> —— 当年全球唯一获奖人。</span></li>
       {{ else if $tw }}
         <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日內瓦發明展金獎</strong> —— Stairio。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究經費</strong> · 完成 20 個月谷歌 Android 定位組駐地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 專利</strong> —— 3D LiDAR 輔助 GNSS NLOS 檢測與修正。</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text">理工大校長知識轉移獎。</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text">理工大校長知識轉移獎。</span></li>
         <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong> —— 當年全球唯一獲獎人。</span></li>
       {{ else }}
         <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">Geneva Inventions Gold Medal</strong> &mdash; Stairio.</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">Google Unrestricted Research Grant</strong> &middot; completion of 20-month residency at Google Android Context.</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US Patent 12 123 961 B2</strong> &mdash; 3D LiDAR-Aided GNSS NLOS Detection and Correction.</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text">PolyU Presidential Award in Knowledge Transfer.</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text">PolyU Presidential Award in Knowledge Transfer.</span></li>
         <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong> &mdash; sole international recipient for the year.</span></li>
       {{ end }}
     </ul>

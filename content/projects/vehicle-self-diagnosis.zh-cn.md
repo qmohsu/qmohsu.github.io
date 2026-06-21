@@ -7,7 +7,7 @@ status: "active"
 flagship: true
 start_date: 2026
 end_date: 2028
-funding: "香港智慧交通基金 PSRI/102/2410/PR(HK$6.19M 外部资助 + 理大配套,代表 Co-PI / 项目协调人,2026/03–2028/02)"
+funding: "香港智慧交通基金 PSRI/102/2410/PR(HK$6.19M 外部资助 + 理大配套,PI,2026/03–2028/02)"
 themes: ["optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["automotive", "predictive maintenance", "vehicle health", "Smart Traffic Fund", "AV safety"]
 weight: 3
@@ -18,4 +18,4 @@ weight: 3
 <strong>为什么重要。</strong> 这是实验室在自动驾驶安全方向获批的最大一笔新外部经费。从概念上看,它把完好性弧线再向外延伸一层 —— 从"这个定位结果可信吗?"扩展到"这辆车的部件可信吗?" —— 用的是同一套统计建模工具(故障检测、误差过界、概率图模型)。
 
 <strong>经费来源。</strong>
-- <strong>香港智慧交通基金 PSRI/102/2410/PR</strong> —— <strong>HK$6.19M 外部资助</strong> + 理大配套,许立达任代表 Co-PI / 项目协调人,2026/03–2028/02(实验室单笔最大新外部经费)
+- <strong>香港智慧交通基金 PSRI/102/2410/PR</strong> —— <strong>HK$6.19M 外部资助</strong> + 理大配套,许立达任 PI,2026/03–2028/02(实验室单笔最大新外部经费)
