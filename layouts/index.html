@@ -153,16 +153,29 @@
       </div>
     </div>
     <div class="home-stats-foot">
-      {{ if $cn }}
-        算法亦已进入 <strong>华为车 BU</strong>(自动驾驶定位)、<strong>荣耀</strong>穿戴、<strong>腾讯地图</strong> 与 <strong>美团</strong>无人机配送(预研)。持续合作还包括 <strong>谷歌</strong>(20 个月驻地 · 2024 研究奖)、<strong>上汽集团</strong>、<strong>AIROHA</strong>、<strong>联发科</strong>、<strong>NYU Langone</strong>、<strong>香港体院</strong>、<strong>唯港荟</strong>。
-        <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
-      {{ else if $tw }}
-        演算法亦已進入 <strong>華為車 BU</strong>(自動駕駛定位)、<strong>榮耀</strong>穿戴、<strong>騰訊地圖</strong> 與 <strong>美團</strong>無人機配送(預研)。持續合作還包括 <strong>谷歌</strong>(20 個月駐地 · 2024 研究獎)、<strong>上汽集團</strong>、<strong>AIROHA</strong>、<strong>聯發科</strong>、<strong>NYU Langone</strong>、<strong>香港體院</strong>、<strong>唯港薈</strong>。
-        <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
-      {{ else }}
-        Also adopted across <strong>Huawei Car BU</strong> (autonomous-driving positioning), <strong>HONOR</strong> wearables, <strong>Tencent Maps</strong>, and <strong>Meituan</strong> drone delivery (pre-research). Plus sustained engagements with <strong>Google</strong> (20-month residency &middot; 2024 Research Award), <strong>SAIC Motor</strong>, <strong>AIROHA</strong>, <strong>MediaTek</strong>, <strong>NYU Langone</strong>, <strong>HKSI</strong>, and <strong>Hotel ICON</strong>.
-        <a href="{{ "/projects/#partners" | relLangURL }}">All partnerships &rarr;</a>
-      {{ end }}
+      {{ if $cn }}<div class="partner-wall-intro">算法亦已进入以下产业伙伴与用户 —— 汽车、穿戴、地图、无人机等:</div>{{ else if $tw }}<div class="partner-wall-intro">演算法亦已進入以下產業夥伴與用戶 —— 汽車、穿戴、地圖、無人機等:</div>{{ else }}<div class="partner-wall-intro">Also adopted across these industry partners &amp; users — cars, wearables, maps, drones, and more:</div>{{ end }}
+      <div class="partner-logos">
+        <span class="plogo"><img src="{{ "/images/partners/huawei.png" | relURL }}" alt="Huawei" loading="lazy"><span>Huawei Car BU</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/honor.png" | relURL }}" alt="HONOR" loading="lazy"><span>HONOR</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/tencent.jpg" | relURL }}" alt="Tencent" loading="lazy"><span>Tencent Maps</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/meituan.png" | relURL }}" alt="Meituan" loading="lazy"><span>Meituan</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/google.png" | relURL }}" alt="Google" loading="lazy"><span>Google</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/saic.webp" | relURL }}" alt="SAIC Motor" loading="lazy"><span>SAIC Motor</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/airoha.png" | relURL }}" alt="AIROHA" loading="lazy"><span>AIROHA</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/mediatek.png" | relURL }}" alt="MediaTek" loading="lazy"><span>MediaTek</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/nyu-langone.jpg" | relURL }}" alt="NYU Langone" loading="lazy"><span>NYU Langone</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/hksi.png" | relURL }}" alt="HKSI" loading="lazy"><span>HKSI</span></span>
+        <span class="plogo"><img src="{{ "/images/partners/hotel-icon.png" | relURL }}" alt="Hotel ICON" loading="lazy"><span>Hotel ICON</span></span>
+      </div>
+      <div class="partner-wall-more"><a href="{{ "/projects/#partners" | relLangURL }}">{{ if $cn }}全部合作{{ else if $tw }}全部合作{{ else }}All partnerships{{ end }} &rarr;</a></div>
+      <style>
+      .partner-wall-intro{text-align:center;color:var(--text-secondary);font-size:.9rem;margin:.2rem 0 .9rem}
+      .partner-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.55rem .6rem;max-width:960px;margin:0 auto}
+      .partner-logos .plogo{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .8rem;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 1px 2px rgba(10,24,37,.05)}
+      .partner-logos .plogo img{height:20px;width:auto;max-width:78px;object-fit:contain;display:block}
+      .partner-logos .plogo span{font-size:.76rem;font-weight:600;color:var(--text-secondary);white-space:nowrap;letter-spacing:.01em}
+      .partner-wall-more{text-align:center;margin-top:1rem}
+      </style>
     </div>
   </div>
 </section>
