@@ -170,10 +170,10 @@
       <div class="partner-wall-more"><a href="{{ "/projects/#partners" | relLangURL }}">{{ if $cn }}全部合作{{ else if $tw }}全部合作{{ else }}All partnerships{{ end }} &rarr;</a></div>
       <style>
       .partner-wall-intro{text-align:center;color:var(--text-secondary);font-size:.9rem;margin:.2rem 0 .9rem}
-      .partner-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.55rem .6rem;max-width:960px;margin:0 auto}
-      .partner-logos .plogo{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .8rem;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 1px 2px rgba(10,24,37,.05)}
-      .partner-logos .plogo img{height:20px;width:auto;max-width:78px;object-fit:contain;display:block}
-      .partner-logos .plogo span{font-size:.76rem;font-weight:600;color:var(--text-secondary);white-space:nowrap;letter-spacing:.01em}
+      .partner-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.7rem .8rem;max-width:980px;margin:0 auto}
+      .partner-logos .plogo{display:inline-flex;align-items:center;gap:.55rem;padding:.55rem 1rem;background:#fff;border:1px solid var(--border);border-radius:9px;box-shadow:0 1px 3px rgba(10,24,37,.06)}
+      .partner-logos .plogo img{height:30px;width:auto;max-width:120px;object-fit:contain;display:block}
+      .partner-logos .plogo span{font-size:.85rem;font-weight:600;color:var(--text-secondary);white-space:nowrap;letter-spacing:.01em}
       .partner-wall-more{text-align:center;margin-top:1rem}
       </style>
     </div>
@@ -268,7 +268,6 @@
     <div class="tabs" data-tabs>
       <div class="tab-nav" role="tablist">
         <button class="tab-btn is-active" type="button" data-tab="huawei" role="tab" aria-selected="true">Huawei</button>
-        <button class="tab-btn" type="button" data-tab="meituan" role="tab">Meituan</button>
         <button class="tab-btn" type="button" data-tab="oppo" role="tab">OPPO</button>
         <button class="tab-btn" type="button" data-tab="stairio" role="tab">Stairio</button>
         <button class="tab-btn" type="button" data-tab="hksi" role="tab">HKSI</button>
@@ -288,7 +287,7 @@
               <div class="tab-mini-stats">
                 <div><span class="tab-mini-num">2018</span><span>{{ if $cn }}起合作{{ else if $tw }}起合作{{ else }}since{{ end }}</span></div>
                 <div><span class="tab-mini-num">9+</span><span>{{ if $cn }}子合同{{ else if $tw }}子合同{{ else }}contracts{{ end }}</span></div>
-                <div><span class="tab-mini-num">1.3M+</span><span>{{ if $cn }}智能驾驶车{{ else if $tw }}智能駕駛車{{ else }}smart vehicles{{ end }}</span></div>
+                <div><span class="tab-mini-num">40M+</span><span>{{ if $cn }}台华为手机{{ else if $tw }}台華為手機{{ else }}smartphones{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}手机 + 车 BU{{ else if $tw }}手機 + 車 BU{{ else }}Mobile + Car BU{{ end }}</span><span>{{ if $cn }}两条产品线{{ else if $tw }}兩條產品線{{ else }}both lines{{ end }}</span></div>
               </div>
               <a href="{{ "/projects/3dma-gnss/" | relLangURL }}" class="tab-more">{{ if $cn }}3DMA-GNSS 项目 &rarr;{{ else if $tw }}3DMA-GNSS 項目 &rarr;{{ else }}3DMA-GNSS project &rarr;{{ end }}</a>
@@ -296,26 +295,8 @@
           </div>
         </div>
 
-        <div class="tab-panel" data-panel="meituan" role="tabpanel">
-          <div class="tab-grid">
-            <div class="tab-media">
-              <img src="{{ "/images/cases/meituan-drone-delivery.png" | relURL }}" alt="Urban drone delivery" loading="lazy">
-              <div class="tab-media-cap">{{ if $cn }}<span class="hi-orange-text">视觉辅助 RTK</span> · 支撑城市低空航线{{ else if $tw }}<span class="hi-orange-text">視覺輔助 RTK</span> · 支撐城市低空航線{{ else }}<span class="hi-orange-text">Visual-aided RTK</span> &middot; supports a city low-altitude route{{ end }}</div>
-            </div>
-            <div class="tab-body">
-              <div class="tab-tag">{{ if $cn }}美团 · 低空经济{{ else if $tw }}美團 · 低空經濟{{ else }}MEITUAN &middot; low-altitude economy{{ end }}</div>
-              <h3>{{ if $cn }}视觉辅助 RTK,提升城市无人机航线的 <span class="hi-orange-text">定位可用率</span>。{{ else if $tw }}視覺輔助 RTK,提升城市無人機航線的 <span class="hi-orange-text">定位可用率</span>。{{ else }}Visual-aided RTK lifting <span class="hi-orange-text">positioning availability</span> on urban drone routes.{{ end }}</h3>
-              <p>{{ if $cn }}在楼宇遮挡的低空走廊里,视觉辅助 GNSS RTK 配合 <strong>NLOS 检测</strong>,提升定位可用率,让新航线既可 <strong>规划</strong> 又可 <strong>监管</strong>。{{ else if $tw }}在樓宇遮擋的低空走廊裡,視覺輔助 GNSS RTK 配合 <strong>NLOS 檢測</strong>,提升定位可用率,讓新航線既可 <strong>規劃</strong> 又可 <strong>監管</strong>。{{ else }}In building-occluded low-altitude corridors, visual-aided GNSS RTK with <strong>NLOS detection</strong> lifts positioning availability so that new urban drone routes can be both <strong>planned and supervised</strong>.{{ end }}</p>
-              <div class="tab-mini-stats">
-                <div><span class="tab-mini-num">65</span><span>{{ if $cn }}条城市航线{{ else if $tw }}條城市航線{{ else }}drone routes{{ end }}</span></div>
-                <div><span class="tab-mini-num">600k+</span><span>{{ if $cn }}订单{{ else if $tw }}訂單{{ else }}orders{{ end }}</span></div>
-                <div><span class="tab-mini-num">6+</span><span>{{ if $cn }}城市{{ else if $tw }}城市{{ else }}cities{{ end }}</span></div>
-                <div><span class="tab-mini-num">28.4% &middot; 99.5%+</span><span>{{ if $cn }}误差降低 · NLOS 召回{{ else if $tw }}誤差降低 · NLOS 召回{{ else }}error drop &middot; NLOS recall{{ end }}</span></div>
-              </div>
-              <a href="{{ "/projects/urban-air-traffic-management/" | relLangURL }}" class="tab-more">{{ if $cn }}城市低空交通管理 &rarr;{{ else if $tw }}城市低空交通管理 &rarr;{{ else }}Urban Air Traffic Management &rarr;{{ end }}</a>
-            </div>
-          </div>
-        </div>
+        <!-- Meituan case-study tab removed: pre-research / exploratory collaboration, no real deployment numbers. Meituan remains in the home partner logo wall. -->
+
 
         <div class="tab-panel" data-panel="oppo" role="tabpanel">
           <div class="tab-grid">
