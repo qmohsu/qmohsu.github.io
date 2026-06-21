@@ -133,52 +133,34 @@
       </div>
       <div class="stat-card">
         <div class="stat-partner has-logo">
-          <img class="partner-logo" src="{{ "/images/partners/honor.png" | relURL }}" alt="HONOR" onerror="this.style.display='none'">
-          <span class="stat-partner-text">HONOR</span>
+          <img class="partner-logo" src="{{ "/images/partners/android.png" | relURL }}" alt="Android" onerror="this.style.display='none'">
+          <span class="stat-partner-text">Android</span>
         </div>
-        <div class="stat-num">300M+</div>
-        <div class="stat-label">{{ if $cn }}用户{{ else if $tw }}使用者{{ else }}users{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}轻量化室内定位{{ else if $tw }}輕量化室內定位{{ else }}Lightweight indoor positioning{{ end }}</div>
+        <!-- Android provenance — confidential testimonial S7 (signed by Dr Michael Fu, former Android/Google 3DMA-GNSS Tech Lead 2018–2025): PolyU's 3DMA-GNSS work inspired Google's Android Location project; cuts wrong-side-of-street errors up to 90% across ~4,000 cities for 1B+ active Android users (LBS: Lyft/Uber/DoorDash). The 90% / 4,000-cities specifics are CONFIDENTIAL — re-clear before publishing them. -->
+        <div class="stat-num">1B+</div>
+        <div class="stat-label">{{ if $cn }}安卓活跃用户{{ else if $tw }}Android 活躍用戶{{ else }}active Android users{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}3DMA GNSS 启发 Google 安卓定位项目;大幅降低城市峡谷误差{{ else if $tw }}3DMA GNSS 啟發 Google 安卓定位專案;大幅降低城市峽谷誤差{{ else }}3DMA GNSS inspired Google's Android Location project; sharply cut urban-canyon errors{{ end }}</div>
       </div>
       <div class="stat-card">
         <div class="stat-partner has-logo">
           <img class="partner-logo" src="{{ "/images/partners/huawei.png" | relURL }}" alt="HUAWEI" onerror="this.style.display='none'">
           <span class="stat-partner-text">HUAWEI</span>
         </div>
-        <div class="stat-num">1.3M+</div>
-        <div class="stat-label">{{ if $cn }}辆智能驾驶车{{ else if $tw }}輛智能駕駛車{{ else }}smart vehicles{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}建图与城市定位算法{{ else if $tw }}建圖與城市定位演算法{{ else }}Mapping &amp; urban positioning{{ end }}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-partner has-logo">
-          <img class="partner-logo" src="{{ "/images/partners/meituan.png" | relURL }}" alt="Meituan" onerror="this.style.display='none'">
-          <span class="stat-partner-text">Meituan</span>
-        </div>
-        <div class="stat-num">65</div>
-        <div class="stat-label">{{ if $cn }}条城市无人机航线{{ else if $tw }}條城市無人機航線{{ else }}urban drone routes{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}视觉辅助 RTK · 60 万+ 订单{{ else if $tw }}視覺輔助 RTK · 60 萬+ 訂單{{ else }}Visual-aided RTK &middot; 600k+ orders{{ end }}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-partner has-logo">
-          <img class="partner-logo" src="{{ "/images/partners/tencent.jpg" | relURL }}" alt="Tencent" onerror="this.style.display='none'">
-          <span class="stat-partner-text">Tencent</span>
-        </div>
-        <div class="stat-num">360+</div>
-        <div class="stat-label">{{ if $cn }}城市覆盖{{ else if $tw }}城市覆蓋{{ else }}city deployment{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}地图定位合作{{ else if $tw }}地圖定位合作{{ else }}Map-positioning collaboration{{ end }}</div>
+        <!-- Huawei provenance — confidential testimonial S4 (signed 2020-09-28, Huawei Consumer BG Director of Positioning): PolyU 3DMA-GNSS on Huawei flagship smartphones (Mate30/P40), expected >40M units, integrated in HMS Location Kit. CONFIDENTIAL — re-clear before publishing. (Huawei Car BU also adopted the algorithm but released no figure — kept in the partner wall below, no number.) -->
+        <div class="stat-num">40M+</div>
+        <div class="stat-label">{{ if $cn }}台华为手机{{ else if $tw }}台華為手機{{ else }}Huawei smartphones{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}3DMA GNSS 集成于 Mate30/P40 旗舰机 + HMS 定位{{ else if $tw }}3DMA GNSS 整合於 Mate30/P40 旗艦機 + HMS 定位{{ else }}3DMA GNSS in Mate30/P40 flagships + HMS Location Kit{{ end }}</div>
       </div>
     </div>
     <div class="home-stats-foot">
       {{ if $cn }}
-        持续合作还包括 <strong>谷歌</strong>(20 个月驻地 · 2024 研究奖)、<strong>上汽集团</strong>、<strong>AIROHA</strong>、<strong>联发科</strong>、<strong>NYU Langone</strong>、<strong>香港体院</strong>、<strong>唯港荟</strong>。
+        算法亦已进入 <strong>华为车 BU</strong>(自动驾驶定位)、<strong>荣耀</strong>穿戴、<strong>腾讯地图</strong> 与 <strong>美团</strong>无人机配送(预研)。持续合作还包括 <strong>谷歌</strong>(20 个月驻地 · 2024 研究奖)、<strong>上汽集团</strong>、<strong>AIROHA</strong>、<strong>联发科</strong>、<strong>NYU Langone</strong>、<strong>香港体院</strong>、<strong>唯港荟</strong>。
         <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
       {{ else if $tw }}
-        持續合作還包括 <strong>谷歌</strong>(20 個月駐地 · 2024 研究獎)、<strong>上汽集團</strong>、<strong>AIROHA</strong>、<strong>聯發科</strong>、<strong>NYU Langone</strong>、<strong>香港體院</strong>、<strong>唯港薈</strong>。
+        演算法亦已進入 <strong>華為車 BU</strong>(自動駕駛定位)、<strong>榮耀</strong>穿戴、<strong>騰訊地圖</strong> 與 <strong>美團</strong>無人機配送(預研)。持續合作還包括 <strong>谷歌</strong>(20 個月駐地 · 2024 研究獎)、<strong>上汽集團</strong>、<strong>AIROHA</strong>、<strong>聯發科</strong>、<strong>NYU Langone</strong>、<strong>香港體院</strong>、<strong>唯港薈</strong>。
         <a href="{{ "/projects/#partners" | relLangURL }}">全部合作 &rarr;</a>
       {{ else }}
-        Plus sustained engagements with <strong>Google</strong> (20-month residency &middot; 2024 Research Award),
-        <strong>SAIC Motor</strong>, <strong>AIROHA</strong>, <strong>MediaTek</strong>,
-        <strong>NYU Langone</strong>, <strong>HKSI</strong>, and <strong>Hotel ICON</strong>.
+        Also adopted across <strong>Huawei Car BU</strong> (autonomous-driving positioning), <strong>HONOR</strong> wearables, <strong>Tencent Maps</strong>, and <strong>Meituan</strong> drone delivery (pre-research). Plus sustained engagements with <strong>Google</strong> (20-month residency &middot; 2024 Research Award), <strong>SAIC Motor</strong>, <strong>AIROHA</strong>, <strong>MediaTek</strong>, <strong>NYU Langone</strong>, <strong>HKSI</strong>, and <strong>Hotel ICON</strong>.
         <a href="{{ "/projects/#partners" | relLangURL }}">All partnerships &rarr;</a>
       {{ end }}
     </div>
