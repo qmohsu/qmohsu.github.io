@@ -45,7 +45,7 @@ aliases:
       <div class="stat-partner">香港体育学院 · SRFS</div>
       <div class="stat-num">HK$3.34M</div>
       <div class="stat-label">PI · 2026–</div>
-      <div class="stat-context">UWB-GNSS 精准起跑线监测,服务奥运级风帆运动员</div>
+      <div class="stat-context">精准起跑线监测系统,服务奥运级风帆运动员</div>
     </div>
     <div class="stat-card">
       <div class="stat-partner">国自然/RGC JRS</div>
@@ -117,7 +117,7 @@ aliases:
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">腾讯</span></div><div class="stat-num">地图</div><div class="stat-label">定位合作</div><div class="stat-context">地图定位合作</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">上汽集团</span></div><div class="stat-num">咨询</div><div class="stat-label">自动驾驶完整性</div><div class="stat-context">自动驾驶车辆发布决策的完整性监测框架</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">2021 起</div><div class="stat-label">视障行人导航</div><div class="stat-context">密集曼哈顿城市环境的 3D 地图辅助 GNSS 辅助导航</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">香港体院</span></div><div class="stat-num">奥运</div><div class="stat-label">风帆训练</div><div class="stat-context">海上浮标 UWB-GNSS 精准起跑线监测</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">香港体院</span></div><div class="stat-num">奥运</div><div class="stat-label">风帆训练</div><div class="stat-context">海上浮标精准起跑线监测</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">唯港荟</span></div><div class="stat-num">示范</div><div class="stat-label">Stairio 部署点</div><div class="stat-context">实验室自主楼梯安全巡检机器人首个部署地</div></div>
   </div>
 </section>
