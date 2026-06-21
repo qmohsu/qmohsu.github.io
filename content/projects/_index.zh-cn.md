@@ -2,7 +2,7 @@
 title: '<span class="hi-cyan-text">研发项目</span> · <span class="hi-orange-text">产业合作</span>'
 tooltip: "研发项目"
 hero_eyebrow: "研发 · 产业 · 经费 · 2026"
-hero_sub: '<strong>HK$24M+ 外部</strong>经费 · <strong>9+</strong> 华为合同 · <strong>12</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$60M+</strong> 研究项目 · <strong>9+</strong> 华为合同 · <strong>12</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研发 —— 核心研究方向、具身产业转化系统,以及为它们提供经费与落地场景的长期产业合作。"
 aliases:
@@ -11,17 +11,17 @@ aliases:
 
 <div class="page-part">
   <span class="page-part-num">第一部分 · 经费</span>
-  <h2 class="page-part-title">HK$24M+ 外部经费</h2>
-  <p class="page-part-sub">RGC、ITF、STF、香港体院、国自然/RGC JRS、华为、谷歌 —— 作为 PI 或 PC 累计获批,截至 2026。</p>
+  <h2 class="page-part-title">HK$60M+ 研究项目 (PI / Co-PI / Co-I)</h2>
+  <p class="page-part-sub">作为 PI / PC 主持,并以 Co-PI / Co-I 参与 —— RGC、ITF、STF、香港体院、国自然/RGC JRS、华为、CRF、GRF、ITF-PRP、谷歌 —— 截至 2026。</p>
 </div>
 
 <section class="funding-hero">
   <div class="stat-grid">
     <div class="stat-card">
-      <div class="stat-partner">外部经费</div>
-      <div class="stat-num">HK$24M+</div>
-      <div class="stat-label">作为 PI / PC 累计获得</div>
-      <div class="stat-context">RGC · ITF · STF · HKSI · 国自然/RGC JRS · 华为 · 谷歌 · 截至 2026</div>
+      <div class="stat-partner">研究项目</div>
+      <div class="stat-num">HK$60M+</div>
+      <div class="stat-label">PI / Co-PI / Co-I</div>
+      <div class="stat-context">所参与项目的总价值(含 Co-PI / Co-I);以 PI / PC 主持的主要经费见下方</div>
     </div>
     <div class="stat-card">
       <div class="stat-partner">华为框架协议</div>
@@ -100,9 +100,9 @@ aliases:
   <div class="section-eyebrow">消费级 · 10 亿+ 设备</div>
   <h2 class="section-h2">智能手机与移动平台合作伙伴</h2>
   <div class="stat-grid">
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">4亿+</div><div class="stat-label">台智能手机</div><div class="stat-context">联合 GNSS 算法研发;多城市验证</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/honor.png" alt="HONOR" onerror="this.style.display='none'"><span class="stat-partner-text">荣耀</span></div><div class="stat-num">3亿+</div><div class="stat-label">用户</div><div class="stat-context">终端算力 / 功耗约束下的轻量化室内定位</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/huawei.png" alt="HUAWEI" onerror="this.style.display='none'"><span class="stat-partner-text">华为</span></div><div class="stat-num">9+</div><div class="stat-label">2018 起框架合同</div><div class="stat-context">手机 + 车 BU。130 万+ 智能驾驶车采用实验室定位算法</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">Premium</div><div class="stat-label">OPPO 旗舰机型</div><div class="stat-context">AI 城市 GNSS 仅部署于 OPPO 高端机型,非其全部设备(张国豪博士);2024 OPPO 优秀产学研伙伴</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/honor.png" alt="HONOR" onerror="this.style.display='none'"><span class="stat-partner-text">荣耀</span></div><div class="stat-num">穿戴</div><div class="stat-label">手表定位</div><div class="stat-context">终端算力 / 功耗约束下的轻量化室内定位</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/huawei.png" alt="HUAWEI" onerror="this.style.display='none'"><span class="stat-partner-text">华为</span></div><div class="stat-num">9+</div><div class="stat-label">2018 起框架合同</div><div class="stat-context">手机 + 车 BU:40M+ Mate30/P40 旗舰机(HMS 定位);车 BU 自动驾驶定位</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/airoha.png" alt="AIROHA" onerror="this.style.display='none'"><span class="stat-partner-text">AIROHA</span></div><div class="stat-num">3</div><div class="stat-label">轮邀请合作</div><div class="stat-context">芯片端智能手机 GNSS 路线图;台湾</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/mediatek.png" alt="MediaTek" onerror="this.style.display='none'"><span class="stat-partner-text">联发科</span></div><div class="stat-num">多年</div><div class="stat-label">技术咨询</div><div class="stat-context">消费级 GNSS 硬件路线图输入;台湾</div></div>
   </div>
@@ -113,8 +113,8 @@ aliases:
   <h2 class="section-h2">垂直行业深度合作</h2>
   <div class="stat-grid">
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/google.png" alt="Google" onerror="this.style.display='none'"><span class="stat-partner-text">谷歌</span></div><div class="stat-num">20</div><div class="stat-label">个月驻地</div><div class="stat-context">许立达博士在 Android 定位组 · 山景城 (2022–2023)。2024 不限定研究经费 (US$40k)</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/meituan.png" alt="Meituan" onerror="this.style.display='none'"><span class="stat-partner-text">美团</span></div><div class="stat-num">65</div><div class="stat-label">条城市无人机航线</div><div class="stat-context">低空城市走廊视觉辅助 RTK。60 万+ 订单</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">腾讯</span></div><div class="stat-num">360+</div><div class="stat-label">城市部署</div><div class="stat-context">地图定位合作</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/meituan.png" alt="Meituan" onerror="this.style.display='none'"><span class="stat-partner-text">美团</span></div><div class="stat-num">预研</div><div class="stat-label">无人机配送定位</div><div class="stat-context">低空城市走廊视觉辅助 RTK(探索性合作)</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">腾讯</span></div><div class="stat-num">地图</div><div class="stat-label">定位合作</div><div class="stat-context">地图定位合作</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">上汽集团</span></div><div class="stat-num">咨询</div><div class="stat-label">自动驾驶完整性</div><div class="stat-context">自动驾驶车辆发布决策的完整性监测框架</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">2021 起</div><div class="stat-label">视障行人导航</div><div class="stat-context">密集曼哈顿城市环境的 3D 地图辅助 GNSS 辅助导航</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">香港体院</span></div><div class="stat-num">奥运</div><div class="stat-label">风帆训练</div><div class="stat-context">海上浮标 UWB-GNSS 精准起跑线监测</div></div>

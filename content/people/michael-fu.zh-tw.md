@@ -3,7 +3,7 @@ title: "付國峪 (Michael Fu)"
 slug: "michael-fu"
 role: "高級研究員"
 status: "current"
-years: "2024-present"
+years: "2026-present"
 photo: "/images/people/michael-fu.jpg"
 sort_order: 2
 hero_eyebrow: "高級研究員"

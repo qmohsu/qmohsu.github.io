@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">研發項目</span> · <span class="hi-orange-text">產業合作</span>'
 hero_eyebrow: "研發 · 產業 · 經費 · 2026"
-hero_sub: '<strong>HK$24M+ 外部</strong>經費 · <strong>9+</strong> 華為合同 · <strong>12</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$60M+</strong> 研究項目 · <strong>9+</strong> 華為合同 · <strong>12</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研發 —— 核心研究方向、具身產業轉化系統,以及為其提供經費與落地場景的長期產業合作。"
 aliases:
@@ -10,17 +10,17 @@ aliases:
 
 <div class="page-part">
   <span class="page-part-num">第一部分 · 經費</span>
-  <h2 class="page-part-title">HK$24M+ 外部經費</h2>
-  <p class="page-part-sub">RGC、ITF、STF、香港體院、國自然/RGC JRS、華為、谷歌 —— 作為 PI 或 PC 累計獲批。</p>
+  <h2 class="page-part-title">HK$60M+ 研究項目 (PI / Co-PI / Co-I)</h2>
+  <p class="page-part-sub">作為 PI / PC 主持,並以 Co-PI / Co-I 參與 —— RGC、ITF、STF、香港體院、國自然/RGC JRS、華為、CRF、GRF、ITF-PRP、谷歌。</p>
 </div>
 
 <section class="funding-hero">
   <div class="stat-grid">
     <div class="stat-card">
-      <div class="stat-partner">外部經費</div>
-      <div class="stat-num">HK$24M+</div>
-      <div class="stat-label">作為 PI / PC 累計獲得</div>
-      <div class="stat-context">RGC · ITF · STF · HKSI · 國自然/RGC JRS · 華為 · 谷歌</div>
+      <div class="stat-partner">研究項目</div>
+      <div class="stat-num">HK$60M+</div>
+      <div class="stat-label">PI / Co-PI / Co-I</div>
+      <div class="stat-context">所參與項目的總價值(含 Co-PI / Co-I);以 PI / PC 主持的主要經費見下方</div>
     </div>
     <div class="stat-card">
       <div class="stat-partner">華為框架協議</div>
@@ -80,9 +80,9 @@ aliases:
   <div class="section-eyebrow">消費級 · 10 億+ 設備</div>
   <h2 class="section-h2">智慧型手機與行動平台合作夥伴</h2>
   <div class="stat-grid">
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">4億+</div><div class="stat-label">台智慧型手機</div><div class="stat-context">聯合 GNSS 演算法研發</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/honor.png" alt="HONOR" onerror="this.style.display='none'"><span class="stat-partner-text">榮耀</span></div><div class="stat-num">3億+</div><div class="stat-label">使用者</div><div class="stat-context">終端算力 / 功耗約束下的輕量化室內定位</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/huawei.png" alt="HUAWEI" onerror="this.style.display='none'"><span class="stat-partner-text">華為</span></div><div class="stat-num">9+</div><div class="stat-label">2018 起框架合同</div><div class="stat-context">手機 + 車 BU。130 萬+ 智能駕駛車</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">Premium</div><div class="stat-label">OPPO 旗艦機型</div><div class="stat-context">AI 城市 GNSS 僅部署於 OPPO 高端機型,非其全部裝置(張國豪博士);2024 OPPO 優秀產學研夥伴</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/honor.png" alt="HONOR" onerror="this.style.display='none'"><span class="stat-partner-text">榮耀</span></div><div class="stat-num">穿戴</div><div class="stat-label">手錶定位</div><div class="stat-context">終端算力 / 功耗約束下的輕量化室內定位</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/huawei.png" alt="HUAWEI" onerror="this.style.display='none'"><span class="stat-partner-text">華為</span></div><div class="stat-num">9+</div><div class="stat-label">2018 起框架合同</div><div class="stat-context">手機 + 車 BU:40M+ Mate30/P40 旗艦機(HMS 定位);車 BU 自動駕駛定位</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/airoha.png" alt="AIROHA" onerror="this.style.display='none'"><span class="stat-partner-text">AIROHA</span></div><div class="stat-num">3</div><div class="stat-label">輪邀請合作</div><div class="stat-context">晶片端智慧型手機 GNSS 路線圖;台灣</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/mediatek.png" alt="MediaTek" onerror="this.style.display='none'"><span class="stat-partner-text">聯發科</span></div><div class="stat-num">多年</div><div class="stat-label">技術諮詢</div><div class="stat-context">消費級 GNSS 硬體路線圖輸入;台灣</div></div>
   </div>
@@ -93,8 +93,8 @@ aliases:
   <h2 class="section-h2">垂直行業深度合作</h2>
   <div class="stat-grid">
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/google.png" alt="Google" onerror="this.style.display='none'"><span class="stat-partner-text">谷歌</span></div><div class="stat-num">20</div><div class="stat-label">個月駐地</div><div class="stat-context">許立達博士在 Android 定位組 · 山景城</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/meituan.png" alt="Meituan" onerror="this.style.display='none'"><span class="stat-partner-text">美團</span></div><div class="stat-num">65</div><div class="stat-label">條城市無人機航線</div><div class="stat-context">低空城市走廊視覺輔助 RTK</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">騰訊</span></div><div class="stat-num">360+</div><div class="stat-label">城市部署</div><div class="stat-context">地圖定位合作</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/meituan.png" alt="Meituan" onerror="this.style.display='none'"><span class="stat-partner-text">美團</span></div><div class="stat-num">預研</div><div class="stat-label">無人機配送定位</div><div class="stat-context">低空城市走廊視覺輔助 RTK(探索性合作)</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">騰訊</span></div><div class="stat-num">地圖</div><div class="stat-label">定位合作</div><div class="stat-context">地圖定位合作</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">上汽集團</span></div><div class="stat-num">諮詢</div><div class="stat-label">自動駕駛完整性</div><div class="stat-context">自動駕駛車輛發布決策的完整性監測框架</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">2021 起</div><div class="stat-label">視障行人導航</div><div class="stat-context">密集曼哈頓城市環境的 3D 地圖輔助 GNSS</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">香港體院</span></div><div class="stat-num">奧運</div><div class="stat-label">風帆訓練</div><div class="stat-context">海上浮標 UWB-GNSS 精準起跑線監測</div></div>
