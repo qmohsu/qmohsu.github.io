@@ -1,12 +1,10 @@
 ---
 title: "Chosen Liao"
 slug: "chosen-liao"
-role: "MSc Student"
+role: "碩士生"
 status: "alumni"
 years: "2020-2022"
-thesis: "Pedestrian Navigation Mobile Device-based Dead Reckoning Aided by Factors"
+thesis: "因子輔助的行人導航行動裝置航位推算"
 photo: ""
 sort_order: 121
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/chosen-liao/">英文版本</a>。</aside>

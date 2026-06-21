@@ -1,11 +1,15 @@
 ---
 title: "Cunyi Yin"
 slug: "cunyi-yin"
-role: "Postdoctoral Fellow"
+role: "博士後研究員"
 status: "current"
 years: "2025-present"
 photo: "/images/people/cunyi-yin.jpg"
 sort_order: 110
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/cunyi-yin/">英文版本</a>。</aside>
+博士（FZU），工學學士（CUIT）
+
+**研究領域：** 無線感測、物聯網、人類活動辨識，以及機器學習
+
+**Email：** cunyiyin@polyu.edu.hk

@@ -12,14 +12,14 @@
   {{ with .Params.lead }}
     {{ $leadPage := $.Site.GetPage (printf "/people/%s" .) }}
     {{ if $leadPage }}
-    <p class="pillar-lead"><strong>Pillar lead:</strong> <a href="{{ $leadPage.RelPermalink }}">{{ $leadPage.Title }}</a></p>
+    <p class="pillar-lead"><strong>{{ if eq site.Language.Lang "zh-cn" }}方向负责人：{{ else if eq site.Language.Lang "zh-tw" }}方向負責人：{{ else }}Pillar lead:{{ end }}</strong> <a href="{{ $leadPage.RelPermalink }}">{{ $leadPage.Title }}</a></p>
     {{ end }}
   {{ end }}
 
   {{ if or .Params.video .Params.videos }}
   {{ $vids := .Params.videos | default (slice .Params.video) }}
   <div class="video-stack">
-    {{ if gt (len $vids) 1 }}<h2>{{ if eq .Lang "zh-cn" }}视频{{ else if eq .Lang "zh-tw" }}影片{{ else }}Videos{{ end }}</h2>{{ end }}
+    {{ if gt (len $vids) 1 }}<h2>{{ if eq site.Language.Lang "zh-cn" }}视频{{ else if eq site.Language.Lang "zh-tw" }}影片{{ else }}Videos{{ end }}</h2>{{ end }}
     {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
   </div>
   {{ end }}
@@ -40,7 +40,7 @@
   {{ $contributors = sort $contributors "count" "desc" }}
   {{ if $contributors }}
   <div class="section">
-    <h2>{{ if eq .Lang "zh-cn" }}实验室成员{{ else if eq .Lang "zh-tw" }}實驗室成員{{ else }}Lab Contributors{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}实验室成员{{ else if eq site.Language.Lang "zh-tw" }}實驗室成員{{ else }}Lab Contributors{{ end }}</h2>
     <div class="people-pills">
     {{ range $contributors }}
       {{ $person := $.Site.GetPage (printf "/people/%s" .slug) }}
@@ -55,7 +55,7 @@
   {{ $relatedProjects := where (where .Site.RegularPages "Section" "projects") ".Params.themes" "intersect" (slice $theme) }}
   {{ with $relatedProjects }}
   <div class="section">
-    <h2>{{ if eq .Lang "zh-cn" }}相关项目{{ else if eq .Lang "zh-tw" }}相關專案{{ else }}Related Projects{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}相关项目{{ else if eq site.Language.Lang "zh-tw" }}相關專案{{ else }}Related Projects{{ end }}</h2>
     <ul class="person-projects">
     {{ range . }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.status }} <span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}</li>
@@ -67,7 +67,7 @@
   {{ $pubs := where (where .Site.RegularPages "Section" "publications") ".Params.themes" "intersect" (slice $theme) }}
   {{ if $pubs }}
   <div class="section">
-    <h2>{{ if eq .Lang "zh-cn" }}相关论文{{ else if eq .Lang "zh-tw" }}相關論文{{ else }}Related Publications{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}相关论文{{ else if eq site.Language.Lang "zh-tw" }}相關論文{{ else }}Related Publications{{ end }}</h2>
 
     {{/* Collect unique years */}}
     {{ $years := slice }}

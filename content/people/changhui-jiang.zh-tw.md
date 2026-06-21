@@ -1,12 +1,10 @@
 ---
 title: "Changhui Jiang"
 slug: "changhui-jiang"
-role: "Postdoctoral Fellow"
+role: "博士後研究員"
 status: "alumni"
 years: "2019-2020"
-current_position: "Professor, Nanjing University of Aeronautics and Astronautics"
+current_position: "教授，南京航空航天大學"
 photo: "/images/people/changhui-jiang.jpg"
 sort_order: 204
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/changhui-jiang/">英文版本</a>。</aside>

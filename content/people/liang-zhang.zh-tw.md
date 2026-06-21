@@ -1,13 +1,11 @@
 ---
 title: "Liang Zhang"
 slug: "liang-zhang"
-role: "Postdoctoral Fellow"
+role: "博士後研究員"
 status: "alumni"
 years: "2022-2024"
-current_position: "Lecturer, Southeast University"
+current_position: "講師，東南大學"
 website: "https://ins.seu.edu.cn/zl/list.htm"
 photo: "/images/people/liang-zhang.jpg"
 sort_order: 202
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/liang-zhang/">英文版本</a>。</aside>

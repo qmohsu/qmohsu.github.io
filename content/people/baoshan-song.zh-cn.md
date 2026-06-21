@@ -1,7 +1,7 @@
 ---
 title: "Baoshan Song"
 slug: "baoshan-song"
-role: "PhD Student"
+role: "博士生"
 status: "current"
 years: "2023-present"
 scholar: "https://scholar.google.com/citations?user=Uqn8268AAAAJ&hl=en"
@@ -11,4 +11,4 @@ photo: "/images/people/baoshan-song.jpg"
 sort_order: 14
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/baoshan-song/">英文版本</a>。</aside>
+研究兴趣：凸优化、因子图优化（FGO）、稳健估计及其在城市环境多传感器融合导航中的应用。

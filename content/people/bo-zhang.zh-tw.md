@@ -1,13 +1,11 @@
 ---
 title: "Bo Zhang"
 slug: "bo-zhang"
-role: "Research Assistant"
+role: "研究助理"
 status: "alumni"
 years: "2019-2021"
-current_position: "Senior Research Engineer, MooVita Pte Ltd"
+current_position: "資深研究工程師，MooVita Pte Ltd"
 linkedin: "https://www.linkedin.com/in/bo-z-a25762148/"
 photo: "/images/people/bo-zhang.jpg"
 sort_order: 207
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/bo-zhang/">英文版本</a>。</aside>

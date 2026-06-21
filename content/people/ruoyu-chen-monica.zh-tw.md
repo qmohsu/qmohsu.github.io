@@ -1,7 +1,7 @@
 ---
 title: "Ruoyu Chen (Monica)"
 slug: "ruoyu-chen-monica"
-role: "Administrative Staff"
+role: "行政人員"
 status: "alumni"
 years: "2025-2026"
 linkedin: "https://www.linkedin.com/in/monica-chen-444680336"
@@ -9,4 +9,4 @@ photo: "/images/people/ruoyu-chen-monica.jpg"
 sort_order: 262
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/ruoyu-chen-monica/">英文版本</a>。</aside>
+Monica 曾任 IPNL 的專案經理（2025–2026）。她擁有浙江大學電腦視覺碩士學位，並具備於比亞迪（BYD）管理 AI 專案的經驗，協助 AI／機器人專案的端到端交付，推動商業化、產業合作與實際場景部署。

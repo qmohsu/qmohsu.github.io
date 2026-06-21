@@ -16,14 +16,14 @@
 
   {{ with .Params.thesis }}
   <div class="section">
-    <h2>{{ if eq .Lang "zh-cn" }}学位论文{{ else if eq .Lang "zh-tw" }}學位論文{{ else }}Thesis{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}学位论文{{ else if eq site.Language.Lang "zh-tw" }}學位論文{{ else }}Thesis{{ end }}</h2>
     <p>{{ . }}</p>
   </div>
   {{ end }}
 
   {{ if eq .Params.status "alumni" }}
     {{ with .Params.current_position }}
-    <p><strong>Current position:</strong> {{ . }}</p>
+    <p><strong>{{ if eq site.Language.Lang "zh-cn" }}现职：{{ else if eq site.Language.Lang "zh-tw" }}現職：{{ else }}Current position:{{ end }}</strong> {{ . }}</p>
     {{ end }}
   {{ end }}
 
@@ -31,7 +31,7 @@
   {{ $projects := where (where .Site.RegularPages "Section" "projects") ".Params.people" "intersect" (slice $personSlug) }}
   {{ with $projects }}
   <div class="section">
-    <h2>{{ if eq .Lang "zh-cn" }}项目{{ else if eq .Lang "zh-tw" }}專案{{ else }}Projects{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}项目{{ else if eq site.Language.Lang "zh-tw" }}專案{{ else }}Projects{{ end }}</h2>
     <ul class="person-projects">
     {{ range . }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.status }} <span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}</li>
@@ -44,7 +44,7 @@
   {{ with $pillarData }}
     {{ with .pillars }}
     <div class="section">
-      <h2>{{ if eq .Lang "zh-cn" }}研究方向{{ else if eq .Lang "zh-tw" }}研究方向{{ else }}Research Pillars{{ end }}</h2>
+      <h2>{{ if eq site.Language.Lang "zh-cn" }}研究方向{{ else if eq site.Language.Lang "zh-tw" }}研究方向{{ else }}Research Pillars{{ end }}</h2>
       <div class="people-pills">
       {{ range first 2 . }}
         {{ $pillarPage := $.Site.GetPage (printf "/research/%s" .slug) }}
@@ -61,7 +61,7 @@
   <div class="profile-links">
     {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-linkedin"><span class="profile-link-icon">in</span><span class="profile-link-label">LinkedIn</span></a>{{ end }}
     {{ with .Params.scholar }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-scholar"><span class="profile-link-icon">GS</span><span class="profile-link-label">Google Scholar</span></a>{{ end }}
-    {{ with .Params.website }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-website"><span class="profile-link-icon">↗</span><span class="profile-link-label">Website</span></a>{{ end }}
+    {{ with .Params.website }}<a href="{{ . }}" target="_blank" rel="noopener" class="profile-link profile-link-website"><span class="profile-link-icon">↗</span><span class="profile-link-label">{{ if eq site.Language.Lang "zh-cn" }}网站{{ else if eq site.Language.Lang "zh-tw" }}網站{{ else }}Website{{ end }}</span></a>{{ end }}
   </div>
   {{ end }}
 </article>

@@ -1,12 +1,10 @@
 ---
 title: "Ronghe Jin"
 slug: "ronghe-jin"
-role: "Postdoctoral Fellow"
+role: "博士後研究員"
 status: "alumni"
 years: "2022-2024"
-current_position: "Researcher (Associate), Wuhan University"
+current_position: "武漢大學副研究員"
 photo: ""
 sort_order: 211
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/ronghe-jin/">英文版本</a>。</aside>

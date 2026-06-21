@@ -1,13 +1,11 @@
 ---
 title: "Nikki Yan-Tung Leung"
 slug: "nikki-leung"
-role: "MSc Student"
+role: "硕士研究生"
 status: "alumni"
 years: "2021-2024"
-thesis: "Cost-effective Camera Localization with Reliable Initialization Aided by Prior Point Clouds Maps for Level 3 Autonomous Driving Vehicles"
+thesis: "面向 L3 级自动驾驶车辆、由先验点云地图辅助实现可靠初始化的高性价比相机定位"
 linkedin: "https://www.linkedin.com/in/nikkie-leung/"
 photo: "/images/people/nikki-leung.jpg"
 sort_order: 105
 ---
-
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/nikki-leung/">英文版本</a>。</aside>

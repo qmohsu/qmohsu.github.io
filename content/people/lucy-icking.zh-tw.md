@@ -1,13 +1,13 @@
 ---
 title: "Lucy Icking"
 slug: "lucy-icking"
-role: "Visiting PhD Student"
+role: "訪問博士生"
 status: "alumni"
 years: "2022"
-current_position: "Co-founder, onocoy"
+current_position: "共同創辦人，onocoy"
 linkedin: "https://www.linkedin.com/in/lucy-icking/"
 photo: "/images/people/lucy-icking.jpg"
 sort_order: 251
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/lucy-icking/">英文版本</a>。</aside>
+來自德國漢諾威大學的訪問學者。

@@ -1,11 +1,11 @@
 ---
 title: "Jiachen Zhang"
 slug: "jiachen-zhang"
-role: "Postdoctoral Fellow"
+role: "博士后研究员"
 status: "alumni"
 years: "2022-2024"
 photo: ""
 sort_order: 212
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/jiachen-zhang/">英文版本</a>。</aside>
+2022 年作为天津大学访问博士生加入；2023 年转为博士后研究员。

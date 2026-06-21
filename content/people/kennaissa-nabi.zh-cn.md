@@ -1,7 +1,7 @@
 ---
 title: "Kennaissa Kebeto Nabi"
 slug: "kennaissa-nabi"
-role: "Intern"
+role: "实习生"
 status: "alumni"
 years: "2025"
 current_position: "LEDA Career Fellow"
@@ -10,4 +10,4 @@ photo: "/images/people/kennaissa-nabi.jpg"
 sort_order: 256
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/kennaissa-nabi/">英文版本</a>。</aside>
+来自斯坦福大学的暑期实习生。

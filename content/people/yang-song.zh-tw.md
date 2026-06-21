@@ -1,12 +1,12 @@
 ---
 title: "Yang Song"
 slug: "yang-song"
-role: "MSc Student"
+role: "碩士生"
 status: "alumni"
 years: "2018-2020"
-thesis: "Deep Learning-based Adaptive UWB/INS Integrated Navigation System Via Factor Graph Optimization for UAV Indoor Localization"
+thesis: "基於深度學習並透過因子圖最佳化之自適應UWB/INS整合導航系統於無人機室內定位"
 photo: ""
 sort_order: 108
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/yang-song/">英文版本</a>。</aside>
+以優異成績畢業。

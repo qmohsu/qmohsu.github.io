@@ -1,14 +1,12 @@
 ---
 title: "Penggao Yan"
 slug: "penggao-yan"
-role: "Postdoctoral Fellow"
+role: "博士后研究员"
 status: "current"
 years: "2024-present"
-thesis: "Integrity monitoring with non-Gaussian nominal errors for safety-critical GNSS navigation"
+thesis: "面向安全攸关 GNSS 导航、考虑非高斯标称误差的完好性监测"
 linkedin: "https://www.linkedin.com/in/penggao-yan-327239226/"
 website: "https://jasonyanxx.github.io/"
 photo: "/images/people/penggao-yan.jpg"
 sort_order: 105
 ---
-
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/penggao-yan/">英文版本</a>。</aside>

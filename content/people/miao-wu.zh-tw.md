@@ -1,12 +1,10 @@
 ---
 title: "Miao Wu"
 slug: "miao-wu"
-role: "MSc Student"
+role: "碩士生"
 status: "alumni"
 years: "2021-2023"
-thesis: "Visual positioning based on sky-visibility matching with 3D city models"
+thesis: "基於天空可見度與 3D 城市模型匹配的視覺定位"
 photo: ""
 sort_order: 122
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/miao-wu/">英文版本</a>。</aside>

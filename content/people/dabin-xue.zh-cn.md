@@ -1,13 +1,11 @@
 ---
 title: "Dabin Xue"
 slug: "dabin-xue"
-role: "Research Assistant"
+role: "研究助理"
 status: "alumni"
 years: "2018-2019"
-current_position: "Visiting Researcher, UNSW"
+current_position: "访问研究员，UNSW"
 website: "https://www.unsw.edu.au/staff/dabin-xue"
 photo: "/images/people/dabin-xue.jpg"
 sort_order: 209
 ---
-
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/dabin-xue/">英文版本</a>。</aside>

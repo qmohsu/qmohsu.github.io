@@ -1,11 +1,15 @@
 ---
 title: "Cunyi Yin"
 slug: "cunyi-yin"
-role: "Postdoctoral Fellow"
+role: "博士后研究员"
 status: "current"
 years: "2025-present"
 photo: "/images/people/cunyi-yin.jpg"
 sort_order: 110
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/cunyi-yin/">英文版本</a>。</aside>
+博士（FZU），工学学士（CUIT）
+
+**研究方向：** 无线感知、物联网、人体活动识别与机器学习
+
+**邮箱：** cunyiyin@polyu.edu.hk

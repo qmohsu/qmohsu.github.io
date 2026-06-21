@@ -1,14 +1,12 @@
 ---
 title: "Xiwei Bai"
 slug: "xiwei-bai"
-role: "PhD Student"
+role: "博士生"
 status: "alumni"
 years: "2019-2022"
-thesis: "Outlier-aware GNSS/INS/Visual Integrated Navigation System in Urban Canyons"
-current_position: "Postdoc in ISE, PolyU"
+thesis: "城市峡谷中具备外点感知能力的 GNSS/INS/视觉组合导航系统"
+current_position: "香港理工大学 ISE 博士后"
 linkedin: "https://www.linkedin.com/in/xiwei-bai-ab540b272/"
 photo: "/images/people/xiwei-bai.jpg"
 sort_order: 102
 ---
-
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/xiwei-bai/">英文版本</a>。</aside>

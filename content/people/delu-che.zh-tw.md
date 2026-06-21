@@ -1,11 +1,11 @@
 ---
 title: "Delu Che"
 slug: "delu-che"
-role: "Visiting PhD Student"
+role: "訪問博士生"
 status: "alumni"
 years: "2024"
 photo: ""
 sort_order: 257
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/delu-che/">英文版本</a>。</aside>
+來自中國中國科學院的訪問學者。

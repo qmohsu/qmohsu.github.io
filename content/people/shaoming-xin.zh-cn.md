@@ -1,13 +1,13 @@
 ---
 title: "Shaoming Xin"
 slug: "shaoming-xin"
-role: "Visiting PhD Student"
+role: "访问博士生"
 status: "alumni"
 years: "2021"
-current_position: "Algorithm Engineer, Baidu"
+current_position: "百度算法工程师"
 linkedin: "https://www.linkedin.com/in/shaoming-xin/"
 photo: ""
 sort_order: 252
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/people/shaoming-xin/">英文版本</a>。</aside>
+来自中国武汉大学的访问学者。

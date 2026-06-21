@@ -2,7 +2,7 @@
      and the homepage. Non-interactive image grid with caption overlays. */}}
 {{ with site.Data.lab_life }}{{ with .photos }}
 <section class="section">
-  <h2>{{ if eq .Lang "zh-cn" }}实验室生活{{ else if eq .Lang "zh-tw" }}實驗室生活{{ else }}Lab Life{{ end }}</h2>
+  <h2>{{ if eq site.Language.Lang "zh-cn" }}实验室生活{{ else if eq site.Language.Lang "zh-tw" }}實驗室生活{{ else }}Lab Life{{ end }}</h2>
   <div class="highlights-grid lab-life-grid">
     {{ range . }}
     <figure class="lab-life-card">

@@ -1,13 +1,11 @@
 ---
 title: "Yue Jiang"
 slug: "yue-jiang"
-role: "Postdoctoral Fellow"
+role: "博士後研究員"
 status: "alumni"
 years: "2019-2020"
-current_position: "Associate Professor, Hohai University"
+current_position: "副教授，河海大學"
 website: "https://jszy.hhu.edu.cn/yj2/"
 photo: "/images/people/yue-jiang.jpg"
 sort_order: 206
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/yue-jiang/">英文版本</a>。</aside>

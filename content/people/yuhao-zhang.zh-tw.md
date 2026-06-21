@@ -1,10 +1,8 @@
 ---
 title: "Yuhao Zhang"
 slug: "yuhao-zhang"
-role: "MSc Student"
+role: "碩士生"
 status: "current"
 years: "2026-present"
 sort_order: 321
 ---
-
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/people/yuhao-zhang/">英文版本</a>。</aside>
