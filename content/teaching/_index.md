@@ -84,26 +84,6 @@ The arc — freshman GitHub project → URIS research → Forbes-recognised, dep
 
 ---
 
-## Roles & Programme Leadership
-
-| Role | Period | Department / Programme |
-|---|---|---|
-| **Associate Head (Learning and Teaching)** | Jul 2021 – Jun 2025 | AAE |
-| **Chairman, Departmental Learning and Teaching Committee** | 2020 – 2025 | AAE |
-| **Member, Faculty Learning and Teaching Committee** | 2020 – 2025 | FENG |
-| **Programme Leader, BEng (Hons) in Aviation Engineering** | 2018 – 2020 | AE |
-| **Deputy Programme Leader, BEng Aviation Engineering** | 2017 – 2018 | AE |
-| **Quality Assurance Manager, PolyU Flight Training Organisation** | 2019 – 2020 | FTO (HKIE / CAD509(A)) |
-| **Co-founding academic staff** | 2016 – present | AAE (first appointed; helped establish the department) |
-
-**HKIE Accreditation.** Led the AE programme through **HKIE provisional accreditation in 2018** and **full accreditation in 2020** — coordinating submission documents, presenting to the visiting panel, and developing the learning-outcomes assessment plan. Outcome: 5-year provisional accreditation across ACE, LTE, and MIE streams; full accreditation after the first graduating cohort.
-
-**Programme ranking.** During tenure as Programme Leader, the AE programme rose from **3rd to 2nd in FENG by DSE entry marks** (2019/20 cohort) — only behind biomedical engineering.
-
-At **university level**, Prof. Hsu has also served on the Advisory Committee on Online Education (ACOE) and the ETTE Organizing Committee, and as an **EDC Blended Learning Ambassador** for AAE.
-
----
-
 ## Funded Teaching Programs (as PI)
 
 - **PolyU Online Teaching Development Grant** — *Quality Incentive Scheme on Online Teaching*, **HK$960,000** (PI), 2021–2023. Project focus: systematic development of online group collaborations for a 4-year undergraduate programme through a global online software collaboration platform (GitHub).
@@ -123,21 +103,6 @@ Beyond formal teaching, Prof. Hsu has delivered widely-watched public lectures o
 Earlier: [BeiDou Satellite Navigation System and Our Daily Lives](/news/2021-polyu-public-aerospace-beidou/) — PolyU Public Aerospace Series, November 2021.
 
 **STEM outreach** — recurring workshops (e.g., *Building a Robot from Scratch*) for secondary-school students; **HK Youth Aerospace Innovation Competition** (香港青少年航天創新大賽) recurring judging role.
-
----
-
-## FYP Supervision and Student Development
-
-| Year | FYP groups | UG research interns | Other |
-|---|---|---|---|
-| 2016-17 | 1 capstone | — | LAM Pui Yan — autonomous robot car with GPS+Radar |
-| 2017-18 | 4 FYPs | — | ME FYP nominated for ASM Technology Award 2018 |
-| 2018-19 | 3 ATE FYP × 3 students | 2 UG research interns | ATE FYP nominated for ASM Technology Award 2019; 1 international intern (Oman) |
-| 2019-20 | 5 FYP groups | — | — |
-| 2020-21 | 5 FYP × group of 3 = 15 students | 5 UG research interns | 3 consecutive STEM internships |
-| 2021–present | continuing | URIS pipeline ongoing | LifeSparrow start-up (above) emerged from this pipeline |
-
-Also developed an **AAE Academic Advisor (AA) family tree system** — a pilot to formalize the AA mentorship structure with periodic AA-student gatherings.
 
 ---
 

@@ -62,6 +62,10 @@ defaultContentLanguageInSubdir = true
       url = "/projects/"
       weight = 3
     [[languages.en.menu.main]]
+      name = "Teaching"
+      url = "/teaching/"
+      weight = 4
+    [[languages.en.menu.main]]
       name = "Publications"
       url = "/publications/"
       weight = 5
@@ -103,6 +107,10 @@ defaultContentLanguageInSubdir = true
       url = "/projects/"
       weight = 3
     [[languages.zh-cn.menu.main]]
+      name = "教学"
+      url = "/teaching/"
+      weight = 4
+    [[languages.zh-cn.menu.main]]
       name = "论文"
       url = "/publications/"
       weight = 5
@@ -143,6 +151,10 @@ defaultContentLanguageInSubdir = true
       name = "研發項目"
       url = "/projects/"
       weight = 3
+    [[languages.zh-tw.menu.main]]
+      name = "教學"
+      url = "/teaching/"
+      weight = 4
     [[languages.zh-tw.menu.main]]
       name = "論文"
       url = "/publications/"
