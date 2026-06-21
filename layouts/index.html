@@ -123,20 +123,10 @@
       {{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
       <div class="stat-card">
         <div class="stat-partner has-logo">
-          <img class="partner-logo" src="{{ "/images/partners/oppo.png" | relURL }}" alt="OPPO" onerror="this.style.display='none'">
-          <span class="stat-partner-text">OPPO</span>
-        </div>
-        <!-- OPPO provenance — confidential testimonial S5 (signed 2025-06-27, OPPO Senior Cooperation Mgr): PolyU AI urban-GNSS (Dr Guohao Zhang) deployed on OPPO premium phones since 2024 Q4 (Find X8 series, 2M+ sold), +50% dense-urban accuracy; OPPO has 400M+ active devices. The Find-X8 / 2M / +50% figures are CONFIDENTIAL — RE-CLEAR with OPPO before publishing them publicly (CLAUDE.md / 05_Supporting_Evidence/_INDEX.md). -->
-        <div class="stat-num">400M+</div>
-        <div class="stat-label">{{ if $cn }}台 OPPO 在用设备{{ else if $tw }}台 OPPO 在用裝置{{ else }}active OPPO devices{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}AI 城市 GNSS 定位,部署于 OPPO 高端机型(张国豪博士);2024 OPPO 优秀产学研伙伴{{ else if $tw }}AI 城市 GNSS 定位,部署於 OPPO 高端機型(張國豪博士);2024 OPPO 優秀產學研夥伴{{ else }}AI urban-GNSS deployed on OPPO premium models (Dr Guohao Zhang); OPPO Excellent Partner 2024{{ end }}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-partner has-logo">
           <img class="partner-logo" src="{{ "/images/partners/android.png" | relURL }}" alt="Android" onerror="this.style.display='none'">
           <span class="stat-partner-text">Android</span>
         </div>
-        <!-- Android provenance — confidential testimonial S7 (signed by Dr Michael Fu, former Android/Google 3DMA-GNSS Tech Lead 2018–2025): PolyU's 3DMA-GNSS work inspired Google's Android Location project; cuts wrong-side-of-street errors up to 90% across ~4,000 cities for 1B+ active Android users (LBS: Lyft/Uber/DoorDash). The 90% / 4,000-cities specifics are CONFIDENTIAL — re-clear before publishing them. -->
+        <!-- Android: PolyU's 3DMA-GNSS work inspired Google's Android Location project (1B+ active Android users). Confidential KPIs (error-reduction % / city count / testimonial source) live in the NST evidence, not in this public source — re-clear before publishing any. -->
         <div class="stat-num">1B+</div>
         <div class="stat-label">{{ if $cn }}安卓活跃用户{{ else if $tw }}Android 活躍用戶{{ else }}active Android users{{ end }}</div>
         <div class="stat-context">{{ if $cn }}3DMA GNSS 启发 Google 安卓定位项目;大幅降低城市峡谷误差{{ else if $tw }}3DMA GNSS 啟發 Google 安卓定位專案;大幅降低城市峽谷誤差{{ else }}3DMA GNSS inspired Google's Android Location project; sharply cut urban-canyon errors{{ end }}</div>
@@ -146,10 +136,20 @@
           <img class="partner-logo" src="{{ "/images/partners/huawei.png" | relURL }}" alt="HUAWEI" onerror="this.style.display='none'">
           <span class="stat-partner-text">HUAWEI</span>
         </div>
-        <!-- Huawei provenance — confidential testimonial S4 (signed 2020-09-28, Huawei Consumer BG Director of Positioning): PolyU 3DMA-GNSS on Huawei flagship smartphones (Mate30/P40), expected >40M units, integrated in HMS Location Kit. CONFIDENTIAL — re-clear before publishing. (Huawei Car BU also adopted the algorithm but released no figure — kept in the partner wall below, no number.) -->
+        <!-- Huawei: 3DMA-GNSS on Huawei flagship smartphones (Mate30/P40, HMS Location Kit). Confidential testimonial source / unit figures live in the NST evidence, not in this public source — re-clear before publishing. (Car BU also adopted the algorithm, no public figure — in the partner wall below.) -->
         <div class="stat-num">40M+</div>
         <div class="stat-label">{{ if $cn }}台华为手机{{ else if $tw }}台華為手機{{ else }}Huawei smartphones{{ end }}</div>
         <div class="stat-context">{{ if $cn }}3DMA GNSS 集成于 Mate30/P40 旗舰机 + HMS 定位{{ else if $tw }}3DMA GNSS 整合於 Mate30/P40 旗艦機 + HMS 定位{{ else }}3DMA GNSS in Mate30/P40 flagships + HMS Location Kit{{ end }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-partner has-logo">
+          <img class="partner-logo" src="{{ "/images/partners/oppo.png" | relURL }}" alt="OPPO" onerror="this.style.display='none'">
+          <span class="stat-partner-text">OPPO</span>
+        </div>
+        <!-- OPPO: deployed on select OPPO premium/flagship models only — NOT OPPO's full device base. The "400M+ active devices" headline was removed 2026-06-21 (misleading: implied our tech ran on all OPPO devices). Confidential KPIs (model names / unit counts / accuracy) live in the NST evidence, not in this public source — re-clear before publishing any. -->
+        <div class="stat-num">Premium</div>
+        <div class="stat-label">{{ if $cn }}OPPO 旗舰机型{{ else if $tw }}OPPO 旗艦機型{{ else }}OPPO flagship models{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}AI 城市 GNSS 定位,部署于 OPPO 高端机型(张国豪博士);2024 OPPO 优秀产学研伙伴{{ else if $tw }}AI 城市 GNSS 定位,部署於 OPPO 高端機型(張國豪博士);2024 OPPO 優秀產學研夥伴{{ else }}AI urban-GNSS deployed on OPPO premium models (Dr Guohao Zhang); OPPO Excellent Partner 2024{{ end }}</div>
       </div>
     </div>
     <div class="home-stats-foot">
@@ -169,6 +169,9 @@
       </div>
       <div class="partner-wall-more"><a href="{{ "/projects/#partners" | relLangURL }}">{{ if $cn }}全部合作{{ else if $tw }}全部合作{{ else }}All partnerships{{ end }} &rarr;</a></div>
       <style>
+      .home-stats .section-eyebrow{text-align:center}
+      .home-stats .section-h2{text-align:center;margin-left:auto;margin-right:auto}
+      .home-stats .stat-grid{grid-template-columns:repeat(3,1fr);max-width:900px;margin-left:auto;margin-right:auto}
       .partner-wall-intro{text-align:center;color:var(--text-secondary);font-size:.9rem;margin:.2rem 0 .9rem}
       .partner-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.7rem .8rem;max-width:980px;margin:0 auto}
       .partner-logos .plogo{display:inline-flex;align-items:center;gap:.55rem;padding:.55rem 1rem;background:#fff;border:1px solid var(--border);border-radius:9px;box-shadow:0 1px 3px rgba(10,24,37,.06)}
@@ -309,7 +312,7 @@
               <h3>{{ if $cn }}城市环境下,基于 CNN 的智能手机 <span class="hi-cyan-text">直接定位</span>。{{ else if $tw }}城市環境下,基於 CNN 的智慧型手機 <span class="hi-cyan-text">直接定位</span>。{{ else }}CNN-based <span class="hi-cyan-text">direct positioning</span> on smartphones in urban environments.{{ end }}</h3>
               <p>{{ if $cn }}从传统间接定位转向端侧深度特征学习 —— 改善城市峡谷里 GNSS 解的稳定性。在北京、上海、深圳、香港的核心商圈完成验证。{{ else if $tw }}從傳統間接定位轉向端側深度特徵學習 —— 改善城市峽谷裡 GNSS 解的穩定性。在北京、上海、深圳、香港的核心商圈完成驗證。{{ else }}Moving from traditional indirect positioning to end-side deep feature learning &mdash; improving GNSS solution stability in urban canyons. Verified across Beijing, Shanghai, Shenzhen, and Hong Kong commercial districts.{{ end }}</p>
               <div class="tab-mini-stats">
-                <div><span class="tab-mini-num">400M+</span><span>{{ if $cn }}台 OPPO 在用设备{{ else if $tw }}台 OPPO 在用裝置{{ else }}active devices{{ end }}</span></div>
+                <div><span class="tab-mini-num">Premium</span><span>{{ if $cn }}OPPO 旗舰机型{{ else if $tw }}OPPO 旗艦機型{{ else }}OPPO flagships{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}4 城市{{ else if $tw }}4 城市{{ else }}4 cities{{ end }}</span><span>{{ if $cn }}商圈联合验证{{ else if $tw }}商圈聯合驗證{{ else }}commercial-district verification{{ end }}</span></div>
                 <div><span class="tab-mini-num">{{ if $cn }}端侧{{ else if $tw }}端側{{ else }}End-side{{ end }}</span><span>{{ if $cn }}可部署{{ else if $tw }}可部署{{ else }}deployable{{ end }}</span></div>
                 <div><span class="tab-mini-num">CNN</span><span>{{ if $cn }}直接定位{{ else if $tw }}直接定位{{ else }}direct positioning{{ end }}</span></div>
