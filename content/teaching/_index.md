@@ -36,7 +36,7 @@ Evaluated with PolyU's Educational Development Centre via a pre/post study of th
 | Online communication | 2.68 | 3.73 | **+39%** | p < 0.001 |
 | Online collaboration | 3.02 | 3.79 | **+25%** | p < 0.001 |
 | Problem-solving | 3.28 | 4.07 | **+24%** | p < 0.001 |
-| Learning-to-learn | 3.37 | 4.02 | **+21%** | p < 0.001 |
+| Learning-to-learn | 3.37 | 4.02 | **+19%** | p < 0.001 |
 
 *Source: EDC pilot study, reported in the ICLT 2025 paper below.*
 
