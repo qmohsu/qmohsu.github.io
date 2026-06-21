@@ -501,23 +501,23 @@
     {{ end }}
     <ul class="record-grid">
       {{ if $cn }}
-        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日内瓦发明展金奖</strong> —— Stairio。</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究经费</strong> · 完成 20 个月谷歌 Android 定位组驻地。</span></li>
+        <li><span class="rec-year">2026</span> <span class="rec-text"><a href="{{ "/news/2026-stairio-geneva-gold/" | relLangURL }}"><strong class="hi-orange-text">日内瓦发明展金奖</strong></a> —— Stairio。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">谷歌不限定研究经费</strong></a> · 完成 20 个月谷歌 Android 定位组驻地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 专利</strong> —— 3D LiDAR 辅助 GNSS NLOS 检测与修正。</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text">理工大校长知识转移奖。</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong> —— 当年全球唯一获奖人。</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong></a> —— 当年全球唯一获奖人。</span></li>
       {{ else if $tw }}
-        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">日內瓦發明展金獎</strong> —— Stairio。</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">谷歌不限定研究經費</strong> · 完成 20 個月谷歌 Android 定位組駐地。</span></li>
+        <li><span class="rec-year">2026</span> <span class="rec-text"><a href="{{ "/news/2026-stairio-geneva-gold/" | relLangURL }}"><strong class="hi-orange-text">日內瓦發明展金獎</strong></a> —— Stairio。</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">谷歌不限定研究經費</strong></a> · 完成 20 個月谷歌 Android 定位組駐地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 專利</strong> —— 3D LiDAR 輔助 GNSS NLOS 檢測與修正。</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text">理工大校長知識轉移獎。</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong> —— 當年全球唯一獲獎人。</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong></a> —— 當年全球唯一獲獎人。</span></li>
       {{ else }}
-        <li><span class="rec-year">2026</span> <span class="rec-text"><strong class="hi-orange-text">Geneva Inventions Gold Medal</strong> &mdash; Stairio.</span></li>
-        <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-orange-text">Google Unrestricted Research Grant</strong> &middot; completion of 20-month residency at Google Android Context.</span></li>
+        <li><span class="rec-year">2026</span> <span class="rec-text"><a href="{{ "/news/2026-stairio-geneva-gold/" | relLangURL }}"><strong class="hi-orange-text">Geneva Inventions Gold Medal</strong></a> &mdash; Stairio.</span></li>
+        <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">Google Unrestricted Research Grant</strong></a> &middot; completion of 20-month residency at Google Android Context.</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US Patent 12 123 961 B2</strong> &mdash; 3D LiDAR-Aided GNSS NLOS Detection and Correction.</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text">PolyU Presidential Award in Knowledge Transfer.</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong> &mdash; sole international recipient for the year.</span></li>
+        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong></a> &mdash; sole international recipient for the year.</span></li>
       {{ end }}
     </ul>
     <p class="home-block-more"><a href="{{ "/news/" | relLangURL }}">{{ if $cn }}近期新闻 &rarr;{{ else if $tw }}近期新聞 &rarr;{{ else }}Recent news &rarr;{{ end }}</a> &middot; <a href="{{ "/publications/" | relLangURL }}">{{ if $cn }}论文 &rarr;{{ else if $tw }}論文 &rarr;{{ else }}Publications &rarr;{{ end }}</a></p>
