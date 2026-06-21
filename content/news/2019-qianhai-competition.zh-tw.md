@@ -3,10 +3,17 @@ title: "前海創新創業大賽獲獎"
 slug: "2019-qianhai-competition"
 date: 2019-12-06
 category: "award"
-summary: "IPNL team received recognition at the Qianhai innovation competition."
+summary: "IPNL 團隊於前海創新競賽獲得肯定。"
 image: "/images/news/20191206a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/news/2019-qianhai-competition/">英文版本</a>。</aside>
+來自香港理工大學智慧定位與導航實驗室（IPNL）的團隊，於中國深圳舉辦的前海創新創業競賽中獲得肯定。[前海深港現代服務業合作區](http://www.szqh.gov.cn/) 是中國中央政府於深圳西部設立的重要經濟特區，旨在深化深圳與香港之間的合作，並作為創新、金融服務與科技發展的樞紐。
+
+前海創新競賽匯聚來自大灣區各大學、研究機構與新創公司的團隊，發表具商業潛力的技術導向解決方案。IPNL 團隊發表了與適用於都市環境的定位與導航技術相關的研究，運用實驗室在 GNSS 解決方案、感測器融合與智慧運輸系統方面的專長。這些技術對於深港走廊尤為切合，當地密集的都市發展為可靠定位帶來了重大挑戰。
+
+參與此類競賽反映了 IPNL 致力於將學術研究轉化為實際應用的決心。大灣區自駕車、智慧城市基礎設施與物流系統的快速發展，創造了對 IPNL 所開發的強健都市定位技術的強烈需求。此次獲得肯定凸顯了實驗室研究在學術領域之外，為現實世界創新做出貢獻的潛力。
+
+![Competition](/images/news/20191206b.jpg)
+![Award ceremony](/images/news/20191206c.jpg)

@@ -3,10 +3,12 @@ title: "IPNL 萬聖節派對"
 slug: "2021-halloween"
 date: 2021-11-30
 category: "event"
-summary: "IPNL celebrated with a fun Halloween party."
+summary: "IPNL 以一場歡樂的萬聖節派對共同慶祝。"
 image: "/images/news/20211130a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/news/2021-halloween/">英文版本</a>。</aside>
+IPNL 團隊於 2021 年底齊聚舉辦了一場萬聖節主題慶祝活動，為實驗室帶來繽紛色彩與創意。成員們以服裝與裝飾投入這個節日的氣氛，將平日的研究工作空間化為熱鬧的歡聚場所。這場派對為團隊提供了一個亟需的機會，得以放鬆並享受彼此的陪伴，尤其是在歷經持續疫情期間推動研究活動的種種挑戰之後。
+
+除了服裝與點心之外，這場萬聖節派對也反映了 IPNL 文化的一個重要面向：在研究團隊內維繫穩固的人際連結。此類社交活動在建立支撐實驗室高效協作所需的信任與情誼方面，扮演著寶貴的角色。對於可能長時間投入繁重技術工作的學生與研究人員而言，一個下午一同輕鬆歡樂的時光，對於維持士氣與正向的團隊氛圍大有助益。

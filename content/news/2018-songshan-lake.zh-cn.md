@@ -3,10 +3,16 @@ title: "松山湖创新创业大赛"
 slug: "2018-songshan-lake"
 date: 2018-01-12
 category: "award"
-summary: "IPNL participated in the Songshan Lake innovation competition."
+summary: "IPNL 参加了松山湖创新创业大赛。"
 image: "/images/news/20180112a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/news/2018-songshan-lake/">英文版本</a>。</aside>
+IPNL 参加了在东莞松山湖举办的一场创新创业大赛，松山湖是粤港澳大湾区首屈一指的高新技术开发区之一。松山湖高新技术产业开发区已发展成为先进技术企业、研究实验室与创新驱动型企业的重要枢纽，使其成为展示前沿定位与导航技术的合适场所。
+
+IPNL 团队展示了他们面向城市环境的智能定位解决方案研究，演示了 GNSS 与传感器融合技术的实际应用。此类大赛在弥合学术研究与产业需求之间的鸿沟方面发挥着重要作用，让高校团队能够从产业专家处获得反馈，并探索通往技术转移与商业化的路径。
+
+![Competition](/images/news/20180112b.jpg)
+
+此次活动汇聚了来自大湾区各高校与研究机构的团队，凸显了该地区致力于推动科技创新的决心。对 IPNL 而言，这段经历强化了其研究的现实意义，并为与东莞科技生态系统中的产业合作伙伴开展潜在合作打开了大门。

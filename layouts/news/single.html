@@ -8,14 +8,14 @@
   {{ if or .Params.image .Params.images }}
   {{ $imgs := .Params.images | default (slice .Params.image) }}
   <div class="image-stack">
-    {{ if gt (len $imgs) 1 }}<h2>Photos</h2>{{ end }}
+    {{ if gt (len $imgs) 1 }}<h2>{{ if eq .Lang "zh-cn" }}照片{{ else if eq .Lang "zh-tw" }}照片{{ else }}Photos{{ end }}</h2>{{ end }}
     {{ range $imgs }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
   </div>
   {{ end }}
   {{ if or .Params.video .Params.videos }}
   {{ $vids := .Params.videos | default (slice .Params.video) }}
   <div class="video-stack">
-    {{ if gt (len $vids) 1 }}<h2>Videos</h2>{{ end }}
+    {{ if gt (len $vids) 1 }}<h2>{{ if eq .Lang "zh-cn" }}视频{{ else if eq .Lang "zh-tw" }}影片{{ else }}Videos{{ end }}</h2>{{ end }}
     {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
   </div>
   {{ end }}

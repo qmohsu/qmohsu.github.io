@@ -3,10 +3,16 @@ title: "理工大 GNSS 研讨会"
 slug: "2023-gnss-seminar"
 date: 2023-03-20
 category: "event"
-summary: "IPNL hosted a GNSS research seminar at The Hong Kong Polytechnic University."
+summary: "IPNL 在香港理工大学主办了一场 GNSS 研究研讨会。"
 image: "/images/news/20230320a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/news/2023-gnss-seminar/">英文版本</a>。</aside>
+IPNL 在 [香港理工大学](https://www.polyu.edu.hk/)（PolyU）主办了一场 GNSS 研究研讨会，汇聚研究人员、学生和业界专业人士，共同探讨卫星定位与导航领域的最新进展。活动设有多场报告，议题包括多星座 GNSS 处理、城市定位挑战、完好性监测，以及在自主系统和智慧城市中的新兴应用。
+
+该研讨会为与会者提供了一个分享最新发现、就 GNSS 界面临的紧迫挑战交流想法的平台。备受关注的议题包括在密集城市环境中缓解多径和非视距（NLOS）干扰的方法、将 GNSS 与 LiDAR 和惯性测量单元等互补传感器相融合，以及三维城市模型在提升定位精度中的作用。来自学术界和业界的与会者就如何将这些技术转化为实际解决方案贡献了多元的视角。
+
+香港理工大学已确立其作为香港导航与定位研究枢纽的地位，IPNL 在推进城市 GNSS 和多传感器融合领域的前沿水平方面发挥着核心作用。通过举办此类研讨会，IPNL 促进了研究界与业界利益相关方之间的对话，帮助弥合基础研究与实际部署之间的鸿沟。踊跃的出席和热烈的讨论印证了在香港及其他大城市特有的复杂环境中，对可靠且精确定位解决方案的持续需求。
+
+![Seminar](/images/news/20230320b.png)

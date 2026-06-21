@@ -1,12 +1,18 @@
 ---
-title: "访问应科院 (ASTRI) 实验室"
+title: "访问应科院（ASTRI）实验室"
 slug: "2022-astri-visit"
 date: 2022-10-26
 category: "event"
-summary: "IPNL team visited ASTRI (Applied Science and Technology Research Institute)."
+summary: "IPNL 团队参访了应用科技研究院（ASTRI）。"
 image: "/images/news/20221026a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/news/2022-astri-visit/">英文版本</a>。</aside>
+IPNL 团队参访了位于香港的 [应用科技研究院](https://www.astri.org)（ASTRI），进行技术交流与合作洽谈。应科院是香港旗舰级的应用研发中心，由香港特区政府创新科技署设立。其研究涵盖通信、人工智能、物联网和智慧城市基础设施等多个技术领域，致力于弥合学术研究与产业应用之间的鸿沟。
+
+参访期间，IPNL 与应科院的研究人员就与香港智慧城市发展相关的定位与导航技术交换了意见。讨论议题包括在密集城市环境中提供可靠位置服务的挑战、将 GNSS 与其他传感模态相融合以提升精度的潜力，以及定位技术在智能交通和基于位置服务等应用中的作用。应科院的应用研究视角与 IPNL 在 GNSS 基础研究和多传感器融合方面的优势相得益彰。
+
+此次参访凸显了产学合作在将实验室研究转化为可部署解决方案中的重要性。香港独特的城市地貌——高楼林立、街道狭窄，会造成严重的 GNSS 信号衰减——既是一项挑战，也是开发下一代定位系统的理想试验场。像 IPNL 这样的高校实验室与像应科院这样的应用研究机构之间的合作伙伴关系，对于将创新导航技术从研究阶段推向实际落地至关重要。
+
+![Lab visit](/images/news/20221026b.jpg)

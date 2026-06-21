@@ -16,7 +16,7 @@
 
   {{ with .Params.thesis }}
   <div class="section">
-    <h2>Thesis</h2>
+    <h2>{{ if eq .Lang "zh-cn" }}学位论文{{ else if eq .Lang "zh-tw" }}學位論文{{ else }}Thesis{{ end }}</h2>
     <p>{{ . }}</p>
   </div>
   {{ end }}
@@ -31,7 +31,7 @@
   {{ $projects := where (where .Site.RegularPages "Section" "projects") ".Params.people" "intersect" (slice $personSlug) }}
   {{ with $projects }}
   <div class="section">
-    <h2>Projects</h2>
+    <h2>{{ if eq .Lang "zh-cn" }}项目{{ else if eq .Lang "zh-tw" }}專案{{ else }}Projects{{ end }}</h2>
     <ul class="person-projects">
     {{ range . }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.status }} <span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}</li>
@@ -44,7 +44,7 @@
   {{ with $pillarData }}
     {{ with .pillars }}
     <div class="section">
-      <h2>Research Pillars</h2>
+      <h2>{{ if eq .Lang "zh-cn" }}研究方向{{ else if eq .Lang "zh-tw" }}研究方向{{ else }}Research Pillars{{ end }}</h2>
       <div class="people-pills">
       {{ range first 2 . }}
         {{ $pillarPage := $.Site.GetPage (printf "/research/%s" .slug) }}

@@ -3,10 +3,24 @@ title: "IPNL 长洲团聚"
 slug: "2022-cheung-chau"
 date: 2022-03-22
 category: "event"
-summary: "IPNL team enjoyed a gathering trip to Cheung Chau island."
+summary: "IPNL 团队前往长洲岛进行团队聚会出游。"
 image: "/images/news/20220322a.jpg"
 source_type: "legacy_ipnl_migration"
 source_site: "legacy-ipnl"
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/news/2022-cheung-chau/">英文版本</a>。</aside>
+2022 年 3 月，IPNL 团队启程前往长洲——香港深受喜爱的离岛之一——进行一日游。一行人在中环渡轮码头集合，乘船穿越维多利亚港，城市天际线渐渐让位于开阔的水域和周边岛屿的青翠山峦。约 35 分钟的渡轮航程本身就为团队带来了一次有别于日常实验室环境的轻松调剂，让大家在抵达岛上新月形的港湾之前得以聊天放松。
+
+![Team photo](/images/news/20220322b.jpg)
+
+抵达后，团队漫步在长洲迷人的海滨长廊，沿途满是海味店和本地食肆。这座以悠闲氛围和无车街道著称的小岛，是悠然信步的理想之地。一行人沿着岛上的迷你长城步道欣赏海岸风光，饱览南中国海的全景以及脚下嶙峋的礁岸。
+
+![Island scenery](/images/news/20220322c.jpg)
+
+此次出游的一大亮点是在岛上一家海鲜餐厅享用团队午餐，大家围坐长桌分享菜肴、畅谈趣事——这是一种简单却意义深远的方式，让彼此的联系超越了研究本身。轻松随意的氛围让新成员得以在更放松的情境中结识同事，强化了定义这个实验室的协作精神。
+
+![Exploring the island](/images/news/20220322d.jpg)
+
+长洲之行提醒我们：优秀的研究团队不仅建立在共同的学术目标之上，也建立在实验室之外的共同经历之中。IPNL 团队带着焕然一新的精神和重燃的同伴情谊返回校园，迎接春季学期余下的时光。
+
+![Team outing](/images/news/20220322e.jpg)

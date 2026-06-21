@@ -1,14 +1,31 @@
 ---
-title: "受邀于香港汽车运输及驾驶业工会演讲 (2025 年 7 月)"
+title: "受邀在香港汽车交通运输业总工会演讲（2025 年 7 月）"
 slug: "2025-hk-transport-union-talk"
 date: 2025-07-12
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
-summary: "Prof. Li-Ta Hsu was invited to speak at the Hong Kong Motor Transport and Driving Industry Workers General Union forum 'The Intelligent Driving Wave: Transforming Transportation' — bridging academic positioning research with the HK transport workforce. Forum covered by Wen Wei Po."
+summary: "许立达教授受邀在香港汽车交通运输业总工会论坛“智能驾驶浪潮：交通运输业的转型”上发表演讲，将学术定位研究与香港交通运输业从业人员相联系。论坛获《文汇报》报道。"
 source_type: "lab_announcement"
 source_site: "ipnl"
 source_url: "https://www.wenweipo.com/a/202507/12/AP6872189be4b00d0d2169a10f.html"
 image: "/images/news/2025-hk-transport-union-talk.jpg"
 ---
 
-<aside class="translation-stub">该页正在翻译。请暂时查看 <a href="/en/news/2025-hk-transport-union-talk/">英文版本</a>。</aside>
+许立达教授于 2025 年 7 月 12 日受邀在**香港汽车交通运输业总工会**（香港汽車交通運輸業總工會）举办的论坛上发表演讲，论坛主题为*「智能駕駛浪潮下　汽車交通運輸業何去何從」*（*智能驾驶浪潮下，汽车交通运输业何去何从*），地点设于香港伍伦贡学院的演讲厅。
+
+本次论坛汇聚了来自政府、业界、学界和劳工界的**100 多位代表**，探讨自动驾驶技术将如何影响香港交通运输业从业人员——包括职位流失、工人再培训、转型规划，以及在自动驾驶车辆时代保障工人权益的需要。
+
+**论坛的其他演讲嘉宾包括：**
+
+- 吴秋北，香港工业总会主席
+- 何启明，劳工及福利局副局长
+- 钟卓明，运输署高级机械工程师
+- 苏栋哲，香港应用科技研究院智慧出行总监
+- 李耀培，香港汽车工业协会名誉会长
+- 李晓亮，深圳联合飞机科技总经理
+
+许立达教授的演讲将本实验室在智能车辆定位方面的学术研究（包括面向智能交通的车辆自诊断系统系列工作）与香港交通运输业从业人员的实际关切相联系。工会领袖林伟江在论坛上强调，发展*"必须以人为本"*，并呼吁在推行任何自动驾驶车辆方案的同时，制定详尽的工人安置和转型计划。
+
+此类活动延续了本实验室的公共社区服务工作，与每年定期担任香港青少年航天創新大賽（香港青少年航天创新大赛）评委的角色相辅相成。
+
+*图片来源及全文：[《文汇报》，2025 年 7 月 12 日](https://www.wenweipo.com/a/202507/12/AP6872189be4b00d0d2169a10f.html)。*

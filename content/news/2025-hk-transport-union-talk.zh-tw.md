@@ -1,14 +1,31 @@
 ---
-title: "受邀於香港汽車運輸及駕駛業工會演講 (2025 年 7 月)"
+title: "獲邀於香港汽車交通運輸業總工會演講（2025 年 7 月）"
 slug: "2025-hk-transport-union-talk"
 date: 2025-07-12
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
-summary: "Prof. Li-Ta Hsu was invited to speak at the Hong Kong Motor Transport and Driving Industry Workers General Union forum 'The Intelligent Driving Wave: Transforming Transportation' — bridging academic positioning research with the HK transport workforce. Forum covered by Wen Wei Po."
+summary: "許立達教授獲邀於香港汽車交通運輸業總工會論壇「智能駕駛浪潮下　汽車交通運輸業何去何從」中演講——將學術定位研究與香港交通運輸從業人員連結起來。論壇獲文匯報報導。"
 source_type: "lab_announcement"
 source_site: "ipnl"
 source_url: "https://www.wenweipo.com/a/202507/12/AP6872189be4b00d0d2169a10f.html"
 image: "/images/news/2025-hk-transport-union-talk.jpg"
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/news/2025-hk-transport-union-talk/">英文版本</a>。</aside>
+許立達教授於 2025 年 7 月 12 日獲邀在**香港汽車交通運輸業總工會**（香港汽車交通運輸業總工會）舉辦、題為*「智能駕駛浪潮下　汽車交通運輸業何去何從」*的論壇中演講，地點為香港伍倫貢學院演講廳。
+
+該論壇匯聚了來自政府、業界、學界與勞工界的**逾 100 位代表**，探討自動駕駛技術將如何影響香港交通運輸從業人員——包括職位流失、工人再培訓、轉型規劃，以及在自動駕駛車輛時代保障工人的需要。
+
+**論壇其他講者包括：**
+
+- 吳秋北，香港工業總會主席
+- 何啟明，勞工及福利局副局長
+- 鍾卓明，運輸署高級機械工程師
+- 蘇東子，香港應用科技研究院智慧出行總監
+- 李耀培，香港汽車工業學會榮譽會長
+- 李曉亮，深圳聯合飛機科技總經理
+
+許教授的演講將實驗室在智能車輛定位方面的學術研究（包括「智能交通車輛自我診斷系統」這條研究主線）與香港交通運輸從業人員的實際關切連結起來。工會領袖林偉江在論壇上強調，發展*「必須以人為本」*，並呼籲在推行任何自動駕駛車輛的同時，制定詳盡的工人安置與轉型計劃。
+
+此類活動延續了實驗室的公眾社區服務主線，與每年參與評審的香港青少年航天創新大賽相輔相成。
+
+*相片來源及全文：[文匯報，2025 年 7 月 12 日](https://www.wenweipo.com/a/202507/12/AP6872189be4b00d0d2169a10f.html)。*
