@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS/On-Board Inertial Sensor Integration with the Aid of 3D Building Map for Lane-Level Vehicle Self-Localization in Urban Canyon"
+slug: "2016-gnsson-board-inertial-sensor-integration-with-the-aid-of-3d"
 authors:
   - "Gu Y."
   - "Hsu L. T."

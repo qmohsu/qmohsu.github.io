@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Hong Kong UrbanNav: An open-source multisensory dataset for benchmarking urban navigation algorithms"
+slug: "2023-hong-kong-urbannav-an-open-source-multisensory-dataset-for"
 authors:
   - "Hsu, L. T."
   - "Huang, F."

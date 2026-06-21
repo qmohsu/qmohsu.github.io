@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D LiDAR Aided GNSS NLOS Correction by Direction-of-Arrival Estimation Using Doppler Measurements in Urban Canyons"
+slug: "2025-3d-lidar-aided-gnss-nlos-correction-by-direction-of-arrival"
 authors:
   - "Liu, X."
   - "Wen, W."

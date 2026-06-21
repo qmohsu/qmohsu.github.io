@@ -1,0 +1,150 @@
+{{- $cn := eq .Page.Lang "zh-cn" -}}
+{{- $tw := eq .Page.Lang "zh-tw" -}}
+
+{{- $s1Name := cond $cn "信号" (cond $tw "信號" "Signal") -}}
+{{- $s2Name := cond $cn "测量" (cond $tw "測量" "Measurement") -}}
+{{- $s3Name := cond $cn "环境" (cond $tw "環境" "Environment") -}}
+{{- $s4Name := cond $cn "估计" (cond $tw "估計" "Estimation") -}}
+{{- $s5Name := cond $cn "完好性" (cond $tw "完整性" "Integrity") -}}
+{{- $s6Name := cond $cn "应用" (cond $tw "應用" "Application") -}}
+
+{{- $s1Sub := cond $cn "SDR · 跟踪 · 矢量跟踪" (cond $tw "SDR · 追蹤 · 向量追蹤" "SDR · tracking · VT") -}}
+{{- $s2Sub := cond $cn "伪距 · 载波 · 多普勒" (cond $tw "偽距 · 載波 · 都卜勒" "pseudorange · carrier · Doppler") -}}
+{{- $s3Sub := cond $cn "3D 城市 · 天空可视性" (cond $tw "3D 城市 · 天空可視性" "3D city · sky visibility") -}}
+{{- $s4Sub := cond $cn "因子图 · GNSS/INS · RTK" "factor graph · GNSS/INS · RTK" -}}
+{{- $s5Sub := cond $cn "故障检测 · 保护级" (cond $tw "故障偵測 · 保護等級" "fault detection · protection level") -}}
+{{- $s6Sub := cond $cn "机器人 · 车辆 · 无人机" (cond $tw "機器人 · 車輛 · 無人機" "robots · vehicles · drones") -}}
+
+{{- $s1Tags := "SDR · acquisition · tracking · vector tracking · L1/L5 · direct position estimation · correlator features" -}}
+{{- $s2Tags := "pseudorange · carrier phase · Doppler · C/N0 · uncertainty modeling · quality indicators" -}}
+{{- $s3Tags := "3D city models · LiDAR maps · sky visibility · ray tracing · digital twins · NLOS / multipath models" -}}
+{{- $s4Tags := "factor graph optimization · GNSS/INS · RTK · PPP-RTK · multi-sensor fusion · smoothing" -}}
+{{- $s5Tags := "fault detection · overbounding · protection levels · safety-quantifiable localization" -}}
+{{- $s6Tags := cond $cn "机器人 · 车辆 · 无人机 · 智能手机 · 可穿戴 · 民航 · 室内/室外系统" (cond $tw "機器人 · 車輛 · 無人機 · 智慧型手機 · 穿戴裝置 · 民航 · 室內/室外系統" "robots · vehicles · drones · smartphones · wearables · aviation · indoor / outdoor systems") -}}
+
+{{- $hint := cond $cn "悬停或点击查看每一层" (cond $tw "懸停或點擊查看每一層" "Hover or click any stage") -}}
+{{- $flowLabel := cond $cn "原始信号 → 安全可信位置" (cond $tw "原始訊號 → 安全可信位置" "Raw signal → safe trustworthy position") -}}
+
+<div class="pnt-viz" data-pnt-viz>
+  <svg class="pnt-viz-svg" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" aria-label="IPNL PNT stack pipeline">
+    <defs>
+      <pattern id="pnt-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="0.8" fill="rgba(110,122,208,0.14)"/>
+      </pattern>
+      <linearGradient id="pnt-flow-grad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"  stop-color="#6E7AD0" stop-opacity="0.95"/>
+        <stop offset="60%" stop-color="#6E7AD0" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#D3313A" stop-opacity="0.95"/>
+      </linearGradient>
+      <linearGradient id="pnt-thumb-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="#161B40" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#161B40" stop-opacity="0.92"/>
+      </linearGradient>
+      <radialGradient id="pnt-fill-cyan" cx="35%" cy="35%">
+        <stop offset="0%"  stop-color="#E8EBFA"/>
+        <stop offset="55%" stop-color="#6E7AD0"/>
+        <stop offset="100%" stop-color="#1E2A6E"/>
+      </radialGradient>
+      <radialGradient id="pnt-fill-orange" cx="35%" cy="35%">
+        <stop offset="0%"  stop-color="#FBE0DA"/>
+        <stop offset="55%" stop-color="#E0533D"/>
+        <stop offset="100%" stop-color="#7A1E24"/>
+      </radialGradient>
+      <radialGradient id="pnt-fill-final" cx="35%" cy="35%">
+        <stop offset="0%"  stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#9FB0F0"/>
+        <stop offset="100%" stop-color="#1E2A6E"/>
+      </radialGradient>
+      <filter id="pnt-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="pnt-glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      {{/* Per-node clip-paths for thumbnail rounded corners */}}
+      {{ range $idx, $x := slice 100 300 500 700 900 1100 }}
+        <clipPath id="pnt-thumb-clip-{{ $idx }}">
+          <rect x="{{ sub $x 75 }}" y="20" width="150" height="90" rx="6"/>
+        </clipPath>
+      {{ end }}
+    </defs>
+
+    <rect width="1200" height="380" fill="url(#pnt-grid)"/>
+
+    {{ $imgs := slice
+      "/images/banners/drone-gnss-network.png"
+      "/images/projects/urbannav-vehicle.jpg"
+      "/images/banners/shenzhen-trajectory.png"
+      "/images/cases/huawei-overpass.png"
+      "/images/cases/atm-drone-shield.png"
+      "/images/cases/stairio-robot.jpg"
+    }}
+    {{ $nodes := slice
+      (dict "i" "01" "name" $s1Name "sub" $s1Sub "tags" $s1Tags "x" 100  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "02" "name" $s2Name "sub" $s2Sub "tags" $s2Tags "x" 300  "fill" "url(#pnt-fill-orange)" "stroke" "#E0533D" "color" "orange")
+      (dict "i" "03" "name" $s3Name "sub" $s3Sub "tags" $s3Tags "x" 500  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "04" "name" $s4Name "sub" $s4Sub "tags" $s4Tags "x" 700  "fill" "url(#pnt-fill-orange)" "stroke" "#E0533D" "color" "orange")
+      (dict "i" "05" "name" $s5Name "sub" $s5Sub "tags" $s5Tags "x" 900  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "06" "name" $s6Name "sub" $s6Sub "tags" $s6Tags "x" 1100 "fill" "url(#pnt-fill-final)"  "stroke" "#A8B4EA" "color" "cyan")
+    }}
+
+    {{/* Thumbnails — placed first so flow line / nodes render above */}}
+    {{ range $idx, $n := $nodes }}
+      {{ $img := index $imgs $idx }}
+      <g class="pnt-thumb" data-thumb-idx="{{ $idx }}">
+        <image class="pnt-thumb-img" x="{{ sub $n.x 75 }}" y="20" width="150" height="90"
+          href="{{ $img | relURL }}" preserveAspectRatio="xMidYMid slice"
+          clip-path="url(#pnt-thumb-clip-{{ $idx }})"/>
+        <rect class="pnt-thumb-fade" x="{{ sub $n.x 75 }}" y="65" width="150" height="45" fill="url(#pnt-thumb-fade)"
+          clip-path="url(#pnt-thumb-clip-{{ $idx }})"/>
+        <rect class="pnt-thumb-border" x="{{ sub $n.x 75 }}" y="20" width="150" height="90" rx="6"
+          fill="none" stroke="{{ $n.stroke }}" stroke-width="1.5" stroke-opacity="0.55"/>
+        <line class="pnt-thumb-link" x1="{{ $n.x }}" y1="110" x2="{{ $n.x }}" y2="180"
+          stroke="{{ $n.stroke }}" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+      </g>
+    {{ end }}
+
+    {{/* Horizontal flow line at y=210 */}}
+    <path id="pnt-flow-path"
+      d="M 80 210 Q 250 210 300 210 T 500 210 T 700 210 T 900 210 T 1120 210"
+      fill="none" stroke="url(#pnt-flow-grad)" stroke-width="2.5" stroke-linecap="round" filter="url(#pnt-glow)"/>
+
+    {{/* Travelling data packets */}}
+    <circle r="5" fill="#6E7AD0" filter="url(#pnt-glow-strong)">
+      <animateMotion dur="7s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
+    </circle>
+    <circle r="4" fill="#D3313A" filter="url(#pnt-glow-strong)">
+      <animateMotion dur="7s" begin="2.3s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
+    </circle>
+    <circle r="4" fill="#6E7AD0" filter="url(#pnt-glow-strong)">
+      <animateMotion dur="7s" begin="4.6s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
+    </circle>
+
+    {{ range $idx, $n := $nodes }}
+      <g class="pnt-node" data-idx="{{ $idx }}" data-color="{{ $n.color }}" data-name="{{ $n.name }}" data-tags="{{ $n.tags }}" transform="translate({{ $n.x }} 210)">
+        <circle class="pnt-node-pulse" r="38" fill="none" stroke="{{ $n.stroke }}" stroke-width="1.5"/>
+        <circle class="pnt-node-ring" r="30" fill="none" stroke="{{ $n.stroke }}" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+        <circle class="pnt-node-core" r="22" fill="{{ $n.fill }}" stroke="{{ $n.stroke }}" stroke-width="2" filter="url(#pnt-glow)"/>
+        <text class="pnt-node-i" text-anchor="middle" y="4">{{ $n.i }}</text>
+        <text class="pnt-node-name" text-anchor="middle" y="62">{{ $n.name }}</text>
+        <text class="pnt-node-sub" text-anchor="middle" y="82">{{ $n.sub }}</text>
+        <circle r="50" fill="transparent" style="cursor:pointer;"/>
+      </g>
+    {{ end }}
+
+    <text x="600" y="362" text-anchor="middle" class="pnt-flow-label">{{ $flowLabel }}</text>
+  </svg>
+
+  <div class="pnt-viz-panel" data-color="cyan">
+    <div class="pnt-viz-panel-meta">
+      <span class="pnt-viz-panel-idx" data-pnt-idx>01</span>
+      <span class="pnt-viz-panel-sep">/</span>
+      <span class="pnt-viz-panel-total">06</span>
+      <span class="pnt-viz-panel-hint">{{ $hint }}</span>
+    </div>
+    <h4 class="pnt-viz-panel-name" data-pnt-name>{{ $s1Name }}</h4>
+    <p class="pnt-viz-panel-tags" data-pnt-tags>{{ $s1Tags }}</p>
+  </div>
+</div>

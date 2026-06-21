@@ -1,5 +1,6 @@
 ---
 title: "SAIC Meeting and Collaboration"
+slug: "2022-saic-meeting"
 date: 2022-11-04
 category: "event"
 summary: "IPNL hosted a meeting with SAIC for collaborative research discussions."

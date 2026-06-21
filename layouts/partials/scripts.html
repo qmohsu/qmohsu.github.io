@@ -1,0 +1,514 @@
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Tabs (Case studies, etc.) ---------- */
+  document.querySelectorAll('[data-tabs]').forEach(function (tabs) {
+    var btns = tabs.querySelectorAll('.tab-btn');
+    var panels = tabs.querySelectorAll('.tab-panel');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var key = btn.getAttribute('data-tab');
+        btns.forEach(function (b) {
+          var active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        panels.forEach(function (p) {
+          p.classList.toggle('is-active', p.getAttribute('data-panel') === key);
+        });
+      });
+    });
+  });
+
+  /* ---------- Scroll reveal (fade-in cards as they enter viewport) ---------- */
+  var revealTargets = document.querySelectorAll(
+    '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .layer-card, .funding-card, ' +
+    '.lane-col, .partner-section h2, .page-part, ' +
+    '.reveal, .home-block h2, .home-section h2, .section-h2, .record-grid li'
+  );
+  revealTargets.forEach(function (el) { el.classList.add('reveal-target'); });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var delay = el.dataset.revealDelay || (el.parentNode && [].indexOf.call(el.parentNode.children, el) * 60);
+          el.style.transitionDelay = (delay > 600 ? 600 : delay) + 'ms';
+          el.classList.add('is-revealed');
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function (el) { io.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('is-revealed'); });
+  }
+
+  /* ---------- Animated counter for big numbers ---------- */
+  var parseStat = function (text) {
+    var t = (text || '').trim();
+    // Match patterns: "400M+", "1.3M+", "20", "65", "9+", "300M+", "12×", "32M+"
+    var m = t.match(/^([\d.]+)([KMB]?)(\+|x|×)?$/);
+    if (!m) return null;
+    var value = parseFloat(m[1]);
+    var mag = m[2] || '';
+    var tail = m[3] || '';
+    if (isNaN(value)) return null;
+    return { value: value, magnitude: mag, tail: tail, originalDecimals: (m[1].indexOf('.') >= 0) ? 1 : 0 };
+  };
+
+  var format = function (current, info) {
+    var v = info.originalDecimals ? current.toFixed(info.originalDecimals) : Math.round(current).toString();
+    return v + info.magnitude + info.tail;
+  };
+
+  var animate = function (el, info) {
+    var start = performance.now();
+    var duration = 1100;
+    var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+    var tick = function (now) {
+      var t = Math.min(1, (now - start) / duration);
+      var current = info.value * ease(t);
+      el.textContent = format(current, info);
+      if (t < 1) requestAnimationFrame(tick);
+      else el.textContent = format(info.value, info);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  if ('IntersectionObserver' in window) {
+    var countIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var original = el.dataset.originalText;
+          if (original === undefined) {
+            original = el.textContent;
+            el.dataset.originalText = original;
+          }
+          var info = parseStat(original);
+          if (info) {
+            el.textContent = format(0, info);
+            animate(el, info);
+          }
+          countIo.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(function (el) { countIo.observe(el); });
+  }
+
+  /* ---------- Sticky section nav: smooth click + active tracking ---------- */
+  var sectionNav = document.querySelector('[data-section-nav]');
+  if (sectionNav) {
+    var navHeight = function () { return sectionNav.offsetHeight || 56; };
+    var navLinks = sectionNav.querySelectorAll('.section-nav-link');
+    var linkMap = {};
+    navLinks.forEach(function (lnk) {
+      var t = lnk.getAttribute('data-nav-target');
+      if (t) linkMap[t] = lnk;
+    });
+
+    /* click → smooth scroll, compensating for sticky nav height */
+    navLinks.forEach(function (lnk) {
+      lnk.addEventListener('click', function (ev) {
+        var t = lnk.getAttribute('data-nav-target');
+        var sec = document.getElementById(t);
+        if (sec) {
+          ev.preventDefault();
+          var top = sec.getBoundingClientRect().top + window.pageYOffset - navHeight() - 4;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* active link tracking via IntersectionObserver */
+    if ('IntersectionObserver' in window) {
+      var setActive = function (id) {
+        navLinks.forEach(function (lnk) {
+          lnk.classList.toggle('is-active', lnk.getAttribute('data-nav-target') === id);
+        });
+      };
+      var sectionIds = Object.keys(linkMap);
+      var visibility = {};
+      var navIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          visibility[entry.target.id] = entry.intersectionRatio;
+        });
+        var maxId = null, maxRatio = 0;
+        sectionIds.forEach(function (id) {
+          if ((visibility[id] || 0) > maxRatio) {
+            maxRatio = visibility[id];
+            maxId = id;
+          }
+        });
+        if (maxId) setActive(maxId);
+      }, {
+        root: null,
+        threshold: [0, 0.15, 0.4, 0.7, 1],
+        rootMargin: '-90px 0px -40% 0px'
+      });
+      sectionIds.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) navIo.observe(el);
+      });
+    }
+  }
+
+  /* ---------- Hero ticker — fake "live" GNSS readings with typewriter ---------- */
+  var ticker = document.querySelector('[data-hero-ticker]');
+  if (ticker) {
+    var satEl = ticker.querySelector('[data-sat-count]');
+    var hdopEl = ticker.querySelector('[data-hdop]');
+    var typeInto = function (el, newText) {
+      if (!el) return;
+      if (el._timer) clearInterval(el._timer);
+      el.classList.add('is-typing');
+      el.textContent = '';
+      var i = 0;
+      el._timer = setInterval(function () {
+        if (i >= newText.length) {
+          clearInterval(el._timer);
+          el.classList.remove('is-typing');
+          return;
+        }
+        el.textContent += newText.charAt(i++);
+      }, 38);
+    };
+    var tick = function () {
+      var visible = 11 + Math.floor(Math.random() * 6);   /* 11-16 */
+      var hdop = (0.7 + Math.random() * 0.5).toFixed(1);  /* 0.7-1.2 */
+      typeInto(satEl, visible + ' / 24');
+      setTimeout(function () { typeInto(hdopEl, hdop); }, 280);
+    };
+    tick();
+    setInterval(tick, 2800);
+  }
+
+  /* ---------- 3D mouse tilt on key cards ---------- */
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var tiltCards = document.querySelectorAll(
+      '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat'
+    );
+    var maxTilt = 5.5; /* degrees */
+    tiltCards.forEach(function (card) {
+      var rect = null;
+      var onEnter = function () { rect = card.getBoundingClientRect(); };
+      var onMove = function (e) {
+        if (!rect) rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var cx = rect.width / 2;
+        var cy = rect.height / 2;
+        var rotY = ((x - cx) / cx) * maxTilt;
+        var rotX = ((cy - y) / cy) * maxTilt;
+        card.style.transform =
+          'translateY(-5px) perspective(1100px) rotateX(' + rotX.toFixed(2) +
+          'deg) rotateY(' + rotY.toFixed(2) + 'deg)';
+      };
+      var onLeave = function () {
+        card.style.transform = '';
+        rect = null;
+      };
+      card.addEventListener('mouseenter', onEnter);
+      card.addEventListener('mousemove', onMove);
+      card.addEventListener('mouseleave', onLeave);
+    });
+  }
+
+  /* ---------- PNT viz: interactive stack diagram ---------- */
+  document.querySelectorAll('[data-pnt-viz]').forEach(function (viz) {
+    var panel = viz.querySelector('.pnt-viz-panel');
+    var panelIdx = viz.querySelector('[data-pnt-idx]');
+    var panelName = viz.querySelector('[data-pnt-name]');
+    var panelTags = viz.querySelector('[data-pnt-tags]');
+    var nodes = viz.querySelectorAll('.pnt-node');
+    var thumbs = viz.querySelectorAll('.pnt-thumb');
+    var locked = false;
+    var rotateTimer = null;
+
+    var setActive = function (idx) {
+      nodes.forEach(function (n, i) {
+        n.classList.toggle('is-active', i === idx);
+      });
+      thumbs.forEach(function (t, i) {
+        t.classList.toggle('is-active', i === idx);
+      });
+      var node = nodes[idx];
+      if (!node) return;
+      var color = node.getAttribute('data-color') || 'cyan';
+      panel.setAttribute('data-color', color);
+      panelIdx.textContent = String(idx + 1).padStart(2, '0');
+      panelName.textContent = node.getAttribute('data-name') || '';
+      panelTags.textContent = node.getAttribute('data-tags') || '';
+    };
+
+    var startRotate = function () {
+      if (rotateTimer) clearInterval(rotateTimer);
+      var i = 0;
+      setActive(0);
+      rotateTimer = setInterval(function () {
+        if (locked) return;
+        i = (i + 1) % nodes.length;
+        setActive(i);
+      }, 3200);
+    };
+
+    nodes.forEach(function (n, i) {
+      n.addEventListener('mouseenter', function () { locked = true; setActive(i); });
+      n.addEventListener('mouseleave', function () {
+        setTimeout(function () { locked = false; }, 600);
+      });
+      n.addEventListener('click', function () {
+        locked = true; setActive(i);
+        if (rotateTimer) { clearInterval(rotateTimer); rotateTimer = null; }
+      });
+    });
+    thumbs.forEach(function (t, i) {
+      t.style.cursor = 'pointer';
+      t.addEventListener('mouseenter', function () { locked = true; setActive(i); });
+      t.addEventListener('mouseleave', function () {
+        setTimeout(function () { locked = false; }, 600);
+      });
+      t.addEventListener('click', function () {
+        locked = true; setActive(i);
+        if (rotateTimer) { clearInterval(rotateTimer); rotateTimer = null; }
+      });
+    });
+
+    /* Only auto-rotate when viz is in viewport */
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            if (!rotateTimer) startRotate();
+          } else {
+            if (rotateTimer) { clearInterval(rotateTimer); rotateTimer = null; }
+          }
+        });
+      }, { threshold: 0.25 });
+      io.observe(viz);
+    } else {
+      startRotate();
+    }
+  });
+
+  /* ---------- Smooth in-page anchor scroll (fallback for any other #links) ---------- */
+  document.querySelectorAll('a[href^="#"]:not(.section-nav-link)').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      var id = a.getAttribute('href');
+      if (id.length > 1) {
+        var target = document.querySelector(id);
+        if (target) {
+          ev.preventDefault();
+          var stickyOffset = sectionNav ? sectionNav.offsetHeight + 4 : 0;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+})();
+</script>
+
+{{/* Chart.js only on /publications/ page — keeps other pages lean */}}
+{{ if eq .Section "publications" }}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+<script defer>
+(function () {
+  'use strict';
+  var ready = function () {
+    var el = document.getElementById('pub-charts');
+    if (!el || typeof Chart === 'undefined') return;
+    var parse = function (k) { try { return JSON.parse(el.dataset[k] || '[]'); } catch (e) { return []; } };
+    var yearLabels = parse('yearLabels');
+    var yearValues = parse('yearValues');
+    var typeLabels = parse('typeLabels');
+    var typeValues = parse('typeValues');
+    var cumLabels = parse('cumLabels');
+    var cumValues = parse('cumValues');
+    var cyan = '#2D3B97', cyanBright = '#3A4DB8', orange = '#D3313A', orangeDeep = '#C02A33', navy = '#2D3B97', mute = '#7B7F92';
+
+    /* Localised legend labels (drive from <html lang>) */
+    var lang = document.documentElement.lang || '';
+    var L_PUB = lang.indexOf('zh-cn') === 0 ? '论文' : (lang.indexOf('zh-tw') === 0 ? '論文' : 'Publications');
+    var L_CUM = lang.indexOf('zh-cn') === 0 ? '累计' : (lang.indexOf('zh-tw') === 0 ? '累計' : 'Cumulative');
+
+    /* ---- Year chart: bar + cumulative line ---- */
+    var yc = document.getElementById('pub-chart-year');
+    if (yc) {
+      new Chart(yc, {
+        type: 'bar',
+        data: {
+          labels: yearLabels,
+          datasets: [
+            {
+              type: 'bar',
+              label: L_PUB,
+              data: yearValues,
+              backgroundColor: function (ctx) {
+                var c = ctx.chart.ctx, g = c.createLinearGradient(0, 0, 0, 220);
+                g.addColorStop(0, cyanBright); g.addColorStop(1, cyan);
+                return g;
+              },
+              borderRadius: 4,
+              borderSkipped: false,
+              barPercentage: 0.72,
+              order: 2
+            },
+            {
+              type: 'line',
+              label: L_CUM,
+              data: cumValues,
+              borderColor: orange,
+              backgroundColor: 'rgba(211,49,58,0.08)',
+              borderWidth: 2,
+              pointRadius: 3,
+              pointBackgroundColor: orange,
+              tension: 0.32,
+              fill: true,
+              yAxisID: 'y2',
+              order: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: { duration: 1500, easing: 'easeOutCubic' },
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              labels: {
+                font: { family: "'IBM Plex Mono', monospace", size: 11 },
+                color: mute, usePointStyle: true, pointStyle: 'rect'
+              }
+            },
+            tooltip: {
+              backgroundColor: '#161B40', titleFont: { family: "'IBM Plex Mono', monospace" },
+              bodyFont: { family: "'Inter', sans-serif" }, padding: 10, borderColor: cyan, borderWidth: 1
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: mute, font: { family: "'IBM Plex Mono', monospace", size: 10 } },
+              grid: { display: false }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { color: mute, font: { family: "'IBM Plex Mono', monospace", size: 10 }, precision: 0 },
+              grid: { color: 'rgba(0,0,0,0.05)' }
+            },
+            y2: {
+              position: 'right',
+              beginAtZero: true,
+              ticks: { color: orange, font: { family: "'IBM Plex Mono', monospace", size: 10 }, precision: 0 },
+              grid: { display: false }
+            }
+          }
+        }
+      });
+    }
+
+    /* ---- Citations chart: area line ---- */
+    var cc = document.getElementById('pub-chart-cites');
+    if (cc) {
+      var citeLabels = parse('citeLabels');
+      var citeValues = parse('citeValues');
+      new Chart(cc, {
+        type: 'line',
+        data: {
+          labels: citeLabels,
+          datasets: [{
+            label: 'Cumulative citations',
+            data: citeValues,
+            borderColor: orange,
+            backgroundColor: function (ctx) {
+              var c = ctx.chart.ctx, g = c.createLinearGradient(0, 0, 0, 220);
+              g.addColorStop(0, 'rgba(211,49,58,0.35)');
+              g.addColorStop(1, 'rgba(211,49,58,0)');
+              return g;
+            },
+            borderWidth: 2.5,
+            pointBackgroundColor: orange,
+            pointBorderColor: '#fff',
+            pointBorderWidth: 1.5,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            tension: 0.35,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: { duration: 1600, easing: 'easeOutCubic' },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#161B40', borderColor: orange, borderWidth: 1, padding: 10,
+              titleFont: { family: "'IBM Plex Mono', monospace" },
+              bodyFont: { family: "'Inter', sans-serif" },
+              callbacks: { label: function (ctx) { return ctx.parsed.y.toLocaleString() + ' citations'; } }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: mute, font: { family: "'IBM Plex Mono', monospace", size: 10 } },
+              grid: { display: false }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { color: mute, font: { family: "'IBM Plex Mono', monospace", size: 10 },
+                callback: function (v) { return v >= 1000 ? (v/1000).toFixed(1) + 'k' : v; } },
+              grid: { color: 'rgba(0,0,0,0.05)' }
+            }
+          }
+        }
+      });
+    }
+
+    /* ---- Type chart: doughnut ---- */
+    var tc = document.getElementById('pub-chart-type');
+    if (tc) {
+      var palette = [cyan, orange, navy, '#5b3b8c', '#1e6b3a', '#B12A32'];
+      new Chart(tc, {
+        type: 'doughnut',
+        data: {
+          labels: typeLabels,
+          datasets: [{
+            data: typeValues,
+            backgroundColor: typeValues.map(function (_, i) { return palette[i % palette.length]; }),
+            borderColor: '#fff', borderWidth: 2, hoverOffset: 8
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          cutout: '62%',
+          animation: { animateRotate: true, duration: 1400, easing: 'easeOutCubic' },
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                font: { family: "'IBM Plex Mono', monospace", size: 11 },
+                color: '#444', usePointStyle: true, pointStyle: 'rect', padding: 10
+              }
+            },
+            tooltip: {
+              backgroundColor: '#161B40', borderColor: cyan, borderWidth: 1, padding: 10
+            }
+          }
+        }
+      });
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { setTimeout(ready, 50); });
+  } else {
+    setTimeout(ready, 50);
+  }
+})();
+</script>
+{{ end }}

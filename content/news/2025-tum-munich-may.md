@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at TUM Munich: Enabling Robotics Applications with Satellite Navigation (May 2025)"
+slug: "2025-tum-munich-may"
 date: 2025-05-06
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

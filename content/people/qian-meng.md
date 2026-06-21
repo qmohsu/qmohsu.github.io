@@ -1,5 +1,6 @@
 ---
 title: "Qian Meng"
+slug: "qian-meng"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2019-2020"

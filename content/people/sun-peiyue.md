@@ -1,5 +1,6 @@
 ---
 title: "SUN Peiyue"
+slug: "sun-peiyue"
 role: "Research Assistant"
 status: "alumni"
 years: "2026"

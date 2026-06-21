@@ -1,5 +1,6 @@
 ---
 title: "IEEE ITSC 2025 workshop talk: 'When IV Meets Urban — IE Research' (November 2025)"
+slug: "2025-ieee-itsc-workshop-november"
 date: 2025-11-18
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

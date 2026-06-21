@@ -1,6 +1,8 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="prose">
   {{ with .Params.subtype }}<span class="badge badge-current">{{ . }}</span>{{ end }}
   {{ with .Params.license }}<span class="badge badge-completed">{{ . }}</span>{{ end }}
 
@@ -13,4 +15,6 @@
   <p><strong>Citation:</strong> {{ . }}</p>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

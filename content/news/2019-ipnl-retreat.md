@@ -1,5 +1,6 @@
 ---
 title: "IPNL Annual Retreat 2019"
+slug: "2019-ipnl-retreat"
 date: 2019-07-21
 category: "event"
 summary: "IPNL team enjoyed the annual retreat for team building."

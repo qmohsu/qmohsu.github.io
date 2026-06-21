@@ -1,0 +1,26 @@
+---
+title: "Safety-Quantifiable Planar-Feature-based LiDAR Localization with a Prior Map for Intelligent Vehicles in Urban Scenarios"
+slug: "2024-safety-quantifiable-planar-feature-based-lidar-localization"
+authors:
+  - "Zhang, J."
+  - "Liu, X."
+  - "Wen, W."
+  - "Hsu, L. T."
+year: 2024
+venue: "IEEE Transactions on Intelligent Vehicles"
+type: "journal"
+cv_number: 14
+featured: false
+quartile: "Q1"
+doi: "10.1109/tiv.2024.3467115"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "optimization-estimation"
+  - "integrity-localization"
+  - "seamless-pnt-embodied"
+tags: []
+---
+
+<aside class="translation-stub">本论文以英文发表。完整书目详情、DOI / PDF 链接请见 <a href="/en/publications/2024-safety-quantifiable-planar-feature-based-lidar-localization/">英文页面</a>。</aside>

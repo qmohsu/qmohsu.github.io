@@ -1,5 +1,6 @@
-﻿---
+---
 title: "NLOS Correction/Exclusion for GNSS Measurement using RAIM and City Building Models"
+slug: "2015-nlos-correctionexclusion-for-gnss-measurement-using-raim-an"
 authors:
   - "Hsu L. T."
   - "Gu Y."

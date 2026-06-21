@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance Assessment of GNSS Positioning in Different Vegetated Environments"
+slug: "2024-performance-assessment-of-gnss-positioning-in-different-vege"
 authors:
   - "Jiayi Zhou"
   - "Jiarong Lian"

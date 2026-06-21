@@ -1,12 +1,14 @@
-{{ $people := . }}
+{{ $people := .people }}
+{{ $lang := .lang }}
+{{ $cn := eq $lang "zh-cn" }}{{ $tw := eq $lang "zh-tw" }}
 {{ $alumni := where $people ".Params.status" "alumni" }}
 
 {{ $groups := slice
-  (dict "title" "PhD / MPhil" "items" (sort (where $alumni ".Params.role" "in" (slice "PhD Student" "PhD Student (HK PhD Fellowship)" "MPhil Student")) ".Params.years"))
-  (dict "title" "Postdoctoral Fellows" "items" (sort (where $alumni ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
-  (dict "title" "MSc Students" "items" (sort (where $alumni ".Params.role" "eq" "MSc Student") ".Params.years"))
-  (dict "title" "Research Assistants" "items" (sort (where $alumni ".Params.role" "eq" "Research Assistant") ".Params.years"))
-  (dict "title" "Visiting Students & Interns" "items" (sort (where $alumni ".Params.role" "in" (slice "Visiting PhD Student" "Intern")) ".Params.years"))
+  (dict "title" (cond $cn "博士 / 硕士研究生" (cond $tw "博士 / 碩士研究生" "PhD / MPhil")) "items" (sort (where $alumni ".Params.role" "in" (slice "PhD Student" "PhD Student (HK PhD Fellowship)" "MPhil Student")) ".Params.years"))
+  (dict "title" (cond $cn "博士后" (cond $tw "博士後" "Postdoctoral Fellows")) "items" (sort (where $alumni ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
+  (dict "title" (cond $cn "硕士生" (cond $tw "碩士生" "MSc Students")) "items" (sort (where $alumni ".Params.role" "eq" "MSc Student") ".Params.years"))
+  (dict "title" (cond $cn "研究助理" (cond $tw "研究助理" "Research Assistants")) "items" (sort (where $alumni ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" (cond $cn "访问学生与实习生" (cond $tw "訪問學生與實習生" "Visiting Students & Interns")) "items" (sort (where $alumni ".Params.role" "in" (slice "Visiting PhD Student" "Intern")) ".Params.years"))
 }}
 
 {{ return $groups }}

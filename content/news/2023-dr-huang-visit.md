@@ -1,5 +1,6 @@
 ---
 title: "Dr. Guoquan Huang Visits IPNL"
+slug: "2023-dr-huang-visit"
 date: 2023-06-21
 category: "event"
 summary: "Dr. Guoquan Huang visited IPNL for research collaboration discussion."

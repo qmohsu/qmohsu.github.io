@@ -1,5 +1,6 @@
 ---
 title: "PolyU Public Aerospace Series: BeiDou Satellite Navigation and Our Daily Lives (November 2021)"
+slug: "2021-polyu-public-aerospace-beidou"
 date: 2021-11-02
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

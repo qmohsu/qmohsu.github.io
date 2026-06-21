@@ -1,5 +1,6 @@
 ---
 title: "Haosheng Xu"
+slug: "haosheng-xu"
 role: "PhD Student"
 status: "alumni"
 years: "2020-2026"

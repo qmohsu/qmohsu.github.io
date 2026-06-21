@@ -1,5 +1,6 @@
-﻿---
+---
 title: "UrbanLoco"
+slug: "urbanloco"
 description: "Full sensor-suite benchmark dataset for mapping and localization in highly urbanized scenes (San Francisco + Hong Kong)."
 category: "open-platform"
 status: "maintained"
@@ -17,4 +18,4 @@ UrbanLoco is a multi-sensor dataset for benchmarking mapping and localization al
 
 **Why it matters.** Existing public AV datasets either offered limited sensor coverage or avoided the most challenging urban scenarios. UrbanLoco captures real-world conditions where GNSS signals are severely degraded by multipath and where LiDAR/camera-based methods struggle with dynamic objects — providing a realistic stress test for autonomous-vehicle navigation algorithms.
 
-**Outputs:** open dataset under CC BY-NC-SA 4.0; [GitHub repository](https://github.com/weisongwen/UrbanLoco); accompanying [ICRA 2020 paper](/news/urbanloco-dataset-released/) by Wen, Zhou, Zhang, Fahandezh-Saadi, Bai, Zhan, Tomizuka, and Hsu. Released in collaboration with the **Mechanical Systems Control Lab at UC Berkeley**.
+**Outputs:** open dataset under CC BY-NC-SA 4.0; [GitHub repository](https://github.com/weisongwen/UrbanLoco); accompanying [ICRA 2020 paper](/en/news/2020-urbanloco-dataset/) by Wen, Zhou, Zhang, Fahandezh-Saadi, Bai, Zhan, Tomizuka, and Hsu. Released in collaboration with the **Mechanical Systems Control Lab at UC Berkeley**.

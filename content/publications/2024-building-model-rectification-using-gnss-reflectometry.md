@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Building Model Rectification Using GNSS Reflectometry"
+slug: "2024-building-model-rectification-using-gnss-reflectometry"
 authors:
   - "Ye, M."
   - "Zhang, G."

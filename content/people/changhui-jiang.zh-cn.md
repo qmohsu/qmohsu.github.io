@@ -1,0 +1,10 @@
+---
+title: "Changhui Jiang"
+slug: "changhui-jiang"
+role: "博士后研究员"
+status: "alumni"
+years: "2019-2020"
+current_position: "教授，南京航空航天大学"
+photo: "/images/people/changhui-jiang.jpg"
+sort_order: 204
+---

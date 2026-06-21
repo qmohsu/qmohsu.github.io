@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Object Detection Aided GNSS and Its Integration with LiDAR in Highly Urbanized Areas"
+slug: "2020-object-detection-aided-gnss-and-its-integration-with-lidar-i"
 authors:
   - "Wen W."
   - "Zhang G."

@@ -1,5 +1,6 @@
 ---
 title: "UWB-GNSS Precision Start-Gate Monitoring for Olympic-Class Windsurfing"
+slug: "uwb-gnss-windsurf"
 description: "Marine buoy-deployed UWB+GNSS sensors for precision start-gate monitoring during Olympic-class windsurf training — extending the lab's multi-sensor positioning expertise into sports-tech."
 category: "translational-system"
 status: "active"

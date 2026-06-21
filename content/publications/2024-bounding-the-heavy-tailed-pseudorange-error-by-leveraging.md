@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Bounding the Heavy-Tailed Pseudorange Error by Leveraging Membership Weights Analysis of Gaussian Mixture Model"
+slug: "2024-bounding-the-heavy-tailed-pseudorange-error-by-leveraging"
 authors:
   - "Penggao Yan"
   - "Yihan Zhong"

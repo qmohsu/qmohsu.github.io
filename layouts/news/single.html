@@ -1,19 +1,21 @@
 {{ define "main" }}
-<article class="news-article">
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="news-article prose">
   <p class="news-date">{{ .Date.Format "2 January 2006" }}</p>
   {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
-  <h1>{{ .Title }}</h1>
   {{ if or .Params.image .Params.images }}
   {{ $imgs := .Params.images | default (slice .Params.image) }}
   <div class="image-stack">
-    {{ if gt (len $imgs) 1 }}<h2>Photos</h2>{{ end }}
+    {{ if gt (len $imgs) 1 }}<h2>{{ if eq site.Language.Lang "zh-cn" }}照片{{ else if eq site.Language.Lang "zh-tw" }}照片{{ else }}Photos{{ end }}</h2>{{ end }}
     {{ range $imgs }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
   </div>
   {{ end }}
   {{ if or .Params.video .Params.videos }}
   {{ $vids := .Params.videos | default (slice .Params.video) }}
   <div class="video-stack">
-    {{ if gt (len $vids) 1 }}<h2>Videos</h2>{{ end }}
+    {{ if gt (len $vids) 1 }}<h2>{{ if eq site.Language.Lang "zh-cn" }}视频{{ else if eq site.Language.Lang "zh-tw" }}影片{{ else }}Videos{{ end }}</h2>{{ end }}
     {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
   </div>
   {{ end }}
@@ -22,4 +24,6 @@
   <p class="news-source">Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ with $.Params.source_site }}{{ . }}{{ else }}External{{ end }}</a></p>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

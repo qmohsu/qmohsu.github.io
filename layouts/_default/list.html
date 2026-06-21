@@ -1,10 +1,19 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-{{ range .Pages }}
-<div class="card" style="margin-bottom:12px;">
-  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+  <div class="page-body-inner">
+    {{ .Content }}
+
+    {{ if .Pages }}
+    <div class="cards cards-tech">
+      {{ range .Pages }}
+      <a class="card card-link" href="{{ .Permalink }}">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
 </div>
-{{ end }}
 {{ end }}

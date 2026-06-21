@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multipath Mitigation Technique under Strong Multipath Environment Using Multiple Antennas"
+slug: "2017-multipath-mitigation-technique-under-strong-multipath-enviro"
 authors:
   - "Kubo N."
   - "Kobayashi K."

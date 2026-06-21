@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS/Map Integration with Batch Factor Graph Optimization for Reliable Trajectory Estimation in Urban Canyon"
+slug: "2025-gnssmap-integration-with-batch-factor-graph-optimization"
 authors:
   - "Yihan Zhong"
   - "Hoi-Fung Ng"

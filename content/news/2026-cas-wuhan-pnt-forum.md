@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at CAS Wuhan PNT forum: 'Estimation in GNSS/INS integrated navigation: from EKF, FGO to SDP'"
+slug: "2026-cas-wuhan-pnt-forum"
 date: 2026-04-24
 date_note: "Talk date; news post published 2026-05-11"
 category: "talk"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Intelligent GNSS/INS Integrated Navigation System for a Commercial UAV Flight Control System"
+slug: "2018-intelligent-gnssins-integrated-navigation-system-for-a-comm"
 authors:
   - "Zhang G."
   - "Hsu L. T."

@@ -1,5 +1,6 @@
 ---
 title: "IPNL at IEEE/ION PLANS 2025 Salt Lake City + Stanford visit (April 2025)"
+slug: "2025-ion-plans-stanford-april"
 date: 2025-04-28
 date_note: "PLANS 2025 opening day (28 Apr – 1 May); Stanford visit immediately before; news post backfilled 2026-05-11"
 category: "talk"

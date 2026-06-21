@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Improving GNSS Positioning in Challenging Urban Areas by Digital Twin Database Correction"
+slug: "2024-improving-gnss-positioning-in-challenging-urban-areas-by"
 authors:
   - "Jiarong Lian"
   - "Jiayi Zhou"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Wide Area Differential GNSS in Taiwan: Development and Validation Testing"
+slug: "2010-wide-area-differential-gnss-in-taiwan-development-and-valid"
 authors:
   - "Tao A. L."
   - "Hsu L. T."

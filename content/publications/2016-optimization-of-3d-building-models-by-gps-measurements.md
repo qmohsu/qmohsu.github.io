@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Optimization of 3D Building Models by GPS Measurements"
+slug: "2016-optimization-of-3d-building-models-by-gps-measurements"
 authors:
   - "Wada Y."
   - "Hsu L. T."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Analysis and Modelling GPS NLOS effect in Highly Urbanized Area"
+slug: "2018-analysis-and-modelling-gps-nlos-effect-in-highly-urbanized-a"
 authors:
   - "Hsu L. T."
 year: 2018

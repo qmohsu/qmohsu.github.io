@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Visual Positioning System (provisional)"
+slug: "patent-2025-us-patent-no-63840727"
 authors:
   - "Lee J"
   - "Hsu L. T"

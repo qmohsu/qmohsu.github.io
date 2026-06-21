@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter"
+slug: "2021-factor-graph-optimization-for-gnssins-integration-a-compar"
 authors:
   - "Wen W."
   - "Pfeifer T."

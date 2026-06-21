@@ -1,5 +1,6 @@
-﻿---
+---
 title: "C/N0 Assessment Based on GPS L5/L1C/A Signal Acquisition in Open-Sky/Light-Urban/Dense-Urban/Indoor Environments with Extended Coherent Integration Time"
+slug: "2023-cn0-assessment-based-on-gps-l5l1ca-signal-acquisition-in"
 authors:
   - "Tsang, C. L."
   - "Luo, Y."

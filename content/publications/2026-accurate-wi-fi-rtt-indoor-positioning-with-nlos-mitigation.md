@@ -1,5 +1,6 @@
 ---
 title: "Accurate Wi-Fi RTT indoor positioning with NLOS mitigation by floor map: a multi-wall modeling approach"
+slug: "2026-accurate-wi-fi-rtt-indoor-positioning-with-nlos-mitigation"
 authors:
   - "Qing Liang"
   - "Guohao Zhang"

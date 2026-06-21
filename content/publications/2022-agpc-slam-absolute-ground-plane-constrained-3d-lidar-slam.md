@@ -1,5 +1,6 @@
-﻿---
+---
 title: "AGPC-SLAM: Absolute Ground Plane Constrained 3D LiDAR SLAM"
+slug: "2022-agpc-slam-absolute-ground-plane-constrained-3d-lidar-slam"
 authors:
   - "Wen W."
   - "Hsu L. T."

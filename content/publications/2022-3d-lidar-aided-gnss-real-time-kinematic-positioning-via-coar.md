@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D LiDAR Aided GNSS Real-time Kinematic Positioning via Coarse-to-fine Batch Optimization for High Accuracy Mapping in Dense Urban Canyons"
+slug: "2022-3d-lidar-aided-gnss-real-time-kinematic-positioning-via-coar"
 authors:
   - "Xikun Liu"
   - "Weisong Wen"

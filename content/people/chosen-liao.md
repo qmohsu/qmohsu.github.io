@@ -1,5 +1,6 @@
 ---
 title: "Chosen Liao"
+slug: "chosen-liao"
 role: "MSc Student"
 status: "alumni"
 years: "2020-2022"

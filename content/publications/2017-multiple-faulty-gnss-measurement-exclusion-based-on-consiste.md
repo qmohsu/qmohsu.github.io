@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multiple Faulty GNSS Measurement Exclusion based on Consistency Check in Urban Canyons"
+slug: "2017-multiple-faulty-gnss-measurement-exclusion-based-on-consiste"
 authors:
   - "Hsu L. T."
   - "Tokura H."

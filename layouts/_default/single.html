@@ -4,9 +4,10 @@
      when frontmatter has type: "journal" (etc.) because explicit type takes
      precedence over section in single-page lookup. So render the publication
      template here instead. Keep in sync with layouts/publications/single.html. */}}
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
 <article>
-  <h1>{{ .Title }}</h1>
-
   {{ with .Params.authors }}
   <p class="pub-authors" style="font-size:1rem;">
     {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $la := lower $a }}{{ if or (hasPrefix $la "hsu ") (hasPrefix $la "hsu,") (eq $la "hsu") }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
@@ -34,10 +35,16 @@
 
   {{ .Content }}
 </article>
+</div>
+</div>
 {{ else }}
-<article>
-  <h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+<article class="prose">
   {{ .Content }}
 </article>
+</div>
+</div>
 {{ end }}
 {{ end }}

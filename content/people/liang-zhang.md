@@ -1,5 +1,6 @@
 ---
 title: "Liang Zhang"
+slug: "liang-zhang"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2022-2024"

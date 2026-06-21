@@ -1,0 +1,26 @@
+---
+title: "Carrier-Aided Dual Frequency Vectorized Tracking Architecture for NavIC Signals"
+slug: "2022-carrier-aided-dual-frequency-vectorized-tracking-architectur"
+authors:
+  - "Dey A."
+  - "Iyer K."
+  - "Xu B."
+  - "Sharma N."
+  - "Hsu L. T."
+year: 2022
+venue: "IEEE Transactions on Instrumentation and Measurement"
+type: "journal"
+cv_number: 66
+featured: false
+quartile: "Q1"
+doi: "10.1109/tim.2022.3146927"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
+tags: []
+---
+
+<aside class="translation-stub">本论文以英文发表。完整书目详情、DOI / PDF 链接请见 <a href="/en/publications/2022-carrier-aided-dual-frequency-vectorized-tracking-architectur/">英文页面</a>。</aside>

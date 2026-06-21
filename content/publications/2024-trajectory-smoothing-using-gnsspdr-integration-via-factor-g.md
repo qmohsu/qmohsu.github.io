@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Trajectory Smoothing Using GNSS/PDR Integration Via Factor Graph Optimization in Urban Canyons"
+slug: "2024-trajectory-smoothing-using-gnsspdr-integration-via-factor-g"
 authors:
   - "Zhong, Y."
   - "Wen, W."

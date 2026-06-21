@@ -1,5 +1,6 @@
 ---
 title: "First physical visit to i.c.sens Leibniz Hannover (December 2022)"
+slug: "2022-hannover-first-physical-visit"
 date: 2022-12-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"

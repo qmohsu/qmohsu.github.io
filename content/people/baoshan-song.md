@@ -1,5 +1,6 @@
 ---
 title: "Baoshan Song"
+slug: "baoshan-song"
 role: "PhD Student"
 status: "current"
 years: "2023-present"

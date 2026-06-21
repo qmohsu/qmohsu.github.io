@@ -1,5 +1,6 @@
 ---
 title: "First major European invited talk: ENAC ITSNT 2021 Guest Speaker (June 2021)"
+slug: "2021-enac-itsnt-guest-speaker"
 date: 2021-06-24
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"

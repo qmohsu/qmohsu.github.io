@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Tightly-coupled visual/inertial/map integration with observability analysis for reliable localization of intelligent vehicles"
+slug: "2024-tightly-coupled-visualinertialmap-integration-with-observa"
 authors:
   - "Zheng, X."
   - "Wen, W."

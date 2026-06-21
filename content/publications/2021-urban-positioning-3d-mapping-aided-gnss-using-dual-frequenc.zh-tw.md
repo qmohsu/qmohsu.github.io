@@ -1,0 +1,26 @@
+---
+title: "Urban Positioning: 3D Mapping Aided GNSS using Dual-Frequency Pseudorange Measurements from Smartphones"
+slug: "2021-urban-positioning-3d-mapping-aided-gnss-using-dual-frequenc"
+authors:
+  - "Ng H.F."
+  - "Zhang G."
+  - "Hsu L. T."
+year: 2021
+venue: "NAVIGATION: Journal of the Institute of Navigation"
+type: "journal"
+cv_number: 78
+featured: false
+quartile: "Q1"
+doi: "10.1002/navi.448"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "receiver-sdr"
+  - "urban-gnss-reliability"
+  - "environment-aware-pnt"
+  - "seamless-pnt-embodied"
+tags: []
+---
+
+<aside class="translation-stub">本論文以英文發表。完整書目詳情、DOI / PDF 連結請見 <a href="/en/publications/2021-urban-positioning-3d-mapping-aided-gnss-using-dual-frequenc/">英文頁面</a>。</aside>

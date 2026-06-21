@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Factor Graph Optimization Based Multi Epoch Ambiguity Resolution for GNSS RTK and its Evaluation in Hong Kong Urban Canyons"
+slug: "2024-factor-graph-optimization-based-multi-epoch-ambiguity"
 authors:
   - "Yuan Li"
   - "Xikun Liu"

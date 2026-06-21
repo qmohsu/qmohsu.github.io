@@ -1,5 +1,6 @@
 ---
 title: "Urban GNSS Reliability and Signal Error Modeling"
+slug: "urban-gnss-reliability"
 description: "Modeling how GNSS measurements fail in dense cities — NLOS, multipath, diffraction, heavy-tailed errors — so downstream estimation and integrity systems know when to trust them."
 keywords:
   - "urban GNSS"

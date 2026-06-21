@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Principal Gaussian Overbound for Heavy-tailed Error Bounding"
+slug: "2024-principal-gaussian-overbound-for-heavy-tailed-error-bounding"
 authors:
   - "Yan, P."
   - "Zhong, Y."

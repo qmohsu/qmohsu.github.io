@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A post-correlation graphical way for continuous GNSS spoofing detection"
+slug: "2023-a-post-correlation-graphical-way-for-continuous-gnss-spoofin"
 authors:
   - "Fang, J."
   - "Yue, J."

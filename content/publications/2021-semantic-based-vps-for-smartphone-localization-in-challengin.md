@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Semantic-Based VPS for Smartphone Localization in Challenging Urban Environments"
+slug: "2021-semantic-based-vps-for-smartphone-localization-in-challengin"
 authors:
   - "Lee J.L. M."
   - "Hsu L. T."

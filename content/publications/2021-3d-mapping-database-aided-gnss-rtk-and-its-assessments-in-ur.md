@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Mapping Database Aided GNSS RTK and Its Assessments in Urban Canyons"
+slug: "2021-3d-mapping-database-aided-gnss-rtk-and-its-assessments-in-ur"
 authors:
   - "Ng H.F."
   - "Hsu L.T."

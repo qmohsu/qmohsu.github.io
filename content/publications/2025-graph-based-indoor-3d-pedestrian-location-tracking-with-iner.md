@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Graph-Based Indoor 3D Pedestrian Location Tracking With Inertial-Only Perception"
+slug: "2025-graph-based-indoor-3d-pedestrian-location-tracking-with-iner"
 authors:
   - "Bai, S."
   - "Wen, W."

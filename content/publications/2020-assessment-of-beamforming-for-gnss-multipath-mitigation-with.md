@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Assessment of beamforming for GNSS multipath mitigation with a cost-effective structure"
+slug: "2020-assessment-of-beamforming-for-gnss-multipath-mitigation-with"
 authors:
   - "Jia Q."
   - "Hsu L. T."

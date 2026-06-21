@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS NLOS Exclusion Based on Dynamic Object Detection Using LiDAR Point Cloud"
+slug: "2019-gnss-nlos-exclusion-based-on-dynamic-object-detection-using"
 authors:
   - "Wen W."
   - "Zhang G."

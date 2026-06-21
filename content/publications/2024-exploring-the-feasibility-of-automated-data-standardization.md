@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Exploring the Feasibility of Automated Data Standardization using Large Language Models for Seamless Positioning"
+slug: "2024-exploring-the-feasibility-of-automated-data-standardization"
 authors:
   - "Max J. L. Lee"
   - "Ju Lin"

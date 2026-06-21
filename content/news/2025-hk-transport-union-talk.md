@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at HK Motor Transport and Driving Industry Workers General Union (July 2025)"
+slug: "2025-hk-transport-union-talk"
 date: 2025-07-12
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

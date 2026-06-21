@@ -1,5 +1,6 @@
 ---
 title: "Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors"
+slug: "2026-jackknife-araim-efficient-gnss-integrity-monitoring-for"
 authors:
   - "Penggao Yan"
   - "Ronghe Jin"

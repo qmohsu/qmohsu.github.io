@@ -1,5 +1,6 @@
 ---
 title: "Kennaissa Kebeto Nabi"
+slug: "kennaissa-nabi"
 role: "Intern"
 status: "alumni"
 years: "2025"

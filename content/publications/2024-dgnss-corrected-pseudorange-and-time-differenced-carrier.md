@@ -1,5 +1,6 @@
-﻿---
+---
 title: "DGNSS Corrected Pseudorange and Time-Differenced Carrier Phase (TDCP) Measurements using Differentiable Factor Graph Optimization (DFGO)"
+slug: "2024-dgnss-corrected-pseudorange-and-time-differenced-carrier"
 authors:
   - "Hoi-Fung Ng"
   - "Penghui Xu"

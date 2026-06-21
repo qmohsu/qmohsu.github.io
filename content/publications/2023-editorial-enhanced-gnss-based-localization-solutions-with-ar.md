@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Editorial: Enhanced GNSS-based localization solutions with artificial intelligence"
+slug: "2023-editorial-enhanced-gnss-based-localization-solutions-with-ar"
 authors:
   - "Juliette Marais"
   - "Omar García Crespillo"

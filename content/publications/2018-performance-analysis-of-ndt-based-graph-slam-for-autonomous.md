@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance analysis of NDT-based graph slam for autonomous vehicle in diverse typical driving scenarios of Hong Kong"
+slug: "2018-performance-analysis-of-ndt-based-graph-slam-for-autonomous"
 authors:
   - "Wen W."
   - "Hsu L. T."

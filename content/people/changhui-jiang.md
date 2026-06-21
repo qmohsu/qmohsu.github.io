@@ -1,5 +1,6 @@
 ---
 title: "Changhui Jiang"
+slug: "changhui-jiang"
 role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2019-2020"

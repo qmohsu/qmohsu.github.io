@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Intelligent GPS L1 LOS/Multipath/NLOS Classifiers Based on Correlator-, RINEX-and NMEA-Level Measurements"
+slug: "2019-intelligent-gps-l1-losmultipathnlos-classifiers-based-on-c"
 authors:
   - "Xu B."
   - "Jia Q."

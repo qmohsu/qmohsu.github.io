@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Degeneration-aware Outlier Mitigation for Visual Inertial Integrated Navigation System in Urban Canyons"
+slug: "2021-degeneration-aware-outlier-mitigation-for-visual-inertial-in"
 authors:
   - "Bai X."
   - "Wen W."

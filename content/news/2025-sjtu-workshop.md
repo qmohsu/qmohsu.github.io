@@ -1,5 +1,6 @@
 ---
 title: "Invited talk at Shanghai Jiao Tong University: 3DMA Development and Future (June 2025)"
+slug: "2025-sjtu-workshop"
 date: 2025-06-28
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

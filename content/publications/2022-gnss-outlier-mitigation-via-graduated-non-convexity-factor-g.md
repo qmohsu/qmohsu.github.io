@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS Outlier Mitigation via Graduated Non-Convexity Factor Graph Optimization"
+slug: "2022-gnss-outlier-mitigation-via-graduated-non-convexity-factor-g"
 authors:
   - "Wen W."
   - "Zhang G."

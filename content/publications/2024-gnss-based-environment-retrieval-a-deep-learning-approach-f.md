@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS-based Environment Retrieval: A Deep Learning Approach for Fine-grained Environment Perception"
+slug: "2024-gnss-based-environment-retrieval-a-deep-learning-approach-f"
 authors:
   - "Zhang, Z."
   - "Xu, P."

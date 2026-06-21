@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Correcting NLOS by 3D LiDAR and building height to improve GNSS single point positioning"
+slug: "2019-correcting-nlos-by-3d-lidar-and-building-height-to-improve-g"
 authors:
   - "Wen W."
   - "Zhang G."

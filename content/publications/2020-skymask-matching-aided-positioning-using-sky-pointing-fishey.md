@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Skymask Matching Aided Positioning Using Sky-Pointing Fisheye Camera and 3D City Models in Urban Canyons"
+slug: "2020-skymask-matching-aided-positioning-using-sky-pointing-fishey"
 authors:
   - "Lee M.J.L."
   - "Lee S."

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Multi-Objective Flight Altitude Decision Considering Contrails, Fuel Consumption and Flight Time"
+slug: "2020-multi-objective-flight-altitude-decision-considering-contrai"
 authors:
   - "Xue D."
   - "Ng K. H."

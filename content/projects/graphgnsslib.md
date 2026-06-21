@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GraphGNSSLib"
+slug: "graphgnsslib"
 description: "Open-source factor-graph platform for GNSS positioning, RTK, and GNSS/INS research."
 category: "open-platform"
 status: "active"

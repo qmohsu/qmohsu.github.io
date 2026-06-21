@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Three-Dimensional Mapping-Aided Global Navigation Satellite System in Global Navigation Satellite System-Accessible Indoor Areas"
+slug: "2026-three-dimensional-mapping-aided-global-navigation-satellite"
 authors:
   - "Hoi-Wah Ng"
   - "Hoi-Fung Ng"

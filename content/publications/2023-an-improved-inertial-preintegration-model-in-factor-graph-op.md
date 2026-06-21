@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An Improved Inertial Preintegration Model in Factor Graph Optimization for High Accuracy Positioning of Intelligent Vehicles"
+slug: "2023-an-improved-inertial-preintegration-model-in-factor-graph-op"
 authors:
   - "Zhang, L."
   - "Wen, W."

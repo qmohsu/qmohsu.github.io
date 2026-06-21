@@ -1,5 +1,6 @@
 ---
 title: "PolyU hosts Prof. Peter Teunissen (November 2024)"
+slug: "2024-peter-teunissen-visit"
 date: 2024-11-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"

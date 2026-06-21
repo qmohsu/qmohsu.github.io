@@ -1,9 +1,36 @@
+{{ $cn := eq .Lang "zh-cn" }}
+{{ $tw := eq .Lang "zh-tw" }}
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      &copy; {{ now.Year }} {{ .Site.Title }} &middot; Hosted on GitHub Pages
+  <div class="site-footer-grid">
+    <div class="footer-block footer-block-brand">
+      <div class="footer-brand">IPNL</div>
+      <div class="footer-brand-sub">{{ if $cn }}智能定位与导航实验室{{ else if $tw }}智能定位與導航實驗室{{ else }}Intelligent Positioning &amp; Navigation Laboratory{{ end }}</div>
+      <div class="footer-affil">{{ if $cn }}香港理工大学<br>航空及民航工程学系{{ else if $tw }}香港理工大學<br>航空及民航工程學系{{ else }}Department of Aeronautical and Aviation Engineering<br>The Hong Kong Polytechnic University{{ end }}</div>
     </div>
-    <div class="footer-links">
+    <div class="footer-block">
+      <div class="footer-label">{{ if $cn }}了解我们{{ else if $tw }}了解我們{{ else }}Explore{{ end }}</div>
+      {{ range first 4 .Site.Menus.main }}
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <div class="footer-block">
+      <div class="footer-label">{{ if $cn }}合作{{ else if $tw }}合作{{ else }}Engage{{ end }}</div>
+      <a href="{{ "/engage/" | relLangURL }}">{{ if $cn }}合作模式{{ else if $tw }}合作模式{{ else }}Collaboration{{ end }}</a>
+      {{ range after 4 (first 7 .Site.Menus.main) }}
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <div class="footer-block">
+      <div class="footer-label">{{ if $cn }}联系{{ else if $tw }}聯絡{{ else }}Contact{{ end }}</div>
+      <a href="{{ "/engage/#contact" | relLangURL }}" class="footer-email">{{ if $cn }}发送一条消息 &rarr;{{ else if $tw }}發送一條訊息 &rarr;{{ else }}Send a message &rarr;{{ end }}</a>
+      <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/IPNL-POLYU" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://orcid.org/0000-0002-0352-741X" target="_blank" rel="noopener">ORCID</a>
+    </div>
+  </div>
+  <div class="site-footer-bar">
+    <div>&copy; {{ now.Year }} IPNL &middot; {{ if $cn }}香港理工大学{{ else if $tw }}香港理工大學{{ else }}Hong Kong Polytechnic University{{ end }} &middot; Hosted on GitHub Pages</div>
+    <div class="footer-meta-links">
       <a href="{{ "/llms.txt" | relURL }}">llms.txt</a>
     </div>
   </div>

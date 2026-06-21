@@ -1,5 +1,6 @@
 ---
 title: "ION Webinar: Performance Assessment of GNSS Diffraction Models in Urban Areas (September 2021)"
+slug: "2021-ion-webinar-gnss-diffraction"
 date: 2021-09-14
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"

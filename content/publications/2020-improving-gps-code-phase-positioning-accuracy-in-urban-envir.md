@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Improving GPS Code Phase Positioning Accuracy in Urban Environments Using Machine Learning"
+slug: "2020-improving-gps-code-phase-positioning-accuracy-in-urban-envir"
 authors:
   - "Sun R."
   - "Wang G."

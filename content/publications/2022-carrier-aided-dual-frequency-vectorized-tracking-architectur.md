@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Carrier-Aided Dual Frequency Vectorized Tracking Architecture for NavIC Signals"
+slug: "2022-carrier-aided-dual-frequency-vectorized-tracking-architectur"
 authors:
   - "Dey A."
   - "Iyer K."

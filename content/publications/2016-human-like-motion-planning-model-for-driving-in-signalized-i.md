@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Human-like motion planning model for driving in signalized intersections"
+slug: "2016-human-like-motion-planning-model-for-driving-in-signalized-i"
 authors:
   - "Gu Y."
   - "Hashimoto Y."

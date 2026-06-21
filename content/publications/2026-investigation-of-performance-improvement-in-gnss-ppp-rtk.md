@@ -1,5 +1,6 @@
 ---
 title: "Investigation of performance improvement in GNSS PPP-RTK ambiguity resolution"
+slug: "2026-investigation-of-performance-improvement-in-gnss-ppp-rtk"
 authors:
   - "Yuan Li"
   - "Penggao Yan"

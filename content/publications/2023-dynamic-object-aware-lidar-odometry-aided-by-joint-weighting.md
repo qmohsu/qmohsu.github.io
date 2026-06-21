@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Dynamic Object-aware LiDAR Odometry Aided by Joint Weightings Estimation in Urban Areas"
+slug: "2023-dynamic-object-aware-lidar-odometry-aided-by-joint-weighting"
 authors:
   - "Huang, F."
   - "Wen, W."

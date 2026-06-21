@@ -1,0 +1,28 @@
+---
+title: "Enhancing GNSS Positioning Accuracy for Road Monitoring Systems: A Factor Graph Optimization Approach Aided by Geospatial Information"
+slug: "2024-enhancing-gnss-positioning-accuracy-for-road-monitoring-syst"
+authors:
+  - "Zhong, Y."
+  - "Hu, R."
+  - "Bai, X."
+  - "Li, X."
+  - "Hsu, L. T."
+  - "Wen, W."
+year: 2024
+venue: "IEEE Transactions on Instrumentation and Measurement"
+type: "journal"
+cv_number: 31
+featured: false
+quartile: "Q1"
+doi: "10.1109/tim.2024.3369156"
+pdf: ""
+code: ""
+data: ""
+themes:
+  - "urban-gnss-reliability"
+  - "optimization-estimation"
+  - "seamless-pnt-embodied"
+tags: []
+---
+
+<aside class="translation-stub">本论文以英文发表。完整书目详情、DOI / PDF 链接请见 <a href="/en/publications/2024-enhancing-gnss-positioning-accuracy-for-road-monitoring-syst/">英文页面</a>。</aside>

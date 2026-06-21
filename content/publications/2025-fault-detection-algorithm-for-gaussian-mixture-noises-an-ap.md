@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Fault Detection Algorithm for Gaussian Mixture Noises: An Application in Lidar/IMU Integrated Localization Systems"
+slug: "2025-fault-detection-algorithm-for-gaussian-mixture-noises-an-ap"
 authors:
   - "Yan, P."
   - "Li, Z."

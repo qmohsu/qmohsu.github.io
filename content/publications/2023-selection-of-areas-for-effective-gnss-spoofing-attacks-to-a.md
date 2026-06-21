@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Selection of Areas for Effective GNSS Spoofing Attacks to a Vehicle-mounted MSF System based on Scenario Classification Models"
+slug: "2023-selection-of-areas-for-effective-gnss-spoofing-attacks-to-a"
 authors:
   - "Chang, J."
   - "Huang, F."

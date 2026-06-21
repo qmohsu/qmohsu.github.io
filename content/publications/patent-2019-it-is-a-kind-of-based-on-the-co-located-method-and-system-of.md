@@ -1,14 +1,15 @@
-﻿---
-title: "It is a kind of based on the co-located method and system of three-dimensional map assisted GNSS, positioning device, storage medium"
+---
+title: "3D map-aided GNSS cooperative positioning method and system"
+slug: "patent-2019-it-is-a-kind-of-based-on-the-co-located-method-and-system-of"
 authors:
   - "Zhang G"
   - "Hsu L. T"
-year: 2019
+year: 2021
 venue: "Patent"
 type: "patent"
-patent_number: "CN 110426717A"
+patent_number: "ZL 201910866398.X"
 patent_office: "China National Intellectual Property Administration"
-patent_url: "https://patents.google.com/patent/CN110426717A"
+patent_url: "https://patents.google.com/patent/CN110426717B"
 cv_number: 10
 featured: false
 doi: ""

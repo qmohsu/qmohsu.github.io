@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D LiDAR Aided GNSS NLOS Mitigation in Urban Canyons"
+slug: "2022-3d-lidar-aided-gnss-nlos-mitigation-in-urban-canyons"
 authors:
   - "Wen W. and Hsu L.-T."
 year: 2022

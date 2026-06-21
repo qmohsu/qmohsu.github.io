@@ -1,5 +1,6 @@
 ---
 title: "Queenie Hiu-Yi Ho"
+slug: "queenie-ho"
 role: "MPhil Student"
 status: "alumni"
 years: "2021-2024"

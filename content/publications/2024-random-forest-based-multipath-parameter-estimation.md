@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Random forest-based multipath parameter estimation"
+slug: "2024-random-forest-based-multipath-parameter-estimation"
 authors:
   - "Qi, X."
   - "Xu, B."

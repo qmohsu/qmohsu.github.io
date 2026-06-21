@@ -1,13 +1,21 @@
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $lblLicense := cond $cn "许可" (cond $tw "授權" "License") }}
+{{ $lblRepo := cond $cn "代码仓库" (cond $tw "程式碼倉庫" "Repository") }}
+{{ $subtypeMap := dict
+  "dataset"   (cond $cn "数据集" (cond $tw "資料集" "dataset"))
+  "software"  (cond $cn "软件" (cond $tw "軟體" "software"))
+  "benchmark" (cond $cn "基准测试" (cond $tw "基準測試" "benchmark"))
+}}
 <div class="card resource-card">
-  {{ with .Params.subtype }}<div class="subtype">{{ . }}</div>{{ end }}
+  {{ with .Params.subtype }}<div class="subtype">{{ index $subtypeMap . | default . }}</div>{{ end }}
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ with .Description }}<p>{{ . }}</p>{{ end }}
   <div class="meta">
-    {{ with .Params.license }}License: {{ . }}{{ end }}
+    {{ with .Params.license }}{{ $lblLicense }}: {{ . }}{{ end }}
   </div>
   {{ with .Params.repo }}
   <div class="pub-links" style="margin-top:6px;">
-    <a href="{{ . }}" target="_blank">Repository</a>
+    <a href="{{ . }}" target="_blank">{{ $lblRepo }}</a>
   </div>
   {{ end }}
 </div>

@@ -1,5 +1,6 @@
 ---
 title: "Dr. Li-Ta Hsu receives ION Per Enge Early Achievement Award"
+slug: "2023-per-enge-award"
 date: 2023-09-20
 category: "award"
 summary: "Dr. Hsu received the Per Enge Early Achievement Award from the Institute of Navigation, recognizing his contributions to GNSS positioning research."

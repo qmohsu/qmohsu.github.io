@@ -1,5 +1,6 @@
 ---
 title: "Weisong Wen"
+slug: "weisong-wen"
 role: "PhD Student"
 status: "alumni"
 years: "2017-2020"

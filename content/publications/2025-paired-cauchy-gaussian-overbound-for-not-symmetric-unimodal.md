@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Paired Cauchy-Gaussian overbound for not symmetric unimodal heavy-tailed distributions"
+slug: "2025-paired-cauchy-gaussian-overbound-for-not-symmetric-unimodal"
 authors:
   - "Zhengdao Li"
   - "Penggao Yan"

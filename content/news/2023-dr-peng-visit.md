@@ -1,5 +1,6 @@
 ---
 title: "Dr. Chaochung Peng Visits IPNL"
+slug: "2023-dr-peng-visit"
 date: 2023-07-13
 category: "event"
 summary: "Dr. Chaochung Peng visited IPNL for academic exchange."

@@ -1,5 +1,6 @@
 ---
 title: "Yang Song"
+slug: "yang-song"
 role: "MSc Student"
 status: "alumni"
 years: "2018-2020"

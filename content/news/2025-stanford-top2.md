@@ -1,5 +1,6 @@
 ---
 title: "Dr. Hsu named in Stanford Top 2% Most-Cited Scientists"
+slug: "2025-stanford-top2"
 date: 2025-01-15
 category: "recognition"
 summary: "Dr. Li-Ta Hsu has been listed among the top 2% most-cited scientists worldwide in the Stanford/Elsevier ranking for five consecutive years (2021-2025)."

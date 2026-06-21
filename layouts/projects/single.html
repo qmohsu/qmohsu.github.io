@@ -1,12 +1,30 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
-  {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $statusMap := dict
+  "active"    (cond $cn "进行中" (cond $tw "進行中" "active"))
+  "ongoing"   (cond $cn "进行中" (cond $tw "進行中" "ongoing"))
+  "planned"   (cond $cn "规划中" (cond $tw "規劃中" "planned"))
+  "completed" (cond $cn "已完成" (cond $tw "已完成" "completed"))
+  "archived"  (cond $cn "已归档" (cond $tw "已歸檔" "archived"))
+}}
+{{ $lblFunding := cond $cn "经费" (cond $tw "經費" "Funding") }}
+{{ $lblStarted := cond $cn "起止" (cond $tw "起止" "Started") }}
+{{ $lblCollab := cond $cn "合作方" (cond $tw "合作方" "Collaborators") }}
+{{ $lblMembers := cond $cn "参与的实验室成员" (cond $tw "參與的實驗室成員" "Lab members involved") }}
+{{ $lblPillars := cond $cn "研究方向" (cond $tw "研究方向" "Research Pillars") }}
+{{ $lblCode := cond $cn "代码仓库" (cond $tw "程式碼倉庫" "Code Repository") }}
+{{ $lblVideos := cond $cn "视频" (cond $tw "影片" "Videos") }}
+{{ $lblPhotos := cond $cn "照片" (cond $tw "照片" "Photos") }}
+<article class="prose">
+  {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ index $statusMap . | default . }}</span>{{ end }}
 
   {{ if or .Params.video .Params.videos }}
   {{ $vids := .Params.videos | default (slice .Params.video) }}
   <div class="video-stack">
-    {{ if gt (len $vids) 1 }}<h2>Videos</h2>{{ end }}
+    {{ if gt (len $vids) 1 }}<h2>{{ $lblVideos }}</h2>{{ end }}
     {{ range $vids }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
   </div>
   {{ end }}
@@ -15,22 +33,22 @@
 
   {{ if .Params.images }}
   <div class="image-stack">
-    {{ if gt (len .Params.images) 1 }}<h2>Photos</h2>{{ end }}
+    {{ if gt (len .Params.images) 1 }}<h2>{{ $lblPhotos }}</h2>{{ end }}
     {{ range .Params.images }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
   </div>
   {{ end }}
 
   <div class="section">
-    {{ with .Params.funding }}<p><strong>Funding:</strong> {{ . }}</p>{{ end }}
-    {{ with .Params.start_date }}<p><strong>Started:</strong> {{ . }}{{ end }}{{ with $.Params.end_date }} — {{ . }}{{ end }}</p>
+    {{ with .Params.funding }}<p><strong>{{ $lblFunding }}:</strong> {{ . }}</p>{{ end }}
+    {{ with .Params.start_date }}<p><strong>{{ $lblStarted }}:</strong> {{ . }}{{ end }}{{ with $.Params.end_date }} — {{ . }}{{ end }}</p>
     {{ with .Params.collaborators }}
-    <p><strong>Collaborators:</strong> {{ delimit . ", " }}</p>
+    <p><strong>{{ $lblCollab }}:</strong> {{ delimit . ", " }}</p>
     {{ end }}
   </div>
 
   {{ with .Params.people }}
   <div class="section">
-    <h2>Lab members involved</h2>
+    <h2>{{ $lblMembers }}</h2>
     <div class="people-pills">
     {{ range . }}
       {{ $person := $.Site.GetPage (printf "/people/%s" .) }}
@@ -46,7 +64,7 @@
 
   {{ with .Params.themes }}
   <div class="section">
-    <h2>Research Pillars</h2>
+    <h2>{{ $lblPillars }}</h2>
     <div class="people-pills">
     {{ range . }}
       {{ $pillarPage := $.Site.GetPage (printf "/research/%s" .) }}
@@ -62,9 +80,11 @@
 
   {{ if or .Params.repo .Params.doi }}
   <div class="pub-links">
-    {{ with .Params.repo }}<a href="{{ . }}" target="_blank">Code Repository</a>{{ end }}
+    {{ with .Params.repo }}<a href="{{ . }}" target="_blank">{{ $lblCode }}</a>{{ end }}
     {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
   </div>
   {{ end }}
 </article>
+</div>
+</div>
 {{ end }}

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS-RTK Adaptively Integrated with LiDAR/IMU Odometry for Continuously Global Positioning in Urban Canyons"
+slug: "2022-gnss-rtk-adaptively-integrated-with-lidarimu-odometry-for-c"
 authors:
   - "Zhang J"
   - "Wen W"

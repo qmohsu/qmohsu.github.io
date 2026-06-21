@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Data Denoising Based on Hadamard Matrix Transformation and Rayleigh Quotient Maximization: Application to GNSS Signal Classification"
+slug: "2022-data-denoising-based-on-hadamard-matrix-transformation-and-r"
 authors:
   - "Yue J."
   - "Xu B. and Hsu, L. T."

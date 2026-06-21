@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Assessment of Composite PRN Code Acquisition Methods for GPS Signal"
+slug: "2010-assessment-of-composite-prn-code-acquisition-methods-for-gps"
 authors:
   - "Jan S. S."
   - "Hsu L. T."

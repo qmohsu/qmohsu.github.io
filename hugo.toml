@@ -1,9 +1,9 @@
 baseURL = "https://qmohsu.github.io/"
-languageCode = "en"
-title = "IPNL — Intelligent Positioning and Navigation Laboratory"
+title = "IPNL"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 [params]
-  description = "GNSS, urban navigation, sensor fusion, integrity monitoring — PolyU"
   author = "Li-Ta Hsu"
   email = "lt.hsu@polyu.edu.hk"
   orcid = "0000-0002-0352-741X"
@@ -34,52 +34,132 @@ title = "IPNL — Intelligent Positioning and Navigation Laboratory"
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
 
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
+# ============================================================================
+# MULTILINGUAL — EN / 简体中文 / 繁體中文
+# All three languages live under /en/ /zh-cn/ /zh-tw/ prefixes.
+# ============================================================================
 
-[[menu.main]]
-  name = "Research"
-  url = "/research/"
-  weight = 2
+[languages]
 
-[[menu.main]]
-  name = "Projects"
-  url = "/projects/"
-  weight = 3
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    title = "IPNL — Intelligent Positioning and Navigation Laboratory"
+    contentDir = "content"
+    [languages.en.params]
+      description = "GNSS, urban navigation, sensor fusion, integrity monitoring — PolyU"
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "Research"
+      url = "/research/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "R&D Projects"
+      url = "/projects/"
+      weight = 3
+    [[languages.en.menu.main]]
+      name = "Publications"
+      url = "/publications/"
+      weight = 5
+    [[languages.en.menu.main]]
+      name = "Team"
+      url = "/people/"
+      weight = 6
+    [[languages.en.menu.main]]
+      name = "News"
+      url = "/news/"
+      weight = 7
+    [[languages.en.menu.main]]
+      name = "Resources"
+      url = "/resources/"
+      weight = 8
+    [[languages.en.menu.main]]
+      name = "Engage"
+      url = "/engage/"
+      weight = 9
 
-[[menu.main]]
-  name = "Publications"
-  url = "/publications/"
-  weight = 4
+  [languages.zh-cn]
+    languageName = "简体中文"
+    languageCode = "zh-CN"
+    weight = 2
+    title = "IPNL — 智能定位与导航实验室"
+    contentDir = "content"
+    [languages.zh-cn.params]
+      description = "GNSS、城市导航、传感器融合、完好性监测 — 香港理工大学"
+    [[languages.zh-cn.menu.main]]
+      name = "首页"
+      url = "/"
+      weight = 1
+    [[languages.zh-cn.menu.main]]
+      name = "研究方向"
+      url = "/research/"
+      weight = 2
+    [[languages.zh-cn.menu.main]]
+      name = "研发项目"
+      url = "/projects/"
+      weight = 3
+    [[languages.zh-cn.menu.main]]
+      name = "论文"
+      url = "/publications/"
+      weight = 5
+    [[languages.zh-cn.menu.main]]
+      name = "团队"
+      url = "/people/"
+      weight = 6
+    [[languages.zh-cn.menu.main]]
+      name = "新闻"
+      url = "/news/"
+      weight = 7
+    [[languages.zh-cn.menu.main]]
+      name = "开放资源"
+      url = "/resources/"
+      weight = 8
+    [[languages.zh-cn.menu.main]]
+      name = "联系合作"
+      url = "/engage/"
+      weight = 9
 
-[[menu.main]]
-  name = "People"
-  url = "/people/"
-  weight = 5
-
-[[menu.main]]
-  name = "Resources"
-  url = "/resources/"
-  weight = 6
-
-[[menu.main]]
-  name = "Teaching"
-  url = "/teaching/"
-  weight = 7
-
-[[menu.main]]
-  name = "News"
-  url = "/news/"
-  weight = 8
-
-[[menu.main]]
-  name = "Join Us"
-  url = "/join/"
-  weight = 9
-
-[[menu.main]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 10
+  [languages.zh-tw]
+    languageName = "繁體中文"
+    languageCode = "zh-TW"
+    weight = 3
+    title = "IPNL — 智能定位與導航實驗室"
+    contentDir = "content"
+    [languages.zh-tw.params]
+      description = "GNSS、城市導航、感測器融合、完整性監測 — 香港理工大學"
+    [[languages.zh-tw.menu.main]]
+      name = "首頁"
+      url = "/"
+      weight = 1
+    [[languages.zh-tw.menu.main]]
+      name = "研究方向"
+      url = "/research/"
+      weight = 2
+    [[languages.zh-tw.menu.main]]
+      name = "研發項目"
+      url = "/projects/"
+      weight = 3
+    [[languages.zh-tw.menu.main]]
+      name = "論文"
+      url = "/publications/"
+      weight = 5
+    [[languages.zh-tw.menu.main]]
+      name = "團隊"
+      url = "/people/"
+      weight = 6
+    [[languages.zh-tw.menu.main]]
+      name = "新聞"
+      url = "/news/"
+      weight = 7
+    [[languages.zh-tw.menu.main]]
+      name = "開放資源"
+      url = "/resources/"
+      weight = 8
+    [[languages.zh-tw.menu.main]]
+      name = "聯絡合作"
+      url = "/engage/"
+      weight = 9

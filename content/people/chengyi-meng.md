@@ -1,5 +1,6 @@
 ---
 title: "Chengyi Meng"
+slug: "chengyi-meng"
 role: "Research Assistant"
 status: "current"
 years: "2026-present"

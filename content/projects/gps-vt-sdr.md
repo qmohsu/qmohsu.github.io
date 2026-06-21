@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GPS_VT_SDR: Receiver-Level GNSS Signal Processing Platform"
+slug: "gps-vt-sdr"
 description: "Open-source MATLAB software-defined receiver for GPS vector tracking and receiver-level signal processing research."
 category: "open-platform"
 status: "archived-influential"

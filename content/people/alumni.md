@@ -1,5 +1,6 @@
 ---
 title: "Alumni"
+slug: "alumni"
 layout: "alumni"
 description: "IPNL alumni — former PhD/MPhil students, postdoctoral fellows, MSc students, research assistants, and visiting researchers."
 ---

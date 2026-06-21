@@ -1,5 +1,6 @@
-﻿---
+---
 title: "ECMD: An Event-Centric Multisensory Driving Dataset for SLAM"
+slug: "2023-ecmd-an-event-centric-multisensory-driving-dataset-for-slam"
 authors:
   - "Chen, P."
   - "Guan, W."

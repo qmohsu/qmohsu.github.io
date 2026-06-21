@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Positioning method and electronic equipment"
+slug: "patent-2018-positioning-method-and-electronic-equipment-cn111198389b"
 authors:
   - "Wang Y"
   - "Hsu L. T"

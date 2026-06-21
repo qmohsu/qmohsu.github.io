@@ -1,5 +1,6 @@
 ---
 title: "PolyU at ION Pacific PNT 2024 (Honolulu, April 2024)"
+slug: "2024-ion-pacific-pnt"
 date: 2024-04-15
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"

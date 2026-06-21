@@ -1,5 +1,6 @@
 ---
 title: "Environment-Aware and 3D Map-Aided PNT"
+slug: "environment-aware-pnt"
 description: "Using 3D city models, LiDAR maps, sky visibility, ray tracing, and digital twins to turn the urban environment from an obstacle into prior information for navigation."
 keywords:
   - "3D mapping-aided GNSS"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Sky Visibility Estimation based on GNSS Satellite Visibility: An Approach of GNSS based Context-Awareness"
+slug: "2020-sky-visibility-estimation-based-on-gnss-satellite-visibility"
 authors:
   - "Xu H."
   - "Hsu L. T."

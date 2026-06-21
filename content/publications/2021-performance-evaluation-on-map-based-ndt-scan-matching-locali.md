@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Performance Evaluation on Map-based NDT Scan Matching Localization using Simulated Occlusion Datasets"
+slug: "2021-performance-evaluation-on-map-based-ndt-scan-matching-locali"
 authors:
   - "Kan Y.C."
   - "Hsu L. T."

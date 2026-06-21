@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An Open Source Matlab Code on GPS Vector Tracking based on Software-Defined Receiver"
+slug: "2019-an-open-source-matlab-code-on-gps-vector-tracking-based-on-s"
 authors:
   - "Xu B."
   - "Hsu L. T."

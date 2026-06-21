@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Mapping Database Aided GNSS Based Collaborative Positioning Using Factor Graph Optimization"
+slug: "2020-3d-mapping-database-aided-gnss-based-collaborative-positioni"
 authors:
   - "Zhang G."
   - "Ng H. F."

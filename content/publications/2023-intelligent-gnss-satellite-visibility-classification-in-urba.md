@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Intelligent GNSS Satellite Visibility Classification in Urban Areas: A Deep Learning Approach with Interpretation"
+slug: "2023-intelligent-gnss-satellite-visibility-classification-in-urba"
 authors:
   - "Zekun Zhang"
   - "Penghui Xu"

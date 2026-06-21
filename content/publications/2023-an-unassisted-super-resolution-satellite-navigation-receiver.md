@@ -1,5 +1,6 @@
-﻿---
+---
 title: "An Unassisted Super-Resolution Satellite Navigation Receiver Using GPS L5 Signals"
+slug: "2023-an-unassisted-super-resolution-satellite-navigation-receiver"
 authors:
   - "Luo, Y."
   - "Hsu, L. T."

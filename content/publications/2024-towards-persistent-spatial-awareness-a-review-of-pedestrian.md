@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Towards Persistent Spatial Awareness: A Review of Pedestrian Dead Reckoning-Centric Indoor Positioning with Smartphones"
+slug: "2024-towards-persistent-spatial-awareness-a-review-of-pedestrian"
 authors:
   - "Bai, S."
   - "Wen, W."

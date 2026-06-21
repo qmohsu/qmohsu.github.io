@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Research on Time-Correlated Errors Using Allan Variance in a Kalman Filter Applicable to Vector-Tracking-Based GNSS Software-Defined Receiver for Autonomous Ground Vehicle Navigation"
+slug: "2019-research-on-time-correlated-errors-using-allan-variance-in-a"
 authors:
   - "Luo Y."
   - "Li J."

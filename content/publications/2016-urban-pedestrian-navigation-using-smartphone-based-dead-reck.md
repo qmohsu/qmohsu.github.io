@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Urban Pedestrian Navigation using Smartphone-based Dead Reckoning and 3D Maps Aided GNSS"
+slug: "2016-urban-pedestrian-navigation-using-smartphone-based-dead-reck"
 authors:
   - "Hsu L. T."
   - "Gu Y."

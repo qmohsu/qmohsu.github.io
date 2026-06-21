@@ -1,5 +1,6 @@
 ---
 title: "GPS_VT_SDR"
+slug: "gps-vt-sdr"
 description: "GPS vector tracking software-defined receiver hosted on the NOAA GPS Toolbox"
 subtype: "software"
 license: "Public"

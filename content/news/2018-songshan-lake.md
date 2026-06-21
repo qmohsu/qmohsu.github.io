@@ -1,5 +1,6 @@
 ---
 title: "Songshan Lake Innovation Competition"
+slug: "2018-songshan-lake"
 date: 2018-01-12
 category: "award"
 summary: "IPNL participated in the Songshan Lake innovation competition."

@@ -1,5 +1,6 @@
 ---
 title: "Hongmin Zhang"
+slug: "hongmin-zhang"
 role: "PhD Student"
 status: "alumni"
 years: "2022-2026"

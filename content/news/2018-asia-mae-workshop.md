@@ -1,5 +1,6 @@
 ---
 title: "8th Asia Workshop on Marine and Aviation Engineering"
+slug: "2018-asia-mae-workshop"
 date: 2018-12-02
 category: "event"
 summary: "IPNL participated in the 8th Asia Workshop on MAE."

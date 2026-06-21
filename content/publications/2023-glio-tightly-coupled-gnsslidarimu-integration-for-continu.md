@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GLIO: Tightly-coupled gnss/lidar/imu integration for continuous and drift-free state estimation of intelligent vehicles in urban areas"
+slug: "2023-glio-tightly-coupled-gnsslidarimu-integration-for-continu"
 authors:
   - "Liu, X."
   - "Wen, W."

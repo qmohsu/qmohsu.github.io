@@ -1,5 +1,6 @@
 ---
 title: "Bo Zhang"
+slug: "bo-zhang"
 role: "Research Assistant"
 status: "alumni"
 years: "2019-2021"

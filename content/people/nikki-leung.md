@@ -1,5 +1,6 @@
 ---
 title: "Nikki Yan-Tung Leung"
+slug: "nikki-leung"
 role: "MPhil Student"
 status: "alumni"
 years: "2021-2024"

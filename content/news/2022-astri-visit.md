@@ -1,5 +1,6 @@
 ---
 title: "ASTRI Lab Visit"
+slug: "2022-astri-visit"
 date: 2022-10-26
 category: "event"
 summary: "IPNL team visited ASTRI (Applied Science and Technology Research Institute)."

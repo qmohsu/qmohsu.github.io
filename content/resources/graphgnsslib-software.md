@@ -1,5 +1,6 @@
 ---
 title: "GraphGNSSLib"
+slug: "graphgnsslib-software"
 description: "Open-source GNSS positioning library using factor graph optimization (C/C++)"
 subtype: "software"
 license: "BSD"

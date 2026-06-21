@@ -1,5 +1,6 @@
-﻿---
+---
 title: "GNSS Doppler Velocity Estimation Aided by 3D Mapping Database"
+slug: "2024-gnss-doppler-velocity-estimation-aided-by-3d-mapping-databas"
 authors:
   - "Zhang, L."
   - "Ng, H. F."

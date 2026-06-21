@@ -1,5 +1,6 @@
 ---
 title: "ION ITM 2023 (January 2023)"
+slug: "2023-ion-itm-january"
 date: 2023-01-24
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"

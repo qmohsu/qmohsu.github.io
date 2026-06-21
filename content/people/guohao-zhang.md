@@ -1,5 +1,6 @@
 ---
 title: "Guohao Zhang"
+slug: "guohao-zhang"
 role: "PhD Student"
 status: "alumni"
 years: "2018-2021"

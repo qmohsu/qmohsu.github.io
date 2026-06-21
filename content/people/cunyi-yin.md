@@ -1,5 +1,6 @@
 ---
 title: "Cunyi Yin"
+slug: "cunyi-yin"
 role: "Postdoctoral Fellow"
 status: "current"
 years: "2025-present"

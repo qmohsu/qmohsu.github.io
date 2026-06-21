@@ -1,5 +1,6 @@
 ---
 title: "UrbanLoco Dataset Released"
+slug: "2020-urbanloco-dataset"
 date: 2020-03-30
 category: "event"
 summary: "IPNL released the UrbanLoco dataset for urban mapping and localization research."

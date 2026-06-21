@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Vector Tracking Loop-based GNSS NLOS Detection and Correction: Algorithm Design and Performance Analysis"
+slug: "2019-vector-tracking-loop-based-gnss-nlos-detection-and-correctio"
 authors:
   - "Xu B."
   - "Jia Q. and Hsu L. T."

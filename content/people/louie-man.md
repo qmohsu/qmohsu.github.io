@@ -1,5 +1,6 @@
 ---
 title: "Louie Man"
+slug: "louie-man"
 role: "MSc Student"
 status: "current"
 years: "2026-present"

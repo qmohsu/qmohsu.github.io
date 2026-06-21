@@ -1,13 +1,23 @@
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $lblFunding := cond $cn "经费" (cond $tw "經費" "Funding") }}
+{{ $lblCode := cond $cn "代码" (cond $tw "程式碼" "Code") }}
+{{ $statusMap := dict
+  "active"   (cond $cn "进行中" (cond $tw "進行中" "active"))
+  "ongoing"  (cond $cn "进行中" (cond $tw "進行中" "ongoing"))
+  "planned"  (cond $cn "规划中" (cond $tw "規劃中" "planned"))
+  "completed" (cond $cn "已完成" (cond $tw "已完成" "completed"))
+  "archived" (cond $cn "已归档" (cond $tw "已歸檔" "archived"))
+}}
 <div class="card">
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+  {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ index $statusMap . | default . }}</span>{{ end }}
   {{ with .Description }}<p>{{ . }}</p>{{ end }}
   <div class="meta">
-    {{ with .Params.funding }}Funding: {{ . }}{{ end }}
+    {{ with .Params.funding }}{{ $lblFunding }}: {{ . }}{{ end }}
   </div>
   {{ if or .Params.repo .Params.doi }}
   <div class="pub-links" style="margin-top:6px;">
-    {{ with .Params.repo }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
+    {{ with .Params.repo }}<a href="{{ . }}" target="_blank">{{ $lblCode }}</a>{{ end }}
     {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
   </div>
   {{ end }}

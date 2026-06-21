@@ -1,5 +1,6 @@
 ---
 title: "Xie Ning"
+slug: "xie-ning"
 role: "Research Assistant"
 status: "current"
 years: "2026-present"

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Gradient Boosting Decision Tree Based GPS Signal Reception Classification Algorithm"
+slug: "2019-a-gradient-boosting-decision-tree-based-gps-signal-reception"
 authors:
   - "Sun R."
   - "Wang G."

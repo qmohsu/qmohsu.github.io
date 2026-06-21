@@ -1,5 +1,6 @@
 ---
 title: "Robust GNSS Navigation for Urban Air Traffic Management"
+slug: "urban-air-traffic-management"
 description: "Aviation-grade GNSS + multi-sensor fusion navigation for low-altitude UAVs operating in dense urban environments — the urban air mobility (UAM / UTM) frontier."
 category: "research-program"
 status: "active"

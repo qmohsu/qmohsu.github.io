@@ -1,11 +1,14 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p><a href="{{ "/people/" | relURL }}">&larr; Back to current members</a></p>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<p><a href="{{ "/people/" | relLangURL }}">{{ if $cn }}&larr; 返回现任成员{{ else if $tw }}&larr; 返回現任成員{{ else }}&larr; Back to current members{{ end }}</a></p>
 {{ .Content }}
 
 {{ $people := where site.RegularPages "Section" "people" }}
 {{ $alumni := where $people ".Params.status" "alumni" }}
-{{ $alumniGroups := partial "people/alumni-groups.html" $people }}
+{{ $alumniGroups := partial "people/alumni-groups.html" (dict "people" $people "lang" .Lang) }}
 {{ if $alumni }}
 <div class="section">
   <div class="member-groups">
@@ -26,4 +29,6 @@
   </div>
 </div>
 {{ end }}
+</div>
+</div>
 {{ end }}

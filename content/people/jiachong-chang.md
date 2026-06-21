@@ -1,5 +1,6 @@
 ---
 title: "Jiachong Chang"
+slug: "jiachong-chang"
 role: "PhD Student"
 status: "alumni"
 years: "2021-2025"

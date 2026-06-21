@@ -3,13 +3,14 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
+<body class="{{ if .IsHome }}is-home{{ end }}">
   {{ partial "header.html" . }}
 
-  <main class="container content">
+  <main class="site-main">
     {{ block "main" . }}{{ end }}
   </main>
 
   {{ partial "footer.html" . }}
+  {{ partial "scripts.html" . }}
 </body>
 </html>

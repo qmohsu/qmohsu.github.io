@@ -1,5 +1,6 @@
-﻿---
+---
 title: "3D Point Clouds Data Super Resolution Aided LiDAR Odometry for Vehicular Positioning in Urban Canyons"
+slug: "2021-3d-point-clouds-data-super-resolution-aided-lidar-odometry-f"
 authors:
   - "Yue J."
   - "Wen W."

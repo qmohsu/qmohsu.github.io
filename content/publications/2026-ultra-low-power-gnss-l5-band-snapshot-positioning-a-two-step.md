@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Ultra-low power GNSS L5 band snapshot positioning: A two step approach"
+slug: "2026-ultra-low-power-gnss-l5-band-snapshot-positioning-a-two-step"
 authors:
   - "Chi-Lok Tsang"
   - "Hoi-Wah Ng"

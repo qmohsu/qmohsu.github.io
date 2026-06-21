@@ -1,5 +1,6 @@
-﻿---
+---
 title: "PositionNet: CNN-based GNSS positioning in urban areas with residual maps"
+slug: "2023-positionnet-cnn-based-gnss-positioning-in-urban-areas-with"
 authors:
   - "Xu, P."
   - "Zhang, G."

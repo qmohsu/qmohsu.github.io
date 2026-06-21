@@ -1,5 +1,6 @@
-﻿---
+---
 title: "AutoW: Self-Supervision Learning for Weighting Estimation in GNSS Positioning"
+slug: "2024-autow-self-supervision-learning-for-weighting-estimation-in"
 authors:
   - "Penghui Xu"
   - "Li-Ta Hsu"

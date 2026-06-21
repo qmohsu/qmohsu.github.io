@@ -1,5 +1,6 @@
-﻿---
+---
 title: "A Novel INS/USBL Integrated Navigation Scheme Via Factor Graph Optimization"
+slug: "2022-a-novel-insusbl-integrated-navigation-scheme-via-factor-gra"
 authors:
   - "Zhang L."
   - "Hsu L. T. and Zhang T."

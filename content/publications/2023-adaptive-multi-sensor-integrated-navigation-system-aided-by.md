@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Adaptive Multi-Sensor Integrated Navigation System Aided by Continuous Error Map from RSU for Autonomous Vehicles in Urban Areas"
+slug: "2023-adaptive-multi-sensor-integrated-navigation-system-aided-by"
 authors:
   - "Feng Huang"
   - "Weisong Wen"

@@ -1,5 +1,6 @@
 ---
 title: "First invited talk at Stanford GPS Lab: Safety-aware LiDAR Localization (April 2023)"
+slug: "2023-stanford-gps-lab-first-visit"
 date: 2023-04-13
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"

@@ -1,5 +1,6 @@
 ---
 title: "IPNL Student Certificate Awards Ceremony"
+slug: "2022-certificate-awards"
 date: 2022-09-01
 category: "award"
 summary: "IPNL students received certificate awards recognizing their research achievements."

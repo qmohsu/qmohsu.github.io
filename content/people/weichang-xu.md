@@ -1,5 +1,6 @@
 ---
 title: "Weichang Xu"
+slug: "weichang-xu"
 role: "MSc Student"
 status: "alumni"
 years: "2018-2020"

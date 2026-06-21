@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Certifiably Optimal Satellite Orbit Determination Based on Doppler Measurements for Low-Earth-Orbit Satellites"
+slug: "2025-certifiably-optimal-satellite-orbit-determination-based-on"
 authors:
   - "Baoshan Song"
   - "Weisong Wen"

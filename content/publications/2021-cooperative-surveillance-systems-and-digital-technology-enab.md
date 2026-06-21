@@ -1,5 +1,6 @@
-﻿---
+---
 title: "Cooperative surveillance systems and digital-technology enabler for a real-time standard terminal arrival schedule displacement"
+slug: "2021-cooperative-surveillance-systems-and-digital-technology-enab"
 authors:
   - "Xue, D."
   - "Hsu, L. T."

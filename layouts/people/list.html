@@ -1,28 +1,39 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
 {{ .Content }}
 
 {{ $people := .Pages }}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
 
-{{/* PI */}}
-{{ $pi := where $people ".Params.role" "PI" }}
-{{ if $pi }}
+{{/* Localized section headings */}}
+{{ $hPI := cond $cn "学术主负责人" (cond $tw "學術主負責人" "Principal Investigator") }}
+{{ $hCurrent := cond $cn "现任成员" (cond $tw "現任成員" "Current Members") }}
+{{ $hAlumni := cond $cn "毕业生" (cond $tw "畢業生" "Alumni") }}
+{{ $emptyMsg := cond $cn "该类别暂无成员。" (cond $tw "該類別暫無成員。" "Currently no members listed in this category.") }}
+{{ $alumniBlurb := cond $cn "原 PhD / MPhil、博士后、硕士、研究助理、访问学者 —— 现已分布于学界与产业界。" (cond $tw "原 PhD / MPhil、博士後、碩士、研究助理、訪問學者 —— 現已分布於學界與業界。" "Former PhD/MPhil students, postdoctoral fellows, MSc students, research assistants, and visiting researchers — now across academia and industry.") }}
+{{ $alumniMore := cond $cn "查看全部 %d 位毕业生 →" (cond $tw "查看全部 %d 位畢業生 →" "See all %d alumni →") }}
+
+{{/* Leadership: PI only — Senior Research Fellows go in their own group below */}}
+{{ $leadership := where $people ".Params.role" "eq" "PI" }}
+{{ if $leadership }}
 <div class="section">
-  <h2>Principal Investigator</h2>
+  <h2>{{ $hPI }}</h2>
   <div class="cards" style="grid-template-columns: 1fr;">
-    {{ range $pi }}
+    {{ range $leadership }}
       {{ partial "person-card.html" . }}
     {{ end }}
   </div>
 </div>
 {{ end }}
 
-{{/* Current Members */}}
-{{ $current := where (where $people ".Params.status" "current") ".Params.role" "ne" "PI" }}
-{{ $groups := partial "people/current-member-groups.html" $people }}
+{{/* Current Members (exclude leadership roles) */}}
+{{ $current := where (where $people ".Params.status" "current") ".Params.role" "not in" (slice "PI" "Senior Research Fellow" "Co-PI") }}
+{{ $groups := partial "people/current-member-groups.html" (dict "people" $people "lang" .Lang) }}
 {{ if $current }}
 <div class="section">
-  <h2>Current Members</h2>
+  <h2>{{ $hCurrent }}</h2>
   <div class="member-groups">
     {{ range $groups }}
       {{ $title := index . "title" }}
@@ -36,7 +47,7 @@
           {{ end }}
         </div>
         {{ else }}
-        <p class="group-empty">Currently no members listed in this category.</p>
+        <p class="group-empty">{{ $emptyMsg }}</p>
         {{ end }}
       </div>
     {{ end }}
@@ -48,10 +59,12 @@
 {{ $alumni := where $people ".Params.status" "alumni" }}
 {{ if $alumni }}
 <div class="section">
-  <h2>Alumni</h2>
-  <p>Former PhD/MPhil students, postdoctoral fellows, MSc students, research assistants, and visiting researchers — now across academia and industry. <a href="{{ "/people/alumni/" | relURL }}">See all {{ len $alumni }} alumni &rarr;</a></p>
+  <h2>{{ $hAlumni }}</h2>
+  <p>{{ $alumniBlurb }} <a href="{{ "/people/alumni/" | relLangURL }}">{{ printf $alumniMore (len $alumni) }}</a></p>
 </div>
 {{ end }}
 
 {{ partial "lab-life-gallery.html" . }}
+</div>
+</div>
 {{ end }}
