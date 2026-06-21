@@ -29,31 +29,31 @@
   <svg class="pnt-viz-svg" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" aria-label="IPNL PNT stack pipeline">
     <defs>
       <pattern id="pnt-grid" width="22" height="22" patternUnits="userSpaceOnUse">
-        <circle cx="1" cy="1" r="0.8" fill="rgba(45,212,240,0.14)"/>
+        <circle cx="1" cy="1" r="0.8" fill="rgba(110,122,208,0.14)"/>
       </pattern>
       <linearGradient id="pnt-flow-grad" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%"  stop-color="#2dd4f0" stop-opacity="0.95"/>
-        <stop offset="60%" stop-color="#2dd4f0" stop-opacity="0.55"/>
-        <stop offset="100%" stop-color="#ff8c00" stop-opacity="0.95"/>
+        <stop offset="0%"  stop-color="#6E7AD0" stop-opacity="0.95"/>
+        <stop offset="60%" stop-color="#6E7AD0" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#D3313A" stop-opacity="0.95"/>
       </linearGradient>
       <linearGradient id="pnt-thumb-fade" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%"  stop-color="#0a1825" stop-opacity="0"/>
-        <stop offset="100%" stop-color="#0a1825" stop-opacity="0.92"/>
+        <stop offset="0%"  stop-color="#161B40" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#161B40" stop-opacity="0.92"/>
       </linearGradient>
       <radialGradient id="pnt-fill-cyan" cx="35%" cy="35%">
-        <stop offset="0%"  stop-color="#e0f8ff"/>
-        <stop offset="55%" stop-color="#2dd4f0"/>
-        <stop offset="100%" stop-color="#0e6b81"/>
+        <stop offset="0%"  stop-color="#E8EBFA"/>
+        <stop offset="55%" stop-color="#6E7AD0"/>
+        <stop offset="100%" stop-color="#1E2A6E"/>
       </radialGradient>
       <radialGradient id="pnt-fill-orange" cx="35%" cy="35%">
-        <stop offset="0%"  stop-color="#ffe1bf"/>
-        <stop offset="55%" stop-color="#ff9420"/>
-        <stop offset="100%" stop-color="#9a4d00"/>
+        <stop offset="0%"  stop-color="#FBE0DA"/>
+        <stop offset="55%" stop-color="#E0533D"/>
+        <stop offset="100%" stop-color="#7A1E24"/>
       </radialGradient>
       <radialGradient id="pnt-fill-final" cx="35%" cy="35%">
         <stop offset="0%"  stop-color="#ffffff"/>
-        <stop offset="40%" stop-color="#7eecff"/>
-        <stop offset="100%" stop-color="#0e6b81"/>
+        <stop offset="40%" stop-color="#9FB0F0"/>
+        <stop offset="100%" stop-color="#1E2A6E"/>
       </radialGradient>
       <filter id="pnt-glow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur stdDeviation="3" result="b"/>
@@ -82,12 +82,12 @@
       "/images/cases/stairio-robot.jpg"
     }}
     {{ $nodes := slice
-      (dict "i" "01" "name" $s1Name "sub" $s1Sub "tags" $s1Tags "x" 100  "fill" "url(#pnt-fill-cyan)"   "stroke" "#2dd4f0" "color" "cyan")
-      (dict "i" "02" "name" $s2Name "sub" $s2Sub "tags" $s2Tags "x" 300  "fill" "url(#pnt-fill-orange)" "stroke" "#ff9420" "color" "orange")
-      (dict "i" "03" "name" $s3Name "sub" $s3Sub "tags" $s3Tags "x" 500  "fill" "url(#pnt-fill-cyan)"   "stroke" "#2dd4f0" "color" "cyan")
-      (dict "i" "04" "name" $s4Name "sub" $s4Sub "tags" $s4Tags "x" 700  "fill" "url(#pnt-fill-orange)" "stroke" "#ff9420" "color" "orange")
-      (dict "i" "05" "name" $s5Name "sub" $s5Sub "tags" $s5Tags "x" 900  "fill" "url(#pnt-fill-cyan)"   "stroke" "#2dd4f0" "color" "cyan")
-      (dict "i" "06" "name" $s6Name "sub" $s6Sub "tags" $s6Tags "x" 1100 "fill" "url(#pnt-fill-final)"  "stroke" "#a5edff" "color" "cyan")
+      (dict "i" "01" "name" $s1Name "sub" $s1Sub "tags" $s1Tags "x" 100  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "02" "name" $s2Name "sub" $s2Sub "tags" $s2Tags "x" 300  "fill" "url(#pnt-fill-orange)" "stroke" "#E0533D" "color" "orange")
+      (dict "i" "03" "name" $s3Name "sub" $s3Sub "tags" $s3Tags "x" 500  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "04" "name" $s4Name "sub" $s4Sub "tags" $s4Tags "x" 700  "fill" "url(#pnt-fill-orange)" "stroke" "#E0533D" "color" "orange")
+      (dict "i" "05" "name" $s5Name "sub" $s5Sub "tags" $s5Tags "x" 900  "fill" "url(#pnt-fill-cyan)"   "stroke" "#6E7AD0" "color" "cyan")
+      (dict "i" "06" "name" $s6Name "sub" $s6Sub "tags" $s6Tags "x" 1100 "fill" "url(#pnt-fill-final)"  "stroke" "#A8B4EA" "color" "cyan")
     }}
 
     {{/* Thumbnails — placed first so flow line / nodes render above */}}
@@ -112,13 +112,13 @@
       fill="none" stroke="url(#pnt-flow-grad)" stroke-width="2.5" stroke-linecap="round" filter="url(#pnt-glow)"/>
 
     {{/* Travelling data packets */}}
-    <circle r="5" fill="#2dd4f0" filter="url(#pnt-glow-strong)">
+    <circle r="5" fill="#6E7AD0" filter="url(#pnt-glow-strong)">
       <animateMotion dur="7s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
     </circle>
-    <circle r="4" fill="#ff8c00" filter="url(#pnt-glow-strong)">
+    <circle r="4" fill="#D3313A" filter="url(#pnt-glow-strong)">
       <animateMotion dur="7s" begin="2.3s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
     </circle>
-    <circle r="4" fill="#2dd4f0" filter="url(#pnt-glow-strong)">
+    <circle r="4" fill="#6E7AD0" filter="url(#pnt-glow-strong)">
       <animateMotion dur="7s" begin="4.6s" repeatCount="indefinite"><mpath href="#pnt-flow-path"/></animateMotion>
     </circle>
 

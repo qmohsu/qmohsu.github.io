@@ -329,7 +329,7 @@
     var typeValues = parse('typeValues');
     var cumLabels = parse('cumLabels');
     var cumValues = parse('cumValues');
-    var cyan = '#1bbed8', cyanBright = '#2dd4f0', orange = '#ff8c00', orangeDeep = '#d96b00', navy = '#1a5276', mute = '#777';
+    var cyan = '#2D3B97', cyanBright = '#3A4DB8', orange = '#D3313A', orangeDeep = '#C02A33', navy = '#2D3B97', mute = '#7B7F92';
 
     /* Localised legend labels (drive from <html lang>) */
     var lang = document.documentElement.lang || '';
@@ -363,7 +363,7 @@
               label: L_CUM,
               data: cumValues,
               borderColor: orange,
-              backgroundColor: 'rgba(255,140,0,0.08)',
+              backgroundColor: 'rgba(211,49,58,0.08)',
               borderWidth: 2,
               pointRadius: 3,
               pointBackgroundColor: orange,
@@ -387,7 +387,7 @@
               }
             },
             tooltip: {
-              backgroundColor: '#0a1825', titleFont: { family: "'IBM Plex Mono', monospace" },
+              backgroundColor: '#161B40', titleFont: { family: "'IBM Plex Mono', monospace" },
               bodyFont: { family: "'Inter', sans-serif" }, padding: 10, borderColor: cyan, borderWidth: 1
             }
           },
@@ -427,8 +427,8 @@
             borderColor: orange,
             backgroundColor: function (ctx) {
               var c = ctx.chart.ctx, g = c.createLinearGradient(0, 0, 0, 220);
-              g.addColorStop(0, 'rgba(255,140,0,0.35)');
-              g.addColorStop(1, 'rgba(255,140,0,0)');
+              g.addColorStop(0, 'rgba(211,49,58,0.35)');
+              g.addColorStop(1, 'rgba(211,49,58,0)');
               return g;
             },
             borderWidth: 2.5,
@@ -448,7 +448,7 @@
           plugins: {
             legend: { display: false },
             tooltip: {
-              backgroundColor: '#0a1825', borderColor: orange, borderWidth: 1, padding: 10,
+              backgroundColor: '#161B40', borderColor: orange, borderWidth: 1, padding: 10,
               titleFont: { family: "'IBM Plex Mono', monospace" },
               bodyFont: { family: "'Inter', sans-serif" },
               callbacks: { label: function (ctx) { return ctx.parsed.y.toLocaleString() + ' citations'; } }
@@ -473,7 +473,7 @@
     /* ---- Type chart: doughnut ---- */
     var tc = document.getElementById('pub-chart-type');
     if (tc) {
-      var palette = [cyan, orange, navy, '#5b3b8c', '#1e6b3a', '#b56600'];
+      var palette = [cyan, orange, navy, '#5b3b8c', '#1e6b3a', '#B12A32'];
       new Chart(tc, {
         type: 'doughnut',
         data: {
@@ -497,7 +497,7 @@
               }
             },
             tooltip: {
-              backgroundColor: '#0a1825', borderColor: cyan, borderWidth: 1, padding: 10
+              backgroundColor: '#161B40', borderColor: cyan, borderWidth: 1, padding: 10
             }
           }
         }

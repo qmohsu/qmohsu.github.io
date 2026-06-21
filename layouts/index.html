@@ -7,7 +7,7 @@
   <div class="home-hero-grid"></div>
   {{/* SVG constellation — satellite-style dot network with pulsing connections */}}
   <svg class="hero-constellation" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <g class="net-lines" stroke="#2dd4f0" stroke-width="0.5" fill="none">
+    <g class="net-lines" stroke="#6E7AD0" stroke-width="0.5" fill="none">
       <line x1="120" y1="140" x2="380" y2="200"/>
       <line x1="380" y1="200" x2="660" y2="120"/>
       <line x1="660" y1="120" x2="940" y2="180"/>
@@ -32,7 +32,7 @@
       <line x1="860" y1="620" x2="1180" y2="640"/>
       <line x1="1180" y1="640" x2="1420" y2="600"/>
     </g>
-    <g class="net-dots" fill="#2dd4f0">
+    <g class="net-dots" fill="#6E7AD0">
       <circle cx="120" cy="140" r="2.5"/>
       <circle cx="380" cy="200" r="2.5"/>
       <circle cx="660" cy="120" r="2.5"/>
@@ -52,8 +52,8 @@
     </g>
     {{/* Active satellite — bright pulse */}}
     <g class="net-active">
-      <circle cx="780" cy="400" r="6" fill="#ff8c00"/>
-      <circle cx="780" cy="400" r="14" fill="none" stroke="#ff8c00" stroke-width="1.5"/>
+      <circle cx="780" cy="400" r="6" fill="#D3313A"/>
+      <circle cx="780" cy="400" r="14" fill="none" stroke="#D3313A" stroke-width="1.5"/>
     </g>
   </svg>
   <div class="home-hero-inner">
@@ -126,30 +126,30 @@
           <img class="partner-logo" src="{{ "/images/partners/android.png" | relURL }}" alt="Android" onerror="this.style.display='none'">
           <span class="stat-partner-text">Android</span>
         </div>
-        <!-- Android: PolyU's 3DMA-GNSS work inspired Google's Android Location project (1B+ active Android users). Confidential KPIs (error-reduction % / city count / testimonial source) live in the NST evidence, not in this public source — re-clear before publishing any. -->
+        <!-- Android: urban-GNSS positioning research collaboration. Public copy kept GENERAL pending partner clearance; specifics + figures live in the NST evidence, not here. -->
         <div class="stat-num">1B+</div>
         <div class="stat-label">{{ if $cn }}安卓活跃用户{{ else if $tw }}Android 活躍用戶{{ else }}active Android users{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}3DMA GNSS 启发 Google 安卓定位项目;大幅降低城市峡谷误差{{ else if $tw }}3DMA GNSS 啟發 Google 安卓定位專案;大幅降低城市峽谷誤差{{ else }}3DMA GNSS inspired Google's Android Location project; sharply cut urban-canyon errors{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}面向智能手机定位服务的城市 GNSS 定位研究{{ else if $tw }}面向智慧型手機定位服務的城市 GNSS 定位研究{{ else }}Urban GNSS positioning research for smartphone location services{{ end }}</div>
       </div>
       <div class="stat-card">
         <div class="stat-partner has-logo">
           <img class="partner-logo" src="{{ "/images/partners/huawei.png" | relURL }}" alt="HUAWEI" onerror="this.style.display='none'">
           <span class="stat-partner-text">HUAWEI</span>
         </div>
-        <!-- Huawei: 3DMA-GNSS on Huawei flagship smartphones (Mate30/P40, HMS Location Kit). Confidential testimonial source / unit figures live in the NST evidence, not in this public source — re-clear before publishing. (Car BU also adopted the algorithm, no public figure — in the partner wall below.) -->
+        <!-- Huawei: multi-year urban-GNSS positioning collaboration. Public copy kept GENERAL pending partner clearance; specifics + figures live in the NST evidence, not here. -->
         <div class="stat-num">40M+</div>
         <div class="stat-label">{{ if $cn }}台华为手机{{ else if $tw }}台華為手機{{ else }}Huawei smartphones{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}3DMA GNSS 集成于 Mate30/P40 旗舰机 + HMS 定位{{ else if $tw }}3DMA GNSS 整合於 Mate30/P40 旗艦機 + HMS 定位{{ else }}3DMA GNSS in Mate30/P40 flagships + HMS Location Kit{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}面向智能手机的多年期城市 GNSS 定位合作{{ else if $tw }}面向智慧型手機的多年期城市 GNSS 定位合作{{ else }}Multi-year smartphone GNSS positioning collaboration{{ end }}</div>
       </div>
       <div class="stat-card">
         <div class="stat-partner has-logo">
           <img class="partner-logo" src="{{ "/images/partners/oppo.png" | relURL }}" alt="OPPO" onerror="this.style.display='none'">
           <span class="stat-partner-text">OPPO</span>
         </div>
-        <!-- OPPO: deployed on select OPPO premium/flagship models only — NOT OPPO's full device base. The "400M+ active devices" headline was removed 2026-06-21 (misleading: implied our tech ran on all OPPO devices). Confidential KPIs (model names / unit counts / accuracy) live in the NST evidence, not in this public source — re-clear before publishing any. -->
+        <!-- OPPO: AI urban-GNSS positioning collaboration. Public copy kept GENERAL pending partner clearance; specifics + figures live in the NST evidence, not here. -->
         <div class="stat-num">Premium</div>
         <div class="stat-label">{{ if $cn }}OPPO 旗舰机型{{ else if $tw }}OPPO 旗艦機型{{ else }}OPPO flagship models{{ end }}</div>
-        <div class="stat-context">{{ if $cn }}AI 城市 GNSS 定位,部署于 OPPO 高端机型(张国豪博士);2024 OPPO 优秀产学研伙伴{{ else if $tw }}AI 城市 GNSS 定位,部署於 OPPO 高端機型(張國豪博士);2024 OPPO 優秀產學研夥伴{{ else }}AI urban-GNSS deployed on OPPO premium models (Dr Guohao Zhang); OPPO Excellent Partner 2024{{ end }}</div>
+        <div class="stat-context">{{ if $cn }}AI 驱动的城市 GNSS 定位合作{{ else if $tw }}AI 驅動的城市 GNSS 定位合作{{ else }}AI-driven urban GNSS positioning collaboration{{ end }}</div>
       </div>
     </div>
     <div class="home-stats-foot">
@@ -174,7 +174,7 @@
       .home-stats .stat-grid{grid-template-columns:repeat(3,1fr);max-width:900px;margin-left:auto;margin-right:auto}
       .partner-wall-intro{text-align:center;color:var(--text-secondary);font-size:.9rem;margin:.2rem 0 .9rem}
       .partner-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.7rem .8rem;max-width:980px;margin:0 auto}
-      .partner-logos .plogo{display:inline-flex;align-items:center;gap:.55rem;padding:.55rem 1rem;background:#fff;border:1px solid var(--border);border-radius:9px;box-shadow:0 1px 3px rgba(10,24,37,.06)}
+      .partner-logos .plogo{display:inline-flex;align-items:center;gap:.55rem;padding:.55rem 1rem;background:#fff;border:1px solid var(--border);border-radius:9px;box-shadow:0 1px 3px rgba(22,27,64,.06)}
       .partner-logos .plogo img{height:30px;width:auto;max-width:120px;object-fit:contain;display:block}
       .partner-logos .plogo span{font-size:.85rem;font-weight:600;color:var(--text-secondary);white-space:nowrap;letter-spacing:.01em}
       .partner-wall-more{text-align:center;margin-top:1rem}

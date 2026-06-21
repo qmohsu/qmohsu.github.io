@@ -1,12 +1,12 @@
 <header class="site-header">
   <div class="site-header-inner">
     <a href="{{ "/" | relLangURL }}" class="brand-link">
-      <img src="{{ "/images/logos/ipnl-logo.png" | relURL }}" alt="IPNL" class="brand-logo brand-logo-ipnl">
+      <img src="{{ "/images/logos/ipnl-mark.png" | relURL }}" alt="IPNL" class="brand-logo brand-logo-ipnl">
       <span class="brand-wordmark">
         <span class="brand-wordmark-name">IPNL</span>
         <span class="brand-wordmark-tag">{{ if eq .Lang "zh-cn" }}智能定位与导航实验室{{ else if eq .Lang "zh-tw" }}智能定位與導航實驗室{{ else }}Intelligent Positioning &amp; Navigation Lab{{ end }}</span>
       </span>
-      <img src="{{ "/images/logos/polyu-logo.png" | relURL }}" alt="PolyU" class="brand-logo brand-logo-polyu" onerror="this.style.display='none'">
+      <img src="{{ "/images/logos/polyu-mark.png" | relURL }}" alt="PolyU" class="brand-logo brand-logo-polyu" onerror="this.style.display='none'">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="main-nav">

@@ -21,13 +21,16 @@
 <meta name="twitter:card" content="summary">
 
 {{/* Favicon — uses lab logo. Browser-tab visible branding. */}}
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/logos/ipnl-logo.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/logos/ipnl-logo.png" | relURL }}">
-<link rel="apple-touch-icon" href="{{ "/images/logos/ipnl-logo.png" | relURL }}">
-<meta name="theme-color" content="#0a1825">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/logos/ipnl-mark.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/logos/ipnl-mark.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "/images/logos/ipnl-mark.png" | relURL }}">
+<meta name="theme-color" content="#161B40">
 
 {{ $css := resources.Get "css/main.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{/* Chinese web fonts — loaded only on zh pages so the English page never pays the CJK weight. Pairs with Fraunces/Mulish via per-glyph fallback. */}}
+{{ if eq .Lang "zh-cn" }}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap">{{ end }}
+{{ if eq .Lang "zh-tw" }}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">{{ end }}
 
 {{ with .Params.jsonld }}
 {{ . | safeHTML }}
