@@ -1,7 +1,7 @@
 ---
-title: "GraphGNSSLib 軟體"
+title: "GraphGNSSLib"
 slug: "graphgnsslib-software"
-description: "基於因子圖優化的開源 GNSS 定位庫 (C/C++)。"
+description: "使用因子圖最佳化的開源 GNSS 定位函式庫（C/C++）"
 subtype: "software"
 license: "BSD"
 maintainers: ["Weisong Wen", "Li-Ta Hsu"]
@@ -10,4 +10,4 @@ project: "graphgnsslib"
 weight: 3
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/resources/graphgnsslib-software/">英文版本</a>。</aside>
+GraphGNSSLib 是一套透過因子圖最佳化（factor graph optimization）實現 GNSS 定位的 C/C++ 函式庫。它提供了一個研究平台，用以探索 EKF-based GNSS/INS 整合以外的替代方案。

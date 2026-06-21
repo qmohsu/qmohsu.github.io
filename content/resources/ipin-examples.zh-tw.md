@@ -1,7 +1,7 @@
 ---
-title: "IPIN 教材程式碼範例"
+title: "IPIN-Examples"
 slug: "ipin-examples"
-description: "Artech House 2025 著作《室內定位與室內導航原理》配套程式碼 (Python + Jupyter)。"
+description: "2025 年 Artech House 專書《Principles of Indoor Positioning and Indoor Navigation》的配套程式碼（Python + Jupyter）"
 subtype: "software"
 license: "PolyForm Noncommercial 1.0.0 (code) / CC BY-NC 4.0 (datasets)"
 maintainers: ["Li-Ta Hsu", "Guohao Zhang", "Weisong Wen"]
@@ -10,4 +10,4 @@ citation: "Hsu, L. T., Zhang, G., Wen, W. (2025). Principles of Indoor Positioni
 weight: 5
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/resources/ipin-examples/">英文版本</a>。</aside>
+IPIN-Examples 提供了 Hsu、Zhang 與 Wen 合著的 [2025 年 Artech House 專書](/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/)中所介紹的室內定位與導航演算法之可重現 Python 與 Jupyter notebook 實作。此儲存庫將書中每一章的方法與可執行的程式碼及範例資料集相互配對，旨在作為一項教學與可重現性資源，供初入此領域的學生與研究人員使用。本專案以 PolyForm Noncommercial 授權釋出，資料集則採用 CC BY-NC 4.0 授權。

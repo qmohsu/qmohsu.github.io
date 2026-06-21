@@ -1,7 +1,7 @@
 ---
 title: "UrbanNav 資料集"
 slug: "urbannav-dataset"
-description: "面向城市導航演算法基準測試的開源多感測器資料集。"
+description: "用於定位與都市導航演算法基準評測的開放多感測資料集"
 subtype: "dataset"
 license: "MIT"
 maintainers: ["Li-Ta Hsu"]
@@ -11,4 +11,4 @@ project: "urbannav"
 weight: 1
 ---
 
-<aside class="translation-stub">該頁正在翻譯。請暫時查看 <a href="/en/resources/urbannav-dataset/">英文版本</a>。</aside>
+UrbanNav 提供於香港密集都市峽谷中採集的多感測資料，包括 GNSS 原始量測、IMU、LiDAR 與相機資料。它的設計目標是支援都市導航演算法的可重現基準評測。
