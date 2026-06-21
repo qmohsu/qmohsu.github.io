@@ -1,6 +1,9 @@
 ---
 title: "理工大 IPNL 在新加坡: 南洋理工 Seminar + ICASSE 2025 (2025 年 7 月)"
 slug: "polyu-at-icasse-2025-singapore-july-2025"
+aliases:
+  - "/news/invited-seminar-at-ntu-singapore-super-resolution-gps-receivers-july-2025/"
+---
 date: 2025-07-30
 date_note: "Events 29–30 July 2025; combined from two posts"
 category: "talk"

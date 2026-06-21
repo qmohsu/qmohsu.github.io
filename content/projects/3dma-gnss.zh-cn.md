@@ -1,6 +1,9 @@
 ---
 title: "3D 地图辅助 GNSS (3DMA) 用于智能手机与物联网"
 slug: "3dma-gnss"
+aliases:
+  - /projects/environment-aware-3dma-gnss/
+---
 description: "用 3D 城市模型、Skymask 匹配、轻量光线追踪改善智能手机、可穿戴、低成本 IoT 接收机的 GNSS 定位 —— 实验室的招牌长线方向,锚定多年期华为合作。"
 category: "research-program"
 status: "active"
