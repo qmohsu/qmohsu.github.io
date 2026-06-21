@@ -1,7 +1,7 @@
 ---
 title: "Yiran Luo"
 slug: "yiran-luo"
-role: "博士后研究员"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2020-2021"
 current_position: "博士后研究员，卡尔加里大学"

@@ -1,7 +1,7 @@
 ---
 title: "Mingxiang Gu"
 slug: "mingxiang-gu"
-role: "研究助理"
+role: "Research Assistant"
 status: "current"
 years: "2026-present"
 photo: "/images/people/mingxiang-gu.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Penghui Xu"
 slug: "penghui-xu"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "current"
 years: "2024-present"
 thesis: "基於學習方法的城市區域全球導航衛星系統定位"

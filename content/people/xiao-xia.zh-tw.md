@@ -1,7 +1,7 @@
 ---
 title: "Xiao Xia"
 slug: "xiao-xia"
-role: "博士生"
+role: "PhD Student"
 status: "alumni"
 years: "2022-2026"
 thesis: "城市場景下GNSS定位的完整性約束穩健估計"

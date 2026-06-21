@@ -1,7 +1,7 @@
 ---
 title: "Dabin Xue"
 slug: "dabin-xue"
-role: "研究助理"
+role: "Research Assistant"
 status: "alumni"
 years: "2018-2019"
 current_position: "访问研究员，UNSW"

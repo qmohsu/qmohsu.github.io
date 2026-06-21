@@ -1,7 +1,7 @@
 ---
 title: "Bo Zhang"
 slug: "bo-zhang"
-role: "研究助理"
+role: "Research Assistant"
 status: "alumni"
 years: "2019-2021"
 current_position: "高级研究工程师，MooVita Pte Ltd"

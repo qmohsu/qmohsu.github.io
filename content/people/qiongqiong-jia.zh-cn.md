@@ -1,7 +1,7 @@
 ---
 title: "Qiongqiong Jia"
 slug: "qiongqiong-jia"
-role: "研究助理"
+role: "Research Assistant"
 status: "alumni"
 years: "2018-2019"
 current_position: "中国民航大学副教授"

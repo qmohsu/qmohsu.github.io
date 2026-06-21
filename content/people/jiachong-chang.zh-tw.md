@@ -1,7 +1,7 @@
 ---
 title: "Jiachong Chang"
 slug: "jiachong-chang"
-role: "博士生"
+role: "PhD Student"
 status: "alumni"
 years: "2021-2025"
 thesis: "自動駕駛車輛多感測器導航系統的欺騙攻擊技術"

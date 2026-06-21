@@ -1,7 +1,7 @@
 ---
 title: "Shaoming Xin"
 slug: "shaoming-xin"
-role: "訪問博士生"
+role: "Visiting PhD Student"
 status: "alumni"
 years: "2021"
 current_position: "百度演算法工程師"

@@ -1,7 +1,7 @@
 ---
 title: "Shiyu Bai"
 slug: "shiyu-bai"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2023-2025"
 current_position: "香港理工大學 AAE 研究助理教授"

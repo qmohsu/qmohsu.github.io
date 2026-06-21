@@ -1,7 +1,7 @@
 ---
 title: "Baoshan Song"
 slug: "baoshan-song"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2023-present"
 scholar: "https://scholar.google.com/citations?user=Uqn8268AAAAJ&hl=en"

@@ -1,7 +1,7 @@
 ---
 title: "Zhengdao Li"
 slug: "zhengdao-li"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2024-present"
 linkedin: "https://www.linkedin.com/in/zhengdao-li-7051921b4/"

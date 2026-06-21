@@ -1,7 +1,7 @@
 ---
 title: "Weichang Xu"
 slug: "weichang-xu"
-role: "硕士研究生"
+role: "MSc Student"
 status: "alumni"
 years: "2018-2020"
 thesis: "借助地图信息的激光雷达匹配与动力学模型组合导航系统"

@@ -1,7 +1,7 @@
 ---
 title: "Yue Jiang"
 slug: "yue-jiang"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2019-2020"
 current_position: "副教授，河海大學"

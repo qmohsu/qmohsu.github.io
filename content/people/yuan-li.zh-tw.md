@@ -1,7 +1,7 @@
 ---
 title: "Yuan Li"
 slug: "yuan-li"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2023-present"
 photo: "/images/people/yuan-li.jpg"

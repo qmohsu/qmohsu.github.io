@@ -1,7 +1,7 @@
 ---
 title: "付國峪 (Michael Fu)"
 slug: "michael-fu"
-role: "高級研究員"
+role: "Senior Research Fellow"
 status: "current"
 years: "2026-present"
 photo: "/images/people/michael-fu.jpg"

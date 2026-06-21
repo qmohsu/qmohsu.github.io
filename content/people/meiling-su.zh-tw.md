@@ -1,7 +1,7 @@
 ---
 title: "Meiling Su"
 slug: "meiling-su"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2023-present"
 linkedin: "https://www.linkedin.com/in/meiling-su/"

@@ -1,7 +1,7 @@
 ---
 title: "Penggao Yan"
 slug: "penggao-yan"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "current"
 years: "2024-present"
 thesis: "針對安全關鍵 GNSS 導航、考量非高斯標稱誤差的完好性監測"

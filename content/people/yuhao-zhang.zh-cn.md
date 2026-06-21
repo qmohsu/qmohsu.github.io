@@ -1,7 +1,7 @@
 ---
 title: "Yuhao Zhang"
 slug: "yuhao-zhang"
-role: "硕士研究生"
+role: "MSc Student"
 status: "current"
 years: "2026-present"
 sort_order: 321

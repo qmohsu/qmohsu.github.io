@@ -1,7 +1,7 @@
 ---
 title: "Bing Xu"
 slug: "bing-xu"
-role: "博士后研究员"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2018-2021"
 current_position: "香港理工大学航空及民航工程学系助理教授"

@@ -1,7 +1,7 @@
 ---
 title: "Qian Meng"
 slug: "qian-meng"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2019-2020"
 current_position: "東南大學副教授"

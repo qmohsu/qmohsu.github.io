@@ -1,7 +1,7 @@
 ---
 title: "Dongzhe Su"
 slug: "dongzhe-su"
-role: "博士生"
+role: "PhD Student"
 status: "current"
 years: "2023-present"
 photo: ""

@@ -1,7 +1,7 @@
 ---
 title: "Xie Ning"
 slug: "xie-ning"
-role: "研究助理"
+role: "Research Assistant"
 status: "current"
 years: "2026-present"
 photo: "/images/people/xie-ning.jpg"

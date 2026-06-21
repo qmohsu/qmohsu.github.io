@@ -1,7 +1,7 @@
 ---
 title: "Hoi-Fung Ng"
 slug: "hoi-fung-ng"
-role: "博士生（香港博士研究生獎學金）"
+role: "PhD Student (HK PhD Fellowship)"
 status: "alumni"
 years: "2021-2024"
 thesis: "運用 3D 地圖輔助（3DMA）GNSS 的城市導航"

@@ -1,7 +1,7 @@
 ---
 title: "Bing Xu"
 slug: "bing-xu"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "alumni"
 years: "2018-2021"
 current_position: "香港理工大學AAE助理教授"

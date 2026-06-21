@@ -1,7 +1,7 @@
 ---
 title: "Sai Hu"
 slug: "sai-hu"
-role: "硕士生"
+role: "MSc Student"
 status: "alumni"
 years: "2017-2019"
 thesis: "面向低速配送应用、实现自动驾驶技术的全栈方法"

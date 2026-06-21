@@ -1,7 +1,7 @@
 ---
 title: "He Hanming"
 slug: "he-hanming"
-role: "碩士生"
+role: "MSc Student"
 status: "current"
 years: "2026-present"
 photo: "/images/people/he-hanming.jpg"

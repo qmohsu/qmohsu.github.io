@@ -1,7 +1,7 @@
 ---
 title: "Yihan Zhong"
 slug: "yihan-zhong"
-role: "博士後研究員"
+role: "Postdoctoral Fellow"
 status: "current"
 years: "2026-present"
 thesis: "GNSS/INS整合系統於後處理應用之離群值感知與抑制"
