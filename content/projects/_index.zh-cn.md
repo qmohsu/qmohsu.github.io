@@ -2,7 +2,7 @@
 title: '<span class="hi-cyan-text">研发项目</span> · <span class="hi-orange-text">产业合作</span>'
 tooltip: "研发项目"
 hero_eyebrow: "研发 · 产业 · 经费 · 2026"
-hero_sub: '<strong>HK$24M+ 外部</strong>经费 · <strong>9+</strong> 华为合同 · <strong>13</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$24M+ 外部</strong>经费 · <strong>9+</strong> 华为合同 · <strong>12</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研发 —— 核心研究方向、具身产业转化系统,以及为它们提供经费与落地场景的长期产业合作。"
 aliases:
@@ -38,7 +38,7 @@ aliases:
     <div class="stat-card">
       <div class="stat-partner">智慧交通基金 (STF)</div>
       <div class="stat-num">HK$6.19M</div>
-      <div class="stat-label">PI · 2026–2028</div>
+      <div class="stat-label">Rep. Co-PI / PC · 2026–2028</div>
       <div class="stat-context">基于移动网络与 AI 的车辆自诊断 (PSRI/102/2410/PR)</div>
     </div>
     <div class="stat-card">
@@ -79,7 +79,7 @@ aliases:
 
 <div class="page-part" id="partners">
   <span class="page-part-num">第二部分 · 合作伙伴</span>
-  <h2 class="page-part-title">13 家长期产业、临床、标准合作伙伴</h2>
+  <h2 class="page-part-title">12 家长期产业、临床、标准合作伙伴</h2>
   <p class="page-part-sub">与智能手机厂商、汽车集团、体育研究所、医疗机构、航空管理部门的多年期框架合作与实地部署。</p>
 </div>
 

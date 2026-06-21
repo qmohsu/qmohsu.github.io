@@ -7,7 +7,7 @@ status: "active"
 flagship: true
 start_date: 2026
 end_date: 2028
-funding: "HK Smart Traffic Fund PSRI/102/2410/PR (HK$6.19M external award + PolyU matching, PI, 2026–2028)"
+funding: "HK Smart Traffic Fund PSRI/102/2410/PR (HK$6.19M external award + PolyU matching, Rep. Co-PI / PC, 2026–2028)"
 themes: ["optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 tags: ["automotive", "predictive maintenance", "vehicle health", "Smart Traffic Fund", "AV safety"]
 weight: 3
@@ -18,4 +18,4 @@ This program develops a **universal, data-driven, real-time predictive self-diag
 **Why it matters.** The lab's largest new external grant in the AV-safety direction. Conceptually it extends the integrity arc one layer outward — from "can we trust this position fix?" to "can we trust this vehicle's components?" — using the same statistical-modelling tools (fault detection, error bounding, probabilistic graphical models).
 
 **Funding.**
-- **HK Smart Traffic Fund PSRI/102/2410/PR** — **HK$6.19M external award** plus PolyU matching, Li-Ta Hsu as PI, 03/2026–02/2028 (largest single new external grant)
+- **HK Smart Traffic Fund PSRI/102/2410/PR** — **HK$6.19M external award** plus PolyU matching, Li-Ta Hsu as Rep. Co-PI / Project Coordinator, 03/2026–02/2028 (largest single new external grant)

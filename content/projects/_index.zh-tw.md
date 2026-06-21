@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">研發項目</span> · <span class="hi-orange-text">產業合作</span>'
 hero_eyebrow: "研發 · 產業 · 經費 · 2026"
-hero_sub: '<strong>HK$24M+ 外部</strong>經費 · <strong>9+</strong> 華為合同 · <strong>13</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$24M+ 外部</strong>經費 · <strong>9+</strong> 華為合同 · <strong>12</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研發 —— 核心研究方向、具身產業轉化系統,以及為其提供經費與落地場景的長期產業合作。"
 aliases:
@@ -37,7 +37,7 @@ aliases:
     <div class="stat-card">
       <div class="stat-partner">智慧交通基金 (STF)</div>
       <div class="stat-num">HK$6.19M</div>
-      <div class="stat-label">PI · 2026–2028</div>
+      <div class="stat-label">Rep. Co-PI / PC · 2026–2028</div>
       <div class="stat-context">基於行動網路與 AI 的車輛自我診斷</div>
     </div>
     <div class="stat-card">
@@ -59,7 +59,7 @@ aliases:
 
 <div class="page-part" id="partners">
   <span class="page-part-num">第二部分 · 合作夥伴</span>
-  <h2 class="page-part-title">13 家長期產業、臨床、標準合作夥伴</h2>
+  <h2 class="page-part-title">12 家長期產業、臨床、標準合作夥伴</h2>
   <p class="page-part-sub">與智慧型手機廠商、汽車集團、體育研究所、醫療機構、航空管理部門的多年期框架合作與實地部署。</p>
 </div>
 

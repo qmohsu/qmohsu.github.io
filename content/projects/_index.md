@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">R&amp;D programs</span> &middot; <span class="hi-orange-text">industry partnerships</span>'
 hero_eyebrow: "R&D · INDUSTRY · GRANTS · 2026"
-hero_sub: '<strong>HK$24M+ external</strong> grants &middot; <strong>9+</strong> Huawei contracts &middot; <strong>13</strong> long-running industry, clinical, and standards partners. Largest single grant: <strong>HK$10M</strong>.'
+hero_sub: '<strong>HK$24M+ external</strong> grants &middot; <strong>9+</strong> Huawei contracts &middot; <strong>12</strong> long-running industry, clinical, and standards partners. Largest single grant: <strong>HK$10M</strong>.'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL R&D — core research programs, embodied translational systems, and the multi-year industry partnerships that fund and deploy them."
 aliases:
@@ -37,7 +37,7 @@ aliases:
     <div class="stat-card">
       <div class="stat-partner">STF (Smart Traffic)</div>
       <div class="stat-num">HK$6.19M</div>
-      <div class="stat-label">PI · 2026–2028</div>
+      <div class="stat-label">Rep. Co-PI / PC · 2026–2028</div>
       <div class="stat-context">Mobile-network + AI vehicular self-diagnosis (PSRI/102/2410/PR)</div>
     </div>
     <div class="stat-card">
@@ -86,7 +86,7 @@ aliases:
 
 <div class="page-part" id="partners">
   <span class="page-part-num">Part 2 &middot; Partners</span>
-  <h2 class="page-part-title">13 long-running industry, clinical &amp; standards partners</h2>
+  <h2 class="page-part-title">12 long-running industry, clinical &amp; standards partners</h2>
   <p class="page-part-sub">Multi-year framework agreements and on-the-ground deployments with smartphone makers, automotive integrators, sports institutes, hospitals, and aviation authorities.</p>
 </div>
 
