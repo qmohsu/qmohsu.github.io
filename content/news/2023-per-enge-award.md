@@ -4,6 +4,7 @@ slug: "2023-per-enge-award"
 date: 2023-09-20
 category: "award"
 summary: "Dr. Hsu received the Per Enge Early Achievement Award from the Institute of Navigation, recognizing his contributions to GNSS positioning research."
+image: "/images/news/2023-per-enge-award.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2023/dr-hsu---2022-per-enge-early-achievement-award/"

@@ -4,6 +4,7 @@ slug: "2024-ion-most-cited"
 date: 2025-10-02
 category: "award"
 summary: "香港 UrbanNav 数据集论文荣获 NAVIGATION 期刊颁发的最高引用论文奖（Most Cited Paper Award）。"
+image: "/images/news/2024-ion-most-cited.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20251002_gnss-most-cited/"

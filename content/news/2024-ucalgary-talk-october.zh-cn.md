@@ -2,6 +2,12 @@
 title: "受邀于卡尔加里大学演讲：完好性约束图优化（2024 年 10 月）"
 slug: "2024-ucalgary-talk-october"
 date: 2024-10-01
+image: "/images/news/2024-ucalgary-talk-october.jpg"
+images:
+  - "/images/news/2024-ucalgary-talk-october.jpg"
+  - "/images/news/2024-ucalgary-talk-october-02.jpg"
+  - "/images/news/2024-ucalgary-talk-october-03.jpg"
+  - "/images/news/2024-ucalgary-talk-october-04.jpg"
 date_note: "Talk date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授在卡尔加里大学作了一场关于完好性约束图优化的 60 分钟受邀报告，延续了实验室与 PLAN 团队 GNSS 研究社区的长期合作。"

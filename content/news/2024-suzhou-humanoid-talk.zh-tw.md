@@ -2,6 +2,10 @@
 title: "蘇州受邀演講：用於復健的人形機器人 (2024 年 12 月)"
 slug: "2024-suzhou-humanoid-talk"
 date: 2024-12-14
+image: "/images/news/2024-suzhou-humanoid-talk.jpg"
+images:
+  - "/images/news/2024-suzhou-humanoid-talk.jpg"
+  - "/images/news/2024-suzhou-humanoid-talk-03.jpg"
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 2024 年 12 月在中國蘇州發表了一場關於用於復健之人形機器人的受邀演講——將實驗室的定位與導航研究延伸至醫療機器人應用。"

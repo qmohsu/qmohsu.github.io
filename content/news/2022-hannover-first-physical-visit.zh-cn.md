@@ -5,6 +5,11 @@ date: 2022-12-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授于 2022 年 12 月访问了汉诺威莱布尼茨大学 i.c.sens DFG 研究培训组——这是首次实地汉诺威访问，开启了一段持续多年并通过后续访问延续至今的欧洲合作。"
+image: "/images/news/2022-hannover-first-physical-visit.jpg"
+images:
+  - "/images/news/2022-hannover-first-physical-visit.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-02.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

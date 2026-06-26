@@ -5,6 +5,7 @@ date: 2025-05-06
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於慕尼黑工業大學發表 30 分鐘的公開獲邀研究研討會演講——以衛星導航賦能機器人應用：用數學最佳化框架彌合落差。"
+image: "/images/news/2025-tum-munich-may.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

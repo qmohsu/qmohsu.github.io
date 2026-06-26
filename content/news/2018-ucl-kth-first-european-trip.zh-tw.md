@@ -5,6 +5,11 @@ date: 2018-08-01
 date_note: "Trip period (UCL talk 31 Jul; KTH talk 6 Aug); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授首次歐洲受邀演講行程，於倫敦大學學院（UCL）與斯德哥爾摩 KTH 瑞典皇家理工學院發表受邀研討會演講，主題為「都市化城市中 GNSS 定位的挑戰與解決方案」。"
+image: "/images/news/2018-ucl-kth-first-european-trip.jpg"
+images:
+  - "/images/news/2018-ucl-kth-first-european-trip.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-02.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

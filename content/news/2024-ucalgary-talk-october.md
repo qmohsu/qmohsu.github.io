@@ -2,6 +2,12 @@
 title: "Invited talk at University of Calgary: Integrity-constrained Graph Optimization (October 2024)"
 slug: "2024-ucalgary-talk-october"
 date: 2024-10-01
+image: "/images/news/2024-ucalgary-talk-october.jpg"
+images:
+  - "/images/news/2024-ucalgary-talk-october.jpg"
+  - "/images/news/2024-ucalgary-talk-october-02.jpg"
+  - "/images/news/2024-ucalgary-talk-october-03.jpg"
+  - "/images/news/2024-ucalgary-talk-october-04.jpg"
 date_note: "Talk date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu gave a 60-minute invited talk at the University of Calgary on Integrity-constrained Graph Optimization, continuing the lab's long-running engagement with the PLAN group's GNSS research community."

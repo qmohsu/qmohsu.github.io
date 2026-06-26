@@ -5,6 +5,11 @@ date: 2019-04-08
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授在夏威夷檀香山举办的 2019 ION Pacific PNT 会议特别形式分会场上发表受邀演讲——这是该实验室首次重要的美国/太平洋区受邀活动——主题为 Modernized Satellite Navigation for Civil Aviation and Autonomous Vehicles。"
+image: "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
+images:
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-02.jpg"
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

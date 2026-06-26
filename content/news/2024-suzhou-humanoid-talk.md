@@ -2,6 +2,10 @@
 title: "Invited talk in Suzhou: Humanoid Robots for Rehabilitation (December 2024)"
 slug: "2024-suzhou-humanoid-talk"
 date: 2024-12-14
+image: "/images/news/2024-suzhou-humanoid-talk.jpg"
+images:
+  - "/images/news/2024-suzhou-humanoid-talk.jpg"
+  - "/images/news/2024-suzhou-humanoid-talk-03.jpg"
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu gave an invited talk in Suzhou, China on Humanoid Robots for Rehabilitation in December 2024 — extending the lab's positioning and navigation research into healthcare-robotics applications."

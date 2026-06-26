@@ -5,6 +5,11 @@ date: 2018-08-01
 date_note: "Trip period (UCL talk 31 Jul; KTH talk 6 Aug); news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授首次赴欧洲的受邀报告之旅，在伦敦大学学院 (UCL) 与斯德哥尔摩瑞典皇家理工学院 (KTH) 举办受邀研讨会，主题为 Challenges and Solutions of GNSS Localization in Urbanized Cities。"
+image: "/images/news/2018-ucl-kth-first-european-trip.jpg"
+images:
+  - "/images/news/2018-ucl-kth-first-european-trip.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-02.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

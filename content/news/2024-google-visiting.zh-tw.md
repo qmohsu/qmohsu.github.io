@@ -4,6 +4,12 @@ slug: "2024-google-visiting"
 date: 2024-08-31
 category: "milestone"
 summary: "許博士完成了在 Google Android Context 團隊為期 20 個月的訪問研究員任期，從事智慧型手機 GNSS 定位研究。"
+image: "/images/news/2024-google-visiting.jpg"
+images:
+  - "/images/news/2024-google-visiting.jpg"
+  - "/images/news/2024-google-visiting-02.jpg"
+  - "/images/news/2024-google-visiting-03.jpg"
+  - "/images/news/2024-google-grant-02.jpg"
 source_type: "original_local"
 source_site: "original"
 ---

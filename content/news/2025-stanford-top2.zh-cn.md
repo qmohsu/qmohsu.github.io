@@ -4,6 +4,7 @@ slug: "2025-stanford-top2"
 date: 2025-01-15
 category: "recognition"
 summary: "许立达博士在斯坦福/爱思唯尔（Elsevier）排名中连续五年（2021-2025 年）入选全球前 2% 高被引科学家。"
+image: "/images/news/2025-stanford-top2.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20250925_aae-scholars-2025/"

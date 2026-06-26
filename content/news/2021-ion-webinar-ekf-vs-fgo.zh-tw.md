@@ -2,6 +2,10 @@
 title: "ION 網路研討會：EKF 對比 FGO——GNSS/INS 整合之比較（2021 年 6 月）"
 slug: "2021-ion-webinar-ekf-vs-fgo"
 date: 2021-06-28
+image: "/images/news/2021-ion-webinar-ekf-vs-fgo.jpg"
+images:
+  - "/images/news/2021-ion-webinar-ekf-vs-fgo.jpg"
+  - "/images/news/2021-ion-webinar-ekf-vs-fgo-most-cited.jpg"
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授向全球導航社群發表一場 ION 網路研討會，比較延伸卡爾曼濾波器（EKF）與因子圖優化（FGO）於緊耦合 GNSS/INS 整合的表現——奠定了後來成為奠基性 FGO-vs-EKF 論文的架構，該論文榮獲 NAVIGATION 2024 年最高引用論文獎。"

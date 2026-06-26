@@ -5,6 +5,11 @@ date: 2021-11-02
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授在香港理工大学航天系列中作了一场公开讲座，题为北斗卫星导航系统与我们的日常生活——将 GNSS 研究带给广大公众。"
+image: "/images/news/2021-polyu-public-aerospace-beidou.jpg"
+images:
+  - "/images/news/2021-polyu-public-aerospace-beidou.jpg"
+  - "/images/news/2021-polyu-public-aerospace-beidou-02.jpg"
+  - "/images/news/2021-polyu-public-aerospace-beidou-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 video: "https://www.youtube.com/watch?v=qdcZVq8sYOM"

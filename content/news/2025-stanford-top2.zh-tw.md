@@ -4,6 +4,7 @@ slug: "2025-stanford-top2"
 date: 2025-01-15
 category: "recognition"
 summary: "許立達博士連續五年（2021-2025）入選史丹佛／Elsevier 全球前 2% 高被引科學家榜單。"
+image: "/images/news/2025-stanford-top2.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20250925_aae-scholars-2025/"

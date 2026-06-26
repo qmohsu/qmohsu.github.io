@@ -5,6 +5,10 @@ date: 2025-05-23
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu presented a paper at the International Conference on Learning and Teaching (ICLT) 2025 in Hong Kong — GitHub as a Supplementary Educational Tool — building on the lab's multi-year GitHub-pedagogy line of teaching innovation research."
+image: "/images/news/2025-iclt-github-pedagogy.jpg"
+images:
+  - "/images/news/2025-iclt-github-pedagogy.jpg"
+  - "/images/news/2025-iclt-github-pedagogy-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 video: "https://www.youtube.com/watch?v=juEEJkgq6fI"

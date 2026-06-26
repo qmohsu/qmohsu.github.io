@@ -5,6 +5,7 @@ date: 2021-06-24
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu was the Guest Speaker at the 2021 International Technical Symposium on Navigation and Timing (ITSNT) hosted by ENAC France, on AI in GNSS and Collaborative 3D Mapping — the lab's first major European invited-speaking engagement."
+image: "/images/news/2021-enac-itsnt-guest-speaker.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

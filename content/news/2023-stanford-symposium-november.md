@@ -5,6 +5,11 @@ date: 2023-11-01
 date_note: "Symposium Day 1 (banquet held Wednesday evening at the Stanford Faculty Club); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu gave a dinner talk at the 2023 Stanford PNT Symposium on Vision-Sensor-Aided GNSS RTK — his second Stanford engagement of the year following the April 2023 Stanford GPS Lab invited seminar."
+image: "/images/news/2023-stanford-symposium-november.jpg"
+images:
+  - "/images/news/2023-stanford-symposium-november.jpg"
+  - "/images/news/2023-stanford-symposium-november-02.jpg"
+  - "/images/news/2023-stanford-symposium-november-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

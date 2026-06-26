@@ -5,6 +5,10 @@ date: 2022-09-05
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 IEEE IPIN 2022（北京，線上）發表主題演講，主題為「運用圖優化的導航：智慧型手機使用者從市區峽谷到室內的案例研究」。"
+image: "/images/news/2022-ipin-beijing-keynote.jpg"
+images:
+  - "/images/news/2022-ipin-beijing-keynote.jpg"
+  - "/images/news/2022-ipin-beijing-keynote-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

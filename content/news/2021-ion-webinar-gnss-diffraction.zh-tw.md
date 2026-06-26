@@ -5,6 +5,7 @@ date: 2021-09-14
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授與Hoi-Fung Ng向全球導航社群發表了一場長達 60 分鐘的 ION 網路研討會，主題為「市區環境中 GNSS 繞射模型的效能評估」——這是本實驗室 2021 年於 ION 網路研討會系列中的第二場活動。"
+image: "/images/news/2021-ion-webinar-gnss-diffraction.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

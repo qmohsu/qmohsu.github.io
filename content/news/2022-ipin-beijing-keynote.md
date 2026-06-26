@@ -5,6 +5,10 @@ date: 2022-09-05
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu delivered the keynote at IEEE IPIN 2022 (Beijing, virtual) on Navigation using Graph Optimization: A Case Study of a Smartphone User from Urban Canyon to Indoor."
+image: "/images/news/2022-ipin-beijing-keynote.jpg"
+images:
+  - "/images/news/2022-ipin-beijing-keynote.jpg"
+  - "/images/news/2022-ipin-beijing-keynote-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

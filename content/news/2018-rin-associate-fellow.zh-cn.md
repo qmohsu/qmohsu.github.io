@@ -5,6 +5,7 @@ date: 2018-08-10
 date_note: "AFRIN admission date per the membership paperwork; news post backfilled 2026-05-11"
 category: "recognition"
 summary: "许立达教授于 2018 年 8 月获接纳为英国皇家导航学会准院士 (AFRIN)——这一荣誉历久弥新，延续至今。"
+image: "/images/news/2018-rin-associate-fellow.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

@@ -4,6 +4,12 @@ slug: "2024-ipin-conference"
 date: 2024-10-22
 category: "leadership"
 summary: "许立达博士担任了在香港理工大学举办的 2024 年室内定位与室内导航国际会议（International Conference on Indoor Positioning and Indoor Navigation, IPIN）的大会主席（General Chair）。"
+image: "/images/news/2024-ipin-conference.jpg"
+images:
+  - "/images/news/2024-ipin-conference.jpg"
+  - "/images/news/2024-ipin-conference-02.jpg"
+  - "/images/news/2024-ipin-conference-03.jpg"
+  - "/images/news/2024-ipin-conference-04.jpg"
 source_type: "polyu_event_adaptation"
 source_site: "polyu-events"
 source_url: "https://www.polyu.edu.hk/aae/News-and-Events/Event/2024/10/14---IPIN2024"

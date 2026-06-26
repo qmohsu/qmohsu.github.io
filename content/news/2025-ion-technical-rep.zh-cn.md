@@ -4,6 +4,7 @@ slug: "2025-ion-technical-rep"
 date: 2025-01-10
 category: "leadership"
 summary: "许立达博士连任美国导航学会（ION）理事会技术代表，继续在导航界担任领导职务。"
+image: "/images/news/2025-ion-technical-rep.jpg"
 source_type: "original_local"
 source_site: "original"
 ---

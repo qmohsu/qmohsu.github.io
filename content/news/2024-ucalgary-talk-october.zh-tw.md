@@ -2,6 +2,12 @@
 title: "受邀於卡加利大學演講：完整性約束圖優化 (2024 年 10 月)"
 slug: "2024-ucalgary-talk-october"
 date: 2024-10-01
+image: "/images/news/2024-ucalgary-talk-october.jpg"
+images:
+  - "/images/news/2024-ucalgary-talk-october.jpg"
+  - "/images/news/2024-ucalgary-talk-october-02.jpg"
+  - "/images/news/2024-ucalgary-talk-october-03.jpg"
+  - "/images/news/2024-ucalgary-talk-october-04.jpg"
 date_note: "Talk date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於卡加利大學發表了一場 60 分鐘、以完整性約束圖優化為主題的受邀演講，延續實驗室與 PLAN 團隊 GNSS 研究社群長期以來的往來。"

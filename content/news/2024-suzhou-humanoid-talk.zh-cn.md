@@ -2,6 +2,10 @@
 title: "苏州受邀演讲：用于康复的人形机器人（2024 年 12 月）"
 slug: "2024-suzhou-humanoid-talk"
 date: 2024-12-14
+image: "/images/news/2024-suzhou-humanoid-talk.jpg"
+images:
+  - "/images/news/2024-suzhou-humanoid-talk.jpg"
+  - "/images/news/2024-suzhou-humanoid-talk-03.jpg"
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授于 2024 年 12 月在中国苏州作了一场题为《用于康复的人形机器人》的受邀报告——将实验室的定位与导航研究延伸到医疗机器人应用领域。"

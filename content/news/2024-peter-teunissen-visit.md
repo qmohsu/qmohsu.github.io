@@ -5,6 +5,10 @@ date: 2024-11-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "PolyU IPNL hosted Prof. Peter Teunissen — a giant in GNSS positioning and geodesy, originator of the LAMBDA method for integer ambiguity resolution — for a research visit and joint navigation-group presentations."
+image: "/images/news/2024-peter-teunissen-visit.jpg"
+images:
+  - "/images/news/2024-peter-teunissen-visit.jpg"
+  - "/images/news/2024-peter-teunissen-visit-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

@@ -5,6 +5,9 @@
 <article class="news-article prose">
   <p class="news-date">{{ .Date.Format "2 January 2006" }}</p>
   {{ with .Params.category }}<span class="news-category">{{ . }}</span>{{ end }}
+  {{ with .Params.youtube_url }}
+  <p class="news-youtube-link"><a href="{{ . }}" target="_blank" rel="noopener">Watch on YouTube</a></p>
+  {{ end }}
   {{ if or .Params.image .Params.images }}
   {{ $imgs := .Params.images | default (slice .Params.image) }}
   <div class="image-stack">

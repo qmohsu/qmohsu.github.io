@@ -5,6 +5,10 @@ date: 2024-04-15
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"
 summary: "香港理工大学 IPNL 出席了在夏威夷檀香山举行的 2024 年 ION Pacific PNT 会议，延续了实验室多年参与这一在太平洋地区举办的两年一度 ION 系列会议的传统。"
+image: "/images/news/2024-ion-pacific-pnt.jpg"
+images:
+  - "/images/news/2024-ion-pacific-pnt.jpg"
+  - "/images/news/2024-ion-pacific-pnt-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

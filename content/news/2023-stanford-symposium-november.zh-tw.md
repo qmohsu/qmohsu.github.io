@@ -5,6 +5,11 @@ date: 2023-11-01
 date_note: "Symposium Day 1 (banquet held Wednesday evening at the Stanford Faculty Club); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 2023 年史丹佛 PNT 研討會發表了一場關於視覺感測器輔助 GNSS RTK 的晚宴演講——這是繼 2023 年 4 月史丹佛 GPS Lab 受邀研討會之後，他當年度第二次與史丹佛的往來。"
+image: "/images/news/2023-stanford-symposium-november.jpg"
+images:
+  - "/images/news/2023-stanford-symposium-november.jpg"
+  - "/images/news/2023-stanford-symposium-november-02.jpg"
+  - "/images/news/2023-stanford-symposium-november-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

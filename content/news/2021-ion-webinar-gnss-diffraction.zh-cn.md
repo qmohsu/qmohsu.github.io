@@ -5,6 +5,7 @@ date: 2021-09-14
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授与Hoi-Fung Ng（Hoi-Fung Ng）面向全球导航界作了一场 60 分钟的 ION 网络研讨会，主题为城市环境下 GNSS 衍射模型性能评估——这是本实验室 2021 年在 ION 网络研讨会系列中的第二场活动。"
+image: "/images/news/2021-ion-webinar-gnss-diffraction.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

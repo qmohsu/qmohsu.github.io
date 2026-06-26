@@ -5,6 +5,7 @@ date: 2025-11-18
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 IEEE ITSC 2025 發表獲邀工作坊演講——當智能車輛遇上城市：完好性估計研究——延續實驗室以完好性約束因子圖最佳化為核心的研究主線。"
+image: "/images/news/2025-ieee-itsc-workshop-november.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

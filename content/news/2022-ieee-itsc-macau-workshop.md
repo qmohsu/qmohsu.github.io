@@ -5,6 +5,10 @@ date: 2022-10-08
 date_note: "Workshop date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu gave an invited workshop talk at IEEE ITSC 2022 in Macau on Urban GNSS RTK — Challenges and Opportunities."
+image: "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+images:
+  - "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+  - "/images/news/2022-ieee-itsc-macau-workshop-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

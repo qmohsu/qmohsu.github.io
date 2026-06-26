@@ -5,6 +5,11 @@ date: 2018-08-01
 date_note: "Trip period (UCL talk 31 Jul; KTH talk 6 Aug); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu's first invited-talks trip to Europe, with invited seminars at University College London and KTH Royal Institute of Technology in Stockholm, on Challenges and Solutions of GNSS Localization in Urbanized Cities."
+image: "/images/news/2018-ucl-kth-first-european-trip.jpg"
+images:
+  - "/images/news/2018-ucl-kth-first-european-trip.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-02.jpg"
+  - "/images/news/2018-ucl-kth-first-european-trip-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

@@ -5,6 +5,10 @@ date: 2022-09-05
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授在 IEEE IPIN 2022（北京，线上）上作了主旨演讲，主题为使用图优化的导航：从城市峡谷到室内的智能手机用户案例研究。"
+image: "/images/news/2022-ipin-beijing-keynote.jpg"
+images:
+  - "/images/news/2022-ipin-beijing-keynote.jpg"
+  - "/images/news/2022-ipin-beijing-keynote-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

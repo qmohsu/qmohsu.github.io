@@ -5,6 +5,11 @@ date: 2022-12-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu visited the i.c.sens DFG Research Training Group at Leibniz University Hannover in December 2022 — the first physical Hannover visit, opening a multi-year European collaboration that has continued through subsequent visits."
+image: "/images/news/2022-hannover-first-physical-visit.jpg"
+images:
+  - "/images/news/2022-hannover-first-physical-visit.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-02.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

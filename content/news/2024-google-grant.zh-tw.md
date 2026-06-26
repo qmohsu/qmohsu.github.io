@@ -4,6 +4,7 @@ slug: "2024-google-grant"
 date: 2024-03-15
 category: "grant"
 summary: "IPNL 獲頒 Google 不限用途研究經費（Unrestricted Research Grant），用於智慧型手機 GNSS 定位研究。"
+image: "/images/news/2024-google-grant.jpg"
 source_type: "polyu_adaptation"
 source_site: "polyu-rio"
 source_url: "https://www.polyu.edu.hk/rio/news/2024/20241126---polyu-aviation-researcher-supported-by-google/"

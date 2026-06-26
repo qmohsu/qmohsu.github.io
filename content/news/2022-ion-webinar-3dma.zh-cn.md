@@ -2,6 +2,10 @@
 title: "ION 网络研讨会：城市定位 —— 基于双频伪距的 3DMA GNSS（2022 年 3 月）"
 slug: "2022-ion-webinar-3dma"
 date: 2022-03-30
+image: "/images/news/2022-ion-webinar-3dma.png"
+images:
+  - "/images/news/2022-ion-webinar-3dma.png"
+  - "/images/news/2022-ion-webinar-3dma-results.jpg"
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授面向全球导航界作了一场 ION 网络研讨会，主题为基于双频伪距的三维地图辅助 GNSS 定位——这是本实验室的旗舰研究方向之一。"

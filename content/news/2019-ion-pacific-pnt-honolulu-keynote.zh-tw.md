@@ -5,6 +5,11 @@ date: 2019-04-08
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 2019 年 ION Pacific PNT 會議（夏威夷檀香山）的一場特別形式議程中發表受邀演講——這是實驗室首次重要的美國／太平洋區受邀活動——主題為「現代化衛星導航於民用航空與自駕車的應用」。"
+image: "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
+images:
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-02.jpg"
+  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

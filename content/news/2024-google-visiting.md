@@ -4,6 +4,12 @@ slug: "2024-google-visiting"
 date: 2024-08-31
 category: "milestone"
 summary: "Dr. Hsu completed a 20-month visiting researcher position with the Google Android Context team, working on smartphone GNSS positioning."
+image: "/images/news/2024-google-visiting.jpg"
+images:
+  - "/images/news/2024-google-visiting.jpg"
+  - "/images/news/2024-google-visiting-02.jpg"
+  - "/images/news/2024-google-visiting-03.jpg"
+  - "/images/news/2024-google-grant-02.jpg"
 source_type: "original_local"
 source_site: "original"
 ---

@@ -909,6 +909,13 @@ hr {
 }
 .image-stack img:last-child { margin-bottom: 0; }
 
+.news-youtube-link {
+  margin: 18px 0 8px;
+}
+.news-youtube-link a {
+  font-weight: 600;
+}
+
 .video-stack { margin: 22px 0; }
 .video-stack h2 { margin-bottom: 10px; }
 .video-stack .video-embed:not(:last-child) { margin-bottom: 14px; }

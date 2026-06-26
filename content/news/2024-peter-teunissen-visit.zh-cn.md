@@ -5,6 +5,10 @@ date: 2024-11-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "香港理工大学 IPNL 接待了 Peter Teunissen 教授——GNSS 定位与大地测量领域的泰斗、整周模糊度解算 LAMBDA 方法的创立者——进行学术访问与导航团队联合报告。"
+image: "/images/news/2024-peter-teunissen-visit.jpg"
+images:
+  - "/images/news/2024-peter-teunissen-visit.jpg"
+  - "/images/news/2024-peter-teunissen-visit-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

@@ -4,6 +4,7 @@ slug: "2025-ion-technical-rep"
 date: 2025-01-10
 category: "leadership"
 summary: "許立達博士連任美國導航學會（ION）理事會技術代表，延續他在導航社群的領導角色。"
+image: "/images/news/2025-ion-technical-rep.jpg"
 source_type: "original_local"
 source_site: "original"
 ---

@@ -5,6 +5,10 @@ date: 2022-10-08
 date_note: "Workshop date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授在澳门举行的 IEEE ITSC 2022 上作了一场受邀研讨会演讲，主题为城市 GNSS RTK——挑战与机会。"
+image: "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+images:
+  - "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+  - "/images/news/2022-ieee-itsc-macau-workshop-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

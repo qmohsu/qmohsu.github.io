@@ -4,6 +4,12 @@ slug: "2024-google-visiting"
 date: 2024-08-31
 category: "milestone"
 summary: "许立达博士完成了在 Google Android Context 团队长达 20 个月的访问研究员任期，从事智能手机 GNSS 定位工作。"
+image: "/images/news/2024-google-visiting.jpg"
+images:
+  - "/images/news/2024-google-visiting.jpg"
+  - "/images/news/2024-google-visiting-02.jpg"
+  - "/images/news/2024-google-visiting-03.jpg"
+  - "/images/news/2024-google-grant-02.jpg"
 source_type: "original_local"
 source_site: "original"
 ---

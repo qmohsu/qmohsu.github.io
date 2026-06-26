@@ -5,6 +5,10 @@ date: 2022-10-08
 date_note: "Workshop date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於澳門舉行的 IEEE ITSC 2022 發表了一場受邀研討會演講，主題為「市區 GNSS RTK——挑戰與機會」。"
+image: "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+images:
+  - "/images/news/2022-ieee-itsc-macau-workshop.jpg"
+  - "/images/news/2022-ieee-itsc-macau-workshop-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

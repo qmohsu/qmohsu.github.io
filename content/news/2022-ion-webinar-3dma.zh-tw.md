@@ -2,6 +2,10 @@
 title: "ION 網路研討會：市區定位——使用雙頻偽距的 3DMA GNSS（2022 年 3 月）"
 slug: "2022-ion-webinar-3dma"
 date: 2022-03-30
+image: "/images/news/2022-ion-webinar-3dma.png"
+images:
+  - "/images/news/2022-ion-webinar-3dma.png"
+  - "/images/news/2022-ion-webinar-3dma-results.jpg"
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授向全球導航社群發表了一場 ION 網路研討會，主題為使用雙頻偽距的 3D 地圖輔助 GNSS 定位——這是本實驗室的旗艦研究方向之一。"

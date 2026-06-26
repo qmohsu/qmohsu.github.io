@@ -5,6 +5,7 @@ date: 2021-06-24
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授担任由法国 ENAC 主办的 2021 International Technical Symposium on Navigation and Timing (ITSNT) 特邀嘉宾，主题为 AI in GNSS and Collaborative 3D Mapping——这是该实验室首次重要的欧洲受邀演讲活动。"
+image: "/images/news/2021-enac-itsnt-guest-speaker.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

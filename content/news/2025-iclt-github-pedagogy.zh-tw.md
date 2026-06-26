@@ -5,6 +5,10 @@ date: 2025-05-23
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於香港舉行的國際學與教會議（ICLT）2025 發表論文——GitHub 作為輔助教學工具——延續實驗室多年來以 GitHub 為核心的教學法教學創新研究主線。"
+image: "/images/news/2025-iclt-github-pedagogy.jpg"
+images:
+  - "/images/news/2025-iclt-github-pedagogy.jpg"
+  - "/images/news/2025-iclt-github-pedagogy-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 video: "https://www.youtube.com/watch?v=juEEJkgq6fI"

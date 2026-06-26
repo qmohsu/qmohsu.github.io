@@ -5,6 +5,10 @@ date: 2023-09-19
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於丹佛舉行的 ION GNSS+ 2023 擔任分會主席與議程主席，延續其在歷屆該研討會中經常性的服務貢獻。"
+image: "/images/news/2023-ion-gnss-denver-tutorial-group.jpg"
+images:
+  - "/images/news/2023-ion-gnss-denver-tutorial-group.jpg"
+  - "/images/news/2023-ion-gnss-denver-tutorial.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

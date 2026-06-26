@@ -5,6 +5,10 @@ date: 2023-09-19
 date_note: "Conference week; news post backfilled 2026-05-11"
 category: "talk"
 summary: "Li-Ta Hsu 教授在丹佛举行的 ION GNSS+ 2023 上担任分会主席和主题主席，延续了他在该会议历届中持续的服务贡献。"
+image: "/images/news/2023-ion-gnss-denver-tutorial-group.jpg"
+images:
+  - "/images/news/2023-ion-gnss-denver-tutorial-group.jpg"
+  - "/images/news/2023-ion-gnss-denver-tutorial.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

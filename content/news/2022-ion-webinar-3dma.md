@@ -2,6 +2,10 @@
 title: "ION Webinar: Urban positioning — 3DMA GNSS using dual-frequency pseudorange (March 2022)"
 slug: "2022-ion-webinar-3dma"
 date: 2022-03-30
+image: "/images/news/2022-ion-webinar-3dma.png"
+images:
+  - "/images/news/2022-ion-webinar-3dma.png"
+  - "/images/news/2022-ion-webinar-3dma-results.jpg"
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "Prof. Li-Ta Hsu delivered an ION Webinar to the global navigation community on 3D-Map-Aided GNSS positioning using dual-frequency pseudorange — one of the lab's flagship research directions."

@@ -5,6 +5,7 @@ date: 2021-06-24
 date_note: "Event date (virtual delivery); news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授擔任由法國 ENAC 主辦的 2021 年國際導航與授時技術研討會（ITSNT）特邀講者，主題為「AI 於 GNSS 及協同 3D 製圖」——這是實驗室首場歐洲主要受邀演講活動。"
+image: "/images/news/2021-enac-itsnt-guest-speaker.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

@@ -4,6 +4,7 @@ slug: "2024-ion-most-cited"
 date: 2025-10-02
 category: "award"
 summary: "The Hong Kong UrbanNav dataset paper received the Most Cited Paper Award from the journal NAVIGATION."
+image: "/images/news/2024-ion-most-cited.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20251002_gnss-most-cited/"

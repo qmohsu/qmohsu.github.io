@@ -4,6 +4,7 @@ slug: "2023-per-enge-award"
 date: 2023-09-20
 category: "award"
 summary: "许立达博士获得了美国导航学会颁发的 Per Enge 早期成就奖（Per Enge Early Achievement Award），以表彰他在 GNSS 定位研究方面的贡献。"
+image: "/images/news/2023-per-enge-award.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2023/dr-hsu---2022-per-enge-early-achievement-award/"

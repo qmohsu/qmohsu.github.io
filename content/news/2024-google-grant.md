@@ -4,6 +4,7 @@ slug: "2024-google-grant"
 date: 2024-03-15
 category: "grant"
 summary: "IPNL received a Google Unrestricted Research Grant for research on smartphone GNSS positioning."
+image: "/images/news/2024-google-grant.jpg"
 source_type: "polyu_adaptation"
 source_site: "polyu-rio"
 source_url: "https://www.polyu.edu.hk/rio/news/2024/20241126---polyu-aviation-researcher-supported-by-google/"

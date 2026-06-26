@@ -4,6 +4,7 @@ slug: "2023-per-enge-award"
 date: 2023-09-20
 category: "award"
 summary: "許博士榮獲美國導航學會頒發的 Per Enge 早期成就獎，以表彰他在 GNSS 定位研究方面的貢獻。"
+image: "/images/news/2023-per-enge-award.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2023/dr-hsu---2022-per-enge-early-achievement-award/"

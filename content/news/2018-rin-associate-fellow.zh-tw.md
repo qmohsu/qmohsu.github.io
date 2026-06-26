@@ -5,6 +5,7 @@ date: 2018-08-10
 date_note: "AFRIN admission date per the membership paperwork; news post backfilled 2026-05-11"
 category: "recognition"
 summary: "許立達教授於 2018 年 8 月獲接納為英國皇家導航學會 Associate Fellow（AFRIN）——一項持續至今的長期肯定。"
+image: "/images/news/2018-rin-associate-fellow.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

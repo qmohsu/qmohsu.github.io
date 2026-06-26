@@ -5,6 +5,11 @@ date: 2022-12-06
 date_note: "Visit date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於 2022 年 12 月參訪了漢諾威萊布尼茨大學的 i.c.sens DFG 研究訓練小組——這是首次實地參訪漢諾威，開啟了一段延續至後續多次參訪的多年期歐洲合作。"
+image: "/images/news/2022-hannover-first-physical-visit.jpg"
+images:
+  - "/images/news/2022-hannover-first-physical-visit.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-02.jpg"
+  - "/images/news/2022-hannover-first-physical-visit-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

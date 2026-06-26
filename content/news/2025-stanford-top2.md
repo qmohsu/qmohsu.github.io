@@ -4,6 +4,7 @@ slug: "2025-stanford-top2"
 date: 2025-01-15
 category: "recognition"
 summary: "Dr. Li-Ta Hsu has been listed among the top 2% most-cited scientists worldwide in the Stanford/Elsevier ranking for five consecutive years (2021-2025)."
+image: "/images/news/2025-stanford-top2.jpg"
 source_type: "aae_news_adaptation"
 source_site: "aae"
 source_url: "https://www.polyu.edu.hk/aae/news-and-events/news/2025/20250925_aae-scholars-2025/"

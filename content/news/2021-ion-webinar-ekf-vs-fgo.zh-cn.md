@@ -2,6 +2,10 @@
 title: "ION 网络研讨会: EKF 对比 FGO —— GNSS/INS 集成对比 (2021 年 6 月)"
 slug: "2021-ion-webinar-ekf-vs-fgo"
 date: 2021-06-28
+image: "/images/news/2021-ion-webinar-ekf-vs-fgo.jpg"
+images:
+  - "/images/news/2021-ion-webinar-ekf-vs-fgo.jpg"
+  - "/images/news/2021-ion-webinar-ekf-vs-fgo-most-cited.jpg"
 date_note: "Webinar date (virtual, global audience); news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授面向全球导航界举办了一场 ION 网络研讨会，对比用于紧耦合 GNSS/INS 集成的扩展卡尔曼滤波 (EKF) 与因子图优化 (FGO)——阐述了后来成为奠基性 FGO 对比 EKF 论文的框架，该论文荣获 NAVIGATION 2024 Most Cited Manuscript Award。"

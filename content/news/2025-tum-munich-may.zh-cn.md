@@ -5,6 +5,7 @@ date: 2025-05-06
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授在慕尼黑工业大学发表了 30 分钟的受邀公开研究研讨会演讲——卫星导航赋能机器人应用：以数学优化框架弥合鸿沟。"
+image: "/images/news/2025-tum-munich-may.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

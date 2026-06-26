@@ -5,6 +5,7 @@ date: 2018-08-10
 date_note: "AFRIN admission date per the membership paperwork; news post backfilled 2026-05-11"
 category: "recognition"
 summary: "Prof. Li-Ta Hsu was admitted as Associate Fellow of the Royal Institute of Navigation, United Kingdom (AFRIN) in August 2018 — a long-standing recognition that continues to the present."
+image: "/images/news/2018-rin-associate-fellow.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---

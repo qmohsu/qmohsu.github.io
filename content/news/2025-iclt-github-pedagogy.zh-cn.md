@@ -5,6 +5,10 @@ date: 2025-05-23
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "许立达教授在 2025 年香港国际学与教会议（ICLT）上宣读论文——GitHub 作为辅助教学工具——延续了本实验室多年来以 GitHub 教学法为核心的教学创新研究系列。"
+image: "/images/news/2025-iclt-github-pedagogy.jpg"
+images:
+  - "/images/news/2025-iclt-github-pedagogy.jpg"
+  - "/images/news/2025-iclt-github-pedagogy-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 video: "https://www.youtube.com/watch?v=juEEJkgq6fI"

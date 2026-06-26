@@ -5,6 +5,11 @@ date: 2021-11-02
 date_note: "Event date; news post backfilled 2026-05-11"
 category: "talk"
 summary: "許立達教授於香港理工大學航天系列發表了一場公眾講座，主題為「北斗衛星導航系統與我們的日常生活」——將 GNSS 研究帶給一般大眾。"
+image: "/images/news/2021-polyu-public-aerospace-beidou.jpg"
+images:
+  - "/images/news/2021-polyu-public-aerospace-beidou.jpg"
+  - "/images/news/2021-polyu-public-aerospace-beidou-02.jpg"
+  - "/images/news/2021-polyu-public-aerospace-beidou-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 video: "https://www.youtube.com/watch?v=qdcZVq8sYOM"
