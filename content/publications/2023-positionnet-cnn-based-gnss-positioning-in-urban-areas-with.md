@@ -16,6 +16,7 @@ doi: "10.2139/ssrn.4194604"
 pdf: ""
 code: ""
 data: ""
+summary: "PositionNet uses CNNs and residual maps to learn urban GNSS position corrections."
 themes:
   - "urban-gnss-reliability"
   - "environment-aware-pnt"

@@ -1,0 +1,126 @@
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $lblFeatured := cond $cn "重点论文" (cond $tw "重點論文" "Flagship") }}
+{{ $lblSummary := cond $cn "摘要" (cond $tw "摘要" "Summary") }}
+{{ $lblAbstract := cond $cn "Abstract" (cond $tw "Abstract" "Abstract") }}
+{{ $lblHighlights := cond $cn "重点" (cond $tw "重點" "Highlights") }}
+{{ $lblFigures := cond $cn "图像" (cond $tw "圖像" "Figures") }}
+{{ $lblVideos := cond $cn "视频" (cond $tw "影片" "Videos") }}
+{{ $lblRelated := cond $cn "相关项目与资源" (cond $tw "相關專案與資源" "Related project and resources") }}
+{{ $lblProject := cond $cn "项目" (cond $tw "專案" "Project") }}
+{{ $lblResource := cond $cn "资源" (cond $tw "資源" "Resource") }}
+{{ $lblRepository := cond $cn "代码仓库" (cond $tw "程式碼倉庫" "Repository") }}
+{{ $lblSlides := cond $cn "Slides" (cond $tw "Slides" "Slides") }}
+{{ $lblVideo := cond $cn "视频" (cond $tw "影片" "Video") }}
+{{ $repo := .Params.github | default .Params.repo }}
+{{ $hero := .Params.hero_image | default .Params.image }}
+{{ $videos := .Params.videos }}
+{{ if and (not $videos) .Params.video }}{{ $videos = slice .Params.video }}{{ end }}
+
+<article class="prose publication-rich">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.authors }}
+  <p class="pub-authors publication-authors">
+    {{ range $i, $a := . }}{{ if $i }}, {{ end }}{{ $norm := partial "normalize-author.html" $a }}{{ $la := lower $norm }}{{ if in $la "hsu" }}<strong>{{ $norm }}</strong>{{ else }}{{ $norm }}{{ end }}{{ end }}
+  </p>
+  {{ end }}
+
+  <p class="pub-venue publication-venue">
+    {{ with .Params.venue }}<em>{{ . }}</em>{{ end }}{{ with .Params.year }} ({{ . }}){{ end }}
+  </p>
+
+  <div class="pub-badges">
+    {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+    {{ with .Params.quartile }}{{ if and (ne . "") (ne . "magazine") (ne . "book") (ne . "oss") }}<span class="badge badge-{{ lower . | replaceRE "[^a-z0-9]" "-" }}" title="Journal quartile (SJR/common-knowledge, current)">{{ . }}</span>{{ end }}{{ end }}
+    {{ if .Params.featured }}<span class="badge badge-featured">{{ $lblFeatured }}</span>{{ end }}
+  </div>
+
+  {{ if or .Params.doi .Params.pdf .Params.code .Params.data $repo .Params.project .Params.projects .Params.resources .Params.video .Params.videos .Params.slides }}
+  <div class="pub-links publication-actions">
+    {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+    {{ with .Params.pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+    {{ with .Params.code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+    {{ with .Params.data }}<a href="{{ . }}" target="_blank" rel="noopener">Data</a>{{ end }}
+    {{ with $repo }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblRepository }}</a>{{ end }}
+    {{ with .Params.slides }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblSlides }}</a>{{ end }}
+    {{ with $videos }}{{ with index . 0 }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblVideo }}</a>{{ end }}{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $hero }}
+  <figure class="paper-hero-figure">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt | default $.Title }}" loading="lazy">
+    {{ with $.Params.hero_caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
+
+  {{ with .Params.summary }}
+  <section class="paper-summary">
+    <h2>{{ $lblSummary }}</h2>
+    <p>{{ . | markdownify }}</p>
+  </section>
+  {{ end }}
+
+  {{ with .Params.abstract }}
+  <section class="paper-summary">
+    <h2>{{ $lblAbstract }}</h2>
+    <p>{{ . | markdownify }}</p>
+  </section>
+  {{ end }}
+
+  {{ with .Params.highlights }}
+  <section class="paper-summary">
+    <h2>{{ $lblHighlights }}</h2>
+    <ul>
+      {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ if $videos }}
+  <div class="video-stack publication-video-stack">
+    {{ if gt (len $videos) 1 }}<h2>{{ $lblVideos }}</h2>{{ end }}
+    {{ range $videos }}{{ if . }}{{ partial "youtube-embed.html" . }}{{ end }}{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.figures }}
+  <section class="paper-figures">
+    <h2>{{ $lblFigures }}</h2>
+    <div class="image-grid image-grid-3">
+      {{ range . }}
+      <figure>
+        <img src="{{ .src | relURL }}" alt="{{ .alt | default "" }}" loading="lazy">
+        {{ with .caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ if or .Params.project .Params.projects .Params.resources }}
+  <section class="paper-related">
+    <h2>{{ $lblRelated }}</h2>
+    <div class="people-pills">
+      {{ with .Params.project }}
+        {{ $projectPage := $.Site.GetPage (printf "/projects/%s" .) }}
+        {{ if $projectPage }}<a class="person-link" href="{{ $projectPage.RelPermalink }}">{{ $lblProject }}: {{ $projectPage.Title }}</a>{{ else }}<span class="person-link person-link-missing">{{ $lblProject }}: {{ . }}</span>{{ end }}
+      {{ end }}
+      {{ with .Params.projects }}
+        {{ range . }}
+          {{ $projectPage := $.Site.GetPage (printf "/projects/%s" .) }}
+          {{ if $projectPage }}<a class="person-link" href="{{ $projectPage.RelPermalink }}">{{ $lblProject }}: {{ $projectPage.Title }}</a>{{ else }}<span class="person-link person-link-missing">{{ $lblProject }}: {{ . }}</span>{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with .Params.resources }}
+        {{ range . }}
+          {{ $resourcePage := $.Site.GetPage (printf "/resources/%s" .) }}
+          {{ if $resourcePage }}<a class="person-link" href="{{ $resourcePage.RelPermalink }}">{{ $lblResource }}: {{ $resourcePage.Title }}</a>{{ else }}<span class="person-link person-link-missing">{{ $lblResource }}: {{ . }}</span>{{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</article>

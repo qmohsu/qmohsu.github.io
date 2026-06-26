@@ -15,6 +15,7 @@ doi: "10.1109/jsen.2021.3083801"
 pdf: ""
 code: ""
 data: ""
+project: "3dma-gnss"
 themes:
   - "urban-gnss-reliability"
   - "environment-aware-pnt"

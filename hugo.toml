@@ -70,21 +70,25 @@ defaultContentLanguageInSubdir = true
       url = "/publications/"
       weight = 5
     [[languages.en.menu.main]]
+      name = "Media"
+      url = "/media/"
+      weight = 6
+    [[languages.en.menu.main]]
       name = "Team"
       url = "/people/"
-      weight = 6
+      weight = 7
     [[languages.en.menu.main]]
       name = "News"
       url = "/news/"
-      weight = 7
+      weight = 8
     [[languages.en.menu.main]]
       name = "Resources"
       url = "/resources/"
-      weight = 8
+      weight = 9
     [[languages.en.menu.main]]
       name = "Engage"
       url = "/engage/"
-      weight = 9
+      weight = 10
 
   [languages.zh-cn]
     languageName = "简体中文"
@@ -115,21 +119,25 @@ defaultContentLanguageInSubdir = true
       url = "/publications/"
       weight = 5
     [[languages.zh-cn.menu.main]]
+      name = "媒体"
+      url = "/media/"
+      weight = 6
+    [[languages.zh-cn.menu.main]]
       name = "团队"
       url = "/people/"
-      weight = 6
+      weight = 7
     [[languages.zh-cn.menu.main]]
       name = "新闻"
       url = "/news/"
-      weight = 7
+      weight = 8
     [[languages.zh-cn.menu.main]]
       name = "开放资源"
       url = "/resources/"
-      weight = 8
+      weight = 9
     [[languages.zh-cn.menu.main]]
       name = "联系合作"
       url = "/engage/"
-      weight = 9
+      weight = 10
 
   [languages.zh-tw]
     languageName = "繁體中文"
@@ -160,18 +168,22 @@ defaultContentLanguageInSubdir = true
       url = "/publications/"
       weight = 5
     [[languages.zh-tw.menu.main]]
+      name = "媒體"
+      url = "/media/"
+      weight = 6
+    [[languages.zh-tw.menu.main]]
       name = "團隊"
       url = "/people/"
-      weight = 6
+      weight = 7
     [[languages.zh-tw.menu.main]]
       name = "新聞"
       url = "/news/"
-      weight = 7
+      weight = 8
     [[languages.zh-tw.menu.main]]
       name = "開放資源"
       url = "/resources/"
-      weight = 8
+      weight = 9
     [[languages.zh-tw.menu.main]]
       name = "聯絡合作"
       url = "/engage/"
-      weight = 9
+      weight = 10

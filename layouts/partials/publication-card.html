@@ -33,11 +33,17 @@
     {{- end -}}
   </div>
 
-  {{ if or .Params.pdf .Params.code .Params.data }}
+  {{ $repo := .Params.github | default .Params.repo }}
+  {{ $videoURL := "" }}
+  {{ with .Params.video }}{{ $videoURL = . }}{{ end }}
+  {{ with .Params.videos }}{{ if and (not $videoURL) (gt (len .) 0) }}{{ $videoURL = index . 0 }}{{ end }}{{ end }}
+  {{ if or .Params.pdf .Params.code .Params.data $repo $videoURL }}
   <div class="pub-links">
     {{ with .Params.pdf }}<a href="{{ . }}" target="_blank">PDF</a>{{ end }}
     {{ with .Params.code }}<a href="{{ . }}" target="_blank">Code</a>{{ end }}
     {{ with .Params.data }}<a href="{{ . }}" target="_blank">Data</a>{{ end }}
+    {{ with $repo }}<a href="{{ . }}" target="_blank">Repo</a>{{ end }}
+    {{ with $videoURL }}<a href="{{ . }}" target="_blank">Video</a>{{ end }}
   </div>
   {{ end }}
 </div>

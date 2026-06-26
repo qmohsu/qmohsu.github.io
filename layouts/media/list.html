@@ -1,0 +1,81 @@
+{{ define "main" }}
+{{ partial "page-hero.html" . }}
+<div class="page-body">
+<div class="page-body-inner">
+{{ .Content }}
+
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+{{ $lblItem := cond $cn "项目" (cond $tw "項目" "Item") }}
+{{ $lblSource := cond $cn "来源" (cond $tw "來源" "Source") }}
+{{ $lblVisual := cond $cn "图像" (cond $tw "圖像" "Visual") }}
+{{ $lblVideo := cond $cn "视频" (cond $tw "影片" "Video") }}
+{{ $lblCodeData := cond $cn "代码 / 数据" (cond $tw "程式碼 / 資料" "Code / Data") }}
+{{ $lblPaperLinks := cond $cn "论文 / 链接" (cond $tw "論文 / 連結" "Paper / Links") }}
+{{ $lblOpen := cond $cn "打开" (cond $tw "開啟" "Open") }}
+{{ $lblYes := cond $cn "有" (cond $tw "有" "Yes") }}
+{{ $lblCount := cond $cn "个页面已索引，包含论文、图像、视频、代码、数据、项目或资源链接。" (cond $tw "個頁面已索引，包含論文、圖像、影片、程式碼、資料、專案或資源連結。" "indexed pages with paper, visual, video, code, data, project, or resource links.") }}
+{{ $sections := slice "publications" "projects" "resources" "research" "news" "teaching" }}
+{{ $items := slice }}
+{{ range where site.RegularPages "Section" "in" $sections }}
+  {{ $visual := or .Params.hero_image .Params.image .Params.images .Params.figures }}
+  {{ $video := or .Params.video .Params.videos .Params.youtube_url }}
+  {{ $code := or .Params.code .Params.repo .Params.github }}
+  {{ $data := .Params.data }}
+  {{ $paper := or .Params.doi .Params.pdf }}
+  {{ $related := or .Params.project .Params.projects .Params.resources .Params.links }}
+  {{ if or $visual $video $code $data $paper $related }}
+    {{ $items = $items | append . }}
+  {{ end }}
+{{ end }}
+
+<p class="media-matrix-count">{{ len $items }} {{ $lblCount }}</p>
+
+<div class="media-matrix-wrap">
+  <table class="media-matrix">
+    <thead>
+      <tr>
+        <th>{{ $lblItem }}</th>
+        <th>{{ $lblSource }}</th>
+        <th>{{ $lblVisual }}</th>
+        <th>{{ $lblVideo }}</th>
+        <th>{{ $lblCodeData }}</th>
+        <th>{{ $lblPaperLinks }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range sort $items "Title" }}
+      {{ $videoURL := "" }}
+      {{ with .Params.youtube_url }}{{ $videoURL = . }}{{ end }}
+      {{ if and (not $videoURL) .Params.video }}{{ $videoURL = .Params.video }}{{ end }}
+      {{ with .Params.videos }}{{ if and (not $videoURL) (gt (len .) 0) }}{{ $videoURL = index . 0 }}{{ end }}{{ end }}
+      {{ $repoURL := "" }}
+      {{ with .Params.github }}{{ $repoURL = . }}{{ end }}
+      {{ if and (not $repoURL) .Params.repo }}{{ $repoURL = .Params.repo }}{{ end }}
+      {{ if and (not $repoURL) .Params.code }}{{ $repoURL = .Params.code }}{{ end }}
+      <tr>
+        <td>
+          <a class="media-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Description }}<span class="media-desc">{{ . }}</span>{{ end }}
+        </td>
+        <td><span class="badge">{{ humanize .Section }}</span>{{ with .Params.type }} <span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}</td>
+        <td>{{ if or .Params.hero_image .Params.image .Params.images .Params.figures }}<a href="{{ .RelPermalink }}">{{ $lblYes }}</a>{{ else }}<span class="media-empty">-</span>{{ end }}</td>
+        <td>{{ if $videoURL }}<a href="{{ $videoURL }}" target="_blank" rel="noopener">{{ $lblOpen }}</a>{{ else }}<span class="media-empty">-</span>{{ end }}</td>
+        <td>
+          {{ if $repoURL }}<a href="{{ $repoURL }}" target="_blank" rel="noopener">Code</a>{{ end }}
+          {{ with .Params.data }}<a href="{{ . }}" target="_blank" rel="noopener">Data</a>{{ end }}
+          {{ if not (or $repoURL .Params.data) }}<span class="media-empty">-</span>{{ end }}
+        </td>
+        <td>
+          {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+          {{ with .Params.pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+          {{ if or .Params.project .Params.projects .Params.resources .Params.links }}<a href="{{ .RelPermalink }}">{{ $lblOpen }}</a>{{ end }}
+          {{ if not (or .Params.doi .Params.pdf .Params.project .Params.projects .Params.resources .Params.links) }}<span class="media-empty">-</span>{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+{{ end }}

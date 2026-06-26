@@ -19,14 +19,24 @@ doi: "10.33012/navi.602"
 pdf: ""
 code: ""
 data: ""
+summary: "Open multisensory GNSS, LiDAR, camera, and IMU benchmark captured in Hong Kong urban canyons."
+hero_image: "/images/pubs/hk-urbannav-montage.png"
+hero_alt: "UrbanNav montage with street scenes, onboard camera views, LiDAR point clouds, GNSS skyplots, and stereo imagery"
+hero_caption: "UrbanNav combines dense urban canyon scenes, onboard views, LiDAR point clouds, GNSS skyplots, and stereo imagery from Hong Kong routes."
+project: "urbannav"
+resources:
+  - "urbannav-dataset"
+repo: "https://github.com/IPNL-POLYU/UrbanNavDataset"
+videos:
+  - "https://www.youtube.com/watch?v=V94PAkkpwWs"
+  - "https://www.youtube.com/watch?v=b1-lKmUttzc"
+  - "https://www.youtube.com/watch?v=hQu8npoGad8"
 themes:
   - "urban-gnss-reliability"
   - "optimization-estimation"
   - "seamless-pnt-embodied"
 tags: []
 ---
-
-<img src="/images/pubs/hk-urbannav-montage.png" alt="Montage of UrbanNav data: deep urban canyon scenes, onboard camera views, LiDAR point clouds, GNSS skyplots, and stereo imagery from Hong Kong routes." style="max-width:560px;width:100%;height:auto;display:block;margin:1.25rem auto;" />
 
 **Key idea.** A high-quality **open-source multi-sensor dataset** (GNSS, LiDAR, camera, IMU) captured in Hong Kong's deep urban canyons, with accurate ground truth — purpose-built for benchmarking urban navigation algorithms.
 

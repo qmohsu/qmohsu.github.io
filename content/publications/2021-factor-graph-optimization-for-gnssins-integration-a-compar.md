@@ -16,13 +16,20 @@ doi: "10.1002/navi.421"
 pdf: ""
 code: ""
 data: ""
+summary: "Factor graph optimization recasts GNSS/INS integration as a sliding-window estimation problem rather than a one-epoch filtering problem."
+hero_image: "/images/pubs/fgo-vs-ekf.svg"
+hero_alt: "Extended Kalman Filter versus factor graph optimization for GNSS/INS integration"
+hero_caption: "The paper contrasts one-epoch EKF filtering with sliding-window factor graph optimization for GNSS/INS integration."
+project: "graphgnsslib"
+resources:
+  - "graphgnsslib-software"
+repo: "https://github.com/weisongwen/GraphGNSSLib"
+video: "https://www.youtube.com/watch?v=f5bIh96SRsk"
 themes:
   - "urban-gnss-reliability"
   - "optimization-estimation"
 tags: []
 ---
-
-<img src="/images/pubs/fgo-vs-ekf.svg" alt="The EKF estimates only the current epoch; factor graph optimization jointly optimizes a window of past states with re-linearization, giving more accurate and robust GNSS/INS integration." style="max-width:620px;width:100%;height:auto;display:block;margin:1.25rem auto;" />
 
 **Key idea.** Classical GNSS/INS integration uses an Extended Kalman Filter, which condenses all history into a single current state. This paper recasts the problem as **factor graph optimization (FGO)** — jointly optimizing a sliding window of states with re-linearization, so the estimator can revisit past epochs and handle outliers far more flexibly.
 

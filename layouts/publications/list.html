@@ -106,6 +106,25 @@
   </div>
 </div>
 
+{{ $featuredPubs := sort (where $pubs ".Params.featured" true) ".Params.year" "desc" }}
+{{ if gt (len $featuredPubs) 0 }}
+{{ $cnFeatured := eq .Lang "zh-cn" }}{{ $twFeatured := eq .Lang "zh-tw" }}
+<div class="section pub-featured">
+  <h2>{{ cond $cnFeatured "重点论文" (cond $twFeatured "重點論文" "Flagship Papers") }}</h2>
+  <p class="section-kicker">{{ cond $cnFeatured "精选论文；若已有资料，会显示 DOI、项目、代码/数据、图像和视频链接。" (cond $twFeatured "精選論文；若已有資料，會顯示 DOI、專案、程式碼/資料、圖像和影片連結。" "Featured papers with DOI, project, code/data, figure, and video links when available.") }}</p>
+  <div class="flagship-paper-grid">
+    {{ range first 6 $featuredPubs }}
+    <a class="flagship-paper" href="{{ .RelPermalink }}">
+      {{ with .Params.hero_image }}<img class="flagship-paper-thumb" src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+      <span class="flagship-paper-year">{{ with .Params.year }}{{ . }}{{ end }}{{ with .Params.venue }} &middot; {{ . }}{{ end }}</span>
+      <strong>{{ .Title }}</strong>
+      {{ with .Params.summary }}<span class="flagship-paper-summary">{{ . }}</span>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
 {{/* Topic chips from research pillars (short labels), ordered by pillar weight.
      The publication `themes` slugs match the research page filenames 1:1. */}}
 {{ $shortLabels := dict

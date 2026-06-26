@@ -14,6 +14,8 @@ doi: "10.1109/taes.2021.3069271"
 pdf: ""
 code: ""
 data: ""
+summary: "3D building models are used inside RTK processing to predict and exclude NLOS satellites before they corrupt ambiguity resolution."
+project: "3dma-gnss"
 themes:
   - "urban-gnss-reliability"
   - "environment-aware-pnt"

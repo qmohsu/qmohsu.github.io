@@ -15,6 +15,7 @@ doi: "10.1109/tiv.2023.3323648"
 pdf: ""
 code: ""
 data: ""
+summary: "GLIO tightly couples GNSS, LiDAR, and IMU in a single factor graph for continuous drift-free state estimation in urban areas."
 themes:
   - "urban-gnss-reliability"
   - "optimization-estimation"

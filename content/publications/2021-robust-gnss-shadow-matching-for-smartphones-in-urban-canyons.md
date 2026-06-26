@@ -15,6 +15,8 @@ doi: "10.1109/jsen.2021.3083801"
 pdf: ""
 code: ""
 data: ""
+summary: "Robust shadow matching compares smartphone satellite visibility against a 3D building model to improve urban canyon positioning."
+project: "3dma-gnss"
 themes:
   - "urban-gnss-reliability"
   - "environment-aware-pnt"
