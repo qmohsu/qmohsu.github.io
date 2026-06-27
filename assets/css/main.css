@@ -700,6 +700,7 @@ hr {
 .pub-entry .pub-title { font-weight: 500; color: var(--text); }
 .pub-entry .pub-title a { color: inherit; border-bottom: none; }
 .pub-entry .pub-title a:hover { color: var(--accent); border-bottom: none; }
+.pub-entry .pub-citation a { overflow-wrap: anywhere; }
 .pub-entry .pub-authors {
   font-size: 0.9rem;
   color: var(--text-secondary);
@@ -731,6 +732,95 @@ hr {
 .pub-entry .pub-links a:hover {
   background: var(--accent-light);
   border-color: var(--accent);
+}
+
+/* ---- Flagship papers entry point ---- */
+.flagship-papers {
+  margin: 24px 0 20px;
+  padding: 18px 0 20px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.flagship-papers-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.flagship-papers-head h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+.flagship-papers-head p:last-child {
+  margin: 0;
+  max-width: 480px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+.flagship-paper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.flagship-paper-link {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: inherit;
+  border-bottom: 1px solid var(--border);
+}
+.flagship-paper-link:hover {
+  background: var(--bg-soft);
+  border-color: var(--accent);
+}
+.flagship-paper-thumb {
+  display: block;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+.flagship-paper-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.flagship-paper-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.flagship-paper-meta,
+.flagship-paper-action {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.flagship-paper-meta {
+  color: var(--text-tertiary);
+}
+.flagship-paper-title {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.flagship-paper-venue {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.flagship-paper-action {
+  color: var(--accent);
+  margin-top: 2px;
 }
 
 /* ---- Year group (publications) ---- */
@@ -1049,6 +1139,10 @@ hr {
 }
 .pub-entry[hidden], .year-group[hidden] { display: none; }
 @media (max-width: 560px) {
+  .flagship-papers-head { display: block; }
+  .flagship-papers-head p:last-child { margin-top: 6px; }
+  .flagship-paper-grid { grid-template-columns: 1fr; }
+  .flagship-paper-link { grid-template-columns: 96px minmax(0, 1fr); }
   .pub-filter-label { width: 100%; }
   .pub-search { min-width: 0; }
 }

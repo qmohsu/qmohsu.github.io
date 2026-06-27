@@ -5,6 +5,7 @@
 {{ .Content }}
 
 {{ $pubs := .RegularPages }}
+{{ $featuredPubs := where $pubs ".Params.featured" "eq" true }}
 {{ $total := len $pubs }}
 
 {{/* ============ Pub charts data (Hugo aggregation → JSON for Chart.js) ============ */}}
@@ -138,6 +139,40 @@
 {{ $lblNoResults := cond $cnF "没有符合筛选条件的论文。" (cond $twF "沒有符合篩選條件的論文。" "No publications match these filters.") }}
 {{ $lblClearFilters := cond $cnF "清空筛选" (cond $twF "清空篩選" "Clear filters") }}
 {{ $lblPublications := cond $cnF "篇论文" (cond $twF "篇論文" "publications") }}
+{{ $lblFlagshipKicker := cond $cnF "精选" (cond $twF "精選" "Featured") }}
+{{ $lblFlagship := cond $cnF "旗舰论文" (cond $twF "旗艦論文" "Flagship papers") }}
+{{ $lblFlagshipIntro := cond $cnF "精选论文页面，包含从论文图像整理出来的方法、实验与结果脉络。" (cond $twF "精選論文頁面，包含從論文圖像整理出來的方法、實驗與結果脈絡。" "Selected paper pages with method, experiment, and result figures from the manuscripts.") }}
+{{ $lblOpenPaper := cond $cnF "打开论文" (cond $twF "開啟論文" "Open paper") }}
+{{ if gt (len $featuredPubs) 0 }}
+<section class="flagship-papers" aria-labelledby="flagship-papers-heading">
+  <div class="flagship-papers-head">
+    <div>
+      <p class="section-kicker">{{ $lblFlagshipKicker }}</p>
+      <h2 id="flagship-papers-heading">{{ $lblFlagship }}</h2>
+    </div>
+    <p>{{ $lblFlagshipIntro }}</p>
+  </div>
+  <div class="flagship-paper-grid">
+    {{ range sort $featuredPubs ".Params.year" "desc" }}
+      {{ $paper := . }}
+      {{ $thumb := .Params.hero_image | default .Params.image }}
+      <a class="flagship-paper-link" href="{{ .RelPermalink }}">
+        {{ with $thumb }}
+        <span class="flagship-paper-thumb">
+          <img src="{{ . | relURL }}" alt="{{ $paper.Params.hero_alt | default $paper.Title }}" loading="lazy">
+        </span>
+        {{ end }}
+        <span class="flagship-paper-copy">
+          <span class="flagship-paper-meta">{{ with .Params.year }}{{ . }}{{ end }}{{ with .Params.type }} · {{ humanize . }}{{ end }}</span>
+          <span class="flagship-paper-title">{{ .Title }}</span>
+          {{ with .Params.venue }}<span class="flagship-paper-venue">{{ . }}</span>{{ end }}
+          <span class="flagship-paper-action">{{ $lblOpenPaper }} →</span>
+        </span>
+      </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
 <div class="pub-filter" id="pub-filter" data-total="{{ $total }}"
      data-label-publications="{{ $lblPublications }}"
      data-label-showing="{{ cond $cnF "显示" (cond $twF "顯示" "Showing") }}"
