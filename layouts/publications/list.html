@@ -156,16 +156,37 @@
     {{ range sort $featuredPubs ".Params.year" "desc" }}
       {{ $paper := . }}
       {{ $thumb := .Params.hero_image | default .Params.image }}
+      {{ $motion := .Params.motion_hook }}
       <a class="flagship-paper-link" href="{{ .RelPermalink }}">
-        {{ with $thumb }}
-        <span class="flagship-paper-thumb">
-          <img src="{{ . | relURL }}" alt="{{ $paper.Params.hero_alt | default $paper.Title }}" loading="lazy">
+        {{ if or $motion $thumb }}
+        <span class="flagship-paper-thumb{{ with $motion }} has-motion{{ end }}">
+          {{ with $motion }}
+            {{ $motionSrc := .src }}
+            {{ $motionType := .type | default "" }}
+            {{ $motionAlt := .alt | default ($paper.Params.hero_alt | default $paper.Title) }}
+            {{ $motionPoster := .poster | default $thumb }}
+            {{ if $motionSrc }}
+              {{ if eq $motionType "image/gif" }}
+                <img class="flagship-paper-motion" src="{{ $motionSrc | relURL }}" alt="{{ $motionAlt }}" loading="lazy">
+              {{ else }}
+                <video class="flagship-paper-motion" autoplay muted loop playsinline preload="metadata" aria-label="{{ $motionAlt }}"{{ with $motionPoster }} poster="{{ . | relURL }}"{{ end }}>
+                  <source src="{{ $motionSrc | relURL }}"{{ with $motionType }} type="{{ . }}"{{ end }}>
+                </video>
+                {{ with $motionPoster }}<img class="flagship-paper-fallback" src="{{ . | relURL }}" alt="{{ $motionAlt }}" loading="lazy">{{ end }}
+              {{ end }}
+            {{ else }}
+              {{ with $thumb }}<img src="{{ . | relURL }}" alt="{{ $paper.Params.hero_alt | default $paper.Title }}" loading="lazy">{{ end }}
+            {{ end }}
+          {{ else }}
+            {{ with $thumb }}<img src="{{ . | relURL }}" alt="{{ $paper.Params.hero_alt | default $paper.Title }}" loading="lazy">{{ end }}
+          {{ end }}
         </span>
         {{ end }}
         <span class="flagship-paper-copy">
           <span class="flagship-paper-meta">{{ with .Params.year }}{{ . }}{{ end }}{{ with .Params.type }} · {{ humanize . }}{{ end }}</span>
           <span class="flagship-paper-title">{{ .Title }}</span>
           {{ with .Params.venue }}<span class="flagship-paper-venue">{{ . }}</span>{{ end }}
+          {{ with .Params.summary }}<span class="flagship-paper-summary">{{ . }}</span>{{ end }}
           <span class="flagship-paper-action">{{ $lblOpenPaper }} →</span>
         </span>
       </a>

@@ -46,6 +46,11 @@ figures:
 video: "https://www.youtube.com/watch?v=..."
 videos:
   - "https://www.youtube.com/watch?v=..."
+motion_hook:
+  src: "/videos/pubs/example-loop.mp4"
+  poster: "/images/pubs/example.png"
+  type: "video/mp4"
+  alt: "Short description of the looping teaser"
 repo: "https://github.com/org/repo"
 github: "https://github.com/org/repo"
 slides: "https://..."
@@ -68,6 +73,8 @@ links:
 - Use `figures` for additional method/result figures cropped from the paper PDF or official paper/supplement source.
 - Use `figures[].context` for one concise sentence that explains how the figure connects to the preceding method/result story. Derive it from the manuscript and figure sequence; do not repeat the caption or invent claims.
 - Use `video` for one recording and `videos` for multiple recordings. Do not set both unless the first video is intentionally duplicated.
+- Use `motion_hook` only for a short public-safe local GIF/video teaser that has been visually reviewed and render-checked. It is for flagship-list hooks, not a replacement for full YouTube recordings in `video` / `videos`.
+- Do not point `motion_hook.src` at a private Dropbox path. Curate the approved file into the website repo under `static/videos/pubs/` or `static/images/pubs/`, and include a `poster` fallback.
 - Use `repo` or `github` for the canonical software repository. Existing `code` remains supported.
 - For Chinese translation stubs, keep metadata parity for links/media even if the body remains a stub.
 - Do not add `summary`, `highlights`, or captions unless the wording is traceable to the paper, an existing website page, or user-provided source.
