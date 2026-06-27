@@ -24,10 +24,18 @@
         <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
+    {{ $enURL := "/en/" }}
+    {{ $cnURL := "/zh-cn/" }}
+    {{ $twURL := "/zh-tw/" }}
+    {{ range .AllTranslations }}
+      {{ if eq .Lang "en" }}{{ $enURL = .RelPermalink }}{{ end }}
+      {{ if eq .Lang "zh-cn" }}{{ $cnURL = .RelPermalink }}{{ end }}
+      {{ if eq .Lang "zh-tw" }}{{ $twURL = .RelPermalink }}{{ end }}
+    {{ end }}
     <span class="lang-switch" aria-label="Language">
-      <a href="/en/" class="lang-link{{ if eq .Lang "en" }} is-active{{ end }}">EN</a>
-      <a href="/zh-cn/" class="lang-link{{ if eq .Lang "zh-cn" }} is-active{{ end }}" lang="zh-CN">简</a>
-      <a href="/zh-tw/" class="lang-link{{ if eq .Lang "zh-tw" }} is-active{{ end }}" lang="zh-TW">繁</a>
+      <a href="{{ $enURL }}" class="lang-link{{ if eq .Lang "en" }} is-active{{ end }}">EN</a>
+      <a href="{{ $cnURL }}" class="lang-link{{ if eq .Lang "zh-cn" }} is-active{{ end }}" lang="zh-CN">简</a>
+      <a href="{{ $twURL }}" class="lang-link{{ if eq .Lang "zh-tw" }} is-active{{ end }}" lang="zh-TW">繁</a>
     </span>
   </div>
 </header>
