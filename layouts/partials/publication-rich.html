@@ -87,9 +87,10 @@
   {{ with .Params.figures }}
   <section class="paper-figures">
     <h2>{{ $lblFigures }}</h2>
-    <div class="image-grid image-grid-3">
+    <div class="publication-figure-list">
       {{ range . }}
-      <figure>
+      <figure class="publication-figure">
+        {{ with .context }}<p class="publication-figure-context">{{ . | markdownify }}</p>{{ end }}
         <img src="{{ .src | relURL }}" alt="{{ .alt | default "" }}" loading="lazy">
         {{ with .caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
       </figure>

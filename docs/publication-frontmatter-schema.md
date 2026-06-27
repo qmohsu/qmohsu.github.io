@@ -41,6 +41,7 @@ hero_caption: "Short caption explaining what the image shows."
 figures:
   - src: "/images/pubs/example-result.png"
     alt: "Result figure alt text"
+    context: "One short manuscript-backed sentence connecting this figure to the paper story."
     caption: "Caption for the figure."
 video: "https://www.youtube.com/watch?v=..."
 videos:
@@ -65,6 +66,7 @@ links:
 - Use `resources` for website resource slugs under `content/resources/`.
 - Use `hero_image` only for a figure cropped from the paper PDF or an official paper/supplement source. Do not use newly generated diagrams, redrawn schematics, or generic project images unless the user explicitly approves them.
 - Use `figures` for additional method/result figures cropped from the paper PDF or official paper/supplement source.
+- Use `figures[].context` for one concise sentence that explains how the figure connects to the preceding method/result story. Derive it from the manuscript and figure sequence; do not repeat the caption or invent claims.
 - Use `video` for one recording and `videos` for multiple recordings. Do not set both unless the first video is intentionally duplicated.
 - Use `repo` or `github` for the canonical software repository. Existing `code` remains supported.
 - For Chinese translation stubs, keep metadata parity for links/media even if the body remains a stub.
