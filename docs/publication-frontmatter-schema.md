@@ -63,7 +63,8 @@ links:
 
 - Use `project` for the primary related project and `projects` only when there are multiple direct project links.
 - Use `resources` for website resource slugs under `content/resources/`.
-- Use `hero_image` for the main paper visual; use `figures` for additional method/result figures.
+- Use `hero_image` only for a figure cropped from the paper PDF or an official paper/supplement source. Do not use newly generated diagrams, redrawn schematics, or generic project images unless the user explicitly approves them.
+- Use `figures` for additional method/result figures cropped from the paper PDF or official paper/supplement source.
 - Use `video` for one recording and `videos` for multiple recordings. Do not set both unless the first video is intentionally duplicated.
 - Use `repo` or `github` for the canonical software repository. Existing `code` remains supported.
 - For Chinese translation stubs, keep metadata parity for links/media even if the body remains a stub.

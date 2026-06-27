@@ -70,10 +70,6 @@ defaultContentLanguageInSubdir = true
       url = "/publications/"
       weight = 5
     [[languages.en.menu.main]]
-      name = "Media"
-      url = "/media/"
-      weight = 6
-    [[languages.en.menu.main]]
       name = "Team"
       url = "/people/"
       weight = 7
@@ -119,10 +115,6 @@ defaultContentLanguageInSubdir = true
       url = "/publications/"
       weight = 5
     [[languages.zh-cn.menu.main]]
-      name = "媒体"
-      url = "/media/"
-      weight = 6
-    [[languages.zh-cn.menu.main]]
       name = "团队"
       url = "/people/"
       weight = 7
@@ -167,10 +159,6 @@ defaultContentLanguageInSubdir = true
       name = "論文"
       url = "/publications/"
       weight = 5
-    [[languages.zh-tw.menu.main]]
-      name = "媒體"
-      url = "/media/"
-      weight = 6
     [[languages.zh-tw.menu.main]]
       name = "團隊"
       url = "/people/"
