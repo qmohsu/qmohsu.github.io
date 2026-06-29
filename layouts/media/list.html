@@ -1,0 +1,140 @@
+{{ define "main" }}
+{{ partial "page-hero.html" . }}
+{{ $items := .Params.items | default slice }}
+{{ $sections := .Params.sections | default slice }}
+{{ $outlets := .Params.outlets | default slice }}
+{{ $visuals := .Params.visuals | default slice }}
+{{ $visualSection := .Params.visual_section | default dict }}
+{{ $reelCount := 6 }}
+{{ $reelVisuals := first $reelCount $visuals }}
+{{ $moreVisuals := after $reelCount $visuals }}
+<div class="page-body">
+  <div class="page-body-inner media-page">
+    <section class="media-stage">
+      <div class="media-stage-copy reveal">
+        {{ with .Params.intro_eyebrow }}<div class="section-eyebrow">{{ . }}</div>{{ end }}
+        {{ with .Params.intro_title }}<h2 class="section-h2">{{ . | safeHTML }}</h2>{{ end }}
+        {{ with .Params.intro_text }}<p>{{ . }}</p>{{ end }}
+        <div class="media-stat-strip">
+          <div class="media-stat">
+            <span class="media-stat-num">{{ len $outlets }}</span>
+            <span>{{ .Params.stat_sources_label }}</span>
+          </div>
+          <div class="media-stat">
+            <span class="media-stat-num">{{ len $items }}</span>
+            <span>{{ .Params.stat_items_label }}</span>
+          </div>
+        </div>
+      </div>
+      {{ if $visuals }}
+      <div class="media-reel reveal" aria-label="{{ index $visualSection "eyebrow" }}">
+        {{ range $index, $visual := $reelVisuals }}
+          {{ $url := index $visual "url" }}
+          {{ $isExternal := or (hasPrefix $url "http://") (hasPrefix $url "https://") }}
+          {{ $href := cond $isExternal $url ($url | relLangURL) }}
+          {{ $mediaType := index $visual "media_type" | default "image" }}
+          <a class="media-reel-tile{{ if eq $index 0 }} is-primary{{ end }}{{ if eq $mediaType "video" }} is-video{{ end }}" href="{{ $href }}"{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>
+            <img src="{{ index $visual "image" | relURL }}" alt="{{ index $visual "title" }}" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}">
+            <span class="media-reel-kind">{{ index $visual "kind" }}</span>
+            {{ if eq $mediaType "video" }}<span class="media-play-dot" aria-hidden="true"></span>{{ end }}
+            <span class="media-reel-caption">
+              <strong>{{ index $visual "title" }}</strong>
+              <span>{{ index $visual "source" }}</span>
+            </span>
+          </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+
+    <section class="press-kit-row">
+      {{ with .Params.press_kit }}
+      <aside class="press-kit-card reveal">
+        <div class="press-kit-label">{{ .label }}</div>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+        {{ with .points }}
+        <ul class="press-kit-points">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+        {{ with .links }}
+        <div class="press-kit-links">
+          {{ range . }}
+          {{ $url := .url }}
+          {{ $isExternal := or (hasPrefix $url "http://") (hasPrefix $url "https://") }}
+          <a href="{{ cond $isExternal $url ($url | relLangURL) }}"{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </aside>
+      {{ end }}
+    </section>
+
+    {{ if $moreVisuals }}
+    <section class="media-visual-section">
+      <div class="media-visual-section-head reveal">
+        {{ with index $visualSection "eyebrow" }}<div class="section-eyebrow">{{ . }}</div>{{ end }}
+        {{ with index $visualSection "title" }}<h2>{{ . }}</h2>{{ end }}
+        {{ with index $visualSection "text" }}<p>{{ . }}</p>{{ end }}
+      </div>
+      <div class="media-visual-grid">
+        {{ range $moreVisuals }}
+          {{ $url := index . "url" }}
+          {{ $isExternal := or (hasPrefix $url "http://") (hasPrefix $url "https://") }}
+          {{ $href := cond $isExternal $url ($url | relLangURL) }}
+          {{ $mediaType := index . "media_type" | default "image" }}
+          <a class="media-visual-card reveal{{ if eq $mediaType "video" }} is-video{{ end }}" href="{{ $href }}"{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>
+            <span class="media-visual-image">
+              <img src="{{ index . "image" | relURL }}" alt="{{ index . "title" }}" loading="lazy">
+              {{ if eq $mediaType "video" }}<span class="media-play-dot" aria-hidden="true"></span>{{ end }}
+            </span>
+            <span class="media-visual-body">
+              <span class="media-visual-meta">{{ index . "kind" }} · {{ index . "source" }}</span>
+              <strong>{{ index . "title" }}</strong>
+              <span>{{ index . "caption" }}</span>
+              <em>{{ if eq $mediaType "video" }}{{ index $visualSection "watch_label" }}{{ else }}{{ index $visualSection "open_label" }}{{ end }}</em>
+            </span>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with $outlets }}
+    <section class="outlet-strip reveal" aria-label="{{ $.Params.outlet_label }}">
+      <div class="outlet-strip-label">{{ $.Params.outlet_label }}</div>
+      <div class="outlet-strip-list">
+        {{ range . }}<span class="outlet-chip">{{ . }}</span>{{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ range $index, $section := $sections }}
+      {{ $key := index $section "key" }}
+      {{ $sectionItems := where $items "section" $key }}
+      {{ if $sectionItems }}
+      <section class="media-source-section" id="{{ $key }}">
+        <div class="media-source-section-head reveal">
+          <span class="media-section-index">{{ printf "%02d" (add $index 1) }}</span>
+          <div>
+            <div class="section-eyebrow">{{ index $section "eyebrow" }}</div>
+            <h2>{{ index $section "label" }}</h2>
+            <p>{{ index $section "description" }}</p>
+          </div>
+        </div>
+        <div class="media-source-list">
+          {{ range $sectionItems }}
+            {{ partial "media-card.html" (dict "item" . "page" $) }}
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="media-note prose">{{ . }}</div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

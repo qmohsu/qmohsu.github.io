@@ -1,0 +1,35 @@
+{{ $item := .item }}
+{{ $page := .page }}
+{{ $url := index $item "url" }}
+{{ $isExternal := or (hasPrefix $url "http://") (hasPrefix $url "https://") }}
+{{ $href := cond $isExternal $url ($url | relLangURL) }}
+{{ $image := index $item "image" }}
+{{ $mediaType := index $item "media_type" }}
+{{ $imageExternal := false }}
+{{ with $image }}{{ $imageExternal = or (hasPrefix . "http://") (hasPrefix . "https://") }}{{ end }}
+<article class="media-source-row{{ with $image }} has-thumb{{ end }} reveal">
+  <a class="media-source-link" href="{{ $href }}"{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>
+    {{ with $image }}
+      <div class="media-source-thumb">
+        <img src="{{ cond $imageExternal . (. | relURL) }}" alt="{{ index $item "title" }}" loading="lazy">
+        {{ if eq $mediaType "video" }}<span class="media-play-dot" aria-hidden="true"></span>{{ end }}
+      </div>
+    {{ end }}
+    <div class="media-source-rail">
+      {{ with index $item "source" }}<span class="media-source-name">{{ . }}</span>{{ end }}
+      {{ with index $item "type" }}<span class="media-source-type">{{ . }}</span>{{ end }}
+    </div>
+    <div class="media-source-main">
+      <div class="media-source-meta">
+        {{ with index $item "date" }}<span>{{ . }}</span>{{ end }}
+        {{ with index $item "capability" }}<span>{{ $.page.Params.capability_label }}: {{ . }}</span>{{ end }}
+      </div>
+      <h3>{{ index $item "title" }}</h3>
+      {{ with index $item "summary" }}<p>{{ . }}</p>{{ end }}
+      {{ with index $item "public_use" }}<p class="media-public-use">{{ $.page.Params.use_label }}: {{ . }}</p>{{ end }}
+    </div>
+    <div class="media-source-action">
+      <span>{{ if $isExternal }}{{ $page.Params.external_label }}{{ else }}{{ $page.Params.internal_label }}{{ end }}</span>
+    </div>
+  </a>
+</article>
