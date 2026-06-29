@@ -11,7 +11,7 @@ year: 2025
 venue: 'NAVIGATION: Journal of the Institute of Navigation'
 type: journal
 cv_number: 7
-featured: false
+featured: true
 quartile: Q1
 doi: 10.33012/navi.684
 pdf: https://ira.lib.polyu.edu.hk/bitstream/10397/112926/1/navi.684.full.pdf

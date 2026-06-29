@@ -10,7 +10,7 @@ year: 2023
 venue: "Measurement"
 type: "journal"
 cv_number: 48
-featured: false
+featured: true
 quartile: "Q1"
 doi: "10.1016/j.measurement.2023.112974"
 pdf: ""

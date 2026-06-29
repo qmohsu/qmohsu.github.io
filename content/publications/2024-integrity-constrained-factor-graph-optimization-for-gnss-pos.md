@@ -9,7 +9,7 @@ year: 2024
 venue: 'NAVIGATION: Journal of the Institute of Navigation'
 type: journal
 cv_number: 15
-featured: false
+featured: true
 quartile: Q1
 doi: 10.33012/navi.660
 pdf: https://ira.lib.polyu.edu.hk/bitstream/10397/111854/1/navi.660.full.pdf

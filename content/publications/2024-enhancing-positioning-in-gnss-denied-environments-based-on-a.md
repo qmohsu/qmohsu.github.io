@@ -11,7 +11,7 @@ year: 2024
 venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
 cv_number: 32
-featured: false
+featured: true
 quartile: "Q1"
 doi: "10.1109/tvt.2024.3360076"
 pdf: ""

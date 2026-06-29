@@ -5,10 +5,12 @@
   Volume/issue/pages omitted (not stored in frontmatter).
 */}}
 <div class="pub-entry" data-type="{{ .Params.type }}" data-themes="{{ delimit .Params.themes " " }}" data-search="{{ lower (printf "%s %s %s" .Title (delimit .Params.authors " ") (.Params.venue | default "")) }}">
+  {{ $cn := eq site.Language.Lang "zh-cn" }}{{ $tw := eq site.Language.Lang "zh-tw" }}
+  {{ $lblFeatured := cond $cn "精选页面" (cond $tw "精選頁面" "Featured page") }}
   <div class="pub-badges">
     {{ with .Params.type }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
     {{ with .Params.quartile }}{{ if and (ne . "") (ne . "magazine") (ne . "book") (ne . "oss") }}<span class="badge badge-{{ lower . | replaceRE "[^a-z0-9]" "-" }}" title="Journal quartile (SJR/common-knowledge, current)">{{ . }}</span>{{ end }}{{ end }}
-    {{ if .Params.featured }}<span class="badge badge-featured">Featured</span>{{ end }}
+    {{ if .Params.featured }}<span class="badge badge-featured">{{ $lblFeatured }}</span>{{ end }}
   </div>
 
   <div class="pub-citation">

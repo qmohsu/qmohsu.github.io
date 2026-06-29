@@ -382,18 +382,26 @@
       <h2 class="section-h2">Four engineering directions, each with a <span class="hi-cyan-text">clear industry exit</span>.</h2>
     {{ end }}
     <div class="cap-grid">
-      <a class="cap-card cap-card-cyan" href="{{ "/projects/3dma-gnss/" | relLangURL }}">
+      <article class="cap-card cap-card-cyan">
         <svg class="cap-icon cap-icon-orbit" viewBox="0 0 48 48" aria-hidden="true">
           <circle cx="24" cy="24" r="3" fill="currentColor"/>
           <ellipse cx="24" cy="24" rx="18" ry="9" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
           <circle class="orbit-dot" cx="42" cy="24" r="2.5" fill="currentColor"/>
         </svg>
         <div class="cap-num">01</div>
-        <h3>{{ if $cn }}城市 GNSS{{ else if $tw }}城市 GNSS{{ else }}Urban GNSS{{ end }}</h3>
+        <h3><a class="cap-title-link" href="{{ "/projects/3dma-gnss/" | relLangURL }}">{{ if $cn }}城市 GNSS{{ else if $tw }}城市 GNSS{{ else }}Urban GNSS{{ end }}</a></h3>
         <p>{{ if $cn }}3D 地图辅助定位、NLOS 检测、多传感器紧耦合,服务于密集城市街区。{{ else if $tw }}3D 地圖輔助定位、NLOS 檢測、多感測器緊耦合,服務於密集城市街區。{{ else }}3D map-aided positioning, NLOS detection, and multi-sensor coupling for dense city blocks.{{ end }}</p>
         <span class="cap-link">{{ if $cn }}智能驾驶 · 网约车 · 城市配送{{ else if $tw }}智能駕駛 · 網約車 · 城市配送{{ else }}Smart driving &middot; ride-hailing &middot; urban delivery{{ end }}</span>
-      </a>
-      <a class="cap-card cap-card-orange" href="{{ "/research/seamless-pnt-embodied/" | relLangURL }}">
+        <div class="cap-proof">
+          <span class="cap-proof-label">{{ if $cn }}精选论文页面{{ else if $tw }}精選論文頁面{{ else }}Selected paper pages{{ end }}</span>
+          <div class="cap-proof-links">
+            <a href="{{ "/publications/2025-grid-based-3dma-gnss-with-clustering-and-doppler-velocity-us/" | relLangURL }}">Grid-based 3DMA GNSS FGO</a>
+            <a href="{{ "/publications/2023-hong-kong-urbannav-an-open-source-multisensory-dataset-for/" | relLangURL }}">UrbanNav benchmark</a>
+            <a href="{{ "/publications/2021-3d-mapping-database-aided-gnss-rtk-and-its-assessments-in-ur/" | relLangURL }}">3DMA GNSS RTK</a>
+          </div>
+        </div>
+      </article>
+      <article class="cap-card cap-card-orange">
         <svg class="cap-icon cap-icon-ring" viewBox="0 0 48 48" aria-hidden="true">
           <circle cx="24" cy="24" r="3" fill="currentColor"/>
           <circle class="ring r1" cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="1"/>
@@ -401,11 +409,19 @@
           <circle class="ring r3" cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1"/>
         </svg>
         <div class="cap-num">02</div>
-        <h3>{{ if $cn }}轻量化室内定位{{ else if $tw }}輕量化室內定位{{ else }}Lightweight indoor PNT{{ end }}</h3>
+        <h3><a class="cap-title-link" href="{{ "/research/seamless-pnt-embodied/" | relLangURL }}">{{ if $cn }}轻量化室内定位{{ else if $tw }}輕量化室內定位{{ else }}Lightweight indoor PNT{{ end }}</a></h3>
         <p>{{ if $cn }}终端算力 / 功耗约束下的室内定位 —— 智能手机、可穿戴、AR 眼镜。{{ else if $tw }}終端算力 / 功耗約束下的室內定位 —— 智慧型手機、穿戴裝置、AR 眼鏡。{{ else }}Indoor positioning under terminal compute and power constraints &mdash; smartphones, wearables, AR.{{ end }}</p>
         <span class="cap-link">{{ if $cn }}智能手机 · 可穿戴 · AR 眼镜{{ else if $tw }}智慧型手機 · 穿戴裝置 · AR 眼鏡{{ else }}Smartphone &middot; wearable &middot; AR glasses{{ end }}</span>
-      </a>
-      <a class="cap-card cap-card-cyan" href="{{ "/projects/multi-agent-collaborative-gnss/" | relLangURL }}">
+        <div class="cap-proof">
+          <span class="cap-proof-label">{{ if $cn }}精选论文页面{{ else if $tw }}精選論文頁面{{ else }}Selected paper pages{{ end }}</span>
+          <div class="cap-proof-links">
+            <a href="{{ "/publications/2024-enhancing-smartphone-based-pedestrian-positioning-using-fac/" | relLangURL }}">Smartphone indoor/outdoor FGO</a>
+            <a href="{{ "/publications/2025-graph-based-indoor-3d-pedestrian-location-tracking-with-iner/" | relLangURL }}">Inertial-only 3D tracking</a>
+            <a href="{{ "/publications/2025-framework-for-low-cost-indoor-smartphone-camera-based-locali/" | relLangURL }}">Low-cost camera/BIM</a>
+          </div>
+        </div>
+      </article>
+      <article class="cap-card cap-card-cyan">
         <svg class="cap-icon cap-icon-bars" viewBox="0 0 48 48" aria-hidden="true">
           <rect class="bar b1" x="6"  y="20" width="4" height="20" fill="currentColor"/>
           <rect class="bar b2" x="15" y="14" width="4" height="26" fill="currentColor"/>
@@ -414,21 +430,37 @@
           <rect class="bar b5" x="42" y="18" width="4" height="22" fill="currentColor"/>
         </svg>
         <div class="cap-num">03</div>
-        <h3>{{ if $cn }}信号拒止环境导航{{ else if $tw }}信號拒止環境導航{{ else }}Signal-denied navigation{{ end }}</h3>
+        <h3><a class="cap-title-link" href="{{ "/projects/multi-agent-collaborative-gnss/" | relLangURL }}">{{ if $cn }}信号拒止环境导航{{ else if $tw }}信號拒止環境導航{{ else }}Signal-denied navigation{{ end }}</a></h3>
         <p>{{ if $cn }}隧道、地下管廊、矿山等场景下的持续定位。{{ else if $tw }}隧道、地下管廊、礦山等場景下的持續定位。{{ else }}Continuous positioning in tunnels, underground utility corridors, and mining sites.{{ end }}</p>
         <span class="cap-link">{{ if $cn }}矿山 · 地下管廊 · 巡检{{ else if $tw }}礦山 · 地下管廊 · 巡檢{{ else }}Mining &middot; utility corridor &middot; inspection{{ end }}</span>
-      </a>
-      <a class="cap-card cap-card-orange" href="{{ "/projects/environment-aware-gnss/" | relLangURL }}">
+        <div class="cap-proof">
+          <span class="cap-proof-label">{{ if $cn }}精选论文页面{{ else if $tw }}精選論文頁面{{ else }}Selected paper pages{{ end }}</span>
+          <div class="cap-proof-links">
+            <a href="{{ "/publications/2023-glio-tightly-coupled-gnsslidarimu-integration-for-continu/" | relLangURL }}">GLIO continuous fusion</a>
+            <a href="{{ "/publications/2025-fault-detection-algorithm-for-gaussian-mixture-noises-an-ap/" | relLangURL }}">Fault-aware LiDAR/IMU</a>
+            <a href="{{ "/publications/2024-enhancing-positioning-in-gnss-denied-environments-based-on-a/" | relLangURL }}">GNSS-denied EKF/IMU</a>
+          </div>
+        </div>
+      </article>
+      <article class="cap-card cap-card-orange">
         <svg class="cap-icon cap-icon-shield" viewBox="0 0 48 48" aria-hidden="true">
           <path d="M24 6 L40 12 L40 26 Q40 38 24 44 Q8 38 8 26 L8 12 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
           <path class="shield-arc" d="M24 14 L34 18 L34 26 Q34 32 24 36 Q14 32 14 26 L14 18 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
           <circle cx="24" cy="25" r="3" fill="currentColor"/>
         </svg>
         <div class="cap-num">04</div>
-        <h3>{{ if $cn }}抗干扰 PNT{{ else if $tw }}抗干擾 PNT{{ else }}Anti-jamming PNT{{ end }}</h3>
+        <h3><a class="cap-title-link" href="{{ "/projects/environment-aware-gnss/" | relLangURL }}">{{ if $cn }}抗干扰 PNT{{ else if $tw }}抗干擾 PNT{{ else }}Anti-jamming PNT{{ end }}</a></h3>
         <p>{{ if $cn }}信号被干扰、欺骗、拒止条件下的鲁棒定位。{{ else if $tw }}信號被干擾、欺騙、拒止條件下的穩健定位。{{ else }}Robust positioning under interference, spoofing, and signal denial.{{ end }}</p>
         <span class="cap-link">{{ if $cn }}国防 · 民航 · 关键基础设施{{ else if $tw }}國防 · 民航 · 關鍵基礎設施{{ else }}Defense &middot; aviation &middot; critical infrastructure{{ end }}</span>
-      </a>
+        <div class="cap-proof">
+          <span class="cap-proof-label">{{ if $cn }}精选论文页面{{ else if $tw }}精選論文頁面{{ else }}Selected paper pages{{ end }}</span>
+          <div class="cap-proof-links">
+            <a href="{{ "/publications/2023-a-post-correlation-graphical-way-for-continuous-gnss-spoofin/" | relLangURL }}">Continuous spoofing detection</a>
+            <a href="{{ "/publications/2025-fault-detection-algorithm-for-gaussian-mixture-noises-an-ap/" | relLangURL }}">GMM fault detection</a>
+            <a href="{{ "/publications/2023-an-anti-spoofing-model-based-on-mvm-and-mccm-for-a-loosely-c/" | relLangURL }}">GNSS/INS/LiDAR anti-spoofing</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>

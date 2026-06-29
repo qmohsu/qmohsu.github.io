@@ -1,5 +1,5 @@
 {{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
-{{ $lblFeatured := cond $cn "重点论文" (cond $tw "重點論文" "Flagship") }}
+{{ $lblFeatured := cond $cn "精选页面" (cond $tw "精選頁面" "Featured page") }}
 {{ $lblSummary := cond $cn "摘要" (cond $tw "摘要" "Summary") }}
 {{ $lblAbstract := cond $cn "Abstract" (cond $tw "Abstract" "Abstract") }}
 {{ $lblHighlights := cond $cn "重点" (cond $tw "重點" "Highlights") }}

@@ -10,7 +10,7 @@ year: 2025
 venue: The Journal of Navigation
 type: journal
 cv_number: 6
-featured: false
+featured: true
 quartile: Q1
 doi: 10.1017/s0373463325000220
 pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4CA0FA5382164ABE5B9B6D4A7B4BB4E9/S0373463325000220a.pdf/grid-based-3dma-gnss-with-clustering-and-doppler-velocity-using-factor-graph-optimisation.pdf

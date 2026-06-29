@@ -11,7 +11,7 @@ year: 2024
 venue: Journal of Data Science and Intelligent Systems
 type: journal
 cv_number: 11
-featured: false
+featured: true
 quartile: Q?
 doi: 10.47852/bonviewjdsis42022961
 pdf: https://ojs.bonviewpress.com/index.php/jdsis/article/download/2961/1145/24389
