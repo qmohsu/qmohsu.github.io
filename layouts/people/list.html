@@ -38,18 +38,16 @@
     {{ range $groups }}
       {{ $title := index . "title" }}
       {{ $items := index . "items" }}
+      {{ if gt (len $items) 0 }}
       <div class="member-group">
         <h3>{{ $title }}</h3>
-        {{ if gt (len $items) 0 }}
         <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
           {{ range $items }}
             {{ partial "person-card.html" . }}
           {{ end }}
         </div>
-        {{ else }}
-        <p class="group-empty">{{ $emptyMsg }}</p>
-        {{ end }}
       </div>
+      {{ end }}
     {{ end }}
   </div>
 </div>
