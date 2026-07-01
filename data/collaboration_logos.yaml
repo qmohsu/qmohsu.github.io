@@ -258,11 +258,17 @@ groups:
     url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
     paper_count: 2
   - name: Xi'an Aeronautical University
+    logo: /images/partners/xaau-logo-20260702.png
     url: /publications/2024-enhancing-smartphone-based-pedestrian-positioning-using-fac/
     paper_count: 2
+    logo_source: https://www.xaau.edu.cn/
+    dark_logo: true
   - name: Beijing Jiaotong University
+    logo: /images/partners/bjtu-logo-20260702.png
     url: /publications/2020-sky-visibility-estimation-based-on-gnss-satellite-visibility/
     paper_count: 1
+    logo_source: https://en.bjtu.edu.cn/
+    dark_logo: true
   - name: Beijing Satellite Navigation Center
     url: /publications/2026-single-frequency-rtk-positioning-in-the-presence-of-ambiguity/
     paper_count: 1
@@ -271,11 +277,16 @@ groups:
     url: /publications/2021-integration-of-gnss-and-ble-technology-with-inertial-sensors/
     paper_count: 1
   - name: Chemnitz University of Technology
+    logo: /images/partners/chemnitz-logo-20260702.svg
     url: /publications/2021-factor-graph-optimization-for-gnssins-integration-a-compar/
     paper_count: 1
+    logo_source: https://www.tu-chemnitz.de/
+    dark_logo: true
   - name: Curtin University
+    logo: /images/partners/curtin-logo-20260702.png
     url: /publications/2019-a-gps-spoofing-generator-using-an-open-sourced-vector-tracki/
     paper_count: 1
+    logo_source: https://www.curtin.edu.au/
   - name: Giustino Fortunato University
     logo: /images/partners/giustino-fortunato-20260701.png
     url: /publications/2020-machine-learning-based-losnlos-classifier-and-robust-estima/
@@ -293,8 +304,10 @@ groups:
     url: /publications/2023-intelligent-environment-adaptive-gnssins-integrated-positio/
     paper_count: 1
   - name: McMaster University
+    logo: /images/partners/mcmaster-logo-20260702.svg
     url: /publications/2026-certifiable-alignment-of-gnss-and-local-frames-via-lagrangian/
     paper_count: 1
+    logo_source: https://brand.mcmaster.ca/guidelines_introduction/logos-and-marks/
   - name: Nanjing University of Science and Technology
     url: /publications/2021-3d-point-clouds-data-super-resolution-aided-lidar-odometry-f/
     paper_count: 1
@@ -307,24 +320,36 @@ groups:
     url: /publications/2026-three-dimensional-mapping-aided-global-navigation-satellite/
     paper_count: 1
   - name: Parthenope University of Naples
+    logo: /images/partners/parthenope-logo-20260702.png
     url: /publications/2020-machine-learning-based-losnlos-classifier-and-robust-estima/
     paper_count: 1
+    logo_source: https://www.uniparthenope.it/
   - name: Peng Cheng Laboratory
+    logo: /images/partners/pcl-logo-20260702.png
     url: /publications/2024-a-survey-on-cooperative-positioning-using-gnss-measurements/
     paper_count: 1
+    logo_source: https://www.pcl.ac.cn/
+    dark_logo: true
   - name: Ritsumeikan University
+    logo: /images/partners/ritsumeikan-logo-20260702.png
     url: /publications/2023-cyclist-orientation-estimation-using-lidar-data/
     paper_count: 1
+    logo_source: https://en.ritsumei.ac.jp/
   - name: Roma Tre University
+    logo: /images/partners/roma-tre-logo-20260702.jpg
     url: /publications/2024-subspace-based-adaptive-gmm-error-modeling-for-fault-aware-p/
     paper_count: 1
+    logo_source: https://www.uniroma3.it/ateneo/comunicazione/identita-visiva/
   - name: Shibaura Institute of Technology
     logo: /images/partners/shibaura-20260701.png
     url: /publications/2023-cyclist-orientation-estimation-using-lidar-data/
     paper_count: 1
   - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing
+    logo: /images/partners/liesmars-logo-20260702.png
     url: /publications/2024-towards-persistent-spatial-awareness-a-review-of-pedestrian/
     paper_count: 1
+    logo_source: https://liesmars.whu.edu.cn/
+    dark_logo: true
   - name: Tokyo University of Science
     logo: /images/partners/tokyo-science-20260701.png
     url: /publications/2016-integrating-global-navigation-satellite-system-and-road-mark/
@@ -337,11 +362,16 @@ groups:
     url: /publications/2025-multiple-faults-isolation-for-multi-constellation-gnss-posit/
     paper_count: 1
   - name: University of Science and Technology Beijing
+    logo: /images/partners/ustb-logo-20260702.png
     url: /publications/2025-roadside-gnss-aided-multi-sensor-integrated-system-for/
     paper_count: 1
+    logo_source: https://en.ustb.edu.cn/
+    dark_logo: true
   - name: Université Gustave Eiffel
+    logo: /images/partners/gustave-eiffel-logo-20260702.svg
     url: /publications/2023-editorial-enhanced-gnss-based-localization-solutions-with-ar/
     paper_count: 1
+    logo_source: https://www.univ-gustave-eiffel.fr/en/
   - name: UNSW Sydney
     logo: /images/partners/unsw-20260701.png
     url: /publications/2021-cooperative-surveillance-systems-and-digital-technology-enab/
