@@ -24,7 +24,7 @@ This program develops **reliable multi-agent collaborative GNSS positioning** fo
 
 **Funding & recognition.**
 - **RGC Research Impact Fund R5009-21** — HK$4.43M total project cost (RGC contribution HK$3.1M + 30% institutional matching), Project Coordinator (the only RIF held as PC in Li-Ta's career to date), 2022–2025
-- **2023 ION Per Enge Early Achievement Award** — second-ever Asian-university recipient, citing the foundational urban-GNSS-reliability + integrity work
+- **2022 ION Per Enge Early Achievement Award** — second-ever Asian-university recipient, citing the foundational urban-GNSS-reliability + integrity work
 - **2024 Most-Cited Paper in NAVIGATION** — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu) — the FGO foundation that the multi-agent collaboration builds on
 - **PolyU Presidential Award in Knowledge Transfer 2022–24** — recognizing the broader KT impact of the multi-agent collaborative GNSS research line and its industry translations
 - **US12123961B2** patent (granted 2024) — *3D LiDAR Aided GNSS NLOS Detection and Correction*

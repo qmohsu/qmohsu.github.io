@@ -24,7 +24,7 @@ aliases:
 
 <strong>经费与奖项。</strong>
 - <strong>RGC 研究影响基金 R5009-21</strong> —— 项目总成本 HK$4.43M(RGC 资助 HK$3.1M + 30% 院校配套),许立达任项目协调人(其职业生涯迄今唯一一笔以 PC 身份持有的 RIF),2022–2025
-- <strong>2023 ION Per Enge 早期成就奖</strong> —— 亚洲高校第二位获奖人,授奖词点名实验室的奠基性城市 GNSS 可靠性 + 完好性工作
+- <strong>2022 ION Per Enge 早期成就奖</strong> —— 亚洲高校第二位获奖人,授奖词点名实验室的奠基性城市 GNSS 可靠性 + 完好性工作
 - <strong>2024 NAVIGATION 期刊最高引用论文奖</strong> —— *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter*(Wen, Pfeifer, Bai, Hsu) —— 多智能体协同所基于的 FGO 基石
 - <strong>理大校长知识转移奖 2022–24</strong> —— 表彰多智能体协同 GNSS 研究方向及其产业转化的整体 KT 影响力
 - <strong>US 12,123,961 B2 专利</strong>(2024 授权) —— *3D LiDAR Aided GNSS NLOS Detection and Correction*

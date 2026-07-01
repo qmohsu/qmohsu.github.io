@@ -6,10 +6,33 @@
   {{ if .Params.photo }}
     <img src="{{ .Params.photo }}" alt="{{ .Title }}" class="person-photo-detail">
   {{ end }}
-  <p><strong>{{ .Params.role }}</strong> {{ with .Params.years }}({{ . }}){{ end }}</p>
+  {{ $headline := .Params.primary_title | default .Params.role }}
+  <p class="person-headline"><strong>{{ $headline }}</strong>{{ with .Params.years }} <span>IPNL {{ . }}</span>{{ end }}</p>
 
   {{ with .Params.status }}
     <span class="badge badge-{{ . }}">{{ . }}</span>
+  {{ end }}
+
+  {{ with .Params.profile_highlights }}
+  <div class="profile-highlights">
+    {{ range . }}
+      {{ $item := . }}
+      {{ with $item.url }}
+        {{ $href := . }}
+        {{ $external := not (hasPrefix . "/") }}
+        {{ if not $external }}{{ $href = (. | relLangURL) }}{{ end }}
+        <a class="profile-highlight" href="{{ $href }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+          <span class="profile-highlight-label">{{ $item.label }}</span>
+          <span class="profile-highlight-value">{{ $item.value }}</span>
+        </a>
+      {{ else }}
+        <div class="profile-highlight">
+          <span class="profile-highlight-label">{{ $item.label }}</span>
+          <span class="profile-highlight-value">{{ $item.value }}</span>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
   {{ end }}
 
   {{ .Content }}

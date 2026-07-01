@@ -33,10 +33,8 @@ We own the complete signal-to-application chain — from raw GNSS signal process
 
 ## Recognition
 
-- [**2023 ION Per Enge Early Achievement Award**](/news/2023-per-enge-award/) — single-awardee per year, second-ever Asian-university recipient
+- [**2022 ION Per Enge Early Achievement Award**](/news/2023-per-enge-award/) — single-awardee per year, second-ever Asian-university recipient
 - [**2024 Most-Cited Paper in NAVIGATION: Journal of the Institute of Navigation**](/news/2024-ion-most-cited/) — *Factor Graph Optimization for GNSS/INS Integration: A Comparison with the Extended Kalman Filter* (Wen, Pfeifer, Bai, Hsu)
 - [**General Chair, IPIN 2024**](/news/2024-ipin-conference/) (Indoor Positioning and Indoor Navigation Conference, Hong Kong; 300+ delegates)
 - **Founding Chair, ION/IAG Working Group on Positioning and Navigation at Asian Urban Canyons** (since 2019)
 - **Associate Editor**, NAVIGATION: Journal of the Institute of Navigation (since 2022); IEEE Transactions on Aerospace and Electronic Systems (since 2024)
-
-## Research pillars

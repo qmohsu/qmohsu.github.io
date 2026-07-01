@@ -1450,6 +1450,7 @@ hr {
   max-width: var(--maxw-home);
   margin: 0 auto;
   padding: 96px 28px;
+  box-sizing: border-box;
 }
 .home-hero-eyebrow {
   font-family: var(--font-sans);
@@ -2003,6 +2004,7 @@ hr {
   max-width: var(--maxw-home);
   margin: 0 auto;
   padding: 56px 28px;
+  box-sizing: border-box;
 }
 .page-hero-eyebrow {
   font-family: var(--font-sans);
@@ -2167,10 +2169,90 @@ hr {
   display: block;
 }
 .person-prose { max-width: 760px; }
+.person-prose,
+.person-prose * {
+  min-width: 0;
+}
+.person-headline {
+  margin: 0 0 12px;
+}
+.person-headline strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.person-headline span {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.profile-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 24px 0 30px;
+}
+.profile-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-sizing: border-box;
+  min-height: 112px;
+  padding: 15px 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent-cyan);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.16s, border-color 0.16s, box-shadow 0.16s;
+}
+.profile-highlight:nth-child(even) {
+  border-top-color: var(--accent-orange);
+}
+a.profile-highlight:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 8px 18px rgba(22, 27, 64, 0.08);
+}
+.profile-highlight-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.profile-highlight:nth-child(even) .profile-highlight-label {
+  color: #B12A32;
+}
+.profile-highlight-value {
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
 
 @media (max-width: 760px) {
   .page-body { padding: 40px 0 56px; }
   .page-body-inner { padding: 0 22px; }
+  .profile-highlights { grid-template-columns: 1fr; }
+  .person-prose .person-headline strong,
+  .person-prose .profile-highlight-value,
+  .person-prose > p {
+    display: block;
+    max-width: 320px;
+  }
+  .page-hero-sub {
+    max-width: 320px;
+  }
 }
 
 /* ==========================================================================
@@ -2221,6 +2303,100 @@ hr {
 }
 .cards-tech .card:nth-child(even) { border-top-color: var(--accent-orange); }
 .cards-tech .card:hover { transform: translateY(-1px); }
+
+/* Research collaborator strip on the research landing page */
+.research-collaborators {
+  margin: 44px 0 50px;
+}
+.research-collaborators h2 {
+  margin-top: 0;
+}
+.research-collaborators-intro {
+  max-width: 780px;
+  margin: -6px 0 22px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.research-collaborator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.research-collaborator-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent-cyan);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
+}
+.research-collaborator-card:nth-child(even) {
+  border-top-color: var(--accent-orange);
+}
+.research-collaborator-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 10px 24px rgba(22, 27, 64, 0.08);
+}
+.research-collaborator-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  background: var(--bg-soft);
+  border: 1px solid rgba(22, 27, 64, 0.08);
+  border-radius: 6px;
+}
+.research-collaborator-logo-box img {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  max-height: 48px;
+  object-fit: contain;
+}
+.research-collaborator-textmark {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--accent);
+}
+.research-collaborator-name {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.research-collaborator-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 980px) {
+  .research-collaborator-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .research-collaborator-grid {
+    grid-template-columns: 1fr;
+  }
+  .research-collaborator-card {
+    min-height: 0;
+  }
+}
 
 /* ==========================================================================
    BODY background — keep page body white, body bg slightly darker behind for
