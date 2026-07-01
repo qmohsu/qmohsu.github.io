@@ -9,6 +9,7 @@
 {{ $lblProject := cond $cn "项目" (cond $tw "專案" "Project") }}
 {{ $lblResource := cond $cn "资源" (cond $tw "資源" "Resource") }}
 {{ $lblRepository := cond $cn "代码仓库" (cond $tw "程式碼倉庫" "Repository") }}
+{{ $lblPublisher := cond $cn "出版社页面" (cond $tw "出版社頁面" "Publisher page") }}
 {{ $lblSlides := cond $cn "Slides" (cond $tw "Slides" "Slides") }}
 {{ $lblVideo := cond $cn "视频" (cond $tw "影片" "Video") }}
 {{ $repo := .Params.github | default .Params.repo }}
@@ -16,7 +17,7 @@
 {{ $videos := .Params.videos }}
 {{ if and (not $videos) .Params.video }}{{ $videos = slice .Params.video }}{{ end }}
 
-<article class="prose publication-rich">
+<article class="prose publication-rich{{ with .Params.type }} publication-rich-{{ . }}{{ end }}">
   <h1>{{ .Title }}</h1>
 
   {{ with .Params.authors }}
@@ -35,12 +36,13 @@
     {{ if .Params.featured }}<span class="badge badge-featured">{{ $lblFeatured }}</span>{{ end }}
   </div>
 
-  {{ if or .Params.doi .Params.pdf .Params.code .Params.data $repo .Params.project .Params.projects .Params.resources .Params.video .Params.videos .Params.slides }}
+  {{ if or .Params.doi .Params.pdf .Params.code .Params.data .Params.publisher_url $repo .Params.project .Params.projects .Params.resources .Params.video .Params.videos .Params.slides }}
   <div class="pub-links publication-actions">
     {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
     {{ with .Params.pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
     {{ with .Params.code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
     {{ with .Params.data }}<a href="{{ . }}" target="_blank" rel="noopener">Data</a>{{ end }}
+    {{ with .Params.publisher_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblPublisher }}</a>{{ end }}
     {{ with $repo }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblRepository }}</a>{{ end }}
     {{ with .Params.slides }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblSlides }}</a>{{ end }}
     {{ with $videos }}{{ with index . 0 }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $lblVideo }}</a>{{ end }}{{ end }}

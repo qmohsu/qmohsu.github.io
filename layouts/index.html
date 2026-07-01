@@ -557,6 +557,27 @@
   </div>
 </section>
 
+{{/* ===== IPIN BOOK SPOTLIGHT ===== */}}
+{{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
+<section class="home-book-band" id="ipin-book">
+  <div class="home-block-inner">
+    <div class="book-spotlight">
+      <a class="book-cover-link" href="{{ "/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/" | relLangURL }}" aria-label="Principles of Indoor Positioning and Indoor Navigation">
+        <img src="{{ "/images/pubs/ipin-book-cover.jpg" | relURL }}" alt="Cover of Principles of Indoor Positioning and Indoor Navigation" width="334" height="500" loading="lazy">
+      </a>
+      <div class="book-spotlight-copy">
+        <div class="book-eyebrow">{{ if $cn }}专书与开源范例{{ else if $tw }}專書與開源範例{{ else }}Book + companion code{{ end }}</div>
+        <h2>Principles of Indoor Positioning and Indoor Navigation</h2>
+        <p>{{ if $cn }}Artech House 专书将 IPNL 的室内定位方法整理成可教学、可复现的体系；IPIN-Examples 则把章节连接到 Python 与 Jupyter notebook 实作。{{ else if $tw }}Artech House 專書將 IPNL 的室內定位方法整理成可教學、可重現的體系；IPIN-Examples 則把章節連接到 Python 與 Jupyter notebook 實作。{{ else }}The Artech House book turns IPNL's indoor-positioning methods into a teachable, reproducible reference; IPIN-Examples links chapters to executable Python and Jupyter notebooks.{{ end }}</p>
+        <div class="book-actions">
+          <a class="book-action book-action-primary" href="{{ "/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/" | relLangURL }}">{{ if $cn }}打开专书页面{{ else if $tw }}開啟專書頁面{{ else }}Open book page{{ end }}</a>
+          <a class="book-action" href="{{ "/resources/ipin-examples/" | relLangURL }}">{{ if $cn }}查看配套代码{{ else if $tw }}查看配套程式碼{{ else }}Companion code{{ end }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{/* ===== CONTACT BAR (full-bleed dark) ===== */}}
 <section class="home-contact-bar" id="contact">
   <div class="home-contact-bar-inner">

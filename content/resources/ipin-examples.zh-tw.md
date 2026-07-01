@@ -7,6 +7,8 @@ license: "PolyForm Noncommercial 1.0.0 (code) / CC BY-NC 4.0 (datasets)"
 maintainers: ["Li-Ta Hsu", "Guohao Zhang", "Weisong Wen"]
 repo: "https://github.com/IPNL-POLYU/IPIN-Examples"
 citation: "Hsu, L. T., Zhang, G., Wen, W. (2025). Principles of Indoor Positioning and Indoor Navigation. Artech House."
+image: "/images/pubs/ipin-book-cover.jpg"
+image_alt: "Cover of Principles of Indoor Positioning and Indoor Navigation"
 weight: 5
 ---
 
