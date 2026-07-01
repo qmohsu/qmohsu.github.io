@@ -6,6 +6,12 @@
   {{ with .Params.subtype }}<span class="badge badge-current">{{ . }}</span>{{ end }}
   {{ with .Params.license }}<span class="badge badge-completed">{{ . }}</span>{{ end }}
 
+  {{ with .Params.image }}
+  <figure class="resource-hero-figure">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="lazy">
+  </figure>
+  {{ end }}
+
   {{ .Content }}
 
   {{ with .Params.repo }}
