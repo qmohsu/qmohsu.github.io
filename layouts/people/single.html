@@ -37,6 +37,10 @@
 
   {{ .Content }}
 
+  {{ if .Params.show_collaboration_logos }}
+    {{ partial "collaboration-logo-wall.html" (dict "groups" (slice "industry")) }}
+  {{ end }}
+
   {{ with .Params.thesis }}
   <div class="section">
     <h2>{{ if eq site.Language.Lang "zh-cn" }}学位论文{{ else if eq site.Language.Lang "zh-tw" }}學位論文{{ else }}Thesis{{ end }}</h2>

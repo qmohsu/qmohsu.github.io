@@ -155,18 +155,11 @@
     <div class="home-stats-foot">
       {{ if $cn }}<div class="partner-wall-intro">算法亦已进入以下产业伙伴与用户 —— 汽车、穿戴、地图、无人机等:</div>{{ else if $tw }}<div class="partner-wall-intro">演算法亦已進入以下產業夥伴與用戶 —— 汽車、穿戴、地圖、無人機等:</div>{{ else }}<div class="partner-wall-intro">Also adopted across these industry partners &amp; users — cars, wearables, maps, drones, and more:</div>{{ end }}
       <div class="partner-logos">
-        <span class="plogo"><img src="{{ "/images/partners/huawei.png" | relURL }}" alt="Huawei" loading="lazy"><span>Huawei Car BU</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/honor.png" | relURL }}" alt="HONOR" loading="lazy"><span>HONOR</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/tencent.jpg" | relURL }}" alt="Tencent" loading="lazy"><span>Tencent Maps</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/meituan.png" | relURL }}" alt="Meituan" loading="lazy"><span>Meituan</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/google.png" | relURL }}" alt="Google" loading="lazy"><span>Google</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/saic.webp" | relURL }}" alt="SAIC Motor" loading="lazy"><span>SAIC Motor</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/airoha.png" | relURL }}" alt="AIROHA" loading="lazy"><span>AIROHA</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/mediatek.png" | relURL }}" alt="MediaTek" loading="lazy"><span>MediaTek</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/nyu-langone.jpg" | relURL }}" alt="NYU Langone" loading="lazy"><span>NYU Langone</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/hksi.png" | relURL }}" alt="HKSI" loading="lazy"><span>HKSI</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/hotel-icon.png" | relURL }}" alt="Hotel ICON" loading="lazy"><span>Hotel ICON</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/towngas.png" | relURL }}" alt="Towngas" loading="lazy"><span>Towngas</span></span>
+        {{ with index (where hugo.Data.collaboration_logos.groups "id" "industry") 0 }}
+          {{ range .items }}
+            <span class="plogo"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy"><span>{{ .label | default .name }}</span></span>
+          {{ end }}
+        {{ end }}
       </div>
       <div class="partner-wall-more"><a href="{{ "/projects/#partners" | relLangURL }}">{{ if $cn }}全部合作{{ else if $tw }}全部合作{{ else }}All partnerships{{ end }} &rarr;</a></div>
       <style>

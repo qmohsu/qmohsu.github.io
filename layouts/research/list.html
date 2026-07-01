@@ -4,35 +4,7 @@
   <div class="page-body-inner">
     {{ .Content }}
 
-    {{ with hugo.Data.research_collaborators }}
-      {{ $lang := site.Language.Lang }}
-      {{ $copy := index .heading $lang | default .heading.en }}
-      {{ with .items }}
-      <section class="research-collaborators" id="research-collaborators">
-        <div class="section-eyebrow">{{ $copy.eyebrow }}</div>
-        <h2>{{ $copy.title }}</h2>
-        <p class="research-collaborators-intro">{{ $copy.intro }}</p>
-        <div class="research-collaborator-grid">
-          {{ range . }}
-            {{ $item := . }}
-            {{ $href := .url | default .evidence_url }}
-            {{ if hasPrefix $href "/" }}{{ $href = ($href | relLangURL) }}{{ end }}
-            <a class="research-collaborator-card" href="{{ $href }}">
-              <div class="research-collaborator-logo-box">
-                {{ with .logo }}
-                  <img src="{{ . | relURL }}" alt="{{ $item.name }}" loading="lazy">
-                {{ else }}
-                  <span class="research-collaborator-textmark">{{ $item.name }}</span>
-                {{ end }}
-              </div>
-              <div class="research-collaborator-name">{{ .name }}</div>
-              <p>{{ index .context $lang | default .context.en }}</p>
-            </a>
-          {{ end }}
-        </div>
-      </section>
-      {{ end }}
-    {{ end }}
+    {{ partial "collaboration-logo-wall.html" (dict "groups" (slice "publication_affiliations")) }}
 
     <h2>{{ if eq site.Language.Lang "zh-cn" }}研究方向{{ else if eq site.Language.Lang "zh-tw" }}研究方向{{ else }}Research pillars{{ end }}</h2>
     <div class="cards cards-tech">

@@ -13,6 +13,7 @@ linkedin: "https://www.linkedin.com/in/li-ta-hsu/"
 scholar: "https://scholar.google.com/citations?user=GxfOCUMAAAAJ"
 website: "https://www.polyu.edu.hk/aae/people/academic-staff/dr-hsu-li-ta/"
 sort_order: 1
+show_collaboration_logos: true
 profile_highlights:
   - label: "Academic appointment"
     value: "Associate Professor, Department of Aeronautical and Aviation Engineering, PolyU"

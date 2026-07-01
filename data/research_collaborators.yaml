@@ -13,11 +13,11 @@ heading:
     intro: "以下為與 IPNL 公開論文、開放資料集、測試場景和專案頁面相連的研究合作案例。"
 items:
   - name: "UC Berkeley MSC Lab"
-    logo: ""
+    logo: "/images/partners/uc-berkeley-20260701.svg"
     url: "/projects/urbanloco/"
     evidence_url: "/projects/urbanloco/"
     source_url: "https://github.com/weisongwen/UrbanLoco"
-    usage_note: "Text-only institutional label; no university logo asset is used because no official/permissible logo file is present in the repo."
+    usage_note: "Official Berkeley logo asset downloaded from berkeley.edu for nominative identification of the public UrbanLoco collaborator."
     context:
       en: "UrbanLoco open dataset released with the Mechanical Systems Control Lab at UC Berkeley."
       zh-cn: "UrbanLoco 开放数据集与 UC Berkeley 机械系统控制实验室联合发布。"
