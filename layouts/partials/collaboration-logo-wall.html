@@ -1,0 +1,72 @@
+{{ $lang := site.Language.Lang }}
+{{ $groupIDs := .groups | default (slice) }}
+{{ with hugo.Data.collaboration_logos.groups }}
+<section class="profile-collab-wall" id="collaboration-network">
+  {{ range . }}
+    {{ $group := . }}
+    {{ if or (eq (len $groupIDs) 0) (in $groupIDs $group.id) }}
+      {{ $title := index $group.heading $lang | default $group.heading.en }}
+      {{ $intro := index $group.intro $lang | default $group.intro.en }}
+      <div class="profile-collab-group profile-collab-group-{{ $group.id }}">
+        <div class="section-eyebrow">{{ if eq $group.id "industry" }}{{ if eq $lang "zh-cn" }}合作网络{{ else if eq $lang "zh-tw" }}合作網絡{{ else }}Collaboration network{{ end }}{{ else }}{{ if eq $lang "zh-cn" }}论文网络{{ else if eq $lang "zh-tw" }}論文網絡{{ else }}Publication network{{ end }}{{ end }}</div>
+        <h2>{{ $title }}</h2>
+        <p class="profile-collab-intro">{{ $intro }}</p>
+        <div class="profile-partner-logos">
+          {{ range $group.items }}
+            {{ $item := . }}
+            {{ $href := .url }}
+            {{ if hasPrefix $href "/" }}{{ $href = ($href | relLangURL) }}{{ end }}
+            <a class="profile-plogo{{ if $item.dark_logo }} is-dark-logo{{ end }}" href="{{ $href }}" title="{{ $item.name }}{{ with $item.paper_count }} · {{ . }} publication-linked record{{ if ne . 1 }}s{{ end }}{{ end }}">
+              <span class="profile-plogo-media">
+                {{ with $item.logo }}
+                  <img src="{{ . | relURL }}" alt="{{ $item.name }}" loading="lazy">
+                {{ else }}
+                  <span class="profile-plogo-textmark">{{ $item.label | default $item.name }}</span>
+                {{ end }}
+              </span>
+              <span class="profile-plogo-label">{{ $item.label | default $item.name }}</span>
+            </a>
+          {{ end }}
+        </div>
+        {{ with $group.source_note }}
+          <p class="profile-collab-source">{{ index . $lang | default .en }}</p>
+        {{ end }}
+        {{ with $group.additional_items }}
+          {{ $additionalHeading := "" }}
+          {{ $additionalIntro := "" }}
+          {{ with $group.additional_heading }}{{ $additionalHeading = index . $lang | default .en }}{{ end }}
+          {{ with $group.additional_intro }}{{ $additionalIntro = index . $lang | default .en }}{{ end }}
+          {{ $recordLabel := cond (eq $lang "zh-cn") "篇记录" (cond (eq $lang "zh-tw") "筆記錄" "records") }}
+          {{ $recordLabelSingular := cond (eq $lang "en") "record" $recordLabel }}
+          <div class="profile-collab-extra">
+            {{ with $additionalHeading }}<h3>{{ . }}</h3>{{ end }}
+            {{ with $additionalIntro }}<p class="profile-collab-extra-intro">{{ . }}</p>{{ end }}
+            <div class="profile-collab-mini-grid">
+              {{ range . }}
+                {{ $extra := . }}
+                {{ $href := .url }}
+                {{ if hasPrefix $href "/" }}{{ $href = ($href | relLangURL) }}{{ end }}
+                <a class="profile-collab-mini{{ if $extra.dark_logo }} is-dark-logo{{ end }}{{ if not $extra.logo }} is-textmark{{ end }}" href="{{ $href }}" title="{{ $extra.name }}">
+                  <span class="profile-collab-mini-media">
+                    {{ with $extra.logo }}
+                      <img src="{{ . | relURL }}" alt="{{ $extra.name }}" loading="lazy">
+                    {{ else }}
+                      <span class="profile-collab-mini-textmark">{{ substr $extra.name 0 2 }}</span>
+                    {{ end }}
+                  </span>
+                  <span class="profile-collab-mini-body">
+                    <span class="profile-collab-mini-name">{{ $extra.name }}</span>
+                    {{ with $extra.paper_count }}
+                      <span class="profile-collab-mini-count">{{ . }} {{ if eq . 1 }}{{ $recordLabelSingular }}{{ else }}{{ $recordLabel }}{{ end }}</span>
+                    {{ end }}
+                  </span>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}

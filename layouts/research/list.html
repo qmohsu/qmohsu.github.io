@@ -4,6 +4,9 @@
   <div class="page-body-inner">
     {{ .Content }}
 
+    {{ partial "collaboration-logo-wall.html" (dict "groups" (slice "publication_affiliations")) }}
+
+    <h2>{{ if eq site.Language.Lang "zh-cn" }}研究方向{{ else if eq site.Language.Lang "zh-tw" }}研究方向{{ else }}Research pillars{{ end }}</h2>
     <div class="cards cards-tech">
       {{ range .Pages.ByWeight }}
         {{ partial "research-theme-card.html" . }}

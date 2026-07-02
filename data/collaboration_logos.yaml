@@ -1,0 +1,382 @@
+groups:
+- id: industry
+  heading:
+    en: Industry partners and users
+    zh-cn: 产业伙伴与应用用户
+    zh-tw: 產業夥伴與應用用戶
+  intro:
+    en: Organizations connected to IPNL's public project pages, deployments, awards, grants, or industry-facing research programs.
+    zh-cn: 以下机构与 IPNL 公开项目页、部署场景、奖项、资助或产业研究项目相连接。
+    zh-tw: 以下機構與 IPNL 公開專案頁、部署場景、獎項、資助或產業研究項目相連。
+  items:
+  - name: Huawei
+    label: Huawei Car BU
+    logo: /images/partners/huawei.png
+    url: /projects/3dma-gnss/
+    evidence: content/projects/3dma-gnss.md
+  - name: HONOR
+    label: HONOR
+    logo: /images/partners/honor.png
+    url: /projects/#partners
+    evidence: layouts/index.html partner wall
+  - name: Tencent
+    label: Tencent Maps
+    logo: /images/partners/tencent.jpg
+    url: /projects/#partners
+    evidence: layouts/index.html partner wall
+  - name: Meituan
+    label: Meituan
+    logo: /images/partners/meituan.png
+    url: /projects/urban-air-traffic-management/
+    evidence: layouts/index.html partner wall
+  - name: Google
+    label: Google
+    logo: /images/partners/google.png
+    url: /news/2024-google-grant/
+    evidence: content/news/2024-google-grant.md
+  - name: SAIC Motor
+    label: SAIC Motor
+    logo: /images/partners/saic.webp
+    url: /projects/environment-aware-gnss/
+    evidence: content/projects/environment-aware-gnss.md
+  - name: AIROHA
+    label: AIROHA
+    logo: /images/partners/airoha.png
+    url: /projects/#partners
+    evidence: content/projects/3dma-gnss.md
+  - name: MediaTek
+    label: MediaTek
+    logo: /images/partners/mediatek.png
+    url: /projects/#partners
+    evidence: content/projects/3dma-gnss.md
+  - name: NYU Langone Health
+    label: NYU Langone
+    logo: /images/partners/nyu-langone.jpg
+    url: /projects/3dma-gnss/
+    evidence: content/projects/3dma-gnss.md
+  - name: Hong Kong Sports Institute
+    label: HKSI
+    logo: /images/partners/hksi.png
+    url: /projects/uwb-gnss-windsurf/
+    evidence: content/projects/uwb-gnss-windsurf.md
+  - name: Hotel ICON
+    label: Hotel ICON
+    logo: /images/partners/hotel-icon.png
+    url: /projects/stairio/
+    evidence: content/projects/stairio.md
+  - name: Towngas
+    label: Towngas
+    logo: /images/partners/towngas.png
+    url: /projects/vehicle-self-diagnosis/
+    evidence: content/projects/vehicle-self-diagnosis.md
+- id: publication_affiliations
+  heading:
+    en: Core paper-linked research network
+    zh-cn: 核心论文合作网络
+    zh-tw: 核心論文合作網絡
+  intro:
+    en: Recurring coauthor affiliations and research partners visible across DOI-indexed IPNL publications and public project
+      pages.
+    zh-cn: 以下为在 IPNL DOI 论文与公开项目页中反复出现的代表性共著单位与研究合作方。
+    zh-tw: 以下為在 IPNL DOI 論文與公開專案頁中反覆出現的代表性共著單位與研究合作方。
+  source_note:
+    en: Each logo links to a representative publication or public project page.
+    zh-cn: 每个标志都链接到一篇代表性论文或公开项目页。
+    zh-tw: 每個標誌都連到一篇代表性論文或公開專案頁。
+  additional_heading:
+    en: Additional DOI-indexed collaborators
+    zh-cn: 更多 DOI 论文合作单位
+    zh-tw: 更多 DOI 論文合作單位
+  additional_intro:
+    en: Additional affiliations surfaced from DOI-indexed publication metadata; each links to a representative paper.
+    zh-cn: 以下单位来自 DOI 论文的公开 metadata；每个链接到一篇代表性论文。
+    zh-tw: 以下單位來自 DOI 論文的公開 metadata；每個連到一篇代表性論文。
+  items:
+  - name: The University of Tokyo
+    label: University of Tokyo
+    logo: /images/partners/university-tokyo-20260701.svg
+    url: /publications/2015-evaluation-of-multi-gnsss-and-gps-with-3d-map-methods-for-pe/
+    paper_count: 18
+    logo_source: https://www.u-tokyo.ac.jp/en/
+  - name: University of Calgary
+    label: University of Calgary
+    logo: /images/partners/university-calgary-20260701.png
+    url: /publications/2019-intelligent-gps-l1-losmultipathnlos-classifiers-based-on-c/
+    paper_count: 8
+    logo_source: https://www.ucalgary.ca/
+  - name: Civil Aviation University of China
+    label: CAUC
+    logo: ''
+    url: /publications/2019-intelligent-gps-l1-losmultipathnlos-classifiers-based-on-c/
+    paper_count: 6
+    logo_source: https://www.cauc.edu.cn/
+    usage_note: Official logo URL returned HTTP 504 during the 2026-07-01 download attempt; textmark used until the official
+      asset can be retrieved.
+  - name: Shenzhen Polytechnic University
+    label: Shenzhen Polytechnic
+    logo: /images/partners/shenzhen-polytechnic-20260701.png
+    url: /publications/2021-integration-of-gnss-and-ble-technology-with-inertial-sensors/
+    paper_count: 6
+    logo_source: https://english.szpu.edu.cn/
+  - name: Wuhan University
+    label: Wuhan University
+    logo: /images/partners/wuhan-university-20260701.png
+    url: /publications/2024-a-survey-on-cooperative-positioning-using-gnss-measurements/
+    paper_count: 6
+    logo_source: https://en.whu.edu.cn/
+  - name: National Cheng Kung University
+    label: NCKU
+    logo: /images/partners/ncku-20260701.png
+    url: /publications/2010-development-of-an-indoor-location-based-service-test-bed-and/
+    paper_count: 5
+    logo_source: https://web.ncku.edu.tw/index.php?Lang=en
+  - name: Nanjing University of Aeronautics and Astronautics
+    label: NUAA
+    logo: /images/partners/nuaa-20260701.png
+    url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
+    paper_count: 5
+    logo_source: https://www.nuaa.edu.cn/
+    dark_logo: true
+  - name: Applied Science and Technology Research Institute
+    label: ASTRI
+    logo: /images/partners/astri-20260701.svg
+    url: /publications/2021-prediction-on-the-urban-gnss-measurement-uncertainty-based-o/
+    paper_count: 5
+    logo_source: https://www.astri.org/
+    dark_logo: true
+  - name: Imperial College London
+    label: Imperial
+    logo: /images/partners/imperial-20260701.png
+    url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
+    paper_count: 4
+    logo_source: https://www.imperial.ac.uk/
+  - name: Southeast University
+    label: Southeast University
+    logo: /images/partners/southeast-university-20260701.svg
+    url: /publications/2022-a-novel-insusbl-integrated-navigation-scheme-via-factor-gra/
+    paper_count: 4
+    logo_source: https://www.seu.edu.cn/english/
+  - name: Hohai University
+    label: Hohai University
+    logo: /images/partners/hohai-university-20260701.png
+    url: /publications/2022-data-denoising-based-on-hadamard-matrix-transformation-and-r/
+    paper_count: 4
+    logo_source: https://en.hhu.edu.cn/
+  - name: Harbin Institute of Technology
+    label: HIT
+    logo: /images/partners/harbin-institute-technology-20260701.png
+    url: /publications/2023-an-anti-spoofing-model-based-on-mvm-and-mccm-for-a-loosely-c/
+    paper_count: 3
+    logo_source: https://en.hit.edu.cn/
+    dark_logo: true
+  - name: University College London
+    label: UCL
+    logo: /images/partners/ucl-20260701.svg
+    url: /publications/2014-multipath-mitigation-and-nlos-detection-using-vector-trackin/
+    paper_count: 2
+    logo_source: https://www.ucl.ac.uk/
+  - name: University of California, Berkeley
+    label: UC Berkeley
+    logo: /images/partners/uc-berkeley-20260701.svg
+    url: /projects/urbanloco/
+    paper_count: 1
+    logo_source: https://www.berkeley.edu/
+  - name: Shanghai Jiao Tong University
+    label: SJTU
+    logo: /images/partners/sjtu-20260701.png
+    url: /publications/2023-high-accuracy-absolute-position-aided-code-phase-tracking-ba/
+    paper_count: 2
+    logo_source: https://en.sjtu.edu.cn/
+    dark_logo: true
+  - name: Beihang University
+    label: Beihang University
+    logo: /images/partners/beihang-20260701.png
+    url: /publications/2024-random-forest-based-multipath-parameter-estimation/
+    paper_count: 2
+    logo_source: https://ev.buaa.edu.cn/
+  - name: The University of Hong Kong
+    label: HKU
+    logo: /images/partners/hku-20260701.svg
+    url: /publications/2023-ecmd-an-event-centric-multisensory-driving-dataset-for-slam/
+    paper_count: 1
+    logo_source: https://www.hku.hk/
+  - name: Hong Kong University of Science and Technology
+    label: HKUST
+    logo: /images/partners/hkust-20260701.svg
+    url: /publications/2024-an-adaptive-weighted-gnssvinswi-fi-rtt-based-seamless/
+    paper_count: 1
+    logo_source: https://hkust.edu.hk/
+  - name: German Aerospace Center (DLR)
+    label: DLR
+    logo: /images/partners/dlr-20260701.svg
+    url: /publications/2023-editorial-enhanced-gnss-based-localization-solutions-with-ar/
+    paper_count: 1
+    logo_source: https://www.dlr.de/en
+  additional_items:
+  - name: Arizona State University
+    logo: /images/partners/asu-20260701.png
+    url: /publications/2022-carrier-aided-dual-frequency-vectorized-tracking-architectur/
+    paper_count: 3
+  - name: BITS Pilani
+    logo: /images/partners/bits-pilani-20260701.png
+    url: /publications/2022-carrier-aided-dual-frequency-vectorized-tracking-architectur/
+    paper_count: 3
+  - name: Xi'an Railway Survey and Design Institute
+    url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
+    paper_count: 3
+  - name: Beijing Institute of Technology
+    logo: /images/partners/bit-logo-20260701.png
+    url: /publications/2019-intelligent-gps-l1-losmultipathnlos-classifiers-based-on-c/
+    paper_count: 2
+  - name: Chinese Academy of Sciences
+    logo: /images/partners/cas-20260701.png
+    url: /publications/2020-multi-agent-collaborative-gnsscamerains-integration-aided/
+    paper_count: 2
+  - name: Huawei Technologies
+    logo: /images/partners/huawei.png
+    url: /publications/2022-gnss-rtk-adaptively-integrated-with-lidarimu-odometry-for-c/
+    paper_count: 2
+  - name: Shandong University
+    logo: /images/partners/shandong-university-20260701.png
+    url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
+    paper_count: 2
+  - name: Southern University of Science and Technology
+    logo: /images/partners/sustech-logo-20260701.png
+    url: /publications/2020-multi-objective-flight-altitude-decision-considering-contrai/
+    paper_count: 2
+    dark_logo: true
+  - name: Tianjin University
+    logo: /images/partners/tianjin-university-20260701.png
+    url: /publications/2021-coarse-to-fine-loosely-coupled-lidar-inertial-odometry-for-u/
+    paper_count: 2
+  - name: Tokyo University of Marine Science and Technology
+    logo: /images/partners/tokyo-marine-science-logo-20260701.svg
+    url: /publications/2014-multipath-mitigation-and-nlos-detection-using-vector-trackin/
+    paper_count: 2
+  - name: Transport for London
+    logo: /images/partners/transport-for-london-20260701.png
+    url: /publications/2019-a-gradient-boosting-decision-tree-based-gps-signal-reception/
+    paper_count: 2
+  - name: Xi'an Aeronautical University
+    logo: /images/partners/xaau-logo-20260702.png
+    url: /publications/2024-enhancing-smartphone-based-pedestrian-positioning-using-fac/
+    paper_count: 2
+    logo_source: https://www.xaau.edu.cn/
+    dark_logo: true
+  - name: Beijing Jiaotong University
+    logo: /images/partners/bjtu-logo-20260702.png
+    url: /publications/2020-sky-visibility-estimation-based-on-gnss-satellite-visibility/
+    paper_count: 1
+    logo_source: https://en.bjtu.edu.cn/
+    dark_logo: true
+  - name: Beijing Satellite Navigation Center
+    url: /publications/2026-single-frequency-rtk-positioning-in-the-presence-of-ambiguity/
+    paper_count: 1
+  - name: Chang'an University
+    logo: /images/partners/changan-university-20260701.png
+    url: /publications/2021-integration-of-gnss-and-ble-technology-with-inertial-sensors/
+    paper_count: 1
+  - name: Chemnitz University of Technology
+    logo: /images/partners/chemnitz-logo-20260702.svg
+    url: /publications/2021-factor-graph-optimization-for-gnssins-integration-a-compar/
+    paper_count: 1
+    logo_source: https://www.tu-chemnitz.de/
+    dark_logo: true
+  - name: Curtin University
+    logo: /images/partners/curtin-logo-20260702.png
+    url: /publications/2019-a-gps-spoofing-generator-using-an-open-sourced-vector-tracki/
+    paper_count: 1
+    logo_source: https://www.curtin.edu.au/
+  - name: Giustino Fortunato University
+    logo: /images/partners/giustino-fortunato-20260701.png
+    url: /publications/2020-machine-learning-based-losnlos-classifier-and-robust-estima/
+    paper_count: 1
+  - name: Hiroshima University
+    logo: /images/partners/hiroshima-university-20260701.png
+    url: /publications/2024-enhancing-smartphone-based-pedestrian-positioning-using-fac/
+    paper_count: 1
+  - name: Institut für Automation und Kommunikation
+    logo: /images/partners/ifak-20260701.svg
+    url: /publications/2023-editorial-enhanced-gnss-based-localization-solutions-with-ar/
+    paper_count: 1
+  - name: McGill University
+    logo: /images/partners/mcgill-crest-20260701.png
+    url: /publications/2023-intelligent-environment-adaptive-gnssins-integrated-positio/
+    paper_count: 1
+  - name: McMaster University
+    logo: /images/partners/mcmaster-logo-20260702.svg
+    url: /publications/2026-certifiable-alignment-of-gnss-and-local-frames-via-lagrangian/
+    paper_count: 1
+    logo_source: https://brand.mcmaster.ca/guidelines_introduction/logos-and-marks/
+  - name: Nanjing University of Science and Technology
+    url: /publications/2021-3d-point-clouds-data-super-resolution-aided-lidar-odometry-f/
+    paper_count: 1
+  - name: National Chengchi University
+    logo: /images/partners/nccu-20260701.png
+    url: /publications/2020-the-design-a-tdcp-smoothed-gnssodometer-integration-scheme/
+    paper_count: 1
+  - name: NYU / NYU Langone Health
+    logo: /images/partners/nyu-langone.jpg
+    url: /publications/2026-three-dimensional-mapping-aided-global-navigation-satellite/
+    paper_count: 1
+  - name: Parthenope University of Naples
+    logo: /images/partners/parthenope-logo-20260702.png
+    url: /publications/2020-machine-learning-based-losnlos-classifier-and-robust-estima/
+    paper_count: 1
+    logo_source: https://www.uniparthenope.it/
+  - name: Peng Cheng Laboratory
+    logo: /images/partners/pcl-logo-20260702.png
+    url: /publications/2024-a-survey-on-cooperative-positioning-using-gnss-measurements/
+    paper_count: 1
+    logo_source: https://www.pcl.ac.cn/
+    dark_logo: true
+  - name: Ritsumeikan University
+    logo: /images/partners/ritsumeikan-logo-20260702.png
+    url: /publications/2023-cyclist-orientation-estimation-using-lidar-data/
+    paper_count: 1
+    logo_source: https://en.ritsumei.ac.jp/
+  - name: Roma Tre University
+    logo: /images/partners/roma-tre-logo-20260702.jpg
+    url: /publications/2024-subspace-based-adaptive-gmm-error-modeling-for-fault-aware-p/
+    paper_count: 1
+    logo_source: https://www.uniroma3.it/ateneo/comunicazione/identita-visiva/
+  - name: Shibaura Institute of Technology
+    logo: /images/partners/shibaura-20260701.png
+    url: /publications/2023-cyclist-orientation-estimation-using-lidar-data/
+    paper_count: 1
+  - name: State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing
+    logo: /images/partners/liesmars-logo-20260702.png
+    url: /publications/2024-towards-persistent-spatial-awareness-a-review-of-pedestrian/
+    paper_count: 1
+    logo_source: https://liesmars.whu.edu.cn/
+    dark_logo: true
+  - name: Tokyo University of Science
+    logo: /images/partners/tokyo-science-20260701.png
+    url: /publications/2016-integrating-global-navigation-satellite-system-and-road-mark/
+    paper_count: 1
+  - name: University of California, Los Angeles
+    logo: /images/partners/ucla-20260701.png
+    url: /publications/2024-towards-highdefinition-vector-map-construction-based-on-mul/
+    paper_count: 1
+  - name: University of Minnesota
+    url: /publications/2025-multiple-faults-isolation-for-multi-constellation-gnss-posit/
+    paper_count: 1
+  - name: University of Science and Technology Beijing
+    logo: /images/partners/ustb-logo-20260702.png
+    url: /publications/2025-roadside-gnss-aided-multi-sensor-integrated-system-for/
+    paper_count: 1
+    logo_source: https://en.ustb.edu.cn/
+    dark_logo: true
+  - name: Université Gustave Eiffel
+    logo: /images/partners/gustave-eiffel-logo-20260702.svg
+    url: /publications/2023-editorial-enhanced-gnss-based-localization-solutions-with-ar/
+    paper_count: 1
+    logo_source: https://www.univ-gustave-eiffel.fr/en/
+  - name: UNSW Sydney
+    logo: /images/partners/unsw-20260701.png
+    url: /publications/2021-cooperative-surveillance-systems-and-digital-technology-enab/
+    paper_count: 1
+  - name: Xi'an Jiaotong University
+    logo: /images/partners/xjtu-logo-20260701.png
+    url: /publications/2021-cooperative-surveillance-systems-and-digital-technology-enab/
+    paper_count: 1

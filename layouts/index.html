@@ -155,18 +155,11 @@
     <div class="home-stats-foot">
       {{ if $cn }}<div class="partner-wall-intro">算法亦已进入以下产业伙伴与用户 —— 汽车、穿戴、地图、无人机等:</div>{{ else if $tw }}<div class="partner-wall-intro">演算法亦已進入以下產業夥伴與用戶 —— 汽車、穿戴、地圖、無人機等:</div>{{ else }}<div class="partner-wall-intro">Also adopted across these industry partners &amp; users — cars, wearables, maps, drones, and more:</div>{{ end }}
       <div class="partner-logos">
-        <span class="plogo"><img src="{{ "/images/partners/huawei.png" | relURL }}" alt="Huawei" loading="lazy"><span>Huawei Car BU</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/honor.png" | relURL }}" alt="HONOR" loading="lazy"><span>HONOR</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/tencent.jpg" | relURL }}" alt="Tencent" loading="lazy"><span>Tencent Maps</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/meituan.png" | relURL }}" alt="Meituan" loading="lazy"><span>Meituan</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/google.png" | relURL }}" alt="Google" loading="lazy"><span>Google</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/saic.webp" | relURL }}" alt="SAIC Motor" loading="lazy"><span>SAIC Motor</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/airoha.png" | relURL }}" alt="AIROHA" loading="lazy"><span>AIROHA</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/mediatek.png" | relURL }}" alt="MediaTek" loading="lazy"><span>MediaTek</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/nyu-langone.jpg" | relURL }}" alt="NYU Langone" loading="lazy"><span>NYU Langone</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/hksi.png" | relURL }}" alt="HKSI" loading="lazy"><span>HKSI</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/hotel-icon.png" | relURL }}" alt="Hotel ICON" loading="lazy"><span>Hotel ICON</span></span>
-        <span class="plogo"><img src="{{ "/images/partners/towngas.png" | relURL }}" alt="Towngas" loading="lazy"><span>Towngas</span></span>
+        {{ with index (where hugo.Data.collaboration_logos.groups "id" "industry") 0 }}
+          {{ range .items }}
+            <span class="plogo"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy"><span>{{ .label | default .name }}</span></span>
+          {{ end }}
+        {{ end }}
       </div>
       <div class="partner-wall-more"><a href="{{ "/projects/#partners" | relLangURL }}">{{ if $cn }}全部合作{{ else if $tw }}全部合作{{ else }}All partnerships{{ end }} &rarr;</a></div>
       <style>
@@ -207,17 +200,17 @@
           <div class="leader-role">{{ if $cn }}香港理工大学 航空及民航工程学系 副教授{{ else if $tw }}香港理工大學 航空及民航工程學系 副教授{{ else }}Associate Professor, AAE, PolyU{{ end }}</div>
           <ul class="leader-credits">
             {{ if $cn }}
-              <li><strong>2023</strong> ION Per Enge 早期成就奖</li>
+              <li><strong>2022</strong> ION Per Enge 早期成就奖</li>
               <li><strong>20 月</strong> 谷歌山景城访问学者</li>
               <li><strong>HK$32M+</strong> 累计科研经费 (PI / PC)</li>
               <li><strong>主席</strong> ION/IAG 亚洲城市峡谷工作组</li>
             {{ else if $tw }}
-              <li><strong>2023</strong> ION Per Enge 早期成就獎</li>
+              <li><strong>2022</strong> ION Per Enge 早期成就獎</li>
               <li><strong>20 月</strong> 谷歌山景城訪問學者</li>
               <li><strong>HK$32M+</strong> 累計科研經費 (PI / PC)</li>
               <li><strong>主席</strong> ION/IAG 亞洲城市峽谷工作組</li>
             {{ else }}
-              <li><strong>2023</strong> ION Per Enge Early Achievement Award</li>
+              <li><strong>2022</strong> ION Per Enge Early Achievement Award</li>
               <li><strong>20 mo</strong> Google Mountain View Visiting Researcher</li>
               <li><strong>HK$32M+</strong> cumulative funding as PI / PC</li>
               <li><strong>Chair</strong> ION/IAG WG on Asian Urban Canyons</li>
@@ -538,19 +531,19 @@
         <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">谷歌不限定研究经费</strong></a> · 完成 20 个月谷歌 Android 定位组驻地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 专利</strong> —— 3D LiDAR 辅助 GNSS NLOS 检测与修正。</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2021-president-kt-award-3dma-gnss/" | relLangURL }}"><strong class="hi-cyan-text">理工大校长知识转移奖</strong></a>。</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong></a> —— 当年全球唯一获奖人。</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就奖</strong></a> —— 当年全球唯一获奖人。</span></li>
       {{ else if $tw }}
         <li><span class="rec-year">2026</span> <span class="rec-text"><a href="{{ "/news/2026-stairio-geneva-gold/" | relLangURL }}"><strong class="hi-orange-text">日內瓦發明展金獎</strong></a> —— Stairio。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">谷歌不限定研究經費</strong></a> · 完成 20 個月谷歌 Android 定位組駐地。</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US 12 123 961 B2 專利</strong> —— 3D LiDAR 輔助 GNSS NLOS 檢測與修正。</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2021-president-kt-award-3dma-gnss/" | relLangURL }}"><strong class="hi-cyan-text">理工大校長知識轉移獎</strong></a>。</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong></a> —— 當年全球唯一獲獎人。</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge 早期成就獎</strong></a> —— 當年全球唯一獲獎人。</span></li>
       {{ else }}
         <li><span class="rec-year">2026</span> <span class="rec-text"><a href="{{ "/news/2026-stairio-geneva-gold/" | relLangURL }}"><strong class="hi-orange-text">Geneva Inventions Gold Medal</strong></a> &mdash; Stairio.</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><a href="{{ "/news/2024-google-grant/" | relLangURL }}"><strong class="hi-orange-text">Google Unrestricted Research Grant</strong></a> &middot; completion of 20-month residency at Google Android Context.</span></li>
         <li><span class="rec-year">2024</span> <span class="rec-text"><strong class="hi-cyan-text">US Patent 12 123 961 B2</strong> &mdash; 3D LiDAR-Aided GNSS NLOS Detection and Correction.</span></li>
         <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2021-president-kt-award-3dma-gnss/" | relLangURL }}"><strong class="hi-cyan-text">PolyU Presidential Award in Knowledge Transfer</strong></a>.</span></li>
-        <li><span class="rec-year">2023</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong></a> &mdash; sole international recipient for the year.</span></li>
+        <li><span class="rec-year">2022</span> <span class="rec-text"><a href="{{ "/news/2023-per-enge-award/" | relLangURL }}"><strong class="hi-cyan-text">ION Per Enge Early Achievement Award</strong></a> &mdash; sole international recipient for the year.</span></li>
       {{ end }}
     </ul>
     <p class="home-block-more"><a href="{{ "/news/" | relLangURL }}">{{ if $cn }}近期新闻 &rarr;{{ else if $tw }}近期新聞 &rarr;{{ else }}Recent news &rarr;{{ end }}</a> &middot; <a href="{{ "/publications/" | relLangURL }}">{{ if $cn }}论文 &rarr;{{ else if $tw }}論文 &rarr;{{ else }}Publications &rarr;{{ end }}</a></p>
