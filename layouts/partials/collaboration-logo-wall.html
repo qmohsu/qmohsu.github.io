@@ -29,7 +29,21 @@
           {{ end }}
         </div>
         {{ with $group.source_note }}
-          <p class="profile-collab-source">{{ index . $lang | default .en }}</p>
+          <p class="profile-collab-source">
+            {{ index . $lang | default .en }}
+            {{ with $group.audit_link }}
+              {{ $auditHref := . }}
+              {{ $auditLabel := "Evidence CSV" }}
+              {{ with $group.audit_label }}{{ $auditLabel = index . $lang | default .en }}{{ end }}
+              <a href="{{ $auditHref | relURL }}">{{ $auditLabel }}</a>
+            {{ end }}
+            {{ with $group.audit_count_link }}
+              {{ $auditCountHref := . }}
+              {{ $auditCountLabel := "count-detail CSV" }}
+              {{ with $group.audit_count_label }}{{ $auditCountLabel = index . $lang | default .en }}{{ end }}
+              <span aria-hidden="true"> · </span><a href="{{ $auditCountHref | relURL }}">{{ $auditCountLabel }}</a>
+            {{ end }}
+          </p>
         {{ end }}
         {{ with $group.additional_items }}
           {{ $additionalHeading := "" }}

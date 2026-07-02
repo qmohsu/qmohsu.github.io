@@ -83,6 +83,16 @@ groups:
     en: Each logo links to a representative publication or public project page.
     zh-cn: 每个标志都链接到一篇代表性论文或公开项目页。
     zh-tw: 每個標誌都連到一篇代表性論文或公開專案頁。
+  audit_link: /audit/research-collaboration-logo-evidence-20260702.csv
+  audit_count_link: /audit/research-collaboration-logo-count-details-20260702.csv
+  audit_label:
+    en: Evidence CSV
+    zh-cn: 证据 CSV
+    zh-tw: 證據 CSV
+  audit_count_label:
+    en: count-detail CSV
+    zh-cn: 计数明细 CSV
+    zh-tw: 計數明細 CSV
   additional_heading:
     en: Additional DOI-indexed collaborators
     zh-cn: 更多 DOI 论文合作单位
