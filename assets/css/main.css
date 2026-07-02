@@ -2293,9 +2293,9 @@ a.profile-highlight:hover {
 }
 .profile-collab-mini {
   display: grid;
-  grid-template-columns: 54px minmax(0, 1fr);
+  grid-template-columns: 66px minmax(0, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   min-height: 64px;
   padding: 9px 10px;
   background: #fff;
@@ -2319,7 +2319,7 @@ a.profile-highlight:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
+  width: 66px;
   height: 42px;
   padding: 5px;
   background: var(--bg-soft);
