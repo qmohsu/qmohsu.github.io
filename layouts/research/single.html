@@ -30,7 +30,7 @@
 
   {{/* Lab contributors to this pillar, from data/people_pillars.yaml */}}
   {{ $contributors := slice }}
-  {{ range $slug, $data := .Site.Data.people_pillars }}
+  {{ range $slug, $data := hugo.Data.people_pillars }}
     {{ range $data.pillars }}
       {{ if eq .slug $theme }}
         {{ $contributors = $contributors | append (dict "slug" $slug "count" .count) }}

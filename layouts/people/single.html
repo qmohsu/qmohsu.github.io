@@ -67,7 +67,7 @@
   </div>
   {{ end }}
 
-  {{ $pillarData := index .Site.Data.people_pillars $personSlug }}
+  {{ $pillarData := index hugo.Data.people_pillars $personSlug }}
   {{ with $pillarData }}
     {{ with .pillars }}
     <div class="section">

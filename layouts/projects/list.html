@@ -62,7 +62,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.Data.funded_programs }}
+{{ with hugo.Data.funded_programs }}
 <div class="page-part">
   <span class="page-part-num">{{ $p4num | safeHTML }}</span>
   <h2 class="page-part-title">{{ $p4title | safeHTML }}</h2>
