@@ -10,7 +10,7 @@
   (dict "title" (cond $cn "博士生" (cond $tw "博士生" "PhD Students")) "items" (sort (where $current ".Params.role" "eq" "PhD Student") ".Params.years"))
   (dict "title" (cond $cn "硕士生" (cond $tw "碩士生" "MSc Students")) "items" (sort (where $current ".Params.role" "eq" "MSc Student") ".Params.years"))
   (dict "title" (cond $cn "行政人员" (cond $tw "行政人員" "Administrative Staff")) "items" (sort (where $current ".Params.role" "eq" "Administrative Staff") ".Params.years"))
-  (dict "title" (cond $cn "研究助理" (cond $tw "研究助理" "Research Assistants")) "items" (sort (where $current ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" (cond $cn "研究助理与研究专员" (cond $tw "研究助理與研究專員" "Research Assistants & Research Associates")) "items" (sort (where $current ".Params.role" "in" (slice "Research Assistant" "Research Associate" "Project Associate")) ".Params.years"))
   (dict "title" (cond $cn "实习生" (cond $tw "實習生" "Interns")) "items" (sort (where $current ".Params.role" "eq" "Intern") ".Params.years"))
 }}
 

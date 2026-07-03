@@ -670,12 +670,11 @@ hr {
 .person-card .role { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
 .person-card .role-subtitle {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--accent-orange);
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  color: var(--text-secondary);
   margin-top: 2px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .member-groups { display: grid; gap: 32px; }

@@ -1,8 +1,7 @@
 ---
 title: "Xiaoyu Luo"
 slug: "xiaoyu-luo"
-role: "Administrative Staff"
-subtitle: "Project Associate"
+role: "Project Associate"
 status: "current"
 years: "2026-present"
 linkedin: "https://www.linkedin.com/in/xiaoyu-luo-068348283"
