@@ -4,15 +4,56 @@
 <div class="page-body-inner">
 {{ .Content }}
 
+{{ $lang := site.Language.Lang }}
+{{ $isCN := eq $lang "zh-cn" }}
+{{ $isTW := eq $lang "zh-tw" }}
+{{ $searchLabel := cond $isCN "搜索新闻" (cond $isTW "搜尋新聞" "Search news") }}
+{{ $searchPlaceholder := cond $isCN "搜索标题、年份、奖项、讲座、合作方..." (cond $isTW "搜尋標題、年份、獎項、講座、合作方..." "Search by title, year, award, talk, collaborator...") }}
+{{ $clearLabel := cond $isCN "清除" (cond $isTW "清除" "Clear") }}
+{{ $resultSingular := cond $isCN "条结果" (cond $isTW "筆結果" "result") }}
+{{ $resultPlural := cond $isCN "条结果" (cond $isTW "筆結果" "results") }}
+{{ $emptyText := cond $isCN "没有找到相关新闻。" (cond $isTW "沒有找到相關新聞。" "No matching news found.") }}
+{{ $items := slice }}
+{{ range .Pages.ByDate.Reverse }}
+  {{ $thumb := .Params.image }}
+  {{ if not $thumb }}{{ with .Params.images }}{{ $thumb = index . 0 }}{{ end }}{{ end }}
+  {{ $summary := .Params.summary | default (.Summary | plainify | truncate 160) }}
+  {{ $tags := .Params.tags | default slice }}
+  {{ $searchText := printf "%s %s %s %s %s %s" (.Title | plainify) ($summary | plainify) (.Plain | plainify) (.Params.category | default "") (delimit $tags " ") (.Date.Format "2006 Jan 2") }}
+  {{ $items = $items | append (dict
+    "title" (.Title | plainify)
+    "url" .RelPermalink
+    "date" (.Date.Format "2 Jan 2006")
+    "category" (.Params.category | default "")
+    "summary" ($summary | plainify)
+    "image" $thumb
+    "search" ($searchText | plainify)
+  ) }}
+{{ end }}
+
+<section class="news-search-panel" data-news-search data-result-singular="{{ $resultSingular }}" data-result-plural="{{ $resultPlural }}" data-empty-text="{{ $emptyText }}">
+  <label class="news-search-label" for="news-search-input">{{ $searchLabel }}</label>
+  <div class="news-search-row">
+    <input id="news-search-input" class="news-search-input" type="search" placeholder="{{ $searchPlaceholder }}" autocomplete="off" data-news-search-input>
+    <button class="news-search-clear" type="button" data-news-search-clear hidden>{{ $clearLabel }}</button>
+  </div>
+  <div class="news-search-status" data-news-search-status aria-live="polite"></div>
+</section>
+
+<script type="application/json" id="news-search-data">{{ $items | jsonify | safeJS }}</script>
+
 {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 15 }}
-<div class="news-list-grid">
+<div class="news-list-grid" data-news-default-grid>
 {{ range $paginator.Pages }}
   {{ partial "news-card.html" . }}
 {{ end }}
 </div>
 
+<div class="news-list-grid news-search-results" data-news-search-results hidden></div>
+<p class="news-search-empty" data-news-search-empty hidden>{{ $emptyText }}</p>
+
 {{ if gt $paginator.TotalPages 1 }}
-<nav class="pager" aria-label="News pages">
+<nav class="pager" aria-label="News pages" data-news-pager>
   {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">&larr; Newer</a>{{ else }}<span class="pager-disabled">&larr; Newer</span>{{ end }}
   <span class="pager-status">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
   {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Older &rarr;</a>{{ else }}<span class="pager-disabled">Older &rarr;</span>{{ end }}
@@ -20,4 +61,127 @@
 {{ end }}
 </div>
 </div>
+<script>
+(function () {
+  var panel = document.querySelector("[data-news-search]");
+  var dataNode = document.getElementById("news-search-data");
+  if (!panel || !dataNode) return;
+
+  var input = panel.querySelector("[data-news-search-input]");
+  var clearButton = panel.querySelector("[data-news-search-clear]");
+  var status = panel.querySelector("[data-news-search-status]");
+  var defaultGrid = document.querySelector("[data-news-default-grid]");
+  var resultsGrid = document.querySelector("[data-news-search-results]");
+  var empty = document.querySelector("[data-news-search-empty]");
+  var pager = document.querySelector("[data-news-pager]");
+  var items = [];
+
+  try {
+    items = JSON.parse(dataNode.textContent || "[]");
+  } catch (error) {
+    return;
+  }
+
+  function normalize(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function textNode(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    node.textContent = text || "";
+    return node;
+  }
+
+  function renderCard(item) {
+    var article = document.createElement("article");
+    article.className = "news-card" + (item.image ? " news-card-imaged" : " news-card-textonly");
+
+    var link = document.createElement("a");
+    link.className = "news-card-link";
+    link.href = item.url;
+
+    if (item.image) {
+      var image = document.createElement("div");
+      image.className = "news-card-img";
+      image.style.backgroundImage = "url(\"" + String(item.image).replace(/"/g, "%22") + "\")";
+      link.appendChild(image);
+    }
+
+    var body = document.createElement("div");
+    body.className = "news-card-body";
+
+    var meta = document.createElement("div");
+    meta.className = "news-card-meta";
+    meta.appendChild(textNode("span", "news-card-date", item.date));
+    if (item.category) meta.appendChild(textNode("span", "news-card-cat", item.category));
+
+    body.appendChild(meta);
+    body.appendChild(textNode("h3", "news-card-title", item.title));
+    if (item.summary) body.appendChild(textNode("p", "news-card-summary", item.summary));
+
+    link.appendChild(body);
+    article.appendChild(link);
+    return article;
+  }
+
+  function setDefaultMode() {
+    if (defaultGrid) defaultGrid.hidden = false;
+    if (pager) pager.hidden = false;
+    if (resultsGrid) {
+      resultsGrid.hidden = true;
+      resultsGrid.replaceChildren();
+    }
+    if (empty) empty.hidden = true;
+    if (status) status.textContent = "";
+    if (clearButton) clearButton.hidden = true;
+  }
+
+  function setSearchMode(matches) {
+    if (defaultGrid) defaultGrid.hidden = true;
+    if (pager) pager.hidden = true;
+    if (resultsGrid) {
+      resultsGrid.hidden = matches.length === 0;
+      resultsGrid.replaceChildren();
+      matches.forEach(function (item) {
+        resultsGrid.appendChild(renderCard(item));
+      });
+    }
+    if (empty) empty.hidden = matches.length !== 0;
+    if (status) {
+      var label = matches.length === 1 ? panel.dataset.resultSingular : panel.dataset.resultPlural;
+      status.textContent = matches.length + " " + label;
+    }
+    if (clearButton) clearButton.hidden = false;
+  }
+
+  function updateSearch() {
+    var query = normalize(input.value).trim();
+    if (!query) {
+      setDefaultMode();
+      return;
+    }
+    var terms = query.split(/\s+/).filter(Boolean);
+    var matches = items.filter(function (item) {
+      var haystack = normalize(item.search);
+      return terms.every(function (term) {
+        return haystack.indexOf(term) !== -1;
+      });
+    });
+    setSearchMode(matches);
+  }
+
+  input.addEventListener("input", updateSearch);
+  if (clearButton) {
+    clearButton.addEventListener("click", function () {
+      input.value = "";
+      input.focus();
+      setDefaultMode();
+    });
+  }
+})();
+</script>
 {{ end }}
