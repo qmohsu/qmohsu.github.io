@@ -21,9 +21,9 @@ summary: 這篇論文針對 Gaussian-mixture measurement noise 推導 chi-square
 highlights:
 - 方法把 GMM 假設下的 EKF residuals 轉換成可用 chi-squared statistic 檢測的形式。
 - CARLA-based lidar/IMU 實驗比較 Gaussian 與 Gaussian-mixture detectors 在 step 與 slope failures 下的表現。
-hero_image: /images/pubs/2025-fault-gmm-fig1-gmm-transformation.png
-hero_alt: 比較 GMM 與 Gaussian 假設下 measurement residual transformation 的流程圖。
-hero_caption: 圖 1：GMM 與 Gaussian noise assumptions 下 residuals 的 transformation methods。
+hero_image: "/images/pubs/2025-fault-gmm-simulation-platform-hero.png"
+hero_alt: "用於 fault detection validation 的 CARLA simulation route、vehicle scene 與 extracted LiDAR/IMU map face。"
+hero_caption: "圖 4 視覺細節：用於 fault detection validation 的 CARLA simulation route、vehicle scene 與 extracted LiDAR/IMU map face。"
 figures:
 - src: /images/pubs/2025-fault-gmm-fig2-system-architecture.png
   alt: lidar/IMU localization system 與 fault-detection process 的架構圖。

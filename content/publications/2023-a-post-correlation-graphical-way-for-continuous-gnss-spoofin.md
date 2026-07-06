@@ -14,6 +14,9 @@ featured: true
 quartile: "Q1"
 doi: "10.1016/j.measurement.2023.112974"
 pdf: ""
+hero_image: "/images/pubs/2023-post-correlation-spoofing-acf-hero.png"
+hero_alt: "Colorful 3D correlation surface and heatmap separating counterfeit and authentic GNSS signals."
+hero_caption: "Figure 1 from the paper: correlation-function tracking under a GNSS spoofing attack."
 code: ""
 data: ""
 themes:

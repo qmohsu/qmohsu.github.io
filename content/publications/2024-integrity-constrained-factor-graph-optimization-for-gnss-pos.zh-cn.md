@@ -19,9 +19,9 @@ summary: Integrity-constrained FGO 通过 switchable pseudorange 与 chi-square-
 highlights:
 - factor graph 同时包含 switchable pseudorange、switch prior、switch reliable 与 chi-square test factors。
 - UrbanNav 实验把方法连到真实中等与严苛城市场景，包含 HPE、HPL、skyplot 与 trajectory results。
-hero_image: /images/pubs/2024-integrity-fgo-fig1-method-flowchart.png
-hero_alt: 包含 switchable pseudorange modeling、chi-square testing、measurement reweighting 与 protection-level calculation 的 integrity-constrained factor graph optimization 流程图。
-hero_caption: 图 1：proposed method 连接 switchable factors、chi-square testing、measurement reweighting 与 HPL calculation。
+hero_image: "/images/pubs/2024-integrity-fgo-urbannav-trajectory-hero.png"
+hero_alt: "integrity-constrained factor graph optimization 下的 UrbanNav trajectory comparisons。"
+hero_caption: "图 8 视觉细节：integrity-constrained factor graph optimization 下的 UrbanNav trajectory comparisons。"
 figures:
 - src: /images/pubs/2024-integrity-fgo-fig2-factor-graph.png
   alt: 包含 satellite nodes、switch variables、pseudorange factors、switch priors、switch reliable factors 与 chi-square test factor 的 integrity-constrained factor graph。

@@ -21,9 +21,9 @@ summary: This paper derives a chi-squared fault detector for Gaussian-mixture me
 highlights:
 - The method transforms EKF residuals under GMM assumptions so they can be tested with a chi-squared statistic.
 - CARLA-based lidar/IMU experiments compare Gaussian and Gaussian-mixture detectors under step and slope failures.
-hero_image: /images/pubs/2025-fault-gmm-fig1-gmm-transformation.png
-hero_alt: Transformation flow comparing GMM and Gaussian assumptions for measurement residuals.
-hero_caption: 'Figure 1: transformation methods for residuals under GMM and Gaussian noise assumptions.'
+hero_image: "/images/pubs/2025-fault-gmm-simulation-platform-hero.png"
+hero_alt: "CARLA simulation route, vehicle scene, and extracted LiDAR/IMU map face used for fault detection validation."
+hero_caption: "Figure 4 visual detail: CARLA simulation route, vehicle scene, and extracted LiDAR/IMU map face used for fault detection validation."
 figures:
 - src: /images/pubs/2025-fault-gmm-fig2-system-architecture.png
   alt: Architecture of the lidar/IMU localization system and fault-detection process.

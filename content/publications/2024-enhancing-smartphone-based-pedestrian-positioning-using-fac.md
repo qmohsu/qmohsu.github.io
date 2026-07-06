@@ -21,9 +21,9 @@ summary: This paper fuses smartphone 3DMA GNSS and visual-inertial estimates wit
 highlights:
 - The system uses SVM-based indoor/outdoor detection to decide how GNSS and VINS measurements contribute to the graph.
 - Hong Kong pedestrian experiments compare smartphone trajectories against LIO-SAM ground truth under indoor/outdoor transitions.
-hero_image: /images/pubs/2024-smartphone-fgo-fig2-system-flow.png
-hero_alt: System flowchart for smartphone 3DMA GNSS/VINS factor graph optimization with indoor/outdoor switching.
-hero_caption: 'Figure 2: the proposed framework combines camera, IMU, GNSS, 3DMA GNSS, SVM indoor/outdoor classification, and factor graph optimization.'
+hero_image: "/images/pubs/2024-smartphone-fgo-field-trajectory-hero.png"
+hero_alt: "LIO-SAM ground-truth point clouds, smartphone field imagery, and trajectory comparison for indoor/outdoor pedestrian positioning."
+hero_caption: "Figures 5, 6, and 14 visual montage: LIO-SAM ground truth, field image matching, and trajectory comparison."
 figures:
 - src: /images/pubs/2024-smartphone-fgo-fig3-io-svm-flow.png
   alt: SVM flowchart for indoor/outdoor classification using training data, validation data, GNSS features, and test data.

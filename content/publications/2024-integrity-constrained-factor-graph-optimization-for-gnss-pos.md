@@ -19,9 +19,9 @@ summary: Integrity-constrained FGO reweights faulty GNSS measurements with switc
 highlights:
 - The factor graph combines switchable pseudorange, switch prior, switch reliable, and chi-square test factors.
 - UrbanNav experiments connect the method to real medium and harsh urban scenarios, including HPE, HPL, skyplot, and trajectory results.
-hero_image: /images/pubs/2024-integrity-fgo-fig1-method-flowchart.png
-hero_alt: Flowchart of integrity-constrained factor graph optimization with switchable pseudorange modeling, chi-square testing, measurement reweighting, and protection-level calculation.
-hero_caption: 'Figure 1: the proposed method links switchable factors, chi-square testing, measurement reweighting, and HPL calculation.'
+hero_image: "/images/pubs/2024-integrity-fgo-urbannav-trajectory-hero.png"
+hero_alt: "UrbanNav trajectory comparisons under integrity-constrained factor graph optimization."
+hero_caption: "Figure 8 visual detail: UrbanNav trajectory comparisons under integrity-constrained factor graph optimization."
 figures:
 - src: /images/pubs/2024-integrity-fgo-fig2-factor-graph.png
   alt: Integrity-constrained factor graph with satellite nodes, switch variables, pseudorange factors, switch priors, switch reliable factors, and chi-square test factor.

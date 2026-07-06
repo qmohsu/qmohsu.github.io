@@ -20,9 +20,9 @@ summary: 这篇 grid-based 3DMA GNSS 论文把候选点 clustering、Doppler vel
 highlights:
 - 论文先用 region-growing clustering 分离多峰的 3DMA GNSS 候选位置，再进入 factor graph optimization。
 - 实验涵盖 London 静态数据与 Canary Wharf 车载数据，并比较 loosely coupled 与 hybrid-coupled FGO 版本。
-hero_image: /images/pubs/2025-grid-3dma-fgo-fig1-flowchart.png
-hero_alt: 包含 clustering、Doppler velocity estimation 与 factor graph optimization 的 grid-based 3DMA GNSS 算法流程图。
-hero_caption: 图 1：整体流程把 pseudorange 与 Doppler 信息送入候选点分布、region-growing clustering 和 factor graph optimization。
+hero_image: "/images/pubs/2025-grid-3dma-clustering-map-hero.png"
+hero_alt: "vehicular 3DMA GNSS experiment 的 clustering 与 trajectory panels。"
+hero_caption: "图 7 视觉细节：vehicular 3DMA GNSS experiment 的 clustering 与 trajectory panels。"
 figures:
 - src: /images/pubs/2025-grid-3dma-fgo-fig2-region-growing.png
   alt: 用 sampled candidates、score ordering、thresholds 和 clustering results 说明 region-growing 的简化示例。

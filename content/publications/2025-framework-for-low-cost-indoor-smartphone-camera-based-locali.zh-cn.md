@@ -14,6 +14,9 @@ featured: true
 quartile: "Q1"
 doi: "10.1109/jsen.2025.3613996"
 pdf: ""
+hero_image: "/images/pubs/2025-framework-indoor-feature-matching-hero.png"
+hero_alt: "Indoor corridor smartphone image overlaid with colored feature correspondence lines and blue match points."
+hero_caption: "Figure 9 from the paper: feature correspondences between a smartphone image and spherical panorama segments."
 code: ""
 data: ""
 themes:

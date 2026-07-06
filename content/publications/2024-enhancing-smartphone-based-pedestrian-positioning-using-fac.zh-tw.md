@@ -21,9 +21,9 @@ summary: 這篇論文在 factor graph optimization 中用 indoor/outdoor switchi
 highlights:
 - 系統用 SVM-based indoor/outdoor detection 決定 GNSS 與 VINS measurements 在 graph 中的權重。
 - 香港行人實驗在 indoor/outdoor transitions 下，把 smartphone trajectories 與 LIO-SAM ground truth 進行比較。
-hero_image: /images/pubs/2024-smartphone-fgo-fig2-system-flow.png
-hero_alt: 含 indoor/outdoor switching 的 smartphone 3DMA GNSS/VINS factor graph optimization 系統流程圖。
-hero_caption: 圖 2：proposed framework 結合 camera、IMU、GNSS、3DMA GNSS、SVM indoor/outdoor classification 與 factor graph optimization。
+hero_image: "/images/pubs/2024-smartphone-fgo-field-trajectory-hero.png"
+hero_alt: "用於 indoor/outdoor pedestrian positioning 的 LIO-SAM ground-truth point clouds、smartphone 實景圖與 trajectory comparison。"
+hero_caption: "圖 5、6、14 視覺組合：LIO-SAM ground truth、field image matching 與 trajectory comparison。"
 figures:
 - src: /images/pubs/2024-smartphone-fgo-fig3-io-svm-flow.png
   alt: 使用 training data、validation data、GNSS features 與 test data 的 indoor/outdoor classification SVM flowchart。

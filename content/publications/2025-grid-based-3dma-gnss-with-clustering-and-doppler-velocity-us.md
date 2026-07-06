@@ -20,9 +20,9 @@ summary: Grid-based 3DMA GNSS combines candidate clustering, Doppler-derived vel
 highlights:
 - Region-growing clustering separates multimodal 3DMA GNSS candidate locations before factor graph optimization.
 - The paper evaluates static London data and a vehicular Canary Wharf experiment, comparing loosely coupled and hybrid-coupled FGO variants.
-hero_image: /images/pubs/2025-grid-3dma-fgo-fig1-flowchart.png
-hero_alt: Flowchart of the proposed grid-based 3DMA GNSS algorithm with clustering, Doppler velocity estimation, and factor graph optimization.
-hero_caption: 'Figure 1: the proposed workflow routes pseudorange and Doppler information through candidate distribution, region-growing clustering, and factor graph optimization.'
+hero_image: "/images/pubs/2025-grid-3dma-clustering-map-hero.png"
+hero_alt: "Clustering and trajectory panels from the vehicular 3DMA GNSS experiment."
+hero_caption: "Figure 7 visual detail: clustering and trajectory panels from the vehicular 3DMA GNSS experiment."
 figures:
 - src: /images/pubs/2025-grid-3dma-fgo-fig2-region-growing.png
   alt: Simplified region-growing example with sampled candidates, score ordering, thresholds, and clustering results.

@@ -21,9 +21,9 @@ resources:
   - "graphgnsslib-software"
 repo: "https://github.com/weisongwen/GraphGNSSLib"
 video: "https://www.youtube.com/watch?v=f5bIh96SRsk"
-hero_image: "/images/pubs/2021-fgo-fig2-factor-graph.png"
-hero_alt: "Factor graph structure for loosely coupled and tightly coupled GNSS/INS integration."
-hero_caption: "图 2（论文）：用于松耦合和紧耦合 GNSS/INS 集成的因子图结构。"
+hero_image: "/images/pubs/2021-fgo-urban-vehicle-hero.png"
+hero_alt: "用于 GNSS/INS factor graph 实验的测试车辆与 urban canyon 场景。"
+hero_caption: "图 3 视觉细节：测试车辆与 urban canyon 实验设置，用于比较 FGO 与 EKF。"
 figures:
   - src: "/images/pubs/2021-fgo-fig1-flowchart.png"
     alt: "Flowchart of loosely coupled and tightly coupled GNSS/INS integrations implemented using EKF."

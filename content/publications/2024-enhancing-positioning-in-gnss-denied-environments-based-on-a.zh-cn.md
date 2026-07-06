@@ -15,6 +15,9 @@ featured: true
 quartile: "Q1"
 doi: "10.1109/tvt.2024.3360076"
 pdf: ""
+hero_image: "/images/pubs/2024-gnss-denied-urban-trace-hero.png"
+hero_alt: "Aerial urban canyon view with a blue GNSS track diverging around high-rise buildings."
+hero_caption: "Context visual for GNSS-denied positioning: a commercial GNSS track deviates around high-rise buildings."
 code: ""
 data: ""
 themes:

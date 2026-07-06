@@ -16,6 +16,9 @@ featured: true
 quartile: "Q1"
 doi: "10.1109/tiv.2023.3335356"
 pdf: ""
+hero_image: "/images/pubs/2023-anti-spoofing-mvm-mccm-kaist-hero.png"
+hero_alt: "GNSS spoofing validation panels with lateral deviation curves, road imagery, map trajectory, and sensor uncertainty curves."
+hero_caption: "Paper-sourced KAIST validation panels: spoofing deviation curves, scene imagery, sensor trajectory, and uncertainty response."
 code: ""
 data: ""
 themes:

@@ -14,6 +14,9 @@ featured: true
 quartile: "Q1"
 doi: "10.1109/tmc.2025.3526196"
 pdf: ""
+hero_image: "/images/pubs/2025-graph-indoor-trajectory-hero.png"
+hero_alt: "Four 3D indoor pedestrian trajectory plots comparing estimated paths with ground truth."
+hero_caption: "Figure 9 from the paper: 3D trajectory comparisons against ground truth in an office building."
 code: ""
 data: ""
 themes:

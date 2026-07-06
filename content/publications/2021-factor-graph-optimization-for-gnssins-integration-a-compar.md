@@ -22,9 +22,9 @@ resources:
   - "graphgnsslib-software"
 repo: "https://github.com/weisongwen/GraphGNSSLib"
 video: "https://www.youtube.com/watch?v=f5bIh96SRsk"
-hero_image: "/images/pubs/2021-fgo-fig2-factor-graph.png"
-hero_alt: "Factor graph structure for loosely coupled and tightly coupled GNSS/INS integration."
-hero_caption: "Figure 2 from the paper: the implemented factor graph structure for loosely coupled and tightly coupled GNSS/INS integration."
+hero_image: "/images/pubs/2021-fgo-urban-vehicle-hero.png"
+hero_alt: "Instrumented vehicle and urban canyon scene used for GNSS/INS factor graph experiments."
+hero_caption: "Figure 3 visual detail: instrumented vehicle and urban canyon setup used to compare FGO with EKF."
 highlights:
   - "Compares EKF and FGO for both loosely coupled and tightly coupled GNSS/INS integration."
   - "Uses an urban-canyon experiment in Hong Kong with low-cost GNSS, INS, fisheye imagery, and ground-truth reference equipment."
