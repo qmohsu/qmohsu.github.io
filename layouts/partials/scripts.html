@@ -372,6 +372,106 @@
     return path || langPrefix;
   }
 
+  function plainText(value) {
+    return String(value || '').replace(/<[^>]+>/g, ' ');
+  }
+
+  function normalizeSearchText(value) {
+    return plainText(value)
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  }
+
+  function queryTokens(query) {
+    return normalizeSearchText(query)
+      .split(/[^a-z0-9]+/)
+      .filter(function (token) { return token.length >= 2; });
+  }
+
+  function countTokenPrefixes(text, tokens) {
+    if (!tokens.length) return 0;
+    var words = text.split(/[^a-z0-9]+/).filter(Boolean);
+    var count = 0;
+    tokens.forEach(function (token) {
+      var matched = words.some(function (word) {
+        return word.indexOf(token) === 0;
+      });
+      if (matched) count += 1;
+    });
+    return count;
+  }
+
+  function scoreSearchResult(item, query) {
+    var normalizedQuery = normalizeSearchText(query).trim();
+    if (!normalizedQuery) return { score: 0, reliable: true };
+
+    var tokens = queryTokens(query);
+    var title = normalizeSearchText(item.title);
+    var path = normalizeSearchText((item.path || '').replace(/[-_/]+/g, ' '));
+    var excerpt = normalizeSearchText(item.excerpt);
+    var content = normalizeSearchText(item.content);
+    var score = 0;
+    var reliable = false;
+
+    if (title.indexOf(normalizedQuery) !== -1) {
+      score += 12000;
+      reliable = true;
+    }
+    if (path.indexOf(normalizedQuery) !== -1) {
+      score += 8000;
+      reliable = true;
+    }
+    if (content.indexOf(normalizedQuery) !== -1) {
+      score += 5000;
+      reliable = true;
+    }
+    if (excerpt.indexOf(normalizedQuery) !== -1) {
+      score += 4000;
+      reliable = true;
+    }
+
+    if (tokens.length) {
+      var titlePrefixes = countTokenPrefixes(title, tokens);
+      var pathPrefixes = countTokenPrefixes(path, tokens);
+      var contentPrefixes = countTokenPrefixes(content, tokens);
+      if (titlePrefixes === tokens.length) {
+        score += 5000;
+        reliable = true;
+      }
+      if (pathPrefixes === tokens.length) {
+        score += 2500;
+        reliable = true;
+      }
+      if (contentPrefixes === tokens.length) {
+        score += 1500;
+        reliable = true;
+      }
+    }
+
+    if (item.section === 'people' && (title.indexOf(normalizedQuery) !== -1 || path.indexOf(normalizedQuery) !== -1)) {
+      score += 1500;
+    }
+
+    return { score: score, reliable: reliable };
+  }
+
+  function rankSearchResults(items, query) {
+    var scored = items.map(function (item, index) {
+      var relevance = scoreSearchResult(item, query);
+      item.pagefindRank = index;
+      item.relevanceScore = relevance.score;
+      item.reliableMatch = relevance.reliable;
+      return item;
+    });
+    var reliable = scored.filter(function (item) { return item.reliableMatch; });
+    var ranked = reliable.length ? reliable : scored;
+    return ranked.sort(function (a, b) {
+      if (b.relevanceScore !== a.relevanceScore) return b.relevanceScore - a.relevanceScore;
+      return a.pagefindRank - b.pagefindRank;
+    });
+  }
+
   function labelsFor(container) {
     var root = container.closest('[data-ready]') || container;
     return {
@@ -472,7 +572,8 @@
         section: section,
         sectionLabel: sectionLabels[section],
         title: data.meta && data.meta.title ? data.meta.title : data.title,
-        excerpt: data.excerpt || ''
+        excerpt: data.excerpt || '',
+        content: data.raw_content || data.content || data.plain_excerpt || ''
       };
     }
 
@@ -495,7 +596,7 @@
           }));
         })
         .then(function (items) {
-          state.items = items.map(normalizeResult).filter(Boolean);
+          state.items = rankSearchResults(items.map(normalizeResult).filter(Boolean), state.query);
           render();
         })
         .catch(function () {
