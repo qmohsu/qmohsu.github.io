@@ -32,6 +32,9 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: hugo --minify --baseURL "https://ipnl.io/"
 
+      - name: Build search index
+        run: npx -y pagefind@1.5.2 --site public --output-subdir pagefind
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:

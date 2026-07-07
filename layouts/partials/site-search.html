@@ -1,0 +1,54 @@
+{{ $cn := eq .Lang "zh-cn" }}
+{{ $tw := eq .Lang "zh-tw" }}
+{{ $title := cond $cn "搜索 IPNL" (cond $tw "搜尋 IPNL" "Search IPNL") }}
+{{ $placeholder := cond $cn "搜索论文、项目、成员、新闻..." (cond $tw "搜尋論文、專案、成員、新聞..." "Search papers, projects, people, news...") }}
+{{ $close := cond $cn "关闭搜索" (cond $tw "關閉搜尋" "Close search") }}
+{{ $all := cond $cn "全部" (cond $tw "全部" "All") }}
+{{ $research := cond $cn "研究" (cond $tw "研究" "Research") }}
+{{ $projects := cond $cn "项目" (cond $tw "專案" "Projects") }}
+{{ $publications := cond $cn "论文" (cond $tw "論文" "Publications") }}
+{{ $people := cond $cn "团队" (cond $tw "團隊" "People") }}
+{{ $news := cond $cn "新闻" (cond $tw "新聞" "News") }}
+{{ $media := cond $cn "媒体" (cond $tw "媒體" "Media") }}
+{{ $resources := cond $cn "资源" (cond $tw "資源" "Resources") }}
+{{ $teaching := cond $cn "教学" (cond $tw "教學" "Teaching") }}
+{{ $engage := cond $cn "合作" (cond $tw "合作" "Engage") }}
+{{ $empty := cond $cn "没有找到相关结果。" (cond $tw "沒有找到相關結果。" "No matching results found.") }}
+{{ $loading := cond $cn "正在搜索..." (cond $tw "正在搜尋..." "Searching...") }}
+{{ $ready := cond $cn "输入关键词开始搜索。" (cond $tw "輸入關鍵字開始搜尋。" "Type to search the site.") }}
+{{ $unavailable := cond $cn "搜索索引暂时不可用。" (cond $tw "搜尋索引暫時不可用。" "Search index is not available yet.") }}
+<div class="site-search-modal" data-site-search-modal hidden data-ready="{{ $ready }}" data-loading="{{ $loading }}" data-empty="{{ $empty }}" data-unavailable="{{ $unavailable }}">
+  <div class="site-search-backdrop" data-site-search-close></div>
+  <section class="site-search-dialog" role="dialog" aria-modal="true" aria-labelledby="site-search-title" data-pagefind-ignore>
+    <div class="site-search-head">
+      <h2 id="site-search-title">{{ $title }}</h2>
+      <button class="site-search-close" type="button" aria-label="{{ $close }}" title="{{ $close }}" data-site-search-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M18 6 6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="site-search-box" data-site-search>
+      <div class="site-search-input-wrap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"></path>
+        </svg>
+        <input class="site-search-input" type="search" placeholder="{{ $placeholder }}" autocomplete="off" data-site-search-input>
+      </div>
+      <div class="site-search-filters" role="list" aria-label="{{ $title }}">
+        <button type="button" class="is-active" data-site-search-filter="all">{{ $all }}</button>
+        <button type="button" data-site-search-filter="research">{{ $research }}</button>
+        <button type="button" data-site-search-filter="projects">{{ $projects }}</button>
+        <button type="button" data-site-search-filter="publications">{{ $publications }}</button>
+        <button type="button" data-site-search-filter="people">{{ $people }}</button>
+        <button type="button" data-site-search-filter="news">{{ $news }}</button>
+        <button type="button" data-site-search-filter="media">{{ $media }}</button>
+        <button type="button" data-site-search-filter="resources">{{ $resources }}</button>
+        <button type="button" data-site-search-filter="teaching">{{ $teaching }}</button>
+        <button type="button" data-site-search-filter="engage">{{ $engage }}</button>
+      </div>
+      <div class="site-search-status" data-site-search-status aria-live="polite">{{ $ready }}</div>
+      <div class="site-search-results" data-site-search-results></div>
+    </div>
+  </section>
+</div>

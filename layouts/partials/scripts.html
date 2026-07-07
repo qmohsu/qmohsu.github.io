@@ -313,6 +313,289 @@
 })();
 </script>
 
+<script>
+(function () {
+  'use strict';
+
+  var modal = document.querySelector('[data-site-search-modal]');
+  var activeModalInput = null;
+  var pagefindPromise = null;
+  var lang = (document.documentElement.getAttribute('lang') || 'en').toLowerCase();
+  var langPrefix = lang.indexOf('zh-cn') === 0 ? '/zh-cn/' : (lang.indexOf('zh-tw') === 0 ? '/zh-tw/' : '/en/');
+  var sectionLabels = {
+    home: lang.indexOf('zh-cn') === 0 ? '首页' : (lang.indexOf('zh-tw') === 0 ? '首頁' : 'Home'),
+    research: lang.indexOf('zh-cn') === 0 ? '研究' : (lang.indexOf('zh-tw') === 0 ? '研究' : 'Research'),
+    projects: lang.indexOf('zh-cn') === 0 ? '项目' : (lang.indexOf('zh-tw') === 0 ? '專案' : 'Projects'),
+    publications: lang.indexOf('zh-cn') === 0 ? '论文' : (lang.indexOf('zh-tw') === 0 ? '論文' : 'Publications'),
+    people: lang.indexOf('zh-cn') === 0 ? '团队' : (lang.indexOf('zh-tw') === 0 ? '團隊' : 'People'),
+    news: lang.indexOf('zh-cn') === 0 ? '新闻' : (lang.indexOf('zh-tw') === 0 ? '新聞' : 'News'),
+    media: lang.indexOf('zh-cn') === 0 ? '媒体' : (lang.indexOf('zh-tw') === 0 ? '媒體' : 'Media'),
+    resources: lang.indexOf('zh-cn') === 0 ? '资源' : (lang.indexOf('zh-tw') === 0 ? '資源' : 'Resources'),
+    teaching: lang.indexOf('zh-cn') === 0 ? '教学' : (lang.indexOf('zh-tw') === 0 ? '教學' : 'Teaching'),
+    engage: lang.indexOf('zh-cn') === 0 ? '合作' : (lang.indexOf('zh-tw') === 0 ? '合作' : 'Engage')
+  };
+
+  function loadPagefind() {
+    if (!pagefindPromise) {
+      pagefindPromise = import('/pagefind/pagefind.js').then(function (pagefind) {
+        if (pagefind.options) {
+          pagefind.options({ excerptLength: 28 });
+        }
+        return pagefind;
+      });
+    }
+    return pagefindPromise;
+  }
+
+  function normalizePath(url) {
+    try {
+      var parsed = new URL(url, window.location.origin);
+      return parsed.pathname.replace(/\/index\.html$/, '/');
+    } catch (error) {
+      return String(url || '').replace(/\/index\.html$/, '/');
+    }
+  }
+
+  function resultSection(path) {
+    var clean = path;
+    if (clean.indexOf(langPrefix) === 0) clean = clean.slice(langPrefix.length);
+    clean = clean.replace(/^\/+|\/+$/g, '');
+    if (!clean) return 'home';
+    return clean.split('/')[0] || 'home';
+  }
+
+  function sameLanguage(path) {
+    return path === langPrefix || path.indexOf(langPrefix) === 0;
+  }
+
+  function resultHref(path) {
+    return path || langPrefix;
+  }
+
+  function labelsFor(container) {
+    var root = container.closest('[data-ready]') || container;
+    return {
+      ready: root.dataset.ready || '',
+      loading: root.dataset.loading || '',
+      empty: root.dataset.empty || '',
+      unavailable: root.dataset.unavailable || ''
+    };
+  }
+
+  function resultCountText(count) {
+    if (lang.indexOf('zh-cn') === 0) return count + ' 条结果';
+    if (lang.indexOf('zh-tw') === 0) return count + ' 筆結果';
+    return count + (count === 1 ? ' result' : ' results');
+  }
+
+  function buildResultCard(item) {
+    var link = document.createElement('a');
+    link.className = 'site-search-result';
+    link.href = resultHref(item.path);
+
+    var meta = document.createElement('div');
+    meta.className = 'site-search-result-meta';
+    meta.textContent = item.sectionLabel;
+
+    var title = document.createElement('h3');
+    title.textContent = item.title || item.path;
+
+    var excerpt = document.createElement('p');
+    excerpt.innerHTML = item.excerpt || '';
+
+    var url = document.createElement('span');
+    url.className = 'site-search-result-url';
+    url.textContent = item.path;
+
+    link.appendChild(meta);
+    link.appendChild(title);
+    if (item.excerpt) link.appendChild(excerpt);
+    link.appendChild(url);
+    return link;
+  }
+
+  function createController(container) {
+    var input = container.querySelector('[data-site-search-input]');
+    var status = container.querySelector('[data-site-search-status]');
+    var resultsEl = container.querySelector('[data-site-search-results]');
+    var filterButtons = container.querySelectorAll('[data-site-search-filter]');
+    var labels = labelsFor(container);
+    var state = { query: '', filter: 'all', items: [], pendingTimer: null };
+    var isPageSearch = container.hasAttribute('data-site-search-page');
+
+    function visibleItems() {
+      return state.items.filter(function (item) {
+        return state.filter === 'all' || item.section === state.filter;
+      });
+    }
+
+    function setStatus(text) {
+      if (status) status.textContent = text || '';
+    }
+
+    function render() {
+      if (!resultsEl) return;
+      var matches = visibleItems();
+      resultsEl.replaceChildren();
+      if (!state.query) {
+        setStatus(labels.ready);
+        return;
+      }
+      if (!matches.length) {
+        setStatus(labels.empty);
+        return;
+      }
+      setStatus(resultCountText(matches.length));
+      matches.slice(0, 30).forEach(function (item) {
+        resultsEl.appendChild(buildResultCard(item));
+      });
+    }
+
+    function syncUrl() {
+      if (!isPageSearch) return;
+      var params = new URLSearchParams(window.location.search);
+      if (state.query) params.set('q', state.query);
+      else params.delete('q');
+      if (state.filter && state.filter !== 'all') params.set('section', state.filter);
+      else params.delete('section');
+      var next = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      window.history.replaceState(null, '', next);
+    }
+
+    function normalizeResult(data) {
+      var path = normalizePath(data.url);
+      if (!sameLanguage(path)) return null;
+      var section = resultSection(path);
+      if (!sectionLabels[section]) section = 'home';
+      return {
+        path: path,
+        section: section,
+        sectionLabel: sectionLabels[section],
+        title: data.meta && data.meta.title ? data.meta.title : data.title,
+        excerpt: data.excerpt || ''
+      };
+    }
+
+    function runSearch() {
+      state.query = (input.value || '').trim();
+      syncUrl();
+      if (!state.query) {
+        state.items = [];
+        render();
+        return;
+      }
+      setStatus(labels.loading);
+      loadPagefind()
+        .then(function (pagefind) {
+          return pagefind.search(state.query);
+        })
+        .then(function (search) {
+          return Promise.all(search.results.slice(0, 80).map(function (result) {
+            return result.data();
+          }));
+        })
+        .then(function (items) {
+          state.items = items.map(normalizeResult).filter(Boolean);
+          render();
+        })
+        .catch(function () {
+          state.items = [];
+          if (resultsEl) resultsEl.replaceChildren();
+          setStatus(labels.unavailable);
+        });
+    }
+
+    function scheduleSearch() {
+      if (state.pendingTimer) clearTimeout(state.pendingTimer);
+      state.pendingTimer = setTimeout(runSearch, 140);
+    }
+
+    if (!input) return null;
+    input.addEventListener('input', scheduleSearch);
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        state.filter = button.dataset.siteSearchFilter || 'all';
+        filterButtons.forEach(function (other) {
+          other.classList.toggle('is-active', other === button);
+        });
+        syncUrl();
+        render();
+      });
+    });
+
+    if (isPageSearch) {
+      var params = new URLSearchParams(window.location.search);
+      var queryParam = params.get('q');
+      var sectionParam = params.get('section');
+      if (sectionParam) {
+        filterButtons.forEach(function (button) {
+          var active = button.dataset.siteSearchFilter === sectionParam;
+          button.classList.toggle('is-active', active);
+          if (active) state.filter = sectionParam;
+        });
+      }
+      if (queryParam) {
+        input.value = queryParam;
+        runSearch();
+      } else {
+        render();
+      }
+    } else {
+      render();
+    }
+
+    return {
+      focus: function () { input.focus(); },
+      input: input,
+      runSearch: runSearch
+    };
+  }
+
+  var controllers = [];
+  document.querySelectorAll('[data-site-search]').forEach(function (container) {
+    var controller = createController(container);
+    if (controller) controllers.push(controller);
+  });
+
+  function openModal() {
+    if (!modal) return;
+    modal.hidden = false;
+    document.documentElement.classList.add('site-search-is-open');
+    activeModalInput = modal.querySelector('[data-site-search-input]');
+    setTimeout(function () {
+      if (activeModalInput) activeModalInput.focus();
+    }, 30);
+  }
+
+  function closeModal() {
+    if (!modal || modal.hidden) return;
+    modal.hidden = true;
+    document.documentElement.classList.remove('site-search-is-open');
+  }
+
+  document.querySelectorAll('[data-site-search-open]').forEach(function (trigger) {
+    trigger.addEventListener('click', function (event) {
+      if (!modal) return;
+      event.preventDefault();
+      openModal();
+    });
+  });
+
+  document.querySelectorAll('[data-site-search-close]').forEach(function (trigger) {
+    trigger.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+      if (!modal) return;
+      event.preventDefault();
+      openModal();
+    }
+  });
+})();
+</script>
+
 {{/* Chart.js only on /publications/ page — keeps other pages lean */}}
 {{ if eq .Section "publications" }}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>

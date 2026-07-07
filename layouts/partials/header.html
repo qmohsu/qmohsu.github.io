@@ -24,6 +24,12 @@
         <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
+    {{ $searchLabel := cond (eq .Lang "zh-cn") "搜索网站" (cond (eq .Lang "zh-tw") "搜尋網站" "Search site") }}
+    <a class="site-search-trigger" href="{{ "/search/" | relLangURL }}" aria-label="{{ $searchLabel }}" title="{{ $searchLabel }}" data-site-search-open>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"></path>
+      </svg>
+    </a>
     {{ $enURL := "/en/" }}
     {{ $cnURL := "/zh-cn/" }}
     {{ $twURL := "/zh-tw/" }}

@@ -6,11 +6,12 @@
 <body class="{{ if .IsHome }}is-home{{ end }}">
   {{ partial "header.html" . }}
 
-  <main class="site-main">
+  <main class="site-main"{{ if ne .Section "search" }} data-pagefind-body{{ else }} data-pagefind-ignore{{ end }}>
     {{ block "main" . }}{{ end }}
   </main>
 
   {{ partial "footer.html" . }}
+  {{ partial "site-search.html" . }}
   {{ partial "scripts.html" . }}
 </body>
 </html>
