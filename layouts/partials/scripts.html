@@ -337,7 +337,7 @@
 
   function loadPagefind() {
     if (!pagefindPromise) {
-      pagefindPromise = import('/pagefind/pagefind.js').then(function (pagefind) {
+      pagefindPromise = import('/pagefind/pagefind.js?v={{ now.Unix }}').then(function (pagefind) {
         if (pagefind.options) {
           pagefind.options({ excerptLength: 28 });
         }
