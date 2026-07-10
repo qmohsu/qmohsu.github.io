@@ -8,8 +8,9 @@
       </span>
       <img src="{{ "/images/logos/polyu-mark.png" | relURL }}" alt="PolyU" class="brand-logo brand-logo-polyu" onerror="this.style.display='none'">
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
-    <nav class="nav" id="main-nav">
+    {{ $navLabel := cond (eq .Lang "zh-cn") "切换导航菜单" (cond (eq .Lang "zh-tw") "切換導覽選單" "Toggle navigation") }}
+    <button class="nav-toggle" type="button" aria-label="{{ $navLabel }}" aria-controls="main-nav" aria-expanded="false" onclick="var nav=document.getElementById('main-nav');var open=nav.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">&#9776;</button>
+    <nav class="nav" id="main-nav" aria-label="{{ $navLabel }}">
       {{ $cur := .Section }}
       {{ range .Site.Menus.main }}
         {{ $active := false }}

@@ -5708,3 +5708,248 @@ html { scroll-behavior: smooth; }
     padding: 8px 9px;
   }
 }
+
+/* ==========================================================================
+   MOBILE RESILIENCE — shared fixes for every Hugo page type
+   ========================================================================== */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.page-body-inner,
+.publication-rich,
+.prose,
+.content,
+.contact-form,
+.contact-form-field {
+  min-width: 0;
+}
+
+.page-body-inner img,
+.page-body-inner video,
+.page-body-inner iframe,
+.publication-rich img,
+.publication-rich video,
+.publication-rich iframe {
+  max-width: 100%;
+}
+
+.page-body-inner pre,
+.publication-rich pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-body-inner a,
+.page-body-inner h1,
+.page-body-inner h2,
+.page-body-inner h3,
+.page-body-inner h4,
+.publication-rich a,
+.publication-rich h1,
+.publication-rich h2,
+.publication-rich h3,
+.publication-rich h4 {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .page-body-inner table,
+  .co-i-table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-body-inner table th,
+  .co-i-table th {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1060px) {
+  .brand-link {
+    order: 1;
+  }
+
+  .site-search-trigger {
+    order: 2;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    order: 3;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+  }
+
+  .site-header-inner > .lang-switch {
+    order: 4;
+  }
+
+  .nav {
+    order: 5;
+    min-width: 0;
+    padding-top: 4px;
+  }
+
+  .nav.open {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 4px 12px;
+  }
+
+  .nav a {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 6px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .site-header-inner {
+    padding: 8px max(16px, env(safe-area-inset-right)) 8px max(16px, env(safe-area-inset-left));
+    gap: 8px 10px;
+  }
+
+  .brand-logo-ipnl {
+    height: 34px;
+  }
+
+  .brand-wordmark-name {
+    font-size: 1.2rem;
+  }
+
+  .site-search-trigger {
+    flex: 0 0 44px;
+  }
+
+  .site-header-inner > .lang-switch {
+    flex: 1 0 100%;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lang-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 40px;
+    padding: 0 10px;
+  }
+
+  .nav.open {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-body {
+    padding: 44px 0 60px;
+  }
+
+  .page-body-inner,
+  .publication-rich {
+    padding-right: max(18px, env(safe-area-inset-right));
+    padding-left: max(18px, env(safe-area-inset-left));
+  }
+
+  .home-hero-inner,
+  .home-stats-inner,
+  .home-block-inner,
+  .home-contact-bar-inner,
+  .site-footer-grid,
+  .site-footer-bar {
+    padding-right: max(18px, env(safe-area-inset-right));
+    padding-left: max(18px, env(safe-area-inset-left));
+  }
+
+  .cards,
+  .layer-grid,
+  .news-list-grid,
+  .image-grid,
+  .image-grid-2,
+  .image-grid-3,
+  .image-grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .news-card,
+  .news-card-link,
+  .news-card-body {
+    min-width: 0;
+  }
+
+  .pager {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .contact-form,
+  .contact-form-field,
+  .contact-form-input,
+  .contact-form-textarea,
+  .contact-form-captcha,
+  .contact-form-captcha .h-captcha {
+    max-width: 100%;
+  }
+
+  .contact-form-captcha {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 340px) {
+  .contact-form-captcha {
+    overflow: hidden;
+  }
+
+  .contact-form-captcha .h-captcha {
+    width: 111.111%;
+    margin-bottom: -8px;
+    transform: scale(0.9);
+    transform-origin: left top;
+  }
+}
+
+@media (pointer: coarse) {
+  .chip,
+  .pub-clear,
+  .site-search-filters button,
+  .publication-actions a,
+  .pub-entry .pub-links a,
+  .person-link,
+  .profile-link,
+  .pager a,
+  .contact-form-submit {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) and (max-height: 500px) {
+  .nav.open {
+    max-height: calc(100vh - 116px - env(safe-area-inset-top));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
