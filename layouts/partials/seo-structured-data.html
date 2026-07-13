@@ -1,0 +1,74 @@
+{{- /*
+  Sitewide structured data deliberately uses the production domain from Hugo's
+  baseURL. Keep this value aligned with the deployment workflow so canonical,
+  sitemap, robots, and entity URLs always identify the same site.
+*/ -}}
+{{- $siteURL := site.BaseURL -}}
+{{- $organizationID := printf "%s#organization" $siteURL -}}
+{{- $websiteID := printf "%s#website" $siteURL -}}
+{{- $logoURL := "images/logos/ipnl-mark.png" | absURL -}}
+{{- $piURL := printf "%s%s/people/li-ta-hsu/" $siteURL .Lang -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ $organizationID }}",
+      "name": "Intelligent Positioning and Navigation Laboratory",
+      "alternateName": "IPNL",
+      "url": "{{ $siteURL }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ $logoURL }}"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "The Hong Kong Polytechnic University",
+        "url": "https://www.polyu.edu.hk/"
+      },
+      "sameAs": [
+        "https://www.polyu.edu.hk/aae/people/academic-staff/dr-hsu-li-ta/",
+        "https://research.polyu.edu.hk/en/persons/li-ta-hsu",
+        "https://github.com/IPNL-POLYU"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ $websiteID }}",
+      "url": "{{ $siteURL }}",
+      "name": "Intelligent Positioning and Navigation Laboratory",
+      "alternateName": "IPNL",
+      "publisher": {
+        "@id": "{{ $organizationID }}"
+      },
+      "inLanguage": "{{ .Language.Lang }}"
+    }{{ if .IsHome }},
+    {
+      "@type": "Person",
+      "@id": "{{ $piURL }}#person",
+      "name": "Li-Ta Hsu",
+      "url": "{{ $piURL }}",
+      "jobTitle": "Associate Professor",
+      "worksFor": {
+        "@id": "{{ $organizationID }}"
+      },
+      "sameAs": [
+        "https://orcid.org/0000-0002-0352-741X",
+        "https://scholar.google.com/citations?user=GxfOCUMAAAAJ",
+        "https://www.linkedin.com/in/li-ta-hsu/",
+        "https://github.com/qmohsu"
+      ],
+      "knowsAbout": [
+        "GNSS",
+        "Urban Navigation",
+        "Sensor Fusion",
+        "Factor Graph Optimization",
+        "Integrity Monitoring",
+        "3D Mapping-Aided Positioning",
+        "Indoor Navigation"
+      ]
+    }{{ end }}
+  ]
+}
+</script>

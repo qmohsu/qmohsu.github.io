@@ -1,24 +1,24 @@
 # Li-Ta Hsu (許立達) — LLM index
 
 ## Canonical
-- Site: https://qmohsu.github.io/
-- Contact form: https://qmohsu.github.io/en/engage/#contact (no public email — use the form)
+- Site: https://ipnl.io/
+- Contact form: https://ipnl.io/en/engage/#contact (no public email — use the form)
 - ORCID: https://orcid.org/0000-0002-0352-741X
 
 ## Summary
 Li-Ta Hsu is an Associate Professor at The Hong Kong Polytechnic University (AAE). He builds integrity-first navigation and sensor-fusion systems for embodied AI (robots, vehicles, drones). His work spans GNSS/PNT, urban navigation, multipath/NLOS mitigation, integrity monitoring, factor graph optimization, and multi-sensor fusion (GNSS/IMU/LiDAR/camera).
 
 ## Best pages to read
-- Home: https://qmohsu.github.io/
-- Research: https://qmohsu.github.io/research/
-- Publications: https://qmohsu.github.io/publications/
-- Projects: https://qmohsu.github.io/projects/
-- People: https://qmohsu.github.io/people/
-- News: https://qmohsu.github.io/news/
-- Teaching: https://qmohsu.github.io/teaching/
-- Join the lab: https://qmohsu.github.io/join/
-- Resources: https://qmohsu.github.io/resources/
-- Contact: https://qmohsu.github.io/contact/
+- Home: https://ipnl.io/en/
+- Research: https://ipnl.io/en/research/
+- Publications: https://ipnl.io/en/publications/
+- Projects: https://ipnl.io/en/projects/
+- People: https://ipnl.io/en/people/
+- News: https://ipnl.io/en/news/
+- Teaching: https://ipnl.io/en/teaching/
+- Join the lab: https://ipnl.io/en/engage/
+- Resources: https://ipnl.io/en/resources/
+- Contact: https://ipnl.io/en/engage/#contact
 
 ## Key pages for evaluation
 For assessing research quality and impact:

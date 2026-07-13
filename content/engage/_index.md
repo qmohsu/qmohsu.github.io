@@ -157,7 +157,7 @@ Tell us briefly who you are and what you'd like to do.
   <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
   <input type="hidden" name="from_name" value="IPNL website contact form">
   <input type="hidden" name="subject" value="New message from IPNL website">
-  <input type="hidden" name="redirect" value="https://qmohsu.github.io/en/engage/?sent=1">
+  <input type="hidden" name="redirect" value="https://ipnl.io/en/engage/?sent=1">
   <input type="checkbox" name="botcheck" class="contact-form-honeypot" tabindex="-1" autocomplete="off">
 
   <div class="contact-form-field">
