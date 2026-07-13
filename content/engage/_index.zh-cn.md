@@ -133,7 +133,7 @@ hero_bg: "/images/cases/drone-inspection.png"
   <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
   <input type="hidden" name="from_name" value="IPNL 网站联系表单">
   <input type="hidden" name="subject" value="来自 IPNL 网站的新消息">
-  <input type="hidden" name="redirect" value="https://qmohsu.github.io/zh-cn/engage/?sent=1">
+  <input type="hidden" name="redirect" value="https://ipnl.io/zh-cn/engage/?sent=1">
   <input type="checkbox" name="botcheck" class="contact-form-honeypot" tabindex="-1" autocomplete="off">
 
   <div class="contact-form-field">

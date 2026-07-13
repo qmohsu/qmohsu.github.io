@@ -38,3 +38,4 @@
 {{ with .Params.jsonld }}
 {{ . | safeHTML }}
 {{ end }}
+{{ partial "seo-structured-data.html" . }}
