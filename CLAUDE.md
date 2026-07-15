@@ -29,6 +29,11 @@ GitHub Pages. **Both deploy from `main` only** via `.github/workflows/`
   Put worktrees outside any synced folder (e.g. `~/GitData/wt/<task>`).
 - Start every session with: `git branch --show-current`, `git fetch`,
   `git status` — confirm branch and ahead/behind before editing anything.
+- **Branch policy:** routine content fixes commit straight to `main`. Branch ONLY
+  when the change should be previewed before going live (deploys run from `main`),
+  for work spanning sessions, or for risky bulk edits — and **close what you open**:
+  merge (or merge/close the PR) + delete the branch when the task ends. Idle
+  branches become the next incident.
 
 ## Site map — where things live
 
