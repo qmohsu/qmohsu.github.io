@@ -44,7 +44,7 @@ aliases:
       <div class="stat-partner">香港體育學院 SRFS</div>
       <div class="stat-num">HK$3.34M</div>
       <div class="stat-label">PI · 2026–</div>
-      <div class="stat-context">精準起跑線監測系統,服務奧運級風帆運動員</div>
+      <div class="stat-context">面向精英風帆的智慧運動監測</div>
     </div>
     <div class="stat-card">
       <div class="stat-partner">國自然/RGC JRS</div>
