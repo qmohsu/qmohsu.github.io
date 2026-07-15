@@ -34,8 +34,8 @@ items:
       zh-tw: "面向密集城市環境輔助導航的 3D 地圖輔助 GNSS 研究。"
   - name: "Hong Kong Sports Institute"
     logo: "/images/partners/hksi.png"
-    url: "/projects/uwb-gnss-windsurf/"
-    evidence_url: "/projects/uwb-gnss-windsurf/"
+    url: "/projects/smart-windsurf-monitoring/"
+    evidence_url: "/projects/smart-windsurf-monitoring/"
     source_url: "https://www.hksi.org.hk/"
     usage_note: "Existing public-site logo asset reused for nominative identification; no new logo file added in this change."
     context:

@@ -57,8 +57,8 @@ groups:
   - name: Hong Kong Sports Institute
     label: HKSI
     logo: /images/partners/hksi.png
-    url: /projects/uwb-gnss-windsurf/
-    evidence: content/projects/uwb-gnss-windsurf.md
+    url: /projects/smart-windsurf-monitoring/
+    evidence: content/projects/smart-windsurf-monitoring.md
   - name: Hotel ICON
     label: Hotel ICON
     logo: /images/partners/hotel-icon.png

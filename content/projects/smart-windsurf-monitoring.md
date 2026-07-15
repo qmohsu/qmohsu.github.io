@@ -1,6 +1,8 @@
 ---
 title: "Smart Sports Monitoring System for Elite Windsurfing"
-slug: "uwb-gnss-windsurf"
+slug: "smart-windsurf-monitoring"
+aliases:
+  - /projects/uwb-gnss-windsurf/
 description: "A research collaboration between the Department of Aeronautical and Aviation Engineering at PolyU and the Hong Kong Sports Institute (HKSI), applying innovative technologies to elite windsurfing and advancing data-informed approaches to athlete monitoring and performance support."
 category: "translational-system"
 status: "active"
