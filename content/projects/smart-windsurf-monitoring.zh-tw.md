@@ -1,6 +1,8 @@
 ---
 title: "面向精英風帆的智慧運動監測系統"
-slug: "uwb-gnss-windsurf"
+slug: "smart-windsurf-monitoring"
+aliases:
+  - /projects/uwb-gnss-windsurf/
 description: "香港理工大學航空及航空工程學系與香港體育學院(HKSI)的研究合作,將創新技術應用於精英風帆運動,推進以數據為本的運動員監測與表現支援。"
 category: "translational-system"
 status: "active"
