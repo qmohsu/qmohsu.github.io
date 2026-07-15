@@ -1,21 +1,21 @@
 ---
-title: "Precision Start-Gate Monitoring for Olympic-Class Windsurfing"
+title: "Smart Sports Monitoring System for Elite Windsurfing"
 slug: "uwb-gnss-windsurf"
-description: "Marine buoy-deployed precision start-gate monitoring system for athletes during Olympic-class windsurf training — extending the lab's multi-sensor positioning expertise into sports-tech."
+description: "A research collaboration between the Department of Aeronautical and Aviation Engineering at PolyU and the Hong Kong Sports Institute (HKSI), applying innovative technologies to elite windsurfing and advancing data-informed approaches to athlete monitoring and performance support."
 category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
 funding: "HKSI Sports Science and Research Funding Scheme (SRFS), PI, 2026–"
-themes: ["receiver-sdr", "optimization-estimation", "seamless-pnt-embodied"]
-tags: ["sports-tech", "marine deployment", "Olympic", "windsurf", "athlete tracking"]
+themes: []
+tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
 weight: 4
 ---
 
-Olympic-class windsurfing requires athletes to cross a start line at exactly the right moment — too early and they're disqualified, too late and they lose seconds against the fleet. Current officiating relies on visual judgement and shore-based cameras with limited precision. This program develops **marine buoy-deployed precision start-gate monitoring system** that provides decimeter-class timing, giving coaches and officials objective timing for training and competition.
+The Department of Aeronautical and Aviation Engineering at The Hong Kong Polytechnic University (PolyU) and the Hong Kong Sports Institute (HKSI) are collaborating on a research initiative focused on the application of innovative technologies in elite windsurfing, starting from 2026. By integrating expertise in engineering, sensing technologies, and sports science, the collaboration advances data-informed approaches to athlete monitoring and performance support, and fosters knowledge exchange between academia and the high-performance sports sector — contributing to the continued development of sports technology and sports science in Hong Kong.
 
-**Why it matters.** A new application domain for IPNL — marine-environment sports-tech — exercising the lab's multi-sensor fusion expertise outside its established urban-PNT context. The buoy-deployed sensor design is the receiver-level contribution; the precision timing/ranging algorithms reuse the FGO methodology developed for urban GNSS.
+**Project period.** 1 May 2026 – 30 April 2028.
 
 **Funding.**
 - **HKSI Sports Science and Research Funding Scheme (SRFS)** — PI, 2026–
-- Partner: Hong Kong Sports Institute (HKSI), supporting Olympic athlete training programs
+- Partner: Hong Kong Sports Institute (HKSI)

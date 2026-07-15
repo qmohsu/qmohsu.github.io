@@ -1,21 +1,21 @@
 ---
-title: "面向奧運風帆的精準起跑線監測系統"
+title: "面向精英風帆的智慧運動監測系統"
 slug: "uwb-gnss-windsurf"
-description: "面向奧運風帆運動員訓練的海上浮標精準起跑線監測系統。香港體育學院合作。"
+description: "香港理工大學航空及航空工程學系與香港體育學院(HKSI)的研究合作,將創新技術應用於精英風帆運動,推進以數據為本的運動員監測與表現支援。"
 category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
 funding: "香港體育學院 SRFS(PI, 2026–)"
-themes: ["receiver-sdr", "optimization-estimation", "seamless-pnt-embodied"]
-tags: ["sports-tech", "marine deployment", "Olympic", "windsurf", "athlete tracking"]
+themes: []
+tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
 weight: 4
 ---
 
-奧運級風帆運動員必須在精確的時刻穿越起跑線 —— 早了被取消資格,晚了在編隊中失去秒級時間。目前的裁判依賴人工目測與岸基攝像,精度有限。本項目研發<strong>海上浮標部署的精準起跑線監測系統</strong>,提供分米級起跑線監測,給教練和裁判客觀的訓練與比賽時序。
+香港理工大學航空及航空工程學系(PolyU)與香港體育學院(HKSI)自 2026 年起展開研究合作,聚焦將創新技術應用於精英風帆運動。透過整合工程、感測技術與運動科學的專長,合作推進以數據為本的運動員監測與表現支援方法,並促進學術界與高水平體育界之間的知識交流 —— 為香港運動科技與運動科學的持續發展作出貢獻。
 
-<strong>為什麼重要。</strong> IPNL 的一個<strong>全新應用領域</strong> —— 海上環境的體育科技 —— 把實驗室的多感測器融合專長鍛鍊到城市 PNT 之外。<strong>浮標部署的感測器設計是接收機層貢獻</strong>;精準時序與測距演算法複用城市 GNSS 中開發的 FGO 方法論。
+<strong>計畫期間。</strong>2026 年 5 月 1 日 – 2028 年 4 月 30 日。
 
 <strong>經費來源。</strong>
-- <strong>香港體育學院 SRFS(體育科學研究資助計畫)</strong> —— PI,2026–
-- 合作夥伴:香港體育學院 (HKSI),服務奧運運動員訓練項目
+- <strong>香港體育學院 體育科學研究資助計畫(SRFS)</strong> —— PI,2026–
+- 合作夥伴:香港體育學院(HKSI)

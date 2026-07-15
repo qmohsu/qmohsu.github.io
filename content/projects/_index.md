@@ -44,7 +44,7 @@ aliases:
       <div class="stat-partner">HKSI · SRFS</div>
       <div class="stat-num">HK$3.34M</div>
       <div class="stat-label">PI · 2026–</div>
-      <div class="stat-context">Precision start-gate monitoring for Olympic windsurf</div>
+      <div class="stat-context">Smart sports monitoring for elite windsurfing</div>
     </div>
     <div class="stat-card">
       <div class="stat-partner">NSFC/RGC JRS</div>
@@ -124,7 +124,7 @@ aliases:
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/tencent.jpg" alt="Tencent" onerror="this.style.display='none'"><span class="stat-partner-text">Tencent</span></div><div class="stat-num">Maps</div><div class="stat-label">positioning collaboration</div><div class="stat-context">Map-positioning collaboration</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">SAIC Motor</span></div><div class="stat-num">Consulting</div><div class="stat-label">on AV integrity</div><div class="stat-context">Integrity-monitoring frameworks for autonomous vehicle release decisions</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">Since 2021</div><div class="stat-label">vision-impaired pedestrians</div><div class="stat-context">3D mapping-aided GNSS for assistive navigation in dense Manhattan</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">HKSI</span></div><div class="stat-num">Olympic</div><div class="stat-label">windsurf training</div><div class="stat-context">Marine buoy-deployed precision start-gate monitoring system</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">HKSI</span></div><div class="stat-num">Olympic</div><div class="stat-label">windsurf training</div><div class="stat-context">Smart sports monitoring for elite windsurfing</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">Hotel ICON</span></div><div class="stat-num">Pilot</div><div class="stat-label">site for Stairio</div><div class="stat-context">First deployment of the lab's autonomous staircase inspection robot</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/towngas.png" alt="Towngas" onerror="this.style.display='none'"><span class="stat-partner-text">Towngas</span></div><div class="stat-num">Fleet AI</div><div class="stat-label">vehicular self-diagnosis</div><div class="stat-context">AI-driven self-diagnosis &amp; location monitoring for fleet management &mdash; HKSAR Smart Traffic Fund</div></div>
   </div>
