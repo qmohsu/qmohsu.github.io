@@ -3863,9 +3863,21 @@ html { scroll-behavior: smooth; }
    ========================================================================== */
 .effect-card,
 .cards-tech .effect-card {
-  transition-property: opacity, transform, box-shadow, border-color;
-  transition-duration: 0.7s, 0.7s, 0.32s, 0.32s;
-  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), ease;
+  --effect-card-reveal-duration: 700ms;
+  --effect-card-hover-duration: 320ms;
+  transition-property: transform, box-shadow, border-color;
+  transition-duration: var(--effect-card-hover-duration);
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), ease;
+}
+.effect-card.is-revealing {
+  transition-property: opacity, transform;
+  transition-duration: var(--effect-card-reveal-duration);
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.effect-card.is-reveal-complete {
+  transition-property: transform, box-shadow, border-color;
+  transition-duration: var(--effect-card-hover-duration);
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), ease;
 }
 .stat-card, .cap-card, .work-card, .leader-card, .tab-stat, .lane-card, .pub-chart-card {
   transition-property: transform, box-shadow, border-color;
@@ -3894,7 +3906,7 @@ html { scroll-behavior: smooth; }
     0 4px 12px -4px rgba(22, 27, 64, 0.12);
 }
 @media (hover: hover) and (pointer: fine) {
-  .effect-card:hover {
+  .effect-card.is-reveal-complete:hover {
     transform: translateY(-4px);
     border-color: rgba(45, 59, 151, 0.5) !important;
     box-shadow:
@@ -3903,7 +3915,7 @@ html { scroll-behavior: smooth; }
       0 4px 12px -4px rgba(22, 27, 64, 0.12);
     will-change: transform;
   }
-  .cards-tech .effect-card:hover { transform: translateY(-4px); }
+  .cards-tech .effect-card.is-reveal-complete:hover { transform: translateY(-4px); }
   .cards-tech .effect-card:nth-child(even):hover {
     border-color: rgba(211, 49, 58, 0.5) !important;
     box-shadow:
