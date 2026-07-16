@@ -29,9 +29,23 @@
   );
   revealTargets.forEach(function (el) { el.classList.add('reveal-target'); });
 
+  var parseNonNegativeNumber = function (value, fallback) {
+    var text = String(value || '').trim();
+    var parsed = parseFloat(text);
+    if (!text || !/^(?:\d+\.?\d*|\.\d+)$/.test(text) || !isFinite(parsed) || parsed < 0) return fallback;
+    return parsed;
+  };
+  var parseRevealDuration = function (value) {
+    var match = String(value || '').trim().match(/^([+-]?(?:\d+\.?\d*|\.\d+))(ms|s)$/);
+    if (!match) return 700;
+    var amount = parseFloat(match[1]);
+    if (!isFinite(amount) || amount < 0) return 700;
+    return match[2] === 's' ? amount * 1000 : amount;
+  };
+
   var revealEffectCard = function (el, delay) {
     var complete = false;
-    var revealDuration = parseFloat(window.getComputedStyle(el).getPropertyValue('--effect-card-reveal-duration')) || 700;
+    var revealDuration = parseRevealDuration(window.getComputedStyle(el).getPropertyValue('--effect-card-reveal-duration'));
     var fallbackTimer;
     var finish = function () {
       if (complete) return;
@@ -63,7 +77,8 @@
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           var el = entry.target;
-          var delay = el.dataset.revealDelay || (el.parentNode && [].indexOf.call(el.parentNode.children, el) * 60);
+          var fallbackDelay = el.parentNode ? [].indexOf.call(el.parentNode.children, el) * 80 : 0;
+          var delay = parseNonNegativeNumber(el.dataset.revealDelay, fallbackDelay);
           delay = delay > 600 ? 600 : delay;
           if (el.classList.contains('effect-card')) revealEffectCard(el, delay);
           else {
