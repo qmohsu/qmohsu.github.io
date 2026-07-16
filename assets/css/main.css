@@ -2660,7 +2660,7 @@ a.profile-highlight:hover {
   transition: transform 0.15s, border-color 0.15s;
 }
 .cards-tech .card:nth-child(even) { border-top-color: var(--accent-orange); }
-.cards-tech .effect-card:hover { transform: translateY(-4px); }
+.cards-tech .card:hover { transform: translateY(-1px); }
 
 /* Research collaborator strip on the research landing page */
 .research-collaborators {
@@ -3861,12 +3861,17 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    CARD NEON HOVER — cyan glow + 3D lift for tech vibes
    ========================================================================== */
-.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .tab-stat, .lane-card, .pub-chart-card {
-  transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1),
-              box-shadow 0.32s cubic-bezier(0.22, 0.61, 0.36, 1),
-              border-color 0.32s;
+.effect-card,
+.cards-tech .effect-card {
+  transition-property: opacity, transform, box-shadow, border-color;
+  transition-duration: 0.7s, 0.7s, 0.32s, 0.32s;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), ease;
 }
-.effect-card:hover,
+.stat-card, .cap-card, .work-card, .leader-card, .tab-stat, .lane-card, .pub-chart-card {
+  transition-property: transform, box-shadow, border-color;
+  transition-duration: 0.32s;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1), cubic-bezier(0.22, 0.61, 0.36, 1), ease;
+}
 .stat-card:hover,
 .cap-card:hover,
 .work-card:hover,
@@ -3887,6 +3892,25 @@ html { scroll-behavior: smooth; }
     0 0 0 1px rgba(211, 49, 58, 0.4),
     0 12px 36px -8px rgba(211, 49, 58, 0.2),
     0 4px 12px -4px rgba(22, 27, 64, 0.12);
+}
+@media (hover: hover) and (pointer: fine) {
+  .effect-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(45, 59, 151, 0.5) !important;
+    box-shadow:
+      0 0 0 1px rgba(45, 59, 151, 0.4),
+      0 12px 36px -8px rgba(45, 59, 151, 0.2),
+      0 4px 12px -4px rgba(22, 27, 64, 0.12);
+    will-change: transform;
+  }
+  .cards-tech .effect-card:hover { transform: translateY(-4px); }
+  .cards-tech .effect-card:nth-child(even):hover {
+    border-color: rgba(211, 49, 58, 0.5) !important;
+    box-shadow:
+      0 0 0 1px rgba(211, 49, 58, 0.4),
+      0 12px 36px -8px rgba(211, 49, 58, 0.2),
+      0 4px 12px -4px rgba(22, 27, 64, 0.12);
+  }
 }
 
 /* ==========================================================================
@@ -4047,6 +4071,8 @@ html { scroll-behavior: smooth; }
 }
 .effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
   transform-style: preserve-3d;
+}
+.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
   will-change: transform;
 }
 
