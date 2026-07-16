@@ -4089,8 +4089,10 @@ html { scroll-behavior: smooth; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .effect-card,
-  .effect-card:hover {
+  .effect-card.is-revealing,
+  .effect-card.is-reveal-complete,
+  .effect-card.is-revealing:hover,
+  .effect-card.is-reveal-complete:hover {
     transform: none;
     transition: none;
     will-change: auto;
