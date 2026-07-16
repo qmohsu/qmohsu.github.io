@@ -23,7 +23,7 @@
 
   /* ---------- Scroll reveal (fade-in cards as they enter viewport) ---------- */
   var revealTargets = document.querySelectorAll(
-    '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .layer-card, .funding-card, ' +
+    '.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .layer-card, .funding-card, ' +
     '.lane-col, .partner-section h2, .page-part, ' +
     '.reveal, .media-source-row, .media-reel-tile, .media-visual-card, .outlet-chip, .press-kit-card, .home-block h2, .home-section h2, .section-h2, .record-grid li'
   );
@@ -188,9 +188,11 @@
   }
 
   /* ---------- 3D mouse tilt on key cards ---------- */
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var canTilt = !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+    window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (canTilt) {
     var tiltCards = document.querySelectorAll(
-      '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat'
+      '.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat'
     );
     var maxTilt = 5.5; /* degrees */
     tiltCards.forEach(function (card) {

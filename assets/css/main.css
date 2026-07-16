@@ -2660,7 +2660,7 @@ a.profile-highlight:hover {
   transition: transform 0.15s, border-color 0.15s;
 }
 .cards-tech .card:nth-child(even) { border-top-color: var(--accent-orange); }
-.cards-tech .card:hover { transform: translateY(-1px); }
+.cards-tech .effect-card:hover { transform: translateY(-4px); }
 
 /* Research collaborator strip on the research landing page */
 .research-collaborators {
@@ -3861,11 +3861,12 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    CARD NEON HOVER — cyan glow + 3D lift for tech vibes
    ========================================================================== */
-.stat-card, .cap-card, .work-card, .leader-card, .tab-stat, .lane-card, .pub-chart-card {
+.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .tab-stat, .lane-card, .pub-chart-card {
   transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1),
               box-shadow 0.32s cubic-bezier(0.22, 0.61, 0.36, 1),
               border-color 0.32s;
 }
+.effect-card:hover,
 .stat-card:hover,
 .cap-card:hover,
 .work-card:hover,
@@ -3980,10 +3981,11 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    CARD SCANLINE SWEEP — cyan/orange gradient sweep when card reveals
    ========================================================================== */
-.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat, .pub-chart-card {
+.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat, .pub-chart-card {
   position: relative;
   overflow: hidden;
 }
+.effect-card::before,
 .stat-card::before,
 .cap-card::before,
 .work-card::before,
@@ -4008,7 +4010,8 @@ html { scroll-behavior: smooth; }
 .stat-card:nth-child(even)::before,
 .cap-card-orange::before,
 .leader-card-orange::before,
-.tab-stat:nth-child(even)::before {
+.tab-stat:nth-child(even)::before,
+.cards-tech .effect-card:nth-child(even)::before {
   background: linear-gradient(115deg,
     transparent 0%,
     transparent 35%,
@@ -4016,6 +4019,7 @@ html { scroll-behavior: smooth; }
     transparent 65%,
     transparent 100%);
 }
+.effect-card.is-revealed::before,
 .stat-card.is-revealed::before,
 .cap-card.is-revealed::before,
 .work-card.is-revealed::before,
@@ -4031,19 +4035,31 @@ html { scroll-behavior: smooth; }
   100% { transform: translateX(110%);  opacity: 0; }
 }
 /* Card inner content stays above the scanline */
-.stat-card > *, .cap-card > *, .work-card > *,
+.effect-card > *, .stat-card > *, .cap-card > *, .work-card > *,
 .leader-card > *, .lane-card > *, .tab-stat > *,
 .pub-chart-card > * { position: relative; z-index: 1; }
 
 /* ==========================================================================
    3D MOUSE TILT — JS-driven; just provide the perspective + transition base
    ========================================================================== */
-.cap-grid, .stat-grid, .work-grid, .leadership-grid, .lane-grid {
+.cards-tech, .cap-grid, .stat-grid, .work-grid, .leadership-grid, .lane-grid {
   perspective: 1100px;
 }
-.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
+.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
   transform-style: preserve-3d;
   will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .effect-card,
+  .effect-card:hover {
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+  .effect-card::before {
+    animation: none !important;
+  }
 }
 
 /* Typewriter caret on ticker values */
