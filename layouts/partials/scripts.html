@@ -40,7 +40,9 @@
     if (!match) return 700;
     var amount = parseFloat(match[1]);
     if (!isFinite(amount) || amount < 0) return 700;
-    return match[2] === 's' ? amount * 1000 : amount;
+    var duration = match[2] === 's' ? amount * 1000 : amount;
+    if (!isFinite(duration) || duration < 0) return 700;
+    return duration;
   };
 
   var revealEffectCard = function (el, delay) {

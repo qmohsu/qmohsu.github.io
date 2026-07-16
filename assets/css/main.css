@@ -4092,7 +4092,8 @@ html { scroll-behavior: smooth; }
   .effect-card.is-revealing,
   .effect-card.is-reveal-complete,
   .effect-card.is-revealing:hover,
-  .effect-card.is-reveal-complete:hover {
+  .effect-card.is-reveal-complete:hover,
+  .cards-tech .effect-card.is-reveal-complete:hover {
     transform: none;
     transition: none;
     will-change: auto;
