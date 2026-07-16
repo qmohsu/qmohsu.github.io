@@ -26,7 +26,8 @@ GitHub Pages. **Both deploy from `main` only** via `.github/workflows/`
   deliberate — a git DB inside a file-sync product corrupts. Leave the pointer alone.
 - **Agent sessions that commit should work in their own `git worktree`**, not this
   main checkout — parallel sessions sharing one checkout collide on index/HEAD.
-  Put worktrees outside any synced folder (e.g. `~/GitData/wt/<task>`).
+  Put worktrees outside any synced folder: `git wt <task> -b <branch>` (global
+  alias) creates one under `~/GitData/wt/<task>`.
 - Start every session with: `git branch --show-current`, `git fetch`,
   `git status` — confirm branch and ahead/behind before editing anything.
 - **Branch policy:** routine content fixes commit straight to `main`. Branch ONLY
