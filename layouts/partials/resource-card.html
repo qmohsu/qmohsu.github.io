@@ -7,7 +7,7 @@
   "benchmark" (cond $cn "基准测试" (cond $tw "基準測試" "benchmark"))
 }}
 {{ $image := .Params.image }}
-<div class="card resource-card{{ if $image }} resource-card-imaged{{ end }}">
+<div class="card effect-card resource-card{{ if $image }} resource-card-imaged{{ end }}">
   {{ with $image }}
   <a class="resource-card-image" href="{{ $.Permalink }}">
     <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="lazy">

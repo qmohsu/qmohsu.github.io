@@ -8,7 +8,7 @@
   "completed" (cond $cn "已完成" (cond $tw "已完成" "completed"))
   "archived" (cond $cn "已归档" (cond $tw "已歸檔" "archived"))
 }}
-<div class="card">
+<div class="card effect-card">
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ with .Params.status }}<span class="badge badge-{{ . }}">{{ index $statusMap . | default . }}</span>{{ end }}
   {{ with .Description }}<p>{{ . }}</p>{{ end }}

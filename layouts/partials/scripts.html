@@ -23,27 +23,80 @@
 
   /* ---------- Scroll reveal (fade-in cards as they enter viewport) ---------- */
   var revealTargets = document.querySelectorAll(
-    '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .layer-card, .funding-card, ' +
+    '.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .layer-card, .funding-card, ' +
     '.lane-col, .partner-section h2, .page-part, ' +
     '.reveal, .media-source-row, .media-reel-tile, .media-visual-card, .outlet-chip, .press-kit-card, .home-block h2, .home-section h2, .section-h2, .record-grid li'
   );
   revealTargets.forEach(function (el) { el.classList.add('reveal-target'); });
+
+  var parseNonNegativeNumber = function (value, fallback) {
+    var text = String(value || '').trim();
+    var parsed = parseFloat(text);
+    if (!text || !/^(?:\d+\.?\d*|\.\d+)$/.test(text) || !isFinite(parsed) || parsed < 0) return fallback;
+    return parsed;
+  };
+  var parseRevealDuration = function (value) {
+    var match = String(value || '').trim().match(/^([+-]?(?:\d+\.?\d*|\.\d+))(ms|s)$/);
+    if (!match) return 700;
+    var amount = parseFloat(match[1]);
+    if (!isFinite(amount) || amount < 0) return 700;
+    var duration = match[2] === 's' ? amount * 1000 : amount;
+    if (!isFinite(duration) || duration < 0) return 700;
+    return duration;
+  };
+
+  var revealEffectCard = function (el, delay) {
+    var complete = false;
+    var revealDuration = parseRevealDuration(window.getComputedStyle(el).getPropertyValue('--effect-card-reveal-duration'));
+    var fallbackTimer;
+    var finish = function () {
+      if (complete) return;
+      complete = true;
+      window.clearTimeout(fallbackTimer);
+      el.removeEventListener('transitionend', onTransitionEnd);
+      el.style.transitionDelay = '';
+      el.classList.remove('is-revealing');
+      el.classList.add('is-reveal-complete');
+    };
+    var onTransitionEnd = function (event) {
+      if (event.target === el && (event.propertyName === 'opacity' || event.propertyName === 'transform')) finish();
+    };
+
+    el.classList.add('is-revealing');
+    el.style.transitionDelay = delay + 'ms';
+    el.addEventListener('transitionend', onTransitionEnd);
+    el.classList.add('is-revealed');
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      finish();
+    } else {
+      fallbackTimer = window.setTimeout(finish, delay + revealDuration + 100);
+    }
+  };
 
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           var el = entry.target;
-          var delay = el.dataset.revealDelay || (el.parentNode && [].indexOf.call(el.parentNode.children, el) * 60);
-          el.style.transitionDelay = (delay > 600 ? 600 : delay) + 'ms';
-          el.classList.add('is-revealed');
+          var fallbackDelay = el.parentNode ? [].indexOf.call(el.parentNode.children, el) * 80 : 0;
+          var delay = parseNonNegativeNumber(el.dataset.revealDelay, fallbackDelay);
+          delay = delay > 600 ? 600 : delay;
+          if (el.classList.contains('effect-card')) revealEffectCard(el, delay);
+          else {
+            el.style.transitionDelay = delay + 'ms';
+            el.classList.add('is-revealed');
+          }
           io.unobserve(el);
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     revealTargets.forEach(function (el) { io.observe(el); });
   } else {
-    revealTargets.forEach(function (el) { el.classList.add('is-revealed'); });
+    revealTargets.forEach(function (el) {
+      el.classList.add('is-revealed');
+      if (el.classList.contains('effect-card')) el.classList.add('is-reveal-complete');
+    });
   }
 
   /* ---------- Animated counter for big numbers ---------- */
@@ -188,9 +241,11 @@
   }
 
   /* ---------- 3D mouse tilt on key cards ---------- */
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var canTilt = !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+    window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (canTilt) {
     var tiltCards = document.querySelectorAll(
-      '.stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat'
+      '.effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat'
     );
     var maxTilt = 5.5; /* degrees */
     tiltCards.forEach(function (card) {

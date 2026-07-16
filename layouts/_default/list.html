@@ -7,7 +7,7 @@
     {{ if .Pages }}
     <div class="cards cards-tech">
       {{ range .Pages }}
-      <a class="card card-link" href="{{ .Permalink }}">
+      <a class="card effect-card card-link" href="{{ .Permalink }}">
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . }}</p>{{ end }}
       </a>
