@@ -5,22 +5,42 @@
      plainify strips HTML tags; htmlUnescape decodes &amp; &middot; etc. */}}
 {{ $brand := .Site.Title | default "IPNL" }}
 {{ $rawTitle := .Params.tab_title | default .Title }}
+{{ if eq .Kind "404" }}
+  {{ if eq .Lang "zh-cn" }}
+    {{ $rawTitle = "页面未找到" }}
+  {{ else if eq .Lang "zh-tw" }}
+    {{ $rawTitle = "頁面未找到" }}
+  {{ else }}
+    {{ $rawTitle = "Page not found" }}
+  {{ end }}
+{{ end }}
 {{ $pageTitle := plainify $rawTitle | htmlUnescape }}
 {{ $tabTitle := cond (or .IsHome (eq $pageTitle "") (eq $pageTitle "Home") (eq $pageTitle "首页") (eq $pageTitle "首頁")) $brand (printf "%s | %s" $pageTitle $brand) }}
 <title>{{ $tabTitle }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
+{{ if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
+{{ if and .IsHome (ne .Kind "404") }}
+<link rel="alternate" hreflang="x-default" href="{{ printf "%sen/" .Site.BaseURL }}">
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+{{ end }}
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="IPNL">
 <meta property="og:title" content="{{ $tabTitle }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ if ne .Kind "404" }}
 <meta property="og:url" content="{{ .Permalink }}">
+{{ end }}
 {{ with .Params.image }}
 <meta property="og:image" content="{{ . | absURL }}">
 {{ end }}
 <meta name="twitter:card" content="summary">
-{{ if .Params.noindex }}
-<meta name="robots" content="noindex">
+{{ if or .Params.noindex (eq .Kind "404") }}
+<meta name="robots" content="noindex, follow">
 {{ end }}
 
 {{/* Favicon — uses lab logo. Browser-tab visible branding. */}}
@@ -35,7 +55,9 @@
 {{ if eq .Lang "zh-cn" }}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap">{{ end }}
 {{ if eq .Lang "zh-tw" }}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">{{ end }}
 
-{{ with .Params.jsonld }}
-{{ . | safeHTML }}
+{{ if ne .Kind "404" }}
+  {{ with .Params.jsonld }}
+  {{ . | safeHTML }}
+  {{ end }}
+  {{ partial "seo-structured-data.html" . }}
 {{ end }}
-{{ partial "seo-structured-data.html" . }}

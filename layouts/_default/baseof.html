@@ -3,10 +3,10 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="{{ if .IsHome }}is-home{{ end }}">
+<body class="{{ if .IsHome }}is-home{{ end }}{{ if eq .Kind "404" }} is-not-found{{ end }}">
   {{ partial "header.html" . }}
 
-  <main class="site-main"{{ if ne .Section "search" }} data-pagefind-body{{ else }} data-pagefind-ignore{{ end }}>
+  <main class="site-main"{{ if and (ne .Section "search") (ne .Kind "404") }} data-pagefind-body{{ else }} data-pagefind-ignore{{ end }}>
     {{ block "main" . }}{{ end }}
   </main>
 

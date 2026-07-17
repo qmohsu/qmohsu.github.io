@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="site-header-inner">
     <a href="{{ "/" | relLangURL }}" class="brand-link">
-      <img src="{{ "/images/logos/ipnl-mark.png" | relURL }}" alt="IPNL" class="brand-logo brand-logo-ipnl">
+      <img src="{{ "/images/logos/ipnl-mark.png" | relURL }}" alt="" class="brand-logo brand-logo-ipnl">
       <span class="brand-wordmark">
         <span class="brand-wordmark-name">IPNL</span>
         <span class="brand-wordmark-tag">{{ if eq .Lang "zh-cn" }}智能定位与导航实验室{{ else if eq .Lang "zh-tw" }}智能定位與導航實驗室{{ else }}Intelligent Positioning &amp; Navigation Lab{{ end }}</span>
@@ -36,10 +36,12 @@
     {{ $enURL := "/en/" }}
     {{ $cnURL := "/zh-cn/" }}
     {{ $twURL := "/zh-tw/" }}
+    {{ if ne .Kind "404" }}
     {{ range .AllTranslations }}
       {{ if eq .Lang "en" }}{{ $enURL = .RelPermalink }}{{ end }}
       {{ if eq .Lang "zh-cn" }}{{ $cnURL = .RelPermalink }}{{ end }}
       {{ if eq .Lang "zh-tw" }}{{ $twURL = .RelPermalink }}{{ end }}
+    {{ end }}
     {{ end }}
     <span class="lang-switch" aria-label="Language">
       <a href="{{ $enURL }}" class="lang-link{{ if eq .Lang "en" }} is-active{{ end }}">EN</a>
