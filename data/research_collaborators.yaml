@@ -39,9 +39,9 @@ items:
     source_url: "https://www.hksi.org.hk/"
     usage_note: "Existing public-site logo asset reused for nominative identification; no new logo file added in this change."
     context:
-      en: "Sports-science research collaboration for elite windsurfing (SRFS)."
-      zh-cn: "面向精英风帆的运动科学研究合作(SRFS)。"
-      zh-tw: "面向精英風帆的運動科學研究合作(SRFS)。"
+      en: "Sports-science research collaboration for elite windsurfing."
+      zh-cn: "面向精英风帆的运动科学研究合作。"
+      zh-tw: "面向精英風帆的運動科學研究合作。"
   - name: "Hotel ICON"
     logo: "/images/partners/hotel-icon.png"
     url: "/projects/stairio/"

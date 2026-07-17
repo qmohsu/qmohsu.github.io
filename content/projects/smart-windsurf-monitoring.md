@@ -1,14 +1,12 @@
 ---
 title: "Smart Sports Monitoring System for Elite Windsurfing"
 slug: "smart-windsurf-monitoring"
-aliases:
-  - /projects/uwb-gnss-windsurf/
 description: "A research collaboration between the Department of Aeronautical and Aviation Engineering at PolyU and the Hong Kong Sports Institute (HKSI), applying innovative technologies to elite windsurfing and advancing data-informed approaches to athlete monitoring and performance support."
 category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
-funding: "HKSI Sports Science and Research Funding Scheme (SRFS), PI, 2026–"
+funding: "Hong Kong Sports Institute (HKSI), PI, 2026–"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
 weight: 4
@@ -19,5 +17,4 @@ The Department of Aeronautical and Aviation Engineering at The Hong Kong Polytec
 **Project period.** 1 May 2026 – 30 April 2028.
 
 **Funding.**
-- **HKSI Sports Science and Research Funding Scheme (SRFS)** — PI, 2026–
-- Partner: Hong Kong Sports Institute (HKSI)
+- **Hong Kong Sports Institute (HKSI)** — PI, 2026–
