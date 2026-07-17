@@ -1,4 +1,31 @@
 {{ define "main" }}
-<h1>404 — Page not found</h1>
-<p>The page you're looking for doesn't exist. Try navigating from the <a href="{{ "/" | relURL }}">homepage</a>.</p>
+{{- $lang := site.Language.Lang -}}
+{{- $eyebrow := "404 · POSITION LOST" -}}
+{{- $title := "This page is off the map." -}}
+{{- $message := "The address may have changed, or the page may no longer exist." -}}
+{{- $homeLabel := "Return home" -}}
+{{- $searchLabel := "Search IPNL" -}}
+{{- if eq $lang "zh-cn" -}}
+  {{- $eyebrow = "404 · 定位失联" -}}
+  {{- $title = "这个页面不在地图上。" -}}
+  {{- $message = "网址可能已经变更，或该页面已不存在。" -}}
+  {{- $homeLabel = "返回首页" -}}
+  {{- $searchLabel = "搜索 IPNL" -}}
+{{- else if eq $lang "zh-tw" -}}
+  {{- $eyebrow = "404 · 定位失聯" -}}
+  {{- $title = "這個頁面不在地圖上。" -}}
+  {{- $message = "網址可能已經變更，或該頁面已不存在。" -}}
+  {{- $homeLabel = "返回首頁" -}}
+  {{- $searchLabel = "搜尋 IPNL" -}}
+{{- end -}}
+<section class="not-found-page" aria-labelledby="not-found-title">
+  <p class="not-found-eyebrow">{{ $eyebrow }}</p>
+  <p class="not-found-code" aria-hidden="true">404</p>
+  <h1 id="not-found-title">{{ $title }}</h1>
+  <p class="not-found-message">{{ $message }}</p>
+  <div class="not-found-actions">
+    <a class="not-found-action is-primary" href="{{ "/" | relLangURL }}">{{ $homeLabel }}</a>
+    <a class="not-found-action" href="{{ "/search/" | relLangURL }}">{{ $searchLabel }}</a>
+  </div>
+</section>
 {{ end }}
