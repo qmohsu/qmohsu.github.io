@@ -250,11 +250,22 @@
     var maxTilt = 5.5; /* degrees */
     tiltCards.forEach(function (card) {
       var rect = null;
-      var onEnter = function () { rect = card.getBoundingClientRect(); };
-      var onMove = function (e) {
+      var isEffectCard = card.classList.contains('effect-card');
+      /* Tilt must not fight the scroll-reveal entrance. While a card is still
+         animating in (translateY(18px) -> 0 over 700ms) writing an inline
+         transform interrupts that transition, its `transitionend` never fires,
+         so `is-reveal-complete` is delayed and the hover baseline is missing —
+         which is why staggered later cards in a row felt laggy/janky while the
+         first (delay 0, already settled) card tracked smoothly. */
+      var revealDone = function () {
+        if (card.classList.contains('is-revealing')) return false;
+        if (isEffectCard) return card.classList.contains('is-reveal-complete');
+        return true;
+      };
+      var applyTilt = function (clientX, clientY) {
         if (!rect) rect = card.getBoundingClientRect();
-        var x = e.clientX - rect.left;
-        var y = e.clientY - rect.top;
+        var x = clientX - rect.left;
+        var y = clientY - rect.top;
         var cx = rect.width / 2;
         var cy = rect.height / 2;
         var rotY = ((x - cx) / cx) * maxTilt;
@@ -263,7 +274,24 @@
           'translateY(-5px) perspective(1100px) rotateX(' + rotX.toFixed(2) +
           'deg) rotateY(' + rotY.toFixed(2) + 'deg)';
       };
+      var onEnter = function (e) {
+        if (!revealDone()) return;
+        rect = card.getBoundingClientRect();
+        /* Kill the CSS transform-transition while tracking so the tilt
+           follows the cursor in real time instead of easing behind it. */
+        card.classList.add('is-tilting');
+        /* Paint the first frame immediately so there is no flat gap between
+           mouseenter and the first mousemove. */
+        applyTilt(e.clientX, e.clientY);
+      };
+      var onMove = function (e) {
+        if (!revealDone()) return;
+        if (!card.classList.contains('is-tilting')) card.classList.add('is-tilting');
+        applyTilt(e.clientX, e.clientY);
+      };
       var onLeave = function () {
+        /* Restore the transition so the reset back to flat animates smoothly. */
+        card.classList.remove('is-tilting');
         card.style.transform = '';
         rect = null;
       };

@@ -4078,11 +4078,24 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    3D MOUSE TILT — JS-driven; just provide the perspective + transition base
    ========================================================================== */
-.cards-tech, .cap-grid, .stat-grid, .work-grid, .leadership-grid, .lane-grid {
-  perspective: 1100px;
-}
+/* Perspective is applied per-card via perspective() inside the JS transform
+   (see scripts.html). Setting perspective on the grid container makes every
+   card share one vanishing point at the row's centre, so only the centre card
+   tilts correctly and the rest look flat / laggy. */
 .effect-card, .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
   transform-style: preserve-3d;
+}
+/* While a card is being actively tilted by the mouse, drop the transform
+   transition so it tracks the cursor 1:1 instead of easing behind it.
+   The transition is restored on mouseleave for a smooth reset to flat. */
+.effect-card.is-tilting,
+.stat-card.is-tilting,
+.cap-card.is-tilting,
+.work-card.is-tilting,
+.leader-card.is-tilting,
+.lane-card.is-tilting,
+.tab-stat.is-tilting {
+  transition-property: box-shadow, border-color;
 }
 .stat-card, .cap-card, .work-card, .leader-card, .lane-card, .tab-stat {
   will-change: transform;
