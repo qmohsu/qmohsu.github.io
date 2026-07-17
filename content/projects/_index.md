@@ -41,7 +41,7 @@ aliases:
       <div class="stat-context">Mobile-network + AI vehicular self-diagnosis (PSRI/102/2410/PR)</div>
     </div>
     <div class="stat-card">
-      <div class="stat-partner">HKSI · SRFS</div>
+      <div class="stat-partner">HKSI</div>
       <div class="stat-num">HK$3.34M</div>
       <div class="stat-label">PI · 2026–</div>
       <div class="stat-context">Smart sports monitoring for elite windsurfing</div>

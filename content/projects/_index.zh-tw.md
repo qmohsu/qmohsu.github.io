@@ -41,7 +41,7 @@ aliases:
       <div class="stat-context">基於行動網路與 AI 的車輛自我診斷</div>
     </div>
     <div class="stat-card">
-      <div class="stat-partner">香港體育學院 SRFS</div>
+      <div class="stat-partner">香港體育學院</div>
       <div class="stat-num">HK$3.34M</div>
       <div class="stat-label">PI · 2026–</div>
       <div class="stat-context">面向精英風帆的智慧運動監測</div>
