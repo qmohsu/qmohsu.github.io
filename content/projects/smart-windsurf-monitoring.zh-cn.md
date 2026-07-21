@@ -9,6 +9,7 @@ start_date: 2026
 funding: "香港体育学院(HKSI),PI,2026–"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
+images: ["/images/news/2026-polyu-hksi-windsurfing.jpg"]
 weight: 4
 ---
 
@@ -18,3 +19,5 @@ weight: 4
 
 <strong>经费来源。</strong>
 - <strong>香港体育学院(HKSI)</strong> —— PI,2026–
+
+*图:MFonzatti / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FoilsJourn%C3%A9es2025_ENVSN_02.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。示意图,非本项目影像。*
