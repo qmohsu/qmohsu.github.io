@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">研發項目</span> · <span class="hi-orange-text">產業合作</span>'
 hero_eyebrow: "研發 · 產業 · 經費 · 2026"
-hero_sub: '<strong>HK$60M+</strong> 研究項目 · <strong>9+</strong> 華為合同 · <strong>12</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$60M+</strong> 研究項目 (PI / Co-PI / Co-I) · <strong>9+</strong> 華為合同 · <strong>12</strong> 家長期產業、臨床、標準合作夥伴。最大單筆: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研發 —— 核心研究方向、具身產業轉化系統,以及為其提供經費與落地場景的長期產業合作。"
 aliases:
@@ -10,7 +10,7 @@ aliases:
 
 <div class="page-part">
   <span class="page-part-num">第一部分 · 經費</span>
-  <h2 class="page-part-title">HK$60M+ 研究項目 (PI / Co-PI / Co-I)</h2>
+  <h2 class="page-part-title">HK$60M+ 研究項目總值 (PI / Co-PI / Co-I)</h2>
   <p class="page-part-sub">作為 PI / PC 主持,並以 Co-PI / Co-I 參與 —— RGC、ITF、STF、香港體院、國自然/RGC JRS、華為、CRF、GRF、ITF-PRP、谷歌。</p>
 </div>
 

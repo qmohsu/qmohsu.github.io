@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">R&amp;D programs</span> &middot; <span class="hi-orange-text">industry partnerships</span>'
 hero_eyebrow: "R&D · INDUSTRY · GRANTS · 2026"
-hero_sub: '<strong>HK$60M+</strong> in research projects &middot; <strong>9+</strong> Huawei contracts &middot; <strong>12</strong> long-running industry, clinical, and standards partners. Largest single grant: <strong>HK$10M</strong>.'
+hero_sub: '<strong>HK$60M+</strong> in research projects (PI, Co-PI &amp; Co-I) &middot; <strong>9+</strong> Huawei contracts &middot; <strong>12</strong> long-running industry, clinical, and standards partners. Largest single grant: <strong>HK$10M</strong>.'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL R&D — core research programs, embodied translational systems, and the multi-year industry partnerships that fund and deploy them."
 aliases:
@@ -10,7 +10,7 @@ aliases:
 
 <div class="page-part">
   <span class="page-part-num">Part 1 &middot; Funding</span>
-  <h2 class="page-part-title">HK$60M+ in research projects (PI, Co-PI &amp; Co-I)</h2>
+  <h2 class="page-part-title">HK$60M+ in research projects (PI, Co-PI &amp; Co-I, project-total value)</h2>
   <p class="page-part-sub">Led as PI / PC and joined as Co-PI / Co-I — RGC, ITF, STF, HKSI, NSFC/RGC JRS, Huawei, CRF, GRFs, ITF-PRP, Google — through 2026.</p>
 </div>
 

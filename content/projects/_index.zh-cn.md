@@ -2,7 +2,7 @@
 title: '<span class="hi-cyan-text">研发项目</span> · <span class="hi-orange-text">产业合作</span>'
 tooltip: "研发项目"
 hero_eyebrow: "研发 · 产业 · 经费 · 2026"
-hero_sub: '<strong>HK$60M+</strong> 研究项目 · <strong>9+</strong> 华为合同 · <strong>12</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
+hero_sub: '<strong>HK$60M+</strong> 研究项目 (PI / Co-PI / Co-I) · <strong>9+</strong> 华为合同 · <strong>12</strong> 家长期产业、临床、标准合作伙伴。最大单笔: <strong>HK$10M</strong>。'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL 研发 —— 核心研究方向、具身产业转化系统,以及为它们提供经费与落地场景的长期产业合作。"
 aliases:
@@ -11,7 +11,7 @@ aliases:
 
 <div class="page-part">
   <span class="page-part-num">第一部分 · 经费</span>
-  <h2 class="page-part-title">HK$60M+ 研究项目 (PI / Co-PI / Co-I)</h2>
+  <h2 class="page-part-title">HK$60M+ 研究项目总值 (PI / Co-PI / Co-I)</h2>
   <p class="page-part-sub">作为 PI / PC 主持,并以 Co-PI / Co-I 参与 —— RGC、ITF、STF、香港体院、国自然/RGC JRS、华为、CRF、GRF、ITF-PRP、谷歌 —— 截至 2026。</p>
 </div>
 
