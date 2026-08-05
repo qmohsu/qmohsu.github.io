@@ -5,10 +5,13 @@
 
 {{ $groups := slice
   (dict "title" (cond $cn "博士 / 硕士研究生" (cond $tw "博士 / 碩士研究生" "PhD / MPhil")) "items" (sort (where $alumni ".Params.role" "in" (slice "PhD Student" "PhD Student (HK PhD Fellowship)" "MPhil Student")) ".Params.years"))
+  (dict "title" (cond $cn "高级研究员" (cond $tw "高級研究員" "Senior Research Fellows")) "items" (sort (where $alumni ".Params.role" "in" (slice "Senior Research Fellow" "高级研究员" "高級研究員")) ".Params.years"))
   (dict "title" (cond $cn "博士后" (cond $tw "博士後" "Postdoctoral Fellows")) "items" (sort (where $alumni ".Params.role" "eq" "Postdoctoral Fellow") ".Params.years"))
+  (dict "title" (cond $cn "研究员" (cond $tw "研究員" "Research Fellows")) "items" (sort (where $alumni ".Params.role" "eq" "Research Fellow") ".Params.years"))
   (dict "title" (cond $cn "硕士生" (cond $tw "碩士生" "MSc Students")) "items" (sort (where $alumni ".Params.role" "eq" "MSc Student") ".Params.years"))
   (dict "title" (cond $cn "行政人员" (cond $tw "行政人員" "Administrative Staff")) "items" (sort (where $alumni ".Params.role" "eq" "Administrative Staff") ".Params.years"))
   (dict "title" (cond $cn "研究助理" (cond $tw "研究助理" "Research Assistants")) "items" (sort (where $alumni ".Params.role" "eq" "Research Assistant") ".Params.years"))
+  (dict "title" (cond $cn "研究专员" (cond $tw "研究專員" "Research Associates")) "items" (sort (where $alumni ".Params.role" "in" (slice "Research Associate" "Project Associate")) ".Params.years"))
   (dict "title" (cond $cn "访问学生与实习生" (cond $tw "訪問學生與實習生" "Visiting Students & Interns")) "items" (sort (where $alumni ".Params.role" "in" (slice "Visiting PhD Student" "Intern")) ".Params.years"))
 }}
 
