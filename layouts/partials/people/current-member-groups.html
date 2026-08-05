@@ -14,4 +14,18 @@
   (dict "title" (cond $cn "实习生" (cond $tw "實習生" "Interns")) "items" (sort (where $current ".Params.role" "eq" "Intern") ".Params.years"))
 }}
 
+{{/* Same invariant guard as people/alumni-groups.html: every current member must land
+     in exactly one group, or they vanish from /people/ with a green build. The PI is
+     excluded above because people/list.html renders it in its own leadership block. */}}
+{{ $seen := slice }}
+{{ range $groups }}{{ range (index . "items") }}{{ $seen = $seen | append .Permalink }}{{ end }}{{ end }}
+{{ $missing := slice }}
+{{ range $current }}{{ if not (in $seen .Permalink) }}{{ $missing = $missing | append (printf "%s (role: %q)" .Title .Params.role) }}{{ end }}{{ end }}
+{{ with $missing }}
+  {{ errorf "people/current-member-groups.html [%s]: %d of %d current members match no role group and will NOT render on /people/ — add a bucket for: %s" $lang (len .) (len $current) (delimit . "; ") }}
+{{ end }}
+{{ if gt (len $seen) (len (uniq $seen)) }}
+  {{ errorf "people/current-member-groups.html [%s]: %d current members match more than one role group and will render twice on /people/ — tighten the overlapping buckets" $lang (sub (len $seen) (len (uniq $seen))) }}
+{{ end }}
+
 {{ return $groups }}
