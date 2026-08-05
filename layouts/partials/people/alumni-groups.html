@@ -15,4 +15,19 @@
   (dict "title" (cond $cn "访问学生与实习生" (cond $tw "訪問學生與實習生" "Visiting Students & Interns")) "items" (sort (where $alumni ".Params.role" "in" (slice "Visiting PhD Student" "Intern")) ".Params.years"))
 }}
 
+{{/* Guard the invariant that made Ruoyu Chen (Monica) invisible: /people/ labels the
+     alumni link from `len $alumni`, but /people/alumni/ renders from these buckets.
+     A role with no bucket drops the person while still counting toward the label, and
+     nothing errors. Fail the build instead — silently is the only bad way to lose one. */}}
+{{ $seen := slice }}
+{{ range $groups }}{{ range (index . "items") }}{{ $seen = $seen | append .Permalink }}{{ end }}{{ end }}
+{{ $missing := slice }}
+{{ range $alumni }}{{ if not (in $seen .Permalink) }}{{ $missing = $missing | append (printf "%s (role: %q)" .Title .Params.role) }}{{ end }}{{ end }}
+{{ with $missing }}
+  {{ errorf "people/alumni-groups.html [%s]: %d of %d alumni match no role group and will NOT render on /people/alumni/ — add a bucket for: %s" $lang (len .) (len $alumni) (delimit . "; ") }}
+{{ end }}
+{{ if gt (len $seen) (len (uniq $seen)) }}
+  {{ errorf "people/alumni-groups.html [%s]: %d alumni match more than one role group and will render twice on /people/alumni/ — tighten the overlapping buckets" $lang (sub (len $seen) (len (uniq $seen))) }}
+{{ end }}
+
 {{ return $groups }}
