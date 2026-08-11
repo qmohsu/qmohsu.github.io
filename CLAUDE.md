@@ -28,6 +28,12 @@ GitHub Pages. **Both deploy from `main` only** via `.github/workflows/`
   main checkout — parallel sessions sharing one checkout collide on index/HEAD.
   Put worktrees outside any synced folder: `git wt <task> -b <branch>` (global
   alias) creates one under `~/GitData/wt/<task>`.
+- **worktreeConfig invariant (2026-08-12):** this repo has `extensions.worktreeConfig=true`,
+  so `core.worktree` must live in the main worktree's `config.worktree` — NEVER in the
+  common config. If it drifts back into the common config, every linked worktree's git
+  resolves onto THIS live tree (same signature as the vault's 2026-07-25 1,112-file
+  deletion; observed and fixed here 2026-08-12). Verify with
+  `git config --show-origin --get-all core.worktree` before trusting any worktree.
 - Start every session with: `git branch --show-current`, `git fetch`,
   `git status` — confirm branch and ahead/behind before editing anything.
 - **Branch policy:** routine content fixes commit straight to `main`. Branch ONLY
