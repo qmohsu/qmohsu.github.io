@@ -8,7 +8,7 @@ authors:
 year: 2016
 venue: "IEICE Transactions"
 type: "journal"
-cv_number: 132
+cv_number: 131
 featured: false
 quartile: "Q4"
 doi: "10.1587/transfun.e99.a.271"

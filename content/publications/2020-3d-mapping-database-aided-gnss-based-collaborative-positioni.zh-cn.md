@@ -8,7 +8,7 @@ authors:
 year: 2020
 venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
-cv_number: 88
+cv_number: 87
 featured: false
 quartile: "Q1"
 doi: "10.1109/tits.2020.2988531"

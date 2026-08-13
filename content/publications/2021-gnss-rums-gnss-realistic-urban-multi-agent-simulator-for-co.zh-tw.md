@@ -9,7 +9,7 @@ authors:
 year: 2021
 venue: "Remote Sensing"
 type: "journal"
-cv_number: 81
+cv_number: 80
 featured: false
 quartile: "Q1"
 doi: "10.20944/preprints202012.0647.v1"

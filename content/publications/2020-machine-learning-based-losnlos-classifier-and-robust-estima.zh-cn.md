@@ -9,7 +9,7 @@ authors:
 year: 2020
 venue: "Satellite Navigation"
 type: "journal"
-cv_number: 104
+cv_number: 103
 featured: false
 quartile: "Q1"
 doi: "10.1186/s43020-020-00016-w"

@@ -8,7 +8,7 @@ authors:
 year: 2016
 venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
-cv_number: 128
+cv_number: 127
 featured: false
 quartile: "Q1"
 doi: "10.1109/tvt.2015.2497001"

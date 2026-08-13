@@ -8,7 +8,7 @@ authors:
 year: 2020
 venue: "Journal of Navigation"
 type: "journal"
-cv_number: 93
+cv_number: 92
 featured: false
 quartile: "Q1"
 doi: "10.1017/s037346332000003x"

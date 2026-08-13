@@ -12,7 +12,7 @@ authors:
 year: 2021
 venue: "IEEE Access"
 type: "journal"
-cv_number: 74
+cv_number: 73
 featured: false
 quartile: "Q2"
 doi: "10.1109/access.2021.3052733"

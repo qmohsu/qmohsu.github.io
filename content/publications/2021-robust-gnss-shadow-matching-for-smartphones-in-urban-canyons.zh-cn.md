@@ -8,7 +8,7 @@ authors:
 year: 2021
 venue: "IEEE Sensors Journal"
 type: "journal"
-cv_number: 79
+cv_number: 78
 featured: true
 quartile: "Q1"
 doi: "10.1109/jsen.2021.3083801"

@@ -9,7 +9,7 @@ authors:
 year: 2015
 venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
-cv_number: 138
+cv_number: 4
 featured: false
 quartile: "Q1"
 doi: "10.1109/tits.2015.2432122"

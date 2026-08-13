@@ -8,7 +8,7 @@ authors:
 year: 2021
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
-cv_number: 78
+cv_number: 77
 featured: false
 quartile: "Q1"
 doi: "10.1002/navi.448"

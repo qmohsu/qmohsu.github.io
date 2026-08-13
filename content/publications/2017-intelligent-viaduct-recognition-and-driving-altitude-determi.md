@@ -8,7 +8,7 @@ authors:
 year: 2017
 venue: "IEEE Transactions on Intelligent Vehicles"
 type: "journal"
-cv_number: 125
+cv_number: 124
 featured: false
 quartile: "Q1"
 doi: "10.1109/tiv.2017.2737325"

@@ -10,7 +10,7 @@ authors:
 year: 2021
 venue: "Advanced Engineering Informatics"
 type: "journal"
-cv_number: 71
+cv_number: 70
 featured: false
 quartile: "Q1"
 doi: "10.1016/j.aei.2021.101402"

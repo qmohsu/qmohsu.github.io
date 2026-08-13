@@ -10,7 +10,7 @@ authors:
 year: 2019
 venue: "Sensors"
 type: "journal"
-cv_number: 107
+cv_number: 106
 featured: false
 quartile: "Q2"
 doi: "10.3390/s19183993"

@@ -9,7 +9,7 @@ authors:
 year: 2017
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 126
+cv_number: 125
 featured: false
 quartile: "unranked"
 doi: ""

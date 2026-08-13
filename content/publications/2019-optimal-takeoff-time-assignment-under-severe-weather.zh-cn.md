@@ -8,7 +8,7 @@ authors:
 year: 2019
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 117
+cv_number: 116
 featured: false
 quartile: "unranked"
 doi: ""

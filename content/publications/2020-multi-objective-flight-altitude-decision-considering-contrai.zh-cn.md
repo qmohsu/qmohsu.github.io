@@ -8,7 +8,7 @@ authors:
 year: 2020
 venue: "Sustainability"
 type: "journal"
-cv_number: 99
+cv_number: 98
 featured: false
 quartile: "Q2"
 doi: "10.3390/su12156253"

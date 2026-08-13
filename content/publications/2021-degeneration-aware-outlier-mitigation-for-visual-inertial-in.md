@@ -8,7 +8,7 @@ authors:
 year: 2021
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
-cv_number: 69
+cv_number: 68
 featured: false
 quartile: "Q1"
 doi: "10.1109/tim.2021.3126010"

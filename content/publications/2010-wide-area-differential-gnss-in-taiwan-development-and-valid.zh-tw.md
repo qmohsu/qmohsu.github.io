@@ -8,7 +8,7 @@ authors:
 year: 2010
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 142
+cv_number: 8
 featured: false
 quartile: "unranked"
 doi: ""

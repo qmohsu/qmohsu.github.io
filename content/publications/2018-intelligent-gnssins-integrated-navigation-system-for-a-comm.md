@@ -7,7 +7,7 @@ authors:
 year: 2018
 venue: "Aerospace Science and Technology"
 type: "journal"
-cv_number: 119
+cv_number: 118
 featured: false
 quartile: "Q1"
 doi: "10.1016/j.ast.2018.07.026"

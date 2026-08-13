@@ -8,7 +8,7 @@ authors:
 year: 2020
 venue: "IET Intelligent Transport Systems"
 type: "journal"
-cv_number: 101
+cv_number: 100
 featured: false
 quartile: "Q3"
 doi: "10.1049/iet-its.2019.0587"

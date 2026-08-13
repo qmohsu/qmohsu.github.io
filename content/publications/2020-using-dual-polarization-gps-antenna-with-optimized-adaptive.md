@@ -10,7 +10,7 @@ authors:
 year: 2020
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
-cv_number: 94
+cv_number: 93
 featured: false
 quartile: "Q1"
 doi: "10.1002/navi.408"

@@ -9,7 +9,7 @@ authors:
 year: 2019
 venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
-cv_number: 109
+cv_number: 108
 featured: false
 quartile: "Q1"
 doi: "10.1109/tvt.2019.2944680"

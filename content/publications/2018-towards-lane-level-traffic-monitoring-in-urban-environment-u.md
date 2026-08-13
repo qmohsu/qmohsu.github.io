@@ -8,7 +8,7 @@ authors:
 year: 2018
 venue: "IATSS Research"
 type: "journal"
-cv_number: 123
+cv_number: 122
 featured: false
 quartile: "Q2"
 doi: "10.1016/j.iatssr.2018.03.001"

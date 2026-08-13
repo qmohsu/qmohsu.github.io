@@ -9,7 +9,7 @@ authors:
 year: 2019
 venue: "Applied Soft Computing Journal"
 type: "journal"
-cv_number: 106
+cv_number: 105
 featured: false
 quartile: "Q1"
 doi: "10.1016/j.asoc.2019.105942"

@@ -9,7 +9,7 @@ authors:
 year: 2026
 venue: "Sensors"
 type: "journal"
-cv_number: 146
+cv_number: 145
 featured: false
 doi: "10.3390/s26031058"
 pdf: ""

@@ -10,7 +10,7 @@ authors:
 year: 2019
 venue: "IET Electronics Letters"
 type: "journal"
-cv_number: 116
+cv_number: 115
 featured: false
 quartile: "Q3"
 doi: "10.1049/el.2018.8075"

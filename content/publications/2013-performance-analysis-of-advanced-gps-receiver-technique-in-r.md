@@ -7,7 +7,7 @@ authors:
 year: 2013
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 141
+cv_number: 7
 featured: false
 quartile: "unranked"
 doi: ""

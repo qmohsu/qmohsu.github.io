@@ -8,7 +8,7 @@ authors:
 year: 2015
 venue: "Sensors"
 type: "journal"
-cv_number: 137
+cv_number: 3
 featured: false
 quartile: "Q2"
 doi: "10.3390/s151229795"

@@ -7,7 +7,7 @@ authors:
 year: 2020
 venue: "IEEE Sensors Journals"
 type: "journal"
-cv_number: 95
+cv_number: 94
 featured: false
 quartile: "Q1"
 doi: "10.1109/jsen.2020.3026081"

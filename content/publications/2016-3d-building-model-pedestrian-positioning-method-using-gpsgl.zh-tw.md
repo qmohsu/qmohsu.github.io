@@ -8,7 +8,7 @@ authors:
 year: 2016
 venue: "GPS Solutions"
 type: "journal"
-cv_number: 131
+cv_number: 130
 featured: false
 quartile: "Q1"
 doi: "10.1007/s10291-015-0451-7"

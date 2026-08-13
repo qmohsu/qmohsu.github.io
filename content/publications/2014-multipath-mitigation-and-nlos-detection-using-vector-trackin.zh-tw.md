@@ -9,7 +9,7 @@ authors:
 year: 2014
 venue: "GPS Solutions"
 type: "journal"
-cv_number: 140
+cv_number: 6
 featured: false
 quartile: "Q1"
 doi: "10.1007/s10291-014-0384-6"

@@ -8,7 +8,7 @@ authors:
 year: 2021
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 85
+cv_number: 84
 featured: false
 quartile: "unranked"
 doi: ""

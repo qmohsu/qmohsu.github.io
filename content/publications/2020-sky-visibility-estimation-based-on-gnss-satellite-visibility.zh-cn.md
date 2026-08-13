@@ -9,7 +9,7 @@ authors:
 year: 2020
 venue: "GPS Solutions"
 type: "journal"
-cv_number: 100
+cv_number: 99
 featured: false
 quartile: "Q1"
 doi: "10.1007/s10291-020-0973-5"

@@ -10,7 +10,7 @@ authors:
 year: 2017
 venue: "IEEE Sensors Journal"
 type: "journal"
-cv_number: 124
+cv_number: 123
 featured: false
 quartile: "Q1"
 doi: "10.1109/jsen.2017.2654359"

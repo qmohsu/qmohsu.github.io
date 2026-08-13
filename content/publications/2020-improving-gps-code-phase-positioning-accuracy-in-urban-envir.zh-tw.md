@@ -11,7 +11,7 @@ authors:
 year: 2020
 venue: "IEEE Internet of Things Journal"
 type: "journal"
-cv_number: 86
+cv_number: 85
 featured: false
 quartile: "Q1"
 doi: "10.1109/jiot.2020.3037074"

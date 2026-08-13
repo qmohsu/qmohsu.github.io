@@ -7,7 +7,7 @@ authors:
 year: 2021
 venue: "IEEE Transactions on Aerospace and Electronic Systems"
 type: "journal"
-cv_number: 72
+cv_number: 71
 featured: true
 quartile: "Q1"
 doi: "10.1109/taes.2021.3069271"

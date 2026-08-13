@@ -9,7 +9,7 @@ authors:
 year: 2019
 venue: "Remote Sensing"
 type: "journal"
-cv_number: 112
+cv_number: 111
 featured: false
 quartile: "Q1"
 doi: "10.3390/rs11161851"

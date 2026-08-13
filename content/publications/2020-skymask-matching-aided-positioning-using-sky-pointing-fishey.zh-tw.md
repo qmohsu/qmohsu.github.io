@@ -9,7 +9,7 @@ authors:
 year: 2020
 venue: "Sensors"
 type: "journal"
-cv_number: 90
+cv_number: 89
 featured: false
 quartile: "Q2"
 doi: "10.3390/s20174728"

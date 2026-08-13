@@ -8,7 +8,7 @@ authors:
 year: 2020
 venue: "Journal of Spatial Science"
 type: "journal"
-cv_number: 103
+cv_number: 102
 featured: false
 quartile: "Q3"
 doi: ""

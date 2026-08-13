@@ -10,7 +10,7 @@ authors:
 year: 2019
 venue: "Journal of Navigation"
 type: "journal"
-cv_number: 110
+cv_number: 109
 featured: false
 quartile: "Q1"
 doi: "10.1017/s0373463318000899"

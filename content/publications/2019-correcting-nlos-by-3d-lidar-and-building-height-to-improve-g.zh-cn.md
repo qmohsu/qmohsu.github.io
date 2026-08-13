@@ -8,7 +8,7 @@ authors:
 year: 2019
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
-cv_number: 111
+cv_number: 110
 featured: false
 quartile: "Q1"
 doi: "10.1002/navi.335"

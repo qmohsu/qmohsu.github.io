@@ -7,7 +7,7 @@ authors:
 year: 2020
 venue: "Proc. IMechE, Part D: Journal of Automobile Engineering"
 type: "journal"
-cv_number: 102
+cv_number: 101
 featured: false
 quartile: "Q3"
 doi: "10.1177/0954407020965760"
