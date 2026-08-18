@@ -10,7 +10,7 @@ authors:
 year: 2026
 venue: "Aerospace Systems"
 type: "journal"
-cv_number: 143
+cv_number: 140
 featured: false
 quartile: "Q1"
 doi: "10.1007/s42401-026-00457-2"

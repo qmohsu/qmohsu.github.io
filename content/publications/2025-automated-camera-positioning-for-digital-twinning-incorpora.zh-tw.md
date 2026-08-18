@@ -8,7 +8,7 @@ authors:
 year: 2025
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
-cv_number: 4
+cv_number: 139
 featured: false
 quartile: "Q1"
 doi: "10.1109/tim.2025.3584142"

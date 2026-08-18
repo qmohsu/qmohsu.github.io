@@ -11,7 +11,7 @@ authors:
 year: 2026
 venue: "Measurement"
 type: "journal"
-cv_number: 145
+cv_number: 142
 featured: false
 quartile: "Q1"
 doi: "10.1016/j.measurement.2026.120370"

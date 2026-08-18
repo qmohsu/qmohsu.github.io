@@ -8,7 +8,7 @@ authors:
 year: 2026
 venue: "Advances in Space Research"
 type: "journal"
-cv_number: 144
+cv_number: 141
 featured: false
 quartile: "Q2"
 doi: "10.1016/j.asr.2026.01.099"

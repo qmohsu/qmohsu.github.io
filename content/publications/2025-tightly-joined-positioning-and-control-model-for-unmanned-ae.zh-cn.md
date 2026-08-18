@@ -9,7 +9,7 @@ authors:
 year: 2025
 venue: "IEEE Transactions on Vehicular Technology"
 type: "journal"
-cv_number: 3
+cv_number: 134
 featured: false
 quartile: "Q1"
 doi: "10.1109/tvt.2025.3589556"

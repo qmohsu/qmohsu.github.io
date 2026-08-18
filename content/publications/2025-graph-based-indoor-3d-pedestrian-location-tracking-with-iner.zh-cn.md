@@ -9,7 +9,7 @@ authors:
 year: 2025
 venue: "IEEE Transactions on Mobile Computing"
 type: "journal"
-cv_number: 8
+cv_number: 152
 featured: true
 quartile: "Q1"
 doi: "10.1109/tmc.2025.3526196"

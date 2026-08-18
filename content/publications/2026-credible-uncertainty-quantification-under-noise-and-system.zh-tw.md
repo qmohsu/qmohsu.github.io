@@ -9,7 +9,7 @@ authors:
 year: 2026
 venue: "IEEE Transactions on Instrumentation and Measurement"
 type: "journal"
-cv_number: 183
+cv_number: 146
 featured: false
 quartile: "Q1"
 doi: "10.1109/tim.2026.3682809"

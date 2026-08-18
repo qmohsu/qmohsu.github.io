@@ -8,7 +8,7 @@ authors:
 year: 2025
 venue: "IEEE Transactions on Intelligent Transportation Systems"
 type: "journal"
-cv_number: 5
+cv_number: 138
 featured: false
 quartile: "Q1"
 doi: "10.1109/tits.2025.3572620"

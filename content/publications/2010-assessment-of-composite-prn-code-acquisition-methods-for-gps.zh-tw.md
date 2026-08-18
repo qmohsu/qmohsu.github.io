@@ -7,7 +7,7 @@ authors:
 year: 2010
 venue: "Journal of the Chinese Society of Mechanical Engineers"
 type: "journal"
-cv_number: 144
+cv_number: 155
 featured: false
 quartile: "unranked"
 doi: ""

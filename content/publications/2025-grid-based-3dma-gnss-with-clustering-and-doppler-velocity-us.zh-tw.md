@@ -9,7 +9,7 @@ authors:
 year: 2025
 venue: The Journal of Navigation
 type: journal
-cv_number: 6
+cv_number: 150
 featured: true
 quartile: Q1
 doi: 10.1017/s0373463325000220

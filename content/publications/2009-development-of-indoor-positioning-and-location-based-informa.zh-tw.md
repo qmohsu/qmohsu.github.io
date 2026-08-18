@@ -8,7 +8,7 @@ authors:
 year: 2009
 venue: "Journal of Aeronautics, Astronautics and Aviation, Series A"
 type: "journal"
-cv_number: 145
+cv_number: 156
 featured: false
 quartile: "unranked"
 doi: ""

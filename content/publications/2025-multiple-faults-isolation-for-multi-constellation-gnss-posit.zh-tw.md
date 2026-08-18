@@ -9,7 +9,7 @@ authors:
 year: 2025
 venue: "IEEE Sensors Journal"
 type: "journal"
-cv_number: 9
+cv_number: 153
 featured: false
 quartile: "Q1"
 doi: "10.1109/jsen.2024.3524434"

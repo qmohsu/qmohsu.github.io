@@ -10,7 +10,7 @@ authors:
 year: 2026
 venue: "IEEE Robotics and Automation Letters"
 type: "journal"
-cv_number: 185
+cv_number: 144
 featured: false
 quartile: "Q1"
 doi: "10.1109/LRA.2026.3693943"

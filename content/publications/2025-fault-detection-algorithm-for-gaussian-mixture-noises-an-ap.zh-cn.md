@@ -10,7 +10,7 @@ authors:
 year: 2025
 venue: 'NAVIGATION: Journal of the Institute of Navigation'
 type: journal
-cv_number: 7
+cv_number: 151
 featured: true
 quartile: Q1
 doi: 10.33012/navi.684
