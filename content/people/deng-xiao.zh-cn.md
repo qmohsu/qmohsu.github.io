@@ -1,11 +1,11 @@
 ---
-title: "Deng Xiao"
+title: "Xiao Deng"
 slug: "deng-xiao"
-role: "Research Assistant"
+role: "PhD Student"
 status: "current"
 years: "2026-present"
 photo: "/images/people/deng-xiao.jpg"
-sort_order: 303
+sort_order: 23
 ---
 
-研究助理。
+博士研究生。
