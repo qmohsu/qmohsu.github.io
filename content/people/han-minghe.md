@@ -1,10 +1,11 @@
 ---
-title: "He Hanming"
-slug: "he-hanming"
+title: "Han Minghe"
+slug: "han-minghe"
 role: "MSc Student"
 status: "current"
 years: "2026-present"
-photo: "/images/people/he-hanming.jpg"
+photo: "/images/people/han-minghe.jpg"
+aliases: ["/people/he-hanming/"]
 sort_order: 322
 ---
 
