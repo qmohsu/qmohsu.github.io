@@ -10,7 +10,7 @@ source_type: "lab_announcement"
 source_site: "ipnl"
 ---
 
-IPNL PhD student **Liang Qian (Martin)**, supervised by **Prof. Li-Ta Hsu**, spent two weeks in July 2026 at the **ESA/JRC International Summer School on GNSS** in Espoo, Finland — a Ph.D.-level course carrying 2 ECTS credits, jointly run by the European Space Agency (ESA) and the European Commission's Joint Research Centre (JRC). At the closing ceremony he received his Certificate of Participation; below, in his own words, Martin shares what the two weeks covered, what his group's project taught him, and how working alongside participants from many different backgrounds changed the way he thinks about research problems.
+IPNL PhD student **Liang Qian (Martin)**, supervised by **Prof. Li-Ta Hsu**, spent two weeks in July 2026 at the **ESA/JRC International Summer School on GNSS** in Espoo, Finland — a two-week programme for graduate students, PhD candidates, early-stage researchers and young professionals, jointly run by the European Space Agency (ESA) and the European Commission's Joint Research Centre (JRC). At the closing ceremony he received his Certificate of Participation; below, in his own words, Martin shares what the two weeks covered, what his group's project taught him, and how working alongside participants from many different backgrounds changed the way he thinks about research problems.
 
 ## In Martin's Own Words
 

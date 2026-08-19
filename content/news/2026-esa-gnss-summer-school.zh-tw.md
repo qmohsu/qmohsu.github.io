@@ -10,7 +10,7 @@ source_type: "lab_announcement"
 source_site: "ipnl"
 ---
 
-IPNL 博士生 **Liang Qian（Martin）**，師從 **許立達教授**，於 2026 年 7 月在芬蘭**艾斯波**（Espoo）參加了為期兩週的 **ESA/JRC International Summer School on GNSS**——由歐洲太空總署（ESA）與聯合研究中心（JRC）共同舉辦的一門 2 ECTS 博士生課程。結業典禮上，他獲頒結業證書（Certificate of Participation）；以下是 Martin 的自述，分享這兩週課程涵蓋的內容、小組專題帶給他的收穫，以及與來自不同背景的夥伴一起學習，如何改變了他思考研究問題的方式。
+IPNL 博士生 **Liang Qian（Martin）**，師從 **許立達教授**，於 2026 年 7 月在芬蘭**艾斯波**（Espoo）參加了為期兩週的 **ESA/JRC International Summer School on GNSS**——由歐洲太空總署（ESA）與歐盟聯合研究中心（JRC）共同舉辦，對象為研究生、博士生、青年研究人員與在職專業人士。結業典禮上，他獲頒結業證書（Certificate of Participation）；以下是 Martin 的自述，分享這兩週課程涵蓋的內容、小組專題帶給他的收穫，以及與來自不同背景的夥伴一起學習，如何改變了他思考研究問題的方式。
 
 ## Martin 的自述
 
