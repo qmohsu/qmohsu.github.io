@@ -13,4 +13,4 @@ MSc Student in Low-altitude Economy, The Hong Kong Polytechnic University.
 
 **Research area:** UAV positioning and navigation — including semantic Gaussian SLAM for aerial scene reconstruction and SORA-based BVLOS risk assessment for drone operations.
 
-Outside the lab, Hanming enjoys swimming and cycling.
+Outside the lab, Minghe enjoys swimming and cycling.
