@@ -1,10 +1,10 @@
 ---
 title: "Wing Keung Lin"
 slug: "wing-keung-lin"
-role: "Research Assistant"
+role: "Project Associate"
 status: "current"
 years: "2026-present"
-sort_order: 303
+sort_order: 319
 ---
 
 Project Technical Assistant.
