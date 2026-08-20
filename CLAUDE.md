@@ -84,6 +84,20 @@ verify on the RENDERED page, not the CSS.
 8. **Templates**: localize with `site.Language.Lang` conditionals, never `.Lang`
    inside `range`/`with` (breaks the build).
 
+9. **`content/people/`: `role:` decides everything; `sort_order:` decides NOTHING.**
+   `/people/` is grouped purely by `role:` and each group is sorted by `.Params.years`
+   (`layouts/partials/people/current-member-groups.html:6-14`). **`sort_order:` has no
+   consumer anywhere in the repo** — verified 2026-08-20 by an exhaustive search of
+   `layouts/`, `assets/`, and the built `public/`: 237 people files carry the field and
+   nothing reads it. So to move someone between groups, change `role:` — renumbering
+   `sort_order` is inert bookkeeping. (Two earlier changelog entries claimed the opposite,
+   i.e. that a role change without a matching `sort_order` move would leave the person in
+   the old group; that was wrong and has been corrected.)
+   `role:` **is a closed set with a build-time `errorf` guard**: a value outside it makes
+   the person match no group, so the guard fails the build rather than let them silently
+   vanish from `/people/`. Use an existing bucket, or add one to the partial *and* its
+   alumni twin — never invent a variant spelling.
+
 ## Build → verify
 
 ```bash

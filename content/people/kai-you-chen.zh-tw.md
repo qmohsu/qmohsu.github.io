@@ -2,7 +2,7 @@
 title: "Kai-You Chen"
 slug: "kai-you-chen"
 role: "Intern"
-status: "current"
+status: "alumni"
 years: "Summer 2026"
 photo: "/images/people/kai-you-chen.jpg"
 sort_order: 361

@@ -2,7 +2,7 @@
 title: "Samin Bhan"
 slug: "samin-bhan"
 role: "Intern"
-status: "current"
+status: "alumni"
 years: "Summer 2026"
 photo: "/images/people/samin-bhan.jpg"
 sort_order: 360
