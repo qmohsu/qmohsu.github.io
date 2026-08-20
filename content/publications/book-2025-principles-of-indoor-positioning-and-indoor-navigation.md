@@ -5,7 +5,7 @@ authors:
   - "Hsu L. T."
   - "Zhang G."
   - "Wen W."
-year: 2025
+year: 2026
 venue: "Artech House Publishers Inc"
 type: "book"
 cv_number: 1
