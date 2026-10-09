@@ -61,16 +61,17 @@
   {{ $cumValues = $cumValues | append $running }}
 {{ end }}
 
-{{/* Citation trajectory — sourced from Google Scholar profile
-     https://scholar.google.com/citations?user=GxfOCUMAAAAJ
-     Per-year Scholar counts; total is the authoritative GS figure as of 2026-06-20 (9,277, h-49):
-       2015:66  2016:88  2017:152  2018:219  2019:324  2020:626
-       2021:737 2022:981 2023:1417 2024:1621 2025:2124 2026:922(partial)
-     Cumulative below; refresh quarterly. */}}
-{{ $citeLabels := slice "2016" "2018" "2020" "2022" "2024" "2026" }}
-{{ $citeValues := slice 154 525 1475 3193 6231 9277 }}
-{{ $citeTotal := 9277 }}
-{{ $hIndex := 49 }}
+{{/* Dated Google Scholar totals, sampled from recorded profile snapshots.
+     These are profile totals on each date, not citations received per year. */}}
+{{ $metrics := site.Data.citation_metrics }}
+{{ $citeLabels := slice }}
+{{ $citeValues := slice }}
+{{ range $metrics.snapshots }}
+  {{ $citeLabels = $citeLabels | append .date }}
+  {{ $citeValues = $citeValues | append .citations }}
+{{ end }}
+{{ $citeTotal := $metrics.citations }}
+{{ $hIndex := $metrics.h_index }}
 
 <div class="pub-charts pub-charts-3" id="pub-charts"
   data-year-labels='{{ jsonify $yearLabels }}'
@@ -93,10 +94,11 @@
   </div>
   <div class="pub-chart-card">
     <div class="pub-chart-title">{{ if $cn }}引用 (PI){{ else if $tw }}引用 (PI){{ else }}Citations (PI){{ end }}</div>
-    <div class="pub-chart-headline">{{ if $cn }}{{ $citeTotal }}+ · h-index {{ $hIndex }} · 全球前 2%{{ else if $tw }}{{ $citeTotal }}+ · h-index {{ $hIndex }} · 全球前 2%{{ else }}{{ $citeTotal }}+ &middot; h-index {{ $hIndex }} &middot; Top 2%{{ end }}</div>
+    <div class="pub-chart-headline">{{ if $cn }}{{ lang.FormatNumber 0 $citeTotal }} · h-index {{ $hIndex }} · 全球前 2%{{ else if $tw }}{{ lang.FormatNumber 0 $citeTotal }} · h-index {{ $hIndex }} · 全球前 2%{{ else }}{{ lang.FormatNumber 0 $citeTotal }} &middot; h-index {{ $hIndex }} &middot; Top 2%{{ end }}</div>
     <div class="pub-chart-canvas-wrap"><canvas id="pub-chart-cites"></canvas></div>
     <div class="pub-chart-footnote">
-      <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+      {{ if $cn }}记录的引用总数 · 截至{{ else if $tw }}記錄的引用總數 · 截至{{ else }}Recorded citation totals · As of{{ end }} {{ $metrics.as_of }}<br>
+      <a href="{{ $metrics.source_url }}" target="_blank" rel="noopener">Google Scholar &rarr;</a>
     </div>
   </div>
   <div class="pub-chart-card">

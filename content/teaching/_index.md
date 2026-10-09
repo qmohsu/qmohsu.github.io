@@ -12,7 +12,7 @@ Teaching at IPNL spans undergraduate aviation engineering, GNSS-focused subjects
 
 ## Major Recognition
 
-- **2024 — PolyU Presidential Award for Outstanding Teaching** — the university's top individual teaching honor. [PolyU news release](https://www.polyu.edu.hk/aae/news-and-events/news/2024/outstanding-teaching-award---dr-lt-hsu/).
+- **2023 — PolyU Presidential Award for Outstanding Teaching** — the university's top individual teaching honor. [PolyU news release](https://www.polyu.edu.hk/aae/news-and-events/news/2024/outstanding-teaching-award---dr-lt-hsu/).
 - **2024 — UGC Teaching Award nominee** (General Faculty Category) — *PolyU sole nominee.* The University Grants Committee award is Hong Kong's most prestigious teaching recognition.
 - **2024 — URIS Outstanding Supervision Award** — recognizing the mentorship pipeline that carries forward (Louise Zhou, supervised through the URIS programme — the chain extends to Max Lee, then to a new generation).
 - **2023 — Outstanding Award in Teaching, Faculty of Engineering, PolyU**
@@ -23,7 +23,7 @@ Teaching at IPNL spans undergraduate aviation engineering, GNSS-focused subjects
 
 ## GitHub-Based Pedagogy — the signature teaching innovation
 
-The lab's signature teaching-innovation research thread, and the basis of the 2024 President's Teaching Award case. It began in 2020 with the HK$960k Online Teaching Development grant, was peer-disseminated at EDC and SUSTech, and culminated in the **ICLT 2025 conference paper**.
+The lab's signature teaching-innovation research thread, and the basis of the 2023 President's Teaching Award case. It began in 2020 with the HK$960k Online Teaching Development grant, was peer-disseminated at EDC and SUSTech, and culminated in the **ICLT 2025 conference paper**.
 
 **Core idea.** GitHub-based pedagogy is the integration of **(1) a flipped classroom** and **(2) project-based learning**, delivered through the same professional online code-sharing and project-management platform that industry actually uses. When GitHub workflows — version control, pull requests, issue tracking, code review — become the primary classroom collaboration environment, students build online collaboration, problem-solving, and **learning-to-learn (L2L)** competencies far more effectively than traditional submission portals. The same skills (finding open-source code, starting a project with online collaborators, jointly coding and reviewing) are exactly what employers and research increasingly demand.
 

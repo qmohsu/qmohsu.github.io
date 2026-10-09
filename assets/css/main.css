@@ -1206,6 +1206,7 @@ hr {
   border: 1px solid var(--border);
 }
 .image-stack img:last-child { margin-bottom: 0; }
+.news-article .image-stack-portrait { max-width: 360px; }
 
 .news-youtube-link {
   margin: 18px 0 8px;
@@ -2234,7 +2235,7 @@ hr {
   color: #fff;
   max-width: 880px;
   overflow-wrap: anywhere;
-  line-break: anywhere;
+  line-break: auto;
 }
 .page-hero-title .hi-cyan, .page-hero-title .hi-cyan-text {
   color: #9FB0F0;
@@ -4482,6 +4483,7 @@ html { scroll-behavior: smooth; }
   line-break: anywhere;
 }
 .news-card:hover .news-card-title { color: var(--accent); }
+.news-card-title { line-break: auto; }
 .news-card-summary {
   font-size: 0.92rem;
   color: var(--text-secondary);

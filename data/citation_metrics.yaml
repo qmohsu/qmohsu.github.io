@@ -1,0 +1,18 @@
+# Public Google Scholar profile totals at recorded dates; not annual citation counts.
+source_url: "https://scholar.google.com/citations?user=GxfOCUMAAAAJ"
+as_of: "2026-10-05"
+citations: 10037
+h_index: 51
+snapshots:
+  - date: "2026-05-02"
+    citations: 8976
+  - date: "2026-06-10"
+    citations: 9225
+  - date: "2026-07-07"
+    citations: 9455
+  - date: "2026-08-03"
+    citations: 9581
+  - date: "2026-09-07"
+    citations: 9824
+  - date: "2026-10-05"
+    citations: 10037

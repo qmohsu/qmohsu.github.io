@@ -1,7 +1,7 @@
 ---
 title: '<span class="hi-cyan-text">R&amp;D programs</span> &middot; <span class="hi-orange-text">industry partnerships</span>'
 hero_eyebrow: "R&D · INDUSTRY · GRANTS · 2026"
-hero_sub: '<strong>HK$60M+</strong> in research projects (PI, Co-PI &amp; Co-I) &middot; <strong>9+</strong> Huawei contracts &middot; <strong>12</strong> long-running industry, clinical, and standards partners. Largest single grant: <strong>HK$10M</strong>.'
+hero_sub: '<strong>HK$60M+</strong> in research projects (PI, Co-PI &amp; Co-I) &middot; <strong>9+</strong> Huawei contracts &middot; selected industry and institutional collaborations. Largest single grant: <strong>HK$10M</strong>.'
 hero_bg: "/images/projects/urbannav-vehicle.jpg"
 description: "IPNL R&D — core research programs, embodied translational systems, and the multi-year industry partnerships that fund and deploy them."
 aliases:
@@ -86,7 +86,7 @@ aliases:
 
 <div class="page-part" id="partners">
   <span class="page-part-num">Part 2 &middot; Partners</span>
-  <h2 class="page-part-title">12 long-running industry, clinical &amp; standards partners</h2>
+  <h2 class="page-part-title">Selected industry and institutional collaborations</h2>
   <p class="page-part-sub">Multi-year framework agreements and on-the-ground deployments with smartphone makers, automotive integrators, sports institutes, hospitals, and aviation authorities.</p>
 </div>
 

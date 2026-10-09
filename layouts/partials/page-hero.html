@@ -3,6 +3,7 @@
        hero_eyebrow   — small uppercase label above title (defaults to section name)
        hero_title     — override the H1 (defaults to .Title)
        hero_sub       — subtitle line (defaults to .Description)
+       hero_people_counts — prepend current/alumni counts from this section's public profiles
        hero_bg        — background image path (defaults to /images/banners/home-banner-1.png)
        hero_size      — "small" | "medium" (default) */}}
 {{ $cn := eq .Lang "zh-cn" }}{{ $tw := eq .Lang "zh-tw" }}
@@ -21,6 +22,14 @@
 {{ $eyebrow := .Params.hero_eyebrow | default $eyebrowDefault }}
 {{ $title := .Params.hero_title | default .Title }}
 {{ $sub := .Params.hero_sub | default .Description }}
+{{ if .Params.hero_people_counts }}
+  {{ $currentCount := len (where .RegularPages "Params.status" "current") }}
+  {{ $alumniCount := len (where .RegularPages "Params.status" "alumni") }}
+  {{ $counts := printf "<strong>%d current members</strong> and <strong>%d alumni</strong>." $currentCount $alumniCount }}
+  {{ if $cn }}{{ $counts = printf "<strong>%d 位现任成员</strong>与<strong>%d 位校友</strong>。" $currentCount $alumniCount }}{{ end }}
+  {{ if $tw }}{{ $counts = printf "<strong>%d 位現任成員</strong>與<strong>%d 位校友</strong>。" $currentCount $alumniCount }}{{ end }}
+  {{ $sub = printf "%s %s" $counts $sub }}
+{{ end }}
 {{ $bg := .Params.hero_bg | default "/images/banners/home-banner-1.png" }}
 {{ $size := .Params.hero_size | default "medium" }}
 <section class="page-hero page-hero-{{ $size }}">

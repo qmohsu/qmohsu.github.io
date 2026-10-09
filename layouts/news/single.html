@@ -10,7 +10,7 @@
   {{ end }}
   {{ if or .Params.image .Params.images }}
   {{ $imgs := .Params.images | default (slice .Params.image) }}
-  <div class="image-stack">
+  <div class="image-stack{{ if eq .Params.image_style "portrait" }} image-stack-portrait{{ end }}">
     {{ if gt (len $imgs) 1 }}<h2>{{ if eq site.Language.Lang "zh-cn" }}照片{{ else if eq site.Language.Lang "zh-tw" }}照片{{ else }}Photos{{ end }}</h2>{{ end }}
     {{ range $imgs }}{{ if . }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}{{ end }}
   </div>

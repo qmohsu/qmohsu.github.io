@@ -802,6 +802,7 @@
     var lang = document.documentElement.lang || '';
     var L_PUB = lang.indexOf('zh-cn') === 0 ? '论文' : (lang.indexOf('zh-tw') === 0 ? '論文' : 'Publications');
     var L_CUM = lang.indexOf('zh-cn') === 0 ? '累计' : (lang.indexOf('zh-tw') === 0 ? '累計' : 'Cumulative');
+    var L_CITES = lang.indexOf('zh-cn') === 0 ? '次引用' : (lang.indexOf('zh-tw') === 0 ? '次引用' : 'citations');
 
     /* ---- Year chart: bar + cumulative line ---- */
     var yc = document.getElementById('pub-chart-year');
@@ -889,7 +890,7 @@
         data: {
           labels: citeLabels,
           datasets: [{
-            label: 'Cumulative citations',
+            label: L_CITES,
             data: citeValues,
             borderColor: orange,
             backgroundColor: function (ctx) {
@@ -904,7 +905,7 @@
             pointBorderWidth: 1.5,
             pointRadius: 4,
             pointHoverRadius: 6,
-            tension: 0.35,
+            tension: 0,
             fill: true
           }]
         },
@@ -918,7 +919,7 @@
               backgroundColor: '#161B40', borderColor: orange, borderWidth: 1, padding: 10,
               titleFont: { family: "'IBM Plex Mono', monospace" },
               bodyFont: { family: "'Inter', sans-serif" },
-              callbacks: { label: function (ctx) { return ctx.parsed.y.toLocaleString() + ' citations'; } }
+              callbacks: { label: function (ctx) { return ctx.parsed.y.toLocaleString() + ' ' + L_CITES; } }
             }
           },
           scales: {
