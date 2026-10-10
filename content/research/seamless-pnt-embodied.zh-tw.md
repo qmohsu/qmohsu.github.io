@@ -26,3 +26,5 @@ aliases:
 <img src="/images/research/blueprint-seamless-pnt-embodied.svg" alt="單一感測器無法到處工作;IPNL 用因子圖把多感測器緊耦合,實現無縫定位。" style="max-width:660px;width:100%;height:auto;display:block;margin:1.5rem auto;" />
 
 這條研究方向涵蓋:**智慧型手機級城市定位**(L5/E5a/B2a 手機接收機的 3DMA GNSS)、**自動駕駛感知整合**(LiDAR + 相機 + GNSS + INS)、**無人機導航**(勵銘航空導航青年學者)、**室內定位**(以 2026 Artech House 著作 *[室內定位與室內導航原理](/zh-tw/publications/book-2025-principles-of-indoor-positioning-and-indoor-navigation/)* 與 IPIN 2024 大會主席工作為錨)。
+
+**資助項目。** [ITF-ITSP 智慧型手機定位項目](/zh-tw/projects/3dma-gnss/)的資助期已於 2026 年 5 月結束；[RIAIoT 道路至停車場車輛定位 Seed Fund 項目](/zh-tw/projects/road-to-parking-positioning/)於 2026 年 9 月獲批，支持室外道路與有遮蔽停車環境過渡中的多模態融合研究。

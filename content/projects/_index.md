@@ -87,7 +87,7 @@ aliases:
 <div class="page-part" id="partners">
   <span class="page-part-num">Part 2 &middot; Partners</span>
   <h2 class="page-part-title">Selected industry and institutional collaborations</h2>
-  <p class="page-part-sub">Multi-year framework agreements and on-the-ground deployments with smartphone makers, automotive integrators, sports institutes, hospitals, and aviation authorities.</p>
+  <p class="page-part-sub">Collaborative research with smartphone makers, automotive integrators, sports institutes, healthcare organizations, and aviation stakeholders.</p>
 </div>
 
 <section class="partner-section">
@@ -104,7 +104,7 @@ aliases:
 </section>
 
 <section class="partner-section">
-  <div class="section-eyebrow">Consumer-grade &middot; 1B+ devices</div>
+  <div class="section-eyebrow">Consumer technology</div>
   <h2 class="section-h2">Smartphone &amp; mobile platform partners</h2>
   <div class="stat-grid">
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">Premium</div><div class="stat-label">OPPO flagship models</div><div class="stat-context">AI-driven urban GNSS positioning collaboration</div></div>
@@ -125,7 +125,7 @@ aliases:
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">SAIC Motor</span></div><div class="stat-num">Consulting</div><div class="stat-label">on AV integrity</div><div class="stat-context">Integrity-monitoring frameworks for autonomous vehicle release decisions</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">Since 2021</div><div class="stat-label">vision-impaired pedestrians</div><div class="stat-context">3D mapping-aided GNSS for assistive navigation in dense Manhattan</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">HKSI</span></div><div class="stat-num">Olympic</div><div class="stat-label">windsurf training</div><div class="stat-context">Smart sports monitoring for elite windsurfing</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">Hotel ICON</span></div><div class="stat-num">Pilot</div><div class="stat-label">site for Stairio</div><div class="stat-context">First deployment of the lab's autonomous staircase inspection robot</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">Hotel ICON</span></div><div class="stat-num">Research</div><div class="stat-label">Stairio collaboration</div><div class="stat-context">Research support for staircase safety inspection and predictive maintenance</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/towngas.png" alt="Towngas" onerror="this.style.display='none'"><span class="stat-partner-text">Towngas</span></div><div class="stat-num">Fleet AI</div><div class="stat-label">vehicular self-diagnosis</div><div class="stat-context">AI-driven self-diagnosis &amp; location monitoring for fleet management &mdash; HKSAR Smart Traffic Fund</div></div>
   </div>
 </section>

@@ -6,7 +6,7 @@ category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
-funding: "香港體育學院(HKSI),PI,2026–"
+funding: "HKSI 合作（許立達：理大 PI；2026年5月–2028年4月）；RISports 相關項目計劃於2026年12月–2027年11月進行"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
 images: ["/images/news/2026-polyu-hksi-windsurfing.jpg"]
@@ -18,6 +18,8 @@ weight: 4
 <strong>計畫期間。</strong>2026 年 5 月 1 日 – 2028 年 4 月 30 日。
 
 <strong>經費來源。</strong>
-- <strong>香港體育學院(HKSI)</strong> —— PI,2026–
+- **運動科研資助計劃（SRFS）** —— HKSI 牽頭該資助項目，許立達教授擔任理大 PI。
+
+**即將開展的 RISports 項目。** *面向奧運級風帆運動、基於 UWB-GNSS-IMU 訓練數據的教練導向起航表現 KPI 框架*（Coach-Centred Start Performance KPI Framework for Olympic-Class Windsurfing Using UWB-GNSS-IMU Training Data）由許立達教授擔任 PI，計劃於 **2026 年 12 月 1 日至 2027 年 11 月 30 日**進行，研究面向教練的風帆起航表現分析框架。
 
 *圖:MFonzatti / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FoilsJourn%C3%A9es2025_ENVSN_02.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。示意圖,非本專案影像。*

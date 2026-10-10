@@ -6,13 +6,13 @@ authors:
   - "Fu L."
   - "Wang G"
   - "Cheng Q."
-  - "Hsu L. T. and Ochieng W. Y."
-year: 2020
+  - "Hsu L. T."
+  - "Ochieng W. Y."
+year: 2021
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
 cv_number: 93
 featured: false
-quartile: "Q1"
 doi: "10.1002/navi.408"
 pdf: ""
 code: ""

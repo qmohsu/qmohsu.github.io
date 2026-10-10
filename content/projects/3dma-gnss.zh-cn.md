@@ -8,7 +8,7 @@ category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
-funding: "华为长期合作研究伙伴(自 2018 起,9+ 子合同);ITF-ITSP HK$801k(PI, 2024, 智能手机城市定位 AI 辅助)"
+funding: "华为长期合作研究伙伴（自2018起，9+子合同）；ITF-ITSP ITS/091/23，HK$801k项目预算（PI；2025年8月–2026年5月，已完成）"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["hoi-fung-ng", "guohao-zhang", "penghui-xu", "haosheng-xu", "hongmin-zhang", "chin-lok-tsang", "shiyu-bai", "max-lee", "meiling-su"]
 tags: ["3DMA GNSS", "smartphone", "IoT", "consumer devices", "Huawei", "Android Location", "ITF-ITSP", "skymask matching", "ray tracing"]
@@ -21,7 +21,7 @@ weight: 4
 
 <strong>经费来源。</strong>
 - <strong>华为</strong> —— 长期合作研究伙伴,涵盖 3DMA GNSS、深度集成、室内定位、协同 GNSS、移动设备多传感器融合(自 2018 起,框架下 9+ 子合同)
-- <strong>ITF-ITSP</strong> —— *面向香港智慧城市的 AI 辅助智能手机城市定位*,HK$801k(PI, 2024)
+- **ITF-ITSP ITS/091/23** —— *面向香港智慧城市的 AI 辅助智能手机城市定位*，项目预算 HK$801k，许立达教授担任 PI。资助项目于 **2025 年 8 月 1 日至 2026 年 5 月 31 日**进行，现已完成；项目审查会议于 **2026 年 9 月 28 日**举行。
 
 <strong>产业合作 —— 谷歌 Android 定位组。</strong> 许立达教授曾任<strong>谷歌山景城 Android 定位组访问研究科学家</strong>,驻地 20 个月(2022–2023),从事基于 FGO 的智能手机定位。合作延续到 <strong>2024 年 8 月给 Pixel 组的演讲</strong>,以及 IPNL 与 Android 定位组在因子图智能手机 GNSS 上的持续交流。
 

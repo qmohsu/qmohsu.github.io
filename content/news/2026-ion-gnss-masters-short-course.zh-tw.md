@@ -2,13 +2,17 @@
 title: "許立達教授獲選為 ION GNSS+ 2026 四十週年「大師短期課程」ION 大師講師"
 slug: "2026-ion-gnss-masters-short-course"
 date: 2026-07-15
-date_note: "Announcement; the ION GNSS+ 2026 Masters Short Course takes place 14 September 2026 in Orlando"
+date_note: "2026 年 7 月 15 日發布的歷史公告；課程日為 2026 年 9 月 14 日；2026 年 10 月 10 日補充存檔說明"
 category: "recognition"
 summary: "許立達教授獲邀擔任 ION GNSS+ 2026 四十週年大師短期課程的 ION 大師講師，主講《Indoor Navigation as GNSS in Disguise》，與 Bradford Parkinson 等 GNSS 先驅同列講師陣容。"
 image: "/images/news/2026-ion-gnss-masters-short-course.jpg"
 source_type: "original_local"
 source_site: "original"
+image_style: "portrait"
 ---
+
+**存檔說明 · 2026 年 10 月 10 日：** 本文記錄 7 月發布的課程邀請公告。[ION 官方議程](https://www.ion.org/gnss/short-courses.cfm)列出的課程日期為 2026 年 9 月 14 日，下文保留當時的公告內容。
+
 
 2026 年 9 月，許立達教授將於 **[ION GNSS+ 2026](https://www.ion.org/gnss/short-courses.cfm) 大師短期課程（Masters Short Course）** 中主講一堂課程——這是[美國導航學會（Institute of Navigation）](https://www.ion.org/)旗艦衛星導航會議四十週年的特別活動。許教授獲邀成為 **ION 大師講師（ION Master Instructor）** 之一：由學會邀請、以服務全球導航社群為宗旨的國際知名 GNSS 專家與教育者。他的課程主題為《Indoor Navigation as GNSS in Disguise（室內導航——偽裝的 GNSS）》，訂於 2026 年 9 月 14 日（星期一）於美國佛羅里達州奧蘭多舉行。
 

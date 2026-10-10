@@ -80,7 +80,7 @@ aliases:
 <div class="page-part" id="partners">
   <span class="page-part-num">第二部分 · 合作伙伴</span>
   <h2 class="page-part-title">产业与机构合作选录</h2>
-  <p class="page-part-sub">与智能手机厂商、汽车集团、体育研究所、医疗机构、航空管理部门的多年期框架合作与实地部署。</p>
+  <p class="page-part-sub">与智能手机厂商、汽车集团、体育研究所、医疗机构及航空领域伙伴开展合作研究。</p>
 </div>
 
 <section class="partner-section">
@@ -97,7 +97,7 @@ aliases:
 </section>
 
 <section class="partner-section">
-  <div class="section-eyebrow">消费级 · 10 亿+ 设备</div>
+  <div class="section-eyebrow">消费科技</div>
   <h2 class="section-h2">智能手机与移动平台合作伙伴</h2>
   <div class="stat-grid">
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/oppo.png" alt="OPPO" onerror="this.style.display='none'"><span class="stat-partner-text">OPPO</span></div><div class="stat-num">Premium</div><div class="stat-label">OPPO 旗舰机型</div><div class="stat-context">AI 驱动的城市 GNSS 定位合作</div></div>
@@ -118,7 +118,7 @@ aliases:
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/saic.webp" alt="SAIC Motor" onerror="this.style.display='none'"><span class="stat-partner-text">上汽集团</span></div><div class="stat-num">咨询</div><div class="stat-label">自动驾驶完整性</div><div class="stat-context">自动驾驶车辆发布决策的完整性监测框架</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/nyu-langone.jpg" alt="NYU Langone Health" onerror="this.style.display='none'"><span class="stat-partner-text">NYU Langone</span></div><div class="stat-num">2021 起</div><div class="stat-label">视障行人导航</div><div class="stat-context">密集曼哈顿城市环境的 3D 地图辅助 GNSS 辅助导航</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hksi.png" alt="Hong Kong Sports Institute" onerror="this.style.display='none'"><span class="stat-partner-text">香港体院</span></div><div class="stat-num">奥运</div><div class="stat-label">风帆训练</div><div class="stat-context">精英风帆智慧运动监测</div></div>
-    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">唯港荟</span></div><div class="stat-num">示范</div><div class="stat-label">Stairio 部署点</div><div class="stat-context">实验室自主楼梯安全巡检机器人首个部署地</div></div>
+    <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/hotel-icon.png" alt="Hotel ICON" onerror="this.style.display='none'"><span class="stat-partner-text">唯港荟</span></div><div class="stat-num">研究</div><div class="stat-label">Stairio 合作</div><div class="stat-context">支持楼梯安全巡检与预测性维护研究</div></div>
     <div class="stat-card"><div class="stat-partner has-logo"><img class="partner-logo" src="/images/partners/towngas.png" alt="Towngas" onerror="this.style.display='none'"><span class="stat-partner-text">中华煤气</span></div><div class="stat-num">车队 AI</div><div class="stat-label">车辆自我诊断</div><div class="stat-context">面向车队管理的 AI 车辆自我诊断与位置监控 —— 香港智慧交通基金(STF)</div></div>
   </div>
 </section>

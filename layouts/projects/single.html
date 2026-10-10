@@ -8,6 +8,8 @@
   "ongoing"   (cond $cn "进行中" (cond $tw "進行中" "ongoing"))
   "planned"   (cond $cn "规划中" (cond $tw "規劃中" "planned"))
   "completed" (cond $cn "已完成" (cond $tw "已完成" "completed"))
+  "awarded" (cond $cn "获资助" (cond $tw "獲資助" "awarded"))
+  "funding-completed" (cond $cn "资助项目已完成" (cond $tw "資助項目已完成" "Funded project completed"))
   "archived"  (cond $cn "已归档" (cond $tw "已歸檔" "archived"))
 }}
 {{ $lblFunding := cond $cn "经费" (cond $tw "經費" "Funding") }}

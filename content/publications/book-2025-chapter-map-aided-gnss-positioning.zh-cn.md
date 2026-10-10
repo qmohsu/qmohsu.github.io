@@ -5,12 +5,12 @@ authors:
   - "Hsu L. T."
   - "Zhang G."
   - "Ng H. F."
-year: 2025
-venue: "Springer Publishers Inc"
+year: 2026
+venue: "Handbook of Wireless Positioning, Springer Nature"
 type: "book"
 cv_number: 2
 featured: false
-doi: ""
+doi: "10.1007/978-981-99-1650-4_26-1"
 pdf: ""
 code: ""
 data: ""
@@ -21,4 +21,4 @@ themes:
 tags: []
 ---
 
-<aside class="translation-stub">本论文以英文发表。完整书目详情、DOI / PDF 链接请见 <a href="/en/publications/book-2025-chapter-map-aided-gnss-positioning/">英文页面</a>。</aside>
+2026 年 8 月 30 日线上发表。第 26 章，第 1–31 页。

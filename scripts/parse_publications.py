@@ -127,8 +127,8 @@ def parse_journal_line(line, current_year):
     rest = rest.replace("\\_", "_")
     rest = rest.replace("\\", "")
 
-    # Try to extract year from (YYYY) pattern
-    year_match = re.search(r"\((\d{4})\)", rest)
+    # The canonical list also records first-online months as (YYYY-MM).
+    year_match = re.search(r"\((\d{4})(?:-\d{2})?\)", rest)
     year = int(year_match.group(1)) if year_match else current_year
 
     # Split at year to get authors and rest
@@ -152,8 +152,9 @@ def parse_journal_line(line, current_year):
     title = ""
     venue = ""
 
-    # Check for quoted title
-    quote_match = re.search(r'"([^"]+)"', after_year)
+    # Only a leading quotation encloses the title. Quoted text in provenance
+    # notes after the citation must not replace an otherwise unquoted title.
+    quote_match = re.match(r'^"([^"]+)"', after_year)
     if quote_match:
         title = quote_match.group(1).strip().rstrip(".")
         after_title = after_year[quote_match.end():].strip().lstrip(",").strip()

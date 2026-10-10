@@ -5,12 +5,12 @@ authors:
   - "Hsu L. T."
   - "Zhang G."
   - "Ng H. F."
-year: 2025
-venue: "Springer Publishers Inc"
+year: 2026
+venue: "Handbook of Wireless Positioning, Springer Nature"
 type: "book"
 cv_number: 2
 featured: false
-doi: ""
+doi: "10.1007/978-981-99-1650-4_26-1"
 pdf: ""
 code: ""
 data: ""
@@ -20,3 +20,5 @@ themes:
   - "optimization-estimation"
 tags: []
 ---
+
+Published online on 30 August 2026. Chapter 26, pp. 1–31.

@@ -6,7 +6,7 @@ category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
-funding: "Huawei collaborative research partnership (since 2018; 9+ contracts); ITF-ITSP HK$801k (PI, 2024, smartphone urban positioning aided by AI)"
+funding: "Huawei collaborative research partnership (since 2018; 9+ contracts); ITF-ITSP ITS/091/23, HK$801k project budget (PI; Aug 2025–May 2026, completed)"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["hoi-fung-ng", "guohao-zhang", "penghui-xu", "haosheng-xu", "hongmin-zhang", "chin-lok-tsang", "shiyu-bai", "max-lee", "meiling-su"]
 tags: ["3DMA GNSS", "smartphone", "IoT", "consumer devices", "Huawei", "Android Location", "ITF-ITSP", "skymask matching", "ray tracing"]
@@ -21,7 +21,7 @@ This program uses 3D city models, skymask matching, and lightweight ray tracing 
 
 **Funding.**
 - **Huawei** — long-running collaborative research partnership on 3DMA GNSS, deep integration, indoor positioning, collaborative GNSS, and multi-sensor fusion for mobile devices (since 2018; 9+ contracts under the framework)
-- **ITF-ITSP** — *Improving Smartphone Urban Positioning aided by AI for HK Smart Cities*, HK$801k (PI, 2024)
+- **ITF-ITSP ITS/091/23** — *Improving Smartphone Urban Positioning aided by AI for HK Smart Cities*, HK$801k project budget; Li-Ta Hsu as PI. The funded project ran **1 August 2025 – 31 May 2026** and is completed. A project review meeting took place on **28 September 2026**.
 
 **Industry engagement — Google Android Location.** Prof. Hsu served as **Visiting Research Scientist at Google (Mountain View, USA)**, on the Android Location team for 20 months (2022–2023), working on FGO-based smartphone positioning. The collaboration continued with a **Pixel team talk in August 2024** and ongoing exchange between IPNL research and the Android Location group on factor-graph approaches to smartphone GNSS.
 

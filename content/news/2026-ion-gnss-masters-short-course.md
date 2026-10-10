@@ -2,13 +2,17 @@
 title: "Prof. Hsu named an ION Master Instructor for the ION GNSS+ 2026 40th-Anniversary Masters Short Course"
 slug: "2026-ion-gnss-masters-short-course"
 date: 2026-07-15
-date_note: "Announcement; the ION GNSS+ 2026 Masters Short Course takes place 14 September 2026 in Orlando"
+date_note: "Historical announcement published 15 July 2026; programme date 14 September 2026; archive note added 10 October 2026"
 category: "recognition"
 summary: "Prof. Li-Ta Hsu has been invited as an ION Master Instructor for the 40th-anniversary Masters Short Course Program at ION GNSS+ 2026, delivering the lecture \"Indoor Navigation as GNSS in Disguise\" alongside GNSS pioneers including Bradford Parkinson."
 image: "/images/news/2026-ion-gnss-masters-short-course.jpg"
 source_type: "original_local"
 source_site: "original"
+image_style: "portrait"
 ---
+
+**Archive note — 10 October 2026:** This article records the July invitation announcement for the course listed in the [ION programme](https://www.ion.org/gnss/short-courses.cfm) on 14 September 2026. The announcement below is retained as a historical record.
+
 
 In September 2026, Prof. Li-Ta Hsu will lecture at the **[ION GNSS+ 2026](https://www.ion.org/gnss/short-courses.cfm) Masters Short Course Program** — a special event marking the 40th anniversary of the [Institute of Navigation](https://www.ion.org/)'s flagship satellite-navigation conference. Prof. Hsu was invited as one of the **ION Master Instructors**: internationally recognized GNSS experts and educators who lecture as a service to the global navigation community. His course, *"Indoor Navigation as GNSS in Disguise,"* is scheduled for Monday, 14 September 2026 in Orlando, Florida.
 

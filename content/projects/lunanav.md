@@ -1,19 +1,17 @@
 ---
 title: "LunaNav: Lunar Robotic Exploration"
 slug: "lunanav"
-description: "Extending the lab's multi-sensor positioning expertise from Earth's urban canyons into lunar surface navigation."
+description: "A completed RCUAS-funded project exploring how multi-sensor positioning can support lunar robotic navigation."
 category: "translational-system"
-status: "active"
+status: "funding-completed"
 flagship: false
-start_date: 2024
-funding: "PolyU Research Centre for Unmanned Autonomous Systems (RCUAS), HK$500k (PI)"
+start_date: 2025
+funding: "PolyU RCUAS-supported project (PI; funded project completed)"
 themes: ["environment-aware-pnt", "optimization-estimation", "seamless-pnt-embodied"]
 tags: ["planetary robotics", "Moon", "GNSS-denied", "new domain"]
 weight: 2
 ---
 
-LunaNav extends IPNL's multi-sensor positioning expertise into a new domain: **lunar robotic exploration**. The Moon has no GNSS, no atmosphere, and a fundamentally different visibility regime than Earth's urban canyons — but the underlying problem of robust positioning from a sparse, locally available sensor set carries directly over.
+LunaNav explored the application of IPNL's multi-sensor positioning research to lunar robotic navigation, connecting sensor fusion and estimation with positioning in GNSS-denied environments.
 
-**Why it matters.** This is the lab's first foray into planetary robotics. It connects the long-running research on GNSS-denied indoor positioning, factor-graph estimation, and multi-sensor fusion to a frontier application domain that is gaining national-program attention.
-
-**Funding.** PolyU Research Centre for Unmanned Autonomous Systems (RCUAS), HK$500k (PI).
+**Funded project.** Li-Ta Hsu served as PI of the RCUAS-supported project, which began in June 2025 with scheduled completion in July 2026. The university project record lists it as **completed**, as of October 2026. This status refers to the funded project, rather than the broader lunar-navigation research topic.

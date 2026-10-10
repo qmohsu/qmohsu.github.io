@@ -8,7 +8,7 @@ category: "research-program"
 status: "active"
 flagship: true
 start_date: 2017
-funding: "華為長期合作研究夥伴(自 2018 起,9+ 子合同);ITF-ITSP HK$801k(PI, 2024)"
+funding: "華為長期合作研究夥伴（自2018起，9+子合同）；ITF-ITSP ITS/091/23，HK$801k項目預算（PI；2025年8月–2026年5月，已完成）"
 themes: ["urban-gnss-reliability", "environment-aware-pnt", "optimization-estimation", "integrity-localization", "seamless-pnt-embodied"]
 people: ["hoi-fung-ng", "guohao-zhang", "penghui-xu", "haosheng-xu", "hongmin-zhang", "chin-lok-tsang", "shiyu-bai", "max-lee", "meiling-su"]
 tags: ["3DMA GNSS", "smartphone", "IoT", "consumer devices", "Huawei", "Android Location", "ITF-ITSP", "skymask matching", "ray tracing"]
@@ -21,7 +21,7 @@ weight: 4
 
 <strong>經費來源。</strong>
 - <strong>華為</strong> —— 長期合作研究夥伴,涵蓋 3DMA GNSS、深度整合、室內定位、協同 GNSS、行動設備多感測器融合(自 2018 起,框架下 9+ 子合同)
-- <strong>ITF-ITSP</strong> —— *面向香港智慧城市的 AI 輔助智慧型手機城市定位*,HK$801k(PI, 2024)
+- **ITF-ITSP ITS/091/23** —— *面向香港智慧城市的 AI 輔助智慧型手機城市定位*，項目預算 HK$801k，許立達教授擔任 PI。資助項目於 **2025 年 8 月 1 日至 2026 年 5 月 31 日**進行，現已完成；項目審查會議於 **2026 年 9 月 28 日**舉行。
 
 <strong>產業合作 —— 谷歌 Android 定位組。</strong> 許立達教授曾任<strong>谷歌山景城 Android 定位組訪問研究科學家</strong>,駐地 20 個月(2022–2023),從事基於 FGO 的智慧型手機定位。合作延續到 <strong>2024 年 8 月給 Pixel 組的演講</strong>,以及 IPNL 與 Android 定位組在因子圖智慧型手機 GNSS 上的持續交流。
 

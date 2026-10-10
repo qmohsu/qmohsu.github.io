@@ -1,12 +1,13 @@
 ---
 title: "Stairio: Autonomous Staircase Safety Monitoring Robot"
 slug: "stairio"
-description: "Handrail-affixed locomotion system with onboard AI vision for autonomous staircase inspection and predictive maintenance."
+description: "Research on handrail-mounted robots, AI vision and multi-sensor perception for staircase safety inspection and predictive maintenance."
 category: "translational-system"
 status: "active"
 flagship: false
-start_date: 2024
-funding: "Hotel ICON Research Scheme (HK$500k, PI)"
+start_date: 2025
+end_date: 2027
+funding: "Hotel ICON Research Funding Scheme (HK$500k, PI; Oct 2025–Sep 2027)"
 partners: ["Hotel ICON (PolyU)"]
 themes: ["environment-aware-pnt", "seamless-pnt-embodied"]
 people: ["max-lee", "luling-yuan"]
@@ -14,10 +15,10 @@ tags: ["robotics", "embodied autonomy", "predictive maintenance", "translational
 weight: 1
 ---
 
-Stairio is a translational robotics project for autonomous staircase inspection and predictive maintenance. The system pairs a handrail-affixed locomotion mechanism with onboard AI vision and multi-sensor perception to deliver routine inspection of public-building staircases at a fraction of the cost of human inspection.
+Stairio investigates handrail-mounted robotics, AI vision and multi-sensor perception for staircase safety inspection and predictive maintenance.
 
-**Why it matters.** Stairio demonstrates IPNL's ability to move from navigation and perception research toward deployable robotic systems with a named industry partner, a real deployment site, and recognition from international invention competitions.
+**Research support.** The Hotel ICON Research Funding Scheme supports the project, with Li-Ta Hsu as PI. The funded period is **1 October 2025 – 30 September 2027**.
 
 **Recognition.** Awarded **Gold Medal with Congratulations of the Jury at the 51st International Exhibition of Inventions Geneva 2026** ([news](/en/news/2026-stairio-geneva-gold/)).
 
-**Partner.** Hotel ICON (PolyU's teaching hotel) — Stairio is being prepared for deployment on Hotel ICON's staircase network.
+**Partner.** Hotel ICON, PolyU's teaching hotel, supports the staircase-inspection research collaboration.

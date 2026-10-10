@@ -6,13 +6,13 @@ authors:
   - "Fu L."
   - "Wang G"
   - "Cheng Q."
-  - "Hsu L. T. and Ochieng W. Y."
-year: 2020
+  - "Hsu L. T."
+  - "Ochieng W. Y."
+year: 2021
 venue: "NAVIGATION: Journal of the Institute of Navigation"
 type: "journal"
 cv_number: 93
 featured: false
-quartile: "Q1"
 doi: "10.1002/navi.408"
 pdf: ""
 code: ""
@@ -23,4 +23,4 @@ themes:
 tags: []
 ---
 
-<aside class="translation-stub">本論文以英文發表。完整書目詳情、DOI / PDF 連結請見 <a href="/en/publications/2020-using-dual-polarization-gps-antenna-with-optimized-adaptive/">英文頁面</a>。</aside>
+本論文發表於 *NAVIGATION: Journal of the Institute of Navigation*，於 2021 年 1 月 12 日首次線上發表，後刊於 2021 年 3 月的期刊卷期。完整書目資訊與 DOI 見上方。

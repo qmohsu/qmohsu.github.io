@@ -2,13 +2,17 @@
 title: "许立达教授获选为 ION GNSS+ 2026 四十周年“大师短期课程”ION 大师讲师"
 slug: "2026-ion-gnss-masters-short-course"
 date: 2026-07-15
-date_note: "Announcement; the ION GNSS+ 2026 Masters Short Course takes place 14 September 2026 in Orlando"
+date_note: "2026 年 7 月 15 日发布的历史公告；课程日为 2026 年 9 月 14 日；2026 年 10 月 10 日补充存档说明"
 category: "recognition"
 summary: "许立达教授获邀担任 ION GNSS+ 2026 四十周年大师短期课程的 ION 大师讲师，主讲《Indoor Navigation as GNSS in Disguise》，与 Bradford Parkinson 等 GNSS 先驱同列讲师阵容。"
 image: "/images/news/2026-ion-gnss-masters-short-course.jpg"
 source_type: "original_local"
 source_site: "original"
+image_style: "portrait"
 ---
+
+**存档说明 · 2026 年 10 月 10 日：** 本文记录 7 月发布的课程邀请公告。[ION 官方议程](https://www.ion.org/gnss/short-courses.cfm)列出的课程日期为 2026 年 9 月 14 日，下文保留当时的公告内容。
+
 
 2026 年 9 月，许立达教授将在 **[ION GNSS+ 2026](https://www.ion.org/gnss/short-courses.cfm) 大师短期课程（Masters Short Course）** 中主讲一门课程——这是[美国导航学会（Institute of Navigation）](https://www.ion.org/)旗舰卫星导航会议四十周年的特别活动。许教授获邀成为 **ION 大师讲师（ION Master Instructor）** 之一：由学会邀请、以服务全球导航社群为宗旨的国际知名 GNSS 专家与教育者。他的课程主题为《Indoor Navigation as GNSS in Disguise（室内导航——伪装的 GNSS）》，定于 2026 年 9 月 14 日（周一）在美国佛罗里达州奥兰多举行。
 

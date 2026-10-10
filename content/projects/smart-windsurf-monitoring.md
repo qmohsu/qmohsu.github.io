@@ -6,7 +6,7 @@ category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
-funding: "Hong Kong Sports Institute (HKSI), PI, 2026–"
+funding: "HKSI collaboration (Li-Ta Hsu: PolyU PI; May 2026–Apr 2028); RISports project scheduled Dec 2026–Nov 2027"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
 images: ["/images/news/2026-polyu-hksi-windsurfing.jpg"]
@@ -18,6 +18,8 @@ The Department of Aeronautical and Aviation Engineering at The Hong Kong Polytec
 **Project period.** 1 May 2026 – 30 April 2028.
 
 **Funding.**
-- **Hong Kong Sports Institute (HKSI)** — PI, 2026–
+- **Sports Science and Research Funding Scheme (SRFS)** — HKSI leads the award; Li-Ta Hsu is the PolyU PI.
+
+**Upcoming RISports project.** *Coach-Centred Start Performance KPI Framework for Olympic-Class Windsurfing Using UWB-GNSS-IMU Training Data*, with Li-Ta Hsu as PI, is scheduled for **1 December 2026 – 30 November 2027**. This research focuses on a coach-centred framework for analysing windsurfing start performance.
 
 *Image: MFonzatti / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FoilsJourn%C3%A9es2025_ENVSN_02.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Illustrative image, not from the project.*
