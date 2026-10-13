@@ -8,7 +8,10 @@ summary: "許立達教授擔任 Intelligent urban computing 專題客座編輯�
 source_type: "original_local"
 source_site: "Scientific Reports / Nature Portfolio"
 source_url: "https://www.nature.com/collections/gfaecbebdc"
+image: "/images/news/2026-scientific-reports-urban-computing-poster-en.png"
 ---
+
+*徵稿海報中的城市圖像為 AI 生成示意圖。[查看原尺寸海報](/images/news/2026-scientific-reports-urban-computing-poster-en.png)。*
 
 香港理工大學航空及民航工程學系**許立達教授**擔任 *Scientific Reports* **Intelligent urban computing**（智慧城市運算）專題的客座編輯。
 

@@ -8,7 +8,10 @@ summary: "Li-Ta Hsu serves as a Guest Editor for the Intelligent urban computing
 source_type: "original_local"
 source_site: "Scientific Reports / Nature Portfolio"
 source_url: "https://www.nature.com/collections/gfaecbebdc"
+image: "/images/news/2026-scientific-reports-urban-computing-poster-en.png"
 ---
+
+*Promotional poster with an AI-generated concept illustration. [Open full-size poster](/images/news/2026-scientific-reports-urban-computing-poster-en.png).*
 
 **Prof. Li-Ta Hsu**, from PolyU's Department of Aeronautical and Aviation Engineering, serves as a Guest Editor for the **Intelligent urban computing** Collection in *Scientific Reports*.
 

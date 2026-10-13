@@ -8,7 +8,10 @@ summary: "许立达教授担任 Intelligent urban computing 专题客座编辑�
 source_type: "original_local"
 source_site: "Scientific Reports / Nature Portfolio"
 source_url: "https://www.nature.com/collections/gfaecbebdc"
+image: "/images/news/2026-scientific-reports-urban-computing-poster-zh-cn.png"
 ---
+
+*征稿海报中的城市图像为 AI 生成示意图。[查看原尺寸海报](/images/news/2026-scientific-reports-urban-computing-poster-zh-cn.png)。*
 
 香港理工大学航空及民航工程学系**许立达教授**担任 *Scientific Reports* **Intelligent urban computing**（智能城市计算）专题的客座编辑。
 
