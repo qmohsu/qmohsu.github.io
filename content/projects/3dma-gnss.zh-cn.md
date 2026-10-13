@@ -23,6 +23,10 @@ weight: 4
 - <strong>华为</strong> —— 长期合作研究伙伴,涵盖 3DMA GNSS、深度集成、室内定位、协同 GNSS、移动设备多传感器融合(自 2018 起,框架下 9+ 子合同)
 - **ITF-ITSP ITS/091/23** —— *面向香港智慧城市的 AI 辅助智能手机城市定位*，项目预算 HK$801k，许立达教授担任 PI。资助项目于 **2025 年 8 月 1 日至 2026 年 5 月 31 日**进行，现已完成；项目审查会议于 **2026 年 9 月 28 日**举行。
 
+{{< figure src="/images/projects/its09123-fieldwork-202604-01.png" width="427" height="569" alt="ITS/091/23 项目于 2026 年 4 月进行实地数据采集，第一视角" caption="ITS/091/23 智能手机城市定位项目的实地数据采集，2026 年 4 月。" >}}
+
+{{< figure src="/images/projects/its09123-fieldwork-202604-02.png" width="627" height="572" alt="ITS/091/23 项目于 2026 年 4 月进行实地数据采集，第二视角" caption="ITS/091/23 智能手机城市定位项目的实地数据采集，2026 年 4 月。" >}}
+
 <strong>产业合作 —— 谷歌 Android 定位组。</strong> 许立达教授曾任<strong>谷歌山景城 Android 定位组访问研究科学家</strong>,驻地 20 个月(2022–2023),从事基于 FGO 的智能手机定位。合作延续到 <strong>2024 年 8 月给 Pixel 组的演讲</strong>,以及 IPNL 与 Android 定位组在因子图智能手机 GNSS 上的持续交流。
 
 <strong>其他产业合作伙伴。</strong> 华为车 BU、OPPO、AIROHA(台湾)、联发科(台湾)、NYU Langone Medical Center(自 2021 年起,3DMA GNSS 用于视障行人导航)。

@@ -23,6 +23,10 @@ This program uses 3D city models, skymask matching, and lightweight ray tracing 
 - **Huawei** — long-running collaborative research partnership on 3DMA GNSS, deep integration, indoor positioning, collaborative GNSS, and multi-sensor fusion for mobile devices (since 2018; 9+ contracts under the framework)
 - **ITF-ITSP ITS/091/23** — *Improving Smartphone Urban Positioning aided by AI for HK Smart Cities*, HK$801k project budget; Li-Ta Hsu as PI. The funded project ran **1 August 2025 – 31 May 2026** and is completed. A project review meeting took place on **28 September 2026**.
 
+{{< figure src="/images/projects/its09123-fieldwork-202604-01.png" width="427" height="569" alt="ITS/091/23 field data collection in April 2026, first view" caption="Field data collection for the ITS/091/23 smartphone urban positioning project, April 2026." >}}
+
+{{< figure src="/images/projects/its09123-fieldwork-202604-02.png" width="627" height="572" alt="ITS/091/23 field data collection in April 2026, second view" caption="Field data collection for the ITS/091/23 smartphone urban positioning project, April 2026." >}}
+
 **Industry engagement — Google Android Location.** Prof. Hsu served as **Visiting Research Scientist at Google (Mountain View, USA)**, on the Android Location team for 20 months (2022–2023), working on FGO-based smartphone positioning. The collaboration continued with a **Pixel team talk in August 2024** and ongoing exchange between IPNL research and the Android Location group on factor-graph approaches to smartphone GNSS.
 
 **Other industry partners.** Huawei Car BU, OPPO, AIROHA (Taiwan), MediaTek (Taiwan), NYU Langone Medical Center (3DMA GNSS for vision-impaired pedestrians, since 2021).

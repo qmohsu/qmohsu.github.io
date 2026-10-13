@@ -4,7 +4,7 @@ slug: "ipnl-co-organizing-1st-icra-2026-workshop-on-robot-meets-gnss-and-ranging
 date: 2026-06-05
 date_note: "Workshop date; post updated to a post-event recap on 2026-06-13"
 category: "recognition"
-summary: "由許立達教授共同主辦的「首屆 Robot Meets GNSS and Ranging for Seamless Autonomy 研討會」於 2026 年 6 月 5 日在維也納的 IEEE ICRA 2026 舉行。這場為期一天的研討會匯聚了衛星導航與機器人學社群，內容包括主題演講、19 場論文發表、一場海報展示以及一場產業專場，最終取得明顯的成功，並已著眼於籌辦第二屆。"
+summary: "由許立達教授共同主辦的「首屆 Robot Meets GNSS and Ranging for Seamless Autonomy 研討會」於 2026 年 6 月 5 日在維也納的 IEEE ICRA 2026 舉行。這場為期一天的研討會匯聚了衛星導航與機器人學社群，內容包括主題演講、19 場論文發表、一場海報展示以及一場產業專場，最終取得明顯的成功。"
 images:
   - "/images/news/2026-icra-workshop-robot-ranging.jpg"
   - "/images/news/2026-icra-workshop-robot-ranging-02.jpg"
@@ -20,6 +20,6 @@ source_url: "https://robotmeetsranging.tech/"
 
 當天的活動結合了主題演講——由 Dr. Taro Suzuki（千葉工業大學）與香港理工大學的 [Dr. Weisong Wen](/people/weisong-wen/) 發表——以及 **19 場獲接受論文的發表**和一場海報展示。主題演講者帶來了精彩的演說，海報發表亦獲得熱烈迴響；最佳發表獎（Best Presentation Award）與最佳海報獎（Best Poster Award）表彰了其中最出色的貢獻。獲接受論文的發表者包括 Xuejie Hou（香港理工大學）與 Chih-Chun Chen（德國）。下午的產業專場則為研討會的贊助商及一家相關新創公司提供了舞台，向機器人學界的聽眾展示其測距與定位技術。
 
-在座無虛席的會場、熱烈的討論，以及堅強的講者與海報陣容之下，這首屆研討會在高昂的氣氛中圓滿落幕——主辦團隊**已經開始期待第二屆的到來**。
+在座無虛席的會場、熱烈的討論，以及堅強的講者與海報陣容之下，這首屆研討會在高昂的氣氛中圓滿落幕。
 
 研討會網站：<https://robotmeetsranging.tech/>。

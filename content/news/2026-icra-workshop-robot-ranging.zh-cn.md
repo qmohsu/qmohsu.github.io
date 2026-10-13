@@ -4,7 +4,7 @@ slug: "ipnl-co-organizing-1st-icra-2026-workshop-on-robot-meets-gnss-and-ranging
 date: 2026-06-05
 date_note: "Workshop date; post updated to a post-event recap on 2026-06-13"
 category: "recognition"
-summary: "由 Prof. Li-Ta Hsu 联合组织的首届“机器人遇见 GNSS 与测距，实现无缝自主”研讨会，于 2026 年 6 月 5 日在维也纳 IEEE ICRA 2026 期间举办。这场全天研讨会汇聚了卫星导航与机器人两大社区，包含主旨报告、19 篇论文宣讲、一场海报展示和一场产业环节，最终圆满落幕，第二届也已提上日程。"
+summary: "由 Prof. Li-Ta Hsu 联合组织的首届“机器人遇见 GNSS 与测距，实现无缝自主”研讨会，于 2026 年 6 月 5 日在维也纳 IEEE ICRA 2026 期间举办。这场全天研讨会汇聚了卫星导航与机器人两大社区，包含主旨报告、19 篇论文宣讲、一场海报展示和一场产业环节，最终圆满落幕。"
 images:
   - "/images/news/2026-icra-workshop-robot-ranging.jpg"
   - "/images/news/2026-icra-workshop-robot-ranging-02.jpg"
@@ -20,6 +20,6 @@ source_url: "https://robotmeetsranging.tech/"
 
 当天的议程将主旨报告——由 Dr. Taro Suzuki（千叶工业大学）和香港理工大学的 [Dr. Weisong Wen](/people/weisong-wen/) 带来——与 **19 篇接收论文的宣讲**及一场海报展示相结合。主旨报告嘉宾带来了精彩的演讲，海报展示也引发了热烈反响；最佳报告奖（Best Presentation Award）和最佳海报奖（Best Poster Award）表彰了其中的杰出贡献。接收论文的宣讲者中包括 Xuejie Hou（香港理工大学）和 Chih-Chun Chen（德国）。下午的产业环节为研讨会的赞助商及一家相关初创公司提供了平台，向机器人社区的听众展示他们的测距与定位技术。
 
-凭借座无虚席的会场、热烈的讨论以及阵容强大的演讲嘉宾和海报，这届开创性的研讨会在高潮中落幕——组织者们**已经在期待第二届的到来**。
+凭借座无虚席的会场、热烈的讨论以及阵容强大的演讲嘉宾和海报，这届开创性的研讨会在高潮中落幕。
 
 研讨会网站：<https://robotmeetsranging.tech/>。

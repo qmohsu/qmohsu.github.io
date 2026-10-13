@@ -22,3 +22,7 @@ Stairio 研究扶手附著式機器人、AI 視覺與多感測器感知在樓梯
 **獎項。** 榮獲**第 51 屆日內瓦國際發明展評審團祝賀金獎**（[新聞](/zh-tw/news/2026-stairio-geneva-gold/)）。
 
 **合作方。** 唯港薈（理大教學酒店）支持樓梯巡檢研究合作。
+
+**項目官網。** [Stairio 官方網站](https://www.stairio.io/about)介紹了機器人從最初的 Stairio S1 到後續原型的發展過程。
+
+{{< figure src="/images/projects/stairio-official-polyu-geneva-photo.webp" width="640" height="336" alt="展示扶手裝置上的 Stairio 原型" caption="Stairio 原型安裝在展示扶手裝置上，圖片見官網的日內瓦發明展報道。圖片來源：Stairio 官方網站 / PolyU AAE。" >}}

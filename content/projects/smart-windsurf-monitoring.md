@@ -6,10 +6,10 @@ category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
-funding: "HKSI collaboration (Li-Ta Hsu: PolyU PI; May 2026–Apr 2028); RISports project scheduled Dec 2026–Nov 2027"
+funding: "HKSI collaboration (Li-Ta Hsu: PolyU PI; May 2026–Apr 2028)"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
-images: ["/images/news/2026-polyu-hksi-windsurfing.jpg"]
+images: ["/images/news/2026-hksi-stanley-on-water-survey.jpg", "/images/news/2026-hksi-stanley-windsurfing-rigs.jpg"]
 weight: 4
 ---
 
@@ -20,6 +20,10 @@ The Department of Aeronautical and Aviation Engineering at The Hong Kong Polytec
 **Funding.**
 - **Sports Science and Research Funding Scheme (SRFS)** — HKSI leads the award; Li-Ta Hsu is the PolyU PI.
 
-**Upcoming RISports project.** *Coach-Centred Start Performance KPI Framework for Olympic-Class Windsurfing Using UWB-GNSS-IMU Training Data*, with Li-Ta Hsu as PI, is scheduled for **1 December 2026 – 30 November 2027**. This research focuses on a coach-centred framework for analysing windsurfing start performance.
+## HKSI collaboration photographs — January 2026
 
-*Image: MFonzatti / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FoilsJourn%C3%A9es2025_ENVSN_02.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Illustrative image, not from the project.*
+*Photo 1 — January 2026: Pre-project site survey on the water at the HKSI windsurfing training base, Stanley.*
+
+*Photo 2 — January 2026: Windsurfing rigs at the HKSI training base, Stanley.*
+
+*Photo credit (both photographs): IPNL, The Hong Kong Polytechnic University.*

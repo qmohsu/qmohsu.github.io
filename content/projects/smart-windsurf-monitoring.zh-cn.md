@@ -6,10 +6,10 @@ category: "translational-system"
 status: "active"
 flagship: false
 start_date: 2026
-funding: "HKSI 合作（许立达：理大 PI；2026年5月–2028年4月）；RISports 相关项目计划于2026年12月–2027年11月进行"
+funding: "HKSI 合作（许立达：理大 PI；2026年5月–2028年4月）"
 themes: []
 tags: ["sports-tech", "windsurf", "elite sports", "sports science"]
-images: ["/images/news/2026-polyu-hksi-windsurfing.jpg"]
+images: ["/images/news/2026-hksi-stanley-on-water-survey.jpg", "/images/news/2026-hksi-stanley-windsurfing-rigs.jpg"]
 weight: 4
 ---
 
@@ -20,6 +20,10 @@ weight: 4
 <strong>经费来源。</strong>
 - **运动科研资助计划（SRFS）** —— HKSI 牵头该资助项目，许立达教授担任理大 PI。
 
-**即将开展的 RISports 项目。** *面向奥运级风帆运动、基于 UWB-GNSS-IMU 训练数据的教练导向起航表现 KPI 框架*（Coach-Centred Start Performance KPI Framework for Olympic-Class Windsurfing Using UWB-GNSS-IMU Training Data）由许立达教授担任 PI，计划于 **2026 年 12 月 1 日至 2027 年 11 月 30 日**进行，研究面向教练的风帆起航表现分析框架。
+## HKSI 合作照片——2026 年 1 月
 
-*图:MFonzatti / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:FoilsJourn%C3%A9es2025_ENVSN_02.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。示意图,非本项目影像。*
+*照片 1——2026 年 1 月：在赤柱香港体育学院滑浪风帆训练基地进行项目前期水上场地考察。*
+
+*照片 2——2026 年 1 月：赤柱香港体育学院训练基地的滑浪风帆器材。*
+
+*两张照片的摄影署名：IPNL, The Hong Kong Polytechnic University。*

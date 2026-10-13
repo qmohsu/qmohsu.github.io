@@ -23,6 +23,10 @@ weight: 4
 - <strong>華為</strong> —— 長期合作研究夥伴,涵蓋 3DMA GNSS、深度整合、室內定位、協同 GNSS、行動設備多感測器融合(自 2018 起,框架下 9+ 子合同)
 - **ITF-ITSP ITS/091/23** —— *面向香港智慧城市的 AI 輔助智慧型手機城市定位*，項目預算 HK$801k，許立達教授擔任 PI。資助項目於 **2025 年 8 月 1 日至 2026 年 5 月 31 日**進行，現已完成；項目審查會議於 **2026 年 9 月 28 日**舉行。
 
+{{< figure src="/images/projects/its09123-fieldwork-202604-01.png" width="427" height="569" alt="ITS/091/23 項目於 2026 年 4 月進行實地資料採集，第一視角" caption="ITS/091/23 智慧型手機城市定位項目的實地資料採集，2026 年 4 月。" >}}
+
+{{< figure src="/images/projects/its09123-fieldwork-202604-02.png" width="627" height="572" alt="ITS/091/23 項目於 2026 年 4 月進行實地資料採集，第二視角" caption="ITS/091/23 智慧型手機城市定位項目的實地資料採集，2026 年 4 月。" >}}
+
 <strong>產業合作 —— 谷歌 Android 定位組。</strong> 許立達教授曾任<strong>谷歌山景城 Android 定位組訪問研究科學家</strong>,駐地 20 個月(2022–2023),從事基於 FGO 的智慧型手機定位。合作延續到 <strong>2024 年 8 月給 Pixel 組的演講</strong>,以及 IPNL 與 Android 定位組在因子圖智慧型手機 GNSS 上的持續交流。
 
 <strong>其他產業合作夥伴。</strong> 華為車 BU、OPPO、AIROHA(台灣)、聯發科(台灣)、NYU Langone Medical Center(自 2021 年起,3DMA GNSS 用於視障行人導航)。

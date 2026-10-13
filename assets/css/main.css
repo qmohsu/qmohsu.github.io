@@ -2372,6 +2372,16 @@ hr {
   margin-top: 0;
 }
 
+/* Keep inline photographs proportional when the article becomes narrower. */
+.prose > figure {
+  margin: 24px 0;
+}
+.prose > figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Person detail tweaks */
 .person-photo-detail {
   width: 140px;

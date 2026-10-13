@@ -22,3 +22,7 @@ Stairio investigates handrail-mounted robotics, AI vision and multi-sensor perce
 **Recognition.** Awarded **Gold Medal with Congratulations of the Jury at the 51st International Exhibition of Inventions Geneva 2026** ([news](/en/news/2026-stairio-geneva-gold/)).
 
 **Partner.** Hotel ICON, PolyU's teaching hotel, supports the staircase-inspection research collaboration.
+
+**Official project website.** The [Stairio official website](https://www.stairio.io/about) traces the robot's development from the original Stairio S1 to subsequent prototypes.
+
+{{< figure src="/images/projects/stairio-official-polyu-geneva-photo.webp" width="640" height="336" alt="Stairio prototype on a handrail demonstration rig" caption="Stairio prototype on a handrail demonstration rig, shown in the official website's Geneva coverage. Image source: Stairio official website / PolyU AAE." >}}

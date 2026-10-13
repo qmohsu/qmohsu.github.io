@@ -15,6 +15,8 @@ weight: 6
 
 项目研究如何通过多模态传感器融合，在开阔道路、出入口、坡道及有遮蔽停车环境之间保持可靠的车辆定位，目标是建立针对这些过渡场景的定位流程与评估方法。
 
+{{< figure src="/images/projects/riaiot-urbannav-research-platform.png" alt="UrbanNav 既有白色数据采集车辆及车顶传感器。" caption="既有 UrbanNav 研究平台。车照取自 [UrbanNav 数据集论文](https://doi.org/10.33012/navi.602)的图 2。" width="904" height="591" >}}
+
 **计划周期。** 十二个月；资助通知未确定最终的日历起止日期。
 
 **关联方向。** [面向具身系统的无缝多传感器 PNT](/zh-cn/research/seamless-pnt-embodied/)。

@@ -4,7 +4,7 @@ slug: "ipnl-co-organizing-1st-icra-2026-workshop-on-robot-meets-gnss-and-ranging
 date: 2026-06-05
 date_note: "Workshop date; post updated to a post-event recap on 2026-06-13"
 category: "recognition"
-summary: "The 1st Workshop on Robot Meets GNSS and Ranging for Seamless Autonomy — co-organized by Prof. Li-Ta Hsu — was held at IEEE ICRA 2026 in Vienna on 5 June 2026. The full-day workshop brought together the satellite-navigation and robotics communities for keynote talks, 19 paper presentations, a poster session, and an industry session, and closed as a clear success with a second edition already in view."
+summary: "The 1st Workshop on Robot Meets GNSS and Ranging for Seamless Autonomy — co-organized by Prof. Li-Ta Hsu — was held at IEEE ICRA 2026 in Vienna on 5 June 2026. The full-day workshop brought together the satellite-navigation and robotics communities for keynote talks, 19 paper presentations, a poster session, and an industry session, and closed as a clear success."
 images:
   - "/images/news/2026-icra-workshop-robot-ranging.jpg"
   - "/images/news/2026-icra-workshop-robot-ranging-02.jpg"
@@ -20,6 +20,6 @@ The workshop proposal had been selected from a record 152 submissions to ICRA 20
 
 The day combined keynote talks — delivered by Dr. Taro Suzuki (Chiba Institute of Technology) and PolyU's [Dr. Weisong Wen](/people/weisong-wen/) — with **19 accepted-paper presentations** and a poster session. The keynote speakers delivered excellent talks, and the poster presentations drew strong engagement; a Best Presentation Award and a Best Poster Award recognized the standout contributions. Among the accepted-paper presenters were Xuejie Hou (The Hong Kong Polytechnic University) and Chih-Chun Chen (Germany). An afternoon industry session gave the workshop's sponsors and an associated start-up a stage to present their ranging and positioning technologies to the robotics audience.
 
-With a packed room, lively discussion, and a strong slate of speakers and posters, the inaugural edition closed on a high note — and the organizers are **already looking forward to the second edition**.
+With a packed room, lively discussion, and a strong slate of speakers and posters, the inaugural edition closed on a high note.
 
 Workshop website: <https://robotmeetsranging.tech/>.
