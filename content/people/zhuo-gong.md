@@ -2,9 +2,8 @@
 title: "Zhuo Gong"
 slug: "zhuo-gong"
 role: "Research Assistant"
-status: "current"
-years: "2026-present"
+status: "alumni"
 sort_order: 304
 ---
 
-Student Assistant.
+Former Student Assistant.
