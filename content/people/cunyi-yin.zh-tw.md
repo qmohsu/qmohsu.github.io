@@ -13,3 +13,5 @@ sort_order: 110
 **研究領域：** 無線感測、物聯網、人類活動辨識，以及機器學習
 
 **Email：** cunyiyin@polyu.edu.hk
+
+**下一站：** Cunyi 即將前往福建師範大學。
