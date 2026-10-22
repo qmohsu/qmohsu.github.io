@@ -3,7 +3,7 @@ title: "Duanqinrui Wang"
 slug: "duanqinrui-wang"
 role: "Intern"
 status: "current"
-years: "Summer 2026"
+years: "2026-present"
 photo: "/images/people/duanqinrui-wang.png"
 sort_order: 362
 ---

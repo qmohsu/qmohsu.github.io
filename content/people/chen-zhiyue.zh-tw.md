@@ -2,9 +2,9 @@
 title: "Chen Zhiyue"
 slug: "chen-zhiyue"
 role: "Intern"
-status: "current"
+status: "alumni"
 years: "2026"
 sort_order: 368
 ---
 
-實習生。
+曾任實習生。

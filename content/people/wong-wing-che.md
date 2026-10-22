@@ -2,9 +2,9 @@
 title: "Wong Wing Che"
 slug: "wong-wing-che"
 role: "Intern"
-status: "current"
+status: "alumni"
 years: "2026"
 sort_order: 367
 ---
 
-Intern.
+Former intern.
