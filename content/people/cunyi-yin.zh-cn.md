@@ -2,8 +2,8 @@
 title: "Cunyi Yin"
 slug: "cunyi-yin"
 role: "Postdoctoral Fellow"
-status: "current"
-years: "2025-present"
+status: "alumni"
+years: "2025-2026"
 photo: "/images/people/cunyi-yin.jpg"
 sort_order: 110
 ---

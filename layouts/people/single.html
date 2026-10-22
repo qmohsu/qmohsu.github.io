@@ -10,7 +10,13 @@
   <p class="person-headline"><strong>{{ $headline }}</strong>{{ with .Params.years }} <span>IPNL {{ . }}</span>{{ end }}</p>
 
   {{ with .Params.status }}
-    <span class="badge badge-{{ . }}">{{ . }}</span>
+    {{ $label := . }}
+    {{ if eq . "current" }}
+      {{ $label = cond (eq site.Language.Lang "zh-cn") "现任成员" (cond (eq site.Language.Lang "zh-tw") "現任成員" "Current member") }}
+    {{ else if eq . "alumni" }}
+      {{ $label = cond (eq site.Language.Lang "zh-cn") "历届成员" (cond (eq site.Language.Lang "zh-tw") "歷屆成員" "Former member · Alumni") }}
+    {{ end }}
+    <span class="badge badge-{{ . }}">{{ $label }}</span>
   {{ end }}
 
   {{ with .Params.profile_highlights }}
