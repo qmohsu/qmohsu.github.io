@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "许立达 (Li-Ta Hsu)"
 tab_title: "许立达 - 香港理工大学航空及民航工程学系副教授"
 slug: "li-ta-hsu"
@@ -31,11 +32,11 @@ profile_highlights:
     value: "IEEE Transactions on Aerospace and Electronic Systems 副主编"
     url: "https://ieee-aess.org/publications/taes/technical-areas-editors"
   - label: "专业组织服务"
-    value: "美国导航学会（ION）理事会成员兼技术代表"
+    value: "美国导航学会（ION）理事会成员兼技术代表 (2019–2021; 2025–2027)"
     url: "/news/2025-ion-technical-rep/"
   - label: "学术影响"
-    value: "斯坦福 / Elsevier 全球前 2% 高被引科学家（2021-2025）"
-    url: "/news/2025-stanford-top2/"
+    value: "斯坦福–Elsevier 全球前 2% 高被引科学家，2026 版（终身及年度科学影响力双榜）"
+    url: "/news/2026-stanford-top2/"
   - label: "奖项"
     value: "2022 年 ION Per Enge 早期成就奖"
     url: "https://www.ion.org/awards/per-enge-early-achievement.cfm"
@@ -44,3 +45,7 @@ profile_highlights:
 香港理工大学 航空及民航工程学系 副教授。智能定位与导航实验室 (IPNL) 创办人与主任。
 
 研究方向:城市 GNSS 定位、多传感器融合、因子图优化、完好性监测、3D 地图辅助定位、室内导航。
+
+## 文献计量档案
+
+[ScholarGPS 2026 版排名](https://scholargps.com/scholars/80696165566332/li-ta-hsu)的公开个人档案列出许立达在 **Satellite navigation（卫星导航）专业领域的 Prior Five Years（近五年）榜为第 1 名，Lifetime（终身）榜为第 4 名**。档案快照日期：**2026 年 10 月 27 日**。这是特定专业领域的文献计量排名，时间窗口沿用 ScholarGPS 的原始标签。

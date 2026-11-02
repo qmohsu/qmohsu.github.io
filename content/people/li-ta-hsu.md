@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "Li-Ta Hsu"
 tab_title: "Li-Ta Hsu - Associate Professor, PolyU AAE"
 slug: "li-ta-hsu"
@@ -31,11 +32,11 @@ profile_highlights:
     value: "Associate Editor, IEEE Transactions on Aerospace and Electronic Systems"
     url: "https://ieee-aess.org/publications/taes/technical-areas-editors"
   - label: "Professional service"
-    value: "Council Member and Technical Representative, Institute of Navigation (ION)"
+    value: "Council Member and Technical Representative, Institute of Navigation (ION) (2019–2021; 2025–2027)"
     url: "/news/2025-ion-technical-rep/"
   - label: "Research recognition"
-    value: "World's Top 2% Scientists, Stanford/Elsevier ranking (2021-2025)"
-    url: "/news/2025-stanford-top2/"
+    value: "Stanford–Elsevier World's Top 2% Scientists, 2026 edition (Career-Long and Single-Year)"
+    url: "/news/2026-stanford-top2/"
   - label: "Award"
     value: "2022 Per Enge Early Achievement Award, Institute of Navigation"
     url: "https://www.ion.org/awards/per-enge-early-achievement.cfm"
@@ -44,3 +45,7 @@ profile_highlights:
 Associate Professor, Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University. Founder and Director of the Intelligent Positioning and Navigation Laboratory (IPNL).
 
 Research interests: urban GNSS positioning, multi-sensor fusion, factor graph optimization, integrity monitoring, 3D mapping-aided positioning, and indoor navigation.
+
+## Bibliometric profile
+
+In the [ScholarGPS 2026 rankings](https://scholargps.com/scholars/80696165566332/li-ta-hsu), Li-Ta Hsu's public profile lists **No. 1 in Satellite navigation (Prior Five Years)** and **No. 4 in Satellite navigation (Lifetime)**. Profile snapshot: **27 October 2026**. These are specialty-specific bibliometric rankings; the period labels follow ScholarGPS.

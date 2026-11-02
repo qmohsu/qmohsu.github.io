@@ -8,13 +8,15 @@ summary: "Prof. Li-Ta Hsu gave an invited talk in a special-format session at th
 image: "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
 images:
   - "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
-  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-02.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
+draft: false
 ---
 
 Prof. Li-Ta Hsu gave an invited talk at the **2019 [ION Pacific PNT Conference](https://www.ion.org/pnt/)** in Honolulu, Hawaii, in April 2019. The talk — *Modernized Satellite Navigation for Civil Aviation and Autonomous Vehicles* — was delivered in the *Challenging Navigation Problems 2* session, where Prof. Hsu also served as Session Co-Chair. This *Challenging Navigation Problems* format was a special 2019-only initiative at ION Pacific PNT and is no longer part of the conference programme.
 
-This was the lab's **first major US / Pacific invited engagement** — opening a long-running engagement with the [Institute of Navigation](https://www.ion.org/) community that has since included multi-year recurring roles (Session Chair at ION ITM 2020-2023; Pre-Conference Tutorial Lecturer at ION GNSS+ 2020/2021/2023/2024; ION Council Member + Technical Representative; Associate Editor at NAVIGATION journal).
+This was the lab's **first major US / Pacific invited engagement** — opening a long-running engagement with the [Institute of Navigation](https://www.ion.org/) community that has since included multi-year recurring roles (Session Chair at ION ITM 2020-2023; Pre-Conference Tutorial Lecturer at ION GNSS+ 2020/2021/2022/2024/2025; ION Council Member + Technical Representative in the separate 2019–2021 and 2025–2027 terms; Associate Editor at NAVIGATION journal).
 
 The Pacific PNT conference is the biennial Pacific-region edition of ION's flagship technical-conference series.
+
+The 2023 indoor-positioning tutorial was announced but cancelled, as marked in the [official programme, page 7](https://www.ion.org/publications/upload/GNSS23-Onsite-Program.pdf#page=7).

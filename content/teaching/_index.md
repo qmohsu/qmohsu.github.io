@@ -27,6 +27,8 @@ The lab's signature teaching-innovation research thread, and the basis of the 20
 
 **Core idea.** GitHub-based pedagogy is the integration of **(1) a flipped classroom** and **(2) project-based learning**, delivered through the same professional online code-sharing and project-management platform that industry actually uses. When GitHub workflows — version control, pull requests, issue tracking, code review — become the primary classroom collaboration environment, students build online collaboration, problem-solving, and **learning-to-learn (L2L)** competencies far more effectively than traditional submission portals. The same skills (finding open-source code, starting a project with online collaborators, jointly coding and reviewing) are exactly what employers and research increasingly demand.
 
+**From path planning to an assessable development process.** The approach was piloted in ENG1003 in AY2020/21: students worked together on path-planning code through GitHub in a flipped classroom. [PolyU EDC’s teaching-practice record](https://www.polyu.edu.hk/edc/-/media/department/edc/content/celebrate-teaching-excellence/good-practice-showcase/good-practices-shared-by-48-teachers/questionnaire-for-good-teaching-practicesdr-lita-hsu.pdf?hash=733A54121A93C6A6F948B8BF4284F765&rev=0130c3baef2449b799f4b9196e43561a) documents the original five-week project. Commit history makes contributions and development steps visible for assessment. The approach extended to AAE5303 in 2025–26, where students submitted a repository rather than a single file.
+
 ### Measured impact (EDC pilot study)
 
 Evaluated with PolyU's Educational Development Centre via a pre/post study of the Year-1 *Freshman Seminar in Engineering* cohort. Every targeted learning attribute improved with strong statistical significance:
@@ -42,7 +44,7 @@ Evaluated with PolyU's Educational Development Centre via a pre/post study of th
 
 ### Reach across the curriculum
 
-GitHub-based pedagogy spans **seven undergraduate and postgraduate subjects**: ENG1003 *Freshman Seminar for Engineering*, AAE2004 *Introduction to Aviation Systems & Air Transport Regulation*, AAE3004 *Dynamical Systems and Control*, AAE4006 *Flight Mechanics and Control Systems*, AAE4002 *Capstone Project*, AAE4203 *Guidance and Navigation*, and AAE6102 *Satellite Communication and Navigation* (RPg). The approach also extends into **research supervision** — RPg students prototype and publish open-source through GitHub (e.g., [UrbanNav](https://github.com/IPNL-POLYU/UrbanNavDataset), [GraphGNSSLib](https://github.com/weisongwen/GraphGNSSLib), [pyrtklib](https://github.com/IPNL-POLYU/pyrtklib)), maximizing both research integrity and impact.
+GitHub-based pedagogy is used across undergraduate and postgraduate subjects, including: ENG1003 *Freshman Seminar for Engineering*, AAE2004 *Introduction to Aviation Systems & Air Transport Regulation*, AAE3004 *Dynamical Systems and Control*, AAE4006 *Flight Mechanics and Control Systems*, AAE4002 *Capstone Project*, AAE4203 *Guidance and Navigation*, and AAE6102 *Satellite Communication and Navigation* (RPg). The approach also extends into **research supervision** — RPg students prototype and publish open-source through GitHub (e.g., [UrbanNav](https://github.com/IPNL-POLYU/UrbanNavDataset), [GraphGNSSLib](https://github.com/weisongwen/GraphGNSSLib), [pyrtklib](https://github.com/IPNL-POLYU/pyrtklib)), maximizing both research integrity and impact.
 
 ### Onboarding videos (AAE2004 series)
 

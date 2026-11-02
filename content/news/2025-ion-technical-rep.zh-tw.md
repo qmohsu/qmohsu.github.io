@@ -1,18 +1,20 @@
 ---
-title: "許立達博士連任 ION 技術代表"
+title: "許立達獲選擔任 ION 理事會技術代表，任期為 2025–2027 年"
 slug: "2025-ion-technical-rep"
-date: 2025-01-10
+date: 2025-01-30
+date_note: "Start of the two-year Council term, as reported by ION"
 category: "leadership"
-summary: "許立達博士連任美國導航學會（ION）理事會技術代表，延續他在導航社群的領導角色。"
-image: "/images/news/2025-ion-technical-rep.jpg"
-source_type: "original_local"
-source_site: "original"
+summary: "新一屆兩年任期於 2025 年 1 月 30 日開始；此前另一屆任期為 2019–2021 年。"
+image: "/images/li-ta-hsu-2022.jpg"
+images:
+  - "/images/li-ta-hsu-2022.jpg"
+source_type: "official"
+source_site: "ION"
+draft: false
 ---
 
-許立達博士連任[美國導航學會（ION）](https://www.ion.org/)理事會技術代表，延續他在該組織治理中代表技術社群的服務。ION 是致力於推動定位、導航與授時（PNT）技術發展的首屈一指的專業學會。該組織創立於 1945 年，匯聚了來自學界、政府與業界、從事衛星導航、慣性系統及新興 PNT 解決方案研究的研究人員、工程師與實務專家。
+許立達教授獲選擔任 **美國導航學會（ION）理事會技術代表**，新一屆兩年任期自 **2025 年 1 月 30 日**開始。選舉結果載於 [ION 2025 年冬季會刊第 26 頁](https://www.ion.org/newsletter/upload/ION-Winter2025.pdf#page=26)。
 
-ION 理事會是負責制定該組織策略方向的治理機構，並監督其會議、出版及教育活動。理事會中的技術代表擔任廣大技術會員與組織領導層之間的聯絡人，確保研究人員與工程師的觀點和優先事項能反映在 ION 的計劃與倡議之中。此職位為選任角色，由 ION 會員投票選出在導航社群中展現持續貢獻的代表。
+許教授此前另有一屆兩年任期，自 **2019 年 1 月 31 日**開始，見 [ION 2019 年冬季會刊第 18 頁](https://www.ion.org/publications/upload/v29n1.pdf#page=18)。兩屆任期分別為 **2019–2021 年及 2025–2027 年**。
 
-許博士的連任反映了他多年來與 ION 的持續交流。他是 ION [Per Enge 早期成就獎](https://www.ion.org/awards/)（2022 年）的得主，並透過參與會議、論文審查，以及在 ION GNSS+ 與 ION 國際技術會議等活動中組織議程，對該組織作出廣泛貢獻。他在城市 GNSS 定位、三維地圖輔助導航及多感測器融合方面的研究，在 ION 社群中廣受認可，當中包括獲頒《NAVIGATION》期刊的最高被引論文獎。
-
-此次連任凸顯了許博士作為全球導航研究社群活躍領袖的地位，以及他透過技術貢獻與組織服務推動 ION 使命的承諾。
+*配圖：許立達教授的個人肖像。*

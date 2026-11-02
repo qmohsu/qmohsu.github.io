@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "許立達 (Li-Ta Hsu)"
 tab_title: "許立達 - 香港理工大學航空及民航工程學系副教授"
 slug: "li-ta-hsu"
@@ -31,11 +32,11 @@ profile_highlights:
     value: "IEEE Transactions on Aerospace and Electronic Systems 副主編"
     url: "https://ieee-aess.org/publications/taes/technical-areas-editors"
   - label: "專業組織服務"
-    value: "美國導航學會（ION）理事會成員暨技術代表"
+    value: "美國導航學會（ION）理事會成員暨技術代表 (2019–2021; 2025–2027)"
     url: "/news/2025-ion-technical-rep/"
   - label: "學術影響"
-    value: "史丹佛 / Elsevier 全球前 2% 高被引科學家（2021-2025）"
-    url: "/news/2025-stanford-top2/"
+    value: "史丹佛–Elsevier 全球前 2% 高被引科學家，2026 版（終身及年度科學影響力雙榜）"
+    url: "/news/2026-stanford-top2/"
   - label: "獎項"
     value: "2022 年 ION Per Enge 早期成就獎"
     url: "https://www.ion.org/awards/per-enge-early-achievement.cfm"
@@ -44,3 +45,7 @@ profile_highlights:
 香港理工大學 航空及民航工程學系 副教授。智能定位與導航實驗室 (IPNL) 創辦人與主任。
 
 研究方向:城市 GNSS 定位、多感測器融合、因子圖最佳化、完整性監測、3D 地圖輔助定位、室內導航。
+
+## 文獻計量檔案
+
+[ScholarGPS 2026 版排名](https://scholargps.com/scholars/80696165566332/li-ta-hsu)的公開個人檔案列出許立達在 **Satellite navigation（衛星導航）專業領域的 Prior Five Years（近五年）榜為第 1 名，Lifetime（終身）榜為第 4 名**。檔案快照日期：**2026 年 10 月 27 日**。這是特定專業領域的文獻計量排名，時間窗口沿用 ScholarGPS 的原始標籤。

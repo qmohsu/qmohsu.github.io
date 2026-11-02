@@ -1,18 +1,20 @@
 ---
-title: "许立达博士连任 ION 技术代表"
+title: "许立达获选担任 ION 理事会技术代表，任期为 2025–2027 年"
 slug: "2025-ion-technical-rep"
-date: 2025-01-10
+date: 2025-01-30
+date_note: "Start of the two-year Council term, as reported by ION"
 category: "leadership"
-summary: "许立达博士连任美国导航学会（ION）理事会技术代表，继续在导航界担任领导职务。"
-image: "/images/news/2025-ion-technical-rep.jpg"
-source_type: "original_local"
-source_site: "original"
+summary: "新一届两年任期于 2025 年 1 月 30 日开始；此前另一届任期为 2019–2021 年。"
+image: "/images/li-ta-hsu-2022.jpg"
+images:
+  - "/images/li-ta-hsu-2022.jpg"
+source_type: "official"
+source_site: "ION"
+draft: false
 ---
 
-许立达博士连任[美国导航学会（ION）](https://www.ion.org/)理事会技术代表，继续在该组织的治理工作中代表技术界发声。ION 是致力于推动定位、导航与授时（PNT）技术发展的顶尖专业学会。该组织成立于 1945 年，汇聚了来自学术界、政府和业界的研究人员、工程师和从业者，他们的工作涵盖卫星导航、惯性系统以及新兴的 PNT 解决方案。
+许立达教授获选担任 **美国导航学会（ION）理事会技术代表**，新一届两年任期自 **2025 年 1 月 30 日**开始。选举结果载于 [ION 2025 年冬季会刊第 26 页](https://www.ion.org/newsletter/upload/ION-Winter2025.pdf#page=26)。
 
-ION 理事会是负责制定组织战略方向的管理机构，统筹其会议、出版物和教育活动。理事会的技术代表充当广大技术会员与组织领导层之间的纽带，确保研究人员和工程师的观点与优先事项能够体现在 ION 的各项计划和举措中。该职位为选举产生，由 ION 会员投票选出在导航界持续作出贡献的代表。
+许教授此前另有一届两年任期，自 **2019 年 1 月 31 日**开始，见 [ION 2019 年冬季会刊第 18 页](https://www.ion.org/publications/upload/v29n1.pdf#page=18)。两届任期分别为 **2019–2021 年及 2025–2027 年**。
 
-许立达博士的连任反映了他多年来对 ION 的持续投入。他曾荣获 ION [Per Enge 早期成就奖](https://www.ion.org/awards/)（2022 年），并通过参与会议、论文评审以及在 ION GNSS+ 和 ION 国际技术会议等活动中组织分会场等方式，为该组织作出了大量贡献。他在城市 GNSS 定位、三维地图辅助导航和多传感器融合方面的研究在 ION 社区中获得广泛认可，包括荣获《NAVIGATION》期刊的最高被引论文奖。
-
-此次连任彰显了许立达博士作为全球导航研究界活跃领导者的地位，以及他通过技术贡献和组织服务推进 ION 使命的承诺。
+*配图：许立达教授的个人肖像。*

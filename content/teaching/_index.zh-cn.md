@@ -27,6 +27,8 @@ IPNL 的教学涵盖本科航空工程、以 GNSS 为核心的科目、研究生
 
 **核心理念。** 基于 GitHub 的教学法,是将**(1)翻转课堂**与**(2)项目式学习**整合,通过业界实际使用的同一个专业在线代码共享与项目管理平台来实施。当 GitHub 工作流——版本控制、pull request、issue 跟踪、代码评审——成为课堂主要的协作环境时,学生在在线协作、解决问题以及**学会学习(L2L)**等能力上的提升,远比传统提交门户更为有效。这些技能(查找开源代码、与线上协作者发起项目、共同编码与评审)正是雇主和科研日益要求的能力。
 
+**从路径规划到可评估的开发过程。** 这套方法于 2020/21 学年在 ENG1003 试行：学生在翻转课堂中，通过 GitHub 协作开发路径规划程序。[理大 EDC 的教学实践记录](https://www.polyu.edu.hk/edc/-/media/department/edc/content/celebrate-teaching-excellence/good-practice-showcase/good-practices-shared-by-48-teachers/questionnaire-for-good-teaching-practicesdr-lita-hsu.pdf?hash=733A54121A93C6A6F948B8BF4284F765&rev=0130c3baef2449b799f4b9196e43561a)记载了最初为期五周的项目。提交历史让个人贡献与开发步骤可供评估。该方法于 2025–26 学年扩展至 AAE5303，学生提交整个代码仓库，而非单一文件。
+
 ### 实测成效(EDC 试点研究)
 
 通过香港理工大学教育发展中心,对一年级*工程新生研讨课*学生群体进行前测/后测研究予以评估。每一项目标学习属性都在强统计显著性下取得提升:
@@ -42,7 +44,7 @@ IPNL 的教学涵盖本科航空工程、以 GNSS 为核心的科目、研究生
 
 ### 覆盖整个课程体系
 
-基于 GitHub 的教学法横跨**七门本科与研究生科目**:ENG1003 *工程新生研讨课*、AAE2004 *航空系统与航空运输法规导论*、AAE3004 *动态系统与控制*、AAE4006 *飞行力学与控制系统*、AAE4002 *顶石项目*、AAE4203 *制导与导航*,以及 AAE6102 *卫星通信与导航*(RPg)。该方法还延伸至**研究指导**——RPg 学生通过 GitHub 进行原型开发并发布开源成果(例如 [UrbanNav](https://github.com/IPNL-POLYU/UrbanNavDataset)、[GraphGNSSLib](https://github.com/weisongwen/GraphGNSSLib)、[pyrtklib](https://github.com/IPNL-POLYU/pyrtklib)),从而最大化科研诚信与影响力。
+基于 GitHub 的教学法用于本科与研究生科目，包括:ENG1003 *工程新生研讨课*、AAE2004 *航空系统与航空运输法规导论*、AAE3004 *动态系统与控制*、AAE4006 *飞行力学与控制系统*、AAE4002 *顶石项目*、AAE4203 *制导与导航*,以及 AAE6102 *卫星通信与导航*(RPg)。该方法还延伸至**研究指导**——RPg 学生通过 GitHub 进行原型开发并发布开源成果(例如 [UrbanNav](https://github.com/IPNL-POLYU/UrbanNavDataset)、[GraphGNSSLib](https://github.com/weisongwen/GraphGNSSLib)、[pyrtklib](https://github.com/IPNL-POLYU/pyrtklib)),从而最大化科研诚信与影响力。
 
 ### 入门视频(AAE2004 系列)
 
