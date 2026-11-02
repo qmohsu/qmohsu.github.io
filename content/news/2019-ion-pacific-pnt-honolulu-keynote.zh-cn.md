@@ -9,7 +9,6 @@ image: "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
 images:
   - "/images/news/2019-ion-pacific-pnt-honolulu-keynote.jpg"
   - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-02.jpg"
-  - "/images/news/2019-ion-pacific-pnt-honolulu-keynote-03.jpg"
 source_type: "lab_announcement"
 source_site: "ipnl"
 ---
